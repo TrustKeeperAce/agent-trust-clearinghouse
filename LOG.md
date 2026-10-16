@@ -6,3 +6,4 @@
 
 - 2026-10-16 16:41 EDT: Deployed skeleton site to Vercel production (direct file deploy; GitHub auto-deploy not linked yet). Live: https://agent-trust-clearinghouse.vercel.app
 - 2026-10-16 16:53 EDT: Decision 0001 approved (swap Loki -> Google DeepMind SAFE). Private research on 8 seeds may begin.
+- 2026-10-16 17:41 EDT: Decision 0002 approved by Remington. Published GPT Researcher (overall 53, grade B-): agents/gpt-researcher.yaml, decisions/0002-gpt-researcher.md, public/agents/gpt-researcher.html, index row. Source URL check: all 2xx except two ACM DL pages (403 to automated fetch).
