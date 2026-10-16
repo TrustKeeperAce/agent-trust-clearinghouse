@@ -1,0 +1,4 @@
+body{font-family:system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#222;line-height:1.5}
+nav a{margin-right:1rem}table{width:100%;border-collapse:collapse;margin:1rem 0}
+th,td{border:1px solid #ccc;padding:.5rem;text-align:left}th{background:#f3f3f3}
+footer{margin-top:3rem;border-top:1px solid #ccc;font-size:.9rem;color:#555}

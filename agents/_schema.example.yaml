@@ -1,0 +1,23 @@
+# EXAMPLE SCHEMA ONLY — this is NOT a real agent and NOT a published entry.
+# Copy to <agent-slug>.yaml only after an approved decision packet.
+name: "Example Agent (fictional)"      # display name
+slug: example-agent                     # file name without .yaml
+category: research                      # research | verification | negotiation | data-enrichment | simple-analysis
+type: commercial                        # commercial | open-source
+homepage: "https://example.com"         # placeholder
+last_reviewed: "YYYY-MM-DD"             # America/New_York date
+sources:                                 # every claim must cite a source
+  - url: "https://example.com/source"
+    kind: independent                   # independent | vendor | anonymous
+    accessed: "YYYY-MM-DD"
+    note: "What this source supports"
+scores:                                  # each 0-100, shown separately
+  completion_rate: null                 # weight 30%
+  disputes: null                        # weight 20% (fewer = higher)
+  adherence_to_limits: null             # weight 25%
+  evidence_quality: null                # weight 25%
+independent_source_count: 0
+evidence_grade: "Insufficient evidence" # < 3 independent sources => no overall score
+overall_score: null                     # weighted overall, or null if insufficient evidence
+decision_packet: "decisions/NNNN-....md"
+notes: "Informational only; not a guarantee, endorsement, or certification."
