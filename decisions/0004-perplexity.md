@@ -79,3 +79,9 @@ Proposed public summary: "Perplexity is a commercial AI answer engine; this entr
 - **robots.txt:** a website's "do not crawl" instructions.
 - **Syndicated copy:** a republished version of an article on another site.
 - **Pending lawsuit:** filed but not decided.
+
+---
+
+## Post-publication notes
+- Deployed live: dpl_ASbvp6tH3UQo3Bi9VVqurfmpxsuL.
+- Browser check 2026-10-16: Perplexity help center plan page (articles/11187416, modified 2026-10-08) table lists Free Pro Searches 3/day; text says Very limited; How Perplexity works page says limited number per day. Public wording unchanged pending approver review.
