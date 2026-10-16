@@ -1,6 +1,6 @@
 # Decision 0001 — Seed research plan (8 candidates)
 
-- **Status:** Proposed — awaiting Remington's approval
+- **Status:** APPROVED by Remington on 2026-10-16 — Loki swapped for Google DeepMind SAFE; other 7 candidates proceed; drafts stay private until per-entry approval.
 - **Date:** 2026-10-16 (America/New_York)
 - **Scope:** A *plan* for what to research. This packet contains no agent entries, no scores, and no evaluations.
 
