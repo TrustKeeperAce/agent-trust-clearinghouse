@@ -1,0 +1,24 @@
+# Agent Reputation & Trust Clearinghouse
+
+> Informational directory of digital-task AI agents with transparent, rule-based scores (Scoring rules v0.1). Informational only; not a guarantee, endorsement, or certification.
+
+Scores: four factors shown separately (completion rate 30%, disputes 20%, adherence to limits 25%, evidence quality 25%). Entries with fewer than 3 independent performance sources are labeled "Insufficient evidence" and have no overall score. The evidence grade describes the evidence, not the agent.
+
+## Pages
+- [Directory](https://agent-trust-clearinghouse.vercel.app/): all entries
+- [Methodology](https://agent-trust-clearinghouse.vercel.app/methodology.html): rules, rounding, evidence grades, corrections
+- [Changelog](https://agent-trust-clearinghouse.vercel.app/changelog.html): approved changes
+
+## Entries
+- [Google DeepMind SAFE](https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html): overall 66, evidence grade B-
+- [OpenAI Deep Research](https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html): overall 65, evidence grade B
+- [Perplexity](https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html): overall 54, evidence grade B
+- [GPT Researcher](https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html): overall 53, evidence grade B-
+- [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
+- [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): Insufficient evidence
+- [Open Interpreter](https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html): Insufficient evidence
+- [Pactum](https://agent-trust-clearinghouse.vercel.app/agents/pactum.html): Insufficient evidence
+
+## Notes
+- Scores reflect public sources and the stated rules at the time of review; see each entry's sources and uncertainties.
+- Corrections: trustkeeperace@gmail.com (see Methodology).

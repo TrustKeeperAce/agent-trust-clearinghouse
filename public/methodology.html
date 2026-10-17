@@ -1,14 +1,14 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Methodology — Agent Reputation &amp; Trust Clearinghouse</title><meta name="description" content="Scoring rules v0.1: factor weights, rounding, independent performance sources, evidence grades, last-reviewed and corrections. Informational only."><link rel="canonical" href="https://agent-trust-clearinghouse.vercel.app/methodology.html"><meta property="og:type" content="article"><meta property="og:site_name" content="Agent Reputation &amp; Trust Clearinghouse"><meta property="og:title" content="Methodology — Agent Reputation &amp; Trust Clearinghouse"><meta property="og:description" content="Scoring rules v0.1: factor weights, rounding, independent performance sources, evidence grades, last-reviewed and corrections. Informational only."><meta property="og:url" content="https://agent-trust-clearinghouse.vercel.app/methodology.html"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Methodology — Agent Reputation &amp; Trust Clearinghouse"><meta name="twitter:description" content="Scoring rules v0.1: factor weights, rounding, independent performance sources, evidence grades, last-reviewed and corrections. Informational only."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%273%27 fill=%27%23334155%27/%3E%3C/svg%3E"><link rel="stylesheet" href="/style.css"></head><body>
-<nav><a href="/">Directory</a><a href="/methodology.html">Methodology</a></nav>
+<header class="site"><a class="brand" href="/">Agent Reputation &amp; Trust Clearinghouse</a><nav aria-label="Primary"><a href="/">Directory</a><a href="/methodology.html">Methodology</a><a href="/changelog.html">Changelog</a></nav></header><main id="main">
 <h1 id="top">Methodology</h1>
 <p><em>Scoring rules v0.1, updated 2026-10-16 (Decision 0010).</em></p>
 <p>Each factor is scored 0–100 and shown separately, together with a weighted overall score.</p>
-<table><thead><tr><th>Factor</th><th>Weight</th><th>How it is judged</th></tr></thead><tbody>
-<tr><td>Completion rate</td><td>30%</td><td>Share of tasks completed as described, per public evidence.</td></tr>
-<tr><td>Disputes</td><td>20%</td><td>Documented complaints, legal or regulatory actions and security advisories concerning the agent; fewer = higher score. Pending cases are recorded as allegations, not findings. Errors in the agent's output are scored under Completion rate.</td></tr>
-<tr><td>Adherence to limits</td><td>25%</td><td>Stays within stated scope, permissions and safety limits.</td></tr>
-<tr><td>Evidence quality</td><td>25%</td><td>Independent third-party sources rate high; vendor claims low; anonymous anecdotes lowest.</td></tr>
+<table class="stack"><thead><tr><th scope="col">Factor</th><th scope="col">Weight</th><th scope="col">How it is judged</th></tr></thead><tbody>
+<tr><td data-label="Factor">Completion rate</td><td data-label="Weight">30%</td><td data-label="How it is judged">Share of tasks completed as described, per public evidence.</td></tr>
+<tr><td data-label="Factor">Disputes</td><td data-label="Weight">20%</td><td data-label="How it is judged">Documented complaints, legal or regulatory actions and security advisories concerning the agent; fewer = higher score. Pending cases are recorded as allegations, not findings. Errors in the agent's output are scored under Completion rate.</td></tr>
+<tr><td data-label="Factor">Adherence to limits</td><td data-label="Weight">25%</td><td data-label="How it is judged">Stays within stated scope, permissions and safety limits.</td></tr>
+<tr><td data-label="Factor">Evidence quality</td><td data-label="Weight">25%</td><td data-label="How it is judged">Independent third-party sources rate high; vendor claims low; anonymous anecdotes lowest.</td></tr>
 </tbody></table>
 <h2 id="rounding">Rounding</h2>
 <p>The overall score is calculated from the unrounded factor weights and then rounded to the nearest whole number. A result of exactly .5 is rounded up (for example, 53.5 is shown as 54). Factor scores are whole numbers and are not rounded further.</p>
@@ -19,13 +19,15 @@
 <p><strong>Counting:</strong> each study counts once, however many versions or links it has. A source counts only if it tested the product, version and scope covered by the entry. A source whose independence is only partial (for example, relying on data supplied by a customer) is labeled as such.</p>
 <h2 id="evidence-grade">Evidence grade</h2>
 <p>The evidence grade describes the amount and type of independent evidence behind a score, not how well the agent performs. It is set by this table, using independent performance sources as defined above:</p>
-<table><thead><tr><th>Grade</th><th>Independent performance sources</th></tr></thead><tbody>
-<tr><td>A</td><td>7 or more, at least 3 peer-reviewed, at least 1 testing the current version within the last 12 months</td></tr>
-<tr><td>B</td><td>5–6, or 7+ without meeting the A conditions</td></tr>
-<tr><td>B-</td><td>3–4</td></tr>
-<tr><td>Insufficient evidence</td><td>fewer than 3 (no grade and no overall score)</td></tr>
+<table class="stack"><thead><tr><th scope="col">Grade</th><th scope="col">Independent performance sources</th></tr></thead><tbody>
+<tr><td data-label="Grade">A</td><td data-label="Independent performance sources">7 or more, at least 3 peer-reviewed, at least 1 testing the current version within the last 12 months</td></tr>
+<tr><td data-label="Grade">B</td><td data-label="Independent performance sources">5–6, or 7+ without meeting the A conditions</td></tr>
+<tr><td data-label="Grade">B-</td><td data-label="Independent performance sources">3–4</td></tr>
+<tr><td data-label="Grade">Insufficient evidence</td><td data-label="Independent performance sources">fewer than 3 (no grade and no overall score)</td></tr>
 </tbody></table>
 <p>The evidence-quality factor score should be consistent with the grade (as a guide: A ≥ 85, B 70–84, B- 55–69). If they diverge, the decision packet explains why.</p>
+<h2 id="directory-order">Directory order</h2>
+<p>Entries with an overall score are listed from highest to lowest overall score. Equal scores are listed alphabetically by entry name (case-insensitive). Entries labeled Insufficient evidence are listed separately, alphabetically. Order is not a recommendation.</p>
 <h2 id="last-reviewed">Last reviewed</h2>
 <p>The date (America/New_York) an approved decision packet last re-checked an entry's sources and scores against the current rules. Wording, formatting or link-label fixes do not change it. A rules change that leaves an entry's outcome unchanged (e.g. Decision 0010) does not change it either. It is not a guarantee that information is current.</p>
 <h2 id="corrections">Corrections</h2>
@@ -37,5 +39,5 @@
 <li>Sending a request does not create any agreement or obligation.</li></ul>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules at the time of review, and do not represent verification beyond what is explicitly stated. No payments are handled. The Clearinghouse is not responsible for any agent's outcomes.</p>
-<footer><p>Informational only; not a guarantee, endorsement, or certification. Scores are based on public sources and the stated rules at the time of review. The Clearinghouse is not responsible for any agent's outcomes.</p><p><a href="/methodology.html">Methodology</a> · <a href="/changelog.html">Changelog</a> · <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">Request a correction</a></p></footer>
+</main><footer><p>Informational only; not a guarantee, endorsement, or certification. Scores are based on public sources and the stated rules at the time of review. The Clearinghouse is not responsible for any agent's outcomes.</p><p><a href="/methodology.html">Methodology</a> · <a href="/changelog.html">Changelog</a> · <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">Request a correction</a></p></footer>
 </body></html>
