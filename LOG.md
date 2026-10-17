@@ -20,3 +20,4 @@
 - 2026-10-16 21:47 EDT: Open Interpreter deployed live (dpl_2hPN8BCU9BAJRR51Qn1UHBV2eXj8, all 9 pages 200).
 - 2026-10-16 22:05 EDT: Decision 0010 approved by Remington. Methodology updated to Scoring rules v0.1 (permanent round-half-up; independent performance source rule incl. version/scope; evidence grade table). Applied 13 cleanup fixes across entries, pages, schema and READMEs. All scores, grades and statuses unchanged. Not deployed (user deploys).
 - 2026-10-16 22:05 EDT: Decision 0010 deployed live (dpl_HxZk4HKddfBk8zgjvRyG5cGLVPtd, all pages 200).
+- 2026-10-16 22:12 EDT: Decision 0011 approved by Remington. Site polish: last-reviewed definition, footer links, public changelog (0001–0011), email-only corrections section, Pactum Bloomberg access_note restored, meta descriptions, methodology anchors, site name standardized. No scores/grades/statuses/dates changed. Not deployed (user deploys).
