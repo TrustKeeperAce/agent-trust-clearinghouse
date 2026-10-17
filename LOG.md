@@ -118,3 +118,6 @@ Decision 0039 (UI-TARS Desktop, Computer-use agent, Insufficient evidence) was d
 
 ## 2026-10-17 — Deploy note
 Decision 0040 (Claude Code, Coding agent, 55 / A) was deployed as dpl_5wBy66qQbAbtqc9NeacXhcPLs6VR (commit 7263a24). Live check passed. The entry carries a visible note that the citation check is incomplete (about 13 candidate studies not yet screened). The SusVibes consistency flag is an open follow-up, and no other entries were changed. Batch 4 research continues privately with Aider (0041) under the faster workflow (Semantic Scholar 5–10 min, then OpenAlex; targeted checks by default).
+
+## 2026-10-17 — Deploy note
+Decision 0041 (Aider, Coding agent, 52 / A) was deployed as dpl_H6mb7pW2w5i4XpZr94BVWSbYbg6G (commit 70c8a80). Live check: pages return 200, and the score of 52 and the "Citation check incomplete — recheck later" note are live. Evidence quality is 80, below the suggested A range, as approved. The extended Semantic Scholar retry was fully rate-limited and found no new hits. Batch 4 research continues privately with AutoKaggle/AIDE (0042).
