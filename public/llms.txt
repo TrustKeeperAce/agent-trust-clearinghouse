@@ -36,6 +36,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [OpenFactCheck (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html): Insufficient evidence
 - [Pactum](https://agent-trust-clearinghouse.vercel.app/agents/pactum.html): Insufficient evidence
 - [Skyvern (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html): Insufficient evidence
+- [UI-TARS Desktop (ByteDance, open-source app)](https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html): Insufficient evidence
 
 ## Notes
 - Scores reflect public sources and the stated rules at the time of review; see each entry's sources and uncertainties.
