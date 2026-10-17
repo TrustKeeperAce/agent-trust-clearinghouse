@@ -1,0 +1,137 @@
+name: OpenHands (open-source)
+slug: openhands
+category: Coding agent
+type: Open-source coding-agent platform and Agent SDK (MIT licence, enterprise directory excepted), developed by All Hands AI; formerly OpenDevin
+homepage: https://github.com/OpenHands/OpenHands
+scope: The open-source OpenHands agent (CodeAct agent, later the OpenHands Agent SDK) run with a language model chosen by the user, from the OpenDevin releases of 2024 through OpenHands 1.27.1 (12 October 2026). The hosted OpenHands Cloud service and the enterprise directory are not covered.
+summary: OpenHands is an open-source coding agent that edits files, runs shell commands and browses the web inside a sandbox. It is run with a language model chosen by the user. Ten independent studies that ran it were found (five peer-reviewed). Results depend heavily on the model and task. They range from about 3% on .NET performance bugs and 4.4% medal rate on MLE-bench (GPT-4o, 2024) to 39.1% on long-horizon upgrade tasks, 46.12 on BeyondSWE and 48.15% on GitTaskBench with the strongest models. In a 2026 study of out-of-scope actions on routine tasks, OpenHands had the lowest rate of the frameworks tested (0.2-4.5%). A separate benchmark measured an average boundary-violation rate of 18.19%. Two CVEs have been published, one fixed in 1.5.0. A security researcher has published prompt-injection demonstrations, including token exfiltration and remote code execution. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 50
+  disputes: 55
+  adherence_to_limits: 55
+  evidence_quality: 85
+overall_score: 61
+evidence_grade: A
+independent_source_count:
+  performance: 10
+  peer_reviewed: 5
+  other: 6
+factor_notes:
+  completion_rate: 'MLE-bench (GPT-4o, 2024): 4.4% ± 1.4 any-medal rate, below AIDE; runs often ended early. ScienceAgentBench (CodeActAgent v1.9): Claude 3.5 Sonnet solved 21.6% with OpenHands vs 32.4% with plain self-debug at 17× the cost. GitTaskBench (OpenHands 0.33.0): best success 48.15% with Claude 3.7. PerfBench (GPT-4.1): about 3% on 81 .NET performance bugs. RoadmapBench: 5.2-39.1% across 13 models. BeyondSWE: best 46.12 average score (DeepSeek-V4-Pro). Dialogue SWE-Bench: 32.9% average resolve rate. PBT-Bench (SDK v1.11.5, July 2026): up to 83.4% bug recall (Sonnet 4.6).'
+  disputes: 'CVE-2026-33718 (command injection in the git diff handler, 1.5.0 up to the fix; CVSS 3.1 7.6 per GitHub, 9.9 per NVD; fixed in 1.5.0 per the advisory). CVE-2026-19022 (command injection in resolver/send_pull_request.py, up to 0.62.0; CVSS 3.1 6.3 per VulDB; NVD Deferred; VulDB notes the vendor deleted the original issue report and the file was removed in 1.7.0). Published prompt-injection demonstrations (Embrace The Red, August 2025): GITHUB_TOKEN exfiltration via rendered images and remote code execution. The developer responded publicly with mitigation guidance. No legal or regulatory action found.'
+  adherence_to_limits: 'Overeager Coding Agents (Griffith University et al., preprint May 2026; OpenHands 0.59.1): out-of-scope actions on benign tasks 0.2-4.5%, the lowest of four frameworks (Claude Code up to 27.7% with the same model). SWE-MISBEHAVIOR (National University of Singapore et al., preprint Oct 2026): average boundary-violation rate 18.19% for OpenHands, 12.31% with the authors'' mitigation. MLE-bench: agents ignored compute and time limits and overloaded machines. Confirmation mode and a security analyzer are available; the developer says model refusal is a soft, not hard, control.'
+  evidence_quality: Ten independent sources, five peer-reviewed (ICLR 2025 ×2, AAAI 2026, an ICSE 2026 workshop, NeurIPS 2026). Recent tests state versions (SDK v1.11.5, July 2026; OpenHands 0.59.1). Most are benchmark papers using OpenHands as a common scaffold; several propose competing agents (disclosed).
+sources:
+- url: https://arxiv.org/abs/2410.07095
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: CodeActAgent (OpenHands), with minor fixes by the authors
+  test_date: '2024'
+  accessed: '2026-10-17'
+  note: 'MLE-bench (OpenAI; ICLR 2025): OpenHands with GPT-4o won a medal on 4.4% ± 1.4 of 75 Kaggle competitions, vs 8.7% for AIDE; OpenHands and MLAB often ended runs early. Disclosure: authors work at a model developer, not at All Hands (Table 2; a per-complexity breakdown in Table 9 gives 5.1% ± 1.3)'
+- url: https://arxiv.org/abs/2410.05080
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: CodeActAgent v1.9
+  test_date: '2024'
+  accessed: '2026-10-17'
+  note: 'ScienceAgentBench (Ohio State University et al.; ICLR 2025): 102 data-driven science tasks; Claude 3.5 Sonnet 21.6% success with OpenHands vs 32.4% with self-debug at about 17× the API cost; GPT-4o was the only model that did better inside OpenHands'
+- url: https://arxiv.org/abs/2508.18993
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: OpenHands 0.33.0
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'GitTaskBench (AAAI 2026): repository-leveraging tasks; best result OpenHands + Claude 3.7, 48.15% task pass rate and 72.22% execution completion'
+- url: https://doi.org/10.1145/3786167.3788410
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (OpenHands with GPT-4.1)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'PerfBench (Microsoft; AGENT ''26 workshop at ICSE 2026, peer-reviewed proceedings; preprint Sept 2025): baseline OpenHands with GPT-4.1 about 3% on 81 .NET performance-bug tasks; the authors'' OpenHands-Perf-Agent about 20%. Disclosure: Microsoft makes the competing GitHub Copilot coding agent'
+- url: https://arxiv.org/abs/2605.15229
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: OpenHands SDK v1.11.5
+  test_date: 2026 (frontier runs July 2026)
+  accessed: '2026-10-17'
+  note: 'PBT-Bench (University of Washington; NeurIPS 2026 Datasets & Benchmarks): property-based testing; best bug recall 83.4% (Sonnet 4.6) on OpenHands; Opus 4.8 81.2% on OpenHands vs 78.6% in Claude Code'
+- url: https://arxiv.org/abs/2605.15846
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'RoadmapBench (UniPat AI, Peking University et al.; preprint May 2026): 115 long-horizon version-upgrade tasks; 5.2-39.1% resolved across 13 models (Claude Opus 4.7 best); top models scored similarly on Terminus 2'
+- url: https://arxiv.org/abs/2603.03194
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: OpenHands Agent SDK (version unstated)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'BeyondSWE (Renmin University of China et al.; preprint Mar/May 2026): 500 tasks; best OpenHands result 46.12 (DeepSeek-V4-Pro) vs 48.48 for the Codex harness with GPT-5.4. Competing-author disclosure: proposes SearchSWE'
+- url: https://arxiv.org/abs/2606.13995
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: OpenHands Agent SDK (version unstated)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Dialogue SWE-Bench (UC Santa Cruz; preprint June 2026): SWE-bench Verified as dialogues with a simulated user; OpenHands 32.9% average resolved, OpenHands interactive variant 44.1%, the authors'' schema-guided agent 46.9%. Competing-author disclosure'
+- url: https://arxiv.org/abs/2605.18583
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: OpenHands 0.59.1
+  test_date: 2025-2026
+  accessed: '2026-10-17'
+  note: 'Overeager Coding Agents (Griffith University, NTU, UNSW et al.; preprint May 2026): out-of-scope actions on benign tasks 0.2-4.5% for OpenHands vs up to 27.7% for Claude Code with the same model'
+- url: https://arxiv.org/abs/2610.18206
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE-MISBEHAVIOR (National University of Singapore, A*STAR, Salesforce AI Research et al.; preprint Oct 2026): average misbehaviour (boundary-violation) rate 18.19% across categories for vanilla OpenHands, 12.31% with the authors'' mitigation. Competing-author disclosure'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-33718
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-33718: command injection in get_git_diff(), from 1.5.0 per NVD; GitHub advisory GHSA-7h8w-hj9j-8rjw lists versions below 1.5.0 as affected and 1.5.0 as patched (the two records differ). CVSS 3.1 7.6 (GitHub) / 9.9 (NVD). NVD Analyzed'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-19022
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-19022: command injection in resolver/send_pull_request.py, up to 0.62.0; CVSS 3.1 6.3 (VulDB); NVD Deferred; the affected file appears removed in 1.7.0'
+- url: https://embracethered.com/blog/posts/2025/openhands-the-lethal-trifecta-strikes-again/
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Embrace The Red (Johann Rehberger), Aug 2025: prompt-injection demonstration exfiltrating GITHUB_TOKEN through image rendering'
+- url: https://embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Embrace The Red, Aug 2025: prompt injection leading to download and execution of command-and-control malware; shared with the All Hands team'
+- url: https://www.openhands.dev/blog/mitigating-prompt-injection-attacks-in-software-agents
+  kind: other
+  accessed: '2026-10-17'
+  note: 'All Hands AI blog (developer statement): mitigations (sandbox, confirmation mode, security analyzer); describes model refusal as a soft block'
+- url: https://arxiv.org/abs/2504.02605
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Multi-SWE-bench (ByteDance; NeurIPS 2025): tests MopenHands, a substantially modified multilingual fork; listed, not counted as a test of OpenHands'
+- url: https://arxiv.org/abs/2407.16741
+  kind: vendor
+  accessed: '2026-10-17'
+  note: 'OpenHands paper (All Hands AI / academic co-authors; ICLR 2025): developer results, not counted'
+- url: https://arxiv.org/abs/2507.06134
+  kind: not counted (affiliated)
+  accessed: '2026-10-17'
+  note: 'OpenAgentSafety (ICLR 2026): co-author Graham Neubig is All Hands AI chief scientist; excluded as developer-affiliated'
+- url: https://www.swebench.com/
+  kind: not counted (leaderboard)
+  accessed: '2026-10-17'
+  note: SWE-bench leaderboard entries submitted by All Hands; vendor-reported / maintainer-verified leaderboard, listed not counted (0036 cautions 1 and 3)
+uncertainties:
+- Results depend heavily on the model and task; most counted studies use OpenHands as a common scaffold to compare models, so results reflect model and scaffold together.
+- Evidence grade A relies on PBT-Bench (NeurIPS 2026), which states OpenHands SDK v1.11.5 with runs in July 2026; the latest app release is 1.27.1 (12 October 2026).
+- Many more papers run OpenHands than are counted here; the counted set is a representative sample of independent studies found, not an exhaustive list.
+- PerfBench appeared in peer-reviewed workshop proceedings (AGENT 2026 at ICSE).
+- 'CVE-2026-33718: NVD and the GitHub advisory differ on the affected version range and the CVSS score; both are shown.'
+- MLE-bench reports 4.4% ± 1.4 any-medal rate in its main table and 5.1% ± 1.3 in a per-complexity appendix table.
