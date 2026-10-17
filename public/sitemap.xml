@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://agent-trust-clearinghouse.vercel.app/agents/clay.html</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://agent-trust-clearinghouse.vercel.app/agents/elicit.html</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html</loc><lastmod>2026-10-17</lastmod></url>
@@ -13,5 +14,5 @@
   <url><loc>https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://agent-trust-clearinghouse.vercel.app/changelog.html</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://agent-trust-clearinghouse.vercel.app/</loc><lastmod>2026-10-17</lastmod></url>
-  <url><loc>https://agent-trust-clearinghouse.vercel.app/methodology.html</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://agent-trust-clearinghouse.vercel.app/methodology.html</loc><lastmod>2026-10-17</lastmod></url>
 </urlset>
