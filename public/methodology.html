@@ -1,19 +1,32 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Methodology — Agent Trust Clearinghouse</title><link rel="stylesheet" href="/style.css"></head><body>
 <nav><a href="/">Directory</a><a href="/methodology.html">Methodology</a></nav>
-<h1>Methodology (Scoring rules v0)</h1>
+<h1>Methodology</h1>
+<p><em>Scoring rules v0.1, updated 2026-10-16 (Decision 0010).</em></p>
 <p>Each factor is scored 0–100 and shown separately, together with a weighted overall score.</p>
 <table><thead><tr><th>Factor</th><th>Weight</th><th>How it is judged</th></tr></thead><tbody>
 <tr><td>Completion rate</td><td>30%</td><td>Share of tasks completed as described, per public evidence.</td></tr>
-<tr><td>Disputes</td><td>20%</td><td>Fewer documented disputes or complaints = higher score.</td></tr>
+<tr><td>Disputes</td><td>20%</td><td>Documented complaints, legal or regulatory actions and security advisories concerning the agent; fewer = higher score. Pending cases are recorded as allegations, not findings. Errors in the agent's output are scored under Completion rate.</td></tr>
 <tr><td>Adherence to limits</td><td>25%</td><td>Stays within stated scope, permissions and safety limits.</td></tr>
 <tr><td>Evidence quality</td><td>25%</td><td>Independent third-party sources rate high; vendor claims low; anonymous anecdotes lowest.</td></tr>
 </tbody></table>
 <h2>Rounding</h2>
-<p>The overall score is rounded to the nearest whole number. Interim: exact .5 rounds up.</p>
+<p>The overall score is calculated from the unrounded factor weights and then rounded to the nearest whole number. A result of exactly .5 is rounded up (for example, 53.5 is shown as 54). Factor scores are whole numbers and are not rounded further.</p>
 <h2>Insufficient evidence</h2>
-<p>If an agent has fewer than 3 independent sources, it is labeled <strong>"Insufficient evidence"</strong> and no overall score is given.</p>
+<p>An overall score is given only when there are at least <strong>3 independent performance sources</strong>. Otherwise the entry is labeled <strong>"Insufficient evidence"</strong> and no overall score is given; factor notes may still be shown.</p>
+<p><strong>Performance source:</strong> a source that tests or measures the agent's performance, behaviour or outcomes, such as a benchmark, research study, documented hands-on test, security or safety evaluation, or audit, and reports its method and results. Product descriptions, reviews, user-review aggregates, press coverage without original testing, commentary, court filings and vulnerability listings are recorded as <strong>other sources</strong>. They can inform factor scores but do not count toward the 3.</p>
+<p><strong>Independent:</strong> not produced, funded or co-authored by the vendor/maintainer or by a customer's staff, and not published by a competing product to promote itself. Studies by researchers who propose a competing research method may count; this is disclosed on the entry.</p>
+<p><strong>Counting:</strong> each study counts once, however many versions or links it has. A source counts only if it tested the product, version and scope covered by the entry. A source whose independence is only partial (for example, relying on data supplied by a customer) is labeled as such.</p>
+<h2>Evidence grade</h2>
+<p>The evidence grade describes the amount and type of independent evidence behind a score, not how well the agent performs. It is set by this table, using independent performance sources as defined above:</p>
+<table><thead><tr><th>Grade</th><th>Independent performance sources</th></tr></thead><tbody>
+<tr><td>A</td><td>7 or more, at least 3 peer-reviewed, at least 1 testing the current version within the last 12 months</td></tr>
+<tr><td>B</td><td>5–6, or 7+ without meeting the A conditions</td></tr>
+<tr><td>B-</td><td>3–4</td></tr>
+<tr><td>Insufficient evidence</td><td>fewer than 3 (no grade and no overall score)</td></tr>
+</tbody></table>
+<p>The evidence-quality factor score should be consistent with the grade (as a guide: A ≥ 85, B 70–84, B- 55–69). If they diverge, the decision packet explains why.</p>
 <h2>Disclaimer</h2>
-<p>This directory is informational only. Scores reflect public sources and the stated rules at the time of review. They are not guarantees, endorsements, certifications, or verification beyond what is explicitly stated. No payments are handled. The Clearinghouse is not responsible for any agent's outcomes.</p>
-<footer><p>Informational only. Scores are based on public sources and stated rules; they are not guarantees, endorsements, or certifications. The Clearinghouse is not responsible for any agent's outcomes.</p></footer>
+<p>Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules at the time of review, and do not represent verification beyond what is explicitly stated. No payments are handled. The Clearinghouse is not responsible for any agent's outcomes.</p>
+<footer><p>Informational only; not a guarantee, endorsement, or certification. Scores are based on public sources and the stated rules at the time of review. The Clearinghouse is not responsible for any agent's outcomes.</p></footer>
 </body></html>

@@ -4,70 +4,71 @@ category: verification
 type: commercial
 homepage: https://www.perplexity.ai/
 scope: Citation-backed answering and source attribution only; not a general product review.
-summary: 'Perplexity is a commercial AI answer engine; this entry covers only its citation and source-attribution behavior. In independent evaluations (CJR Tow Center, 2025; Findings of EMNLP 2023; DeepResearch Bench, ICLR 2026; DeepResearchGym, ICTIR 2026; Deep Research Comparator, WWW 2026 Companion; Mind2Web 2, NeurIPS 2025), results varied by product mode: its Deep Research mode scored comparatively high on citation accuracy, while news-attribution tests found a share of incorrect or syndicated citations. Several publishers have filed copyright lawsuits against Perplexity that are pending; these are allegations, not findings. Informational only; not an endorsement or certification.'
+summary: 'Perplexity is a commercial AI answer engine; this entry covers only its citation and source-attribution behavior. In independent evaluations (CJR Tow Center, 2025; Findings of EMNLP 2023; DeepResearch Bench, ICLR 2026; DeepResearchGym, ICTIR 2026; Deep Research Comparator, WWW 2026 Companion; Mind2Web 2, NeurIPS 2025), results varied by product mode: its Deep Research mode scored comparatively high on citation accuracy, while news-attribution tests found a share of incorrect or syndicated citations. Several publishers have filed copyright lawsuits against Perplexity that are pending; these are allegations, not findings. Informational only; not a guarantee, endorsement, or certification.'
 scores:
   completion_rate: 55
   disputes: 35
   adherence_to_limits: 45
   evidence_quality: 75
-score_rationales:
+factor_notes:
   completion_rate: In CJR's news-attribution test, 37% of answers were incorrect (the lowest error rate of 8 tools tested); Mind2Web 2 success rates were 8% (Pro Search) and 15% (Deep Research). Judgment call.
   disputes: Several publishers have filed copyright lawsuits that are pending (allegations, not findings); CJR also reported attribution to syndicated copies. Judgment call.
   adherence_to_limits: CJR's results suggest, in CJR's words, that Perplexity 'may have disregarded' one publisher's robots.txt preferences; Perplexity states it respects robots.txt. Vendor plan-limit descriptions appeared inconsistent. Judgment call.
   evidence_quality: Six independent performance sources (five in peer-reviewed venues, plus CJR), covering different product modes and dates (2023–2025). Judgment call.
 overall_score: 54
-overall_note: '0.30*55 + 0.20*35 + 0.25*45 + 0.25*75 = 53.5; interim practice: exact .5 rounds up'
+overall_note: 0.30*55 + 0.20*35 + 0.25*45 + 0.25*75 = 53.5; exact .5 rounds up (Decision 0010)
 evidence_grade: B
 independent_source_count:
   performance: 6
   other: 3
+  count_note: 'Other: 3 court records.'
 legal_disputes:
 - Dow Jones & Co. and NYP Holdings filed suit (S.D.N.Y. 1:24-cv-07984), alleging copyright infringement, false designation of origin and trademark dilution. The court denied Perplexity's motion to dismiss or transfer on 2025-08-21; the case is pending.
 - Encyclopaedia Britannica and Merriam-Webster filed suit on 2025-09-10 (S.D.N.Y. 1:25-cv-07546), alleging copyright infringement; the case is pending.
 - Chicago Tribune Company filed suit on 2025-12-04, and The New York Times Company filed suit on 2025-12-05 (S.D.N.Y. 1:25-cv-10106), alleging copyright infringement; both are pending.
 sources:
 - url: https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: 'CJR Tow Center (2025): news citation/attribution test; free Perplexity and Perplexity Pro'
 - url: https://aclanthology.org/2023.findings-emnlp.467/
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: 'Liu et al., Findings of EMNLP 2023: citation recall/precision (perplexity.ai, 2023)'
 - url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: 'DeepResearch Bench (ICLR 2026): Perplexity Deep Research citation accuracy'
 - url: https://arxiv.org/abs/2505.19253
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: 'DeepResearchGym (ICTIR 2026): sonar-deepresearch citation precision/recall'
 - url: https://arxiv.org/html/2507.05495v2
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: 'Deep Research Comparator (WWW 2026 Companion): human span annotations'
 - url: https://openreview.net/forum?id=AUaW6DS9si
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: 'Mind2Web 2 (NeurIPS 2025 D&B): task success with source attribution'
 - url: https://storage.courtlistener.com/recap/gov.uscourts.nysd.630270/gov.uscourts.nysd.630270.65.0.pdf
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'Court record: Dow Jones & Co. and NYP Holdings v. Perplexity AI (S.D.N.Y.), opinion and order'
 - url: https://www.pacermonitor.com/public/case/60086917/Encyclopaedia_Britannica,_Inc_et_al_v_Perplexity_AI,_Inc
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'Docket: Encyclopaedia Britannica and Merriam-Webster v. Perplexity AI (S.D.N.Y.)'
 - url: https://storage.courtlistener.com/recap/gov.uscourts.nysd.654190/gov.uscourts.nysd.654190.3.0.pdf
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'Court record: The New York Times Company related-case statement (S.D.N.Y.)'
 - url: https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Perplexity Help Center: Pro Search and citations'
 - url: https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Perplexity Help Center: plan limits'
 uncertainties:
@@ -75,7 +76,8 @@ uncertainties:
 - Vendor help-center pages could not be fetched directly during review; plan limits are not verified.
 - Lawsuits are pending allegations, not findings.
 - The robots.txt point is CJR's interpretation, stated by CJR as a suggestion.
-- The overall score is exactly 53.5; under interim practice, exact .5 rounds up.
+- The overall score is exactly 53.5; exact .5 rounds up (Decision 0010).
 last_reviewed: '2026-10-16'
+decision: APPROVED
 decision_packet: decisions/0004-perplexity.md
 notes: Informational only; not a guarantee, endorsement, or certification.

@@ -81,3 +81,5 @@ Proposed public wording: "SAFE (Search-Augmented Factuality Evaluator) is open r
 - **Agreement:** the share of facts where SAFE's label matches the humans' label.
 - **Pearson correlation:** how closely scores move together (1 means a perfect match).
 - **Claim extraction:** splitting text into individual checkable statements.
+
+> **Erratum (Decision 0010, 2026-10-16):** methodology.html had no evidence-grade table when this packet was written; grades were assigned by comparison with similar entries. The table was added in Scoring rules v0.1 (Decision 0010); this entry's grade (B-) and score (66) are unchanged under it.

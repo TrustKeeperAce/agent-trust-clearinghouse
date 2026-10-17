@@ -4,7 +4,7 @@ category: data enrichment
 type: commercial
 homepage: https://www.clay.com/
 scope: Claygent (AI web-research agent) and enrichment features
-summary: Clay is a commercial data-enrichment platform; this entry covers its AI research agent (Claygent) and enrichment features. Public evidence consists mainly of vendor materials, including internal benchmarks, plus small self-published practitioner tests and user-review aggregates. We found no independent benchmark of Claygent's accuracy, so no overall score is given. Insufficient evidence. Informational only; not an endorsement or certification.
+summary: Clay is a commercial data-enrichment platform; this entry covers its AI research agent (Claygent) and enrichment features. Public evidence consists mainly of vendor materials, including internal benchmarks, plus small self-published practitioner tests and user-review aggregates. We found no independent benchmark of Claygent's accuracy, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
 status: Insufficient evidence
 scores:
   completion_rate: null
@@ -12,72 +12,74 @@ scores:
   adherence_to_limits: null
   evidence_quality: null
 factor_notes:
-  Completion rate: No independent completion or accuracy data; only vendor-internal figures and small practitioner tests.
-  Disputes: No lawsuits, regulatory actions, or data-protection complaints concerning Clay were found.
-  Adherence to limits: The vendor documents credit allowances, per-run budgets, and API rate limits; not independently tested.
-  Evidence quality: No independent evaluations found; available evidence is vendor, partner marketing, secondary, and anecdotal.
+  completion_rate: No independent completion or accuracy data; only vendor-internal figures and small practitioner tests.
+  disputes: No lawsuits, regulatory actions, or data-protection complaints concerning Clay were found.
+  adherence_to_limits: The vendor documents credit allowances, per-run budgets, and API rate limits; not independently tested.
+  evidence_quality: No independent evaluations found; available evidence is vendor, partner marketing, secondary, and anecdotal.
+overall_score: null
+evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 0
   other: 0
-evidence_grade: Insufficient evidence
-overall_score: null
 sources:
 - url: https://www.clay.com/blog/introducing-gpt-5-in-claygent
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Clay blog: GPT-5 in Claygent (vendor claim based on an internal, unpublished test set; not a finding)'
 - url: https://university.clay.com/docs/data-test-methodology-personal-emails
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Clay University: vendor-run test of personal-email data providers (vendor claim; covers providers, not Claygent)'
 - url: https://university.clay.com/docs/plans-and-billing
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Clay University: plans and billing (credit allowances, top-ups)'
 - url: https://university.clay.com/docs/ai-tokens
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Clay University: AI tokens (per-run budgets, output caps, own-key provider tier minimums)'
 - url: https://developers.clay.com/public-api/rate-limits
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Clay developer docs: API rate limits (HTTP 429 with Retry-After)'
 - url: https://www.clay.com/dpa
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Clay Data Processing Addendum (describes controller/processor roles)
 - url: https://www.clay.com/privacy
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Clay privacy policy
 - url: https://openai.com/index/clay/
-  kind: partner marketing (page returned 403 to automated fetch)
+  kind: customer or partner
   accessed: '2026-10-16'
-  note: OpenAI customer story on Clay
+  note: OpenAI customer story on Clay (partner marketing)
+  access_note: could not be fetched automatically (HTTP 403)
 - url: https://www.zenml.io/llmops-database/production-evaluation-and-data-foundations-for-go-to-market-agents
-  kind: secondary (summarizes a Clay presentation)
+  kind: independent other
   accessed: '2026-10-16'
-  note: 'ZenML LLMOps Database: summary of Clay''s evaluation practices'
+  note: 'ZenML LLMOps Database: summary of Clay''s evaluation practices (secondary; summarizes a Clay presentation)'
 - url: https://www.linkedin.com/posts/samholding_i-tested-clays-3-ai-research-agents-for-activity-7265271012445900800-njpL
-  kind: anecdotal practitioner
+  kind: anecdotal
   accessed: '2026-10-16'
-  note: 'LinkedIn post: 10-row comparison of Claygent models'
+  note: 'LinkedIn post: 10-row comparison of Claygent models (anecdotal practitioner)'
 - url: https://www.linkedin.com/posts/dan-m-rosenthal_clay-just-released-their-new-web-scraper-activity-7219339139194781699-qldw
-  kind: anecdotal practitioner
+  kind: anecdotal
   accessed: '2026-10-16'
-  note: 'LinkedIn post: 1,000-task coverage test (accuracy not evaluated)'
+  note: 'LinkedIn post: 1,000-task coverage test (accuracy not evaluated) (anecdotal practitioner)'
 - url: https://www.linkedin.com/posts/imran-izham-01b4742ab_i-activity-7487468031762374657-RGU5
-  kind: anecdotal practitioner
+  kind: anecdotal
   accessed: '2026-10-16'
-  note: 'LinkedIn post: 100-row comparison graded against Clay''s own output'
+  note: 'LinkedIn post: 100-row comparison graded against Clay''s own output (anecdotal practitioner)'
 - url: https://ai.g2.com/evaluations/categories/ai-sdr/clay-claygent
-  kind: anecdotal aggregate
+  kind: anecdotal
   accessed: '2026-10-16'
-  note: 'G2: user-review aggregate (232 reviews); G2 task evaluation listed as not evaluated'
+  note: 'G2: user-review aggregate (232 reviews); G2 task evaluation listed as not evaluated (anecdotal aggregate)'
 - url: https://www.trustpilot.com/review/clay.com
-  kind: anecdotal aggregate (page returned 403 to automated fetch; small sample, about 9 reviews)
+  kind: anecdotal
   accessed: '2026-10-16'
-  note: 'Trustpilot: user-review aggregate'
+  note: 'Trustpilot: user-review aggregate (anecdotal aggregate; small sample, about 9 reviews)'
+  access_note: could not be fetched automatically (HTTP 403)
 uncertainties:
 - No independent benchmark of Claygent's accuracy was found.
 - Practitioner tests are small and self-published, use differing methods, and one grades against Clay's own output.
@@ -85,5 +87,6 @@ uncertainties:
 - Vendor accuracy figures are vendor claims, not findings.
 - User-review aggregates are anecdotal; Trustpilot's sample is small and its page could not be fetched automatically.
 last_reviewed: '2026-10-16'
+decision: APPROVED
 decision_packet: decisions/0006-clay.md
 notes: Informational only; not a guarantee, endorsement, or certification.

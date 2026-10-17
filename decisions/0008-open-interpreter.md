@@ -75,3 +75,5 @@ Proposed public wording: "Open Interpreter is an open-source agent that runs cod
 - **auto_run / -y:** runs code without asking first.
 - **Prompt injection:** hidden instructions placed in content the agent reads.
 - **Preprint:** a paper that has not been peer-reviewed.
+
+> **Erratum (Decision 0010, 2026-10-16):** methodology.html had no evidence-grade table when this packet was written; grades were assigned by comparison with similar entries. The table was added in Scoring rules v0.1 (Decision 0010); the hypothetical grade mentioned here was never used; the entry remains Insufficient evidence.

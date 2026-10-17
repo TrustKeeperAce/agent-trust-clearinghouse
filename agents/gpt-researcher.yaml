@@ -3,14 +3,14 @@ slug: gpt-researcher
 category: research
 type: open-source
 homepage: https://github.com/assafelovic/gpt-researcher
-summary: GPT Researcher is an open-source research agent that writes cited reports. In independent evaluations (DeepResearchGym, ICTIR 2026; Deep Research Comparator, WWW 2026 Companion; TTD-DR preprint), results ranged from comparatively strong on citation quality to lower than a commercial deep-research system in head-to-head comparisons. Results vary with the AI model and search provider used. Informational only; not an endorsement or certification.
+summary: GPT Researcher is an open-source research agent that writes cited reports. In independent evaluations (DeepResearchGym, ICTIR 2026; Deep Research Comparator, WWW 2026 Companion; TTD-DR preprint), results ranged from comparatively strong on citation quality to lower than a commercial deep-research system in head-to-head comparisons. Results vary with the AI model and search provider used. Informational only; not a guarantee, endorsement, or certification.
 security: Public vulnerability databases (NVD and GitHub Advisory Database) list 7 security advisories (2 Critical, 3 High, 2 Medium). The maintainer has fixed one; several others concern the self-hosted server, which the project's security policy says ships without built-in authentication and is intended for trusted environments only. Status may change; see linked sources.
 scores:
   completion_rate: 55
   disputes: 40
   adherence_to_limits: 50
   evidence_quality: 65
-score_rationales:
+factor_notes:
   completion_rate: No published completion-rate figure. Independent studies show complete cited reports, with mixed head-to-head results. Judgment call.
   disputes: No user disputes found. Public databases list 7 security advisories; one is fixed per the maintainer. Judgment call.
   adherence_to_limits: Configurable limits are documented by the project. The self-hosted server ships without built-in authentication per its security policy. Judgment call.
@@ -19,78 +19,79 @@ overall_score: 53
 evidence_grade: B-
 independent_source_count:
   performance: 3
-  security: 2
+  other: 2
+  count_note: 'Other: 2 security databases (NVD, GitHub Advisory Database).'
 sources:
 - url: https://arxiv.org/abs/2505.19253
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: DeepResearchGym benchmark results (arXiv v3)
 - url: https://www.cs.cmu.edu/~callan/Papers/ictir26-Jo%C3%A3o_Coelho.pdf
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: DeepResearchGym ICTIR 2026 camera-ready
 - url: https://dl.acm.org/doi/10.1145/3805713.3820409
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: DeepResearchGym ACM DL record
 - url: https://arxiv.org/abs/2507.05495
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: Deep Research Comparator human-preference evaluation
 - url: https://dl.acm.org/doi/10.1145/3774905.3793116
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: Deep Research Comparator ACM DL record (WWW 2026 Companion)
 - url: https://arxiv.org/abs/2507.16075
-  kind: independent
+  kind: independent performance
   accessed: '2026-10-16'
   note: TTD-DR preprint; GPT-Researcher as a baseline
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-5625
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'NVD: XSS (Medium)'
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-5630
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'NVD: XSS (Medium)'
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-5631
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'NVD: code injection (High)'
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-5632
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'NVD: missing authentication (High)'
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-5633
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'NVD: SSRF (High)'
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-37006
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'NVD: WebSocket code execution (Critical)'
 - url: https://github.com/advisories/GHSA-8j86-h8gg-797p
-  kind: independent
+  kind: independent other
   accessed: '2026-10-16'
   note: 'GitHub Advisory: CVE-2025-65720 (Critical)'
 - url: https://github.com/assafelovic/gpt-researcher/pull/1820
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'Maintainer sanitization fix (PR #1820)'
 - url: https://github.com/assafelovic/gpt-researcher/blob/main/SECURITY.md
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Project security policy / threat model
 - url: https://github.com/assafelovic/gpt-researcher/blob/main/deep_agents/BENCHMARK.md
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Maintainer self-reported benchmark
 - url: https://docs.gptr.dev/docs/gpt-researcher/gptr/config
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Documented configuration limits
 - url: https://github.com/assafelovic/gpt-researcher
-  kind: vendor
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Project repository
 uncertainties:
@@ -99,5 +100,6 @@ uncertainties:
 - One independent evaluation (TTD-DR) is a preprint by authors comparing against their own system.
 - No independent completion-rate or cost data was found.
 last_reviewed: '2026-10-16'
+decision: APPROVED
 decision_packet: decisions/0002-gpt-researcher.md
 notes: Informational only; not a guarantee, endorsement, or certification.

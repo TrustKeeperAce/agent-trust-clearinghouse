@@ -95,3 +95,5 @@ Reasons: covers all five categories with commercial and open-source mixes, inclu
 - **Unmaintained:** No recent updates or fixes from the project's developers.
 - **Insufficient evidence:** We found fewer than 3 independent sources, so we don't give an overall score.
 - **Decision packet:** A short document like this one that lays out facts, rules, risks and a recommendation for approval.
+
+> **Note (Decision 0010, 2026-10-16):** the definition of "independent source" above is superseded by the "independent performance source" rule in Scoring rules v0.1 (decisions/0010-rules-clarifications.md, public/methodology.html). Journalism without original testing is an "other" source and does not count toward the 3.

@@ -1,23 +1,38 @@
 # EXAMPLE SCHEMA ONLY — this is NOT a real agent and NOT a published entry.
-# Copy to <agent-slug>.yaml only after an approved decision packet.
+# Copy to <agent-slug>.yaml only after an approved decision packet. Rules: Scoring rules v0.1 (Decision 0010).
 name: "Example Agent (fictional)"      # display name
 slug: example-agent                     # file name without .yaml
-category: research                      # research | verification | negotiation | data-enrichment | simple-analysis
-type: commercial                        # commercial | open-source
+category: research                      # research | verification | negotiation | data enrichment | simple analysis
+type: commercial                        # commercial | open-source | research code
 homepage: "https://example.com"         # placeholder
-last_reviewed: "YYYY-MM-DD"             # America/New_York date
-sources:                                 # every claim must cite a source
-  - url: "https://example.com/source"
-    kind: independent                   # independent | vendor | anonymous
-    accessed: "YYYY-MM-DD"
-    note: "What this source supports"
-scores:                                  # each 0-100, shown separately
+scope: "What the entry covers"          # optional
+summary: "Approved public summary. Informational only; not a guarantee, endorsement, or certification."
+status: "Insufficient evidence"         # only when < 3 independent performance sources; omit otherwise
+scores:                                  # each 0-100 (whole numbers), shown separately; null if insufficient evidence
   completion_rate: null                 # weight 30%
   disputes: null                        # weight 20% (fewer = higher)
   adherence_to_limits: null             # weight 25%
   evidence_quality: null                # weight 25%
-independent_source_count: 0
-evidence_grade: "Insufficient evidence" # < 3 independent sources => no overall score
-overall_score: null                     # weighted overall, or null if insufficient evidence
+factor_notes:                            # one note per factor, same keys as scores (scored and unscored entries)
+  completion_rate: ""
+  disputes: ""
+  adherence_to_limits: ""
+  evidence_quality: ""
+overall_score: null                     # weighted overall rounded to whole number (exact .5 rounds up), or null
+overall_note: ""                        # optional; required when the unrounded overall is exactly .5
+evidence_grade: "Insufficient evidence" # A | B | B- | Insufficient evidence (see methodology table)
+independent_source_count:
+  performance: 0                        # independent performance sources in scope (counts toward the 3)
+  other: 0                              # other independent sources (do not count)
+  count_note: ""                        # optional qualifier (e.g. partly independent, limited, out of scope)
+sources:                                 # every claim must cite a source
+  - url: "https://example.com/source"
+    kind: independent performance       # independent performance | independent other | vendor or maintainer | customer or partner | competitor | anecdotal
+    accessed: "YYYY-MM-DD"              # America/New_York date
+    note: "What this source supports (detail, e.g. preprint, peer-reviewed)"
+    access_note: ""                     # optional: "could not be fetched automatically (HTTP 403)" | "could not be fetched automatically (HTTP 429); read via search index" | "could not be fetched (HTTP 404)" | "not reviewed (paywalled)"
+uncertainties: []
+last_reviewed: "YYYY-MM-DD"             # America/New_York date
+decision: APPROVED
 decision_packet: "decisions/NNNN-....md"
 notes: "Informational only; not a guarantee, endorsement, or certification."

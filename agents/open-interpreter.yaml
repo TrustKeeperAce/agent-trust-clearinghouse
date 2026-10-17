@@ -4,7 +4,7 @@ category: simple analysis
 type: open-source (Apache-2.0)
 homepage: https://github.com/openinterpreter/openinterpreter
 scope: Local code-executing agent for data analysis and automation
-summary: Open Interpreter is an open-source agent that runs code on the user's computer from natural-language instructions. Its repository now tracks a rewrite built on Codex; the earlier Python version continues in a community fork. Independent security studies, mostly preprints and self-published projects, tested the earlier Python version; we found no independent evaluation of the current product, so no overall score is given. Insufficient evidence. Informational only; not an endorsement or certification.
+summary: Open Interpreter is an open-source agent that runs code on the user's computer from natural-language instructions. Its repository now tracks a rewrite built on Codex; the earlier Python version continues in a community fork. Independent security studies, mostly preprints and self-published projects, tested the earlier Python version; we found no independent evaluation of the current product, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
 status: Insufficient evidence
 scores:
   completion_rate: null
@@ -12,68 +12,69 @@ scores:
   adherence_to_limits: null
   evidence_quality: null
 factor_notes:
-  Completion rate: No independent evaluation of Open Interpreter's own task success was found; one benchmark used it only as a fixed harness to compare models.
-  Disputes: No lawsuits or regulatory actions were found. No CVE (NVD) or reviewed GitHub Advisory Database entry was found. Public reports allege security issues in the earlier Python version; the maintainer closed them as concerning the legacy product.
-  Adherence to limits: Studies report high attack-success rates for the earlier Python version in risky-code and prompt-injection tests. Documentation for that version describes confirmation before running code unless auto-run is enabled, and an experimental safe mode that is off by default. The current product's sandbox and approval modes have not been independently evaluated.
-  Evidence quality: No independent evaluation of the current product; studies of the earlier Python version are preprints or self-published, none peer-reviewed.
-independent_source_count:
-  performance_or_behaviour_current_product: 0
-  behaviour_earlier_python_version: 3
-evidence_grade: Insufficient evidence
+  completion_rate: No independent evaluation of Open Interpreter's own task success was found; one benchmark used it only as a fixed harness to compare models.
+  disputes: No lawsuits or regulatory actions were found. No CVE (NVD) or reviewed GitHub Advisory Database entry was found. Public reports allege security issues in the earlier Python version; the maintainer closed them as concerning the legacy product.
+  adherence_to_limits: Studies report high attack-success rates for the earlier Python version in risky-code and prompt-injection tests. Documentation for that version describes confirmation before running code unless auto-run is enabled, and an experimental safe mode that is off by default. The current product's sandbox and approval modes have not been independently evaluated.
+  evidence_quality: No independent evaluation of the current product; studies of the earlier Python version are preprints or self-published, none peer-reviewed.
 overall_score: null
+evidence_grade: Insufficient evidence
+independent_source_count:
+  performance: 0
+  other: 7
+  count_note: 0 for the current product; 3 behaviour studies of the earlier Python version are outside the entry scope and not counted.
 sources:
 - url: https://arxiv.org/abs/2602.19547
-  kind: independent behaviour study (arXiv preprint, not peer-reviewed; earlier Python version)
+  kind: independent performance
   accessed: '2026-10-16'
-  note: 'CIBER (2026): security benchmark of code interpreter agents'
+  note: 'CIBER (2026): security benchmark of code interpreter agents (arXiv preprint, not peer-reviewed; earlier Python version) [outside entry scope; not counted]'
 - url: https://mr-sarthakgupta.github.io/redcode-evaluation-framework.html
-  kind: independent behaviour study (self-published project; earlier Python version)
+  kind: independent performance
   accessed: '2026-10-16'
-  note: RedCode extension evaluating Open Interpreter on risky code execution
+  note: RedCode extension evaluating Open Interpreter on risky code execution (self-published project; earlier Python version) [outside entry scope; not counted]
 - url: https://github.com/alexbecker/open-interpreter-prompt-injection
-  kind: independent behaviour study (self-published repository; modified earlier Python version)
+  kind: independent performance
   accessed: '2026-10-16'
-  note: 'ARPIbench: reflected prompt-injection benchmark'
+  note: 'ARPIbench: reflected prompt-injection benchmark (self-published repository; modified earlier Python version) [outside entry scope; not counted]'
 - url: https://arxiv.org/abs/2505.18223
-  kind: model benchmark using Open Interpreter as a harness (arXiv preprint; measures models, not Open Interpreter)
+  kind: independent other
   accessed: '2026-10-16'
-  note: 'IDA-Bench (2025): interactive guided data analysis'
+  note: 'IDA-Bench (2025): interactive guided data analysis (model benchmark using Open Interpreter as a harness; arXiv preprint; measures models, not Open Interpreter)'
 - url: https://arxiv.org/abs/2411.07781
-  kind: background benchmark (arXiv)
+  kind: independent other
   accessed: '2026-10-16'
-  note: 'RedCode: risky code execution and generation benchmark'
+  note: 'RedCode: risky code execution and generation benchmark (background benchmark; arXiv)'
 - url: https://github.com/openinterpreter/openinterpreter/issues/1767
-  kind: public security report (closed by maintainer as concerning the legacy Python product)
+  kind: independent other
   accessed: '2026-10-16'
-  note: 'GitHub issue #1767: report concerning the /settings endpoint'
+  note: 'GitHub issue #1767: report concerning the /settings endpoint (public security report; closed by maintainer as concerning the legacy Python product)'
 - url: https://github.com/openinterpreter/open-interpreter/pull/1691
-  kind: public security report / proposed fix (closed, not merged)
+  kind: independent other
   accessed: '2026-10-16'
-  note: 'GitHub PR #1691: proposed hardening of macOS hotkey handling'
+  note: 'GitHub PR #1691: proposed hardening of macOS hotkey handling (public security report / proposed fix; closed, not merged)'
 - url: https://github.com/openinterpreter/openinterpreter/pull/1741
-  kind: public security report / proposed fix (closed, not merged)
+  kind: independent other
   accessed: '2026-10-16'
-  note: 'GitHub PR #1741: proposed changes to OS-mode auto-run and remote profiles'
+  note: 'GitHub PR #1741: proposed changes to OS-mode auto-run and remote profiles (public security report / proposed fix; closed, not merged)'
 - url: https://github.com/openinterpreter/openinterpreter/security/advisories
-  kind: advisory registry (no published advisories found)
+  kind: independent other
   accessed: '2026-10-16'
-  note: GitHub Security Advisories page for the repository
+  note: GitHub Security Advisories page for the repository (advisory registry; no published advisories found)
 - url: https://github.com/openinterpreter/openinterpreter
-  kind: maintainer
+  kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Open Interpreter repository (current product)
 - url: https://docs.openinterpreter.com/safety/introduction
-  kind: maintainer documentation
+  kind: vendor or maintainer
   accessed: '2026-10-16'
-  note: 'Open Interpreter documentation (current product: sandbox and approval modes)'
+  note: 'Open Interpreter documentation (current product: sandbox and approval modes) (maintainer documentation)'
 - url: https://github.com/endolith/open-interpreter
-  kind: community fork
+  kind: independent other
   accessed: '2026-10-16'
-  note: Community-maintained fork of the earlier Python version
+  note: Community-maintained fork of the earlier Python version (community fork)
 - url: https://raw.githubusercontent.com/endolith/open-interpreter/main/docs/SAFE_MODE.md
-  kind: maintainer documentation (earlier Python version)
+  kind: vendor or maintainer
   accessed: '2026-10-16'
-  note: Safe mode documentation (states it is experimental and provides no guarantees)
+  note: Safe mode documentation (states it is experimental and provides no guarantees) (maintainer documentation; earlier Python version)
 uncertainties:
 - Evidence concerns the earlier Python version; the current product is a rewrite and may behave differently.
 - Results in the studies depend heavily on the underlying model.
@@ -81,5 +82,6 @@ uncertainties:
 - Fix status of the public security reports in the community fork was not checked.
 - No reputable journalism with original testing was found.
 last_reviewed: '2026-10-16'
+decision: APPROVED
 decision_packet: decisions/0008-open-interpreter.md
 notes: Informational only; not a guarantee, endorsement, or certification.
