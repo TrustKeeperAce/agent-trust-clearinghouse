@@ -18,7 +18,7 @@ overall_score: 65
 evidence_grade: B
 independent_source_count:
   performance: 5
-  other: 1
+  other: 2
 sources:
 - url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
   kind: independent performance
@@ -52,6 +52,18 @@ sources:
   kind: independent other
   accessed: '2026-10-16'
   note: Commentary summarizing early tests (anecdotal)
+- url: https://www.radware.com/blog/threat-intelligence/shadowleak/
+  kind: independent other
+  accessed: '2026-10-17'
+  note: 'Radware ShadowLeak disclosure (security finding; fixed August 2025)'
+- url: https://web.archive.org/web/20260321044001/https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'OpenAI release notes (archived 21 March 2026): February 2026 deep research update; legacy mode removed 26 March 2026'
+- url: https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'OpenAI Help Center (current): deep research uses the latest models by default'
 - url: https://openai.com/index/introducing-deep-research/
   kind: vendor or maintainer
   accessed: '2026-10-16'
@@ -60,13 +72,16 @@ sources:
   kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'OpenAI Help Center: usage limits and scope controls'
+version_note: 'OpenAI updated deep research in February 2026 and removed the legacy mode on 26 March 2026; the counted tests used 2025 versions; the current version has not been independently tested. (as of 2026-10-17; Decision 0019)'
+security_note: 'ShadowLeak (Radware, September 2025): zero-click indirect prompt injection via a crafted email could make deep research exfiltrate Gmail data when the Gmail connector was enabled; reported to OpenAI in June 2025 and fixed in August 2025.'
 uncertainties:
 - The underlying model has changed over time; most independent tests used 2025 versions.
 - No independent test of usage-limit or permission adherence was found.
 - ReportBench venue status is unverified; two sources are preprints.
 - Benchmarks rely partly on AI judges.
 - Vendor benchmark figures (e.g. HLE, GAIA) are not used as independent evidence.
-last_reviewed: '2026-10-16'
+last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0003-openai-deep-research.md
+recheck_packet: decisions/0019-openai-deep-research-recheck.md
 notes: Informational only; not a guarantee, endorsement, or certification.
