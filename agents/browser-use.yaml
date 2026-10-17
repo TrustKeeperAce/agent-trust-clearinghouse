@@ -1,0 +1,86 @@
+name: Browser Use (open-source library)
+slug: browser-use
+category: browser/web agent
+type: open source (MIT); commercial Cloud service not covered
+homepage: https://github.com/browser-use/browser-use
+summary: Browser Use is an open-source Python library (MIT licence) that lets a language model of the user's choice control a web browser to carry out tasks. Results depend heavily on the model used. In independent evaluations (Online-Mind2Web, COLM 2025; Princeton's Holistic Agent Leaderboard; CAP, COLM 2026; a 2026 preprint), success rates ranged from about 2–5% full success on hard cross-site tasks to 18–45% on live-website benchmarks, well below the vendor's own figures. Independent security studies (VPI-Bench, ICLR 2026; two preprints) found it often followed instructions hidden in web pages, and a domain-restriction bypass (CVE-2025-47241) was fixed in version 0.1.45. The vendor's Cloud service is not covered. Overall score 51. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 40
+  disputes: 50
+  adherence_to_limits: 30
+  evidence_quality: 85
+factor_notes:
+  completion_rate: 30.0% human-evaluated success on Online-Mind2Web with GPT-4o (Operator 61.3%); 18.3–40.0% across 12 models on Princeton HAL's Online-Mind2Web and 2.0–38.8% on its AssistantBench subset; 2.0–5.0% full success on CAP (late 2025); 45.0% on a WebVoyager/WebShop subset (Skim). Strongly model-dependent. Judgment call.
+  disputes: No legal or regulatory action found. One GitHub-reviewed critical advisory (GHSA-x39x-9qw5-ghrf / CVE-2025-47241, CVSS 4.0 Medium at NVD/CNA), fixed in 0.1.45; a researcher-reported credential-exfiltration proof of concept had no CVE. Judgment call.
+  adherence_to_limits: The library's only built-in restriction (allowed_domains) could be bypassed before 0.1.45. Visual prompt-injection attack success was 16.7–100% across five platforms and six models (VPI-Bench; 73.7–100% on Amazon); plan-injection attacks succeeded up to 63%. Judgment call.
+  evidence_quality: Seven independent performance sources (four task-performance, three security), three peer-reviewed (COLM 2025, COLM 2026, ICLR 2026), two run in late 2025/2026. Library versions are mostly unstated and results vary by model. Judgment call.
+overall_score: 51
+overall_note: 0.30*40 + 0.20*50 + 0.25*30 + 0.25*85 = 50.75, rounded to 51
+evidence_grade: A
+independent_source_count:
+  performance: 7
+  other: 3
+sources:
+- url: https://arxiv.org/abs/2504.01382
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Online-Mind2Web, "An Illusion of Progress?" (COLM 2025; OSU): Browser Use with GPT-4o 30.0% human-evaluated success on 300 live tasks (26% without search, 31% with search); says earlier WebVoyager figures were inflated by automatic evaluation'
+- url: https://arxiv.org/abs/2510.11977
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Holistic Agent Leaderboard (Princeton; preprint): Browser-Use scaffold with 12 models, Online-Mind2Web 18.3–40.0% and AssistantBench subset 2.0–38.8%; costs per run are reported'
+- url: https://hal.cs.princeton.edu/online_mind2web
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: HAL Online-Mind2Web leaderboard page (same study as above; counted once)
+- url: https://arxiv.org/abs/2608.08392
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'CAP (COLM 2026): Browser-Use with GPT-5 / Claude 4.5 Sonnet / DeepSeek-V4-Flash scored 15.0/21.0/25.0% partial completion and 2.0/5.0/2.9% full success on 198 cross-site tasks (human 35.0/10.0%); run Nov–Dec 2025'
+- url: https://arxiv.org/abs/2605.16565
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Skim (preprint, 2026): BrowserUse with GPT-4o 45.0% on a 300+ task WebVoyager/WebShop subset; authors propose an acceleration method (competing-method disclosure)'
+- url: https://arxiv.org/abs/2506.02456
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'VPI-Bench (ICLR 2026; NUS): visual prompt injection; Browser-Use attack success 73.7–100% on Amazon, 75.4–98.3% on Booking, 16.7–76.7% on Messenger, 30.0–50.0% on Email, across six models'
+- url: https://arxiv.org/abs/2506.17318
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Patlan et al. (Princeton; preprint): plan/context injection; Browser-use up to 63% attack success with context-chained injections, over 80% for privacy prompt injection; GPT-4o'
+- url: https://arxiv.org/abs/2505.13076
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'ARIMLABS "The Hidden Dangers of Browsing AI Agents" (preprint; security audit of v0.1.44): domain-restriction bypass and credential exfiltration via prompt injection (proof of concept)'
+- url: https://github.com/advisories/GHSA-x39x-9qw5-ghrf
+  kind: independent other
+  accessed: '2026-10-17'
+  note: 'GitHub-reviewed advisory (critical): allowed_domains bypass, versions before 0.1.45'
+- url: https://www.cve.org/CVERecord?id=CVE-2025-47241
+  kind: independent other
+  accessed: '2026-10-17'
+  note: 'CVE-2025-47241 (CVSS 3.1: 4.0 Medium), fixed in 0.1.45'
+- url: https://github.com/browser-use/browser-use/pull/5241
+  kind: independent other
+  accessed: '2026-10-17'
+  note: Community pull request on indirect prompt injection through prompt delimiter tags (open issue class; status not verified)
+- url: https://browser-use.com/posts/sota-technical-report
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Vendor claim: 89.1% WebVoyager (modified harness, manual corrections); not used as independent evidence'
+- url: https://browser-use.com/posts/online-mind2web-benchmark
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Vendor claim: 97% Online-Mind2Web for Browser Use Cloud with its own judge; Cloud not covered'
+uncertainties:
+- Results depend heavily on the language model the user connects; scores describe the library across tested models, not any single setup.
+- Most sources do not state the library version; the library changed substantially in 2025 (for example the 0.5 release in July 2025). The current version is 0.13.11.
+- Only CAP (late 2025) and Skim (2026) clearly tested recent versions.
+- Three of the seven sources are security tests of earlier versions.
+- 'Excluded: vendor figures (89.1% WebVoyager, 97% Cloud, BU Bench) and Cybernaut (Amazon preprint), whose 82.2% Browser-Use figure appears to restate the vendor result.'
+- The Cloud service, which uses the vendor's own models and infrastructure, is not covered and has no independent tests.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0016-browser-use.md
+notes: Informational only; not a guarantee, endorsement, or certification.

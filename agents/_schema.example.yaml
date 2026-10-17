@@ -2,7 +2,7 @@
 # Copy to <agent-slug>.yaml only after an approved decision packet. Rules: Scoring rules v0.1 (Decision 0010).
 name: "Example Agent (fictional)"      # display name
 slug: example-agent                     # file name without .yaml
-category: research                      # research | verification | negotiation | data enrichment | simple analysis
+category: research                      # research | verification | negotiation | data enrichment | simple analysis | browser/web agent
 type: commercial                        # commercial | open-source | research code
 homepage: "https://example.com"         # placeholder
 scope: "What the entry covers"          # optional
