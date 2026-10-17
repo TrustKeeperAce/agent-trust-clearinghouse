@@ -27,8 +27,10 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
 - [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): Insufficient evidence
 - [Kimi Researcher](https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html): Insufficient evidence
+- [Loki (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/loki.html): Insufficient evidence
 - [Manus](https://agent-trust-clearinghouse.vercel.app/agents/manus.html): Insufficient evidence
 - [Open Interpreter](https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html): Insufficient evidence
+- [OpenFactCheck (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html): Insufficient evidence
 - [Pactum](https://agent-trust-clearinghouse.vercel.app/agents/pactum.html): Insufficient evidence
 - [Skyvern (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html): Insufficient evidence
 

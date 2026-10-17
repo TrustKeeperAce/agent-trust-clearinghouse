@@ -1,0 +1,44 @@
+name: Loki (Libr-AI OpenFactVerification, open-source)
+slug: loki
+category: Verification
+type: Open-source fact-verification tool (MIT licence), Libr-AI; GitHub Libr-AI/OpenFactVerification; not on PyPI
+homepage: https://github.com/Libr-AI/OpenFactVerification
+scope: The open-source Loki library/CLI/web app (v0.0.1 April 2024 to v0.0.3 May 2024, main branch to October 2024), run with a language model (OpenAI, Anthropic or local) and search API (Serper or Google) chosen by the user. The hosted demo (loki.librai.tech) is not covered.
+summary: Loki is an open-source fact-checking tool from Libr-AI (an MBZUAI-linked group). It splits text into claims, checks which are worth verifying, searches the web for evidence and gives a verdict for each claim, with the evidence shown so a person can judge. Two independent studies ran Loki as a comparison system. On FacTool-KBQA it reached F1 0.76 on non-factual and 0.67 on factual claims (Proof-of-Guardrail, USC/Sahara AI). Adapted to health claims in TikTok influencer videos, it reached macro-F1 0.43 (TAIGR, Purdue). The developers' own figures from their COLING 2025 demo paper are not counted. The repository has had no code changes since June 2024 and the hosted demo did not respond on 17 October 2026. No CVEs or security advisories were found. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.
+scores: null
+overall_score: null
+evidence_grade: Insufficient evidence
+independent_source_count:
+  performance: 2
+  other: 1
+factor_notes:
+  completion_rate: 'Proof-of-Guardrail (FacTool-KBQA, Loki as a guardrail): non-factual claims precision 0.71 / recall 0.81 / F1 0.76; factual claims 0.74 / 0.61 / 0.67. TAIGR (influencer health-claim validation, Loki adapted to PubMed evidence with GPT-4.1-mini): macro-F1 0.43 (Incorrect 0.71, Partially correct 0.29, Correct 0.29), below TAIGR''s 0.52. Developer-reported (not counted): F1 0.84 / 0.63 on Factcheck-Bench and 0.85 / 0.60 on FacTool-QA. Not scored.'
+  disputes: 'None found: no CVEs, no GitHub security advisories, no legal or regulatory action. Not scored.'
+  adherence_to_limits: No independent tests of robustness or misuse found. Proof-of-Guardrail reports Loki added about 28% latency (20.4 s vs 16.0 s mean) when run inside a trusted execution environment. Not scored.
+  evidence_quality: Two independent performance sources (both 2026 preprints, unrelated groups), below the three-source minimum. Both used the open-source code after its last code change. Not scored.
+sources:
+- url: https://arxiv.org/abs/2603.05786
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Proof-of-Guardrail in AI Agents (preprint, Mar/Jun 2026; Sahara AI and University of Southern California): runs Loki as a fact-checking guardrail on FacTool-KBQA. Non-factual P 0.71 / R 0.81 / F1 0.76; factual P 0.74 / R 0.61 / F1 0.67; mean latency 20.4 s with Loki vs 16.0 s without, in a trusted execution environment'
+- url: https://arxiv.org/abs/2601.20032
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'TAIGR (preprint, Jan 2026; Purdue University): Loki adapted as a baseline for validating health claims in TikTok influencer videos (PubMed evidence, GPT-4.1-mini). Macro-F1 0.43 (Incorrect 0.71, Partially correct 0.29, Correct 0.29) vs TAIGR 0.52. Task differs from Loki''s design (implicit takeaways, not explicit claims)'
+- url: https://davidamitchell.github.io/Research/research/2026-05-06-loki-fact-checking-journalists-moderation.html
+  kind: other
+  accessed: '2026-10-17'
+  note: Independent written analysis (May 2026) of Loki's design and suitability for journalists and moderators; based on the published paper, not a hands-on test. Not counted as performance
+- url: https://aclanthology.org/2025.coling-demos.4/
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Loki paper (COLING 2025 System Demonstrations; Libr-AI/MBZUAI authors): F1 0.84/0.63 (Factcheck-Bench true/false) and 0.85/0.60 (FacTool-QA) with GPT-4o + Serper. Developer results, not counted'
+- url: https://github.com/Libr-AI/OpenFactVerification
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Repository: MIT, about 1.16k stars, not archived; releases v0.0.1 (6 Apr 2024) and v0.0.2 (21 Apr 2024); v0.0.3 merged 31 May 2024; last commit 3 Oct 2024 (README); no security advisories'
+uncertainties:
+- Semantic Scholar citation check (17 Oct 2026) covered all 27 papers citing the Loki paper; two independent tests were found. Papers without open full text were checked by abstract only.
+- TAIGR tested Loki on a task it was not designed for (implicit influencer takeaways); Proof-of-Guardrail's main subject is attestation, not Loki.
+- Results would depend on the model and search API chosen.
+- The hosted demo did not respond on 17 October 2026; whether it is retired is unknown.

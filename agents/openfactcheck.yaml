@@ -1,0 +1,43 @@
+name: OpenFactCheck (open-source framework)
+slug: openfactcheck
+category: Verification
+type: Open-source factuality framework (PyPI openfactcheck; repository licence AGPL-3.0, PyPI metadata says GPL-3.0), MBZUAI researchers; GitHub openfactcheck-research/openfactcheck
+homepage: https://github.com/openfactcheck-research/openfactcheck
+scope: 'The open-source OpenFactCheck library (PyPI 0.0.17 July 2024 up to 1.1.2; the 2.0 alpha series, 2.0.0a1 to 2.0.0a10 in 2026, is not assessed): CustChecker/ResponseEval (configurable fact-checker built from FacTool, Factcheck-GPT and other modules), LLMEval and CheckerEval. Run with user-chosen models and retrievers. The hosted web app is not covered.'
+summary: OpenFactCheck is an open-source framework from MBZUAI researchers for building configurable fact-checkers, measuring how factual language models are, and benchmarking fact-checkers. Its fact-checking mostly reuses parts of earlier systems (FacTool, Factcheck-GPT). No independent evaluation that ran it was found; the only figures come from its developers' EMNLP 2024 demo and COLING 2025 papers. It is actively maintained (2.0 alpha releases in 2026). No CVEs or security advisories were found. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.
+scores: null
+overall_score: null
+evidence_grade: Insufficient evidence
+independent_source_count:
+  performance: 0
+  other: 2
+factor_notes:
+  completion_rate: No independent results. Developer papers benchmark the component checkers (e.g. Factcheck-GPT with GPT-4 reaching false-claim F1 0.63 on Factcheck-Bench) rather than a single OpenFactCheck configuration. Not scored.
+  disputes: 'None found: no CVEs, no GitHub security advisories, no legal or regulatory action. Licence metadata differs between the repository (AGPL-3.0) and PyPI (GPL-3.0). Not scored.'
+  adherence_to_limits: No independent tests found. Not scored.
+  evidence_quality: Zero independent performance sources; below the three-source minimum. Not scored.
+sources:
+- url: https://doi.org/10.1609/aaai.v40i48.42355
+  kind: other
+  accessed: '2026-10-17'
+  note: 'UFO (AAAI 2026): describes OpenFactCheck and Loki as tied to a single or fused fact source with limited flexibility; does not run either. Not counted as performance'
+- url: https://davidamitchell.github.io/Research/research/2026-05-06-openfactcheck-ai-fact-checking-pipeline.html
+  kind: other
+  accessed: '2026-10-17'
+  note: Independent written analysis (May 2026) based on the published papers; not a hands-on test. Not counted
+- url: https://aclanthology.org/2025.coling-main.755/
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'OpenFactCheck paper (COLING 2025; Wang, Wang, Iqbal, Georgiev, Geng, Gurevych, Nakov): FactBench of 4,507 claims; checkers detect true claims more reliably than false ones. Developer results, not counted'
+- url: https://aclanthology.org/2024.emnlp-demo.23/
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: OpenFactCheck demo paper (EMNLP 2024 System Demonstrations). Developer, not counted
+- url: https://github.com/openfactcheck-research/openfactcheck
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Repository (moved from yuxiaw/openfactcheck and mbzuai-nlp/openfactcheck): AGPL-3.0, last push 15 Aug 2026; PyPI 49 releases, latest 2.0.0a10 (13 Jul 2026); no security advisories'
+uncertainties:
+- Semantic Scholar citation check (17 Oct 2026) covered all papers citing the three OpenFactCheck papers; none ran OpenFactCheck as a tested system. Papers without open full text were checked by abstract only.
+- OpenFactCheck is a framework that combines other checkers; "performance" depends on the configuration chosen.
+- The 2.0 alpha series may be a substantial rewrite; continuity is unassessed beyond release history.

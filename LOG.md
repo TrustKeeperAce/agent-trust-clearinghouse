@@ -86,3 +86,7 @@ Updated: index (tied at 49 with Agent S, alphabetical, before Perplexity Comet),
 
 ## 2026-10-17 — Deploy note
 Data Interpreter was deployed as dpl_Fm5fE86oV84Z734BAkvVRRdcbs7t (commit 516a80c). Live check: data-interpreter.html returns 200, methodology includes "Data science agent", and the index returns 200.
+
+## 2026-10-17 — 0030 Loki and OpenFactCheck
+The 0030 decision was approved: Loki (open-source) and OpenFactCheck (open-source), two entries, both Verification, both Insufficient evidence. Before publishing, a Semantic Scholar citation check covered all four developer papers (86 unique citing papers). It found 2 independent tests of Loki (TAIGR, Proof-of-Guardrail), which are now counted. That is still below the minimum of 3, so the outcome is unchanged. No independent tests of OpenFactCheck were found.
+Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt and changelog. NOT deployed.
