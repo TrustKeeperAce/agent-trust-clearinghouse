@@ -19,3 +19,4 @@
 - 2026-10-16 21:45 EDT: Decision 0008 approved by Remington. Added Open Interpreter (Simple analysis) as Insufficient evidence, no overall score (classic-version alternative score 45 not used). Link check: all 200. Not deployed (user deploys).
 - 2026-10-16 21:47 EDT: Open Interpreter deployed live (dpl_2hPN8BCU9BAJRR51Qn1UHBV2eXj8, all 9 pages 200).
 - 2026-10-16 22:05 EDT: Decision 0010 approved by Remington. Methodology updated to Scoring rules v0.1 (permanent round-half-up; independent performance source rule incl. version/scope; evidence grade table). Applied 13 cleanup fixes across entries, pages, schema and READMEs. All scores, grades and statuses unchanged. Not deployed (user deploys).
+- 2026-10-16 22:05 EDT: Decision 0010 deployed live (dpl_HxZk4HKddfBk8zgjvRyG5cGLVPtd, all pages 200).
