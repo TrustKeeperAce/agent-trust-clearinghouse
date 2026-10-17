@@ -1,0 +1,41 @@
+name: AutoKaggle (open-source)
+slug: autokaggle
+category: Data science agent
+type: Open-source multi-agent framework (Apache-2.0) for Kaggle-style data-science competitions from the Multimodal Art Projection (M-A-P) research community; GitHub multimodal-art-projection/AutoKaggle
+homepage: https://github.com/multimodal-art-projection/AutoKaggle
+scope: The open-source AutoKaggle framework as released in October-December 2024 (no tagged releases; last commit 4 December 2024).
+summary: AutoKaggle is an open-source research framework in which several AI agents work through a fixed sequence of data-science steps for tabular Kaggle competitions. Two independent studies that ran it were found, below the three needed for a score. In one, AutoKaggle produced valid outputs in 53-58% of trials across nine datasets, behind two other systems. In the other, its accuracy was close to other baselines. Its developers' own results are not counted. The code has not been updated since December 2024. Informational only; not a guarantee, endorsement, or certification.
+scores: null
+overall_score: null
+evidence_grade: Insufficient evidence
+independent_source_count:
+  performance: 2
+  peer_reviewed: 2
+  other: 0
+factor_notes:
+  completion_rate: 'VDSAgents (Stat, 2026): valid-output rate 0.577 (DeepSeek-V3) and 0.534 (GPT-4o) across nine datasets, below VDSAgents (0.894, 0.950) and Data Interpreter (0.676, 0.672). SPIO (ACL 2026): accuracy close to other baselines (for example Titanic 0.7781 with GPT-4o). Developer results (valid submission rate 0.85, comprehensive score 0.82 on 8 competitions) are not counted.'
+  disputes: No CVE, legal or regulatory action found. Not maintained since December 2024.
+  adherence_to_limits: No independent study of AutoKaggle's adherence to limits was found.
+  evidence_quality: Two counted independent sources, both peer-reviewed and both proposing competing methods; below the three-source minimum. Not scored.
+sources:
+- url: https://doi.org/10.1002/sta4.70126
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'VDSAgents (Stat, Wiley, 2026; arXiv 2510.24339): AutoKaggle valid-output rate 0.577 (DeepSeek-V3) and 0.534 (GPT-4o) across nine datasets, below VDSAgents and Data Interpreter. Disclosure: proposes a competing method'
+- url: https://arxiv.org/abs/2503.23314
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'SPIO (ACL 2026): AutoKaggle baseline accuracy close to other baselines on tabular tasks (Titanic 0.7781 with GPT-4o), below SPIO. Disclosure: proposes a competing method'
+- url: https://arxiv.org/abs/2410.20424
+  kind: vendor
+  accessed: '2026-10-17'
+  note: 'AutoKaggle paper (developers; DL4C workshop at ICLR 2025): valid submission rate 0.85 and comprehensive score 0.82 on 8 competitions; not counted'
+uncertainties:
+- Citation check incomplete — recheck later. Tree-Notebook (Findings ACL 2026) could not be screened.
+- Most papers that cite AutoKaggle only describe it; few run it.
