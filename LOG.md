@@ -69,3 +69,6 @@ STORM / Co-STORM was deployed as dpl_FdzhdGWJpPntTikPSUF8pVXcmtT2 (commit 86aa0c
 ## 2026-10-17 — 0027 Skyvern
 The 0027 decision was approved: Skyvern (open-source) is Insufficient evidence, category Browser/web agent, with 2 counted sources. Web Bench is excluded.
 Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt and changelog. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Skyvern (open-source) was deployed as dpl_HKg1KpLBwLwspTy27KXKPhT3EfdV (commit 47f5bbf). Live check: skyvern.html returns 200, and the index and sitemap include it.
