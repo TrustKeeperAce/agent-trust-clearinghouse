@@ -76,3 +76,6 @@ Skyvern (open-source) was deployed as dpl_HKg1KpLBwLwspTy27KXKPhT3EfdV (commit 4
 ## 2026-10-17 — 0028 Perplexity Comet
 The 0028 decision was approved: Perplexity Comet (agentic browser) is overall 41, grade B-, category Browser/web agent. A scope note was added to perplexity.html and perplexity.yaml (score unchanged).
 Updated: index (after Agent S), ItemList, sitemap, llms.txt and changelog. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Perplexity Comet was deployed as dpl_78t4jZtR6QP8Zqp2BEjLAHZsBGYj (commit 4f26029). Live check: perplexity-comet.html, perplexity.html and the index return 200.
