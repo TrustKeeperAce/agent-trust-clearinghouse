@@ -12,6 +12,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 ## Entries
 - [Google DeepMind SAFE](https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html): overall 66, evidence grade B-
 - [OpenAI Deep Research](https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html): overall 65, evidence grade B
+- [Gemini Deep Research](https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html): overall 63, evidence grade B
 - [Perplexity](https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html): overall 54, evidence grade B
 - [GPT Researcher](https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html): overall 53, evidence grade B-
 - [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
