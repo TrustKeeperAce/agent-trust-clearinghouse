@@ -62,3 +62,6 @@ Agent S was deployed as dpl_7tNA6hCftbs3shAgzFNiubMFXupH (commit 0e590c2). Live 
 ## 2026-10-17 — 0026 STORM / Co-STORM published
 The 0026 decision was approved: the entry is overall 56, grade B, category Research.
 Updated: index, ItemList, sitemap, llms.txt and changelog. The 375px check passed. Links were checked; the decision file and canonical page returned 404 until push/deploy. NOT deployed.
+
+## 2026-10-17 — Deploy note
+STORM / Co-STORM was deployed as dpl_FdzhdGWJpPntTikPSUF8pVXcmtT2 (commit 86aa0ca). Live check: storm.html returns 200 with no high-severity text, and the index and sitemap include it.
