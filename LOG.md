@@ -103,3 +103,6 @@ Fellou (0031) was deployed as dpl_FGRNvuuep3R3eXD3MeqgKjnihKmW (commit cebf614).
 
 ## 2026-10-17 — Deploy note
 Decision 0033 (process improvements) was deployed as dpl_Hq6SjEJG1raWD67CQMnaLKeoiMqq (commit 253e34e). Live check: pages return 200, skip links are present, and the Julius AI OpenAlex link works. Decision 0034's order was corrected to the approved order (non-public file).
+
+## 2026-10-17 — Deploy note
+Decisions 0035 (Browser Use evidence grade A → B, a consistency correction; score 51 unchanged) and 0036 (Coding agent category) were deployed as dpl_NTBcZQniYKqigCCBTctxsd4dVZdC (commit b49f2c2). Live check: pages return 200, Browser Use shows B, the methodology page lists Coding agent, and the changelog has the A → B row. Batch 4 research begins privately with OpenHands (0037).
