@@ -109,3 +109,6 @@ Decisions 0035 (Browser Use evidence grade A → B, a consistency correction; sc
 
 ## 2026-10-17 — Deploy note
 Decision 0037 (OpenHands, Coding agent, 61 / A) was deployed as dpl_AnbiDcv8vQ9iNZoRz1AEUCm24SBz (commit 0786069). Live check: pages return 200, the entry shows grade A, and OpenHands appears in the index. Process note: the Semantic Scholar citation lookup was rate-limited for about 15 minutes, and the OpenAlex fallback was then used. That is short of the 30-minute wait in PROCESS.md. The user was told and approved publishing as-is.
+
+## 2026-10-17 — Deploy note
+Decision 0038 (SWE-agent, Coding agent, 58 / B) was deployed as dpl_7hJQEEga553gLSjZ4JsKGmEfdJQo (commit 5d93fa9). Live check: pages return 200, the entry shows grade B, and SWE-agent appears in the index. D7 full reads made figure corrections only; score, grade and outcome were unchanged, and SWE-Bench Pro was confirmed as peer-reviewed (6 peer-reviewed). Batch 4 research continues privately with UI-TARS Desktop (0039).
