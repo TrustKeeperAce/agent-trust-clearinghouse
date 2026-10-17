@@ -48,3 +48,6 @@
 
 ## 2026-10-17 — 0024 Kimi Researcher published
 The 0024 decision was approved and the entry was added as Insufficient evidence (2 counted sources). Updated: index, ItemList, sitemap, llms.txt and changelog. The 375px check passed. Links were checked: ifengweekly timed out under curl but loaded with WebFetch. The canonical page returns 404 until it is deployed. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Kimi Researcher was deployed as dpl_jHReU4Pwzaz1txpyJkzNkb4h87UE (commit 83f8f7c). Live check: kimi-researcher.html returns 200, and the index and sitemap include it.
