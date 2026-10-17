@@ -1,0 +1,79 @@
+name: Elicit
+slug: elicit
+category: research
+type: commercial (free Basic tier; paid Plus, Pro and enterprise tiers)
+homepage: https://elicit.com/
+summary: Elicit is a commercial AI research assistant that searches academic papers and supports systematic-review steps (screening and data extraction). Its literature search is weak. In independent tests, mostly in health research, Elicit searches found about 18–40% of the studies identified by traditional systematic searches. Its data extraction agreed with human reviewers about 77–92% of the time on the variables tested, with some errors and made-up details, and screening caught 71–78% of relevant studies in a 2026 preprint. Researchers concluded that Elicit can assist but not replace human reviewers. Most tests used paid tiers between 2023 and 2026. Overall score 68. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 55
+  disputes: 80
+  adherence_to_limits: 55
+  evidence_quality: 85
+factor_notes:
+  completion_rate: 'Search: average sensitivity 39.5% vs 94.5% for traditional searches (Lau et al.), 17.6% of included studies found (Bernard et al.), 1 of 59 results relevant (Vyas et al.), 158 of 5,285 studies (Wei et al.). Screening: sensitivity 0.71 (abstract) and 0.78 (full text), precision 0.38 (Wei et al.). Extraction: 92% precision/recall (Andersen et al.), 77–90% value matches (Lagisz et al.), 79% fully accurate (Wei et al.), mostly partial matches for complex variables (Bianchi et al.). Judgment call.'
+  disputes: No legal or regulatory actions, security advisories or data incidents were found. Fabricated details found in tests (4 confabulations in Andersen et al.; a wrongly cited protocol in Bernard et al.) are scored under completion. Judgment call.
+  adherence_to_limits: Results varied between repeated runs (169–246 search results across three identical searches; extracted values matched 90% across accounts, but supporting quotes only 46%). It sometimes gave multiple answers where one was required and defaulted study location to the authors' country. Privacy and no-training commitments for uploaded files are vendor statements only. Judgment call.
+  evidence_quality: Seven independent performance sources, six peer-reviewed, one testing the current paid tier in 2025–2026. Samples are small and mostly from health sciences; one had free accounts from Elicit (partly independent). Two further studies were read from abstracts only and are not counted. Judgment call.
+overall_score: 68
+overall_note: 0.30*55 + 0.20*80 + 0.25*55 + 0.25*85 = 67.5; exact .5 rounds up (Decision 0010)
+evidence_grade: A
+independent_source_count:
+  performance: 7
+  other: 2
+sources:
+- url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12483133/
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Lau et al. (Cochrane Evidence Synthesis and Methods 2025; York): Elicit Pro Review mode across four evidence syntheses; search sensitivity 39.5% (25.5–69.2%) vs 94.5%, precision 41.8% vs 7.55%'
+- url: https://link.springer.com/article/10.1186/s12874-025-02528-y
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Bernard et al. (BMC Medical Research Methodology 2025): searches in April 2023; found 17.6% of an umbrella review''s included studies (plus 3 new); three identical searches returned 246, 169 and 172 results; its summary cited the review protocol'
+- url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12257877/
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Andersen et al. (Cochrane Evidence Synthesis and Methods 2025): extraction from 30 articles in July 2024, high-accuracy mode; precision, recall and F1 92%; review-specific variables 77%; 4 confabulations'
+- url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12462964/
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Bianchi et al. (Cochrane Evidence Synthesis and Methods 2025; Eastern Switzerland): 20 RCTs extracted Aug–Sep 2024; 20.7% equal, 45.7% partially equal, 29.3% more, 4.3% deviating; intervention effects 95% only partially equal'
+- url: https://doi.org/10.1017/rsm.2026.10080
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Lagisz et al. (Research Synthesis Methods 2026; UNSW): 7 reviews, extraction tests in 2025; 70 of 90 prompts above 87% during development, lower on new articles; 90% value agreement across accounts (quotes 46%); 77% value match in high-accuracy mode. Partly independent: temporary free Plus access from Elicit (no other involvement, per authors)'
+- url: https://journals.sagepub.com/doi/10.1177/08944393251404052
+  kind: independent other
+  accessed: '2026-10-17'
+  note: 'Hilkenmeier et al. (Social Science Computer Review 2025): 43 studies, 602 data points; 81.4% accuracy vs 86.7% for a human reviewer (not significantly different). Abstract only, not fully reviewed; not counted'
+- url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13010132/
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Vyas et al. (Acta Dermato-Venereologica 2026; Cardiff): 1 of 59 search results met inclusion criteria; extraction from 24 articles had 13 incorrect results; wrong JADAD inputs in 5 of 24; study location wrong in 5 of 24'
+- url: https://doi.org/10.1177/01939459261451723
+  kind: independent other
+  accessed: '2026-10-17'
+  note: 'O''Rourke et al. (Western Journal of Nursing Research 2026): reference lists for 4 reviews; Elicit matched 3.7% of human references on average (Consensus 21.3%). Abstract only, not fully reviewed; not counted'
+- url: https://www.medrxiv.org/content/10.64898/2026.10.02.26364621v1
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Wei et al. (medRxiv preprint, Oct 2026; CAMH/Toronto): Pro tier, Dec 2025–May 2026; search found 158 of 5,285 studies; abstract screening sensitivity 0.71, full-text 0.78, precision 0.38; extraction 85% helpful, 79% fully accurate'
+- url: https://elicit.com/blog/how-we-evaluated-elicit-systematic-review
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Vendor evaluation: 93.6% screening recall, 94–99% extraction accuracy; not used as independent evidence'
+- url: https://support.elicit.com/en/articles/14758043-privacy-for-uploaded-papers
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Vendor privacy statement: uploaded PDFs private to the account and not added to the corpus'
+uncertainties:
+- Most tests used paid tiers (Plus, Pro, Review/Systematic Review workflow); the free Basic tier was not tested separately.
+- Elicit changed often (credits to subscription in July 2024; high-accuracy default from May 2025; Systematic Review workflow); the oldest study used April 2023 searches.
+- 'Two studies (Hilkenmeier et al., O''Rourke et al.) are listed but not counted: abstract only, not fully reviewed (full text paywalled).'
+- Lagisz et al. used temporary free accounts provided by Elicit (no other Elicit involvement, per the authors); counted and labelled partly independent.
+- Studies are small and mostly in health sciences; results differ by task (search, screening, extraction).
+- The vendor's own evaluation (93.6% recall, 94–99% extraction accuracy) is not used.
+- The overall score is exactly 67.5; exact .5 rounds up (Decision 0010).
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0017-elicit.md
+notes: Informational only; not a guarantee, endorsement, or certification.

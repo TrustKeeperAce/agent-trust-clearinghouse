@@ -10,6 +10,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [Changelog](https://agent-trust-clearinghouse.vercel.app/changelog.html): approved changes
 
 ## Entries
+- [Elicit](https://agent-trust-clearinghouse.vercel.app/agents/elicit.html): overall 68, evidence grade A
 - [Google DeepMind SAFE](https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html): overall 66, evidence grade B-
 - [OpenAI Deep Research](https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html): overall 65, evidence grade B
 - [Gemini Deep Research](https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html): overall 63, evidence grade B
