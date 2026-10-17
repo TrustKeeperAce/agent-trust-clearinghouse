@@ -1,0 +1,78 @@
+name: Consensus
+slug: consensus
+category: research
+type: commercial (free tier; paid Pro, Deep, Teams and Enterprise plans)
+homepage: https://consensus.app/
+scope: Consensus academic search and answer engine (Quick, Pro and Deep modes). The Deep Search agent (July 2025) and Research Agent (2026) were not separately tested.
+summary: Consensus is a commercial AI search engine that answers research questions from scholarly papers. In six independent peer-reviewed tests (2024–2026, mostly health sciences), it found 9 of 23 eligible trials in a systematic-search test, gave no fully correct answer sets about retracted trials and included retracted studies without warning in 40% of topic overviews, agreed with expert evidence on 72% of bariatric-surgery statements, and received the highest expert quality ratings in an endodontics comparison. Overall score 62. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 50
+  disputes: 80
+  adherence_to_limits: 50
+  evidence_quality: 75
+factor_notes:
+  completion_rate: Found 9 of 23 eligible RCTs with 76% false positives (Plast Aesthet Res); 0 of 15 fully correct answer sets on retracted trials (JMIR); 72% agreement with expert answers (Obesity Surgery); intermediate relevance in cardiology searches (EHJ Digital Health); highest expert quality scores in endodontics (BMC Oral Health). Judgment call.
+  disputes: No lawsuit, regulatory action, data breach or security advisory found. Judgment call.
+  adherence_to_limits: Repeated answers disagreed in 25.3% of cases, the most of 9 tools; retracted articles cited without warning in 6 of 15 overviews (JMIR). Privacy commitments (no training on user data, anonymized query logs) are vendor statements only. Judgment call.
+  evidence_quality: Six independent peer-reviewed performance sources, two testing late 2025; small samples, mostly health sciences and mostly the free tier; Deep Search and Research Agent not separately tested. One abstract-only study listed, not counted. Judgment call.
+overall_score: 62
+overall_note: 0.30*50 + 0.20*80 + 0.25*50 + 0.25*75 = 62.25, rounded to 62 (Decision 0010)
+evidence_grade: B
+independent_source_count:
+  performance: 6
+  other: 1
+sources:
+- url: https://doi.org/10.1093/ehjdh/ztag125
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Menet et al. (Eur Heart J Digit Health 2026): free tier, Aug 2025–Jan 2026; 158 references across four cardiology topics; relevance intermediate between ChatGPT-5 (90%) and Scite (20%); blinded expert gold standard. The exact Consensus value is shown only in a chart'
+- url: https://doi.org/10.2196/88766
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Labenbacher et al. (JMIR 2026): Consensus version July 2025; 0 of 15 fully correct answer sets on retracted trials (ChatGPT 5: 8); retracted article in topic overview without warning 6 of 15; 19 (25.3%) discrepancies between repeated answers'
+- url: https://doi.org/10.1007/s11695-026-08511-w
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Kermansaravi et al. (Obesity Surgery 2026): web interface, 1 May 2025; 72% agreement with evidence-based expert answers on 25 statements (ChatGPT-4o and Grok 3 80%)'
+- url: https://doi.org/10.1186/s12903-026-09298-z
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Karakoyunlu et al. (BMC Oral Health 2026): Consensus Pro, Nov 2025; highest mDISCERN, GQS and completeness scores among four chatbots, longest response times'
+- url: https://doi.org/10.20517/2347-9264.2024.99
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Plastic and Aesthetic Research 2025: systematic search for thumb-base arthritis RCTs (to April 2024); Consensus found 9 of 23 eligible studies, 76% false positives, none beyond the manual search. One author is on the journal editorial board (not involved in handling)'
+- url: https://doi.org/10.1097/GOX.0000000000007176
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Plast Reconstr Surg Glob Open 2025: one migraine-surgery question to 9 tools, December 2024; Consensus cited the most references (10) and was rated highest for detail; weakness: single question, qualitative, no accuracy grading'
+- url: https://doi.org/10.1177/01939459261451723
+  kind: independent other
+  accessed: '2026-10-17'
+  note: 'O''Rourke et al. (Western Journal of Nursing Research 2026): Consensus matched 21.3% of human references on average. Abstract only, not fully reviewed; not counted'
+- url: https://github.com/elicit/elicit-paper-search-eval
+  kind: excluded (competitor-run)
+  accessed: '2026-10-17'
+  note: 'Elicit BioASQ search evaluation: Consensus recall 0.369 at 10, 0.434 at 20 (Elicit 0.390, 0.483); run by a competitor as launch material; not counted'
+- url: https://consensus.app/home/blog/deep-search/
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: Deep Search launch (8 July 2025)
+- url: https://consensus.app/home/blog/what-has-changed-in-consensus-summer-26/
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Summer 2026 changes: Research Agent, 400M+ sources, Citation Grounding, public API and MCP'
+- url: https://help.consensus.app/en/articles/10093291-security
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Vendor security statement: no training on user data; anonymized query logging'
+uncertainties:
+- Tests mostly covered standard or Pro search; Deep Search and Research Agent not separately tested.
+- Citation Grounding (2026) postdates all tests.
+- Samples are small and mostly in health sciences; several tests used the free tier.
+- The PRS Global Open study is qualitative (one question, no accuracy grading).
+- A retracted CJILS comparison was excluded.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0022-consensus.md
+notes: Informational only; not a guarantee, endorsement, or certification.
