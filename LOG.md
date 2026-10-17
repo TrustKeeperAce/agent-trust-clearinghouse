@@ -25,3 +25,4 @@
 - 2026-10-16 22:24 EDT: Decision 0012 (SEO basics) approved by Remington. Added sitemap.xml, robots.txt, 404.html, canonical/OG/Twitter tags, inline favicon, index JSON-LD (inert). Validated XML, links, unique titles/descriptions. No scores/wording changed. Not deployed (user deploys).
 - 2026-10-16 22:27 EDT: Decision 0012 (SEO basics) deployed live (dpl_KL53w124pWz8rtN8pPu4svNzKh6Y, all 15 files 200; unknown path 404).
 - 2026-10-16 22:29 EDT: Decision 0013 (design refresh, dark default) approved by Remington. Replaced public/style.css with previewed stylesheet; no HTML changes besides changelog row. Not deployed (user deploys).
+- 2026-10-16 22:40 EDT: Decision 0013 (design refresh) deployed live (dpl_A3dAL9fQ83GAwVdmFakBT9AgTiF5, all 15 files 200; live style.css sha 144156c6).
