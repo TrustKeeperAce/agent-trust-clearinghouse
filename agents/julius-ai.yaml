@@ -1,0 +1,93 @@
+name: Julius AI
+slug: julius-ai
+category: simple analysis
+type: commercial
+homepage: https://julius.ai/
+scope: AI data-analysis agent
+summary: Julius AI is a commercial AI data-analysis tool that generates and runs code from natural-language prompts. Public evidence consists mainly of vendor materials, benchmarks published by competing products, and a small number of limited independent studies, including one peer-reviewed comparison that tested Julius with code execution disabled. We found fewer than three independent evaluations of its computed answers, so no overall score is given. Insufficient evidence. Informational only; not an endorsement or certification.
+status: Insufficient evidence
+scores:
+  completion_rate: null
+  disputes: null
+  adherence_to_limits: null
+  evidence_quality: null
+factor_notes:
+  Completion rate: 'Independent evidence on correctness is limited: one peer-reviewed comparison run with code execution disabled, and one single-prompt observation.'
+  Disputes: No lawsuits, regulatory actions, or data-protection complaints concerning Julius AI were found.
+  Adherence to limits: The vendor states credit-based usage limits and file-retention periods; not independently tested.
+  Evidence quality: Fewer than three independent evaluations of computed answers; other evidence is vendor statements, competitor benchmarks, and anecdotal reports.
+independent_source_count:
+  performance: 2 (both limited)
+  other: 4
+evidence_grade: Insufficient evidence
+overall_score: null
+sources:
+- url: https://www.mdpi.com/2076-3417/16/2/669
+  kind: 'independent performance (peer-reviewed; limited: Julius code execution disabled; page returned 403 to automated fetch)'
+  accessed: '2026-10-16'
+  note: 'Abbasi et al. (2026), Applied Sciences 16(2):669: comparison on bibliometric tasks'
+- url: https://doi.org/10.18061/ojsm.6575
+  kind: independent performance (single prompt; education journal)
+  accessed: '2026-10-16'
+  note: 'Ohio Journal of School Mathematics (2025): generative AI chatbots and multiplication'
+- url: https://link.springer.com/article/10.1007/s44217-024-00214-7
+  kind: other independent (tutorial; not a correctness evaluation)
+  accessed: '2026-10-16'
+  note: 'Discover Education (2024): tutorial on generative AI in mixed-methods analysis'
+- url: https://doi.org/10.18623/rvd.v23.7013
+  kind: other independent (student-learning study; DOI returned 404)
+  accessed: '2026-10-16'
+  note: 'Veredas do Direito (2026): Julius in postgraduate statistical analysis'
+- url: https://casrai.org/guides/julius-ai-for-research-data-analysis
+  kind: other independent (guidance; not a test)
+  accessed: '2026-10-16'
+  note: 'CASRAI guide: Julius AI for research data analysis'
+- url: https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1006&context=making-waves_reu
+  kind: other independent (student poster; page returned 403 to automated fetch)
+  accessed: '2026-10-16'
+  note: 'University of South Florida REU poster: AI in ocean traffic monitoring'
+- url: https://rows.com/blog/post/ai-spreadsheet-benchmark
+  kind: competitor benchmark (not independent)
+  accessed: '2026-10-16'
+  note: 'Rows: AI Spreadsheet Benchmark'
+- url: https://www.basedash.com/blog/ai-data-analyst-benchmark-bi-bench-results
+  kind: competitor benchmark (not independent)
+  accessed: '2026-10-16'
+  note: 'Basedash: BI Bench results'
+- url: https://dabench.com/tools/julius/
+  kind: benchmark listing (operator not identified; no score shown)
+  accessed: '2026-10-16'
+  note: DA-bench listing for Julius
+- url: https://aicustomerresearch.beehiiv.com/p/september2024
+  kind: anecdotal (newsletter)
+  accessed: '2026-10-16'
+  note: Newsletter test of AI quantitative analysis tools
+- url: https://julius.ai/docs/get-started/privacy-and-data-security
+  kind: vendor statement
+  accessed: '2026-10-16'
+  note: 'Julius docs: privacy and data security'
+- url: https://julius.ai/security
+  kind: vendor statement
+  accessed: '2026-10-16'
+  note: Julius security page (vendor-stated compliance claims)
+- url: https://julius.ai/privacy-policy
+  kind: vendor statement
+  accessed: '2026-10-16'
+  note: Julius privacy policy
+- url: https://julius.ai/docs/get-started/files
+  kind: vendor statement
+  accessed: '2026-10-16'
+  note: 'Julius docs: file retention'
+- url: https://julius.ai/docs/billing/credits-overview
+  kind: vendor statement
+  accessed: '2026-10-16'
+  note: 'Julius docs: usage credits by plan'
+uncertainties:
+- No independent study found tests Julius as normally used, with code execution enabled.
+- The peer-reviewed comparison contains internal inconsistencies in its stated test dates and software versions.
+- Benchmarks published by competing products are not independent.
+- Privacy, retention, training-use, and compliance statements are vendor statements and were not independently verified.
+- The product and its billing model changed in 2026; older evidence may not reflect the current product.
+last_reviewed: '2026-10-16'
+decision_packet: decisions/0007-julius-ai.md
+notes: Informational only; not a guarantee, endorsement, or certification.
