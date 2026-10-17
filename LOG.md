@@ -23,3 +23,5 @@
 - 2026-10-16 22:12 EDT: Decision 0011 approved by Remington. Site polish: last-reviewed definition, footer links, public changelog (0001–0011), email-only corrections section, Pactum Bloomberg access_note restored, meta descriptions, methodology anchors, site name standardized. No scores/grades/statuses/dates changed. Not deployed (user deploys).
 - 2026-10-16 22:16 EDT: Decision 0011 deployed live (dpl_CusTEP4k5GZPT6LN21MSkNq9vwYP, all 12 pages 200).
 - 2026-10-16 22:24 EDT: Decision 0012 (SEO basics) approved by Remington. Added sitemap.xml, robots.txt, 404.html, canonical/OG/Twitter tags, inline favicon, index JSON-LD (inert). Validated XML, links, unique titles/descriptions. No scores/wording changed. Not deployed (user deploys).
+- 2026-10-16 22:27 EDT: Decision 0012 (SEO basics) deployed live (dpl_KL53w124pWz8rtN8pPu4svNzKh6Y, all 15 files 200; unknown path 404).
+- 2026-10-16 22:29 EDT: Decision 0013 (design refresh, dark default) approved by Remington. Replaced public/style.css with previewed stylesheet; no HTML changes besides changelog row. Not deployed (user deploys).
