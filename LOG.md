@@ -13,3 +13,4 @@
 - 2026-10-16 21:24 EDT: Decision 0005 approved by Remington. Added Pactum (Negotiation) as Insufficient evidence, no overall score. Link check: all 200 except Bloomberg (403, paywalled). Not deployed (user deploys).
 - 2026-10-16 21:25 EDT: Pactum deployed live (dpl_6UADTKk24mFVyEQjCJBFiD1kQCqn, all pages 200).
 - 2026-10-16 21:31 EDT: Decision 0006 approved by Remington. Added Clay (Data enrichment; Claygent and enrichment scope) as Insufficient evidence, no overall score. Link check: all 200 except openai.com/index/clay and Trustpilot (403 to automated fetch; labeled on page). Not deployed (user deploys).
+- 2026-10-16 21:33 EDT: Clay deployed live (dpl_46DVQmt1AKUDuKH1QZPW5ETZ9kkF, all pages 200).
