@@ -1,0 +1,174 @@
+name: Claude Code (Anthropic)
+slug: claude-code
+category: Coding agent
+type: Commercial agentic coding tool from Anthropic (terminal CLI, npm @anthropic-ai/claude-code, with IDE extensions); used with a paid Claude plan or API key; source not open
+homepage: https://code.claude.com/docs/en/overview
+scope: The Claude Code agent (CLI and headless mode), versions 1.0 to 2.1.x (latest 2.1.302, 16 Oct 2026). Claude models used in other scaffolds, the Claude Agent SDK, Claude Desktop/Cowork and Claude Research (a separate entry) are not covered. Several studies ran Claude Code with non-Anthropic models.
+summary: 'Claude Code is Anthropic''s agentic coding tool. It works in a terminal to read a codebase, edit files, run commands and open pull requests. In independent tests from 2025-26, results varied widely by task and model: 32.8% average resolved rate on SWE-RPG repository tasks, 47.9% pass@1 on SWE-bench Science (with Claude Opus 5), 58.0% on TerminalWorld terminal tasks, 61.2% on SkillsBench, and 78.6% bug recall on PBT-Bench. Two field studies of real GitHub pull requests found 72.6% and 83.8% were accepted (human pull requests 91.0% in one study). Safety results were mixed: one study found out-of-scope actions on benign tasks in up to 27.7% of runs, while another found the lowest boundary-violation rates of four frameworks on two of three task types. An independent stress test of the auto-approval mode (April 2026) found it missed 81.0% of risky actions in deliberately ambiguous tasks (Anthropic reports 17% on production traffic), and only 5.9-8.6% of solutions on a security benchmark were both working and secure. A red-teaming study achieved remote code execution on an older version (2.0.37), but not on version 2.1.138 with newer models. Anthropic has published more than 30 security advisories for Claude Code since June 2025, each with a fixed version. In March 2026, its source code was accidentally published in an npm package. Anthropic''s own benchmark figures are not counted. Overall score 55. Informational only; not a guarantee, endorsement, or certification.'
+scores:
+  completion_rate: 50
+  disputes: 45
+  adherence_to_limits: 40
+  evidence_quality: 85
+overall_score: 55
+overall_note: 0.30*50 + 0.20*45 + 0.25*40 + 0.25*85 = 55.25, rounded to 55
+evidence_grade: A
+independent_source_count:
+  performance: 15
+  peer_reviewed: 5
+  other: 7
+factor_notes:
+  completion_rate: 'SWE-RPG (163 repository tasks, 6 backends): Claude Code averaged 32.8% resolved, 49.1% best (Kimi-K3). SWE-bench Science: pass@1 47.90% (Opus 5, max) and 42.02% (DeepSeek-V4-Pro). TerminalWorld: 58.0% pass (Opus 4.7), below Terminus-2 at 62.5% with the same model. SkillsBench: 61.2% with Skills (Opus 4.7), vs 53.1% in OpenHands. PBT-Bench: 78.6% bug recall (Opus 4.8), vs 81.2% in OpenHands. ResearchClawBench: 21.5 of 100 (Opus 4.6), the top of 7 research agents. SusVibes: 12.9-41.4% functional, below SWE-agent and OpenHands with Claude 4 Sonnet. Field studies: 83.8% of 567 pull requests accepted (humans 91.0%); 72.6% in a May-July 2025 window. Judgment call.'
+  disputes: No lawsuits or regulatory actions found. Anthropic's GitHub repository lists 35 security advisories (June 2025 to October 2026; 28 rated high), mostly approval-prompt or sandbox bypasses and trust-dialog issues; each lists a fixed version, and a few concern Claude Desktop rather than the CLI. Three further CVEs filed by VulnCheck in April 2026 (CVE-2026-35020/35021/35022) were later rejected by that CNA as outside the threat model or intended behaviour. On 31 March 2026, version 2.1.88 was published to npm with a source map exposing the source code; Anthropic called it a packaging error with no customer data exposed, and retracted most of the DMCA notices that had reached about 8,100 GitHub repositories. Judgment call.
+  adherence_to_limits: 'Overeager Coding Agents (Claude Code 2.1.117): out-of-scope actions on benign tasks 5.4-27.7% depending on model, vs 1.1% for the same model in OpenHands. SWE-MISBEHAVIOR (Sonnet 4.5): boundary-violation rate 3.80% on code generation and 8.50% on file management (lowest of four frameworks), 18.95% on system interaction. Red-teaming (ISSTA 2026): remote code execution on 2.0.37; 0.0 success on 2.1.138 with Sonnet 4.6 and Opus 4.7. Measuring the Permission Gate (HKUST, ETH; April 2026): auto mode missed 81.0% of risky state-changing actions in 128 deliberately ambiguous tasks (70.3% of those it evaluated; 31.9% false positives), vs 17% reported by Anthropic on production traffic. SusVibes: 5.9-8.6% of Claude Code solutions were both functional and secure (SWE-agent up to 12.9%). Several benchmark studies ran with permission prompts disabled. Judgment call.'
+  evidence_quality: Fifteen independent sources, five peer-reviewed (ISSTA 2026, TOSEM, MSR 2026, NeurIPS 2026 Datasets & Benchmarks, ASE 2026 extended abstract). Recent tests state versions (2.1.117, 2.1.138, 2.1.139; 2026). Terminal-Bench 2.0 is excluded (an Anthropic co-author). Many runs use non-default models or settings. Judgment call.
+sources:
+- url: https://dl.acm.org/doi/10.1145/3832267
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: 2.0.37 (old) and 2.1.138 (new)
+  test_date: 2025-2026 (revision mid-2026)
+  accessed: '2026-10-17'
+  note: 'Red-Teaming Coding Agents (HKUST, Fudan; ISSTA 2026, arXiv 2509.05755): prompt-leak score 0.891 and RCE via tool-invocation hijacking on 2.0.37; RCE-2 success 0.0 on 2.1.138 with Sonnet 4.6 and Opus 4.7'
+- url: https://dl.acm.org/doi/full/10.1145/3798166
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'On the Use of Agentic Coding (NAIST, Queen''s; TOSEM, arXiv 2509.14745): 567 Claude Code pull requests in 157 projects; 83.8% accepted vs 91.0% for human pull requests. Field study'
+- url: https://dl.acm.org/doi/full/10.1145/3793302.3793576
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: May-Aug 2025
+  accessed: '2026-10-17'
+  note: 'Comparing AI Coding Agents (Trieste, KCL, UCL; MSR 2026, arXiv 2602.08915): 139 Claude Code pull requests in AIDev; 72.6% accepted in the common May-July 2025 window (Codex 79.9%); 33.3% on test tasks. Small sample. Field study'
+- url: https://arxiv.org/abs/2605.15229
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (default settings, Opus 4.8)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'PBT-Bench (Tsinghua, UW; NeurIPS 2026 Datasets & Benchmarks): bug recall 78.6% for Claude Code + Opus 4.8 vs 81.2% for the same model in OpenHands; run headless with permission prompts disabled'
+- url: https://arxiv.org/abs/2605.22535
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (Opus 4.7)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'TerminalWorld (UCL, Nanjing, Tencent; ASE 2026 extended abstract): 58.0% pass (60.7% resolved) on 200 verified terminal tasks vs Terminus-2 62.5% with the same model. Disclosure: Claude Code was also used to build the tasks; AWS credits'
+- url: https://arxiv.org/abs/2608.09072
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: about July 2026
+  accessed: '2026-10-17'
+  note: 'SWE-RPG (SMU, Monash and others; preprint Aug 2026): 163 repository tasks, 6 backends; Claude Code averaged 32.8% resolved (OpenCode 33.0%, Codex 28.5%); best 49.1% with Kimi-K3'
+- url: https://arxiv.org/abs/2608.19799
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE-bench Science (Shanghai Innovation Institute, Fudan; preprint Aug 2026): 119 scientific-software tasks; pass@1 47.90% (Opus 5, max), the best of 8 configurations; 42.02% with DeepSeek-V4-Pro'
+- url: https://arxiv.org/abs/2602.12670
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (Opus 4.7)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SkillsBench (BenchFlow and others; preprint): 61.2% with Skills for Claude Code + Opus 4.7 vs 53.1% in OpenHands. Disclosure: the authors thank Anthropic and others for model access and API support'
+- url: https://arxiv.org/abs/2606.07591
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (Opus 4.6)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'ResearchClawBench (Shanghai AI Lab; preprint v5 Jul 2026): 40 research-reproduction tasks; Claude Code averaged 21.5 of 100, the top of 7 agents (re-discovery threshold 50)'
+- url: https://arxiv.org/abs/2605.18583
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: 2.1.117
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Overeager Coding Agents (Griffith, NTU, UNSW, Quantstamp; preprint May 2026): out-of-scope actions on benign tasks 5.4-27.7% for Claude Code depending on model; Sonnet 4.6 27.7% in Claude Code vs 1.1% in OpenHands'
+- url: https://arxiv.org/abs/2610.18206
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (Sonnet 4.5)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE-MISBEHAVIOR (NUS, A*STAR, Salesforce AI Research and others; preprint Oct 2026): boundary-violation rates 3.80% (code generation), 8.50% (file management), 18.95% (system interaction). Disclosure: the authors propose a mitigation'
+- url: https://arxiv.org/abs/2607.26724
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
+  accessed: '2026-10-17'
+  note: 'UrbanDS (Tsinghua; preprint v2 Sept 2026): Claude Code 62.9% on UrbanDS-Bench and 42.0% on CoDA-Bench. Competing-method disclosure: UrbanDS scored higher'
+- url: https://arxiv.org/abs/2607.10569
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: 2.1.139
+  test_date: July 2026
+  accessed: '2026-10-17'
+  note: 'Tool-surface ablation (RIT; preprint Jul 2026): Claude Code 2.1.139 with Sonnet 4.6; pass rates were statistically the same across tool configurations; restricting it to one code-execution tool cut cost 24.6% on computation tasks and raised it 14.4% (not significant) on SWE-bench tasks'
+- url: https://arxiv.org/abs/2604.04978
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (behaviour as of April 2026)
+  test_date: April 2026
+  accessed: '2026-10-17'
+  note: 'Measuring the Permission Gate (HKUST, ETH Zurich; preprint Apr 2026): Claude Code auto mode on 128 deliberately ambiguous DevOps tasks, 253 state-changing actions; end-to-end false negative rate 81.0%, 70.3% on actions the classifier evaluated, false positive rate 31.9%; 36.8% of actions were file edits outside the classifier''s scope'
+- url: https://arxiv.org/abs/2512.03262
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: 2025-2026
+  accessed: '2026-10-17'
+  note: 'SusVibes (CMU and others; preprint v4 Sept 2026): 186 real-repository tasks; Claude Code FuncPass 12.9-41.4% and SecPass (functional and secure) 3.8-8.6% across 4 models; SWE-agent and OpenHands scored higher with Claude 4 Sonnet (57.0/11.8 and 53.2/11.8)'
+- url: https://arxiv.org/abs/2601.11868
+  kind: excluded (developer-affiliated author)
+  peer_reviewed: true
+  accessed: '2026-10-17'
+  note: 'Terminal-Bench 2.0 (ICLR 2026): ran Claude Code among six agents; an author is affiliated with Anthropic, so it is not counted for Claude Code'
+- url: https://github.com/anthropics/claude-code/security/advisories
+  kind: other
+  accessed: '2026-10-17'
+  note: 35 security advisories published by Anthropic (June 2025 to October 2026), each with a fixed version
+- url: https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/
+  kind: other
+  accessed: '2026-10-17'
+  note: Source code exposed in npm version 2.1.88 (31 March 2026); see also TechCrunch on the DMCA takedowns, 1 April 2026
+- url: https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/
+  kind: other
+  accessed: '2026-10-17'
+  note: 'TechCrunch: DMCA notices reached about 8,100 GitHub repositories; Anthropic said this was an accident and retracted most'
+- url: https://conf.researchr.org/details/fse-2026/fse-2026-industry-papers/12/Engineering-Pitfalls-in-AI-Coding-Tools-An-Empirical-Study-of-Bugs-in-Claude-Code-C
+  kind: other
+  accessed: '2026-10-17'
+  note: 'FSE 2026 industry paper: study of reported bugs in Claude Code, Codex and Gemini CLI. Bug reports, not a performance test'
+- url: https://conf.researchr.org/details/icse-2026/agent-2026-papers/22/Decoding-the-Configuration-of-AI-Coding-Agents-Insights-from-Claude-Code-Projects
+  kind: other
+  accessed: '2026-10-17'
+  note: 'ICSE 2026 AGENT workshop: analysis of 328 public Claude Code configuration files. Not a performance test'
+- url: https://dl.acm.org/doi/10.1145/3793302.3793605
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Behavioral Analysis of AI Code Generation Agents (MSR 2026): Claude Code pull requests rewrite rather than edit code. Descriptive, not performance'
+- url: https://arxiv.org/abs/2603.21642
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Are AI-assisted Development Tools Immune to Prompt Injection? (NYIT; preprint Mar 2026): qualitative rating of Claude Code as low-to-medium risk for MCP tool poisoning; it could read sensitive files when given file-system permissions'
+- url: https://www.anthropic.com/engineering
+  kind: vendor (not counted)
+  accessed: '2026-10-17'
+  note: Anthropic's own benchmark and usage reports for Claude Code and Claude models (for example SWE-bench and Terminal-Bench figures)
+uncertainties:
+- Most counted studies do not state the Claude Code version; Claude Code updates several times a week.
+- Many runs use non-default models (Kimi, DeepSeek, GLM) or disabled permission prompts, so results may not reflect a typical setup.
+- Counting the two pull-request field studies is a judgment call; without them, three peer-reviewed sources remain (one an extended abstract).
+- TerminalWorld appeared at ASE 2026 as an extended abstract; the full paper is a preprint.
+- Security advisory counts come from Anthropic's GitHub repository; a few concern Claude Desktop rather than the CLI.
+- Citation check incomplete — about 13 candidate studies not yet screened; recheck later.

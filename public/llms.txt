@@ -19,6 +19,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [Claude Research](https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html): overall 58, evidence grade B-
 - [SWE-agent (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html): overall 58, evidence grade B
 - [STORM / Co-STORM (knowledge-storm library)](https://agent-trust-clearinghouse.vercel.app/agents/storm.html): overall 56, evidence grade B
+- [Claude Code (Anthropic)](https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html): overall 55, evidence grade A
 - [Perplexity](https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html): overall 54, evidence grade B
 - [GPT Researcher](https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html): overall 53, evidence grade B-
 - [Browser Use (open-source library)](https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html): overall 51, evidence grade B
