@@ -97,3 +97,6 @@ Loki and OpenFactCheck (0030) were deployed as dpl_ETDbQzCpMxbRGLurrt5mj1byCbfL 
 ## 2026-10-17 — 0031 Fellou
 The 0031 decision was approved: Fellou (agentic browser), Browser/web agent, Insufficient evidence, 0 counted. CAP is excluded for Fellou as vendor-affiliated. Gate: the Semantic Scholar check of CAP's citations (1 citer, no Fellou) and the keyword search (0 results) were completed. The full-text snippet search was rate-limited and could not be run. No independent test was found, so the outcome is unchanged.
 Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt and changelog. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Fellou (0031) was deployed as dpl_FGRNvuuep3R3eXD3MeqgKjnihKmW (commit cebf614). The batch 3 shortlist is now complete. At 1:25 PM ET, the two fellou.ai blog links on the Fellou page (fellou.ai/blog/fellou-v2-launch/ and fellou.ai/blog/eko20-launch/) returned 503; recheck them later.
