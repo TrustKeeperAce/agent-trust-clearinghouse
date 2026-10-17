@@ -25,6 +25,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [Perplexity Comet (agentic browser)](https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html): overall 41, evidence grade B-
 - [ChatGPT Work](https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html): Insufficient evidence
 - [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
+- [Fellou (agentic browser)](https://agent-trust-clearinghouse.vercel.app/agents/fellou.html): Insufficient evidence
 - [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): Insufficient evidence
 - [Kimi Researcher](https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html): Insufficient evidence
 - [Loki (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/loki.html): Insufficient evidence

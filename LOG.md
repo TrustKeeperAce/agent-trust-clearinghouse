@@ -93,3 +93,7 @@ Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt a
 
 ## 2026-10-17 — Deploy note
 Loki and OpenFactCheck (0030) were deployed as dpl_ETDbQzCpMxbRGLurrt5mj1byCbfL (commit 4761054). Live check: loki.html, openfactcheck.html and the index all return 200. Loki shows 2 counted sources; the outcome is unchanged (Insufficient evidence).
+
+## 2026-10-17 — 0031 Fellou
+The 0031 decision was approved: Fellou (agentic browser), Browser/web agent, Insufficient evidence, 0 counted. CAP is excluded for Fellou as vendor-affiliated. Gate: the Semantic Scholar check of CAP's citations (1 citer, no Fellou) and the keyword search (0 results) were completed. The full-text snippet search was rate-limited and could not be run. No independent test was found, so the outcome is unchanged.
+Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt and changelog. NOT deployed.
