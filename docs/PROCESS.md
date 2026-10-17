@@ -39,3 +39,14 @@ Before publishing a new entry, the citation gate looks for independent tests tha
 
 ## Deploys
 Unchanged. Deploys are done only by the owner. After each deploy, a LOG-only note with the deploy id and commit is added.
+
+## Coding agent evidence cautions (Decision 0036)
+These are internal guidance under the existing rules; they do not change the scoring rules.
+1. **Vendor-reported benchmarks are not counted.** SWE-bench (Verified, Lite, Multimodal, Pro), Terminal-Bench, maintainer leaderboards such as Aider's, and similar results that the developer reports, runs or self-submits are listed as vendor sources.
+2. **The named product must be tested.** A study of a model inside a generic or third-party scaffold does not count for a product built on that model. For example, Claude in mini-SWE-agent is not a test of Claude Code; the named agent itself must be run.
+3. **Maintainer-verified leaderboards are other sources.** SWE-bench "verified" submissions, HAL entries and similar leaderboards are listed, not counted (OSWorld-Verified precedent, 0025). A study by the maintainers that runs the agent themselves can count, subject to caution 4.
+4. **Affiliation checks.** A source that shares authors with the developer is excluded for that product (the CAP and Fellou precedent). This matters for overlapping groups, such as Princeton's SWE-bench, SWE-agent and HAL. Competing-method authors count, with disclosure.
+5. **Version and test date.** Record `version_tested` and `test_date` for every counted source. An A grade needs a stated version or tier, or a dated test of the hosted current product (0035).
+6. **Contamination and benchmark quality.** Critiques of contamination or task validity are reported neutrally as context, not as performance tests.
+7. **Security.** Describe CVEs, prompt-injection and sandbox findings neutrally: CVSS attributed, fix status noted, no exploit links.
+8. **Productivity studies.** Controlled or randomised developer studies can count if they name and use the agent, with version and date recorded.
