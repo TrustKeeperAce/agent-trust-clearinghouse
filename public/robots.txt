@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agent-trust-clearinghouse.vercel.app/sitemap.xml
