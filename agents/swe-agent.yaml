@@ -1,0 +1,123 @@
+name: SWE-agent (open-source)
+slug: swe-agent
+category: Coding agent
+type: Open-source coding-agent framework (MIT licence) from Princeton University and Stanford University researchers; PyPI/GitHub SWE-agent
+homepage: https://github.com/SWE-agent/SWE-agent
+scope: The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team, and the team's EnIGMA security variant are not covered.
+summary: SWE-agent is an open-source coding agent that gives a language model a purpose-built command interface for browsing, editing and testing a repository. It is run with a model chosen by the user. Eight independent studies that ran or analysed it were found (six peer-reviewed). Results depend heavily on the model and task. They range from 10-17.67% on fresh GitHub issues (SWE-bench-Live Lite) and 16.2-43.6% on SWE-Bench Pro's public set, to 42.59% on GitTaskBench, 33.8% on vulnerability patching (SEC-bench) and 22 of 100 correct Python vulnerability fixes when given fix-location hints (Vul4Py). In an analysis of third-party SWE-agent runs, 3.9-14.9% of test-passing runs had static-analysis security findings in the final code; these are scanner findings, not confirmed vulnerabilities, and the authors could not tell whether the agent introduced them. Re-checks of early leaderboard results found that some reported fixes were incorrect or relied on leaked solutions. One CVE has been published for an optional trajectory viewer; no fix was identified as of 17 October 2026. The project has had no release since May 2025. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 45
+  disputes: 55
+  adherence_to_limits: 55
+  evidence_quality: 80
+overall_score: 58
+evidence_grade: B
+independent_source_count:
+  performance: 8
+  peer_reviewed: 6
+  other: 6
+factor_notes:
+  completion_rate: 'SWE-bench-Live Lite: 10.00% (GPT-4o) to 17.67% (Claude 3.7 Sonnet) resolved; full set 18.57% (GPT-4.1) and 17.13% (Claude 3.7 Sonnet). SWE-Bench Pro public set (SWE-agent as the unified scaffold, models as of September 2025): 16.2% (GPT-OSS-120B) to 43.6% (Claude Sonnet 4.5); under a 50-turn, $2 cap GPT-5 25.9%, Claude Opus 4.1 22.7%; commercial set at most 17.8%. GitTaskBench (v1.0.1+): 3.70-42.59% task pass rate across models, best Claude 3.7. SEC-bench (v1.0.1): 26.2-33.8% vulnerability patches and 3.8-12.5% proof-of-concept generation. SWE-EVO: 4.17-39.58% resolved across 18 models. SWT-Bench: as adapted for test generation, 15.9% success with GPT-4 (18.5% for an improved variant); using its generated tests to filter its own fixes raised fix precision to 47.8% at 20% recall. Vul4Py (2026, Claude Sonnet 4, given the CVE ID and fix-location hints): 22 of 100 vulnerabilities correctly fixed (OpenHands 41).'
+  disputes: 'CVE-2026-75482 (trajectory inspector path traversal, confirmed in v1.1.0; CVSS 3.1 7.5 per VulnCheck; NVD Deferred; GitHub issue #1472 open, no fix identified). Independent re-checks of developer-submitted SWE-bench results: SWE-Bench+ found SWE-agent + GPT-4''s resolution rate fell from 12.47% to 3.97% after excluding solution-leak and weak-test cases; UTBoost re-ranked leaderboard entries, including SWE-agent''s, after adding tests. No legal or regulatory action found.'
+  adherence_to_limits: 'Trajectory-Level Security Debt (University of Luxembourg et al., preprint Sept 2026): 3.9% (agreement of two scanners) to 14.9% (any scanner) of test-passing third-party SWE-agent runs on SWE-bench had static-analysis findings in the final code; the authors state these are not validated vulnerabilities and may predate the agent. SEC-bench: in one cited case SWE-agent''s patch was under 10 lines where another agent changed about 7,000. The optional trajectory inspector binds all interfaces without authentication (CVE-2026-75482). No independent study of out-of-scope or unrequested actions by SWE-agent was found.'
+  evidence_quality: Eight independent sources, six peer-reviewed (NeurIPS 2024, NeurIPS 2025 ×2, AAAI 2026, ICML 2026, ProvSec 2026 in Springer LNCS). Stated versions are v1.0.1 and a commit after v1.0.1 (2025). No test within the last 12 months states the version, so grade B rather than A (0025 clarification and 0035 precedent).
+sources:
+- url: https://arxiv.org/abs/2406.12952
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: SWE-agent adapted for test generation (2024)
+  test_date: '2024'
+  accessed: '2026-10-17'
+  note: 'SWT-Bench (ETH Zurich; NeurIPS 2024): test-generation benchmark; SWE-agent, adapted by instruction, outperformed non-agent methods at reproducing issues (15.9% success with GPT-4; 18.5% for an improved variant); filtering its own fixes with its generated tests raised fix precision to 47.8% at 20% recall. Disclosure: one author is affiliated with LogicStar.ai, which builds code agents'
+- url: https://arxiv.org/abs/2505.23419
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (100 LLM calls per instance)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'SWE-bench-Live (Microsoft; NeurIPS 2025 Datasets & Benchmarks): Lite subset, SWE-agent 10.00% (GPT-4o), 16.33% (GPT-4.1), 17.67% (Claude 3.7 Sonnet), 15.33% (DeepSeek V3) resolved; patch-apply 84.67-95.00%; full set 18.57% (GPT-4.1) and 17.13% (Claude 3.7 Sonnet). Disclosure: Microsoft makes the competing GitHub Copilot coding agent'
+- url: https://arxiv.org/abs/2509.16941
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (SWE-agent default prompt, 50 turns)
+  test_date: '2025-09'
+  accessed: '2026-10-17'
+  note: 'SWE-Bench Pro (Scale AI; ICML 2026, PMLR v306): SWE-agent used as the unified scaffold; public set 16.2% (GPT-OSS-120B) to 43.6% (Claude Sonnet 4.5), models as of 18 September 2025; under a 50-turn, $2 cap GPT-5 25.9%, Claude Opus 4.1 22.7%; commercial set at most 17.8%. Disclosure: Scale AI runs a commercial leaderboard for this benchmark'
+- url: https://arxiv.org/abs/2508.18993
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: SWE-agent v1.0.1-61-gaa4e8ea1
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'GitTaskBench (AAAI 2026): SWE-agent task pass rate 3.70-42.59% across models (best Claude 3.7, execution completion 64.81%), below OpenHands with the same model; the testers raised timeouts and removed a default instruction not to install packages'
+- url: https://arxiv.org/abs/2506.11791
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: SWE-agent 1.0.1
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'SEC-bench (University of Illinois Urbana-Champaign; NeurIPS 2025): 80 real vulnerabilities; SWE-agent 33.8% patched (Claude 3.7 Sonnet), 26.2% (GPT-4o), 31.2% (o3-mini); proof-of-concept 3.8-12.5%; highest of three agents on this 80-instance subset and comparable to OpenHands on the full 200; five repeat runs (o3-mini) averaged 30.0% (SD 7.9)'
+- url: https://arxiv.org/abs/2512.18470
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: 2025-2026
+  accessed: '2026-10-17'
+  note: 'SWE-EVO (FPT AI Center; preprint Dec 2025, updated 2026): long-horizon software evolution; SWE-agent 4.17-39.58% resolved across 18 models (best GLM-4.7), with some models doing much better than on OpenHands'
+- url: https://arxiv.org/abs/2609.35199
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (Nebius public SWE-agent runs)
+  test_date: unstated
+  accessed: '2026-10-17'
+  note: 'Trajectory-Level Security Debt in LLM Coding Agents (University of Luxembourg et al.; preprint Sept 2026): static analysis of the final code from third-party (Nebius, Llama 3.1 8B/70B/405B) SWE-agent runs on SWE-bench; 3.9% (two-scanner agreement) to 14.9% (any scanner) of 830 test-passing runs had findings; the authors state these are scanner findings, not validated vulnerabilities, and may predate the agent'
+- url: https://arxiv.org/abs/2608.00692
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (Claude Sonnet 4, 100 steps, $3 cap)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Vul4Py (Singapore Management University, Monash University, UNSW; ProvSec 2026, Springer LNCS): 100 Python vulnerabilities with exploit and functional oracles; agents were given the CVE ID and fix-location hints; SWE-agent 27 passed the exploit test, 24 also kept functional tests passing, 22 judged correct (OpenHands 41, Trae Agent 29); mean $1.43 and 2,052 s per instance'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-75482
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-75482: path traversal in the optional trajectory inspector (sweagent inspector), confirmed in v1.1.0; binds all interfaces, wildcard CORS, no authentication; CVSS 3.1 7.5 (VulnCheck); NVD Deferred; GitHub issue #1472 open'
+- url: https://arxiv.org/abs/2410.06992
+  kind: other
+  accessed: '2026-10-17'
+  note: 'SWE-Bench+ (York University): re-check of developer-submitted SWE-agent + GPT-4 patches; resolution 12.47% → 3.97% after excluding solution leakage and weak tests (re-analysis of vendor runs, not an independent run)'
+- url: https://aclanthology.org/2025.acl-long.189/
+  kind: other
+  accessed: '2026-10-17'
+  note: 'UTBoost (ACL 2025): added tests and re-graded SWE-bench leaderboard entries, including SWE-agent''s; rankings changed (re-analysis of submitted patches)'
+- url: https://arxiv.org/abs/2504.08703
+  kind: other
+  accessed: '2026-10-17'
+  note: 'SWE-PolyBench (Amazon): tests SWE-Agent-PB, a modified multi-language version; listed, not counted. Acknowledges two SWE-agent authors'
+- url: https://arxiv.org/abs/2610.07639
+  kind: other
+  accessed: '2026-10-17'
+  note: 'HarnessSecurity-Bench (Sun Yat-sen University et al., preprint Oct 2026): design review of security mechanisms across 40 coding-agent harnesses including SWE-agent; not a performance run'
+- url: https://arxiv.org/abs/2511.00872
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Empirical evaluation of agent frameworks (USTC, preprint Nov 2025): SWE-agent had the lowest correction rate (6.93%); it is unclear whether the repair patches were re-run or taken from released results, so this is not counted'
+- url: https://arxiv.org/abs/2405.15793
+  kind: vendor
+  accessed: '2026-10-17'
+  note: 'SWE-agent paper (NeurIPS 2024; Yang, Jimenez, Wettig, Lieret, Yao, Narasimhan, Press): developer results, not counted'
+- url: https://www.swebench.com/
+  kind: not counted (affiliated leaderboard)
+  accessed: '2026-10-17'
+  note: 'SWE-bench and SWE-bench Verified leaderboards: maintained by the SWE-agent team (Princeton/Stanford); entries are listed, not counted (0036 cautions 1, 3 and 4)'
+- url: https://hal.cs.princeton.edu/
+  kind: not counted (leaderboard)
+  accessed: '2026-10-17'
+  note: 'Holistic Agent Leaderboard (Princeton CITP; no SWE-agent developers among the authors): runs SWE-agent and mini-SWE-agent; leaderboard, listed not counted (0036 caution 3)'
+uncertainties:
+- 'Scope: many 2026 benchmarks use mini-SWE-agent, which is a separate product and not covered. Including it would add sources but change what is being rated.'
+- SWE-Bench Pro's venue was confirmed as ICML 2026 (PMLR v306); a LIPIcs record found during research belongs to a different paper.
+- Trajectory-Level Security Debt reports scanner findings in final code and does not attribute them to the agent.
+- No test from the last 12 months states the SWE-agent version. The latest release is v1.1.0 (May 2025), and the main branch was last updated in July 2026.
+- SWE-bench (the benchmark) is maintained by the same team. Independent studies built on SWE-bench data count, but leaderboard entries do not.
+- Results depend heavily on the model and task, and many results reflect older models.
