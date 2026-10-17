@@ -1,0 +1,60 @@
+name: Google DeepMind SAFE (Search-Augmented Factuality Evaluator)
+slug: google-deepmind-safe
+category: verification
+type: research code (Apache-2.0 code; CC-BY other materials; bundled FActScore code MIT)
+homepage: https://github.com/google-deepmind/long-form-factuality
+summary: SAFE (Search-Augmented Factuality Evaluator) is open research code from Google DeepMind, described in a NeurIPS 2024 paper, that uses a language model and Google Search results to rate individual facts in long-form text. The authors report 72% agreement with crowdsourced annotators. Independent peer-reviewed studies report agreement with human annotators of about 84% on biography facts and strong correlation on factual labels, alongside weaker results for its claim extraction; these studies were conducted by researchers proposing alternative methods. Commentators have questioned the authors' comparison with crowdworkers rather than expert fact-checkers. Overall score 66. Informational only; not an endorsement or certification.
+scores:
+  completion_rate: 65
+  disputes: 80
+  adherence_to_limits: 60
+  evidence_quality: 60
+score_rationales:
+  completion_rate: Independent agreement and correlation are good on factual labels (84.48% on 786 biography facts, Zhao et al.; response-level Pearson 0.95, FactBench), weaker on other labels (0.60) and for claim extraction (VeriScore). Judgment call.
+  disputes: No legal or regulatory disputes found. Public critique of the "superhuman" framing (comparison with crowdworkers, not expert fact-checkers). Judgment call.
+  adherence_to_limits: Clear licences and stated limitations; maintained research code. Independently measured cost ($0.49 per response) is higher than the authors' $0.19, though setups differ. Judgment call.
+  evidence_quality: Three peer-reviewed independent sources, but small samples, mainly biographies and chat prompts, and each study promotes its own alternative method. Judgment call.
+overall_score: 66
+evidence_grade: B-
+independent_source_count:
+  performance: 3
+  other: 2
+sources:
+- url: https://proceedings.neurips.cc/paper_files/paper/2024/file/937ae0e83eb08d2cb8627fe1def8c751-Paper-Conference.pdf
+  kind: vendor
+  accessed: '2026-10-16'
+  note: 'NeurIPS 2024 paper (authors'' claims): 72.0% agreement with crowdsourced labels on 16,011 facts'
+- url: https://github.com/google-deepmind/long-form-factuality
+  kind: vendor
+  accessed: '2026-10-16'
+  note: 'GitHub repository: code, README and licences (authors)'
+- url: https://aclanthology.org/2025.findings-acl.161/
+  kind: independent
+  accessed: '2026-10-16'
+  note: 'Zhao et al. (Findings of ACL 2025): 84.48% agreement on 786 biography facts; authors propose an alternative method'
+- url: https://aclanthology.org/2025.acl-long.1587/
+  kind: independent
+  accessed: '2026-10-16'
+  note: 'FactBench (ACL 2025): response-level Pearson 0.95 (factual labels) / 0.60 (other labels); authors propose an alternative method'
+- url: https://aclanthology.org/2024.findings-emnlp.552/
+  kind: independent
+  accessed: '2026-10-16'
+  note: 'VeriScore (Findings of EMNLP 2024): critique of SAFE''s claim extraction; authors propose an alternative method'
+- url: https://venturebeat.com/ai/google-deepmind-unveils-superhuman-ai-system-that-excels-in-fact-checking-saving-costs-and-improving-accuracy
+  kind: journalism
+  accessed: '2026-10-16'
+  note: 'VentureBeat: reports Gary Marcus''s critique of the "superhuman" framing (page returned 429 to automated fetch; read via search index)'
+- url: https://forklog.com/en/deepmind-unveils-ai-model-for-fact-checking/
+  kind: journalism
+  accessed: '2026-10-16'
+  note: 'ForkLog: quotes the same Gary Marcus critique'
+uncertainties:
+- Results depend on which language model SAFE runs with and on the Serper search API.
+- Cost figures across studies are not directly comparable.
+- All three independent studies come from researchers proposing competing evaluators.
+- No independent study using expert fact-checkers was found.
+- The authors' 72% and 76% figures are their own claims, not independent evidence.
+last_reviewed: '2026-10-16'
+decision: APPROVED
+decision_packet: decisions/0009-google-deepmind-safe.md
+notes: Informational only; not a guarantee, endorsement, or certification.
