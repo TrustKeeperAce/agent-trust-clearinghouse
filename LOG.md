@@ -121,3 +121,6 @@ Decision 0040 (Claude Code, Coding agent, 55 / A) was deployed as dpl_5wBy66qQbA
 
 ## 2026-10-17 — Deploy note
 Decision 0041 (Aider, Coding agent, 52 / A) was deployed as dpl_H6mb7pW2w5i4XpZr94BVWSbYbg6G (commit 70c8a80). Live check: pages return 200, and the score of 52 and the "Citation check incomplete — recheck later" note are live. Evidence quality is 80, below the suggested A range, as approved. The extended Semantic Scholar retry was fully rate-limited and found no new hits. Batch 4 research continues privately with AutoKaggle/AIDE (0042).
+
+## 2026-10-17 — Deploy note
+Decision 0042 (AIDE, Data science agent, 60 / B; AutoKaggle, Data science agent, Insufficient evidence) was deployed as dpl_HhXDfsZPmbCSo3i1wozKiGyuJQfB (commit 6d11885). Live check: the aide, autokaggle and index pages return 200. Both entries carry "Citation check incomplete — recheck later". Batch 4 research continues privately with OpenAI Codex (0043).
