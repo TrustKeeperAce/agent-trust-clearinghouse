@@ -27,3 +27,4 @@
 - 2026-10-16 22:29 EDT: Decision 0013 (design refresh, dark default) approved by Remington. Replaced public/style.css with previewed stylesheet; no HTML changes besides changelog row. Not deployed (user deploys).
 - 2026-10-16 22:40 EDT: Decision 0013 (design refresh) deployed live (dpl_A3dAL9fQ83GAwVdmFakBT9AgTiF5, all 15 files 200; live style.css sha 144156c6).
 - 2026-10-16 22:55 EDT: Decision 0014 (design v2) approved by Remington. Applied: score-sorted directory with separate Insufficient group, directory-order rule in methodology (#directory-order), stacked cards <640px, semantic HTML, Changelog in nav, ItemList JSON-LD, llms.txt (not in sitemap). Entry content Summary..Sources verified unchanged; no overflow at 360/390/768/1280 dark+light. Not deployed (user deploys).
+- 2026-10-16 22:51 EDT: Decision 0014 (design v2) deployed live (dpl_3Fpdc5xr5MoNNF8UrntWzSpy7kZJ). Verified 2026-10-17 07:20 EDT: all 16 public files 200 and byte-identical to repo.
