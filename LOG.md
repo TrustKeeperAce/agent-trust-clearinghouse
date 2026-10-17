@@ -58,3 +58,7 @@ Updated: index, ItemList, sitemap, llms.txt and changelog. The 375px check passe
 
 ## 2026-10-17 — Deploy note
 Agent S was deployed as dpl_7tNA6hCftbs3shAgzFNiubMFXupH (commit 0e590c2). Live check: agent-s.html returns 200 with no sudo text, and the index and methodology are updated.
+
+## 2026-10-17 — 0026 STORM / Co-STORM published
+The 0026 decision was approved: the entry is overall 56, grade B, category Research.
+Updated: index, ItemList, sitemap, llms.txt and changelog. The 375px check passed. Links were checked; the decision file and canonical page returned 404 until push/deploy. NOT deployed.
