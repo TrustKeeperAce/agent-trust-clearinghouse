@@ -1,0 +1,57 @@
+name: Kimi Researcher (Kimi Deep Research)
+slug: kimi-researcher
+category: research
+type: commercial (Kimi membership credits)
+homepage: https://www.kimi.ai/help/deep-research/deep-research-overview
+scope: Moonshot AI's Deep Research mode in Kimi, powered by the Kimi-Researcher model (launched June 2025).
+summary: Kimi Researcher is Moonshot AI's deep-research agent, offered as Deep Research in Kimi. Two independent evaluations were found. On DeepResearch Bench (mid-2025) its report quality was mid-tier, close to Claude Research and below OpenAI and Gemini deep research. On ICBCBench, a 2026 financial-research preprint, it ranked third among closed systems. Fewer than three independent sources were found, so no overall score is given. In April 2026 the Kimi app reportedly showed one user's résumé to another user. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
+status: Insufficient evidence
+scores:
+  completion_rate: null
+  disputes: null
+  adherence_to_limits: null
+  evidence_quality: null
+factor_notes:
+  completion_rate: DeepResearch Bench RACE 44.64 (OpenAI DR 46.45, Claude Research 45.00); ICBCBench English overall 47.59 (Gemini DR 57.38, o3-deep-research 54.67), Chinese 44.72. No citation-accuracy scores available.
+  disputes: 'April 2026: the Kimi app reportedly returned another user''s real résumé during an unrelated request (Kimi-wide, not specific to Deep Research); no official statement. No regulator action against Kimi found.'
+  adherence_to_limits: Not independently tested.
+  evidence_quality: Two independent performance sources (one peer-reviewed, one preprint with Alibaba co-authors). Vendor benchmark claims (HLE, xbench) excluded.
+overall_score: null
+evidence_grade: Insufficient evidence
+independent_source_count:
+  performance: 2
+  other: 1
+sources:
+- url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'DeepResearch Bench (ICLR 2026; USTC): official UI, 29 Jun–1 Jul 2025; RACE 44.64 (comp. 44.96, depth 41.97, inst. 47.14, read. 45.59); no FACT scores (citations not parseable)'
+- url: https://arxiv.org/abs/2606.17458
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'ICBCBench (preprint 2026; ICBC, SJTU, Fudan, Shanghai AI Lab, Alibaba and others): Kimi-deep-research EN overall 47.59, ZH 44.72; 3rd of closed systems in English. Disclosure: Alibaba co-authors (Alibabas Qwen deep research is also evaluated); the paper does not state how or when Kimi was accessed'
+- url: https://oecd.ai/en/incidents/2026-04-21-8c79
+  kind: other (privacy incident, Kimi-wide)
+  accessed: '2026-10-17'
+  note: 'OECD AI incident: Kimi disclosed a user''s résumé to another user (20 April 2026); see also Phoenix Weekly http://www.ifengweekly.com/detil.php?id=26914 and Seoul Economic Daily'
+- url: https://arxiv.org/abs/2509.13309
+  kind: not counted (vendor numbers reused)
+  accessed: '2026-10-17'
+  note: 'WebResearcher (Alibaba Tongyi): Kimi-Researcher rows taken from vendor reports'
+- url: https://moonshotai.github.io/Kimi-Researcher/
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Launch post (20 June 2025): HLE 26.9% pass@1, xbench-DeepSearch 69% (vendor-run; excluded)'
+- url: https://www.kimi.ai/help/deep-research/deep-research-overview
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Help page: Deep Research powered by the Kimi-Researcher model; 10–25 minutes; cited report'
+uncertainties:
+- Only two independent evaluations found; one is a preprint with competitor co-authors.
+- Whether Deep Research now uses newer Kimi models (K2.5–K3) is not stated; the help page still names Kimi-Researcher.
+- The résumé leak was reported by media; Moonshot issued no public statement.
+- Data storage and privacy practices of the China-based service were not independently verified.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0024-kimi-researcher.md
+notes: Informational only; not a guarantee, endorsement, or certification.

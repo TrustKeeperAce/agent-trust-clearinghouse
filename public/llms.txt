@@ -22,6 +22,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [ChatGPT Work](https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html): Insufficient evidence
 - [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
 - [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): Insufficient evidence
+- [Kimi Researcher](https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html): Insufficient evidence
 - [Manus](https://agent-trust-clearinghouse.vercel.app/agents/manus.html): Insufficient evidence
 - [Open Interpreter](https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html): Insufficient evidence
 - [Pactum](https://agent-trust-clearinghouse.vercel.app/agents/pactum.html): Insufficient evidence
