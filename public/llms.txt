@@ -28,6 +28,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [Manus](https://agent-trust-clearinghouse.vercel.app/agents/manus.html): Insufficient evidence
 - [Open Interpreter](https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html): Insufficient evidence
 - [Pactum](https://agent-trust-clearinghouse.vercel.app/agents/pactum.html): Insufficient evidence
+- [Skyvern (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html): Insufficient evidence
 
 ## Notes
 - Scores reflect public sources and the stated rules at the time of review; see each entry's sources and uncertainties.

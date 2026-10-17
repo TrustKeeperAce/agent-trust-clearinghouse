@@ -65,3 +65,7 @@ Updated: index, ItemList, sitemap, llms.txt and changelog. The 375px check passe
 
 ## 2026-10-17 — Deploy note
 STORM / Co-STORM was deployed as dpl_FdzhdGWJpPntTikPSUF8pVXcmtT2 (commit 86aa0ca). Live check: storm.html returns 200 with no high-severity text, and the index and sitemap include it.
+
+## 2026-10-17 — 0027 Skyvern
+The 0027 decision was approved: Skyvern (open-source) is Insufficient evidence, category Browser/web agent, with 2 counted sources. Web Bench is excluded.
+Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt and changelog. NOT deployed.
