@@ -4,6 +4,7 @@ category: verification
 type: commercial
 homepage: https://www.perplexity.ai/
 scope: Citation-backed answering and source attribution only; not a general product review.
+scope_note: 'The Comet browser and its agent are covered by a separate entry: Perplexity Comet (agents/perplexity-comet.html).'
 summary: 'Perplexity is a commercial AI answer engine; this entry covers only its citation and source-attribution behavior. In independent evaluations (CJR Tow Center, 2025; Findings of EMNLP 2023; DeepResearch Bench, ICLR 2026; DeepResearchGym, ICTIR 2026; Deep Research Comparator, WWW 2026 Companion; Mind2Web 2, NeurIPS 2025), results varied by product mode: its Deep Research mode scored comparatively high on citation accuracy, while news-attribution tests found a share of incorrect or syndicated citations. Several publishers have filed copyright lawsuits against Perplexity that are pending; these are allegations, not findings. Informational only; not a guarantee, endorsement, or certification.'
 scores:
   completion_rate: 55

@@ -21,6 +21,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [GPT Researcher](https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html): overall 53, evidence grade B-
 - [Browser Use (open-source library)](https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html): overall 51, evidence grade A
 - [Agent S (open-source framework)](https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html): overall 49, evidence grade B
+- [Perplexity Comet (agentic browser)](https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html): overall 41, evidence grade B-
 - [ChatGPT Work](https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html): Insufficient evidence
 - [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
 - [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): Insufficient evidence
