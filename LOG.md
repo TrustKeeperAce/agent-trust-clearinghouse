@@ -100,3 +100,6 @@ Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt a
 
 ## 2026-10-17 — Deploy note
 Fellou (0031) was deployed as dpl_FGRNvuuep3R3eXD3MeqgKjnihKmW (commit cebf614). The batch 3 shortlist is now complete. At 1:25 PM ET, the two fellou.ai blog links on the Fellou page (fellou.ai/blog/fellou-v2-launch/ and fellou.ai/blog/eko20-launch/) returned 503; recheck them later.
+
+## 2026-10-17 — Deploy note
+Decision 0033 (process improvements) was deployed as dpl_Hq6SjEJG1raWD67CQMnaLKeoiMqq (commit 253e34e). Live check: pages return 200, skip links are present, and the Julius AI OpenAlex link works. Decision 0034's order was corrected to the approved order (non-public file).
