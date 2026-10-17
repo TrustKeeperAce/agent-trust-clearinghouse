@@ -112,3 +112,6 @@ Decision 0037 (OpenHands, Coding agent, 61 / A) was deployed as dpl_AnbiDcv8vQ9i
 
 ## 2026-10-17 — Deploy note
 Decision 0038 (SWE-agent, Coding agent, 58 / B) was deployed as dpl_7hJQEEga553gLSjZ4JsKGmEfdJQo (commit 5d93fa9). Live check: pages return 200, the entry shows grade B, and SWE-agent appears in the index. D7 full reads made figure corrections only; score, grade and outcome were unchanged, and SWE-Bench Pro was confirmed as peer-reviewed (6 peer-reviewed). Batch 4 research continues privately with UI-TARS Desktop (0039).
+
+## 2026-10-17 — Deploy note
+Decision 0039 (UI-TARS Desktop, Computer-use agent, Insufficient evidence) was deployed as dpl_FBVqjFU9wtWMNVtj2FZVZpkiWtAM (commit b50e7d5). Live check: pages return 200 and UI-TARS Desktop appears in the index. D5 (a possible Agent S follow-up from the TOCTOU study) was not approved, and Agent S is unchanged. Batch 4 research continues privately with Claude Code (0040).
