@@ -83,3 +83,6 @@ Perplexity Comet was deployed as dpl_78t4jZtR6QP8Zqp2BEjLAHZsBGYj (commit 4f2602
 ## 2026-10-17 — 0029 Data Interpreter
 The 0029 decision was approved: Data Interpreter (MetaGPT, open-source) is overall 49, grade B, in the new category Data science agent. The category was added to the methodology's Categories list.
 Updated: index (tied at 49 with Agent S, alphabetical, before Perplexity Comet), ItemList, sitemap, llms.txt and changelog. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Data Interpreter was deployed as dpl_Fm5fE86oV84Z734BAkvVRRdcbs7t (commit 516a80c). Live check: data-interpreter.html returns 200, methodology includes "Data science agent", and the index returns 200.
