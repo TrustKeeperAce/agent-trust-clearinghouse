@@ -90,3 +90,6 @@ Data Interpreter was deployed as dpl_Fm5fE86oV84Z734BAkvVRRdcbs7t (commit 516a80
 ## 2026-10-17 — 0030 Loki and OpenFactCheck
 The 0030 decision was approved: Loki (open-source) and OpenFactCheck (open-source), two entries, both Verification, both Insufficient evidence. Before publishing, a Semantic Scholar citation check covered all four developer papers (86 unique citing papers). It found 2 independent tests of Loki (TAIGR, Proof-of-Guardrail), which are now counted. That is still below the minimum of 3, so the outcome is unchanged. No independent tests of OpenFactCheck were found.
 Updated: index (Insufficient group, alphabetical), ItemList, sitemap, llms.txt and changelog. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Loki and OpenFactCheck (0030) were deployed as dpl_ETDbQzCpMxbRGLurrt5mj1byCbfL (commit 4761054). Live check: loki.html, openfactcheck.html and the index all return 200. Loki shows 2 counted sources; the outcome is unchanged (Insufficient evidence).
