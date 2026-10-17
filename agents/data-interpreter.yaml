@@ -1,10 +1,10 @@
 name: Data Interpreter (MetaGPT, open-source)
 slug: data-interpreter
 category: Data science agent
-type: 'Open-source agent in the MetaGPT framework (MIT licence), FoundationAgents (formerly DeepWisdom); PyPI metagpt'
+type: Open-source agent in the MetaGPT framework (MIT licence), FoundationAgents (formerly DeepWisdom); PyPI metagpt
 homepage: https://github.com/FoundationAgents/MetaGPT
-scope: 'The open-source Data Interpreter role in MetaGPT (metagpt/roles/di), run with a language model chosen by the user; MetaGPT releases through 0.8.2 (9 March 2025). MetaGPT''s other roles and the commercial MGX / MetaGPT X service are not covered.'
-summary: 'Data Interpreter is an open-source data-science agent in the MetaGPT framework. It plans analysis and machine-learning tasks as a graph and writes and runs Python code step by step. Nine independent studies that ran it were found (two peer-reviewed). Its results depend heavily on the model and task. On InfiAgent-DABench, independent re-runs scored 54-80%, against the 94.93% the developers reported; two papers say they could not reproduce that figure. Results ranged from mid-pack on Kaggle-style tabular tasks to 3.3% on an urban data benchmark. In a security study it had the lowest attack success rate of four open-source data agents, but the authors attribute this to limited functionality rather than stronger defences. Seven CVEs have been published for MetaGPT, including two that affect Data Interpreter directly. The project has had no release since March 2025 and no commits since January 2026. Informational only; not a guarantee, endorsement, or certification.'
+scope: The open-source Data Interpreter role in MetaGPT (metagpt/roles/di), run with a language model chosen by the user; MetaGPT releases through 0.8.2 (9 March 2025). MetaGPT's other roles and the commercial MGX / MetaGPT X service are not covered.
+summary: Data Interpreter is an open-source data-science agent in the MetaGPT framework. It plans analysis and machine-learning tasks as a graph and writes and runs Python code step by step. Nine independent studies that ran it were found (two peer-reviewed). Its results depend heavily on the model and task. On InfiAgent-DABench, independent re-runs scored 54-80%, against the 94.93% the developers reported; two papers say they could not reproduce that figure. Results ranged from mid-pack on Kaggle-style tabular tasks to 3.3% on an urban data benchmark. In a security study it had the lowest attack success rate of four open-source data agents, but the authors attribute this to limited functionality rather than stronger defences. Seven CVEs have been published for MetaGPT, including two that affect Data Interpreter directly. The project has had no release since March 2025 and no commits since January 2026. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 45
   disputes: 35
@@ -20,46 +20,71 @@ factor_notes:
   completion_rate: 'InfiAgent-DABench (independent re-runs): 75.78% GPT-4o, 67.70% GPT-4o-mini (DatawiseAgent); 54.09-67.70% pass@1 across four open models (DataMind); 0.716-0.788 with GPT-4o / DeepSeek-V3.1 / o4-mini (EvoDS), below a plain ReAct agent in each case. Developers report 94.93%. KramaBench: 0.256-0.382 (Fail Loudly), 30.34% with Gemini 2.5 Pro (Blackboard). Kaggle/OpenML tabular tasks: competitive, close to AIDE (SPIO). Execution stability 0.672-0.676 (VDSAgents). UrbanDS-Bench 3.3% overall.'
   disputes: 'Seven CVEs for MetaGPT. Data Interpreter components: CVE-2026-4516 (write_analysis_code.py, up to 0.8.1) and CVE-2026-19058 (data_interpreter.py, up to 0.8.2). Framework-wide: CVE-2026-0760 and CVE-2026-0761 (ZDI 0-day advisories after no vendor response), CVE-2024-23750, CVE-2026-19059 and CVE-2026-19060. VulDB records that the vendor did not respond for CVE-2026-4516. No GitHub security advisories published. Two independent papers report being unable to reproduce the headline DABench result. No legal or regulatory action found.'
   adherence_to_limits: 'Data Agents Under Attack (NTU, June 2026; DeepSeek-V3.2): mean attack success about 12.9% across 14 techniques (0-56%), the lowest of four open-source data agents. The authors attribute this to limited functionality (frequent failure to connect to the database), not stronger defence. When attacks did connect, Data Interpreter had the largest share of the most severe outcome level (BR4, 9.3%). By design it executes model-written code; no built-in sandbox is documented.'
-  evidence_quality: 'Nine independent sources, two peer-reviewed (EMNLP 2025, ICLR 2026), several from 2026. Fewer than three peer-reviewed, so grade B rather than A (0025 clarification). Most sources are competing-agent papers (disclosed).'
+  evidence_quality: Nine independent sources, two peer-reviewed (EMNLP 2025, ICLR 2026), several from 2026. Fewer than three peer-reviewed, so grade B rather than A (0025 clarification). Most sources are competing-agent papers (disclosed).
 sources:
 - url: https://aclanthology.org/2025.emnlp-main.58/
   kind: independent performance
   peer_reviewed: true
   accessed: '2026-10-17'
   note: 'DatawiseAgent (EMNLP 2025; Peking University et al.): InfiAgent-DABench re-run 75.78% (GPT-4o) and 67.70% (GPT-4o-mini) vs 94.93% reported by the developers; "best-effort replication". Competing-author disclosure: proposes a rival agent'
+  version_tested: MetaGPT Data Interpreter
+  test_date: unstated
 - url: https://arxiv.org/abs/2509.25084
   kind: independent performance
   peer_reviewed: true
   accessed: '2026-10-17'
   note: 'DataMind / Scaling Generalist Data-Analytic Agents (ICLR 2026; Zhejiang University, Alibaba): could not reproduce 94.93%; DABench pass@1 54.09-67.70% and TableBench 27.99-61.98% across DeepSeek-V3.1, Qwen-2.5-72B and Qwen-2.5-Coder 7B/14B. Competing-author disclosure'
+  version_tested: MetaGPT Data Interpreter
+  test_date: unstated
 - url: https://arxiv.org/abs/2606.03841
   kind: independent performance
   accessed: '2026-10-17'
   note: 'EvoDS (HKUST, preprint June 2026): average over DABench, DA-Code, ScienceAgentBench and MLE-Dojo 0.288 (GPT-4o), 0.299 (DeepSeek-V3.1), 0.316 (o4-mini); DABench 0.716-0.788. Competing-author disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2609.32528
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Fail Loudly (independent researchers, preprint Sept 2026): KramaBench overall 0.301 (DeepSeek V4-Flash), 0.283 (GPT-5.6 Luna), 0.256 (GPT-4.1-mini), 0.382 with gold sources supplied; human 0.768. Competing-author disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2510.01285
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Blackboard multi-agent system (UMass Amherst, Google Cloud AI Research; preprint, Jan 2026 v2): KramaBench average 30.34% with Gemini 2.5 Pro (AutoGen 19.30%, Blackboard 37.53%). Competing-author disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2503.23314
   kind: independent performance
   accessed: '2026-10-17'
   note: 'SPIO (Enhans, Peking University et al.; preprint, v2 Jan 2026): 8 Kaggle and 4 OpenML tabular datasets with GPT-4o, Claude 3.5 Haiku and LLaMA3-8B; Data Interpreter competitive with AIDE and AutoKaggle (e.g. GPT-4o Titanic 0.7679 acc, Obesity 0.8986). Competing-author disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2510.24339
   kind: independent performance
   accessed: '2026-10-17'
   note: 'VDSAgents (preprint Oct 2025): nine tabular tasks; execution stability 0.676 (DeepSeek-V3) and 0.672 (GPT-4o) vs AutoKaggle 0.577/0.534 and VDSAgents 0.894/0.950. Competing-author disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2607.26724
   kind: independent performance
   accessed: '2026-10-17'
   note: 'UrbanDS (preprint, v2 Sept 2026): UrbanDS-Bench overall 3.3%, CoDA-Bench 5.0% (AutoGen 45.6/31.1%, Claude Code 62.9/42.0%). Competing-author disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2606.08661
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Data Agents Under Attack (NTU, PolyU, Tsinghua; preprint June 2026): 14 attack techniques, DeepSeek-V3.2 backend; Data Interpreter per-technique attack success 0-56% (mean about 12.9%), lowest of four open-source systems; lower exposure attributed to limited functionality; largest BR4 share (9.3%)'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-4516
   kind: other
   accessed: '2026-10-17'
@@ -79,7 +104,7 @@ sources:
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-19060
   kind: other
   accessed: '2026-10-17'
-  note: 'CVE-2026-19059 (editor.py path traversal, CVSS 3.1 3.3) and CVE-2026-19060 (code injection, CVSS 3.1 5.3), up to 0.8.2, local; VulDB; NVD Deferred'
+  note: CVE-2026-19059 (editor.py path traversal, CVSS 3.1 3.3) and CVE-2026-19060 (code injection, CVSS 3.1 5.3), up to 0.8.2, local; VulDB; NVD Deferred
 - url: https://github.com/FoundationAgents/MetaGPT
   kind: other
   accessed: '2026-10-17'
@@ -97,7 +122,7 @@ sources:
   accessed: '2026-10-17'
   note: 'Jupiter: reports Data Interpreter 67.7/75.78, copied from DatawiseAgent rather than re-run. Not counted'
 uncertainties:
-- 'Results vary widely by model and benchmark; no single figure represents the agent.'
-- 'Eight of nine sources are competing-agent papers (all disclosed); only two are peer-reviewed.'
-- 'Whether 2026 studies used 0.8.2 or later main-branch code is mostly unstated.'
-- 'No fixes have been identified for the Data Interpreter CVEs; the project appears dormant.'
+- Results vary widely by model and benchmark; no single figure represents the agent.
+- Eight of nine sources are competing-agent papers (all disclosed); only two are peer-reviewed.
+- Whether 2026 studies used 0.8.2 or later main-branch code is mostly unstated.
+- No fixes have been identified for the Data Interpreter CVEs; the project appears dormant.

@@ -26,18 +26,30 @@ sources:
   kind: independent performance
   accessed: '2026-10-17'
   note: 'DeepResearch Bench (ICLR 2026; USTC): Claude Research collected 23–25 Jun 2025 from the official UI; RACE 45.00 (comp. 45.34, depth 42.79, inst. 47.58, read. 44.66); no FACT citation scores (links not parseable from UI). Not in arXiv v1; added July 2025'
+  peer_reviewed: true
+  version_tested: Claude Research (official UI)
+  test_date: 2025-06-23/2025-06-25
 - url: https://arxiv.org/abs/2506.21506
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Mind2Web 2 (NeurIPS 2025 D&B; Ohio State, Amazon AGI co-authors): Claude Research partial completion 0.32, success 0.10, pass@3 0.19; 742 s average. Disclosure: Amazon is a major investor in Anthropic'
+  peer_reviewed: true
+  version_tested: Claude Research
+  test_date: unstated
 - url: https://arxiv.org/abs/2601.09688
   kind: independent performance
   accessed: '2026-10-17'
   note: 'DeepResearchEval (preprint 2026): "Claude-Sonnet-4.5 Deep Research" downloaded from the official site 19–28 Aug 2025; quality 7.53/10, 2nd of 9; factual ratio 60.72%, 8th of 9. Label note: "Sonnet 4.5" was named although collection preceded that models release (29 Sep 2025)'
+  peer_reviewed: false
+  version_tested: Claude Research (official site)
+  test_date: 2025-08-19/2025-08-28
 - url: https://doi.org/10.1111/jdv.70035
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Keplinger et al. (JEADV 2026 letter; West Virginia University): Claude Opus 4 Research, three runs of a dermatology review; fake authors or titles in 95.8 ± 7.2% of references (ChatGPT Deep Research 4.3%). Full text read (Europe PMC, PMC13109748)'
+  peer_reviewed: true
+  version_tested: Claude Opus 4 Research
+  test_date: unstated
 - url: https://www.oasis.security/blog/claude-ai-prompt-injection-data-exfiltration-vulnerability
   kind: other (Claude-wide security finding, not specific to Research)
   accessed: '2026-10-17'

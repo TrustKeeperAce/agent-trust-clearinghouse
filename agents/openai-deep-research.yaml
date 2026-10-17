@@ -24,30 +24,53 @@ sources:
   kind: independent performance
   accessed: '2026-10-16'
   note: 'DeepResearch Bench (ICLR 2026): report quality and citation accuracy'
+  peer_reviewed: true
+  version_tested: OpenAI Deep Research
+  test_date: 2025-04
 - url: https://arxiv.org/abs/2506.11763
   kind: independent performance
   accessed: '2026-10-16'
   note: DeepResearch Bench arXiv version
+  peer_reviewed: false
+  version_tested: OpenAI Deep Research
+  test_date: 2025-04
+  counted: false
 - url: https://arxiv.org/abs/2506.21506
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Mind2Web 2: task success rates'
+  peer_reviewed: true
+  version_tested: OpenAI Deep Research
+  test_date: 2025-04/2025-06
 - url: https://openreview.net/forum?id=AUaW6DS9si
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Mind2Web 2 venue: NeurIPS 2025 Datasets and Benchmarks Track (OpenReview)'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
+  counted: false
 - url: https://arxiv.org/abs/2508.15804
   kind: independent performance
   accessed: '2026-10-16'
   note: 'ReportBench: cited-statement match rate (preprint)'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2604.03173
   kind: independent performance
   accessed: '2026-10-16'
   note: Citation-URL validity study (preprint)
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2507.16075
   kind: independent performance
   accessed: '2026-10-16'
   note: TTD-DR preprint; OpenAI Deep Research as comparison baseline
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://theconversation.com/openais-new-deep-research-agent-is-still-just-a-fallible-tool-not-a-human-level-expert-249496
   kind: independent other
   accessed: '2026-10-16'
@@ -55,7 +78,7 @@ sources:
 - url: https://www.radware.com/blog/threat-intelligence/shadowleak/
   kind: independent other
   accessed: '2026-10-17'
-  note: 'Radware ShadowLeak disclosure (security finding; fixed August 2025)'
+  note: Radware ShadowLeak disclosure (security finding; fixed August 2025)
 - url: https://web.archive.org/web/20260321044001/https://help.openai.com/en/articles/6825453-chatgpt-release-notes
   kind: vendor or maintainer
   accessed: '2026-10-17'
@@ -72,7 +95,7 @@ sources:
   kind: vendor or maintainer
   accessed: '2026-10-16'
   note: 'OpenAI Help Center: usage limits and scope controls'
-version_note: 'OpenAI updated deep research in February 2026 and removed the legacy mode on 26 March 2026; the counted tests used 2025 versions; the current version has not been independently tested. (as of 2026-10-17; Decision 0019)'
+version_note: OpenAI updated deep research in February 2026 and removed the legacy mode on 26 March 2026; the counted tests used 2025 versions; the current version has not been independently tested. (as of 2026-10-17; Decision 0019)
 security_note: 'ShadowLeak (Radware, September 2025): zero-click indirect prompt injection via a crafted email could make deep research exfiltrate Gmail data when the Gmail connector was enabled; reported to OpenAI in June 2025 and fixed in August 2025.'
 uncertainties:
 - The underlying model has changed over time; most independent tests used 2025 versions.

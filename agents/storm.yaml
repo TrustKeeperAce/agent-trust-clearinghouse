@@ -26,30 +26,51 @@ sources:
   kind: independent performance
   accessed: '2026-10-17'
   note: 'WriteHERE, "Beyond Outlining" (EMNLP 2025; KAUST and others; arXiv 2503.08275): reran STORM v1.1.0 with Serp/Bing search, report-quality judge scores of 4.76/4.58/4.30/4.32 (relevance/breadth/depth/novelty, of 5) with GPT-4o and 4.66/4.63/4.40/4.41 with Claude 3.5 Sonnet. Co-STORM 4.36/4.22/4.02/4.17 and 3.87/3.56/3.46/3.82. v1.1.0 was slightly stronger than the 2024 NAACL branch. Competing-method disclosure (WriteHERE scored higher)'
+  peer_reviewed: true
+  version_tested: v1.1.0
+  test_date: unstated
 - url: https://aclanthology.org/2025.emnlp-main.50/
   kind: independent performance
   accessed: '2026-10-17'
   note: 'OmniThink (EMNLP 2025; Zhejiang University / Alibaba Tongyi; arXiv 2501.09751): reproduced STORM and Co-STORM on WildSeek (100 topics). STORM GPT-4o rubric scores 4.34/4.21/4.21/3.80 of 5, knowledge density 19.33; lower with other backbones (as low as 2.42). Competing-method disclosure'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://aclanthology.org/2025.acl-long.1423/
   kind: independent performance
   accessed: '2026-10-17'
   note: 'MOG, "Hierarchical Memory Organization for Wikipedia Generation" (ACL 2025; Peking University / Huawei; arXiv 2506.23393): STORM citation recall/precision 77.49/75.71% on FreshWiki and 67.72/66.50% on WikiStart; entity recall 13.37%/20.06%. MOG scored higher on most measures. Competing-method disclosure'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://aclanthology.org/2026.findings-acl.296/
   kind: independent performance
   accessed: '2026-10-17'
   note: 'CogGen (Findings of ACL 2026; Nanjing University; arXiv 2604.17072): relative scores against a reference (0.50 = parity). STORM 0.3205 (OWID, human reference) and 0.3351 (WildSeek, Gemini Deep Research reference); Co-STORM 0.3227 / 0.3147. Competing-method disclosure'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://aclanthology.org/2026.acl-long.723/
   kind: independent performance
   accessed: '2026-10-17'
   note: 'MySQA, "Language Models Don''t Know What You Want" (ACL 2026; Allen Institute for AI / UMD / Cornell; arXiv 2603.16120): STORM answer coverage 72.0%, answer precision 92.2%, citation precision 73.3%, citation recall 64.7%, action adherence 74.4%; lowest coverage of six systems. Disclosure: Ai2 builds the competing ScholarQA system'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2606.20122
   kind: independent performance
   accessed: '2026-10-17'
   note: 'ScaffoldAgent (preprint, June 2026; Peking University): STORM on DeepResearch Bench, RACE 32.81 (Qwen3-32B) and 35.26 (DeepSeek-V3.2), lowest of the multi-agent baselines; FACT effective citations 15.18 / 17.42 and citation accuracy 36.90% / 38.59%. Competing-method disclosure'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://arxiv.org/abs/2508.20033
   kind: independent performance
   accessed: '2026-10-17'
   note: 'DeepScholar-Bench (preprint; Stanford Guestrin group and UC Berkeley, not the OVAL lab): STORM with Llama-4-Scout, arXiv-only retrieval, organization .119, nugget coverage .183, citation precision .238, claim coverage .586, geometric mean .073 (OpenAI Deep Research .309; human exemplars .782). Disclosure: same university as the developers; authors propose the competing DeepScholar-ref pipeline'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: unstated
 - url: https://github.com/stanford-oval/storm/issues/375
   kind: other
   accessed: '2026-10-17'

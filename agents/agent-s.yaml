@@ -26,30 +26,51 @@ sources:
   kind: independent performance
   accessed: '2026-10-17'
   note: 'OS-Symphony (ACL 2026; Shanghai AI Lab and others; arXiv 2601.07779): authors reproduced Agent S3 on OSWorld-Verified (361 tasks, 50 steps): GPT-5-Mini 47.58%, Qwen3-VL-32B-Instruct 40.11%. Their 62.63% figure for S3 with GPT-5 is taken from Simular (not counted). Competing-method disclosure: the authors propose a rival framework'
+  peer_reviewed: true
+  version_tested: Agent S3
+  test_date: unstated
 - url: https://arxiv.org/abs/2506.16042
   kind: independent performance
   accessed: '2026-10-17'
   note: 'OSWorld-Human (MLSys 2026; UC San Diego): ran Agent S2 on 39 OSWorld tasks and found planning and reflection calls were 76-96% of task latency. Efficiency-weighted scores: S2 with Gemini 2.5 15.6% single-action / 9.6% grouped (original 41.4%); S2 with Claude 3.7 6.6% / 4.4% (original 34.5%). These use published leaderboard trajectories; S3 was not studied'
+  peer_reviewed: true
+  version_tested: Agent S2
+  test_date: unstated
 - url: https://arxiv.org/abs/2606.22557
   kind: independent performance
   accessed: '2026-10-17'
   note: 'MacAgentBench (preprint, June 2026; Shanghai Jiao Tong / Shanghai AI Lab): Agent S3 on 676 macOS tasks, Pass@1 9.6% (InternVL3.5-8B) to 66.9% (Claude Opus 4.6); 1.8-50.3% when all 4 attempts must succeed; GPT-5.4 58.9%. Overlap disclosure: shares several authors with OS-Symphony; OpenClaw scored 73.7% in the same study'
+  peer_reviewed: false
+  version_tested: Agent S3
+  test_date: 2026 (month unstated)
 - url: https://arxiv.org/abs/2602.02995
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Agent Alpha (preprint, Feb 2026; George Washington University): authors ran Agent S3 with GPT-5-mini (Best-of-3, 30 steps) on OSWorld: 54.29% success, 313 s average per task. Competing-method disclosure: Agent Alpha scored 64.27%. The 72.58% S3 figure in their Table 1 is copied from the leaderboard (not counted)'
+  peer_reviewed: false
+  version_tested: Agent S3
+  test_date: unstated
 - url: https://arxiv.org/abs/2601.20650
   kind: independent performance
   accessed: '2026-10-17'
   note: 'OS-Marathon (preprint v3, Aug 2026; Oxford, Microsoft and others): Agent S2.5 with GPT-5 scored 33.50% field-level / 23.44% subtask-level on long repetitive tasks (humans 88.38/80.52; GPT-5.4 native computer use 68.29/51.39). Disclosure: Microsoft co-authors; Simular is a Windows 365 for Agents pilot partner'
+  peer_reviewed: false
+  version_tested: Agent S2.5
+  test_date: unstated
 - url: https://arxiv.org/abs/2509.26506
   kind: independent performance
   accessed: '2026-10-17'
   note: 'SCUBA (preprint, Sept 2025; Salesforce AI Research): Agent S2.5 with GPT-5 on 300 Salesforce CRM tasks, 39.00% success zero-shot and 40.38% with demonstrations; about 25 min and $1.17 per task (grounder cost excluded). Disclosure: Salesforce sells its own agent products'
+  peer_reviewed: false
+  version_tested: Agent S2.5
+  test_date: unstated
 - url: https://arxiv.org/abs/2502.08047
   kind: independent performance
   accessed: '2026-10-17'
   note: 'WorldGUI (preprint v5, May 2026, under submission; NUS Show Lab): Agent S2 34.2% overall success on Windows desktop tasks started from varied states (humans 85.3%). Competing-method disclosure: their WorldGUI-Agent scored 45.8% with GPT-5.1. Its WindowsAgentArena table reuses vendor numbers (not counted)'
+  peer_reviewed: false
+  version_tested: Agent S2
+  test_date: unstated
 - url: https://os-world.github.io/
   kind: other (maintainer-verified leaderboard, not counted)
   accessed: '2026-10-17'

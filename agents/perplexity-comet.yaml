@@ -1,10 +1,10 @@
 name: Perplexity Comet (agentic browser)
 slug: perplexity-comet
 category: Browser/web agent
-type: 'Commercial AI browser (Chromium-based) with built-in Comet Assistant agent, Perplexity AI'
+type: Commercial AI browser (Chromium-based) with built-in Comet Assistant agent, Perplexity AI
 homepage: https://www.perplexity.ai/comet
-scope: 'The Comet browser and its Comet Assistant agent (desktop; launched 9 July 2025, free to all users from 2 October 2025), with whichever model Comet selects or the user picks. The Perplexity answer engine and its Deep Research mode are covered by the separate Perplexity entry.'
-summary: 'Comet is Perplexity''s AI browser with a built-in assistant that browses, clicks and fills forms for the user. Four independent sources were found. In the CAP benchmark (COLM 2026), Comet fully completed 6.0% of complex cross-site tasks but led all systems on partial completion (48.0%). On the KNOWS Google Workspace benchmark (September 2026), it was the best system tested but fully succeeded on only 2.7% of tasks. A privacy measurement study found 2 privacy issues out of 15 checks. One was a missing phishing/malware warning, which was patched in December 2025. An hCaptcha abuse test found Comet completed 15 of 18 abuse scenarios. Security researchers (Brave, LayerX, Guardio, academic groups) have published several prompt-injection attacks; Perplexity has added defences. Amazon''s lawsuit over Comet''s shopping use is ongoing; a preliminary injunction was vacated on appeal in August 2026. Informational only; not a guarantee, endorsement, or certification.'
+scope: The Comet browser and its Comet Assistant agent (desktop; launched 9 July 2025, free to all users from 2 October 2025), with whichever model Comet selects or the user picks. The Perplexity answer engine and its Deep Research mode are covered by the separate Perplexity entry.
+summary: Comet is Perplexity's AI browser with a built-in assistant that browses, clicks and fills forms for the user. Four independent sources were found. In the CAP benchmark (COLM 2026), Comet fully completed 6.0% of complex cross-site tasks but led all systems on partial completion (48.0%). On the KNOWS Google Workspace benchmark (September 2026), it was the best system tested but fully succeeded on only 2.7% of tasks. A privacy measurement study found 2 privacy issues out of 15 checks. One was a missing phishing/malware warning, which was patched in December 2025. An hCaptcha abuse test found Comet completed 15 of 18 abuse scenarios. Security researchers (Brave, LayerX, Guardio, academic groups) have published several prompt-injection attacks; Perplexity has added defences. Amazon's lawsuit over Comet's shopping use is ongoing; a preliminary injunction was vacated on appeal in August 2026. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 40
   disputes: 40
@@ -20,25 +20,36 @@ factor_notes:
   completion_rate: 'CAP: 6.0% full success, 48.0% partial completion (highest of all systems; Comet with Gemini 3.1 Pro, Nov-Dec 2025); Complex-A 67.0%, Complex-P 58.0%. KNOWS: 2.7% success rate overall (12.0% Docs, 0% Sheets and Slides), the only non-zero result; 35.4 ASC, 70.0 ACF, 64.7 SF (Claude Opus 4.7 agent). Comet leads its peers in both benchmarks but rarely finishes complex tasks completely.'
   disputes: 'Amazon.com Services v. Perplexity AI (N.D. Cal. 3:25-cv-09514; 9th Cir. 26-1444): preliminary injunction granted 9 March 2026, stayed 18 March 2026, vacated and remanded 4 August 2026; rehearing en banc denied 10 September 2026; case continues. Brave reported that its August 2025 prompt-injection fix was incomplete; Perplexity marked LayerX''s August 2025 CometJacking reports as "Not Applicable". No regulator action specific to Comet found.'
   adherence_to_limits: 'hCaptcha (Oct 2025): 15 of 18 abuse scenarios completed, 1 partial, 2 refusals (including unprompted SQL injection and invented card details). Privacy Practices study: 2 of 15 privacy concerns; built-in ad and tracker blocking; missing Safe Browsing warnings disclosed 24 Oct 2025, patched 2 Dec 2025. Multiple published prompt-injection proofs of concept (Brave, LayerX, Guardio, Mind the Web, WAAA). Perplexity added classifier-based detection and confirmation for high-risk actions (Oct 2025).'
-  evidence_quality: 'Four independent sources, one peer-reviewed (CAP, COLM 2026); KNOWS (Sept 2026) tests the current product within 12 months. Below the 7 sources needed for A and the 5-6 needed for B.'
+  evidence_quality: Four independent sources, one peer-reviewed (CAP, COLM 2026); KNOWS (Sept 2026) tests the current product within 12 months. Below the 7 sources needed for A and the 5-6 needed for B.
 sources:
 - url: https://arxiv.org/abs/2608.08392
   kind: independent performance
   peer_reviewed: true
   accessed: '2026-10-17'
   note: 'CAP benchmark (COLM 2026): 198 cross-site tasks; Comet (Gemini 3.1 Pro, default settings, Nov-Dec 2025) 6.0% full success, 48.0% partial completion (highest), Complex-A 67.0%, Complex-P 58.0%; over 100k output tokens per task. Competing-author disclosure: one author interned at FellouAI, whose browser agent (Fellou) was also evaluated in CAP'
+  version_tested: Comet (Gemini 3.1 Pro, default)
+  test_date: 2025-11/2025-12
 - url: https://arxiv.org/abs/2609.30604
   kind: independent performance
   accessed: '2026-10-17'
   note: 'KNOWS (University of Utah, preprint Sept 2026): 110 Google Workspace tasks; Comet (Claude Opus 4.7 agent) success rate 2.7% overall (Docs 12.0%, Sheets 0%, Slides 0%), ASC 35.4, ACF 70.0, SF 64.7; best of all systems; same model scored lower in an open harness'
+  peer_reviewed: false
+  version_tested: Comet (Claude Opus 4.7 agent)
+  test_date: 2026 (month unstated)
 - url: https://arxiv.org/abs/2512.07725
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Privacy Practices of Browser Agents (UCSD, Imperial College, Brave; preprint Dec 2025): Comet 139.1.7258.139 had 2 of 15 privacy concerns (fewest tied); built-in blocker blocked trackers; no Safe Browsing warning on one test, disclosed 24 Oct 2025 and patched 2 Dec 2025. Competing-author disclosure: two authors work at Brave, which makes a rival browser'
+  peer_reviewed: false
+  version_tested: Comet 139.1.7258.139
+  test_date: '2025'
 - url: https://www.hcaptcha.com/blog/report-browser-agent-safety-is-an-afterthought-for-vendors
   kind: independent performance
   accessed: '2026-10-17'
   note: 'hCaptcha Threat Analysis Group (Oct 2025): 20 abuse scenarios; Comet completed 15 of 18 applicable, 1 partial, 2 refusals; noted unprompted SQL injection and invented card details. Disclosure: hCaptcha sells agent-detection products; not peer-reviewed; summary results only'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: 2025-10
 - url: https://brave.com/blog/comet-prompt-injection/
   kind: other
   accessed: '2026-10-17'
@@ -74,13 +85,13 @@ sources:
 - url: https://www.perplexity.ai/hub/blog/mitigating-prompt-injection-in-comet
   kind: vendor or maintainer
   accessed: '2026-10-17'
-  note: 'Perplexity description of Comet prompt-injection defences (classifiers, confirmation for high-risk actions, notifications)'
+  note: Perplexity description of Comet prompt-injection defences (classifiers, confirmation for high-risk actions, notifications)
 - url: https://arxiv.org/abs/2512.07828
   kind: vendor or maintainer
   accessed: '2026-10-17'
-  note: 'Perplexity-authored usage study of Comet adoption (July-Oct 2025 data). Vendor, not counted'
+  note: Perplexity-authored usage study of Comet adoption (July-Oct 2025 data). Vendor, not counted
 uncertainties:
-- 'Comet''s agent model changes over time and by user choice (Gemini 3.1 Pro in CAP, Claude Opus 4.7 in KNOWS).'
-- 'Only one counted source is peer-reviewed; hCaptcha and Privacy Practices have commercial or competing-author interests (disclosed).'
-- 'Amazon v. Perplexity continues on remand; outcome unknown.'
-- 'Comet sends page content and screenshots to Perplexity servers for the assistant; Perplexity''s privacy policy was not reviewed in detail for this entry.'
+- Comet's agent model changes over time and by user choice (Gemini 3.1 Pro in CAP, Claude Opus 4.7 in KNOWS).
+- Only one counted source is peer-reviewed; hCaptcha and Privacy Practices have commercial or competing-author interests (disclosed).
+- Amazon v. Perplexity continues on remand; outcome unknown.
+- Comet sends page content and screenshots to Perplexity servers for the assistant; Perplexity's privacy policy was not reviewed in detail for this entry.

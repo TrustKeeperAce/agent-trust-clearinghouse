@@ -32,26 +32,44 @@ sources:
   kind: independent performance
   accessed: '2026-10-16'
   note: 'CJR Tow Center (2025): news citation/attribution test; free Perplexity and Perplexity Pro'
+  peer_reviewed: false
+  version_tested: free Perplexity and Perplexity Pro
+  test_date: '2025'
 - url: https://aclanthology.org/2023.findings-emnlp.467/
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Liu et al., Findings of EMNLP 2023: citation recall/precision (perplexity.ai, 2023)'
+  peer_reviewed: true
+  version_tested: perplexity.ai (2023)
+  test_date: '2023'
 - url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
   kind: independent performance
   accessed: '2026-10-16'
   note: 'DeepResearch Bench (ICLR 2026): Perplexity Deep Research citation accuracy'
+  peer_reviewed: true
+  version_tested: Perplexity Deep Research
+  test_date: 2025-04
 - url: https://arxiv.org/abs/2505.19253
   kind: independent performance
   accessed: '2026-10-16'
   note: 'DeepResearchGym (ICTIR 2026): sonar-deepresearch citation precision/recall'
+  peer_reviewed: true
+  version_tested: sonar-deep-research
+  test_date: unstated
 - url: https://arxiv.org/html/2507.05495v2
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Deep Research Comparator (WWW 2026 Companion): human span annotations'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://openreview.net/forum?id=AUaW6DS9si
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Mind2Web 2 (NeurIPS 2025 D&B): task success with source attribution'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: 2025-04/2025-06
 - url: https://storage.courtlistener.com/recap/gov.uscourts.nysd.630270/gov.uscourts.nysd.630270.65.0.pdf
   kind: independent other
   accessed: '2026-10-16'

@@ -37,3 +37,4 @@ footer{margin-top:var(--s8);padding-top:var(--s5);border-top:1px solid var(--bor
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 thead th{white-space:nowrap}@media (max-width:640px){thead th{white-space:normal}}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:100;padding:.5rem 1rem;background:var(--surface);color:var(--text);border:2px solid var(--text);border-radius:var(--r)}.skip-link:focus{left:.5rem;top:.5rem}

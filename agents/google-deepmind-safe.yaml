@@ -33,14 +33,23 @@ sources:
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Zhao et al. (Findings of ACL 2025): 84.48% agreement on 786 biography facts; authors propose an alternative method'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://aclanthology.org/2025.acl-long.1587/
   kind: independent performance
   accessed: '2026-10-16'
   note: 'FactBench (ACL 2025): response-level Pearson 0.95 (factual labels) / 0.60 (other labels); authors propose an alternative method'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://aclanthology.org/2024.findings-emnlp.552/
   kind: independent performance
   accessed: '2026-10-16'
   note: 'VeriScore (Findings of EMNLP 2024): critique of SAFE''s claim extraction; authors propose an alternative method'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: unstated
 - url: https://venturebeat.com/ai/google-deepmind-unveils-superhuman-ai-system-that-excels-in-fact-checking-saving-costs-and-improving-accuracy
   kind: independent other
   accessed: '2026-10-16'

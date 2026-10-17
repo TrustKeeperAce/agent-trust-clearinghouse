@@ -33,7 +33,7 @@ sources:
 - url: https://oecd.ai/en/incidents/2026-04-21-8c79
   kind: other (privacy incident, Kimi-wide)
   accessed: '2026-10-17'
-  note: 'OECD AI incident: Kimi disclosed a user''s résumé to another user (20 April 2026); see also Phoenix Weekly http://www.ifengweekly.com/detil.php?id=26914 and Seoul Economic Daily'
+  note: 'OECD AI incident: Kimi disclosed a user''s résumé to another user (20 April 2026); see also Phoenix Weekly (page unavailable as of 2026-10-17) and Seoul Economic Daily'
 - url: https://arxiv.org/abs/2509.13309
   kind: not counted (vendor numbers reused)
   accessed: '2026-10-17'

@@ -36,10 +36,10 @@ sources:
   kind: independent other
   accessed: '2026-10-16'
   note: 'Discover Education (2024): tutorial on generative AI in mixed-methods analysis (tutorial; not a correctness evaluation)'
-- url: https://doi.org/10.18623/rvd.v23.7013
+- url: https://openalex.org/W7164553025
   kind: independent other
   accessed: '2026-10-16'
-  note: 'Veredas do Direito (2026): Julius in postgraduate statistical analysis (student-learning study)'
+  note: 'Veredas do Direito (2026): Julius in postgraduate statistical analysis (student-learning study). Bibliographic record (OpenAlex); publisher page for DOI 10.18623/rvd.v23.7013 unavailable as of 2026-10-17 (HTTP 404)'
   access_note: could not be fetched (HTTP 404)
 - url: https://casrai.org/guides/julius-ai-for-research-data-analysis
   kind: independent other

@@ -27,14 +27,17 @@ sources:
   kind: independent performance
   accessed: '2026-10-16'
   note: 'CIBER (2026): security benchmark of code interpreter agents (arXiv preprint, not peer-reviewed; earlier Python version) [outside entry scope; not counted]'
+  counted: false
 - url: https://mr-sarthakgupta.github.io/redcode-evaluation-framework.html
   kind: independent performance
   accessed: '2026-10-16'
   note: RedCode extension evaluating Open Interpreter on risky code execution (self-published project; earlier Python version) [outside entry scope; not counted]
+  counted: false
 - url: https://github.com/alexbecker/open-interpreter-prompt-injection
   kind: independent performance
   accessed: '2026-10-16'
   note: 'ARPIbench: reflected prompt-injection benchmark (self-published repository; modified earlier Python version) [outside entry scope; not counted]'
+  counted: false
 - url: https://arxiv.org/abs/2505.18223
   kind: independent other
   accessed: '2026-10-16'

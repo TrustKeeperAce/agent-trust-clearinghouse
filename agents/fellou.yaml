@@ -45,11 +45,11 @@ sources:
 - url: https://fellou.ai/blog/fellou-v2-launch/
   kind: vendor or maintainer
   accessed: '2026-10-17'
-  note: 'Fellou 2.0 launch (3 June 2025): parallel tasks, Eko 2.0; earlier versions no longer usable'
+  note: 'Fellou 2.0 launch (3 June 2025): parallel tasks, Eko 2.0; earlier versions no longer usable. Page unavailable (HTTP 503) as of 2026-10-17'
 - url: https://fellou.ai/blog/eko20-launch/
   kind: vendor or maintainer
   accessed: '2026-10-17'
-  note: 'Eko 2.0: Online-Mind2Web 80% overall (easy 95%, medium 76%, hard 70%), self-reported; the Online-Mind2Web leaderboard lists it as "unknown evaluation method", not verified'
+  note: 'Eko 2.0: Online-Mind2Web 80% overall (easy 95%, medium 76%, hard 70%), self-reported; the Online-Mind2Web leaderboard lists it as "unknown evaluation method", not verified. Page unavailable (HTTP 503) as of 2026-10-17'
 - url: https://fellou.ai/policy
   kind: vendor or maintainer
   accessed: '2026-10-17'
