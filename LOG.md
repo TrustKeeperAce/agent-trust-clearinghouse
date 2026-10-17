@@ -17,3 +17,4 @@
 - 2026-10-16 21:38 EDT: Decision 0007 approved by Remington. Added Julius AI (Simple analysis) as Insufficient evidence, no overall score. Link check: all 200 except MDPI and USF poster (403 to automated fetch) and Veredas do Direito DOI (404); statuses noted on page. Methodology clarification on independent performance sources deferred; methodology page unchanged. Not deployed (user deploys).
 - 2026-10-16 21:41 EDT: Julius AI deployed live (dpl_GUFimgDzhCADzxNiJUssmGQ1EedG, all pages 200).
 - 2026-10-16 21:45 EDT: Decision 0008 approved by Remington. Added Open Interpreter (Simple analysis) as Insufficient evidence, no overall score (classic-version alternative score 45 not used). Link check: all 200. Not deployed (user deploys).
+- 2026-10-16 21:47 EDT: Open Interpreter deployed live (dpl_2hPN8BCU9BAJRR51Qn1UHBV2eXj8, all 9 pages 200).
