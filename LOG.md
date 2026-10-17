@@ -55,3 +55,6 @@ Kimi Researcher was deployed as dpl_jHReU4Pwzaz1txpyJkzNkb4h87UE (commit 83f8f7c
 ## 2026-10-17 — 0025 Agent S published
 The 0025 decision was approved: the entry is overall 49, grade B, in the new category Computer-use agent. Also approved: a methodology clarification on grade B for 7+ sources, and a category list.
 Updated: index, ItemList, sitemap, llms.txt and changelog. The 375px check passed. Links were checked; the decision file and canonical page returned 404 until push/deploy. NOT deployed.
+
+## 2026-10-17 — Deploy note
+Agent S was deployed as dpl_7tNA6hCftbs3shAgzFNiubMFXupH (commit 0e590c2). Live check: agent-s.html returns 200 with no sudo text, and the index and methodology are updated.
