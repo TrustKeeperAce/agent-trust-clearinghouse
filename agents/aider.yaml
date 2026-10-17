@@ -1,0 +1,106 @@
+name: Aider (open-source)
+slug: aider
+category: Coding agent
+type: Open-source terminal AI pair-programming tool (Apache-2.0) maintained by Paul Gauthier and contributors; PyPI aider-chat, GitHub Aider-AI/aider
+homepage: https://github.com/Aider-AI/aider
+scope: The open-source Aider command-line tool (aider-chat), run with a language model chosen by the user, from v0.82.0 (April 2025) through v0.86.2 (12 February 2026) and the main branch (last commit 22 May 2026). The Aider leaderboards (Polyglot, code editing, refactoring) are run by the maintainer and are not counted.
+summary: Aider is an open-source command-line tool that edits code in a local git repository using a language model chosen by the user. Eight independent studies that ran it were found (five peer-reviewed). Results depend heavily on the model and task. In most studies that compared agents, Aider completed fewer tasks than OpenHands or SWE-agent with the same model, for example 1.85-16.67% task pass rate on GitTaskBench and 11.2-20.0% of vulnerabilities patched on SEC-bench, although it had lower cost per task. Results on secure-coding benchmarks were mixed. Aider with GPT-5 had the best correct-and-secure score (35.8%) of three agents on MT-Sec and was close to the leaders on SecRepoBench (50.6% secure-pass@1), but had the lowest average correct-and-secure rate (6.7%) on SecureVibeBench. Two CVEs have been published (assigned by VulDB and VulnCheck); the related GitHub issues were open with no fix identified as of 17 October 2026. The latest release is v0.86.2 (February 2026). Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 40
+  disputes: 45
+  adherence_to_limits: 45
+  evidence_quality: 80
+overall_score: 52
+evidence_grade: A
+independent_source_count:
+  performance: 8
+  peer_reviewed: 5
+  other: 4
+factor_notes:
+  completion_rate: 'GitTaskBench (v0.84.1.dev): execution completion 5.56-20.37% and task pass rate 1.85-16.67% across GPT-4o, GPT-4.1, Claude 3.5 and DeepSeek V3, the lowest of three frameworks (SWE-agent up to 42.59%, OpenHands up to 48.15%); Aider + DeepSeek V3 had the lowest cost (under $0.003 per task). SEC-bench (v0.82.0, 80 instances): 11.2-20.0% vulnerabilities patched (SWE-agent 26.2-33.8%), proof-of-concept 1.2% (Claude 3.7 Sonnet). OmniCode (Gemini-2.5-Flash): Python bug-fixing 32.4% vs SWE-agent 38.1%, C++ 1.8% vs 8.0%, Java 19.3% vs 14.7%. SecRepoBench: pass@1 56.6-70.1% across models (OpenHands up to 79.6%). Multi-Harness RL (Qwen3-8B-based models on SWE-bench Verified): mean 2.14% solved under Aider, lowest of four harnesses (OpenHands 9.27%).'
+  disputes: 'CVE-2026-85674 (an untrusted repository''s .aider.conf.yml can set test or lint commands that run at startup without confirmation; through v0.86.2; CVSS 3.1 7.8 per VulnCheck; GitHub issue #5254 open). CVE-2026-10175 (Architect mode: prompt injection via repository files can lead to injected code being committed; reported in 0.86.3 per VulDB; CVSS 3.1 6.3; NVD Not Scheduled; VulDB states the maintainer did not respond; issue #5058 open). No fix identified for either as of 17 October 2026. No legal or regulatory action found. No release since February 2026.'
+  adherence_to_limits: 'SecureVibeBench (v0.86.1): average correct-and-secure rate 6.7%, lowest of three agents (SWE-agent 14.3%, OpenHands 13.9%). MT-Sec (v0.82.1): Aider + GPT-5 had the highest correct-and-secure score (35.8%) of three agents, though it fell by 27.3% in some multi-turn settings. SecRepoBench: secure-pass@1 39.0-50.6%; 21% of Aider + Claude Sonnet 4.5 completions did not compile. Sifting the Noise (v0.86.1): 14.3% false-positive rate when triaging static-analysis alerts (SWE-agent 14.1-14.9%), described as more stable across policies. The two CVEs concern commands or code run without user confirmation. No independent study of out-of-scope or unrequested actions by Aider was found.'
+  evidence_quality: 'Eight independent sources, five peer-reviewed (NeurIPS 2025, AAAI 2026, EMNLP 2026, ACL Findings 2026, LLM4Code workshop at ICSE 2026). Stated versions are v0.82.0, v0.82.1, v0.84.1.dev and v0.86.1 (twice). Sifting the Noise tested v0.86.1 around December 2025 to January 2026, within 12 months, so grade A. This score is below the methodology''s suggested A range (85-100) because the A rests on a single recent versioned test, which is a preprint.'
+sources:
+- url: https://arxiv.org/abs/2506.11791
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: Aider 0.82.0
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'SEC-bench (University of Illinois Urbana-Champaign, Purdue; NeurIPS 2025): 80 real vulnerabilities; Aider patched 20.0% (Claude 3.7 Sonnet), 11.2% (GPT-4o), 17.5% (o3-mini); proof-of-concept 1.2% (Claude 3.7); lowest of three agents; patches mostly under 10 lines'
+- url: https://arxiv.org/abs/2508.18993
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: Aider v0.84.1.dev-21-gb2592267
+  test_date: '2025-07'
+  accessed: '2026-10-17'
+  note: 'GitTaskBench (AAAI 2026): Aider execution completion 5.56-20.37%, task pass rate 1.85-16.67% across four models (best DeepSeek V3), lowest of three frameworks; lowest cost (under $0.003 per task with DeepSeek V3)'
+- url: https://arxiv.org/abs/2510.13859
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: Aider v0.82.1
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'MT-Sec (University of Maryland; EMNLP 2026 per author homepage): multi-turn secure coding; Aider + GPT-5 (thinking) highest correct-and-secure score (35.8%) of three agents (Aider, OpenHands, Codex); C&S fell by 27.3% in one multi-turn setting. Disclosure: authors overlap with SecRepoBench'
+- url: https://arxiv.org/abs/2504.21205
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: 2025-2026
+  accessed: '2026-10-17'
+  note: 'SecRepoBench (University of Maryland; LLM4Code workshop at ICSE 2026): repository-level secure code completion in C/C++; Aider secure-pass@1 39.0-50.6% (best GPT-5), pass@1 56.6-70.1%; OpenHands up to 53.5%; 21% of Aider + Claude Sonnet 4.5 code did not compile. Disclosure: one author affiliated with Google DeepMind (competing Gemini models)'
+- url: https://arxiv.org/abs/2602.02262
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: '2025-2026'
+  accessed: '2026-10-17'
+  note: 'OmniCode (ACL Findings 2026): with Gemini-2.5-Flash, Aider vs SWE-agent on bug fixing, test generation, code review and style fixing; Python bug fixing 32.4% vs 38.1%, C++ 1.8% vs 8.0%, Java 19.3% vs 14.7%; style fixing 48.6% vs 57.0% (Python)'
+- url: https://arxiv.org/abs/2509.22097
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Aider 0.86.1
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'SecureVibeBench (Singapore Management University et al.; preprint, v5 June 2026): average correct-and-secure rate Aider 6.7%, SWE-agent 14.3%, OpenHands 13.9% across five models; Aider + Claude Sonnet 4.5 high cost relative to results. Disclosure: authors overlap with Sifting the Noise'
+- url: https://arxiv.org/abs/2601.22952
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Aider v0.86.1
+  test_date: 2025-12 to 2026-01
+  accessed: '2026-10-17'
+  note: 'Sifting the Noise (Monash University et al.; preprint v3 July 2026, venue unconfirmed): agents triaging static-analysis alerts; Aider false-positive rate 14.3% (OpenHands 14.9%, SWE-agent 14.1% with GPT-5); Aider more stable across policy types'
+- url: https://arxiv.org/abs/2609.04518
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Multi-Harness RL for Coding Agents (NYU et al.; preprint Oct 2026): six Qwen3-8B-based models on SWE-bench Verified under four harnesses; mean 2.14% solved under Aider (lowest; OpenHands 9.27%). Small research models, not typical use'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-85674
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-85674: repository config (.aider.conf.yml) can set test-cmd or lint-cmd that run shell commands without confirmation; through v0.86.2; CVSS 3.1 7.8 / 4.0 8.5 (VulnCheck); GitHub issue #5254 open'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-10175
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-10175: Architect mode code injection, reported in 0.86.3 (VulDB); CVSS 3.1 6.3 / 4.0 2.1; NVD Not Scheduled; VulDB states the maintainer did not respond; GitHub issue #5058 open'
+- url: https://arxiv.org/abs/2610.04921
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Complex Agents, Shallow Tests (preprint Oct 2026): analyses Aider v0.86.2''s own test suite; about the project''s testing, not agent performance'
+- url: https://arxiv.org/abs/2608.29889
+  kind: other
+  accessed: '2026-10-17'
+  note: 'VibeJam: user-study platform that uses Aider by default; pilot only, no Aider performance results'
+- url: https://aider.chat/docs/leaderboards/
+  kind: not counted (leaderboard)
+  accessed: '2026-10-17'
+  note: 'Aider leaderboards (Polyglot, code editing, refactoring): run by the Aider maintainer; listed, not counted (0036 cautions 1 and 3)'
+uncertainties:
+- Citation check incomplete — recheck later. Unscreened candidates include AAAI 2026 "Interactive Evaluation of LLMs for Multi-Requirement SE Tasks", two ESEM 2026 papers, a TOSEM paper on process-centric analysis of agentic systems, and a CSIT 2026 benchmarking paper.
+- Grade A rests on one recent versioned test (Sifting the Noise, preprint). The other versioned tests date from 2025, more than 12 months ago.
+- CVE-2026-10175 names version 0.86.3, which does not appear on PyPI (latest 0.86.2); it may refer to the main branch.
+- MT-Sec's EMNLP 2026 venue comes from an author homepage and was not confirmed in the ACL Anthology.
+- Results depend heavily on the model, and many results reflect older models.
