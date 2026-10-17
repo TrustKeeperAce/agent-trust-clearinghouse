@@ -1,0 +1,82 @@
+name: Manus
+slug: manus
+category: research
+type: commercial (free tier with credits; paid plans)
+homepage: https://manus.im/
+scope: Manus, a general-purpose AI agent from Butterfly Effect for research and multi-step digital tasks. The current product is Manus 2.0 (28 September 2026), which the vendor describes as a new architecture.
+summary: Manus is a commercial general-purpose AI agent used for research reports and multi-step digital tasks. Meta agreed to acquire it in December 2025; Chinese regulators ordered the deal unwound in 2026, some user data was deleted in August 2026 to comply with regulatory requirements, and Manus resumed independent operation in September 2026. Manus 2.0 (28 September 2026, new architecture) has not been independently tested, so no overall score is given. Independent tests of 2025 versions are listed as historical context only. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
+status: Insufficient evidence
+scores:
+  completion_rate: null
+  disputes: null
+  adherence_to_limits: null
+  evidence_quality: null
+factor_notes:
+  completion_rate: 'No independent test of Manus 2.0 was found. 2025 versions, for reference only (not counted): research-report quality mid-range with weak citation accuracy (LiveResearchBench citation 45.6; DeepResearchEval quality 5.95/10, 8th of 9, factual ratio 82.3%, 1st of 9); 8.0% full success on CAP cross-site tasks (best agent tested; humans 10%); fabricated all 10 selected studies in a systematic-review test; 92–95% accuracy on dental diagnosis questions and radiographs.'
+  disputes: Researchers demonstrated prompt injection exposing a VS Code server (Embrace The Red, 2025) and a single email leading to remote code execution and exposure of connected-account tokens (Salt Labs, 2026; fixed via Meta's bug bounty). Chinese regulators ordered Meta's acquisition unwound, and some user data was deleted in August 2026 to comply with regulatory requirements.
+  adherence_to_limits: In both security demonstrations, Manus followed instructions hidden in content it processed. Not independently tested for Manus 2.0.
+  evidence_quality: Zero independent performance sources for Manus 2.0. Six tests of 2025 versions (five peer-reviewed) are listed but not counted.
+overall_score: null
+evidence_grade: Insufficient evidence
+independent_source_count:
+  performance: 0
+  other: 3
+  count_note: 6 performance tests of 2025 versions listed as historical context, not counted.
+sources:
+- url: https://arxiv.org/abs/2510.14240
+  kind: historical context (earlier version, not counted)
+  accessed: '2026-10-17'
+  note: 'LiveResearchBench (ICLR 2026; Salesforce, UW-Madison, Stanford): presentation 75.0, fact and logic 63.1, coverage 73.3, citation 45.6; LLM judges; 2025'
+- url: https://arxiv.org/abs/2601.09688
+  kind: historical context (earlier version, not counted)
+  accessed: '2026-10-17'
+  note: 'DeepResearchEval (preprint 2026): 100 tasks; quality 5.95/10, 8th of 9; factual ratio 82.30%, 1st of 9; reports collected 2025'
+- url: https://arxiv.org/abs/2608.08392
+  kind: historical context (earlier version, not counted)
+  accessed: '2026-10-17'
+  note: 'CAP (COLM 2026): 23.0% partial completion, 8.0% full success, best agent tested (humans 10%); Nov–Dec 2025. Competitor disclosure: one author interned at FellouAI, whose system was also evaluated'
+- url: https://doi.org/10.1038/s41433-025-04138-w
+  kind: historical context (earlier version, not counted)
+  accessed: '2026-10-17'
+  note: 'Loke et al. (Eye 2026): April 2025 systematic review and meta-analysis test; only agent attempting the full workflow, but all 10 selected studies and 5 references were fabricated'
+- url: https://doi.org/10.3389/froh.2025.1686090
+  kind: historical context (earlier version, not counted)
+  accessed: '2026-10-17'
+  note: 'Madfa et al. (Frontiers in Oral Health 2025): March 2025 version; 92.3% on 117 dental case questions (differences from other models not significant)'
+- url: https://doi.org/10.1080/07853890.2026.2664903
+  kind: historical context (earlier version, not counted)
+  accessed: '2026-10-17'
+  note: 'Annals of Medicine 2026: April 2025 version; 92.5% then 95.0% on 120 dental radiographs (radiologists 96.7%)'
+- url: https://www.technologyreview.com/2025/03/11/1113133/manus-ai-review/
+  kind: other (hands-on journalism, earlier version)
+  accessed: '2026-10-17'
+  note: 'MIT Technology Review hands-on review, March 2025 (qualitative)'
+- url: https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/
+  kind: other (security test of earlier version)
+  accessed: '2026-10-17'
+  note: 'Embrace The Red (2025): prompt injection led Manus to expose its VS Code server to the internet; reported 1 June 2025'
+- url: https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email
+  kind: other (security test)
+  accessed: '2026-10-17'
+  note: 'Salt Labs (October 2026): a single email led to remote code execution and exposure of connected-account tokens; fixed via Meta bug bounty'
+- url: https://manus.im/blog/introducing-manus-2-0
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Manus 2.0 announcement (28 September 2026): "not a version update. It''s a new architecture"'
+- url: https://help.manus.im/en/articles/16147831-service-change-overview-what-s-happening-and-am-i-affected
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Service change notice: some data generated 29 Dec 2025–23 Aug 2026 deleted 23–24 Aug 2026 to comply with regulatory requirements'
+- url: https://manus.im/blog/manus-resumes-independent-operations
+  kind: vendor or maintainer
+  accessed: '2026-10-17'
+  note: 'Manus resumes independent operations (1 September 2026)'
+uncertainties:
+- All independent tests found used 2025 versions; Manus 2.0 is a new architecture per the vendor and is untested.
+- Vendor-reported GAIA scores and Manus 2.0 efficiency figures are not used.
+- The two dental studies test diagnostic question answering rather than agentic tasks.
+- CAP has a competitor tie (one author interned at FellouAI, an evaluated system).
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0020-manus.md
+notes: Informational only; not a guarantee, endorsement, or certification.

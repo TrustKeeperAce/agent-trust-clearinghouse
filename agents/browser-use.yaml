@@ -36,7 +36,7 @@ sources:
 - url: https://arxiv.org/abs/2608.08392
   kind: independent performance
   accessed: '2026-10-17'
-  note: 'CAP (COLM 2026): Browser-Use with GPT-5 / Claude 4.5 Sonnet / DeepSeek-V4-Flash scored 15.0/21.0/25.0% partial completion and 2.0/5.0/2.9% full success on 198 cross-site tasks (human 35.0/10.0%); run Nov–Dec 2025'
+  note: 'CAP (COLM 2026): Browser-Use with GPT-5 / Claude 4.5 Sonnet / DeepSeek-V4-Flash scored 15.0/21.0/25.0% partial completion and 2.0/5.0/2.9% full success on 198 cross-site tasks (human 35.0/10.0%); run Nov–Dec 2025. Competitor disclosure: one author interned at FellouAI, whose system was also evaluated in CAP'
 - url: https://arxiv.org/abs/2605.16565
   kind: independent performance
   accessed: '2026-10-17'
