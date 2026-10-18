@@ -15,6 +15,8 @@ def page(f,t):
     if 'class="bar-line"' not in t: t=re.sub(r'(<p class="scoreline" style[^>]*>.*?)</p>',lambda m:m.group(1)+'<span class="bar-line" aria-hidden="true"></span></p>',t,count=1,flags=re.S)
     t=t.replace('<p><strong>Status: Insufficient evidence</strong>','<p class="scoreline insufficient"><strong>Status: Insufficient evidence</strong>')
     t=t.replace('<p><strong>Citation check incomplete — recheck later.</strong></p>','<p class="note"><strong>Citation check incomplete — recheck later.</strong></p>')
+    # footer privacy link (decision 0060)
+    if 'href="/methodology.html#privacy"' not in t: t=t.replace(' · <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">Request a correction</a></p></footer>',' · <a href="/methodology.html#privacy">Privacy</a> · <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">Request a correction</a></p></footer>')
     return t
 def index(t):
     sc=len(re.findall(r'<span class="bar" style="--v:\d+">',t.split('id="insufficient"')[0]))
@@ -32,6 +34,7 @@ def index(t):
     return t[:m.start()]+hero+t[m.end():]
 n=0
 for f in glob.glob(P+'/*.html')+glob.glob(P+'/agents/*.html'):
+    if re.match(r'google[0-9a-f]+\.html$',os.path.basename(f)): continue  # Search Console verification file (0060): never modify
     t=open(f).read(); t=page(f,t)
     if f.endswith('/index.html'): t=index(t)
     open(f,'w').write(t); n+=1
