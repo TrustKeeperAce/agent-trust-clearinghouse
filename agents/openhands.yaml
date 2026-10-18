@@ -135,3 +135,7 @@ uncertainties:
 - PerfBench appeared in peer-reviewed workshop proceedings (AGENT 2026 at ICSE).
 - 'CVE-2026-33718: NVD and the GitHub advisory differ on the affected version range and the CVSS score; both are shown.'
 - MLE-bench reports 4.4% ± 1.4 any-medal rate in its main table and 5.1% ± 1.3 in a per-complexity appendix table.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0037-openhands.md
+notes: Informational only; not a guarantee, endorsement, or certification.

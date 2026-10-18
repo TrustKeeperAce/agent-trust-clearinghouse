@@ -126,3 +126,7 @@ uncertainties:
 - Eight of nine sources are competing-agent papers (all disclosed); only two are peer-reviewed.
 - Whether 2026 studies used 0.8.2 or later main-branch code is mostly unstated.
 - No fixes have been identified for the Data Interpreter CVEs; the project appears dormant.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0029-data-interpreter.md
+notes: Informational only; not a guarantee, endorsement, or certification.

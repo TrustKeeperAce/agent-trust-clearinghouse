@@ -28,10 +28,16 @@ sources:
   accessed: '2026-10-16'
   note: 'Abbasi et al. (2026), Applied Sciences 16(2):669: comparison on bibliometric tasks (peer-reviewed; limited: Julius code execution disabled)'
   access_note: could not be fetched automatically (HTTP 403)
+  version_tested: unstated (code execution disabled)
+  test_date: 2025-2026
+  peer_reviewed: true
 - url: https://doi.org/10.18061/ojsm.6575
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Ohio Journal of School Mathematics (2025): generative AI chatbots and multiplication (single prompt; education journal)'
+  version_tested: unstated
+  test_date: '2025'
+  peer_reviewed: false
 - url: https://link.springer.com/article/10.1007/s44217-024-00214-7
   kind: independent other
   accessed: '2026-10-16'

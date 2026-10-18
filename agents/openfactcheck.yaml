@@ -41,3 +41,7 @@ uncertainties:
 - Semantic Scholar citation check (17 Oct 2026) covered all papers citing the three OpenFactCheck papers; none ran OpenFactCheck as a tested system. Papers without open full text were checked by abstract only.
 - OpenFactCheck is a framework that combines other checkers; "performance" depends on the configuration chosen.
 - The 2.0 alpha series may be a substantial rewrite; continuity is unassessed beyond release history.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0030-loki-openfactcheck.md
+notes: Informational only; not a guarantee, endorsement, or certification.

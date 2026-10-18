@@ -136,3 +136,6 @@ Decision 0045 (Devin, Cognition, Coding agent, 50 / B) was deployed as dpl_AhBYb
 
 ## 2026-10-17 — Deploy note
 Decision 0046 (design refresh, layout and labels only; no score or rule changes) was deployed to production as dpl_3nDCvnVEDXkyykZKMF2SU7J8Df8n (commit eb607bf). Live check: all pages return 200 and the style.css sha matches. A one-time consistency pass over the entries published before the faster workflow begins privately (decision 0047 onward).
+
+## 2026-10-17 — Data-only update (0047)
+Decision 0047 (metadata and evidence-log fields) was applied to agents/*.yaml only: schema fields added to 19 entries, version and test-date fields added to 9 counted sources, access dates added to 17 rows, and count notes added to 3 entries. check_scores output is identical before and after. No public/ change and no deploy needed.

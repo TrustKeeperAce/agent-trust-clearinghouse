@@ -60,8 +60,10 @@ sources:
   accessed: '2026-10-17'
   note: 'Vendor help page: "ChatGPT agent is no longer available"; Operator site no longer accessible'
 uncertainties:
-- 'OpenAI has published no exact retirement date for ChatGPT agent; user reports place it in early August 2026.'
+- OpenAI has published no exact retirement date for ChatGPT agent; user reports place it in early August 2026.
 - ChatGPT Work's models changed three times within about three months (GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol).
 - Vendor benchmark figures (system cards, BrowseComp, OSWorld 2.0) are not used as independent evidence.
 last_reviewed: '2026-10-17'
 decision: APPROVED 0018
+decision_packet: decisions/0018-chatgpt-work.md
+notes: Informational only; not a guarantee, endorsement, or certification.

@@ -26,6 +26,9 @@ sources:
   kind: independent performance
   accessed: '2026-10-16'
   note: 'Nordenhög (2026), BTH master''s thesis: 148 negotiations at one customer (partly independent; master''s thesis, not peer-reviewed; customer-provided data)'
+  version_tested: unstated (customer deployment)
+  test_date: unstated (thesis 2026)
+  peer_reviewed: false
 - url: https://hbr.org/2022/11/how-walmart-automated-supplier-negotiations
   kind: customer or partner
   accessed: '2026-10-16'
@@ -38,7 +41,6 @@ sources:
   kind: independent other
   accessed: '2026-10-16'
   note: Bloomberg Businessweek (2023-04-26) (journalism)
-  access_note: not reviewed (paywalled)
   access_note: not reviewed (paywalled)
 - url: https://www.pon.harvard.edu/daily/negotiation-skills-daily/chatbot-negotiations-what-can-ai-do-for-you/
   kind: independent other

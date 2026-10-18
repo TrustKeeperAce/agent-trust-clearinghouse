@@ -21,10 +21,16 @@ sources:
   kind: independent performance
   accessed: '2026-10-17'
   note: 'Proof-of-Guardrail in AI Agents (preprint, Mar/Jun 2026; Sahara AI and University of Southern California): runs Loki as a fact-checking guardrail on FacTool-KBQA. Non-factual P 0.71 / R 0.81 / F1 0.76; factual P 0.74 / R 0.61 / F1 0.67; mean latency 20.4 s with Loki vs 16.0 s without, in a trusted execution environment'
+  version_tested: unstated
+  test_date: '2026'
+  peer_reviewed: false
 - url: https://arxiv.org/abs/2601.20032
   kind: independent performance
   accessed: '2026-10-17'
   note: 'TAIGR (preprint, Jan 2026; Purdue University): Loki adapted as a baseline for validating health claims in TikTok influencer videos (PubMed evidence, GPT-4.1-mini). Macro-F1 0.43 (Incorrect 0.71, Partially correct 0.29, Correct 0.29) vs TAIGR 0.52. Task differs from Loki''s design (implicit takeaways, not explicit claims)'
+  version_tested: unstated (adapted as a baseline)
+  test_date: '2026'
+  peer_reviewed: false
 - url: https://davidamitchell.github.io/Research/research/2026-05-06-loki-fact-checking-journalists-moderation.html
   kind: other
   accessed: '2026-10-17'
@@ -42,3 +48,7 @@ uncertainties:
 - TAIGR tested Loki on a task it was not designed for (implicit influencer takeaways); Proof-of-Guardrail's main subject is attestation, not Loki.
 - Results would depend on the model and search API chosen.
 - The hosted demo did not respond on 17 October 2026; whether it is retired is unknown.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0030-loki-openfactcheck.md
+notes: Informational only; not a guarantee, endorsement, or certification.

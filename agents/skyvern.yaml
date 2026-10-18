@@ -1,10 +1,11 @@
 name: Skyvern (open-source)
 slug: skyvern
 category: Browser/web agent
-type: 'open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered'
+type: open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered
 homepage: https://github.com/Skyvern-AI/skyvern
-scope: 'The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.'
-summary: 'Skyvern is an open-source browser-automation agent (AGPL-3.0) from Skyvern AI that uses language and vision models to fill forms and carry out web tasks; a hosted Skyvern Cloud service is also sold. Only two independent evaluations were found, both January 2026 preprints by an overlapping Fudan University group. With GPT-4o, Skyvern completed 84.4% of 500 benign WebVoyager tasks. In the same study, 62.6% of social-engineering attacks succeeded on average. A separate security test scored it 61.67-72.29 (100 = no successful attacks); it was the lowest of four frameworks with GPT-4o. Skyvern''s own results (85.85% on a modified WebVoyager set; Web Bench, which Skyvern co-built and ran on its own infrastructure) are not counted. Two template-injection vulnerabilities allowing code execution by authenticated or workflow inputs (CVE-2025-49619, CVE-2026-82447) were fixed in later releases. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.'
+scope: The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.
+summary: Skyvern is an open-source browser-automation agent (AGPL-3.0) from Skyvern AI that uses language and vision models to fill forms and carry out web tasks; a hosted Skyvern Cloud service is also sold. Only two independent evaluations were found, both January 2026 preprints by an overlapping Fudan University group. With GPT-4o, Skyvern completed 84.4% of 500 benign WebVoyager tasks. In the same study, 62.6% of social-engineering attacks succeeded on average. A separate security test scored it 61.67-72.29 (100 = no successful attacks); it was the lowest of four frameworks with GPT-4o. Skyvern's own results (85.85% on a modified WebVoyager set; Web Bench, which Skyvern co-built and ran on its own infrastructure) are not counted. Two template-injection vulnerabilities allowing code execution by authenticated or workflow inputs (CVE-2025-49619, CVE-2026-82447) were fixed in later releases. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or
+  certification.
 scores: null
 overall_score: null
 evidence_grade: Insufficient evidence
@@ -12,19 +13,25 @@ independent_source_count:
   performance: 2
   other: 3
 factor_notes:
-  completion_rate: '84.4% of 500 WebVoyager tasks with GPT-4o, no defence (Bots Take the Bait, automatic string checking); 80.2-83.2% with added defences. No other independent completion figures were found. Not scored.'
-  disputes: 'No legal or regulatory action found. CVE-2025-49619 (server-side template injection in workflow prompt fields, Skyvern through 0.1.85; CVSS 3.1 8.5 from MITRE; fixed by commit db856cd; public exploit on Exploit-DB) and CVE-2026-82447 (Jinja sandbox escape in TextPromptBlock before 1.0.45; CVSS 3.1 8.8 / 4.0 8.7 from VulnCheck; fixed in 1.0.45). NVD status Deferred for both. No GitHub security advisories published by the project. Not scored.'
-  adherence_to_limits: 'Social-engineering attacks succeeded 62.6% on average (43-78% by context; Bots Take the Bait, GPT-4o). WebTrap Park security score 61.67 (GPT-4o), 70.44 (o3), 72.29 (Claude 4 Sonnet), where higher is safer; lowest of four frameworks with GPT-4o. Not scored.'
-  evidence_quality: 'Two independent sources, both preprints from overlapping Fudan University authors, both January 2026 on the then-current GitHub code. Below the three-source minimum. Not scored.'
+  completion_rate: 84.4% of 500 WebVoyager tasks with GPT-4o, no defence (Bots Take the Bait, automatic string checking); 80.2-83.2% with added defences. No other independent completion figures were found. Not scored.
+  disputes: No legal or regulatory action found. CVE-2025-49619 (server-side template injection in workflow prompt fields, Skyvern through 0.1.85; CVSS 3.1 8.5 from MITRE; fixed by commit db856cd; public exploit on Exploit-DB) and CVE-2026-82447 (Jinja sandbox escape in TextPromptBlock before 1.0.45; CVSS 3.1 8.8 / 4.0 8.7 from VulnCheck; fixed in 1.0.45). NVD status Deferred for both. No GitHub security advisories published by the project. Not scored.
+  adherence_to_limits: Social-engineering attacks succeeded 62.6% on average (43-78% by context; Bots Take the Bait, GPT-4o). WebTrap Park security score 61.67 (GPT-4o), 70.44 (o3), 72.29 (Claude 4 Sonnet), where higher is safer; lowest of four frameworks with GPT-4o. Not scored.
+  evidence_quality: Two independent sources, both preprints from overlapping Fudan University authors, both January 2026 on the then-current GitHub code. Below the three-source minimum. Not scored.
 sources:
 - url: https://arxiv.org/abs/2601.07263
   kind: independent performance
   accessed: '2026-10-17'
   note: '"When Bots Take the Bait" (preprint, Jan 2026; Fudan University, Zhongguancun Lab, Tsinghua): with GPT-4o, Skyvern completed 84.4% of 500 benign WebVoyager tasks without defences (Browser Use 86.2%, Agent-E 84.0%). Social-engineering attack success averaged 62.6% (range 43-78% across inducement contexts; 49-76% across consistency patterns). Shares authors with WebTrap Park'
+  version_tested: unstated (GPT-4o)
+  test_date: unstated (preprint Jan 2026)
+  peer_reviewed: false
 - url: https://arxiv.org/abs/2601.08406
   kind: independent performance
   accessed: '2026-10-17'
   note: 'WebTrap Park (preprint, Jan 2026; Fudan University; 1,226 live-web security tasks; GitHub code accessed 11 Jan 2026): score = 1 - attack success rate. Skyvern 72.29 (Claude 4 Sonnet), 70.44 (o3), 61.67 (GPT-4o; lowest of four frameworks at that model). Sub-scores with GPT-4o: misuse 78.6, prompt injection 71.16, deceptive web design 35.25. Shares authors with Bots Take the Bait'
+  version_tested: unstated
+  test_date: 2026-01 (code accessed 11 Jan 2026)
+  peer_reviewed: false
 - url: https://arxiv.org/abs/2606.20910
   kind: other
   accessed: '2026-10-17'
@@ -52,9 +59,13 @@ sources:
 - url: https://eval.skyvern.com/
   kind: vendor or maintainer
   accessed: '2026-10-17'
-  note: 'Skyvern-hosted evaluation pages ("Odysseys" model comparisons). Not counted'
+  note: Skyvern-hosted evaluation pages ("Odysseys" model comparisons). Not counted
 uncertainties:
-- 'Only two independent evaluations exist, from overlapping authors; one completion figure is on an easy, widely used benchmark.'
-- 'Results depend on the language model; most independent tests used GPT-4o.'
-- 'Skyvern Cloud (the hosted service) was not covered; its privacy policy and trust centre (skyvern.com/privacy, trust.skyvern.com) were not reviewed and data handling is unverified.'
-- 'Web Bench is the largest test of Skyvern but was co-built and run by Skyvern.'
+- Only two independent evaluations exist, from overlapping authors; one completion figure is on an easy, widely used benchmark.
+- Results depend on the language model; most independent tests used GPT-4o.
+- Skyvern Cloud (the hosted service) was not covered; its privacy policy and trust centre (skyvern.com/privacy, trust.skyvern.com) were not reviewed and data handling is unverified.
+- Web Bench is the largest test of Skyvern but was co-built and run by Skyvern.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0027-skyvern.md
+notes: Informational only; not a guarantee, endorsement, or certification.

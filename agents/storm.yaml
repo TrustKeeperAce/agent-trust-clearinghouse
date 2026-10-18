@@ -98,3 +98,6 @@ uncertainties:
 - Co-STORM appears in three studies only; there is no independent test of its human-in-the-loop mode with real users.
 - The hosted research preview is not covered and was not independently tested.
 decision: 0026 (approved 2026-10-17)
+last_reviewed: '2026-10-17'
+decision_packet: decisions/0026-storm.md
+notes: Informational only; not a guarantee, endorsement, or certification.

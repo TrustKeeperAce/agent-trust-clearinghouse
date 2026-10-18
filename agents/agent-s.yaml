@@ -4,7 +4,8 @@ category: Computer-use agent
 type: open source (Apache-2.0), PyPI gui-agents; Simular commercial products (Simular app, Sai, Simular Cloud, Simular API) not covered
 homepage: https://github.com/simular-ai/Agent-S
 scope: 'Open-source Agent S framework (gui-agents 0.2.x to 0.3.2: Agent S2, S2.5, S3) running with a language model and grounding model chosen by the user. Agent S1 (2024) is historical context only. Results depend heavily on the model used.'
-summary: 'Agent S is an open-source framework from Simular that lets a language model operate a desktop computer by looking at the screen and using the mouse and keyboard. Results depend heavily on the model and settings used. In independent evaluations of S2, S2.5 and S3 (OS-Symphony, ACL 2026; OSWorld-Human, MLSys 2026; MacAgentBench; Agent Alpha; OS-Marathon; SCUBA; WorldGUI), success ranged from about 10% to 67% depending on the benchmark and model: 40-55% on reproduced OSWorld runs, 34-40% on Windows and Salesforce tasks, and 23-34% on long repetitive tasks (humans 80-88%). These are below the vendor''s own OSWorld figures of 62.6-72.6%. Three low-to-medium severity denial-of-service CVEs were published in September 2026 with no vendor response recorded. An independent code review found that the command-line app runs model-generated actions without asking for confirmation. Simular''s commercial products are not covered. Overall score 49. Informational only; not a guarantee, endorsement, or certification.'
+summary: 'Agent S is an open-source framework from Simular that lets a language model operate a desktop computer by looking at the screen and using the mouse and keyboard. Results depend heavily on the model and settings used. In independent evaluations of S2, S2.5 and S3 (OS-Symphony, ACL 2026; OSWorld-Human, MLSys 2026; MacAgentBench; Agent Alpha; OS-Marathon; SCUBA; WorldGUI), success ranged from about 10% to 67% depending on the benchmark and model: 40-55% on reproduced OSWorld runs, 34-40% on Windows and Salesforce tasks, and 23-34% on long repetitive tasks (humans 80-88%). These are below the vendor''s own OSWorld figures of 62.6-72.6%. Three low-to-medium severity denial-of-service CVEs were published in September 2026 with no vendor response recorded. An independent code review found that the command-line app runs model-generated actions without asking for confirmation. Simular''s commercial products are not covered. Overall score 49. Informational only; not a guarantee, endorsement,
+  or certification.'
 scores:
   completion_rate: 45
   disputes: 45
@@ -114,3 +115,6 @@ uncertainties:
 - No independent security or prompt-injection evaluation of Agent S was found.
 - Simular's commercial products (Simular app, Sai, Cloud, API) are not covered.
 decision: 0025 (approved 2026-10-17)
+last_reviewed: '2026-10-17'
+decision_packet: decisions/0025-agent-s.md
+notes: Informational only; not a guarantee, endorsement, or certification.

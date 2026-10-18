@@ -19,6 +19,7 @@ evidence_grade: B
 independent_source_count:
   performance: 5
   other: 2
+  count_note: 'Seven source rows record five counted studies: DeepResearch Bench (ICLR and arXiv records) and Mind2Web 2 (results and venue records) are each counted once.'
 sources:
 - url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
   kind: independent performance

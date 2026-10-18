@@ -115,27 +115,40 @@ sources:
 - url: https://arxiv.org/abs/2606.18168
   kind: other
   note: 'All Smoke, No Alarm (Kennesaw State and others; preprint): 26% of Copilot test-file patches had strong oracles (Claude Code 41%). Descriptive analysis'
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2606.22721
   kind: other
   note: 'Habituation at the Gate (preprint Jun 2026): reviewer approval rates for Copilot pull requests rose by 9.1 points with repeated exposure, the largest rise of four agents. Descriptive analysis of review behaviour'
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2512.21426
   kind: other
   note: 'What Makes a GitHub Issue Ready for Copilot? (ÉTS Montréal; preprint): issue-quality model predicting merged Copilot pull requests (median AUC 72%). Descriptive'
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2605.22534
   kind: other
   note: 'Why Are Agentic Pull Requests Merged or Rejected? (Waseda and others; preprint): Copilot and Devin pull requests were more often reviewer-mediated. Descriptive'
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2608.29204
   kind: other
   note: 'AgentLogs (Radboud, NAIST; preprint Aug 2026): dataset of Copilot coding agent session logs. Dataset, no outcome measure'
+  accessed: '2026-10-17'
 - url: https://nvd.nist.gov/vuln/search/results?query=GitHub+Copilot
   kind: other
   note: About 25 CVEs (2025-2026) name GitHub Copilot in Visual Studio Code or Visual Studio, Copilot Chat, or Copilot CLI (for example CVE-2025-53773, CVE-2026-29783, CVE-2026-45033). None found names the cloud coding agent; these products are outside this entry's scope
+  accessed: '2026-10-17'
 - url: https://github.com/features/copilot
   kind: vendor (not counted)
   note: GitHub and Microsoft documentation, launch posts and reports for Copilot coding agent; vendor, not counted
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2604.00917
   kind: vendor (not counted)
   note: 'Investigating Autonomous Agent Contributions in the Wild (TU Delft, UC Davis, GitHub): has a GitHub co-author, so not counted for Copilot'
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2608.00101
   kind: vendor (not counted)
   note: 'Agentic Coding in the Wild: Characterizing GitHub Copilot at Production Scale (UIUC, Microsoft Azure Research): Microsoft co-authors; not counted'
+  accessed: '2026-10-17'
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0044-github-copilot-coding-agent.md
+notes: Informational only; not a guarantee, endorsement, or certification.

@@ -39,3 +39,7 @@ sources:
 uncertainties:
 - Citation check incomplete — recheck later. Tree-Notebook (Findings ACL 2026) could not be screened.
 - Most papers that cite AutoKaggle only describe it; few run it.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0042-aide-autokaggle.md
+notes: Informational only; not a guarantee, endorsement, or certification.

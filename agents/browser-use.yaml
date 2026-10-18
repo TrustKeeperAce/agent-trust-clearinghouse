@@ -20,6 +20,7 @@ evidence_grade: B
 independent_source_count:
   performance: 7
   other: 3
+  count_note: 'Eight source rows record seven counted studies: the Holistic Agent Leaderboard paper and its leaderboard page are counted once.'
 sources:
 - url: https://arxiv.org/abs/2504.01382
   kind: independent performance

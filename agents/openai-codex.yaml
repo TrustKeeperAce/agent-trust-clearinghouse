@@ -253,3 +253,7 @@ uncertainties:
 - 'Scope: the entry combines the CLI and the cloud agent. Pull-request field studies cover the cloud agent; most benchmarks cover the CLI.'
 - Many runs use non-default or very recent models, and results depend heavily on the model.
 - MT-Sec's EMNLP 2026 venue comes from an author homepage.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0043-openai-codex.md
+notes: Informational only; not a guarantee, endorsement, or certification.

@@ -26,10 +26,16 @@ sources:
   kind: independent performance
   accessed: '2026-10-17'
   note: 'DeepResearch Bench (ICLR 2026; USTC): official UI, 29 Jun–1 Jul 2025; RACE 44.64 (comp. 44.96, depth 41.97, inst. 47.14, read. 45.59); no FACT scores (citations not parseable)'
+  version_tested: unstated (official web UI)
+  test_date: 2025-06-29 to 2025-07-01
+  peer_reviewed: true
 - url: https://arxiv.org/abs/2606.17458
   kind: independent performance
   accessed: '2026-10-17'
   note: 'ICBCBench (preprint 2026; ICBC, SJTU, Fudan, Shanghai AI Lab, Alibaba and others): Kimi-deep-research EN overall 47.59, ZH 44.72; 3rd of closed systems in English. Disclosure: Alibaba co-authors (Alibabas Qwen deep research is also evaluated); the paper does not state how or when Kimi was accessed'
+  version_tested: unstated (Kimi-deep-research)
+  test_date: unstated (2026 preprint)
+  peer_reviewed: false
 - url: https://oecd.ai/en/incidents/2026-04-21-8c79
   kind: other (privacy incident, Kimi-wide)
   accessed: '2026-10-17'

@@ -1,9 +1,9 @@
 name: Fellou (agentic browser)
 slug: fellou
 category: Browser/web agent
-type: 'Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope'
+type: Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope
 homepage: https://fellou.ai/
-scope: 'The Fellou desktop browser and its built-in agent ("Deep Action", "Deep Search"), Fellou 2.0 (3 June 2025) onward. Fellou says versions before 2.0 no longer work. The open-source Eko framework is not covered.'
+scope: The Fellou desktop browser and its built-in agent ("Deep Action", "Deep Search"), Fellou 2.0 (3 June 2025) onward. Fellou says versions before 2.0 no longer work. The open-source Eko framework is not covered.
 summary: 'Fellou is an AI browser from ASI X Inc. whose built-in agent plans and carries out multi-step web tasks across tabs, including scheduled tasks and actions in connected accounts such as Gmail. No counted independent evaluation was found. The one benchmark that ran Fellou (CAP, COLM 2026: 7.0% full success, 24.0% partial completion) lists FellouAI as an author affiliation, so it is not counted for Fellou. Fellou''s own figures (80% on Online-Mind2Web; 72% on Web Bench) are not counted. Security researchers at Brave and LayerX showed that instructions placed on web pages could direct the agent to act on the user''s behalf; LayerX reported no vendor response. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.'
 scores: null
 overall_score: null
@@ -13,9 +13,9 @@ independent_source_count:
   other: 5
 factor_notes:
   completion_rate: 'No counted independent results. CAP (COLM 2026; vendor-affiliated author, not counted): 7.0% full success and 24.0% partial completion on 198 cross-site tasks, Nov-Dec 2025, mean 22.1 min per task. Vendor-reported (not counted): Online-Mind2Web 80% (Eko 2.0; marked "unknown evaluation method" on the leaderboard); Web Bench 72% on write-heavy tasks. Not scored.'
-  disputes: 'No lawsuits, regulatory actions or CVEs found. Brave reported a prompt-injection issue to Fellou on 20 Aug 2025 and published it on 21 Oct 2025; whether it was fixed is not stated. LayerX reported its BioShocking finding on 30 Oct 2025 and lists the status as no response. Not scored.'
+  disputes: No lawsuits, regulatory actions or CVEs found. Brave reported a prompt-injection issue to Fellou on 20 Aug 2025 and published it on 21 Oct 2025; whether it was fixed is not stated. LayerX reported its BioShocking finding on 30 Oct 2025 and lists the status as no response. Not scored.
   adherence_to_limits: 'Brave (competing browser maker): visible text on a web page that the user asked Fellou to open could redirect the agent, in a demonstration opening Gmail and sending an email subject line to another site. The Register reproduced a similar result (Oct 2025). LayerX (2025-26): a game-framed page led Fellou, like the five other agents tested, to retrieve and share credentials from a test repository. Demonstrations, not systematic tests. Not scored.'
-  evidence_quality: 'Zero counted independent performance sources; below the three-source minimum. Not scored.'
+  evidence_quality: Zero counted independent performance sources; below the three-source minimum. Not scored.
 sources:
 - url: https://arxiv.org/abs/2608.08392
   kind: excluded (vendor-affiliated author)
@@ -55,8 +55,12 @@ sources:
   accessed: '2026-10-17'
   note: 'Privacy policy: data controller ASI X Inc. (Delaware); may disclose personal data to third parties in the US, Japan and Singapore. Not independently verified'
 uncertainties:
-- 'Semantic Scholar citation (CAP) and keyword checks were completed on 17 Oct 2026 and found no Fellou test; its full-text snippet search could not be run (rate-limited).'
-- 'Whether to exclude CAP for Fellou (vendor-affiliated author) is a judgment call; even if counted, Fellou would have 1 source, so the outcome does not change.'
-- 'Fellou updates continuously without public version numbers after 2.0; the version tested by each source is not known.'
-- 'Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog) describe instability and failures on complex pages but are not systematic and are not counted.'
-- 'Fix status of the Brave and LayerX findings is unknown.'
+- Semantic Scholar citation (CAP) and keyword checks were completed on 17 Oct 2026 and found no Fellou test; its full-text snippet search could not be run (rate-limited).
+- Whether to exclude CAP for Fellou (vendor-affiliated author) is a judgment call; even if counted, Fellou would have 1 source, so the outcome does not change.
+- Fellou updates continuously without public version numbers after 2.0; the version tested by each source is not known.
+- Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog) describe instability and failures on complex pages but are not systematic and are not counted.
+- Fix status of the Brave and LayerX findings is unknown.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0031-fellou.md
+notes: Informational only; not a guarantee, endorsement, or certification.

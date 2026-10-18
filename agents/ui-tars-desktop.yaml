@@ -1,9 +1,9 @@
 name: UI-TARS Desktop (ByteDance, open-source app)
 slug: ui-tars-desktop
 category: Computer-use agent
-type: 'Open-source (Apache-2.0) desktop app (Electron) and Agent TARS CLI/Web UI from ByteDance; free; runs with UI-TARS or Seed models chosen by the user'
+type: Open-source (Apache-2.0) desktop app (Electron) and Agent TARS CLI/Web UI from ByteDance; free; runs with UI-TARS or Seed models chosen by the user
 homepage: https://github.com/bytedance/UI-TARS-desktop
-scope: 'The UI-TARS Desktop app and Agent TARS from the same repository, v0.2.x to v0.3.1 (8 Oct 2026). The UI-TARS models on their own are not covered; model-only results are context.'
+scope: The UI-TARS Desktop app and Agent TARS from the same repository, v0.2.x to v0.3.1 (8 Oct 2026). The UI-TARS models on their own are not covered; model-only results are context.
 summary: 'UI-TARS Desktop is a free, open-source app from ByteDance that lets an AI model operate a computer or browser by looking at the screen and using the mouse and keyboard. Most published results test ByteDance''s UI-TARS models rather than this app, or come from ByteDance itself, and are not counted. The one independent test of the app found (Ohio State, preprint, Feb 2026) triggered a timing weakness in all 14 cases tried: a page that changed between when the agent looked and when it clicked led it to click the wrong thing, as with other screenshot-based agents. CVE-2026-81735 (CVSS 10.0, VulnCheck) concerned companion tool servers that accepted unauthenticated connections from the network; v0.3.1 changed the default to local-only. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.'
 scores: null
 overall_score: null
@@ -15,7 +15,7 @@ factor_notes:
   completion_rate: 'No independent task-completion results for the app. Vendor model figures (not counted): UI-TARS-1.5 OSWorld 42.5, WindowsAgentArena 42.1; UI-TARS-2 OSWorld 47.5, AndroidWorld 73.3, Online-Mind2Web 88.2. Not scored.'
   disputes: 'No legal or regulatory action found. CVE-2026-81735: MCP command and filesystem servers in the @agent-infra packages bound all network interfaces without authentication, allowing remote command execution. CVSS 10.0 (VulnCheck); NVD status Deferred. Default changed to localhost in v0.3.1 (commit c2ad42e); no authentication added to those servers. Not scored.'
   adherence_to_limits: 'TOCTOU study (Ohio State, preprint): vulnerability triggered in 14/14 cases (version and model not stated). Model-only safety tests of UI-TARS-1.5 (CUAHarm: 42.3% of harmful tasks completed; GhostEI-Bench; AgentHijack) are context, not counted. The MIT AI Agent Index found no published safety framework or third-party testing. Not scored.'
-  evidence_quality: 'One counted independent source; below the three-source minimum. Not scored.'
+  evidence_quality: One counted independent source; below the three-source minimum. Not scored.
 sources:
 - url: https://arxiv.org/abs/2603.00476
   kind: independent performance
@@ -39,15 +39,15 @@ sources:
 - url: https://github.com/bytedance/UI-TARS-desktop/discussions/1889
   kind: other
   accessed: '2026-10-17'
-  note: 'LexBench-Browser supports Agent TARS; no result published'
+  note: LexBench-Browser supports Agent TARS; no result published
 - url: https://arxiv.org/abs/2509.02544
   kind: vendor (not counted)
   accessed: '2026-10-17'
-  note: 'UI-TARS-2 technical report (ByteDance Seed)'
+  note: UI-TARS-2 technical report (ByteDance Seed)
 - url: https://arxiv.org/abs/2501.12326
   kind: vendor (not counted)
   accessed: '2026-10-17'
-  note: 'UI-TARS paper (ByteDance)'
+  note: UI-TARS paper (ByteDance)
 - url: https://arxiv.org/abs/2508.00935
   kind: not counted (model only)
   accessed: '2026-10-17'
@@ -61,6 +61,10 @@ sources:
   accessed: '2026-10-17'
   note: 'AgentHijack: UI-TARS model, not the app'
 uncertainties:
-- 'Full-text search coverage is incomplete; Semantic Scholar was unavailable (rate limited).'
-- 'The one counted study does not state the app version or model.'
-- 'The CVE concerns MCP servers shipped with Agent TARS, not the Electron GUI itself.'
+- Full-text search coverage is incomplete; Semantic Scholar was unavailable (rate limited).
+- The one counted study does not state the app version or model.
+- The CVE concerns MCP servers shipped with Agent TARS, not the Electron GUI itself.
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0039-ui-tars-desktop.md
+notes: Informational only; not a guarantee, endorsement, or certification.

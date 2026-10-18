@@ -108,6 +108,7 @@ sources:
 - url: https://www.answer.ai/posts/2025-01-08-devin.html
   kind: other
   note: 'Thoughts On A Month With Devin (Answer.AI; blog, January 2025): of 20 real tasks, 3 succeeded, 14 failed and 3 were inconclusive; outcomes were hard to predict. Informal hands-on review, listed for context (not counted)'
+  accessed: '2026-10-17'
 - url: https://deccan-ai.webflow.io/research/anthar-study-evaluating-ai-coding-agents-beyond-benchmarks
   kind: independent performance
   peer_reviewed: false
@@ -118,21 +119,32 @@ sources:
 - url: https://nvd.nist.gov/vuln/detail/CVE-2024-56083
   kind: other
   note: 'CVE-2024-56083: before 2024-12-12, anyone who found a session''s VS Code live-share URL could get write access to code (CVSS 8.1); fixed by Cognition on 2024-12-12'
+  accessed: '2026-10-17'
 - url: https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/
   kind: other
   note: 'Embrace The Red (Johann Rehberger, August 2025): indirect prompt injection led Devin to download and run malware, leak secrets through several channels and expose ports to the internet; reported to Cognition on 6 April 2025, and the researcher says follow-up questions about fixes went unanswered. Security research, not a performance test'
+  accessed: '2026-10-17'
 - url: https://newsletter.pragmaticengineer.com/p/the-pulse-90
   kind: other
   note: 'March-April 2024 launch-demo dispute: a software engineer (Internet of Bugs, April 2024) reported that the "Devin''s Upwork Side Hustle" video did not show the Upwork task as specified being completed; the client said only part of the task was done. Cognition said Devin "is often inefficient and makes mistakes". Reported by The Pragmatic Engineer'
+  accessed: '2026-10-17'
 - url: https://www.youtube.com/watch?v=UTS2Hz96HYQ
   kind: other
   note: The original Cognition video "Devin's Upwork Side Hustle" (March 2024), cited for the dispute above
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2606.18168
   kind: other
   note: 'All Smoke, No Alarm (Kennesaw State and others; preprint): 26% of Devin test-file patches had strong oracles. Descriptive analysis'
+  accessed: '2026-10-17'
 - url: https://arxiv.org/abs/2606.22721
   kind: other
   note: 'Habituation at the Gate (preprint Jun 2026): reviewer approval of Devin pull requests rose 3.8 points with repeated exposure (not significant). Descriptive'
+  accessed: '2026-10-17'
 - url: https://www.cognition.ai/blog/introducing-devin
   kind: vendor (not counted)
   note: 'Cognition launch post and technical report (March 2024): self-reported 13.86% unassisted on a 25% subset of SWE-bench; later Cognition performance reviews and customer figures. Vendor, not counted'
+  accessed: '2026-10-17'
+last_reviewed: '2026-10-17'
+decision: APPROVED
+decision_packet: decisions/0045-devin.md
+notes: Informational only; not a guarantee, endorsement, or certification.
