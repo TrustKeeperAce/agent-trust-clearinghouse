@@ -1,6 +1,6 @@
 name: Browser Use (open-source library)
 slug: browser-use
-category: browser/web agent
+category: Browser/web agent
 type: open source (MIT); commercial Cloud service not covered
 homepage: https://github.com/browser-use/browser-use
 summary: Browser Use is an open-source Python library (MIT licence) that lets a language model of the user's choice control a web browser to carry out tasks. Results depend heavily on the model used. In independent evaluations (Online-Mind2Web, COLM 2025; Princeton's Holistic Agent Leaderboard; CAP, COLM 2026; a 2026 preprint), success rates ranged from about 2–5% full success on hard cross-site tasks to 18–45% on live-website benchmarks, well below the vendor's own figures. Independent security studies (VPI-Bench, ICLR 2026; five preprints) found it often followed instructions hidden in web pages, could be misdirected when a page changed between check and action, and often revealed private facts through its actions, and a domain-restriction bypass (CVE-2025-47241) was fixed in version 0.1.45. The vendor's Cloud service is not covered. Overall score 51. Informational only; not a guarantee, endorsement, or certification.

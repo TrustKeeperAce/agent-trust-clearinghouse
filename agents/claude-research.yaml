@@ -1,6 +1,6 @@
 name: Claude Research
 slug: claude-research
-category: research
+category: Research
 type: 'commercial (paid Claude plans: Pro, Max, Team, Enterprise)'
 homepage: https://support.claude.com/en/articles/11088861-use-research-on-claude
 scope: The Research mode in Claude's web, desktop and mobile apps (launched April 2025). Plain Claude models used via the API are not covered.

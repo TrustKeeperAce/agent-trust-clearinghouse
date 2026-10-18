@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-18-0066</id>
+<title>Site change (0066)</title>
+<updated>2026-10-18T00:00:00Z</updated>
+<published>2026-10-18T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<category term="site_change"/>
+<summary type="text">Three comparison pages generated from the directory data: Claude Code and OpenAI Codex compared, Coding agents compared and Research agents compared (public evidence; alphabetical; scope notes; informational, not a ranking). Category labels capitalized consistently in the data export (display only). No score or grade changes. Decision 0066. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-18-0065</id>
 <title>Site change (0065)</title>
 <updated>2026-10-18T00:00:00Z</updated>

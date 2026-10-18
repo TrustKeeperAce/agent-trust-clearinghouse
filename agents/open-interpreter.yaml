@@ -1,6 +1,6 @@
 name: Open Interpreter
 slug: open-interpreter
-category: simple analysis
+category: Simple analysis
 type: open-source (Apache-2.0)
 homepage: https://github.com/openinterpreter/openinterpreter
 scope: Local code-executing agent for data analysis and automation

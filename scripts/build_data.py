@@ -166,4 +166,117 @@ def build_feeds():
     a.append('</feed>')
     open(os.path.join(P,'updates.xml'),'w').write('\n'.join(a)+'\n')
     print('changelog rows',len(rows),'feed items',len(items))
-if __name__=='__main__': build(); build_feeds()
+
+# ---- 0066: comparison pages (generated; values only from entries()) ----
+import html as _H
+def _e(s): return _H.escape(str(s),quote=True)
+COMPARE=[
+ {'path':'compare/claude-code-and-openai-codex.html','h1':'Claude Code and OpenAI Codex compared: public evidence',
+  'short':'Claude Code and OpenAI Codex compared',
+  'desc':'Factor scores, evidence grades and counted independent sources for Claude Code and OpenAI Codex. Informational; not a ranking.',
+  'groups':[('Entries',['claude-code','openai-codex'])],
+  'caveats':['The two entries cover different products: the OpenAI Codex entry includes the cloud agent that opens pull requests as well as the CLI, IDE extension and desktop app; the Claude Code entry covers the CLI and headless mode only. Read each scope before comparing.',
+             'Both entries combine many versions and the models each tool used at the time of each study.']},
+ {'path':'compare/coding-agents.html','h1':'Coding agents compared: public evidence','short':'Coding agents compared',
+  'desc':'Factor scores, evidence grades and counted independent sources for the coding agents in the directory. Informational; not a ranking.',
+  'groups':[('Coding agent entries',('category','Coding agent'))],
+  'caveats':['Open-source frameworks (OpenHands, SWE-agent, Aider) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin) are tested as shipped.',
+             'Some entries are cloud agents that open pull requests and others are command-line tools; read each scope before comparing.']},
+ {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','short':'Research agents compared',
+  'desc':'Factor scores, evidence grades and counted independent sources for the research and deep-research agents in the directory. Informational; not a ranking.',
+  'groups':[('Academic search and review tools',['consensus','elicit']),
+            ('General research and deep-research agents',('category','Research',['consensus','elicit']))],
+  'related':[('perplexity','Perplexity is listed in the Verification category, scoped to citation-backed answering, so it is not included here.')],
+  'caveats':['Academic search tools (Elicit, Consensus) are mostly tested on finding and summarising papers; general deep-research agents are tested on open web research tasks. Scores are not directly comparable across these groups.']},
+]
+COMPARE_CAVEATS=['Scores summarize the counted independent sources for each entry; they are not production outcomes and are not a ranking of quality.',
+                 'Entries are reviewed separately, with different sources and dates; a higher overall score does not mean one agent is better for a given task.']
+BANNED=[r'\bbest\b',r'\btop\b',r'\bwinners?\b',r'which is better',r'\bstars?\b','★',r'#1\b']
+def _yaml_by_id():
+    o={}
+    for f in sorted(glob.glob(os.path.join(R,'agents','*.yaml'))):
+        if os.path.basename(f).startswith('_'): continue
+        d=yaml.safe_load(open(f)); o[d['slug']]=d
+    return o
+def first_sentence(s):
+    s=' '.join(str(s or '').split()); m=re.match(r'(.+?[.!?])(\s|$)',s); return m.group(1) if m else s
+def scope_text(e,y):
+    return (e['scope'],False) if e.get('scope') else (first_sentence(y.get('summary')),True)
+def compare_groups(c,E):
+    out=[]
+    for title,sel in c['groups']:
+        if isinstance(sel,tuple): ids=[e['id'] for e in E if e['category']==sel[1] and e['id'] not in (sel[2] if len(sel)>2 else [])]
+        else: ids=list(sel)
+        out.append((title,ids))
+    return out
+def compare_ids(c,E): return [i for _,ids in compare_groups(c,E) for i in ids]
+def _row(e):
+    s=e['scores']; ins=e['overall_score'] is None; d=lambda v:'—' if v is None else v
+    return (f'<tr><th scope="row" data-label="Agent"><a href="/agents/{e["id"]}.html">{_e(e["name"])}</a></th>'
+            f'<td data-label="Overall score" class="num">{d(e["overall_score"])}</td>'
+            f'<td data-label="Evidence grade">{_e(e["evidence_grade"])}</td>'
+            +''.join(f'<td data-label="{l}" class="num">{d(s[k])}</td>' for k,l in zip(FACTORS,['Completion','Disputes','Adherence','Evidence quality']))+
+            f'<td data-label="Counted sources (peer-reviewed)" class="num">{e["counted_performance_sources"]} ({e["peer_reviewed_counted_sources"]})</td>'
+            f'<td data-label="Last reviewed"><time datetime="{e["last_reviewed"]}">{e["last_reviewed"]}</time></td></tr>')
+TH=('<thead><tr><th scope="col">Agent</th><th scope="col">Overall score</th><th scope="col">Evidence grade</th><th scope="col">Completion</th>'
+    '<th scope="col">Disputes</th><th scope="col">Adherence</th><th scope="col">Evidence quality</th><th scope="col">Counted sources (peer-reviewed)</th><th scope="col">Last reviewed</th></tr></thead>')
+def render_compare(c,E,Y,gen,shell):
+    J={e['id']:e for e in E}; ids=compare_ids(c,E); url=f'{BASE}/{c["path"]}'
+    lr=sorted(J[i]['last_reviewed'] for i in ids)
+    title=f'{c["h1"]} — Agent Reputation &amp; Trust Clearinghouse'
+    ld1={'@context':'https://schema.org','@type':'ItemList','name':c['h1'],'itemListOrder':'https://schema.org/ItemListUnordered','numberOfItems':len(ids),
+         'itemListElement':[{'@type':'ListItem','position':n+1,'name':J[i]['name'],'url':J[i]['url']} for n,i in enumerate(ids)]}
+    ld2={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[
+         {'@type':'ListItem','position':1,'name':'Directory','item':BASE+'/'},{'@type':'ListItem','position':2,'name':c['short'],'item':url}]}
+    head=(f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n'
+          f'<title>{title}</title><meta name="description" content="{_e(c["desc"])}"><link rel="canonical" href="{url}">'
+          f'<meta property="og:type" content="article"><meta property="og:site_name" content="Agent Reputation &amp; Trust Clearinghouse">'
+          f'<meta property="og:title" content="{title}"><meta property="og:description" content="{_e(c["desc"])}"><meta property="og:url" content="{url}">'
+          f'<meta name="twitter:card" content="summary"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{_e(c["desc"])}">'
+          f'<link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0a0d12" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">'
+          f'<link rel="stylesheet" href="/style.css">{ALT}'
+          f'<script type="application/ld+json">{json.dumps(ld1,ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(ld2,ensure_ascii=False)}</script></head>')
+    b=[f'<nav aria-label="Breadcrumb"><p><a href="/">Directory</a> › <span aria-current="page">{_e(c["short"])}</span></p></nav>',
+       f'<h1>{_e(c["h1"])}</h1>',
+       f'<p class="notice"><strong>{FEED_DISCLAIMER}</strong></p>',
+       f'<p><em>Data as of {gen} ({RULES}); entries last reviewed {lr[0]}{"" if lr[0]==lr[-1] else " to "+lr[-1]}. Generated from <a href="/data/agents.json">agents.json</a>; values match each entry page.</em></p>',
+       '<h2 id="scope">Scope of each entry</h2><p>Read the scope before comparing: entries cover different products, versions and modes.</p><ul>']
+    for i in ids:
+        t,fb=scope_text(J[i],Y[i]); b.append(f'<li><a href="/agents/{i}.html">{_e(J[i]["name"])}</a>: {_e(t)}{" (summary)" if fb else ""}</li>')
+    b.append('</ul><ul>'+''.join(f'<li>{_e(x)}</li>' for x in c['caveats'])+'</ul>')
+    b.append('<h2 id="table">Scores and evidence</h2><p>Listed alphabetically within each group, not by score. Factor scores are 0–100; see the <a href="/methodology.html">methodology</a> for weights and evidence grades.</p>')
+    for gt,gids in compare_groups(c,E):
+        sc=sorted([i for i in gids if J[i]['overall_score'] is not None],key=lambda i:J[i]['name'].lower())
+        ins=sorted([i for i in gids if J[i]['overall_score'] is None],key=lambda i:J[i]['name'].lower())
+        if len(c['groups'])>1: b.append(f'<h3>{_e(gt)}</h3>')
+        b.append('<table class="stack cmp">'+TH+'<tbody>'+''.join(_row(J[i]) for i in sc+ins)+'</tbody></table>')
+        if ins: b.append('<p>Entries marked Insufficient evidence have fewer than 3 counted independent performance sources and no overall score.</p>')
+    b.append('<h2 id="evidence">What the evidence does and doesn’t show</h2><ul>'+''.join(f'<li>{_e(x)}</li>' for x in COMPARE_CAVEATS)+'</ul>')
+    for i in sorted(ids,key=lambda i:J[i]['name'].lower()):
+        e=J[i]; u=[x for x in (Y[i].get('uncertainties') or []) if isinstance(x,str)][:2]
+        b.append(f'<h3>{_e(e["name"])}</h3><p>{e["counted_performance_sources"]} counted independent performance source{"s" if e["counted_performance_sources"]!=1 else ""} '
+                 f'({e["peer_reviewed_counted_sources"]} peer-reviewed). Noted uncertainties from the <a href="/agents/{i}.html">entry page</a>:</p><ul>'
+                 +''.join(f'<li>{_e(x)}</li>' for x in u)+'</ul>')
+    for rid,txt in c.get('related',[]):
+        b.append(f'<p>Related: <a href="/agents/{rid}.html">{_e(J[rid]["name"])}</a>. {_e(txt)}</p>')
+    b.append(f'<h2 id="citation">Citation guidance</h2><p>{_e(CITATION)}</p>')
+    b.append('<h2 id="more">More</h2><ul><li><a href="/methodology.html">Methodology</a> (factors, weights, evidence grades)</li><li><a href="/changelog.html">Changelog</a> and <a href="/updates.json">update feed</a></li><li><a href="/agents-data.html">For agents / data</a> (JSON, CSV, license)</li></ul>')
+    return head+shell[0]+'\n'.join(b)+'\n'+shell[1]
+COMPARE_LINKS=('<p class="compare-links">Compare: '+' · '.join(f'<a href="/{c["path"]}">{_e(c["short"])}</a>' for c in COMPARE)+'</p>')
+def build_compare():
+    E=entries(); Y=_yaml_by_id(); gen=changelog_date()
+    t=open(os.path.join(P,'agents-data.html')).read()
+    shell=(t[t.index('</head>')+7:t.index('<main id="main">')+16]+'\n', t[t.index('</main>'):])
+    os.makedirs(os.path.join(P,'compare'),exist_ok=True)
+    for c in COMPARE: open(os.path.join(P,c['path']),'w').write(render_compare(c,E,Y,gen,shell))
+    for f,anchor in (('index.html','<section aria-labelledby="scored">'),('methodology.html','<p>Each factor is scored 0–100')):
+        fp=os.path.join(P,f); h=open(fp).read()
+        h=re.sub(r'<p class="compare-links">.*?</p>','',h)
+        assert anchor in h, f
+        h=h.replace(anchor,COMPARE_LINKS+anchor,1); open(fp,'w').write(h)
+    sm=open(os.path.join(P,'sitemap.xml')).read()
+    add=''.join(f'  <url><loc>{BASE}/{c["path"]}</loc><lastmod>{max([e["last_reviewed"] for e in E if e["id"] in compare_ids(c,E)])}</lastmod></url>\n' for c in COMPARE)
+    sm=re.sub(r'  <url><loc>[^<]*/compare/[^<]*</loc>.*?\n','',sm).replace('</urlset>',add+'</urlset>')
+    open(os.path.join(P,'sitemap.xml'),'w').write(sm)
+    print('compare pages',len(COMPARE))
+if __name__=='__main__': build(); build_feeds(); build_compare()

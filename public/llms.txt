@@ -21,6 +21,11 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [updates.json](https://agent-trust-clearinghouse.vercel.app/updates.json): update feed (JSON Feed 1.1): new entries, score and grade changes and other approved changes, with before and after values, decision packet ids and as-of dates
 - [updates.xml](https://agent-trust-clearinghouse.vercel.app/updates.xml): the same update feed (Atom)
 
+## Comparisons
+- [Claude Code and OpenAI Codex compared](https://agent-trust-clearinghouse.vercel.app/compare/claude-code-and-openai-codex.html): public evidence for two coding agents with different scopes; informational, not a ranking
+- [Coding agents compared](https://agent-trust-clearinghouse.vercel.app/compare/coding-agents.html): public evidence for the 7 coding agent entries
+- [Research agents compared](https://agent-trust-clearinghouse.vercel.app/compare/research-agents.html): public evidence for academic search tools and deep-research agents
+
 ## Entries
 - [Elicit](https://agent-trust-clearinghouse.vercel.app/agents/elicit.html): overall 68, evidence grade A
 - [Google DeepMind SAFE](https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html): overall 66, evidence grade B-

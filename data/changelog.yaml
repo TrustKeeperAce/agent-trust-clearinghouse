@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0066
+  date: '2026-10-18'
+  decision_packets:
+  - '0066'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0066-seo-content-pages.md
+  change_html: 'Three comparison pages generated from the directory data: <a href="/compare/claude-code-and-openai-codex.html">Claude Code and OpenAI Codex compared</a>, <a href="/compare/coding-agents.html">Coding agents compared</a> and <a href="/compare/research-agents.html">Research agents compared</a> (public evidence; alphabetical; scope notes; informational, not a ranking). Category labels capitalized consistently in the data export (display only). No score or grade changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-18-0065
   date: '2026-10-18'
   decision_packets:

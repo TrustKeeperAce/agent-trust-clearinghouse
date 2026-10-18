@@ -1,6 +1,6 @@
 name: OpenAI Deep Research
 slug: openai-deep-research
-category: research
+category: Research
 type: commercial
 homepage: https://openai.com/index/introducing-deep-research/
 summary: OpenAI Deep Research is a commercial ChatGPT feature that writes cited research reports. In independent evaluations (DeepResearch Bench, ICLR 2026; Mind2Web 2, NeurIPS 2025; ReportBench; a citation-URL study; TTD-DR preprint), it ranked among the stronger systems tested on report quality and task success, while a share of its citations did not match their sources or did not resolve. Most tests used 2025 versions; the underlying model has changed since. Informational only; not a guarantee, endorsement, or certification.

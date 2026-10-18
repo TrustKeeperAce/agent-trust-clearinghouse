@@ -139,6 +139,47 @@ if 'Citation guidance: '+_h.escape(B.CITATION,quote=False) not in open(os.path.j
 ex_=J.get('openhands')
 if not ex_ or f"{ex_['name']}: {ex_['overall_score']}/100, evidence grade {ex_['evidence_grade']}, as of {ex_['last_reviewed']}" not in B.CITATION: E('citation example out of date with agents.json')
 print(f'feed: {len(clrows)} changelog rows, {len(jids)} items')
+# ---- 0066 comparison pages ----
+import html as _hh
+Yd=B._yaml_by_id(); EL=list(J.values()); smx=open(os.path.join(P,'sitemap.xml')).read()
+def _vis(t):  # visible text + meta content + title + JSON-LD (not tag/attribute names)
+    body=re.sub(r'<script[^>]*>.*?</script>','',t,flags=re.S)
+    parts=[re.sub(r'<[^>]+>',' ',body)]+re.findall(r'<meta [^>]*content="([^"]*)"',t)+re.findall(r'<script type="application/ld\+json">(.*?)</script>',t,re.S)
+    return _hh.unescape(' '.join(parts))
+for c in B.COMPARE:
+    fp=os.path.join(P,c['path'])
+    if not os.path.exists(fp): E(f"{c['path']}: missing"); continue
+    t=open(fp).read(); ids=B.compare_ids(c,B.entries())
+    if t!=B.render_compare(c,B.entries(),Yd,B.changelog_date(),(lambda a:(a[a.index('</head>')+7:a.index('<main id="main">')+16]+'\n',a[a.index('</main>'):]))(open(os.path.join(P,'agents-data.html')).read())): E(f"{c['path']}: stale (rerun build_data.py)")
+    for i in ids:
+        e=J.get(i)
+        if not e: E(f"{c['path']}: unknown id {i}"); continue
+        m=re.search(r'<a href="/agents/'+i+r'\.html">[^<]*</a></th>(.*?)</tr>',t)
+        if not m: E(f"{c['path']}: no row for {i}"); continue
+        cells=[_hh.unescape(x) for x in re.findall(r'<td[^>]*>(?:<time[^>]*>)?([^<]*)',m.group(1))]
+        d=lambda v:'—' if v is None else str(v)
+        want=[d(e['overall_score']),e['evidence_grade']]+[d(e['scores'][k]) for k in B.FACTORS]+[f"{e['counted_performance_sources']} ({e['peer_reviewed_counted_sources']})",e['last_reviewed']]
+        if cells!=want: E(f"{c['path']}/{i}: table {cells} != agents.json {want}")
+    if B.FEED_DISCLAIMER not in t: E(f"{c['path']}: disclaimer missing")
+    if f"Data as of {B.changelog_date()} ({B.RULES})" not in t: E(f"{c['path']}: as-of date missing")
+    if _hh.escape(B.CITATION,quote=True) not in t: E(f"{c['path']}: citation guidance missing")
+    v=_vis(t)
+    for b in B.BANNED:
+        if re.search(b,v,re.I): E(f"{c['path']}: banned wording {b!r}")
+    for blk in re.findall(r'<script type="application/ld\+json">(.*?)</script>',t,re.S):
+        ty=json.loads(blk).get('@type')
+        if ty not in ('ItemList','BreadcrumbList'): E(f"{c['path']}: unexpected JSON-LD {ty}")
+    if re.search(r'"@type":\s*"(Review|AggregateRating|Rating)"|ratingValue|itemprop="(aggregateRating|review|reviewRating)"|itemtype="[^"]*(Review|Rating)"',t): E(f"{c['path']}: rating markup")
+    if re.search(r'<script(?![^>]*application/ld\+json)',t): E(f"{c['path']}: script found")
+    if f"{B.BASE}/{c['path']}</loc>" not in smx: E(f"{c['path']}: not in sitemap")
+    if f"{B.BASE}/{c['path']})" not in L: E(f"{c['path']}: not in llms.txt")
+    for f in ('index.html','methodology.html'):
+        if f'href="/{c["path"]}"' not in open(os.path.join(P,f)).read(): E(f"{f}: Compare link to {c['path']} missing")
+    if not any(f"/{c['path']}" in r['change_html'] for r in clrows): E(f"{c['path']}: no changelog/feed row")
+# index category labels must match the data
+for m in re.finditer(r'<a href="/agents/([a-z0-9-]+)\.html">[^<]*</a></th><td data-label="Category">([^<]*)<',idx):
+    if m[1] in J and J[m[1]]['category']!=_hh.unescape(m[2]): E(f"{m[1]}: index category {m[2]!r} != {J[m[1]]['category']!r}")
+print(f'compare: {len(B.COMPARE)} pages checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)
