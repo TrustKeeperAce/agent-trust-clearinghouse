@@ -169,3 +169,6 @@ Decision 0056 (Perplexity follow-up: five 2025–2026 studies reviewed, none in 
 
 ## 2026-10-17 — Deploy note
 Decision 0057 (Gemini Deep Research: MisKnow-Agent counted, 8 counted / 2 peer-reviewed, 63 / B unchanged; OpenAI Deep Research: nothing counted, 65 / B unchanged; recheck notes updated) was deployed to production as dpl_J9uuv9qgvdwgT2yCcY28DPxbHGa8 (commit 351ef9b). Live check: all three changed public files match their manifest shas. Next: 0058 (Consensus, Google DeepMind SAFE, Julius AI), drafting privately; 0059 (Browser Use candidates) queued.
+
+## 2026-10-17 — Deploy note
+Decision 0058 (Google DeepMind SAFE: VeriFact counted, 4 counted / 4 peer-reviewed, 66 / B- unchanged; Consensus: nothing new, recheck note closed, 62 / B; Julius AI: nothing counted, Insufficient evidence) was deployed to production as dpl_EozqasPE7Lfw5DxJVYfKdA73HAxW (commit db88ca5). Live check: all 44 live public files match the manifest shas. Next: 0059 (Browser Use remaining candidates), drafting privately.
