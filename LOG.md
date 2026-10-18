@@ -130,3 +130,6 @@ Decision 0043 (OpenAI Codex, CLI and cloud agent, Coding agent, 62 / A) was depl
 
 ## 2026-10-17 — Deploy note
 Decision 0044 (GitHub Copilot coding agent, Coding agent, 57 / B) was deployed as dpl_XSwb1FnXbgTEBDFiXjGtbuVhHcc7 (commit e7b6600). Live check: the github-copilot-coding-agent and index pages return 200. The entry carries "Citation check incomplete — recheck later". Batch 4 research continues privately with Devin (0045), the final Batch 4 candidate.
+
+## 2026-10-17 — Deploy note
+Decision 0045 (Devin, Cognition, Coding agent, 50 / B) was deployed as dpl_AhBYbX2viDdCAY1EQvion3MPBUas (commit d8dd312). Live check: the devin and index pages return 200. The entry carries "Citation check incomplete — recheck later". Batch 4 is complete. The design and branding pass (0046) is being drafted privately.
