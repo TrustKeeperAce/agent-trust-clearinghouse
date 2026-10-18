@@ -135,8 +135,7 @@ for u in ('/updates.json','/updates.xml'):
     if B.BASE+u not in L: E(f'llms.txt missing {u}')
 if 'Citation guidance: '+B.CITATION not in L: E('llms.txt citation guidance missing or stale')
 import html as _h
-if 'Citation guidance: '+_h.escape(B.CITATION,quote=False) not in open(os.path.join(P,'agents-data.html')).read(): E('agents-data.html citation guidance missing')
-ex_=J.get('openhands')
+ex_=J.get(B.example_entries()[0]['id'])
 if not ex_ or f"{ex_['name']}: {ex_['overall_score']}/100, evidence grade {ex_['evidence_grade']}, as of {ex_['last_reviewed']}" not in B.CITATION: E('citation example out of date with agents.json')
 print(f'feed: {len(clrows)} changelog rows, {len(jids)} items')
 # ---- 0066 comparison pages ----
@@ -180,6 +179,52 @@ for c in B.COMPARE:
 for m in re.finditer(r'<a href="/agents/([a-z0-9-]+)\.html">[^<]*</a></th><td data-label="Category">([^<]*)<',idx):
     if m[1] in J and J[m[1]]['category']!=_hh.unescape(m[2]): E(f"{m[1]}: index category {m[2]!r} != {J[m[1]]['category']!r}")
 print(f'compare: {len(B.COMPARE)} pages checked')
+# ---- 0067 citing page ----
+cp_=os.path.join(P,B.CITE_PATH); ct=open(cp_).read() if os.path.exists(cp_) else ''
+if not ct: E('citing.html missing')
+else:
+    ad=open(os.path.join(P,'agents-data.html')).read()
+    if ct!=B.render_citing(B.entries(),(ad[ad.index('</head>')+7:ad.index('<main id="main">')+16]+'\n',ad[ad.index('</main>'):])): E('citing.html: stale (rerun build_data.py)')
+    byn=sorted(J.values(),key=lambda e:e['name'].lower())
+    xs=[e for e in byn if e['status']=='Scored' and e['evidence_grade']=='A'][0]; xi=[e for e in byn if e['status']=='Insufficient evidence'][0]
+    want_s=f"{xs['name']}: {xs['overall_score']}/100, evidence grade {xs['evidence_grade']}, as of {xs['last_reviewed']}"
+    want_i=f"{xi['name']}: insufficient evidence to score (no overall score), as of {xi['last_reviewed']}"
+    cu=_hh.unescape(ct)
+    for w in (want_s,want_i,xs['url'],xi['url'],f"has an overall score of {xs['overall_score']}/100 with evidence grade {xs['evidence_grade']}"):
+        if w not in cu: E(f'citing.html: example text not matching agents.json: {w!r}')
+    if want_s not in B.CITATION: E('CITATION example not matching agents.json')
+    for w in (B.FEED_DISCLAIMER,B.LICENSE,B.CITE_GEN_NOTE.format(gen=B.changelog_date()),B.ATTRIBUTION,B.CODE_SCOPE,B.LICENSE_FILE,B.QUOTE_DISCLAIMER):
+        if w not in cu: E(f'citing.html: required text missing: {w[:60]!r}')
+    for f_,t_ in (('citing.html',cu),('llms.txt',L),('CITATION',B.CITATION)):
+        if re.search(r'None/100|\bNone\b,? evidence grade|'+re.escape(xi['name'])+r': 0/100|evidence grade Insufficient',t_): E(f'{f_}: unsafe Insufficient wording')
+    m_=re.search(r'<table class="stack dont">.*?</table>',ct,re.S)
+    if not m_: E('citing.html: do/don\'t table missing')
+    else:
+        outside=_vis(ct.replace(m_.group(0),'')); inside=_hh.unescape(re.sub(r'<[^>]+>',' ',m_.group(0)))
+        for b in B.BANNED_CITE:
+            if re.search(b,outside,re.I): E(f'citing.html: banned wording {b!r} outside the don\'ts table')
+        for b in B.NEW_BANNED:
+            if not re.search(b,inside,re.I): E(f'citing.html: {b!r} expected in the don\'ts table')
+    for blk in re.findall(r'<script type="application/ld\+json">(.*?)</script>',ct,re.S):
+        if json.loads(blk).get('@type') not in ('WebPage','BreadcrumbList'): E('citing.html: unexpected JSON-LD')
+    if re.search(r'"@type":\s*"(Review|AggregateRating|Rating)"|ratingValue|itemprop=',ct): E('citing.html: rating markup')
+    if re.search(r'<script(?![^>]*application/ld\+json)',ct): E('citing.html: script found')
+    if f"{B.BASE}/citing.html</loc>" not in smx: E('citing.html not in sitemap')
+    if f"{B.BASE}/citing.html)" not in L: E('citing.html not in llms.txt')
+    if 'href="/citing.html"' not in open(os.path.join(P,'methodology.html')).read(): E('methodology.html: How to cite link missing')
+    if 'href="/citing.html"' not in ad or 'id="citation"' not in ad or _hh.escape(B.ATTRIBUTION,quote=False) not in ad: E('agents-data.html: licence summary/link missing')
+    if not any('/citing.html' in r['change_html'] for r in clrows): E('citing.html: no changelog/feed row')
+    if sum(1 for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True) if '"@type": "Dataset"' in open(f).read() or '"@type":"Dataset"' in open(f).read())!=1: E('expected exactly one Dataset JSON-LD block site-wide')
+# typed-in example gone; feeds carry the generated guidance
+for f in ['agents-data.html','llms.txt','citing.html']+[c['path'] for c in B.COMPARE]:
+    if 'OpenHands (open-source): 61/100' in open(os.path.join(P,f)).read() and B.example_entries()[0]['id']!='openhands': E(f'{f}: typed-in OpenHands example still present')
+if json.load(open(os.path.join(P,'updates.json')))['_clearinghouse']['citation']!=B.CITATION: E('updates.json citation guidance stale')
+# extended words on compare pages, excluding quoted entry uncertainties
+for c in B.COMPARE:
+    t=re.sub(r'<ul class="quoted">.*?</ul>','',open(os.path.join(P,c['path'])).read(),flags=re.S)
+    for b in B.NEW_BANNED:
+        if re.search(b,_vis(t),re.I): E(f"{c['path']}: {b!r} outside quoted uncertainties")
+print('citing: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

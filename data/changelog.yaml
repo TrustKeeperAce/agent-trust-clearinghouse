@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0067
+  date: '2026-10-18'
+  decision_packets:
+  - '0067'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0067-citation-page.md
+  change_html: 'New <a href="/citing.html">How to cite and quote this data</a> page: ready-to-copy citations (plain sentence, APA-style, BibTeX, agent quote template), CC BY 4.0 attribution, how to quote scores and machine-readable locations, with example values generated from the data. The typed-in citation example on the data page, llms.txt and comparison pages is now generated. No score or grade changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-18-0066
   date: '2026-10-18'
   decision_packets:

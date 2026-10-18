@@ -91,11 +91,25 @@ def build():
 # ---- 0065: changelog page + update feeds ----
 FEED_DISCLAIMER=("Informational only. Scores summarize cited public evidence under published rules; they are not a "
                  "guarantee, endorsement, certification or ranking of quality.")
+# 0067: citation examples are generated from the data (never typed in)
+def _by_name(E): return sorted(E,key=lambda e:e['name'].lower())
+def example_entries(E=None):
+    E=E if E is not None else entries()
+    sc=[e for e in _by_name(E) if e['status']=='Scored' and e['evidence_grade']=='A']
+    ins=[e for e in _by_name(E) if e['status']=='Insufficient evidence']
+    return sc[0],ins[0]
+SITE_NAME='Agent Reputation & Trust Clearinghouse'
+def score_phrase(e):
+    if e['overall_score'] is None: return f"{e['name']}: insufficient evidence to score (no overall score), as of {e['last_reviewed']}"
+    return f"{e['name']}: {e['overall_score']}/100, evidence grade {e['evidence_grade']}, as of {e['last_reviewed']}"
+def quote_line(e): return f"{score_phrase(e)} — {SITE_NAME}, {e['url']}, CC BY 4.0. {QUOTE_DISCLAIMER}"
+QUOTE_DISCLAIMER="Informational only; not a guarantee, endorsement, certification or ranking."
+_EXS,_EXI=example_entries()
 CITATION=("When quoting a score, include the agent name, overall score and evidence grade, the as-of date "
-          "(last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"OpenHands (open-source): 61/100, "
-          "evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, "
-          "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html)\". Say that the score is informational and "
-          "not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking.")
+          f"(last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"{score_phrase(_EXS)} ({SITE_NAME}, CC BY 4.0, "
+          f"{_EXS['url']})\". Say that the score is informational and "
+          "not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. "
+          f"More examples: {BASE}/citing.html")
 TAG='tag:agent-trust-clearinghouse,2026:'
 ALT=('<link rel="alternate" type="application/feed+json" title="Agent updates (JSON Feed)" href="/updates.json">'
      '<link rel="alternate" type="application/atom+xml" title="Agent updates (Atom)" href="/updates.xml">')
@@ -256,7 +270,7 @@ def render_compare(c,E,Y,gen,shell):
         e=J[i]; u=[x for x in (Y[i].get('uncertainties') or []) if isinstance(x,str)][:2]
         b.append(f'<h3>{_e(e["name"])}</h3><p>{e["counted_performance_sources"]} counted independent performance source{"s" if e["counted_performance_sources"]!=1 else ""} '
                  f'({e["peer_reviewed_counted_sources"]} peer-reviewed). Noted uncertainties from the <a href="/agents/{i}.html">entry page</a>:</p><ul>'
-                 +''.join(f'<li>{_e(x)}</li>' for x in u)+'</ul>')
+                 +'</ul>' if not u else '<ul class="quoted">'+''.join(f'<li>{_e(x)}</li>' for x in u)+'</ul>')
     for rid,txt in c.get('related',[]):
         b.append(f'<p>Related: <a href="/agents/{rid}.html">{_e(J[rid]["name"])}</a>. {_e(txt)}</p>')
     b.append(f'<h2 id="citation">Citation guidance</h2><p>{_e(CITATION)}</p>')
@@ -279,4 +293,103 @@ def build_compare():
     sm=re.sub(r'  <url><loc>[^<]*/compare/[^<]*</loc>.*?\n','',sm).replace('</urlset>',add+'</urlset>')
     open(os.path.join(P,'sitemap.xml'),'w').write(sm)
     print('compare pages',len(COMPARE))
-if __name__=='__main__': build(); build_feeds(); build_compare()
+
+
+# ---- 0067: citing page (generated; values only from entries() and the dataset block) ----
+BANNED_CITE=BANNED+[r'\bcertified\b',r'\bverified\b',r'\bendorsed\b']
+NEW_BANNED=BANNED_CITE[len(BANNED):]
+CITE_PATH='citing.html'
+CITE_TITLE='How to cite and quote this data'
+CITE_DESC='Ready-to-copy citation examples (plain sentence, APA-style, BibTeX, agent template), CC BY 4.0 attribution, how to quote scores, and machine-readable locations. Informational only.'
+LICENSE_FILE='https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE'
+REPO='https://github.com/TrustKeeperAce/agent-trust-clearinghouse'
+ATTRIBUTION=f'{SITE_NAME}, <entry URL>, data as of YYYY-MM-DD, CC BY 4.0.'
+CODE_SCOPE='The code (scripts/), the stylesheet and the logo/favicon are not licensed for reuse; CC BY 4.0 covers the data, the decision records and the site text.'
+CITE_GEN_NOTE='Example values on this page are generated from the data as of {gen}; check the entry page for current values.'
+DONTS=[('Include the agent name, overall score out of 100, evidence grade, as-of date and a link to the entry page.','Drop the as-of date, or quote a score without its evidence grade.'),
+ ('Say the score is informational and not a guarantee, endorsement, certification or ranking.','Call an agent “best”, “top”, “#1” or a “winner”, or say it is “certified”, “verified”, “approved” or “endorsed” by the Clearinghouse.'),
+ ('Say “insufficient evidence to score” when an entry has no overall score.','Turn Insufficient evidence into 0, a low score or a failure.'),
+ ('Link to the entry page, or to the feed item for a change.','Present directory, table or feed order as a ranking.'),
+ ('Note any changes you made to the data (CC BY 4.0 requires it).','Imply the Clearinghouse tested the agent itself; scores summarize cited public evidence.'),
+ ('Check the live entry page before republishing an older quote.','Use the logo or site styling to suggest a partnership; the logo is not licensed.')]
+def _bib(s): return s.replace('\\','\\textbackslash{}').replace('&','\\&').replace('%','\\%').replace('_','\\_').replace('#','\\#')
+def cite_formats(E,ds):
+    s,i=example_entries(E); gen=ds['generated']; yr=gen[:4]
+    return {'scored':s,'insufficient':i,
+     'template':'{name}: {overall}/100, evidence grade {grade}, as of {last_reviewed} — '+SITE_NAME+', {entry_url}, CC BY 4.0. '+QUOTE_DISCLAIMER,
+     'template_ins':'{name}: insufficient evidence to score (no overall score), as of {last_reviewed} — '+SITE_NAME+', {entry_url}, CC BY 4.0. '+QUOTE_DISCLAIMER,
+     'q_scored':quote_line(s),'q_ins':quote_line(i),
+     'plain':(f"According to the {SITE_NAME}, {s['name']} has an overall score of {s['overall_score']}/100 with evidence grade {s['evidence_grade']}, "
+              f"as of {s['last_reviewed']} ({s['url']}, CC BY 4.0). The score is informational and is not an endorsement, certification or ranking."),
+     'apa_entry':f"{SITE_NAME}. ({yr}). {s['name']} [Data set entry; {ds['rules'].lower()}; last reviewed {s['last_reviewed']}]. Retrieved {gen}, from {s['url']}. CC BY 4.0.",
+     'apa_dataset':f"{SITE_NAME}. ({yr}). {SITE_NAME} dataset (Version: {ds['version'][0].lower()+ds['version'][1:]}) [Data set]. {ds['canonical']}. CC BY 4.0.",
+     'bibtex':('@misc{atc_dataset_'+gen.replace('-','_')+',\n'
+               f"  author       = {{{{{_bib(SITE_NAME)}}}}},\n  title        = {{{_bib(SITE_NAME)} dataset}},\n  year         = {{{yr}}},\n"
+               f"  version      = {{{ds['version']}}},\n  howpublished = {{\\url{{{BASE}/data/agents.json}}}},\n"
+               f"  note         = {{CC BY 4.0. Informational only; not an endorsement, certification or ranking. Accessed {gen}.}}\n}}")}
+def _ds(E):
+    gen=changelog_date()
+    return {'generated':gen,'rules':RULES,'version':f'{RULES}; data {gen}','canonical':BASE+'/agents-data.html'}
+def render_citing(E,shell):
+    ds=_ds(E); f=cite_formats(E,ds); gen=ds['generated']; url=f'{BASE}/{CITE_PATH}'
+    title=f'{CITE_TITLE} — Agent Reputation &amp; Trust Clearinghouse'
+    ld1={'@context':'https://schema.org','@type':'WebPage','name':CITE_TITLE,'url':url,'description':CITE_DESC,'license':LICENSE,'dateModified':gen}
+    ld2={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[
+         {'@type':'ListItem','position':1,'name':'Directory','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'How to cite','item':url}]}
+    head=(f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n'
+          f'<title>{title}</title><meta name="description" content="{_e(CITE_DESC)}"><link rel="canonical" href="{url}">'
+          f'<meta property="og:type" content="article"><meta property="og:site_name" content="Agent Reputation &amp; Trust Clearinghouse">'
+          f'<meta property="og:title" content="{title}"><meta property="og:description" content="{_e(CITE_DESC)}"><meta property="og:url" content="{url}">'
+          f'<meta name="twitter:card" content="summary"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{_e(CITE_DESC)}">'
+          f'<link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0a0d12" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">'
+          f'<link rel="stylesheet" href="/style.css">{ALT}'
+          f'<script type="application/ld+json">{json.dumps(ld1,ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(ld2,ensure_ascii=False)}</script></head>')
+    pre=lambda t:f'<pre><code>{_e(t)}</code></pre>'
+    s,i=f['scored'],f['insufficient']
+    b=['<nav aria-label="Breadcrumb"><p><a href="/">Directory</a> › <span aria-current="page">How to cite</span></p></nav>',
+       f'<h1>{CITE_TITLE}</h1>',f'<p class="notice"><strong>{FEED_DISCLAIMER}</strong></p>',
+       f'<p><em>{CITE_GEN_NOTE.format(gen=gen)}</em> Examples use the alphabetically first entry with evidence grade A ({_e(s["name"])}) and the alphabetically first entry with insufficient evidence ({_e(i["name"])}); the choice says nothing about either agent.</p>',
+       '<h2 id="agents">Quoting a score (agents and tools)</h2><p>Use one line with every field. Template:</p>'+pre(f['template']),
+       '<p>Example:</p>'+pre(f['q_scored']),
+       '<p>When an entry has no overall score:</p>'+pre(f['template_ins'])+'<p>Example:</p>'+pre(f['q_ins']),
+       '<p>For a change from the <a href="/updates.json">update feed</a>, use the item’s <code>as_of</code> date and the entry URL.</p>',
+       '<h2 id="plain">Plain sentence</h2>'+pre(f['plain']),
+       '<h2 id="apa">APA-style</h2><p>Laid out in APA style; check your style guide for exact requirements.</p><p>One entry:</p>'+pre(f['apa_entry'])+'<p>The whole dataset:</p>'+pre(f['apa_dataset']),
+       '<h2 id="bibtex">BibTeX (dataset)</h2>'+pre(f['bibtex']),
+       '<h2 id="attribution">Attribution (CC BY 4.0)</h2>'
+       f'<p>The data and the site text are licensed under <a href="{LICENSE}">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may share and adapt them, including commercially, if you:</p>'
+       f'<ul><li>credit “{_e(SITE_NAME)}”;</li><li>link to the license;</li><li>link to the entry page or dataset you used;</li><li>say if you changed anything;</li><li>keep the disclaimer with quoted scores.</li></ul>'
+       f'<p>Suggested attribution: <q>{_e(ATTRIBUTION)}</q></p><p>{_e(CODE_SCOPE)} See the <a href="{LICENSE_FILE}">LICENSE</a>. Cited third-party sources, agent names and trademarks remain under their owners’ terms.</p>',
+       '<h2 id="quoting">How to quote us</h2><table class="stack dont"><thead><tr><th scope="col">Do</th><th scope="col">Don’t</th></tr></thead><tbody>'
+       +''.join(f'<tr><td data-label="Do">{_e(d)}</td><td data-label="Don’t">{_e(n)}</td></tr>' for d,n in DONTS)+'</tbody></table>',
+       '<h2 id="machine-readable">Machine-readable locations</h2><ul>'
+       '<li><a href="/data/agents.json">agents.json</a>, <a href="/data/agents.csv">agents.csv</a> and <a href="/data/schema.json">schema.json</a>: the data (CC BY 4.0). Field definitions are on <a href="/agents-data.html">For agents / data</a>.</li>'
+       '<li><a href="/updates.json">updates.json</a> (JSON Feed) and <a href="/updates.xml">updates.xml</a> (Atom): changes, newest first (CC BY 4.0).</li>'
+       '<li><a href="/llms.txt">llms.txt</a>: a summary for language-model agents.</li><li><a href="/sitemap.xml">sitemap.xml</a>: all pages.</li>'
+       f'<li><a href="{REPO}">GitHub repository</a>: data, decision records and site source. {_e(CODE_SCOPE)}</li>'
+       '<li>Corrections: <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">trustkeeperace@gmail.com</a>.</li></ul>',
+       f'<h2 id="disclaimer">Disclaimer</h2><p>{FEED_DISCLAIMER}</p>']
+    return head+shell[0]+'\n'.join(b)+'\n'+shell[1]
+DATA_LICENSE=lambda: ('<h2 id="license">License and citation</h2>\n'
+  f'<p>The data and the site text are licensed under <a href="{LICENSE}">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may share and adapt them, including commercially, if you give credit. Cited third-party sources remain under their own terms. {_e(CODE_SCOPE)}</p>\n'
+  f'<p>Suggested citation: <q>{_e(ATTRIBUTION)}</q></p>\n'
+  '<p id="citation">Ready-to-copy citations (plain sentence, APA-style, BibTeX, agent template) and how to quote a score: <a href="/citing.html">How to cite and quote this data</a>.</p>\n')
+CITE_LINK_METH='<p class="cite-link">Citing or quoting scores: <a href="/citing.html">How to cite</a>.</p>'
+def build_citing():
+    E=entries(); t=open(os.path.join(P,'agents-data.html')).read()
+    t=re.sub(r'<h2 id="license">.*?(?=<h2 id="updates">)',lambda m:DATA_LICENSE(),t,count=1,flags=re.S)
+    open(os.path.join(P,'agents-data.html'),'w').write(t)
+    shell=(t[t.index('</head>')+7:t.index('<main id="main">')+16]+'\n', t[t.index('</main>'):])
+    open(os.path.join(P,CITE_PATH),'w').write(render_citing(E,shell))
+    mp=os.path.join(P,'methodology.html'); h=open(mp).read(); h=re.sub(r'<p class="cite-link">.*?</p>','',h)
+    a='<h2 id="disclaimer">'; assert a in h; open(mp,'w').write(h.replace(a,CITE_LINK_METH+a,1))
+    lp=os.path.join(P,'llms.txt'); L=open(lp).read()
+    L=re.sub(r'^Citation guidance: .*$',lambda m:'Citation guidance: '+CITATION,L,count=1,flags=re.M)
+    L=re.sub(r'^- \[How to cite\].*\n','',L,flags=re.M)
+    ln=f'- [How to cite]({BASE}/citing.html): ready-to-copy citations, agent quote template, how to quote scores, license scope\n'
+    k=L.index('- [For agents / data]'); k=L.index('\n',k)+1; L=L[:k]+ln+L[k:]; open(lp,'w').write(L)
+    sm=open(os.path.join(P,'sitemap.xml')).read()
+    sm=re.sub(r'  <url><loc>[^<]*/citing\.html</loc>.*?\n','',sm).replace('</urlset>',f'  <url><loc>{BASE}/citing.html</loc><lastmod>{changelog_date()}</lastmod></url>\n</urlset>')
+    open(os.path.join(P,'sitemap.xml'),'w').write(sm)
+    print('citing page: examples',example_entries(E)[0]['id'],example_entries(E)[1]['id'])
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing()

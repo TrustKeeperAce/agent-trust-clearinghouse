@@ -45,6 +45,7 @@ th,td{padding:.8rem var(--s4);text-align:left;vertical-align:top;border-bottom:1
 tbody tr:last-child>*{border-bottom:0}
 thead th{background:var(--raised);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;white-space:nowrap}
 table.cmp thead th{white-space:normal;letter-spacing:.04em}table.cmp th,table.cmp td{padding-inline:.5rem}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:var(--s3) var(--s4);font-size:.9rem;line-height:1.5}
 tbody th{font-weight:650}tbody th a{color:var(--text);text-decoration-color:var(--border2)}tbody th a:hover{color:var(--link)}
 tbody tr:hover>*{background:var(--raised)}
 .num{font-weight:700;white-space:nowrap}

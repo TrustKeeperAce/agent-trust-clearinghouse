@@ -15,11 +15,35 @@
   "generated": "2026-10-18",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
-  "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"OpenHands (open-source): 61/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/openhands.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking.",
+  "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/aider.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://agent-trust-clearinghouse.vercel.app/citing.html",
   "atom_feed": "https://agent-trust-clearinghouse.vercel.app/updates.xml",
   "note": "before is null for new entries; values that could not be recovered are null."
  },
  "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0067",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0067)",
+   "content_text": "New How to cite and quote this data page: ready-to-copy citations (plain sentence, APA-style, BibTeX, agent quote template), CC BY 4.0 attribution, how to quote scores and machine-readable locations, with example values generated from the data. The typed-in citation example on the data page, llms.txt and comparison pages is now generated. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0067"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0067-citation-page.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
   {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0066",
    "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",

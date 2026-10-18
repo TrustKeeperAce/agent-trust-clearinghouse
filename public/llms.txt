@@ -8,12 +8,13 @@ Data as of 2026-10-18 (Scoring rules v0.1). Data and site text: CC BY 4.0 (https
 
 Usage note: if you use or quote these scores, they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date. They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.
 
-Citation guidance: When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. "OpenHands (open-source): 61/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/openhands.html)". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking.
+Citation guidance: When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. "Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/aider.html)". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://agent-trust-clearinghouse.vercel.app/citing.html
 
 ## Pages
 - [Directory](https://agent-trust-clearinghouse.vercel.app/): all entries
 - [Methodology](https://agent-trust-clearinghouse.vercel.app/methodology.html): rules, rounding, evidence grades, corrections
 - [For agents / data](https://agent-trust-clearinghouse.vercel.app/agents-data.html): field definitions, license, citation, usage note
+- [How to cite](https://agent-trust-clearinghouse.vercel.app/citing.html): ready-to-copy citations, agent quote template, how to quote scores, license scope
 
 ## Data
 - [agents.json](https://agent-trust-clearinghouse.vercel.app/data/agents.json): all entries with factor scores, grades, source counts and sources (JSON)
