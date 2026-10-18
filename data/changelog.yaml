@@ -1,0 +1,1032 @@
+# data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
+# Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
+# (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0065
+  date: '2026-10-18'
+  decision_packets:
+  - '0065'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0065-update-feed.md
+  change_html: 'New agent update feed: <a href="/updates.json">updates.json</a> (JSON Feed 1.1) and <a href="/updates.xml">updates.xml</a> (Atom) list new entries, score and grade changes and other changelog items, each with before and after values where recorded and the informational disclaimer. This changelog and both feeds are now generated from one source file. Citation guidance added to llms.txt and the data page. No score or grade changes.'
+  changes: []
+  source_commits: []
+- id: 2026-10-18-0061
+  date: '2026-10-18'
+  decision_packets:
+  - '0061'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0061-agent-distribution.md
+  change_html: New “For agents / data” page with JSON, CSV and JSON Schema exports generated from the entries; data and site text licensed under CC BY 4.0; llms.txt, robots.txt and sitemap updated; directory list marked as sorted by overall score, not a ranking of quality. Footer link added. No score or grade changes.
+  changes: []
+  source_commits: []
+- id: 2026-10-18-0060
+  date: '2026-10-18'
+  decision_packets:
+  - '0060'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0060-traffic-measurement.md
+  change_html: 'Methodology: new “Privacy and measurement” section (Google Search Console and hosting request statistics; aggregate monthly totals only; never used in scores). Footer link “Privacy” added to all pages. No score or grade changes.'
+  changes: []
+  source_commits: []
+- id: 2026-10-17-0059
+  date: '2026-10-17'
+  decision_packets:
+  - 0059
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0059-browser-use-remaining.md
+  change_html: 'Browser Use: AgentTell (privacy, Browser Use 0.13.1, Aug 2026), Privacy Practices of Browser Agents (Brave co-authors disclosed) and BreakingWeb (Amazon co-authors disclosed) added as counted sources; 11 counted (3 peer-reviewed). Grade B → A because a recent test now states the library version. Overall score unchanged at 51; recheck note removed. ceLLMate reviewed, not counted.'
+  changes:
+  - agent_id: browser-use
+    type: score_change
+    before:
+      overall_score: 51
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 51
+      evidence_grade: A
+      status: Scored
+    source_commit: f384a28
+  source_commits:
+  - f384a28
+- id: 2026-10-17-0058
+  date: '2026-10-17'
+  decision_packets:
+  - 0058
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0058-consensus-safe-julius.md
+  change_html: 'Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged.'
+  changes:
+  - agent_id: consensus
+    type: entry_update
+    before:
+      overall_score: 62
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 62
+      evidence_grade: B
+      status: Scored
+    source_commit: db88ca5
+  - agent_id: google-deepmind-safe
+    type: entry_update
+    before:
+      overall_score: 66
+      evidence_grade: B-
+      status: Scored
+    after:
+      overall_score: 66
+      evidence_grade: B-
+      status: Scored
+    source_commit: db88ca5
+  - agent_id: julius-ai
+    type: entry_update
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: db88ca5
+  source_commits:
+  - db88ca5
+- id: 2026-10-17-0057
+  date: '2026-10-17'
+  decision_packets:
+  - '0057'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0057-deep-research-followups.md
+  change_html: 'Gemini Deep Research: MisKnow-Agent (robustness preprint, July 2026) added as a counted source; 8 counted (2 peer-reviewed); reports adopted planted false conclusions in up to 54% of cases. Scores and grade unchanged (63, B). OpenAI Deep Research: two items reviewed, none counted (one perspective, one paywalled); 65, B unchanged. Recheck notes updated.'
+  changes:
+  - agent_id: gemini-deep-research
+    type: entry_update
+    before:
+      overall_score: 63
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 63
+      evidence_grade: B
+      status: Scored
+    source_commit: 351ef9b
+  - agent_id: openai-deep-research
+    type: entry_update
+    before:
+      overall_score: 65
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 65
+      evidence_grade: B
+      status: Scored
+    source_commit: 351ef9b
+  source_commits:
+  - 351ef9b
+- id: 2026-10-17-0056
+  date: '2026-10-17'
+  decision_packets:
+  - '0056'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0056-perplexity-followup.md
+  change_html: 'Perplexity: Follow-up review of five 2025–2026 studies; none in scope (health-information quality, or no citation check), so none counted. Score 54 and grade B unchanged. Recheck note updated (0056).'
+  changes:
+  - agent_id: perplexity
+    type: entry_update
+    before:
+      overall_score: 54
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 54
+      evidence_grade: B
+      status: Scored
+    source_commit: a814e6e
+  source_commits:
+  - a814e6e
+- id: 2026-10-17-0055
+  date: '2026-10-17'
+  decision_packets:
+  - '0055'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0055-browser-use-toctou.md
+  change_html: 'Browser Use: Atomicity for Agents (TOCTOU security study, Ohio State, preprint 2026) added as a counted source; 8 counted (3 peer-reviewed). Vulnerability triggered in 9 of 14 test cases. Scores and grade unchanged (51, B).'
+  changes:
+  - agent_id: browser-use
+    type: entry_update
+    before:
+      overall_score: 51
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 51
+      evidence_grade: B
+      status: Scored
+    source_commit: 626038e
+  source_commits:
+  - 626038e
+- id: 2026-10-17-0054
+  date: '2026-10-17'
+  decision_packets:
+  - '0054'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0054-elicit-backfill.md
+  change_html: 'Elicit: three peer-reviewed tests added (Mazzali et al. 2026, Meliante et al. 2025, Spillias et al. 2025); 10 counted sources (9 peer-reviewed). Search remains weak; screening was strong in a 2025 Pro-tier test; extraction ranged from 51% to 92% accurate. Scores unchanged; overall 68, grade A.'
+  changes:
+  - agent_id: elicit
+    type: entry_update
+    before:
+      overall_score: 68
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 68
+      evidence_grade: A
+      status: Scored
+    source_commit: 34a7fbf
+  source_commits:
+  - 34a7fbf
+- id: 2026-10-17-0053
+  date: '2026-10-17'
+  decision_packets:
+  - '0053'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0053-swe-agent-sifting.md
+  change_html: 'SWE-agent: Sifting the Noise (ISSTA 2026) added, testing a December 2025 main-branch commit; 10 counted sources (8 peer-reviewed). Grade B → A because a recent test now states the version. Overall score unchanged at 58; evidence quality stays 80.'
+  changes:
+  - agent_id: swe-agent
+    type: score_change
+    before:
+      overall_score: 58
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 58
+      evidence_grade: A
+      status: Scored
+    source_commit: 72cff28
+  source_commits:
+  - 72cff28
+- id: 2026-10-17-0052
+  date: '2026-10-17'
+  decision_packets:
+  - '0052'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0052-citation-backfill.md
+  change_html: 'Citation backfill: OpenHands and Claude Code sources added (Sifting the Noise; WideSWE and Timeline-Bench); OpenHands 12 counted (7 peer-reviewed), Claude Code 17 counted (6 peer-reviewed); recheck notes added to 13 entries. No score or grade changes.'
+  changes:
+  - agent_id: claude-code
+    type: entry_update
+    before:
+      overall_score: 55
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 55
+      evidence_grade: A
+      status: Scored
+    source_commit: 33c5ab7
+  - agent_id: openhands
+    type: entry_update
+    before:
+      overall_score: 61
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 61
+      evidence_grade: A
+      status: Scored
+    source_commit: 33c5ab7
+  source_commits:
+  - 33c5ab7
+- id: 2026-10-17-0051
+  date: '2026-10-17'
+  decision_packets:
+  - '0051'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0051-grade-a-basis-check.md
+  change_html: 'Grade-A basis check: OpenAI Codex, OpenHands and Claude Code confirmed A. Elicit kept A; its basis (a dated Pro-tier test, Dec 2025 to April/May 2026) is now stated on the page. Aider kept A; Sifting the Noise recorded as peer-reviewed (ISSTA 2026), 6 peer-reviewed of 8, and its inferred test date is noted. No score changes.'
+  changes:
+  - agent_id: aider
+    type: entry_update
+    before:
+      overall_score: 52
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 52
+      evidence_grade: A
+      status: Scored
+    source_commit: 0d3e297
+  - agent_id: elicit
+    type: entry_update
+    before:
+      overall_score: 68
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 68
+      evidence_grade: A
+      status: Scored
+    source_commit: 0d3e297
+  source_commits:
+  - 0d3e297
+- id: 2026-10-17-0050
+  date: '2026-10-17'
+  decision_packets:
+  - '0050'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0050-agent-s-safety-test.md
+  change_html: 'Agent S: correction. The entry said no independent safety test had been found; an independent TOCTOU study (Ohio State, preprint) that tested Agent S is now counted. Now 8 independent performance sources (2 peer-reviewed). Overall score 49 and evidence grade B unchanged.'
+  changes:
+  - agent_id: agent-s
+    type: entry_update
+    before:
+      overall_score: 49
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 49
+      evidence_grade: B
+      status: Scored
+    source_commit: c4d84a2
+  source_commits:
+  - c4d84a2
+- id: 2026-10-17-0049
+  date: '2026-10-17'
+  decision_packets:
+  - 0049
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0049-susvibes-openhands.md
+  change_html: 'OpenHands: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures including a shared-institution (Carnegie Mellon) note; now 11 independent performance sources (6 peer-reviewed); overall 61 and grade A unchanged. Claude Code: SusVibes now recorded as peer-reviewed (ICML 2026); 6 peer-reviewed of 15; overall 55 and grade A unchanged.'
+  changes:
+  - agent_id: claude-code
+    type: entry_update
+    before:
+      overall_score: 55
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 55
+      evidence_grade: A
+      status: Scored
+    source_commit: 151f475
+  - agent_id: openhands
+    type: entry_update
+    before:
+      overall_score: 61
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 61
+      evidence_grade: A
+      status: Scored
+    source_commit: 151f475
+  source_commits:
+  - 151f475
+- id: 2026-10-17-0048
+  date: '2026-10-17'
+  decision_packets:
+  - 0048
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0048-susvibes-swe-agent.md
+  change_html: 'SWE-agent: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures. Now 9 independent performance sources (7 peer-reviewed). Overall score 58 and evidence grade B unchanged.'
+  changes:
+  - agent_id: swe-agent
+    type: entry_update
+    before:
+      overall_score: 58
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 58
+      evidence_grade: B
+      status: Scored
+    source_commit: 83e941c
+  source_commits:
+  - 83e941c
+- id: 2026-10-17-0046
+  date: '2026-10-17'
+  decision_packets:
+  - '0046'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0046-design.md
+  change_html: Design refresh (layout and labels only; no score or rule changes)
+  changes: []
+  source_commits: []
+- id: 2026-10-17-0045
+  date: '2026-10-17'
+  decision_packets:
+  - '0045'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0045-devin.md
+  change_html: 'Added Devin (Cognition; cloud coding agent, Devin 1.x-2.x; Coding agent): overall 50, evidence grade B, 12 independent performance sources (5 peer-reviewed), including an industry report with disclosure. Cognition''s self-reported SWE-bench result is not counted; an informal hands-on review is listed for context only. Windsurf and other Cognition products are out of scope. Citation check incomplete — recheck later. This completes Batch 4.'
+  changes:
+  - agent_id: devin
+    type: new_entry
+    before: null
+    after:
+      overall_score: 50
+      evidence_grade: B
+      status: Scored
+    source_commit: d8dd312
+  source_commits:
+  - d8dd312
+- id: 2026-10-17-0044
+  date: '2026-10-17'
+  decision_packets:
+  - '0044'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0044-github-copilot-coding-agent.md
+  change_html: 'Added GitHub Copilot coding agent (cloud agent that opens pull requests; Coding agent): overall 57, evidence grade B, 12 independent pull-request field studies (5 peer-reviewed). Copilot completions, IDE agent mode, Copilot CLI and code review are out of scope; GitHub- and Microsoft-authored studies are not counted. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: github-copilot-coding-agent
+    type: new_entry
+    before: null
+    after:
+      overall_score: 57
+      evidence_grade: B
+      status: Scored
+    source_commit: e7b6600
+  source_commits:
+  - e7b6600
+- id: 2026-10-17-0043
+  date: '2026-10-17'
+  decision_packets:
+  - '0043'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0043-openai-codex.md
+  change_html: 'Added OpenAI Codex (CLI and cloud agent; Coding agent): overall 62, evidence grade A, 26 independent performance sources (5 peer-reviewed; funding disclosures). The 2021 Codex model and GPT-Codex models run in other harnesses are out of scope; OpenAI-authored material is not counted. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: openai-codex
+    type: new_entry
+    before: null
+    after:
+      overall_score: 62
+      evidence_grade: A
+      status: Scored
+    source_commit: d9287fc
+  source_commits:
+  - d9287fc
+- id: 2026-10-17-0042
+  date: '2026-10-17'
+  decision_packets:
+  - '0042'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0042-aide-autokaggle.md
+  change_html: 'Added AIDE (Weco AI, open-source; Data science agent): overall 60, evidence grade B, 13 independent performance sources (6 peer-reviewed; competing-method disclosures). Grade B because no test from the last 12 months states the version. Added AutoKaggle (open-source; Data science agent) as a separate entry: Insufficient evidence (2 counted). Both carry "Citation check incomplete — recheck later".'
+  changes:
+  - agent_id: aide
+    type: new_entry
+    before: null
+    after:
+      overall_score: 60
+      evidence_grade: B
+      status: Scored
+    source_commit: 6d11885
+  - agent_id: autokaggle
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 6d11885
+  source_commits:
+  - 6d11885
+- id: 2026-10-17-0041
+  date: '2026-10-17'
+  decision_packets:
+  - '0041'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0041-aider.md
+  change_html: 'Added Aider (open-source; Coding agent): overall 52, evidence grade A, 8 independent performance sources (5 peer-reviewed). Evidence quality 80, below the suggested A range, because the A rests on a single recent versioned preprint test. Citation check incomplete — recheck later. Maintainer-run Aider leaderboards not counted.'
+  changes:
+  - agent_id: aider
+    type: new_entry
+    before: null
+    after:
+      overall_score: 52
+      evidence_grade: A
+      status: Scored
+    source_commit: 70c8a80
+  source_commits:
+  - 70c8a80
+- id: 2026-10-17-0040
+  date: '2026-10-17'
+  decision_packets:
+  - '0040'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0040-claude-code.md
+  change_html: 'Added Claude Code (Anthropic; Coding agent): overall 55, evidence grade A, 15 independent performance sources (5 peer-reviewed). Terminal-Bench 2.0 excluded (Anthropic-affiliated author); Anthropic results not counted; SkillsBench API-support disclosure. Citation check incomplete (about 13 candidate studies not yet screened). Claude Research now links to the Claude Code entry.'
+  changes:
+  - agent_id: claude-code
+    type: new_entry
+    before: null
+    after:
+      overall_score: 55
+      evidence_grade: A
+      status: Scored
+    source_commit: 7263a24
+  source_commits:
+  - 7263a24
+- id: 2026-10-17-0039
+  date: '2026-10-17'
+  decision_packets:
+  - 0039
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0039-ui-tars-desktop.md
+  change_html: 'Added UI-TARS Desktop (ByteDance, open-source app; Computer-use agent): Insufficient evidence, 1 counted independent source (TOCTOU security study, preprint). Scope: app and Agent TARS; UI-TARS models not covered. Vendor results and model-only tests not counted. CVE-2026-81735 noted.'
+  changes:
+  - agent_id: ui-tars-desktop
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: b50e7d5
+  source_commits:
+  - b50e7d5
+- id: 2026-10-17-0038
+  date: '2026-10-17'
+  decision_packets:
+  - 0038
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0038-swe-agent.md
+  change_html: 'Added SWE-agent (open-source; Coding agent): overall 58, evidence grade B, 8 independent performance sources (6 peer-reviewed; competitor disclosures). Grade B because no test from the last 12 months states the version. mini-SWE-agent out of scope; developer results, developer-affiliated studies and leaderboard entries not counted.'
+  changes:
+  - agent_id: swe-agent
+    type: new_entry
+    before: null
+    after:
+      overall_score: 58
+      evidence_grade: B
+      status: Scored
+    source_commit: 5d93fa9
+  source_commits:
+  - 5d93fa9
+- id: 2026-10-17-0037
+  date: '2026-10-17'
+  decision_packets:
+  - '0037'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0037-openhands.md
+  change_html: 'Added OpenHands (open-source; Coding agent): overall 61, evidence grade A, 10 independent performance sources (5 peer-reviewed; competing-author and competitor disclosures). Developer results, developer-affiliated studies and leaderboard entries not counted.'
+  changes:
+  - agent_id: openhands
+    type: new_entry
+    before: null
+    after:
+      overall_score: 61
+      evidence_grade: A
+      status: Scored
+    source_commit: 0786069
+  source_commits:
+  - 0786069
+- id: 2026-10-17-0036
+  date: '2026-10-17'
+  decision_packets:
+  - '0036'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0036-coding-agent-category.md
+  change_html: 'Methodology: added the Coding agent category, with a definition and boundaries against Computer-use, Data science and Simple analysis. No existing entry changes category; scoring rules are unchanged.'
+  changes: []
+  source_commits: []
+- id: 2026-10-17-0035
+  date: '2026-10-17'
+  decision_packets:
+  - '0035'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0035-grade-consistency.md
+  change_html: 'Browser Use (open-source library): evidence grade changed from A to B for consistency with the 0025 clarification as applied to STORM. None of its recent independent tests states the library version, so a current-version test within 12 months is not shown. Overall score (51), sources and directory order are unchanged.'
+  changes:
+  - agent_id: browser-use
+    type: score_change
+    before:
+      overall_score: 51
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 51
+      evidence_grade: B
+      status: Scored
+    source_commit: f0be0f4
+  source_commits:
+  - f0be0f4
+- id: 2026-10-17-0031
+  date: '2026-10-17'
+  decision_packets:
+  - '0031'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0031-fellou.md
+  change_html: 'Added Fellou (agentic browser; Browser/web agent): Insufficient evidence, 0 counted independent performance sources. CAP excluded for Fellou (vendor-affiliated author); vendor figures listed, not counted; security reports from Brave and LayerX noted with their commercial interests.'
+  changes:
+  - agent_id: fellou
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: cebf614
+  source_commits:
+  - cebf614
+- id: 2026-10-17-0030
+  date: '2026-10-17'
+  decision_packets:
+  - '0030'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0030-loki-openfactcheck.md
+  change_html: 'Added Loki (open-source) and OpenFactCheck (open-source), both Verification, both Insufficient evidence. Loki: 2 independent performance sources (TAIGR; Proof-of-Guardrail), found in a Semantic Scholar citation check. OpenFactCheck: 0. Developer papers listed, not counted; shared authors noted on both pages.'
+  changes:
+  - agent_id: loki
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: '4761054'
+  - agent_id: openfactcheck
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: '4761054'
+  source_commits:
+  - '4761054'
+- id: 2026-10-17-0029
+  date: '2026-10-17'
+  decision_packets:
+  - 0029
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0029-data-interpreter.md
+  change_html: 'Added Data Interpreter (MetaGPT, open-source; new category Data science agent): overall 49, evidence grade B, 9 independent performance sources (2 peer-reviewed; competing-author disclosures). Developer results not counted. Methodology: added the Data science agent category.'
+  changes:
+  - agent_id: data-interpreter
+    type: new_entry
+    before: null
+    after:
+      overall_score: 49
+      evidence_grade: B
+      status: Scored
+    source_commit: 516a80c
+  source_commits:
+  - 516a80c
+- id: 2026-10-17-0028
+  date: '2026-10-17'
+  decision_packets:
+  - 0028
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0028-perplexity-comet.md
+  change_html: 'Added Perplexity Comet (agentic browser; Browser/web agent): overall 41, evidence grade B-, 4 independent performance sources (1 peer-reviewed; disclosures noted). Trail of Bits audit (vendor-paid) and Perplexity research not counted. Scope note added to the Perplexity entry; its score is unchanged.'
+  changes:
+  - agent_id: perplexity-comet
+    type: new_entry
+    before: null
+    after:
+      overall_score: 41
+      evidence_grade: B-
+      status: Scored
+    source_commit: 4f26029
+  - agent_id: perplexity
+    type: entry_update
+    before:
+      overall_score: 54
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 54
+      evidence_grade: B
+      status: Scored
+    source_commit: 4f26029
+  source_commits:
+  - 4f26029
+- id: 2026-10-17-0027
+  date: '2026-10-17'
+  decision_packets:
+  - '0027'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0027-skyvern.md
+  change_html: 'Added Skyvern (open-source; Browser/web agent): Insufficient evidence, 2 independent performance sources (When Bots Take the Bait; WebTrap Park; shared authors disclosed). Web Bench excluded as vendor co-built; Skyvern WebVoyager result not counted. Two CVEs listed with fixes.'
+  changes:
+  - agent_id: skyvern
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 47f5bbf
+  source_commits:
+  - 47f5bbf
+- id: 2026-10-17-0026
+  date: '2026-10-17'
+  decision_packets:
+  - '0026'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0026-storm.md
+  change_html: 'Added STORM / Co-STORM (knowledge-storm library; Research): overall 56, evidence grade B, 7 independent performance sources (5 peer-reviewed). Hosted research preview not covered.'
+  changes:
+  - agent_id: storm
+    type: new_entry
+    before: null
+    after:
+      overall_score: 56
+      evidence_grade: B
+      status: Scored
+    source_commit: 86aa0ca
+  source_commits:
+  - 86aa0ca
+- id: 2026-10-17-0025
+  date: '2026-10-17'
+  decision_packets:
+  - '0025'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0025-agent-s.md
+  change_html: 'Added Agent S (open-source framework; new category Computer-use agent): overall 49, evidence grade B, 7 independent performance sources (2 peer-reviewed). Commercial Simular products not covered. Methodology: clarified that 7+ sources without the A conditions receive grade B; added a category list.'
+  changes:
+  - agent_id: agent-s
+    type: new_entry
+    before: null
+    after:
+      overall_score: 49
+      evidence_grade: B
+      status: Scored
+    source_commit: 0e590c2
+  source_commits:
+  - 0e590c2
+- id: 2026-10-17-0024
+  date: '2026-10-17'
+  decision_packets:
+  - '0024'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0024-kimi-researcher.md
+  change_html: 'Added Kimi Researcher (Research): Insufficient evidence, 2 independent performance sources (DeepResearch Bench; ICBCBench, with disclosures). Vendor benchmark claims not counted. April 2026 Kimi-wide résumé leak listed under disputes.'
+  changes:
+  - agent_id: kimi-researcher
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 83f8f7c
+  source_commits:
+  - 83f8f7c
+- id: 2026-10-17-0022
+  date: '2026-10-17'
+  decision_packets:
+  - '0022'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0022-consensus.md
+  change_html: 'Added Consensus (Research; all modes): overall score 62, evidence grade B, 6 independent peer-reviewed performance sources (2024–2026). Deep Search and Research Agent not separately tested. One abstract-only study, a competitor benchmark and a retracted study listed but not counted.'
+  changes:
+  - agent_id: consensus
+    type: new_entry
+    before: null
+    after:
+      overall_score: 62
+      evidence_grade: B
+      status: Scored
+    source_commit: d4c44bd
+  source_commits:
+  - d4c44bd
+- id: 2026-10-17-0021
+  date: '2026-10-17'
+  decision_packets:
+  - '0021'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0021-claude-research.md
+  change_html: 'Added Claude Research (Research): overall score 58, evidence grade B-, 4 independent performance sources (3 peer-reviewed), all testing 2025 versions; current Claude Opus 5.5 configuration not independently tested. Mind2Web 2 counted with an Amazon/Anthropic investment disclosure. API-model studies listed but not counted.'
+  changes:
+  - agent_id: claude-research
+    type: new_entry
+    before: null
+    after:
+      overall_score: 58
+      evidence_grade: B-
+      status: Scored
+    source_commit: 6ef2fd6
+  source_commits:
+  - 6ef2fd6
+- id: 2026-10-17-0020
+  date: '2026-10-17'
+  decision_packets:
+  - '0020'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0020-manus.md
+  change_html: 'Added Manus (Research): Insufficient evidence, 0 independent performance sources for Manus 2.0 (28 Sep 2026, new architecture). Six independent tests of 2025 versions are listed as historical context, not counted. Browser Use: added a competitor disclosure to the CAP source (one author interned at FellouAI, a system evaluated in CAP); score unchanged.'
+  changes:
+  - agent_id: browser-use
+    type: entry_update
+    before:
+      overall_score: 51
+      evidence_grade: A
+      status: Scored
+    after:
+      overall_score: 51
+      evidence_grade: A
+      status: Scored
+    source_commit: bd632c3
+  - agent_id: manus
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: bd632c3
+  source_commits:
+  - bd632c3
+- id: 2026-10-17-0019
+  date: '2026-10-17'
+  decision_packets:
+  - 0019
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0019-openai-deep-research-recheck.md
+  change_html: 'Rechecked OpenAI Deep Research: score 65 and evidence grade B unchanged. Added a dated version note (February 2026 update; legacy mode removed 26 March 2026; counted tests used 2025 versions; current version not independently tested) and the ShadowLeak security finding (fixed August 2025).'
+  changes:
+  - agent_id: openai-deep-research
+    type: entry_update
+    before:
+      overall_score: 65
+      evidence_grade: B
+      status: Scored
+    after:
+      overall_score: 65
+      evidence_grade: B
+      status: Scored
+    source_commit: 7e89cff
+  source_commits:
+  - 7e89cff
+- id: 2026-10-17-0018
+  date: '2026-10-17'
+  decision_packets:
+  - 0018
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0018-chatgpt-work.md
+  change_html: 'Added ChatGPT Work (Browser/web agent): Insufficient evidence, 0 independent performance sources for the current product. Its retired predecessors, Operator and ChatGPT agent, are not scored; their independent tests are listed as historical context. Methodology clarification: products that the vendor has retired are not given new scored entries.'
+  changes:
+  - agent_id: chatgpt-work
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 9c05e25
+  source_commits:
+  - 9c05e25
+- id: 2026-10-17-0017
+  date: '2026-10-17'
+  decision_packets:
+  - '0017'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0017-elicit.md
+  change_html: 'Added Elicit (Research; all tiers, tested mainly on paid tiers): overall score 68, evidence grade A, 7 independent performance sources (6 peer-reviewed; one partly independent). Two abstract-only studies listed but not counted. Search results weak; extraction stronger.'
+  changes:
+  - agent_id: elicit
+    type: new_entry
+    before: null
+    after:
+      overall_score: 68
+      evidence_grade: A
+      status: Scored
+    source_commit: ab92475
+  source_commits:
+  - ab92475
+- id: 2026-10-17-0016
+  date: '2026-10-17'
+  decision_packets:
+  - '0016'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0016-browser-use.md
+  change_html: 'Added Browser Use, open-source library only (new category: Browser/web agent): overall score 51, evidence grade A, 7 independent performance sources (3 peer-reviewed; 3 are security tests). Results shown as ranges across language models; Browser Use Cloud not scored; tests of 2025 versions counted.'
+  changes:
+  - agent_id: browser-use
+    type: new_entry
+    before: null
+    after:
+      overall_score: 51
+      evidence_grade: A
+      status: Scored
+    source_commit: aa08334
+  source_commits:
+  - aa08334
+- id: 2026-10-17-0015
+  date: '2026-10-17'
+  decision_packets:
+  - '0015'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0015-gemini-deep-research.md
+  change_html: 'Added Gemini Deep Research (Research): overall score 63, evidence grade B, 7 independent performance sources. Tests of earlier versions (Gemini 2.5 Pro and 3 Pro) counted, with the current version (3.1 Pro) disclosed; use of a Gemini AI judge in some benchmarks disclosed.'
+  changes:
+  - agent_id: gemini-deep-research
+    type: new_entry
+    before: null
+    after:
+      overall_score: 63
+      evidence_grade: B
+      status: Scored
+    source_commit: f973db9
+  source_commits:
+  - f973db9
+- id: 2026-10-16-0014
+  date: '2026-10-16'
+  decision_packets:
+  - '0014'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0014-design-v2.md
+  change_html: 'Design v2: directory sorted by overall score (ties alphabetical) with Insufficient evidence entries listed separately; stacked cards on narrow screens; semantic page structure; Changelog in navigation; entry list in structured data (names and links only); llms.txt. No score, grade, status or entry wording changed.'
+  changes: []
+  source_commits: []
+- id: 2026-10-16-0013
+  date: '2026-10-16'
+  decision_packets:
+  - '0013'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0013-design-refresh.md
+  change_html: 'Visual design refresh: dark theme by default with automatic light theme, accessible contrast, visible focus styles. Stylesheet only; no score, grade, status or wording changed.'
+  changes: []
+  source_commits: []
+- id: 2026-10-16-0012
+  date: '2026-10-16'
+  decision_packets:
+  - '0012'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0012-seo-basics.md
+  change_html: 'SEO basics: sitemap, robots.txt, canonical links, page metadata for link previews, a not-found page and an icon. No score, grade, status or wording changed.'
+  changes: []
+  source_commits: []
+- id: 2026-10-16-0011
+  date: '2026-10-16'
+  decision_packets:
+  - '0011'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0011-site-polish.md
+  change_html: 'Site polish: “Last reviewed” defined; standard footer links; this changelog; email-only correction requests; Pactum Bloomberg source labeled not reviewed (paywalled); page descriptions, section anchors and consistent site name. No score, grade or status changed.'
+  changes:
+  - agent_id: pactum
+    type: entry_update
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 734ff57
+  source_commits:
+  - 734ff57
+- id: 2026-10-16-0010
+  date: '2026-10-16'
+  decision_packets:
+  - '0010'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0010-rules-clarifications.md
+  change_html: 'Scoring rules v0.1: exact .5 rounds up (permanent); independent performance source rule; evidence grade table; wording cleanups. No score, grade or status changed.'
+  changes: []
+  source_commits:
+  - ba17870
+- id: 2026-10-16-0009
+  date: '2026-10-16'
+  decision_packets:
+  - 0009
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0009-google-deepmind-safe.md
+  change_html: 'Added Google DeepMind SAFE: overall 66, grade B-.'
+  changes:
+  - agent_id: google-deepmind-safe
+    type: new_entry
+    before: null
+    after:
+      overall_score: 66
+      evidence_grade: B-
+      status: Scored
+    source_commit: 7a0835d
+  source_commits:
+  - 7a0835d
+- id: 2026-10-16-0008
+  date: '2026-10-16'
+  decision_packets:
+  - 0008
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0008-open-interpreter.md
+  change_html: 'Added Open Interpreter: Insufficient evidence.'
+  changes:
+  - agent_id: open-interpreter
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: '8476982'
+  source_commits:
+  - '8476982'
+- id: 2026-10-16-0007
+  date: '2026-10-16'
+  decision_packets:
+  - '0007'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0007-julius-ai.md
+  change_html: 'Added Julius AI: Insufficient evidence.'
+  changes:
+  - agent_id: julius-ai
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 6e0d6fe
+  source_commits:
+  - 6e0d6fe
+- id: 2026-10-16-0006
+  date: '2026-10-16'
+  decision_packets:
+  - '0006'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0006-clay.md
+  change_html: 'Added Clay: Insufficient evidence.'
+  changes:
+  - agent_id: clay
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: '6619543'
+  source_commits:
+  - '6619543'
+- id: 2026-10-16-0005
+  date: '2026-10-16'
+  decision_packets:
+  - '0005'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0005-pactum.md
+  change_html: 'Added Pactum: Insufficient evidence.'
+  changes:
+  - agent_id: pactum
+    type: new_entry
+    before: null
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: 356d328
+  source_commits:
+  - 356d328
+- id: 2026-10-16-0004
+  date: '2026-10-16'
+  decision_packets:
+  - '0004'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0004-perplexity.md
+  change_html: 'Added Perplexity: overall 54, grade B. Interim rounding note (exact .5 rounds up).'
+  changes:
+  - agent_id: perplexity
+    type: new_entry
+    before: null
+    after:
+      overall_score: 54
+      evidence_grade: B
+      status: Scored
+    source_commit: cc334c3
+  source_commits:
+  - cc334c3
+- id: 2026-10-16-0003
+  date: '2026-10-16'
+  decision_packets:
+  - '0003'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0003-openai-deep-research.md
+  change_html: 'Added OpenAI Deep Research: overall 65, grade B.'
+  changes:
+  - agent_id: openai-deep-research
+    type: new_entry
+    before: null
+    after:
+      overall_score: 65
+      evidence_grade: B
+      status: Scored
+    source_commit: aecb282
+  source_commits:
+  - aecb282
+- id: 2026-10-16-0002
+  date: '2026-10-16'
+  decision_packets:
+  - '0002'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0002-gpt-researcher.md
+  change_html: 'Added GPT Researcher: overall 53, grade B-.'
+  changes:
+  - agent_id: gpt-researcher
+    type: new_entry
+    before: null
+    after:
+      overall_score: 53
+      evidence_grade: B-
+      status: Scored
+    source_commit: af8e954
+  source_commits:
+  - af8e954
+- id: 2026-10-16-0001
+  date: '2026-10-16'
+  decision_packets:
+  - '0001'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0001-seed-research-plan.md
+  change_html: Seed list approved; Loki replaced by Google DeepMind SAFE. Scoring rules v0 published.
+  changes: []
+  source_commits: []

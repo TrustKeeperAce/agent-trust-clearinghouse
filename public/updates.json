@@ -1,0 +1,1952 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Agent Reputation & Trust Clearinghouse: agent updates",
+ "home_page_url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+ "feed_url": "https://agent-trust-clearinghouse.vercel.app/updates.json",
+ "language": "en",
+ "description": "New entries, score and grade changes and other approved changes, newest first. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+ "authors": [
+  {
+   "name": "Agent Reputation & Trust Clearinghouse",
+   "url": "https://agent-trust-clearinghouse.vercel.app/"
+  }
+ ],
+ "_clearinghouse": {
+  "generated": "2026-10-18",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+  "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"OpenHands (open-source): 61/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/openhands.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking.",
+  "atom_feed": "https://agent-trust-clearinghouse.vercel.app/updates.xml",
+  "note": "before is null for new entries; values that could not be recovered are null."
+ },
+ "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0065",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0065)",
+   "content_text": "New agent update feed: updates.json (JSON Feed 1.1) and updates.xml (Atom) list new entries, score and grade changes and other changelog items, each with before and after values where recorded and the informational disclaimer. This changelog and both feeds are now generated from one source file. Citation guidance added to llms.txt and the data page. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0065"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0065-update-feed.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0061",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0061)",
+   "content_text": "New “For agents / data” page with JSON, CSV and JSON Schema exports generated from the entries; data and site text licensed under CC BY 4.0; llms.txt, robots.txt and sitemap updated; directory list marked as sorted by overall score, not a ranking of quality. Footer link added. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0061"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0061-agent-distribution.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0060",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0060)",
+   "content_text": "Methodology: new “Privacy and measurement” section (Google Search Console and hosting request statistics; aggregate monthly totals only; never used in scores). Footer link “Privacy” added to all pages. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0060"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0060-traffic-measurement.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0059/browser-use",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "title": "Browser Use (open-source library): 51 / B → 51 / A",
+   "content_text": "Browser Use: AgentTell (privacy, Browser Use 0.13.1, Aug 2026), Privacy Practices of Browser Agents (Brave co-authors disclosed) and BreakingWeb (Amazon co-authors disclosed) added as counted sources; 11 counted (3 peer-reviewed). Grade B → A because a recent test now states the library version. Overall score unchanged at 51; recheck note removed. ceLLMate reviewed, not counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "score_change"
+   ],
+   "_clearinghouse": {
+    "type": "score_change",
+    "agent_id": "browser-use",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+    "before": {
+     "overall_score": 51,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0059"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0059-browser-use-remaining.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0058/consensus",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/consensus.html",
+   "title": "Consensus: entry updated, 62 / B (unchanged)",
+   "content_text": "Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "consensus",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/consensus.html",
+    "before": {
+     "overall_score": 62,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 62,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0058"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0058-consensus-safe-julius.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0058/google-deepmind-safe",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html",
+   "title": "Google DeepMind SAFE (Search-Augmented Factuality Evaluator): entry updated, 66 / B- (unchanged)",
+   "content_text": "Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "google-deepmind-safe",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html",
+    "before": {
+     "overall_score": 66,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 66,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0058"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0058-consensus-safe-julius.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0058/julius-ai",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+   "title": "Julius AI: entry updated, Insufficient evidence (unchanged)",
+   "content_text": "Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "julius-ai",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+    "before": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0058"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0058-consensus-safe-julius.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0057/gemini-deep-research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html",
+   "title": "Gemini Deep Research: entry updated, 63 / B (unchanged)",
+   "content_text": "Gemini Deep Research: MisKnow-Agent (robustness preprint, July 2026) added as a counted source; 8 counted (2 peer-reviewed); reports adopted planted false conclusions in up to 54% of cases. Scores and grade unchanged (63, B). OpenAI Deep Research: two items reviewed, none counted (one perspective, one paywalled); 65, B unchanged. Recheck notes updated. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "gemini-deep-research",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html",
+    "before": {
+     "overall_score": 63,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 63,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0057"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0057-deep-research-followups.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0057/openai-deep-research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+   "title": "OpenAI Deep Research: entry updated, 65 / B (unchanged)",
+   "content_text": "Gemini Deep Research: MisKnow-Agent (robustness preprint, July 2026) added as a counted source; 8 counted (2 peer-reviewed); reports adopted planted false conclusions in up to 54% of cases. Scores and grade unchanged (63, B). OpenAI Deep Research: two items reviewed, none counted (one perspective, one paywalled); 65, B unchanged. Recheck notes updated. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "openai-deep-research",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+    "before": {
+     "overall_score": 65,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 65,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0057"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0057-deep-research-followups.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0056/perplexity",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+   "title": "Perplexity: entry updated, 54 / B (unchanged)",
+   "content_text": "Perplexity: Follow-up review of five 2025–2026 studies; none in scope (health-information quality, or no citation check), so none counted. Score 54 and grade B unchanged. Recheck note updated (0056). Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "perplexity",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+    "before": {
+     "overall_score": 54,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 54,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0056"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0056-perplexity-followup.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0055/browser-use",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "title": "Browser Use (open-source library): entry updated, 51 / B (unchanged)",
+   "content_text": "Browser Use: Atomicity for Agents (TOCTOU security study, Ohio State, preprint 2026) added as a counted source; 8 counted (3 peer-reviewed). Vulnerability triggered in 9 of 14 test cases. Scores and grade unchanged (51, B). Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "browser-use",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+    "before": {
+     "overall_score": 51,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0055"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0055-browser-use-toctou.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0054/elicit",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+   "title": "Elicit: entry updated, 68 / A (unchanged)",
+   "content_text": "Elicit: three peer-reviewed tests added (Mazzali et al. 2026, Meliante et al. 2025, Spillias et al. 2025); 10 counted sources (9 peer-reviewed). Search remains weak; screening was strong in a 2025 Pro-tier test; extraction ranged from 51% to 92% accurate. Scores unchanged; overall 68, grade A. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "elicit",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+    "before": {
+     "overall_score": 68,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 68,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0054"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0054-elicit-backfill.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0053/swe-agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+   "title": "SWE-agent (open-source): 58 / B → 58 / A",
+   "content_text": "SWE-agent: Sifting the Noise (ISSTA 2026) added, testing a December 2025 main-branch commit; 10 counted sources (8 peer-reviewed). Grade B → A because a recent test now states the version. Overall score unchanged at 58; evidence quality stays 80. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "score_change"
+   ],
+   "_clearinghouse": {
+    "type": "score_change",
+    "agent_id": "swe-agent",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+    "before": {
+     "overall_score": 58,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 58,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0053"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0053-swe-agent-sifting.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0052/claude-code",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+   "title": "Claude Code (Anthropic): entry updated, 55 / A (unchanged)",
+   "content_text": "Citation backfill: OpenHands and Claude Code sources added (Sifting the Noise; WideSWE and Timeline-Bench); OpenHands 12 counted (7 peer-reviewed), Claude Code 17 counted (6 peer-reviewed); recheck notes added to 13 entries. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "claude-code",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+    "before": {
+     "overall_score": 55,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 55,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0052"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0052-citation-backfill.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0052/openhands",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+   "title": "OpenHands (open-source): entry updated, 61 / A (unchanged)",
+   "content_text": "Citation backfill: OpenHands and Claude Code sources added (Sifting the Noise; WideSWE and Timeline-Bench); OpenHands 12 counted (7 peer-reviewed), Claude Code 17 counted (6 peer-reviewed); recheck notes added to 13 entries. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "openhands",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+    "before": {
+     "overall_score": 61,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 61,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0052"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0052-citation-backfill.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0051/aider",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aider.html",
+   "title": "Aider (open-source): entry updated, 52 / A (unchanged)",
+   "content_text": "Grade-A basis check: OpenAI Codex, OpenHands and Claude Code confirmed A. Elicit kept A; its basis (a dated Pro-tier test, Dec 2025 to April/May 2026) is now stated on the page. Aider kept A; Sifting the Noise recorded as peer-reviewed (ISSTA 2026), 6 peer-reviewed of 8, and its inferred test date is noted. No score changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "aider",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/aider.html",
+    "before": {
+     "overall_score": 52,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 52,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0051"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0051-grade-a-basis-check.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0051/elicit",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+   "title": "Elicit: entry updated, 68 / A (unchanged)",
+   "content_text": "Grade-A basis check: OpenAI Codex, OpenHands and Claude Code confirmed A. Elicit kept A; its basis (a dated Pro-tier test, Dec 2025 to April/May 2026) is now stated on the page. Aider kept A; Sifting the Noise recorded as peer-reviewed (ISSTA 2026), 6 peer-reviewed of 8, and its inferred test date is noted. No score changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "elicit",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+    "before": {
+     "overall_score": 68,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 68,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0051"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0051-grade-a-basis-check.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0050/agent-s",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html",
+   "title": "Agent S (open-source framework, S2 to S3): entry updated, 49 / B (unchanged)",
+   "content_text": "Agent S: correction. The entry said no independent safety test had been found; an independent TOCTOU study (Ohio State, preprint) that tested Agent S is now counted. Now 8 independent performance sources (2 peer-reviewed). Overall score 49 and evidence grade B unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "agent-s",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html",
+    "before": {
+     "overall_score": 49,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 49,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0050"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0050-agent-s-safety-test.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0049/claude-code",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+   "title": "Claude Code (Anthropic): entry updated, 55 / A (unchanged)",
+   "content_text": "OpenHands: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures including a shared-institution (Carnegie Mellon) note; now 11 independent performance sources (6 peer-reviewed); overall 61 and grade A unchanged. Claude Code: SusVibes now recorded as peer-reviewed (ICML 2026); 6 peer-reviewed of 15; overall 55 and grade A unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "claude-code",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+    "before": {
+     "overall_score": 55,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 55,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0049"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0049-susvibes-openhands.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0049/openhands",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+   "title": "OpenHands (open-source): entry updated, 61 / A (unchanged)",
+   "content_text": "OpenHands: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures including a shared-institution (Carnegie Mellon) note; now 11 independent performance sources (6 peer-reviewed); overall 61 and grade A unchanged. Claude Code: SusVibes now recorded as peer-reviewed (ICML 2026); 6 peer-reviewed of 15; overall 55 and grade A unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "openhands",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+    "before": {
+     "overall_score": 61,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 61,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0049"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0049-susvibes-openhands.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0048/swe-agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+   "title": "SWE-agent (open-source): entry updated, 58 / B (unchanged)",
+   "content_text": "SWE-agent: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures. Now 9 independent performance sources (7 peer-reviewed). Overall score 58 and evidence grade B unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "swe-agent",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+    "before": {
+     "overall_score": 58,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 58,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0048"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0048-susvibes-swe-agent.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0046",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0046)",
+   "content_text": "Design refresh (layout and labels only; no score or rule changes) Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0046"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0046-design.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0045/devin",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/devin.html",
+   "title": "Devin (Cognition): new entry, 50 / B",
+   "content_text": "Added Devin (Cognition; cloud coding agent, Devin 1.x-2.x; Coding agent): overall 50, evidence grade B, 12 independent performance sources (5 peer-reviewed), including an industry report with disclosure. Cognition's self-reported SWE-bench result is not counted; an informal hands-on review is listed for context only. Windsurf and other Cognition products are out of scope. Citation check incomplete — recheck later. This completes Batch 4. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "devin",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/devin.html",
+    "before": null,
+    "after": {
+     "overall_score": 50,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0045"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0045-devin.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0044/github-copilot-coding-agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html",
+   "title": "GitHub Copilot coding agent: new entry, 57 / B",
+   "content_text": "Added GitHub Copilot coding agent (cloud agent that opens pull requests; Coding agent): overall 57, evidence grade B, 12 independent pull-request field studies (5 peer-reviewed). Copilot completions, IDE agent mode, Copilot CLI and code review are out of scope; GitHub- and Microsoft-authored studies are not counted. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "github-copilot-coding-agent",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html",
+    "before": null,
+    "after": {
+     "overall_score": 57,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0044"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0044-github-copilot-coding-agent.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0043/openai-codex",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html",
+   "title": "OpenAI Codex (CLI and cloud agent): new entry, 62 / A",
+   "content_text": "Added OpenAI Codex (CLI and cloud agent; Coding agent): overall 62, evidence grade A, 26 independent performance sources (5 peer-reviewed; funding disclosures). The 2021 Codex model and GPT-Codex models run in other harnesses are out of scope; OpenAI-authored material is not counted. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "openai-codex",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html",
+    "before": null,
+    "after": {
+     "overall_score": 62,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0043"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0043-openai-codex.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0042/aide",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aide.html",
+   "title": "AIDE (Weco AI, open-source): new entry, 60 / B",
+   "content_text": "Added AIDE (Weco AI, open-source; Data science agent): overall 60, evidence grade B, 13 independent performance sources (6 peer-reviewed; competing-method disclosures). Grade B because no test from the last 12 months states the version. Added AutoKaggle (open-source; Data science agent) as a separate entry: Insufficient evidence (2 counted). Both carry \"Citation check incomplete — recheck later\". Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "aide",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/aide.html",
+    "before": null,
+    "after": {
+     "overall_score": 60,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0042"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0042-aide-autokaggle.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0042/autokaggle",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html",
+   "title": "AutoKaggle (open-source): new entry, Insufficient evidence",
+   "content_text": "Added AIDE (Weco AI, open-source; Data science agent): overall 60, evidence grade B, 13 independent performance sources (6 peer-reviewed; competing-method disclosures). Grade B because no test from the last 12 months states the version. Added AutoKaggle (open-source; Data science agent) as a separate entry: Insufficient evidence (2 counted). Both carry \"Citation check incomplete — recheck later\". Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "autokaggle",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0042"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0042-aide-autokaggle.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0041/aider",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aider.html",
+   "title": "Aider (open-source): new entry, 52 / A",
+   "content_text": "Added Aider (open-source; Coding agent): overall 52, evidence grade A, 8 independent performance sources (5 peer-reviewed). Evidence quality 80, below the suggested A range, because the A rests on a single recent versioned preprint test. Citation check incomplete — recheck later. Maintainer-run Aider leaderboards not counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "aider",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/aider.html",
+    "before": null,
+    "after": {
+     "overall_score": 52,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0041"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0041-aider.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0040/claude-code",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+   "title": "Claude Code (Anthropic): new entry, 55 / A",
+   "content_text": "Added Claude Code (Anthropic; Coding agent): overall 55, evidence grade A, 15 independent performance sources (5 peer-reviewed). Terminal-Bench 2.0 excluded (Anthropic-affiliated author); Anthropic results not counted; SkillsBench API-support disclosure. Citation check incomplete (about 13 candidate studies not yet screened). Claude Research now links to the Claude Code entry. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "claude-code",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+    "before": null,
+    "after": {
+     "overall_score": 55,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0040"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0040-claude-code.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0039/ui-tars-desktop",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html",
+   "title": "UI-TARS Desktop (ByteDance, open-source app): new entry, Insufficient evidence",
+   "content_text": "Added UI-TARS Desktop (ByteDance, open-source app; Computer-use agent): Insufficient evidence, 1 counted independent source (TOCTOU security study, preprint). Scope: app and Agent TARS; UI-TARS models not covered. Vendor results and model-only tests not counted. CVE-2026-81735 noted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "ui-tars-desktop",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0039"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0039-ui-tars-desktop.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0038/swe-agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+   "title": "SWE-agent (open-source): new entry, 58 / B",
+   "content_text": "Added SWE-agent (open-source; Coding agent): overall 58, evidence grade B, 8 independent performance sources (6 peer-reviewed; competitor disclosures). Grade B because no test from the last 12 months states the version. mini-SWE-agent out of scope; developer results, developer-affiliated studies and leaderboard entries not counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "swe-agent",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+    "before": null,
+    "after": {
+     "overall_score": 58,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0038"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0038-swe-agent.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0037/openhands",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+   "title": "OpenHands (open-source): new entry, 61 / A",
+   "content_text": "Added OpenHands (open-source; Coding agent): overall 61, evidence grade A, 10 independent performance sources (5 peer-reviewed; competing-author and competitor disclosures). Developer results, developer-affiliated studies and leaderboard entries not counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "openhands",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+    "before": null,
+    "after": {
+     "overall_score": 61,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0037"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0037-openhands.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0036",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0036)",
+   "content_text": "Methodology: added the Coding agent category, with a definition and boundaries against Computer-use, Data science and Simple analysis. No existing entry changes category; scoring rules are unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0036"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0036-coding-agent-category.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0035/browser-use",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "title": "Browser Use (open-source library): 51 / A → 51 / B",
+   "content_text": "Browser Use (open-source library): evidence grade changed from A to B for consistency with the 0025 clarification as applied to STORM. None of its recent independent tests states the library version, so a current-version test within 12 months is not shown. Overall score (51), sources and directory order are unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "score_change"
+   ],
+   "_clearinghouse": {
+    "type": "score_change",
+    "agent_id": "browser-use",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+    "before": {
+     "overall_score": 51,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0035"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0035-grade-consistency.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0031/fellou",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/fellou.html",
+   "title": "Fellou (agentic browser): new entry, Insufficient evidence",
+   "content_text": "Added Fellou (agentic browser; Browser/web agent): Insufficient evidence, 0 counted independent performance sources. CAP excluded for Fellou (vendor-affiliated author); vendor figures listed, not counted; security reports from Brave and LayerX noted with their commercial interests. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "fellou",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/fellou.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0031"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0031-fellou.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0030/loki",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/loki.html",
+   "title": "Loki (Libr-AI OpenFactVerification, open-source): new entry, Insufficient evidence",
+   "content_text": "Added Loki (open-source) and OpenFactCheck (open-source), both Verification, both Insufficient evidence. Loki: 2 independent performance sources (TAIGR; Proof-of-Guardrail), found in a Semantic Scholar citation check. OpenFactCheck: 0. Developer papers listed, not counted; shared authors noted on both pages. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "loki",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/loki.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0030"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0030-loki-openfactcheck.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0030/openfactcheck",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html",
+   "title": "OpenFactCheck (open-source framework): new entry, Insufficient evidence",
+   "content_text": "Added Loki (open-source) and OpenFactCheck (open-source), both Verification, both Insufficient evidence. Loki: 2 independent performance sources (TAIGR; Proof-of-Guardrail), found in a Semantic Scholar citation check. OpenFactCheck: 0. Developer papers listed, not counted; shared authors noted on both pages. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "openfactcheck",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0030"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0030-loki-openfactcheck.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0029/data-interpreter",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html",
+   "title": "Data Interpreter (MetaGPT, open-source): new entry, 49 / B",
+   "content_text": "Added Data Interpreter (MetaGPT, open-source; new category Data science agent): overall 49, evidence grade B, 9 independent performance sources (2 peer-reviewed; competing-author disclosures). Developer results not counted. Methodology: added the Data science agent category. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "data-interpreter",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html",
+    "before": null,
+    "after": {
+     "overall_score": 49,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0029"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0029-data-interpreter.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0028/perplexity-comet",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html",
+   "title": "Perplexity Comet (agentic browser): new entry, 41 / B-",
+   "content_text": "Added Perplexity Comet (agentic browser; Browser/web agent): overall 41, evidence grade B-, 4 independent performance sources (1 peer-reviewed; disclosures noted). Trail of Bits audit (vendor-paid) and Perplexity research not counted. Scope note added to the Perplexity entry; its score is unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "perplexity-comet",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html",
+    "before": null,
+    "after": {
+     "overall_score": 41,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0028"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0028-perplexity-comet.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0028/perplexity",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+   "title": "Perplexity: entry updated, 54 / B (unchanged)",
+   "content_text": "Added Perplexity Comet (agentic browser; Browser/web agent): overall 41, evidence grade B-, 4 independent performance sources (1 peer-reviewed; disclosures noted). Trail of Bits audit (vendor-paid) and Perplexity research not counted. Scope note added to the Perplexity entry; its score is unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "perplexity",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+    "before": {
+     "overall_score": 54,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 54,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0028"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0028-perplexity-comet.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0027/skyvern",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+   "title": "Skyvern (open-source): new entry, Insufficient evidence",
+   "content_text": "Added Skyvern (open-source; Browser/web agent): Insufficient evidence, 2 independent performance sources (When Bots Take the Bait; WebTrap Park; shared authors disclosed). Web Bench excluded as vendor co-built; Skyvern WebVoyager result not counted. Two CVEs listed with fixes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "skyvern",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0027"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0027-skyvern.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0026/storm",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/storm.html",
+   "title": "STORM / Co-STORM (knowledge-storm library): new entry, 56 / B",
+   "content_text": "Added STORM / Co-STORM (knowledge-storm library; Research): overall 56, evidence grade B, 7 independent performance sources (5 peer-reviewed). Hosted research preview not covered. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "storm",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/storm.html",
+    "before": null,
+    "after": {
+     "overall_score": 56,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0026"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0026-storm.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0025/agent-s",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html",
+   "title": "Agent S (open-source framework, S2 to S3): new entry, 49 / B",
+   "content_text": "Added Agent S (open-source framework; new category Computer-use agent): overall 49, evidence grade B, 7 independent performance sources (2 peer-reviewed). Commercial Simular products not covered. Methodology: clarified that 7+ sources without the A conditions receive grade B; added a category list. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "agent-s",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html",
+    "before": null,
+    "after": {
+     "overall_score": 49,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0025"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0025-agent-s.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0024/kimi-researcher",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
+   "title": "Kimi Researcher (Kimi Deep Research): new entry, Insufficient evidence",
+   "content_text": "Added Kimi Researcher (Research): Insufficient evidence, 2 independent performance sources (DeepResearch Bench; ICBCBench, with disclosures). Vendor benchmark claims not counted. April 2026 Kimi-wide résumé leak listed under disputes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "kimi-researcher",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0024"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0024-kimi-researcher.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0022/consensus",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/consensus.html",
+   "title": "Consensus: new entry, 62 / B",
+   "content_text": "Added Consensus (Research; all modes): overall score 62, evidence grade B, 6 independent peer-reviewed performance sources (2024–2026). Deep Search and Research Agent not separately tested. One abstract-only study, a competitor benchmark and a retracted study listed but not counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "consensus",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/consensus.html",
+    "before": null,
+    "after": {
+     "overall_score": 62,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0022"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0022-consensus.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0021/claude-research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html",
+   "title": "Claude Research: new entry, 58 / B-",
+   "content_text": "Added Claude Research (Research): overall score 58, evidence grade B-, 4 independent performance sources (3 peer-reviewed), all testing 2025 versions; current Claude Opus 5.5 configuration not independently tested. Mind2Web 2 counted with an Amazon/Anthropic investment disclosure. API-model studies listed but not counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "claude-research",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html",
+    "before": null,
+    "after": {
+     "overall_score": 58,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0021"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0021-claude-research.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0020/browser-use",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "title": "Browser Use (open-source library): entry updated, 51 / A (unchanged)",
+   "content_text": "Added Manus (Research): Insufficient evidence, 0 independent performance sources for Manus 2.0 (28 Sep 2026, new architecture). Six independent tests of 2025 versions are listed as historical context, not counted. Browser Use: added a competitor disclosure to the CAP source (one author interned at FellouAI, a system evaluated in CAP); score unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "browser-use",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+    "before": {
+     "overall_score": 51,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0020"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0020-manus.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0020/manus",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/manus.html",
+   "title": "Manus: new entry, Insufficient evidence",
+   "content_text": "Added Manus (Research): Insufficient evidence, 0 independent performance sources for Manus 2.0 (28 Sep 2026, new architecture). Six independent tests of 2025 versions are listed as historical context, not counted. Browser Use: added a competitor disclosure to the CAP source (one author interned at FellouAI, a system evaluated in CAP); score unchanged. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "manus",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/manus.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0020"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0020-manus.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0019/openai-deep-research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+   "title": "OpenAI Deep Research: entry updated, 65 / B (unchanged)",
+   "content_text": "Rechecked OpenAI Deep Research: score 65 and evidence grade B unchanged. Added a dated version note (February 2026 update; legacy mode removed 26 March 2026; counted tests used 2025 versions; current version not independently tested) and the ShadowLeak security finding (fixed August 2025). Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "openai-deep-research",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+    "before": {
+     "overall_score": 65,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "after": {
+     "overall_score": 65,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0019"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0019-openai-deep-research-recheck.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0018/chatgpt-work",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html",
+   "title": "ChatGPT Work (agent and cloud-browser tasks): new entry, Insufficient evidence",
+   "content_text": "Added ChatGPT Work (Browser/web agent): Insufficient evidence, 0 independent performance sources for the current product. Its retired predecessors, Operator and ChatGPT agent, are not scored; their independent tests are listed as historical context. Methodology clarification: products that the vendor has retired are not given new scored entries. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "chatgpt-work",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0018"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0018-chatgpt-work.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0017/elicit",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+   "title": "Elicit: new entry, 68 / A",
+   "content_text": "Added Elicit (Research; all tiers, tested mainly on paid tiers): overall score 68, evidence grade A, 7 independent performance sources (6 peer-reviewed; one partly independent). Two abstract-only studies listed but not counted. Search results weak; extraction stronger. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "elicit",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+    "before": null,
+    "after": {
+     "overall_score": 68,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0017"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0017-elicit.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0016/browser-use",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "title": "Browser Use (open-source library): new entry, 51 / A",
+   "content_text": "Added Browser Use, open-source library only (new category: Browser/web agent): overall score 51, evidence grade A, 7 independent performance sources (3 peer-reviewed; 3 are security tests). Results shown as ranges across language models; Browser Use Cloud not scored; tests of 2025 versions counted. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "browser-use",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+    "before": null,
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0016"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0016-browser-use.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-17-0015/gemini-deep-research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html",
+   "title": "Gemini Deep Research: new entry, 63 / B",
+   "content_text": "Added Gemini Deep Research (Research): overall score 63, evidence grade B, 7 independent performance sources. Tests of earlier versions (Gemini 2.5 Pro and 3 Pro) counted, with the current version (3.1 Pro) disclosed; use of a Gemini AI judge in some benchmarks disclosed. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-17T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "gemini-deep-research",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html",
+    "before": null,
+    "after": {
+     "overall_score": 63,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0015"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0015-gemini-deep-research.md",
+    "as_of": "2026-10-17",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0014",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0014)",
+   "content_text": "Design v2: directory sorted by overall score (ties alphabetical) with Insufficient evidence entries listed separately; stacked cards on narrow screens; semantic page structure; Changelog in navigation; entry list in structured data (names and links only); llms.txt. No score, grade, status or entry wording changed. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0014"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0014-design-v2.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0013",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0013)",
+   "content_text": "Visual design refresh: dark theme by default with automatic light theme, accessible contrast, visible focus styles. Stylesheet only; no score, grade, status or wording changed. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0013"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0013-design-refresh.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0012",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0012)",
+   "content_text": "SEO basics: sitemap, robots.txt, canonical links, page metadata for link previews, a not-found page and an icon. No score, grade, status or wording changed. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0012"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0012-seo-basics.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0011/pactum",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/pactum.html",
+   "title": "Pactum: entry updated, Insufficient evidence (unchanged)",
+   "content_text": "Site polish: “Last reviewed” defined; standard footer links; this changelog; email-only correction requests; Pactum Bloomberg source labeled not reviewed (paywalled); page descriptions, section anchors and consistent site name. No score, grade or status changed. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "pactum",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/pactum.html",
+    "before": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0011"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0011-site-polish.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0010",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0010)",
+   "content_text": "Scoring rules v0.1: exact .5 rounds up (permanent); independent performance source rule; evidence grade table; wording cleanups. No score, grade or status changed. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0010"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0010-rules-clarifications.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0009/google-deepmind-safe",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html",
+   "title": "Google DeepMind SAFE (Search-Augmented Factuality Evaluator): new entry, 66 / B-",
+   "content_text": "Added Google DeepMind SAFE: overall 66, grade B-. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "google-deepmind-safe",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html",
+    "before": null,
+    "after": {
+     "overall_score": 66,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0009"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0009-google-deepmind-safe.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0008/open-interpreter",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html",
+   "title": "Open Interpreter: new entry, Insufficient evidence",
+   "content_text": "Added Open Interpreter: Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "open-interpreter",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0008"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0008-open-interpreter.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0007/julius-ai",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+   "title": "Julius AI: new entry, Insufficient evidence",
+   "content_text": "Added Julius AI: Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "julius-ai",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0007"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0007-julius-ai.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0006/clay",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/clay.html",
+   "title": "Clay: new entry, Insufficient evidence",
+   "content_text": "Added Clay: Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "clay",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/clay.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0006"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0006-clay.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0005/pactum",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/pactum.html",
+   "title": "Pactum: new entry, Insufficient evidence",
+   "content_text": "Added Pactum: Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "pactum",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/pactum.html",
+    "before": null,
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0005"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0005-pactum.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0004/perplexity",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+   "title": "Perplexity: new entry, 54 / B",
+   "content_text": "Added Perplexity: overall 54, grade B. Interim rounding note (exact .5 rounds up). Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "perplexity",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+    "before": null,
+    "after": {
+     "overall_score": 54,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0004"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0004-perplexity.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0003/openai-deep-research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+   "title": "OpenAI Deep Research: new entry, 65 / B",
+   "content_text": "Added OpenAI Deep Research: overall 65, grade B. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "openai-deep-research",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+    "before": null,
+    "after": {
+     "overall_score": 65,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0003"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0003-openai-deep-research.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0002/gpt-researcher",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html",
+   "title": "GPT Researcher: new entry, 53 / B-",
+   "content_text": "Added GPT Researcher: overall 53, grade B-. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "gpt-researcher",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html",
+    "before": null,
+    "after": {
+     "overall_score": 53,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0002"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0002-gpt-researcher.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-16-0001",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0001)",
+   "content_text": "Seed list approved; Loki replaced by Google DeepMind SAFE. Scoring rules v0 published. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-16T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0001"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0001-seed-research-plan.md",
+    "as_of": "2026-10-16",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  }
+ ]
+}
