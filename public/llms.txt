@@ -19,7 +19,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 - [OpenHands (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/openhands.html): overall 61, evidence grade A
 - [AIDE (Weco AI, open-source)](https://agent-trust-clearinghouse.vercel.app/agents/aide.html): overall 60, evidence grade B
 - [Claude Research](https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html): overall 58, evidence grade B-
-- [SWE-agent (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html): overall 58, evidence grade B
+- [SWE-agent (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html): overall 58, evidence grade A
 - [GitHub Copilot coding agent](https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html): overall 57, evidence grade B
 - [STORM / Co-STORM (knowledge-storm library)](https://agent-trust-clearinghouse.vercel.app/agents/storm.html): overall 56, evidence grade B
 - [Claude Code (Anthropic)](https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html): overall 55, evidence grade A
