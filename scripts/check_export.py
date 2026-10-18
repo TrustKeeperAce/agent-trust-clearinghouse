@@ -228,6 +228,8 @@ for c in B.COMPARE:
     t=open(os.path.join(P,c['path'])).read(); ev=t[t.index('<h2 id="evidence">'):t.index('<h2 id="citation">')]
     for i in B.compare_ids(c,B.entries()):
         if f'<p>{J[i]["counted_performance_sources"]} counted independent performance source' not in ev or f'Noted uncertainties from the <a href="/agents/{i}.html">' not in ev: E(f"{c['path']}: evidence block for {i} missing")
+for f in ['citing.html']+[c['path'] for c in B.COMPARE]:
+    if re.search(r'<(ul|ol)[^>]*>\s*<(ul|ol)',open(os.path.join(P,f)).read()): E(f'{f}: list nested directly in a list')
 print('citing: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')

@@ -269,8 +269,8 @@ def render_compare(c,E,Y,gen,shell):
     for i in sorted(ids,key=lambda i:J[i]['name'].lower()):
         e=J[i]; u=[x for x in (Y[i].get('uncertainties') or []) if isinstance(x,str)][:2]
         b.append(f'<h3>{_e(e["name"])}</h3><p>{e["counted_performance_sources"]} counted independent performance source{"s" if e["counted_performance_sources"]!=1 else ""} '
-                 f'({e["peer_reviewed_counted_sources"]} peer-reviewed). Noted uncertainties from the <a href="/agents/{i}.html">entry page</a>:</p><ul>'
-                 +('</ul>' if not u else '<ul class="quoted">'+''.join(f'<li>{_e(x)}</li>' for x in u)+'</ul>'))
+                 f'({e["peer_reviewed_counted_sources"]} peer-reviewed). Noted uncertainties from the <a href="/agents/{i}.html">entry page</a>:</p>'
+                 +('' if not u else '<ul class="quoted">'+''.join(f'<li>{_e(x)}</li>' for x in u)+'</ul>'))
     for rid,txt in c.get('related',[]):
         b.append(f'<p>Related: <a href="/agents/{rid}.html">{_e(J[rid]["name"])}</a>. {_e(txt)}</p>')
     b.append(f'<h2 id="citation">Citation guidance</h2><p>{_e(CITATION)}</p>')
