@@ -157,3 +157,6 @@ Decision 0052 (citation backfill; OpenHands 12 counted / 7 peer-reviewed, Claude
 
 ## 2026-10-17 — Deploy note
 Decision 0053 (SWE-agent: Sifting the Noise added; 10 counted / 8 peer-reviewed; grade B to A; overall 58 and evidence 80 unchanged) was deployed to production as dpl_9TMnETSvFnBqakFdoXKjuhTduVSJ (commit 72cff28). Live check: all 4 changed public files match their manifest shas. Next: 0054 (Elicit), drafting privately. 0050 D7 (Browser Use TOCTOU) is still pending.
+
+## 2026-10-17 — Deploy note
+Decision 0054 (Elicit: Mazzali, Meliante and Spillias added; 10 counted / 9 peer-reviewed; scores unchanged, 68 / A) was deployed to production as dpl_GkmXTtP6Tcv8ovt8igmJJhf85YwD (commit 34a7fbf). Live check: both changed public files match their manifest shas. Next: 0055 (Browser Use, Atomicity for Agents), drafting privately.
