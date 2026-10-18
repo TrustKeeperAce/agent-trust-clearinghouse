@@ -3,22 +3,22 @@ slug: elicit
 category: research
 type: commercial (free Basic tier; paid Plus, Pro and enterprise tiers)
 homepage: https://elicit.com/
-summary: Elicit is a commercial AI research assistant that searches academic papers and supports systematic-review steps (screening and data extraction). Its literature search is weak. In independent tests, mostly in health research, Elicit searches found about 18–40% of the studies identified by traditional systematic searches. Its data extraction agreed with human reviewers about 77–92% of the time on the variables tested, with some errors and made-up details, and screening caught 71–78% of relevant studies in a 2026 preprint. Researchers concluded that Elicit can assist but not replace human reviewers. Most tests used paid tiers between 2023 and 2026. Overall score 68. Informational only; not a guarantee, endorsement, or certification.
+summary: Elicit is a commercial AI research assistant that searches academic papers and supports systematic-review steps (screening and data extraction). Its literature search is weak. In independent tests, mostly in health research, Elicit searches found about 18–40% of the studies identified by traditional systematic searches, and in one 2025 test only 8% of its results overlapped a Boolean search. Its data extraction agreed with human reviewers about 77–92% of the time in most tests but was accurate in only 51% of responses in a 2024 test, with some errors and made-up details; screening caught 71–100% of relevant studies in two recent tests. Researchers concluded that Elicit can assist but not replace human reviewers. Most tests used paid tiers between 2023 and 2026. Overall score 68. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 55
   disputes: 80
   adherence_to_limits: 55
   evidence_quality: 85
 factor_notes:
-  completion_rate: 'Search: average sensitivity 39.5% vs 94.5% for traditional searches (Lau et al.), 17.6% of included studies found (Bernard et al.), 1 of 59 results relevant (Vyas et al.), 158 of 5,285 studies (Wei et al.). Screening: sensitivity 0.71 (abstract) and 0.78 (full text), precision 0.38 (Wei et al.). Extraction: 92% precision/recall (Andersen et al.), 77–90% value matches (Lagisz et al.), 79% fully accurate (Wei et al.), mostly partial matches for complex variables (Bianchi et al.). Judgment call.'
+  completion_rate: 'Search: average sensitivity 39.5% vs 94.5% for traditional searches (Lau et al.), 17.6% of included studies found (Bernard et al.), 1 of 59 results relevant (Vyas et al.), 158 of 5,285 studies (Wei et al.). Screening: sensitivity 0.71 (abstract) and 0.78 (full text), precision 0.38 (Wei et al.). Extraction: 92% precision/recall (Andersen et al.), 77–90% value matches (Lagisz et al.), 79% fully accurate (Wei et al.), mostly partial matches for complex variables (Bianchi et al.). Mazzali et al. (Pro, Sept–Oct 2025): search overlapped 8% with a Boolean search; screening recall 90.9% (abstract) and 100% (full text). Meliante et al. (March 2024): search found 24.5% of included studies; extraction accurate in 51.4% of responses. Spillias et al. (January 2024): extraction quality above the acceptable threshold and best of three AI setups. Judgment call.'
   disputes: No legal or regulatory actions, security advisories or data incidents were found. Fabricated details found in tests (4 confabulations in Andersen et al.; a wrongly cited protocol in Bernard et al.) are scored under completion. Judgment call.
-  adherence_to_limits: Results varied between repeated runs (169–246 search results across three identical searches; extracted values matched 90% across accounts, but supporting quotes only 46%). It sometimes gave multiple answers where one was required and defaulted study location to the authors' country. Privacy and no-training commitments for uploaded files are vendor statements only. Judgment call.
-  evidence_quality: Seven independent performance sources, six peer-reviewed, one testing the current paid tier in 2025–2026. Samples are small and mostly from health sciences; one had free accounts from Elicit (partly independent). Two further studies were read from abstracts only and are not counted. Judgment call.
+  adherence_to_limits: Results varied between repeated runs (169–246 search results across three identical searches; extracted values matched 90% across accounts, but supporting quotes only 46%). It sometimes gave multiple answers where one was required and defaulted study location to the authors' country. Privacy and no-training commitments for uploaded files are vendor statements only. It answered nearly every extraction question even when the paper contained no relevant data (27% false positives; Spillias et al.), and the Systematic Reviews workflow was capped at 500 papers per search (Mazzali et al.). Judgment call.
+  evidence_quality: Ten independent performance sources, nine peer-reviewed, one testing the current paid tier in 2025–2026. Samples are small and mostly from health and environmental sciences; two tests date from early 2024, and several do not state the tier. One had free accounts from Elicit (partly independent). Two further studies were read from abstracts only and are not counted. Judgment call.
 overall_score: 68
 overall_note: 0.30*55 + 0.20*80 + 0.25*55 + 0.25*85 = 67.5; exact .5 rounds up (Decision 0010)
 evidence_grade: A
 independent_source_count:
-  performance: 7
+  performance: 10
   other: 2
 sources:
 - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12483133/
@@ -78,6 +78,27 @@ sources:
   peer_reviewed: false
   version_tested: Pro tier
   test_date: 2025-12 to 2026-04/05 (paper gives both)
+- url: https://doi.org/10.1186/s12874-026-02892-3
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Mazzali et al. (BMC Medical Research Methodology 2026; ATS Milano): Elicit Pro Systematic Reviews workflow, runs Sept–Oct 2025, umbrella review on air pollution; search overlapped only 8% with a Boolean search; screening recall 90.9% (title/abstract, precision 42.9%) and 100% (full text, precision 62.5%); quality-appraisal answers incorrect in 24.4% (general items) and 30.4% (additional items)'
+  peer_reviewed: true
+  version_tested: Pro (Systematic Reviews workflow)
+  test_date: 2025-09 to 2025-10
+- url: https://doi.org/10.2196/68592
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Meliante et al. (JMIR AI 2025; University of Rome Tor Vergata): four glaucoma systematic reviews, Elicit accessed March 2024; search found 26 of 106 included studies (24.5%); extraction accurate in 51.4% of 1,274 responses, imprecise 13.7%, missing 22.4%, incorrect 12.5%'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: 2024-03
+- url: https://doi.org/10.1186/s13750-025-00362-9
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Spillias et al. (Environmental Evidence 2025; CSIRO, University of Tasmania, ANU, UNSW): qualitative extraction from 33 fisheries-management papers, January 2024, high-accuracy mode; highest-rated of three AI setups and above the acceptable-quality threshold, but answered nearly every question even when the paper had no relevant data (kappa below 0; 27% false positives); responses averaged 306 words vs 85 for humans'
+  peer_reviewed: true
+  version_tested: high-accuracy mode
+  test_date: 2024-01
 - url: https://elicit.com/blog/how-we-evaluated-elicit-systematic-review
   kind: vendor or maintainer
   accessed: '2026-10-17'
@@ -90,14 +111,16 @@ uncertainties:
 - Most tests used paid tiers (Plus, Pro, Review/Systematic Review workflow); the free Basic tier was not tested separately.
 - Elicit changed often (credits to subscription in July 2024; high-accuracy default from May 2025; Systematic Review workflow); the oldest study used April 2023 searches.
 - 'Two studies (Hilkenmeier et al., O''Rourke et al.) are listed but not counted: abstract only, not fully reviewed (full text paywalled).'
-- Lagisz et al. used temporary free accounts provided by Elicit (no other Elicit involvement, per the authors); counted and labelled partly independent.
+- Lagisz et al. used temporary free accounts provided by Elicit (no other Elicit involvement, per the authors); counted and labelled partly independent. Spillias et al. include a UNSW author; there is no author overlap with Lagisz et al.
 - Studies are small and mostly in health sciences; results differ by task (search, screening, extraction).
 - The vendor's own evaluation (93.6% recall, 94–99% extraction accuracy) is not used.
 - The overall score is exactly 67.5; exact .5 rounds up (Decision 0010).
 - Grade A rests on one recent test (Wei et al., preprint) that states the Pro tier and the dates of use; Elicit publishes no version numbers.
+- Extraction results vary widely between studies (51–92%); the lowest result comes from a March 2024 test, before the high-accuracy default.
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet:
 - decisions/0017-elicit.md
 - decisions/0051-grade-a-basis-check.md
+- decisions/0054-elicit-backfill.md
 notes: Informational only; not a guarantee, endorsement, or certification.
