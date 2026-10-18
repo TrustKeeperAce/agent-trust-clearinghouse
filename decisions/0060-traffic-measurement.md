@@ -2,6 +2,8 @@
 
 **Status: APPROVED by Remington, 2026-10-18**, as recommended: D1a Google Search Console URL-prefix property verified by HTML file; D2a sitemap submitted; D3a no analytics script — Vercel built-in request statistics only (incl. AI-crawler totals); D4 monthly review on the 15th, aggregate totals only; D5 privacy-and-measurement section on methodology.html plus footer link; D6 no selling, no individual tracking, no ad tech; D7 traffic never used in scores or grades.
 
+**Verification file note (2026-10-18):** the first file, `public/google4abc2024514dc361.html`, was issued for the wrong Google account and has been removed. It is replaced by `public/google4c18d564fd1acb53.html` (content `google-site-verification: google4c18d564fd1acb53.html`), approved by Remington. Still no page HTML changes.
+
 
 **Status:** proposal. Nothing has been implemented, deployed, connected, or signed up for. Every D-item needs approval before any change.
 

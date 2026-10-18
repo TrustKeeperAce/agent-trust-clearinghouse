@@ -178,3 +178,6 @@ Decision 0059 (Browser Use: AgentTell, Privacy Practices of Browser Agents and B
 
 ## 2026-10-18 — Decision 0060 applied and deployed
 Decision 0060 (traffic measurement) approved as recommended (D1a–D7). Added "Privacy and measurement" section (#privacy) to methodology.html; footer "Privacy" link on all pages via scripts/apply_design.py; changelog row; Google Search Console verification file public/google4abc2024514dc361.html added exactly as issued by Search Console (no page HTML changes). No analytics script added; no score or grade changes. Commit 27380e1. Deployed to production as dpl_FD9tCYz2oyMFJ6uLDKycuz4NyJXQ via Vercel API (39 files uploaded, 45 in deployment). Live check: all 45 files match manifest-0060 sha1; verification file returns 200 text/html with exact content. Next: Remington clicks Verify in Search Console and submits sitemap.xml.
+
+## 2026-10-18 — Decision 0060 verification file replaced
+The first Search Console verification file (public/google4abc2024514dc361.html) was for the wrong Google account; removed and replaced with public/google4c18d564fd1acb53.html (exact Google content, no page HTML changes). decisions/0060 note updated. No score, grade or page content changes.
