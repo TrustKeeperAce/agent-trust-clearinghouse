@@ -224,6 +224,10 @@ for c in B.COMPARE:
     t=re.sub(r'<ul class="quoted">.*?</ul>','',open(os.path.join(P,c['path'])).read(),flags=re.S)
     for b in B.NEW_BANNED:
         if re.search(b,_vis(t),re.I): E(f"{c['path']}: {b!r} outside quoted uncertainties")
+for c in B.COMPARE:
+    t=open(os.path.join(P,c['path'])).read(); ev=t[t.index('<h2 id="evidence">'):t.index('<h2 id="citation">')]
+    for i in B.compare_ids(c,B.entries()):
+        if f'<p>{J[i]["counted_performance_sources"]} counted independent performance source' not in ev or f'Noted uncertainties from the <a href="/agents/{i}.html">' not in ev: E(f"{c['path']}: evidence block for {i} missing")
 print('citing: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
