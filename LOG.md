@@ -124,3 +124,6 @@ Decision 0041 (Aider, Coding agent, 52 / A) was deployed as dpl_H6mb7pW2w5i4XpZr
 
 ## 2026-10-17 — Deploy note
 Decision 0042 (AIDE, Data science agent, 60 / B; AutoKaggle, Data science agent, Insufficient evidence) was deployed as dpl_HhXDfsZPmbCSo3i1wozKiGyuJQfB (commit 6d11885). Live check: the aide, autokaggle and index pages return 200. Both entries carry "Citation check incomplete — recheck later". Batch 4 research continues privately with OpenAI Codex (0043).
+
+## 2026-10-17 — Deploy note
+Decision 0043 (OpenAI Codex, CLI and cloud agent, Coding agent, 62 / A) was deployed as dpl_72uQ91kcKnpkbBywXtpp26AP8inr (commit d9287fc). Live check: the openai-codex and index pages return 200. The entry carries "Citation check incomplete — recheck later". Batch 4 research continues privately with GitHub Copilot coding agent (0044).
