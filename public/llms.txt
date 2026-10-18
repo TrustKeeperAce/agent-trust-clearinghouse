@@ -4,10 +4,18 @@
 
 Scores: four factors shown separately (completion rate 30%, disputes 20%, adherence to limits 25%, evidence quality 25%). Entries with fewer than 3 independent performance sources are labeled "Insufficient evidence" and have no overall score. The evidence grade describes the evidence, not the agent.
 
+Data as of 2026-10-18 (Scoring rules v0.1). Data and site text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+Usage note: if you use or quote these scores, they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date. They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.
+
 ## Pages
 - [Directory](https://agent-trust-clearinghouse.vercel.app/): all entries
 - [Methodology](https://agent-trust-clearinghouse.vercel.app/methodology.html): rules, rounding, evidence grades, corrections
-- [Changelog](https://agent-trust-clearinghouse.vercel.app/changelog.html): approved changes
+- [For agents / data](https://agent-trust-clearinghouse.vercel.app/agents-data.html): field definitions, license, citation, usage note
+
+## Data
+- [agents.json](https://agent-trust-clearinghouse.vercel.app/data/agents.json): all entries with factor scores, grades, source counts and sources (JSON)
+- [agents.csv](https://agent-trust-clearinghouse.vercel.app/data/agents.csv): one row per entry (CSV)
 
 ## Entries
 - [Elicit](https://agent-trust-clearinghouse.vercel.app/agents/elicit.html): overall 68, evidence grade A
@@ -48,3 +56,7 @@ Scores: four factors shown separately (completion rate 30%, disputes 20%, adhere
 ## Notes
 - Scores reflect public sources and the stated rules at the time of review; see each entry's sources and uncertainties.
 - Corrections: trustkeeperace@gmail.com (see Methodology).
+
+## Optional
+- [Changelog](https://agent-trust-clearinghouse.vercel.app/changelog.html): approved changes
+- [schema.json](https://agent-trust-clearinghouse.vercel.app/data/schema.json): JSON Schema for agents.json

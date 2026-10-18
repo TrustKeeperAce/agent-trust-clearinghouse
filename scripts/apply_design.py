@@ -17,6 +17,8 @@ def page(f,t):
     t=t.replace('<p><strong>Citation check incomplete — recheck later.</strong></p>','<p class="note"><strong>Citation check incomplete — recheck later.</strong></p>')
     # footer privacy link (decision 0060)
     if 'href="/methodology.html#privacy"' not in t: t=t.replace(' · <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">Request a correction</a></p></footer>',' · <a href="/methodology.html#privacy">Privacy</a> · <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">Request a correction</a></p></footer>')
+    # footer data link (decision 0061)
+    if 'href="/agents-data.html">For agents / data</a>' not in t: t=t.replace(' · <a href="/methodology.html#privacy">Privacy</a>',' · <a href="/agents-data.html">For agents / data</a> · <a href="/methodology.html#privacy">Privacy</a>',1)
     return t
 def index(t):
     sc=len(re.findall(r'<span class="bar" style="--v:\d+">',t.split('id="insufficient"')[0]))

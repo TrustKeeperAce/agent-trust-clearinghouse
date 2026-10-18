@@ -1,0 +1,21 @@
+Agent Reputation & Trust Clearinghouse — License
+
+Scope
+- Data and site text: the directory data (agents/*.yaml and the generated exports in
+  public/data/), the decision packets in decisions/, and the text of the public site
+  (public/*.html, public/agents/*.html, public/llms.txt) are licensed under the
+  Creative Commons Attribution 4.0 International License (CC BY 4.0).
+  Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+  Summary: https://creativecommons.org/licenses/by/4.0/
+- Not covered: the scripts in scripts/, the stylesheet and the logo/favicon are not
+  licensed under CC BY 4.0 by this file; no license is granted for them here.
+- Third-party material: cited sources, quotations from them, and agent names and
+  trademarks belong to their respective owners and remain under their own terms.
+
+Attribution
+"Agent Reputation & Trust Clearinghouse, <entry URL>, data as of YYYY-MM-DD, CC BY 4.0."
+
+Disclaimer
+Informational only; not a guarantee, endorsement, or certification. Scores reflect public
+sources and the stated rules as of each entry's last_reviewed date. Provided as is, without
+warranties of any kind (see Section 5 of CC BY 4.0).

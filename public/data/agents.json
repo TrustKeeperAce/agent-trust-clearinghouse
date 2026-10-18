@@ -1,0 +1,4352 @@
+{
+ "dataset": {
+  "name": "Agent Reputation & Trust Clearinghouse",
+  "version": "Scoring rules v0.1; data 2026-10-18",
+  "generated": "2026-10-18",
+  "rules": "Scoring rules v0.1",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "canonical": "https://agent-trust-clearinghouse.vercel.app/agents-data.html",
+  "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
+  "corrections_contact": "trustkeeperace@gmail.com",
+  "entry_count": 34
+ },
+ "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
+ "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
+ "entries": [
+  {
+   "id": "elicit",
+   "name": "Elicit",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+   "homepage": "https://elicit.com/",
+   "category": "research",
+   "type": "commercial (free Basic tier; paid Plus, Pro and enterprise tiers)",
+   "scope": null,
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 55,
+    "disputes": 80,
+    "adherence_to_limits": 55,
+    "evidence_quality": 85
+   },
+   "overall_score": 68,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 10,
+    "other": 2
+   },
+   "counted_performance_sources": 10,
+   "peer_reviewed_counted_sources": 9,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0017-elicit.md",
+    "decisions/0051-grade-a-basis-check.md",
+    "decisions/0054-elicit-backfill.md"
+   ],
+   "sources": [
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12483133/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s12874-025-02528-y",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12257877/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12462964/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1017/rsm.2026.10080",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://journals.sagepub.com/doi/10.1177/08944393251404052",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13010132/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1177/01939459261451723",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364621v1",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://doi.org/10.1186/s12874-026-02892-3",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.2196/68592",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1186/s13750-025-00362-9",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://elicit.com/blog/how-we-evaluated-elicit-systematic-review",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://support.elicit.com/en/articles/14758043-privacy-for-uploaded-papers",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "google-deepmind-safe",
+   "name": "Google DeepMind SAFE (Search-Augmented Factuality Evaluator)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html",
+   "homepage": "https://github.com/google-deepmind/long-form-factuality",
+   "category": "verification",
+   "type": "research code (Apache-2.0 code; CC-BY other materials; bundled FActScore code MIT)",
+   "scope": null,
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 65,
+    "disputes": 80,
+    "adherence_to_limits": 60,
+    "evidence_quality": 60
+   },
+   "overall_score": 66,
+   "evidence_grade": "B-",
+   "independent_source_count": {
+    "performance": 4,
+    "other": 2
+   },
+   "counted_performance_sources": 4,
+   "peer_reviewed_counted_sources": 4,
+   "last_reviewed": "2026-10-16",
+   "decision_packets": [
+    "decisions/0009-google-deepmind-safe.md",
+    "decisions/0058-consensus-safe-julius.md"
+   ],
+   "sources": [
+    {
+     "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/937ae0e83eb08d2cb8627fe1def8c751-Paper-Conference.pdf",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/google-deepmind/long-form-factuality",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aclanthology.org/2025.findings-acl.161/",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2025.acl-long.1587/",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2024.findings-emnlp.552/",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2025.emnlp-main.905/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://venturebeat.com/ai/google-deepmind-unveils-superhuman-ai-system-that-excels-in-fact-checking-saving-costs-and-improving-accuracy",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://forklog.com/en/deepmind-unveils-ai-model-for-fact-checking/",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "openai-deep-research",
+   "name": "OpenAI Deep Research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+   "homepage": "https://openai.com/index/introducing-deep-research/",
+   "category": "research",
+   "type": "commercial",
+   "scope": null,
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 60,
+    "disputes": 65,
+    "adherence_to_limits": 60,
+    "evidence_quality": 75
+   },
+   "overall_score": 65,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 5,
+    "other": 2
+   },
+   "counted_performance_sources": 5,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0003-openai-deep-research.md",
+    "decisions/0057-deep-research-followups.md"
+   ],
+   "sources": [
+    {
+     "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.11763",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.21506",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://openreview.net/forum?id=AUaW6DS9si",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.15804",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03173",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.16075",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://theconversation.com/openais-new-deep-research-agent-is-still-just-a-fallible-tool-not-a-human-level-expert-249496",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.radware.com/blog/threat-intelligence/shadowleak/",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://web.archive.org/web/20260321044001/https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://openai.com/index/introducing-deep-research/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://help.openai.com/en/articles/10500283-deep-research",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "gemini-deep-research",
+   "name": "Gemini Deep Research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html",
+   "homepage": "https://gemini.google/overview/deep-research/",
+   "category": "research",
+   "type": "commercial",
+   "scope": null,
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 60,
+    "disputes": 65,
+    "adherence_to_limits": 55,
+    "evidence_quality": 72
+   },
+   "overall_score": 63,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 8,
+    "other": 2
+   },
+   "counted_performance_sources": 8,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0015-gemini-deep-research.md",
+    "decisions/0057-deep-research-followups.md"
+   ],
+   "sources": [
+    {
+     "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.21506",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.15804",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03173",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.08536",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.09688",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.17554",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.20891",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://www.safebreach.com/blog/invitation-is-all-you-need-hacking-gemini/",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.tenable.com/security/research/tra-2025-23",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://ai.google.dev/gemini-api/docs/deep-research",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "consensus",
+   "name": "Consensus",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/consensus.html",
+   "homepage": "https://consensus.app/",
+   "category": "research",
+   "type": "commercial (free tier; paid Pro, Deep, Teams and Enterprise plans)",
+   "scope": "Consensus academic search and answer engine (Quick, Pro and Deep modes). The Deep Search agent (July 2025) and Research Agent (2026) were not separately tested.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 80,
+    "adherence_to_limits": 50,
+    "evidence_quality": 75
+   },
+   "overall_score": 62,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 6,
+    "other": 1
+   },
+   "counted_performance_sources": 6,
+   "peer_reviewed_counted_sources": 6,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0022-consensus.md",
+    "decisions/0058-consensus-safe-julius.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1093/ehjdh/ztag125",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.2196/88766",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1007/s11695-026-08511-w",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1186/s12903-026-09298-z",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.20517/2347-9264.2024.99",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1097/GOX.0000000000007176",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1177/01939459261451723",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/elicit/elicit-paper-search-eval",
+     "kind": "excluded (competitor-run)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://consensus.app/home/blog/deep-search/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://consensus.app/home/blog/what-has-changed-in-consensus-summer-26/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://help.consensus.app/en/articles/10093291-security",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "openai-codex",
+   "name": "OpenAI Codex (CLI and cloud agent)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html",
+   "homepage": "https://github.com/openai/codex",
+   "category": "Coding agent",
+   "type": "Coding agent from OpenAI: open-source Codex CLI (Apache-2.0; GitHub openai/codex), IDE extension and desktop app, and the cloud Codex agent in ChatGPT; runs OpenAI models by default and other models via configuration",
+   "scope": "The Codex agent products launched from April 2025: Codex CLI (including headless exec), the IDE extension and desktop app, and the cloud Codex agent that opens pull requests, through Codex CLI rust-v0.163.0 (15 October 2026). The 2021 Codex model behind early GitHub Copilot, and GPT-Codex models run inside other harnesses, are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 60,
+    "disputes": 55,
+    "adherence_to_limits": 45,
+    "evidence_quality": 85
+   },
+   "overall_score": 62,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 26,
+    "other": 9
+   },
+   "counted_performance_sources": 26,
+   "peer_reviewed_counted_sources": 5,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0043-openai-codex.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2505.15216",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.11868",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://dl.acm.org/doi/full/10.1145/3793302.3793576",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.13859",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.22535",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.15003",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.12670",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.09072",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.07591",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.19799",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.18583",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.28122",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.10569",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03362",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.10261",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.06125",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.08366",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.10966",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.23574",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.26158",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.06411",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.33382",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.35143",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.12569",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.17046",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.07639",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59532",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55345",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61260",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54558",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19591",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14898",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.38983",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.18168",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.00917",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://openai.com/codex/",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.04915",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "openhands",
+   "name": "OpenHands (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+   "homepage": "https://github.com/OpenHands/OpenHands",
+   "category": "Coding agent",
+   "type": "Open-source coding-agent platform and Agent SDK (MIT licence, enterprise directory excepted), developed by All Hands AI; formerly OpenDevin",
+   "scope": "The open-source OpenHands agent (CodeAct agent, later the OpenHands Agent SDK) run with a language model chosen by the user, from the OpenDevin releases of 2024 through OpenHands 1.27.1 (12 October 2026). The hosted OpenHands Cloud service and the enterprise directory are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 55,
+    "adherence_to_limits": 55,
+    "evidence_quality": 85
+   },
+   "overall_score": 61,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 12,
+    "other": 6
+   },
+   "counted_performance_sources": 12,
+   "peer_reviewed_counted_sources": 7,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0037-openhands.md",
+    "decisions/0049-susvibes-openhands.md",
+    "decisions/0052-citation-backfill.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2410.07095",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2410.05080",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.18993",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3786167.3788410",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.15229",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.15846",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.03194",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.13995",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.18583",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.18206",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.03262",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832100",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33718",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19022",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/openhands-the-lethal-trifecta-strikes-again/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.openhands.dev/blog/mitigating-prompt-injection-attacks-in-software-agents",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2504.02605",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2407.16741",
+     "kind": "vendor",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.06134",
+     "kind": "not counted (affiliated)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.swebench.com/",
+     "kind": "not counted (leaderboard)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "aide",
+   "name": "AIDE (Weco AI, open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aide.html",
+   "homepage": "https://github.com/WecoAI/aideml",
+   "category": "Data science agent",
+   "type": "Open-source machine-learning engineering agent (MIT licence) from Weco AI; PyPI aideml, GitHub WecoAI/aideml; runs with a language model chosen by the user",
+   "scope": "The open-source AIDE agent (aideml), which searches a tree of candidate Python solutions for a machine-learning task, from v0.1.x (April 2024) through v0.2.2 (5 November 2025) and the main branch (last commit 16 October 2026). Re-implementations of AIDE inside other frameworks (for example Meta's AIRA-dojo) and Weco's commercial platform are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 70,
+    "adherence_to_limits": 45,
+    "evidence_quality": 80
+   },
+   "overall_score": 60,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 13,
+    "other": 6
+   },
+   "counted_performance_sources": 13,
+   "peer_reviewed_counted_sources": 6,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0042-aide-autokaggle.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2410.07095",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.09904",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2504.04310",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.01822",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.30047",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2503.23314",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.13291",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2502.00964",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.02660",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.03985",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.16805",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.04971",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.14115",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.02554",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.07782",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.05930",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.17373",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.08511",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/WecoAI/aideml/issues/100",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2502.13138",
+     "kind": "vendor",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "claude-research",
+   "name": "Claude Research",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html",
+   "homepage": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+   "category": "research",
+   "type": "commercial (paid Claude plans: Pro, Max, Team, Enterprise)",
+   "scope": "The Research mode in Claude's web, desktop and mobile apps (launched April 2025). Plain Claude models used via the API are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 75,
+    "adherence_to_limits": 50,
+    "evidence_quality": 60
+   },
+   "overall_score": 58,
+   "evidence_grade": "B-",
+   "independent_source_count": {
+    "performance": 4,
+    "other": 2
+   },
+   "counted_performance_sources": 4,
+   "peer_reviewed_counted_sources": 3,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0021-claude-research.md"
+   ],
+   "sources": [
+    {
+     "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.21506",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.09688",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://doi.org/10.1111/jdv.70035",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://www.oasis.security/blog/claude-ai-prompt-injection-data-exfiltration-vulnerability",
+     "kind": "other (Claude-wide security finding, not specific to Research)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.mbgsec.com/archive/2025-10-30-claude-pirate-abusing-anthropic-s-file-api-for-data-exfiltration-embrace-the-red/",
+     "kind": "other (Claude-wide security finding, not specific to Research)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://claude.com/resources/articles/research",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.anthropic.com/claude-opus-5-5",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "swe-agent",
+   "name": "SWE-agent (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+   "homepage": "https://github.com/SWE-agent/SWE-agent",
+   "category": "Coding agent",
+   "type": "Open-source coding-agent framework (MIT licence) from Princeton University and Stanford University researchers; PyPI/GitHub SWE-agent",
+   "scope": "The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team, and the team's EnIGMA security variant are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 45,
+    "disputes": 55,
+    "adherence_to_limits": 55,
+    "evidence_quality": 80
+   },
+   "overall_score": 58,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 10,
+    "other": 6
+   },
+   "counted_performance_sources": 10,
+   "peer_reviewed_counted_sources": 8,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0038-swe-agent.md",
+    "decisions/0048-susvibes-swe-agent.md",
+    "decisions/0053-swe-agent-sifting.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2406.12952",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.23419",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.16941",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.18993",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.11791",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.18470",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.35199",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.00692",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.03262",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832100",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75482",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2410.06992",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aclanthology.org/2025.acl-long.189/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2504.08703",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.07639",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.00872",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2405.15793",
+     "kind": "vendor",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.swebench.com/",
+     "kind": "not counted (affiliated leaderboard)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://hal.cs.princeton.edu/",
+     "kind": "not counted (leaderboard)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "github-copilot-coding-agent",
+   "name": "GitHub Copilot coding agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html",
+   "homepage": "https://docs.github.com/en/copilot/concepts/agents/coding-agent",
+   "category": "Coding agent",
+   "type": "Cloud coding agent from GitHub (Microsoft): assigned an issue or task, it works in a GitHub Actions environment and opens a pull request for review; proprietary; runs models chosen by GitHub or the user",
+   "scope": "The cloud Copilot coding agent that opens pull requests (public preview May 2025; pull requests authored as copilot-swe-agent). Copilot code completions, Copilot Chat and agent mode in the IDE, Copilot CLI, Copilot code review, and the 2021 Codex-era Copilot studies are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 45,
+    "disputes": 60,
+    "adherence_to_limits": 50,
+    "evidence_quality": 75
+   },
+   "overall_score": 57,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 12,
+    "other": 6
+   },
+   "counted_performance_sources": 12,
+   "peer_reviewed_counted_sources": 5,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0044-github-copilot-coding-agent.md"
+   ],
+   "sources": [
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3793302.3793576",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.15195",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793611",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793581",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1016/j.infsof.2026.108333",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.15003",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.04226",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.21832",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.37985",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.26847",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.17598",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.12428",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.18168",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22721",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.21426",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.22534",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.29204",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/search/results?query=GitHub+Copilot",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/features/copilot",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.00917",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.00101",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "storm",
+   "name": "STORM / Co-STORM (knowledge-storm library)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/storm.html",
+   "homepage": "https://github.com/stanford-oval/storm",
+   "category": "Research",
+   "type": "open source (MIT), PyPI knowledge-storm; Stanford hosted research preview (storm.genie.stanford.edu) not covered",
+   "scope": "The open-source knowledge-storm library (v1.0.0 to 1.1.1, Sept 2024 to Sept 2025), covering the STORM (automatic) and Co-STORM (human-in-the-loop) modes, run with a language model and search engine chosen by the user. The 2024 NAACL code branch is historical context. The hosted research preview is not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 55,
+    "adherence_to_limits": 45,
+    "evidence_quality": 75
+   },
+   "overall_score": 56,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 7,
+    "other": 2
+   },
+   "counted_performance_sources": 7,
+   "peer_reviewed_counted_sources": 5,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0026-storm.md"
+   ],
+   "sources": [
+    {
+     "url": "https://aclanthology.org/2025.emnlp-main.1254/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2025.emnlp-main.50/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2025.acl-long.1423/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2026.findings-acl.296/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2026.acl-long.723/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.20122",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.20033",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://github.com/stanford-oval/storm/issues/375",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/stanford-oval/storm/blob/fb951af/knowledge_storm/utils.py",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2402.14207",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2408.15232",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2503.07170",
+     "kind": "not counted (reused developer figures)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "claude-code",
+   "name": "Claude Code (Anthropic)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+   "homepage": "https://code.claude.com/docs/en/overview",
+   "category": "Coding agent",
+   "type": "Commercial agentic coding tool from Anthropic (terminal CLI, npm @anthropic-ai/claude-code, with IDE extensions); used with a paid Claude plan or API key; source not open",
+   "scope": "The Claude Code agent (CLI and headless mode), versions 1.0 to 2.1.x (latest 2.1.302, 16 Oct 2026). Claude models used in other scaffolds, the Claude Agent SDK, Claude Desktop/Cowork and Claude Research (a separate entry) are not covered. Several studies ran Claude Code with non-Anthropic models.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 45,
+    "adherence_to_limits": 40,
+    "evidence_quality": 85
+   },
+   "overall_score": 55,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 17,
+    "other": 7
+   },
+   "counted_performance_sources": 17,
+   "peer_reviewed_counted_sources": 6,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0040-claude-code.md",
+    "decisions/0049-susvibes-openhands.md",
+    "decisions/0052-citation-backfill.md"
+   ],
+   "sources": [
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3832267",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://dl.acm.org/doi/full/10.1145/3798166",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://dl.acm.org/doi/full/10.1145/3793302.3793576",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.15229",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.22535",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.09072",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.19799",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.12670",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.07591",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.18583",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.18206",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.26724",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.10569",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.04978",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.03262",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.33382",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.35143",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.11868",
+     "kind": "excluded (developer-affiliated author)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://github.com/anthropics/claude-code/security/advisories",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://conf.researchr.org/details/fse-2026/fse-2026-industry-papers/12/Engineering-Pitfalls-in-AI-Coding-Tools-An-Empirical-Study-of-Bugs-in-Claude-Code-C",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://conf.researchr.org/details/icse-2026/agent-2026-papers/22/Decoding-the-Configuration-of-AI-Coding-Agents-Insights-from-Claude-Code-Projects",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3793302.3793605",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.21642",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.anthropic.com/engineering",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "perplexity",
+   "name": "Perplexity",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+   "homepage": "https://www.perplexity.ai/",
+   "category": "verification",
+   "type": "commercial",
+   "scope": "Citation-backed answering and source attribution only; not a general product review.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 55,
+    "disputes": 35,
+    "adherence_to_limits": 45,
+    "evidence_quality": 75
+   },
+   "overall_score": 54,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 6,
+    "other": 3
+   },
+   "counted_performance_sources": 6,
+   "peer_reviewed_counted_sources": 5,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0004-perplexity.md",
+    "decisions/0056-perplexity-followup.md"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://aclanthology.org/2023.findings-emnlp.467/",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.19253",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/html/2507.05495v2",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://openreview.net/forum?id=AUaW6DS9si",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.630270/gov.uscourts.nysd.630270.65.0.pdf",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.pacermonitor.com/public/case/60086917/Encyclopaedia_Britannica,_Inc_et_al_v_Perplexity_AI,_Inc",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.654190/gov.uscourts.nysd.654190.3.0.pdf",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "gpt-researcher",
+   "name": "GPT Researcher",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html",
+   "homepage": "https://github.com/assafelovic/gpt-researcher",
+   "category": "research",
+   "type": "open-source",
+   "scope": null,
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 55,
+    "disputes": 40,
+    "adherence_to_limits": 50,
+    "evidence_quality": 65
+   },
+   "overall_score": 53,
+   "evidence_grade": "B-",
+   "independent_source_count": {
+    "performance": 3,
+    "other": 2
+   },
+   "counted_performance_sources": 3,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-16",
+   "decision_packets": [
+    "decisions/0002-gpt-researcher.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2505.19253",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://www.cs.cmu.edu/~callan/Papers/ictir26-Jo%C3%A3o_Coelho.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3805713.3820409",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.05495",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3774905.3793116",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.16075",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5625",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5630",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5631",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5632",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5633",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-37006",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/advisories/GHSA-8j86-h8gg-797p",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/assafelovic/gpt-researcher/pull/1820",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/assafelovic/gpt-researcher/blob/main/SECURITY.md",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/assafelovic/gpt-researcher/blob/main/deep_agents/BENCHMARK.md",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://docs.gptr.dev/docs/gpt-researcher/gptr/config",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/assafelovic/gpt-researcher",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "aider",
+   "name": "Aider (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aider.html",
+   "homepage": "https://github.com/Aider-AI/aider",
+   "category": "Coding agent",
+   "type": "Open-source terminal AI pair-programming tool (Apache-2.0) maintained by Paul Gauthier and contributors; PyPI aider-chat, GitHub Aider-AI/aider",
+   "scope": "The open-source Aider command-line tool (aider-chat), run with a language model chosen by the user, from v0.82.0 (April 2025) through v0.86.2 (12 February 2026) and the main branch (last commit 22 May 2026). The Aider leaderboards (Polyglot, code editing, refactoring) are run by the maintainer and are not counted.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 40,
+    "disputes": 45,
+    "adherence_to_limits": 45,
+    "evidence_quality": 80
+   },
+   "overall_score": 52,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 8,
+    "other": 4
+   },
+   "counted_performance_sources": 8,
+   "peer_reviewed_counted_sources": 6,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0041-aider.md",
+    "decisions/0051-grade-a-basis-check.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2506.11791",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.18993",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.13859",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2504.21205",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.02262",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.22097",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.22952",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.04518",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85674",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10175",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.04921",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.29889",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aider.chat/docs/leaderboards/",
+     "kind": "not counted (leaderboard)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "browser-use",
+   "name": "Browser Use (open-source library)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "homepage": "https://github.com/browser-use/browser-use",
+   "category": "browser/web agent",
+   "type": "open source (MIT); commercial Cloud service not covered",
+   "scope": null,
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 40,
+    "disputes": 50,
+    "adherence_to_limits": 30,
+    "evidence_quality": 85
+   },
+   "overall_score": 51,
+   "evidence_grade": "A",
+   "independent_source_count": {
+    "performance": 11,
+    "other": 3
+   },
+   "counted_performance_sources": 11,
+   "peer_reviewed_counted_sources": 3,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0016-browser-use.md",
+    "decisions/0055-browser-use-toctou.md",
+    "decisions/0059-browser-use-remaining.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2504.01382",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.11977",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://hal.cs.princeton.edu/online_mind2web",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.08392",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.16565",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.02456",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.17318",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.13076",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.00476",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32915",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.07725",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.35814",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://github.com/advisories/GHSA-x39x-9qw5-ghrf",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.cve.org/CVERecord?id=CVE-2025-47241",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/browser-use/browser-use/pull/5241",
+     "kind": "independent other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://browser-use.com/posts/sota-technical-report",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://browser-use.com/posts/online-mind2web-benchmark",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "devin",
+   "name": "Devin (Cognition)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/devin.html",
+   "homepage": "https://devin.ai",
+   "category": "Coding agent",
+   "type": "Proprietary cloud coding agent from Cognition AI: works in its own cloud virtual machine with shell, editor and browser, takes tasks from the web app, Slack, Jira or GitHub, and opens pull requests",
+   "scope": "The Devin cloud agent from its March 2024 announcement through Devin 2.x (Devin 2.0 released April 2025). No counted study states which Devin version it used. Windsurf (acquired by Cognition in July 2025), DeepWiki and other Cognition products are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 40,
+    "disputes": 45,
+    "adherence_to_limits": 40,
+    "evidence_quality": 75
+   },
+   "overall_score": 50,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 12,
+    "other": 7
+   },
+   "counted_performance_sources": 12,
+   "peer_reviewed_counted_sources": 5,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0045-devin.md"
+   ],
+   "sources": [
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3793302.3793576",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.15195",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793611",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793581",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1016/j.infsof.2026.108333",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.15003",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.04226",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.21832",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.37985",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.17598",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.12428",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://www.answer.ai/posts/2025-01-08-devin.html",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://deccan-ai.webflow.io/research/anthar-study-evaluating-ai-coding-agents-beyond-benchmarks",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56083",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-90",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=UTS2Hz96HYQ",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.18168",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22721",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.cognition.ai/blog/introducing-devin",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "agent-s",
+   "name": "Agent S (open-source framework, S2 to S3)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html",
+   "homepage": "https://github.com/simular-ai/Agent-S",
+   "category": "Computer-use agent",
+   "type": "open source (Apache-2.0), PyPI gui-agents; Simular commercial products (Simular app, Sai, Simular Cloud, Simular API) not covered",
+   "scope": "Open-source Agent S framework (gui-agents 0.2.x to 0.3.2: Agent S2, S2.5, S3) running with a language model and grounding model chosen by the user. Agent S1 (2024) is historical context only. Results depend heavily on the model used.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 45,
+    "disputes": 45,
+    "adherence_to_limits": 35,
+    "evidence_quality": 70
+   },
+   "overall_score": 49,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 8,
+    "other": 5
+   },
+   "counted_performance_sources": 8,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0025-agent-s.md",
+    "decisions/0050-agent-s-safety-test.md"
+   ],
+   "sources": [
+    {
+     "url": "https://aclanthology.org/2026.acl-long.1021/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.16042",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22557",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.02995",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.20650",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.26506",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2502.08047",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.00476",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://os-world.github.io/",
+     "kind": "other (maintainer-verified leaderboard, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/simular-ai/Agent-S/issues/146",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84885",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://greenlitbooks.com/field-notes/is-agent-s-safe",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/simular-ai/Agent-S/blob/15776a8/gui_agents/s3/cli_app.py",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.02250",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2504.00906",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2410.08164",
+     "kind": "historical context",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.simular.ai/articles/sai-tops-osworld-2-0",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "data-interpreter",
+   "name": "Data Interpreter (MetaGPT, open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html",
+   "homepage": "https://github.com/FoundationAgents/MetaGPT",
+   "category": "Data science agent",
+   "type": "Open-source agent in the MetaGPT framework (MIT licence), FoundationAgents (formerly DeepWisdom); PyPI metagpt",
+   "scope": "The open-source Data Interpreter role in MetaGPT (metagpt/roles/di), run with a language model chosen by the user; MetaGPT releases through 0.8.2 (9 March 2025). MetaGPT's other roles and the commercial MGX / MetaGPT X service are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 45,
+    "disputes": 35,
+    "adherence_to_limits": 45,
+    "evidence_quality": 70
+   },
+   "overall_score": 49,
+   "evidence_grade": "B",
+   "independent_source_count": {
+    "performance": 9,
+    "other": 6
+   },
+   "counted_performance_sources": 9,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0029-data-interpreter.md"
+   ],
+   "sources": [
+    {
+     "url": "https://aclanthology.org/2025.emnlp-main.58/",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.25084",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.03841",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32528",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.01285",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2503.23314",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.24339",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.26724",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.08661",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4516",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19058",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-026/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23750",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19060",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/FoundationAgents/MetaGPT",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aclanthology.org/2025.findings-acl.1016/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.00856",
+     "kind": "not counted (developer co-author)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.09245",
+     "kind": "not counted (figures copied)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "perplexity-comet",
+   "name": "Perplexity Comet (agentic browser)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html",
+   "homepage": "https://www.perplexity.ai/comet",
+   "category": "Browser/web agent",
+   "type": "Commercial AI browser (Chromium-based) with built-in Comet Assistant agent, Perplexity AI",
+   "scope": "The Comet browser and its Comet Assistant agent (desktop; launched 9 July 2025, free to all users from 2 October 2025), with whichever model Comet selects or the user picks. The Perplexity answer engine and its Deep Research mode are covered by the separate Perplexity entry.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 40,
+    "disputes": 40,
+    "adherence_to_limits": 30,
+    "evidence_quality": 55
+   },
+   "overall_score": 41,
+   "evidence_grade": "B-",
+   "independent_source_count": {
+    "performance": 4,
+    "other": 6
+   },
+   "counted_performance_sources": 4,
+   "peer_reviewed_counted_sources": 1,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0028-perplexity-comet.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2608.08392",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.30604",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.07725",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://www.hcaptcha.com/blog/report-browser-agent-safety-is-an-afterthought-for-vendors",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://brave.com/blog/comet-prompt-injection/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/commetjacking-attack-tricks-comet-browser-into-stealing-emails/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://guard.io/labs/scamlexity-we-put-agentic-ai-browsers-to-the-test-they-clicked-they-paid-they-failed",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.07153",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.05509",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/08/04/26-1444.pdf",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/",
+     "kind": "not counted (paid by vendor)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.20597",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.perplexity.ai/hub/blog/mitigating-prompt-injection-in-comet",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2512.07828",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "autokaggle",
+   "name": "AutoKaggle (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html",
+   "homepage": "https://github.com/multimodal-art-projection/AutoKaggle",
+   "category": "Data science agent",
+   "type": "Open-source multi-agent framework (Apache-2.0) for Kaggle-style data-science competitions from the Multimodal Art Projection (M-A-P) research community; GitHub multimodal-art-projection/AutoKaggle",
+   "scope": "The open-source AutoKaggle framework as released in October-December 2024 (no tagged releases; last commit 4 December 2024).",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 2,
+    "other": 0
+   },
+   "counted_performance_sources": 2,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0042-aide-autokaggle.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1002/sta4.70126",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2503.23314",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2410.20424",
+     "kind": "vendor",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "chatgpt-work",
+   "name": "ChatGPT Work (agent and cloud-browser tasks)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html",
+   "homepage": "https://help.openai.com/en/articles/6825453-chatgpt-release-note",
+   "category": "browser/web agent",
+   "type": "commercial",
+   "scope": "OpenAI's current agent for multi-step tasks and its cloud browser (launched July 2026). Successor to Operator (Jan–Jul 2025) and ChatGPT agent (Jul 2025–Aug 2026), both retired. Deep research reports are covered by the separate OpenAI Deep Research entry.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 0,
+    "other": 2
+   },
+   "counted_performance_sources": 0,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0018-chatgpt-work.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2504.01382",
+     "kind": "historical context (earlier product, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.21506",
+     "kind": "historical context (earlier product, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2503.07919",
+     "kind": "historical context (earlier product, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.29020",
+     "kind": "historical context (earlier product, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.10723",
+     "kind": "historical context (earlier product, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/chatgpt-operator-prompt-injection-exploits/",
+     "kind": "other (security test of earlier product)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://splx.ai/blog/chatgpt-agent-solves-captcha",
+     "kind": "other (security test of earlier product)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://openai.com/index/introducing-chatgpt-agent/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://help.openai.com/en/articles/11752874-chatgpt-agent",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "clay",
+   "name": "Clay",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/clay.html",
+   "homepage": "https://www.clay.com/",
+   "category": "data enrichment",
+   "type": "commercial",
+   "scope": "Claygent (AI web-research agent) and enrichment features",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 0,
+    "other": 0
+   },
+   "counted_performance_sources": 0,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-16",
+   "decision_packets": [
+    "decisions/0006-clay.md"
+   ],
+   "sources": [
+    {
+     "url": "https://www.clay.com/blog/introducing-gpt-5-in-claygent",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://university.clay.com/docs/data-test-methodology-personal-emails",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://university.clay.com/docs/plans-and-billing",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://university.clay.com/docs/ai-tokens",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://developers.clay.com/public-api/rate-limits",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.clay.com/dpa",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.clay.com/privacy",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://openai.com/index/clay/",
+     "kind": "customer or partner",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.zenml.io/llmops-database/production-evaluation-and-data-foundations-for-go-to-market-agents",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.linkedin.com/posts/samholding_i-tested-clays-3-ai-research-agents-for-activity-7265271012445900800-njpL",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.linkedin.com/posts/dan-m-rosenthal_clay-just-released-their-new-web-scraper-activity-7219339139194781699-qldw",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.linkedin.com/posts/imran-izham-01b4742ab_i-activity-7487468031762374657-RGU5",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://ai.g2.com/evaluations/categories/ai-sdr/clay-claygent",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.trustpilot.com/review/clay.com",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "fellou",
+   "name": "Fellou (agentic browser)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/fellou.html",
+   "homepage": "https://fellou.ai/",
+   "category": "Browser/web agent",
+   "type": "Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope",
+   "scope": "The Fellou desktop browser and its built-in agent (\"Deep Action\", \"Deep Search\"), Fellou 2.0 (3 June 2025) onward. Fellou says versions before 2.0 no longer work. The open-source Eko framework is not covered.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 0,
+    "other": 5
+   },
+   "counted_performance_sources": 0,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0031-fellou.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2608.08392",
+     "kind": "excluded (vendor-affiliated author)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://brave.com/blog/unseeable-prompt-injections/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.theregister.com/software/2025/10/28/ai-browsers-wide-open-to-attack-via-prompt-injection/327406",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://layerxsecurity.com/blog/bioshocking-ai-gaming-the-ai-browser-and-escaping-its-guardrails/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.09309",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.05509",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://fellou.ai/blog/fellou-v2-launch/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://fellou.ai/blog/eko20-launch/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://fellou.ai/policy",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "julius-ai",
+   "name": "Julius AI",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+   "homepage": "https://julius.ai/",
+   "category": "simple analysis",
+   "type": "commercial",
+   "scope": "AI data-analysis agent",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 2,
+    "other": 4
+   },
+   "counted_performance_sources": 2,
+   "peer_reviewed_counted_sources": 1,
+   "last_reviewed": "2026-10-16",
+   "decision_packets": [
+    "decisions/0007-julius-ai.md",
+    "decisions/0058-consensus-safe-julius.md"
+   ],
+   "sources": [
+    {
+     "url": "https://www.mdpi.com/2076-3417/16/2/669",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18061/ojsm.6575",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-024-00214-7",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://openalex.org/W7164553025",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://casrai.org/guides/julius-ai-for-research-data-analysis",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1006&context=making-waves_reu",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://rows.com/blog/post/ai-spreadsheet-benchmark",
+     "kind": "competitor",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.basedash.com/blog/ai-data-analyst-benchmark-bi-bench-results",
+     "kind": "competitor",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://dabench.com/tools/julius/",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aicustomerresearch.beehiiv.com/p/september2024",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/docs/get-started/privacy-and-data-security",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/security",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/privacy-policy",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/docs/get-started/files",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/docs/billing/credits-overview",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "kimi-researcher",
+   "name": "Kimi Researcher (Kimi Deep Research)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
+   "homepage": "https://www.kimi.ai/help/deep-research/deep-research-overview",
+   "category": "research",
+   "type": "commercial (Kimi membership credits)",
+   "scope": "Moonshot AI's Deep Research mode in Kimi, powered by the Kimi-Researcher model (launched June 2025).",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 2,
+    "other": 1
+   },
+   "counted_performance_sources": 2,
+   "peer_reviewed_counted_sources": 1,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0024-kimi-researcher.md"
+   ],
+   "sources": [
+    {
+     "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.17458",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://oecd.ai/en/incidents/2026-04-21-8c79",
+     "kind": "other (privacy incident, Kimi-wide)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.13309",
+     "kind": "not counted (vendor numbers reused)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://moonshotai.github.io/Kimi-Researcher/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.kimi.ai/help/deep-research/deep-research-overview",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "loki",
+   "name": "Loki (Libr-AI OpenFactVerification, open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/loki.html",
+   "homepage": "https://github.com/Libr-AI/OpenFactVerification",
+   "category": "Verification",
+   "type": "Open-source fact-verification tool (MIT licence), Libr-AI; GitHub Libr-AI/OpenFactVerification; not on PyPI",
+   "scope": "The open-source Loki library/CLI/web app (v0.0.1 April 2024 to v0.0.3 May 2024, main branch to October 2024), run with a language model (OpenAI, Anthropic or local) and search API (Serper or Google) chosen by the user. The hosted demo (loki.librai.tech) is not covered.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 2,
+    "other": 1
+   },
+   "counted_performance_sources": 2,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0030-loki-openfactcheck.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2603.05786",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.20032",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://davidamitchell.github.io/Research/research/2026-05-06-loki-fact-checking-journalists-moderation.html",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aclanthology.org/2025.coling-demos.4/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/Libr-AI/OpenFactVerification",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "manus",
+   "name": "Manus",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/manus.html",
+   "homepage": "https://manus.im/",
+   "category": "research",
+   "type": "commercial (free tier with credits; paid plans)",
+   "scope": "Manus, a general-purpose AI agent from Butterfly Effect for research and multi-step digital tasks. The current product is Manus 2.0 (28 September 2026), which the vendor describes as a new architecture.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 0,
+    "other": 3
+   },
+   "counted_performance_sources": 0,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0020-manus.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2510.14240",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.09688",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.08392",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1038/s41433-025-04138-w",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.3389/froh.2025.1686090",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1080/07853890.2026.2664903",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/03/11/1113133/manus-ai-review/",
+     "kind": "other (hands-on journalism, earlier version)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/",
+     "kind": "other (security test of earlier version)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email",
+     "kind": "other (security test)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://manus.im/blog/introducing-manus-2-0",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://help.manus.im/en/articles/16147831-service-change-overview-what-s-happening-and-am-i-affected",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://manus.im/blog/manus-resumes-independent-operations",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "open-interpreter",
+   "name": "Open Interpreter",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html",
+   "homepage": "https://github.com/openinterpreter/openinterpreter",
+   "category": "simple analysis",
+   "type": "open-source (Apache-2.0)",
+   "scope": "Local code-executing agent for data analysis and automation",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 0,
+    "other": 7
+   },
+   "counted_performance_sources": 0,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-16",
+   "decision_packets": [
+    "decisions/0008-open-interpreter.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2602.19547",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://mr-sarthakgupta.github.io/redcode-evaluation-framework.html",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/alexbecker/open-interpreter-prompt-injection",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.18223",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2411.07781",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/openinterpreter/openinterpreter/issues/1767",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/openinterpreter/open-interpreter/pull/1691",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/openinterpreter/openinterpreter/pull/1741",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/openinterpreter/openinterpreter/security/advisories",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/openinterpreter/openinterpreter",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://docs.openinterpreter.com/safety/introduction",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/endolith/open-interpreter",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://raw.githubusercontent.com/endolith/open-interpreter/main/docs/SAFE_MODE.md",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "openfactcheck",
+   "name": "OpenFactCheck (open-source framework)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html",
+   "homepage": "https://github.com/openfactcheck-research/openfactcheck",
+   "category": "Verification",
+   "type": "Open-source factuality framework (PyPI openfactcheck; repository licence AGPL-3.0, PyPI metadata says GPL-3.0), MBZUAI researchers; GitHub openfactcheck-research/openfactcheck",
+   "scope": "The open-source OpenFactCheck library (PyPI 0.0.17 July 2024 up to 1.1.2; the 2.0 alpha series, 2.0.0a1 to 2.0.0a10 in 2026, is not assessed): CustChecker/ResponseEval (configurable fact-checker built from FacTool, Factcheck-GPT and other modules), LLMEval and CheckerEval. Run with user-chosen models and retrievers. The hosted web app is not covered.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 0,
+    "other": 2
+   },
+   "counted_performance_sources": 0,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0030-loki-openfactcheck.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1609/aaai.v40i48.42355",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://davidamitchell.github.io/Research/research/2026-05-06-openfactcheck-ai-fact-checking-pipeline.html",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aclanthology.org/2025.coling-main.755/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aclanthology.org/2024.emnlp-demo.23/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/openfactcheck-research/openfactcheck",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "pactum",
+   "name": "Pactum",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/pactum.html",
+   "homepage": "https://pactum.com/",
+   "category": "negotiation",
+   "type": "commercial",
+   "scope": null,
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 1,
+    "other": 4
+   },
+   "counted_performance_sources": 1,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-16",
+   "decision_packets": [
+    "decisions/0005-pactum.md"
+   ],
+   "sources": [
+    {
+     "url": "https://bth.diva-portal.org/smash/get/diva2:2063902/FULLTEXT01.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://hbr.org/2022/11/how-walmart-automated-supplier-negotiations",
+     "kind": "customer or partner",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://hbsp.harvard.edu/product/TB0756-PDF-ENG",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.bloomberg.com/news/articles/2023-04-26/walmart-uses-pactum-ai-tools-to-handle-vendor-negotiations",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/chatbot-negotiations-what-can-ai-do-for-you/",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.arkansasonline.com/news/2023/may/04/walmart-now-using-ai-for-some-vendor-deals/",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://spectrum.ieee.org/ai-contracts",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.bbc.com/news/business-55738540",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://hofstralawreview.org/wp-content/uploads/2025/03/AA.3.Steward.pdf",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://pactum.com/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "skyvern",
+   "name": "Skyvern (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+   "homepage": "https://github.com/Skyvern-AI/skyvern",
+   "category": "Browser/web agent",
+   "type": "open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered",
+   "scope": "The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 2,
+    "other": 3
+   },
+   "counted_performance_sources": 2,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0027-skyvern.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2601.07263",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.08406",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.20910",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49619",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82447",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.29020",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.skyvern.com/blog/skyvern-2-0-webvoyager-benchmark-results/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://webbench.ai/",
+     "kind": "excluded (vendor co-built)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://eval.skyvern.com/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "ui-tars-desktop",
+   "name": "UI-TARS Desktop (ByteDance, open-source app)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html",
+   "homepage": "https://github.com/bytedance/UI-TARS-desktop",
+   "category": "Computer-use agent",
+   "type": "Open-source (Apache-2.0) desktop app (Electron) and Agent TARS CLI/Web UI from ByteDance; free; runs with UI-TARS or Seed models chosen by the user",
+   "scope": "The UI-TARS Desktop app and Agent TARS from the same repository, v0.2.x to v0.3.1 (8 Oct 2026). The UI-TARS models on their own are not covered; model-only results are context.",
+   "status": "Insufficient evidence",
+   "scores": {
+    "completion_rate": null,
+    "disputes": null,
+    "adherence_to_limits": null,
+    "evidence_quality": null
+   },
+   "overall_score": null,
+   "evidence_grade": "Insufficient evidence",
+   "independent_source_count": {
+    "performance": 1,
+    "other": 4
+   },
+   "counted_performance_sources": 1,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-17",
+   "decision_packets": [
+    "decisions/0039-ui-tars-desktop.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2603.00476",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://aiagentindex.mit.edu/2025/ui-tars-desktop/",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81735",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.07433",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/bytedance/UI-TARS-desktop/discussions/1889",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.02544",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2501.12326",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2508.00935",
+     "kind": "not counted (model only)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.20333",
+     "kind": "not counted (model only)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.25707",
+     "kind": "not counted (model only)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://agent-trust-clearinghouse.vercel.app/data/schema.json",
+ "title": "Agent Reputation & Trust Clearinghouse export",
+ "description": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
+ "type": "object",
+ "required": [
+  "dataset",
+  "disclaimer",
+  "usage_note",
+  "entries"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "dataset": {
+   "type": "object",
+   "required": [
+    "name",
+    "version",
+    "generated",
+    "rules",
+    "license",
+    "canonical",
+    "source_repository",
+    "corrections_contact",
+    "entry_count"
+   ],
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string",
+     "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "rules": {
+     "type": "string"
+    },
+    "license": {
+     "type": "string",
+     "format": "uri"
+    },
+    "canonical": {
+     "type": "string",
+     "format": "uri"
+    },
+    "source_repository": {
+     "type": "string",
+     "format": "uri"
+    },
+    "corrections_contact": {
+     "type": "string"
+    },
+    "entry_count": {
+     "type": "integer",
+     "minimum": 0
+    }
+   }
+  },
+  "disclaimer": {
+   "type": "string",
+   "minLength": 20
+  },
+  "usage_note": {
+   "type": "string",
+   "minLength": 20
+  },
+  "entries": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "url",
+     "category",
+     "status",
+     "scores",
+     "overall_score",
+     "evidence_grade",
+     "independent_source_count",
+     "counted_performance_sources",
+     "last_reviewed",
+     "sources"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable ID (slug); never reused"
+     },
+     "name": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string",
+      "format": "uri"
+     },
+     "homepage": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "category": {
+      "type": "string"
+     },
+     "type": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "scope": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "status": {
+      "enum": [
+       "Scored",
+       "Insufficient evidence",
+       "withdrawn"
+      ]
+     },
+     "scores": {
+      "type": "object",
+      "required": [
+       "completion_rate",
+       "disputes",
+       "adherence_to_limits",
+       "evidence_quality"
+      ],
+      "properties": {
+       "completion_rate": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "minimum": 0,
+        "maximum": 100
+       },
+       "disputes": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "minimum": 0,
+        "maximum": 100
+       },
+       "adherence_to_limits": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "minimum": 0,
+        "maximum": 100
+       },
+       "evidence_quality": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "minimum": 0,
+        "maximum": 100
+       }
+      }
+     },
+     "overall_score": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+     },
+     "evidence_grade": {
+      "enum": [
+       "A",
+       "B",
+       "B-",
+       "Insufficient evidence"
+      ]
+     },
+     "independent_source_count": {
+      "type": "object",
+      "properties": {
+       "performance": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       },
+       "other": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       }
+      }
+     },
+     "counted_performance_sources": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "peer_reviewed_counted_sources": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "last_reviewed": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+     },
+     "decision_packets": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "url",
+        "kind",
+        "accessed",
+        "counted"
+       ],
+       "properties": {
+        "url": {
+         "type": "string"
+        },
+        "kind": {
+         "type": "string"
+        },
+        "accessed": {
+         "type": "string"
+        },
+        "counted": {
+         "type": "boolean"
+        },
+        "peer_reviewed": {
+         "type": [
+          "boolean",
+          "null"
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
