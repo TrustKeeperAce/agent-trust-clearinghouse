@@ -4,8 +4,8 @@ category: Computer-use agent
 type: open source (Apache-2.0), PyPI gui-agents; Simular commercial products (Simular app, Sai, Simular Cloud, Simular API) not covered
 homepage: https://github.com/simular-ai/Agent-S
 scope: 'Open-source Agent S framework (gui-agents 0.2.x to 0.3.2: Agent S2, S2.5, S3) running with a language model and grounding model chosen by the user. Agent S1 (2024) is historical context only. Results depend heavily on the model used.'
-summary: 'Agent S is an open-source framework from Simular that lets a language model operate a desktop computer by looking at the screen and using the mouse and keyboard. Results depend heavily on the model and settings used. In independent evaluations of S2, S2.5 and S3 (OS-Symphony, ACL 2026; OSWorld-Human, MLSys 2026; MacAgentBench; Agent Alpha; OS-Marathon; SCUBA; WorldGUI), success ranged from about 10% to 67% depending on the benchmark and model: 40-55% on reproduced OSWorld runs, 34-40% on Windows and Salesforce tasks, and 23-34% on long repetitive tasks (humans 80-88%). These are below the vendor''s own OSWorld figures of 62.6-72.6%. Three low-to-medium severity denial-of-service CVEs were published in September 2026 with no vendor response recorded. An independent code review found that the command-line app runs model-generated actions without asking for confirmation. Simular''s commercial products are not covered. Overall score 49. Informational only; not a guarantee, endorsement,
-  or certification.'
+summary: 'Agent S is an open-source framework from Simular that lets a language model operate a desktop computer by looking at the screen and using the mouse and keyboard. Results depend heavily on the model and settings used. In independent evaluations of S2, S2.5 and S3 (OS-Symphony, ACL 2026; OSWorld-Human, MLSys 2026; MacAgentBench; Agent Alpha; OS-Marathon; SCUBA; WorldGUI), success ranged from about 10% to 67% depending on the benchmark and model: 40-55% on reproduced OSWorld runs, 34-40% on Windows and Salesforce tasks, and 23-34% on long repetitive tasks (humans 80-88%). These are below the vendor''s own OSWorld figures of 62.6-72.6%. Three low-to-medium severity denial-of-service CVEs were published in September 2026 with no vendor response recorded. An independent code review found that the command-line app runs model-generated actions without asking for confirmation. An independent preprint found that web pages changing at the moment of action could redirect it in all 14 cases
+  tested, as for other screenshot-based agents. Simular''s commercial products are not covered. Overall score 49. Informational only; not a guarantee, endorsement, or certification.'
 scores:
   completion_rate: 45
   disputes: 45
@@ -14,14 +14,15 @@ scores:
 factor_notes:
   completion_rate: 'S3: 40.11% (Qwen3-VL-32B) and 47.58% (GPT-5-Mini) on reproduced OSWorld runs at 50 steps (OS-Symphony); 54.29% with GPT-5-mini and 3 rollouts (Agent Alpha); 9.6-66.9% Pass@1 across 8 models on 676 macOS tasks, 1.8-50.3% when all 4 attempts must succeed (MacAgentBench). S2.5 with GPT-5: 39.0% on 300 Salesforce CRM tasks (SCUBA); 33.5% field-level and 23.4% subtask-level on OS-Marathon (humans 88.4/80.5). S2: 34.2% on WorldGUI (humans 85.3%); efficiency-weighted 6.6-15.6% on OSWorld-Human. Vendor figures of 62.6-72.6% are not counted. Strongly model-dependent. Judgment call.'
   disputes: 'No legal or regulatory action found. Three denial-of-service CVEs against 0.3.1/0.3.2 (CVE-2026-84885, -84886, -84887; CVSS 3.1 4.3-5.3 Medium from the VulDB CNA; NVD status Deferred). VulDB says the vendor did not respond. A public reproduction gap (GitHub issue #146, Oct 2025) was traced by Simular to a commit missing from the open-source code and then fixed. Judgment call.'
-  adherence_to_limits: No independent prompt-injection or safety test of Agent S was found. An independent code review (greenlitbooks field note) reports that the 0.3.2 command-line app runs model-generated actions without asking for confirmation. In the source at commit 15776a8, a permission dialog is defined but not called. Optional local code execution is off by default and comes with a warning. Judgment call.
-  evidence_quality: Seven independent performance sources, two peer-reviewed (ACL 2026, MLSys 2026), five run in 2026. Several are by authors of competing methods (disclosed). Two share authors (Shanghai AI Lab). Results span three framework generations and many models. No source tests real-world deployments. Judgment call.
+  adherence_to_limits: An independent TOCTOU study (Ohio State, preprint Feb 2026; version and model not stated) found that page changes between the agent's check and its action redirected Agent S in all 14 test cases, as for every other screenshot-based agent tested. No independent prompt-injection test of Agent S was found. An independent code review (greenlitbooks field note) reports that the 0.3.2 command-line app runs model-generated actions without asking for confirmation. In the source at commit 15776a8, a permission dialog is defined but not called. Optional local code execution is off by default and comes with a warning. Judgment call.
+  evidence_quality: Eight independent performance sources, two peer-reviewed (ACL 2026, MLSys 2026), five run in 2026, one a safety test (preprint). Several are by authors of competing methods (disclosed). Two share authors (Shanghai AI Lab). Results span three framework generations and many models. No source tests real-world deployments. Judgment call.
 overall_score: 49
 overall_note: 0.30*45 + 0.20*45 + 0.25*35 + 0.25*70 = 48.75, rounded to 49
 evidence_grade: B
 independent_source_count:
-  performance: 7
+  performance: 8
   other: 5
+  peer_reviewed: 2
 sources:
 - url: https://aclanthology.org/2026.acl-long.1021/
   kind: independent performance
@@ -72,6 +73,13 @@ sources:
   peer_reviewed: false
   version_tested: Agent S2
   test_date: unstated
+- url: https://arxiv.org/abs/2603.00476
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (Agent S / S2 cited; model not stated)
+  test_date: unstated (likely late 2025 to early 2026)
+  accessed: '2026-10-17'
+  note: 'TOCTOU study (Ohio State University; preprint, Feb 2026): tested 10 open-source browser- and computer-use agents on 14 cases where a web page changes between the agent''s check and its action (layout changes, data updates, expiring states; 9 synthesized pages, 5 real sites). The vulnerability was triggered in all 14 cases for Agent S, as for the six other screenshot-based agents; agents with structured page access resisted layout changes. Version and model not stated. Funding: NSF and Schmidt Sciences; the authors propose a mitigation.'
 - url: https://os-world.github.io/
   kind: other (maintainer-verified leaderboard, not counted)
   accessed: '2026-10-17'
@@ -112,9 +120,11 @@ uncertainties:
 - Results depend on the model, grounding model, step limit and number of rollouts; no single figure describes "Agent S".
 - S2, S2.5 and S3 differ materially in design. Treating them as one product follows the library precedent and is a judgment call (decision 0025).
 - OSWorld-Verified rows may be based on trajectories supplied by Simular; they are not counted.
-- No independent security or prompt-injection evaluation of Agent S was found.
+- The only independent safety test (TOCTOU, preprint) does not state the Agent S version or model, and its result is shared by all screenshot-based agents tested; no independent prompt-injection evaluation was found.
 - Simular's commercial products (Simular app, Sai, Cloud, API) are not covered.
 decision: 0025 (approved 2026-10-17)
 last_reviewed: '2026-10-17'
-decision_packet: decisions/0025-agent-s.md
+decision_packet:
+- decisions/0025-agent-s.md
+- decisions/0050-agent-s-safety-test.md
 notes: Informational only; not a guarantee, endorsement, or certification.
