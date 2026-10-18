@@ -1,0 +1,138 @@
+name: Devin (Cognition)
+slug: devin
+category: Coding agent
+type: 'Proprietary cloud coding agent from Cognition AI: works in its own cloud virtual machine with shell, editor and browser, takes tasks from the web app, Slack, Jira or GitHub, and opens pull requests'
+homepage: https://devin.ai
+scope: The Devin cloud agent from its March 2024 announcement through Devin 2.x (Devin 2.0 released April 2025). No counted study states which Devin version it used. Windsurf (acquired by Cognition in July 2025), DeepWiki and other Cognition products are not covered.
+summary: 'Devin is a proprietary cloud coding agent from Cognition AI that works in its own virtual machine and opens pull requests. Twelve independent sources that tested it were found (five peer-reviewed): eleven field studies of its public GitHub pull requests in 2024-2025 and an industry evaluation. Pull-request acceptance ranged from 30% to 68.0% and was usually among the lowest of the five agents compared, although it rose over time; an informal month-long review (not counted) reported 3 successes in 20 tasks. Its March 2024 launch demo was disputed, a 2024 access issue was fixed, and 2025 security research showed prompt-injection attacks that leaked data. No legal or regulatory action was found. Informational only; not a guarantee, endorsement, or certification.'
+scores:
+  completion_rate: 40
+  disputes: 45
+  adherence_to_limits: 40
+  evidence_quality: 75
+overall_score: 50
+evidence_grade: B
+independent_source_count:
+  performance: 12
+  peer_reviewed: 5
+  other: 7
+factor_notes:
+  completion_rate: 'Pull-request acceptance: 30% for performance fixes, 42.9% for fix-related work, 43.0% estimated (lowest of five), 49%, 52.12% for security work, 53.76%, 55.5% and 68.0% in the common May-July 2025 window (MSR 2026), usually below Codex, Cursor and Claude Code and close to Copilot. Acceptance rose about 0.77 points per week. An informal Answer.AI review (not counted) reported 3 of 20 tasks succeeding (January 2025). Anthar Study: highest correctness on Python tasks.'
+  disputes: The March 2024 launch demo of an Upwork job was disputed by a software engineer and by the client; Cognition said Devin "is often inefficient and makes mistakes". CVE-2024-56083 (session live-share URL gave write access) was fixed on 2024-12-12. Prompt-injection findings were reported to Cognition in April 2025; the researcher says follow-up questions went unanswered. No legal or regulatory action was found. SWE-bench 13.86% is a self-report (not counted).
+  adherence_to_limits: Security research (2025) showed that injected instructions could make Devin run downloaded code, leak secrets and expose ports; Devin had unrestricted internet access by default at the time. Merged Devin pull requests were reverted more often than human ones (14.5% vs 11.5%). Devin changed CI/CD files most often (4.83%). Rejections often came from Devin closing its own inactive pull requests (32.1%).
+  evidence_quality: Twelve independent sources, five peer-reviewed (four MSR 2026 papers and one Information and Software Technology article). Eleven are field studies largely from one dataset (AIDev, December 2024 to July 2025), so they are not independent samples; the twelfth is an industry report with a disclosure; none states a version and none is within 12 months. Grade B.
+uncertainties:
+- Most counted sources share the AIDev pull-request data from 2024-2025; Devin 2.x and later models may behave differently.
+- No counted study states the Devin version.
+- Acceptance rates depend on repository, task type and reviewer behaviour.
+- The 2025 security findings were not confirmed as fixed in the sources found.
+- Citation check incomplete — recheck later (Semantic Scholar was rate-limited; OpenAlex was used).
+sources:
+- url: https://dl.acm.org/doi/10.1145/3793302.3793576
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025)
+  test_date: 2024-12 to 2025-07
+  accessed: '2026-10-17'
+  note: 'Comparing AI Coding Agents (Trieste, KCL, UCL; MSR 2026, arXiv 2602.08915): Devin pull requests accepted at 68.0% in the common May-July 2025 window (Codex 79.9%); Devin was the only agent whose acceptance rose steadily (+0.77 points per week over 32 weeks). Field study'
+- url: https://arxiv.org/abs/2601.15195
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Where Do AI Coding Agents Fail? (Drexel, Missouri S&T; MSR 2026): Devin merge rate 53.76% (Codex highest; Copilot 43.04%). Field study'
+- url: https://doi.org/10.1145/3793302.3793611
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Why Are AI Agent-Involved Pull Requests (Fix-Related) Remain Unmerged? (Saskatchewan; MSR 2026, arXiv 2602.00164): fix-related Devin pull requests merged at 42.9% (Codex 81.6%, Copilot 42.4%). Field study'
+- url: https://doi.org/10.1145/3793302.3793581
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'When AI Agents Touch CI/CD Configurations (Trent; MSR 2026, arXiv 2601.17413): Devin changed CI/CD files most often of five agents (4.83% of changes; Codex 2.01%). Field study'
+- url: https://doi.org/10.1016/j.infsof.2026.108333
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Security in the Age of AI Teammates (Notre Dame; Information and Software Technology 2026, arXiv 2601.00477): security-related Devin pull requests merged at 52.12% (Codex 86.59%, Copilot 49.60%). Field study'
+- url: https://arxiv.org/abs/2507.15003
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'The Rise of AI Teammates in SE 3.0 (Queen''s University; AIDev dataset; preprint): Devin pull requests accepted at 49% (Codex 64%, Copilot 35%). Field study'
+- url: https://arxiv.org/abs/2602.04226
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Why Agentic-PRs Get Rejected (Kyushu, Waterloo; preprint): Devin acceptance 55.5%; 32.1% of rejected Devin pull requests were closed for inactivity, consistent with Devin auto-closing inactive pull requests. Field study'
+- url: https://arxiv.org/abs/2607.21832
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'How Do AI Coding Agents Contribute to Software Development? (Polytechnique Montréal; preprint Jul 2026): estimated merge probability 43.0% for Devin, the lowest of five agents (Claude Code 84.3%). Field study'
+- url: https://arxiv.org/abs/2609.37985
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Merged, Not Measured (preprint Sep 2026): Devin performance-fix pull requests accepted at 30%, the lowest of six agents; acceptance was near zero in January-April 2025, when almost all fixes in the set were Devin''s. Field study'
+- url: https://arxiv.org/abs/2609.17598
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (2025)
+  test_date: 2024-12 to 2025-07
+  accessed: '2026-10-17'
+  note: 'Not All Agents Are Equal (Texas Tech; preprint Sep 2026): merged Devin pull requests were reverted more often than human ones (14.5% vs 11.5%, odds ratio 1.31). Field study'
+- url: https://arxiv.org/abs/2607.12428
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Trust but Verify? (UTSA; preprint Jul 2026): 39.7% of Devin pull requests carried a security smell (corpus average 38.9%). Field study'
+- url: https://www.answer.ai/posts/2025-01-08-devin.html
+  kind: other
+  note: 'Thoughts On A Month With Devin (Answer.AI; blog, January 2025): of 20 real tasks, 3 succeeded, 14 failed and 3 were inconclusive; outcomes were hard to predict. Informal hands-on review, listed for context (not counted)'
+- url: https://deccan-ai.webflow.io/research/anthar-study-evaluating-ai-coding-agents-beyond-benchmarks
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Anthar Study (Deccan AI; industry report): 43 real pull-request tasks; Devin had the highest correctness on Python tasks (95.3% correlation with reference patches); possible context leakage between tasks was observed in IDE-based agents including Devin. Disclosure: Deccan AI sells evaluation data'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2024-56083
+  kind: other
+  note: 'CVE-2024-56083: before 2024-12-12, anyone who found a session''s VS Code live-share URL could get write access to code (CVSS 8.1); fixed by Cognition on 2024-12-12'
+- url: https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/
+  kind: other
+  note: 'Embrace The Red (Johann Rehberger, August 2025): indirect prompt injection led Devin to download and run malware, leak secrets through several channels and expose ports to the internet; reported to Cognition on 6 April 2025, and the researcher says follow-up questions about fixes went unanswered. Security research, not a performance test'
+- url: https://newsletter.pragmaticengineer.com/p/the-pulse-90
+  kind: other
+  note: 'March-April 2024 launch-demo dispute: a software engineer (Internet of Bugs, April 2024) reported that the "Devin''s Upwork Side Hustle" video did not show the Upwork task as specified being completed; the client said only part of the task was done. Cognition said Devin "is often inefficient and makes mistakes". Reported by The Pragmatic Engineer'
+- url: https://www.youtube.com/watch?v=UTS2Hz96HYQ
+  kind: other
+  note: The original Cognition video "Devin's Upwork Side Hustle" (March 2024), cited for the dispute above
+- url: https://arxiv.org/abs/2606.18168
+  kind: other
+  note: 'All Smoke, No Alarm (Kennesaw State and others; preprint): 26% of Devin test-file patches had strong oracles. Descriptive analysis'
+- url: https://arxiv.org/abs/2606.22721
+  kind: other
+  note: 'Habituation at the Gate (preprint Jun 2026): reviewer approval of Devin pull requests rose 3.8 points with repeated exposure (not significant). Descriptive'
+- url: https://www.cognition.ai/blog/introducing-devin
+  kind: vendor (not counted)
+  note: 'Cognition launch post and technical report (March 2024): self-reported 13.86% unassisted on a 25% subset of SWE-bench; later Cognition performance reviews and customer figures. Vendor, not counted'
