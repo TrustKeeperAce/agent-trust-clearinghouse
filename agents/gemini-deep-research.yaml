@@ -94,6 +94,7 @@ uncertainties:
 - The 3.1 Pro test used the API agent, not the Gemini app.
 - 'Excluded from the count: TTD-DR (Google authors) and DRACO (Perplexity, a competitor that ranked itself first).'
 - No independent test of usage-limit or permission adherence was found.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0015-gemini-deep-research.md

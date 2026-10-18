@@ -76,6 +76,7 @@ uncertainties:
 - Mind2Web 2 has Amazon AGI co-authors; Amazon is an investor in Anthropic.
 - LiveResearchBench, ReportBench, DeepResearch Bench II and Rao et al. tested Claude models via the API, not the Research feature; not counted.
 - The overall score is exactly 57.5; exact .5 rounds up (Decision 0010).
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0021-claude-research.md

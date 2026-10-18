@@ -95,6 +95,7 @@ uncertainties:
 - Only one counted source is peer-reviewed; hCaptcha and Privacy Practices have commercial or competing-author interests (disclosed).
 - Amazon v. Perplexity continues on remand; outcome unknown.
 - Comet sends page content and screenshots to Perplexity servers for the assistant; Perplexity's privacy policy was not reviewed in detail for this entry.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0028-perplexity-comet.md

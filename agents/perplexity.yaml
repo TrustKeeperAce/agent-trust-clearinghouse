@@ -96,6 +96,7 @@ uncertainties:
 - Lawsuits are pending allegations, not findings.
 - The robots.txt point is CJR's interpretation, stated by CJR as a suggestion.
 - The overall score is exactly 53.5; exact .5 rounds up (Decision 0010).
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-16'
 decision: APPROVED
 decision_packet: decisions/0004-perplexity.md

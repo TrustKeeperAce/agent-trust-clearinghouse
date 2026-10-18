@@ -86,6 +86,7 @@ uncertainties:
 - Claygent's available models change frequently, so test results may age quickly.
 - Vendor accuracy figures are vendor claims, not findings.
 - User-review aggregates are anecdotal; Trustpilot's sample is small and its page could not be fetched automatically.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-16'
 decision: APPROVED
 decision_packet: decisions/0006-clay.md

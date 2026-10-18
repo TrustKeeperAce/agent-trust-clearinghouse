@@ -106,6 +106,7 @@ uncertainties:
 - Three of the seven sources are security tests of earlier versions.
 - 'Excluded: vendor figures (89.1% WebVoyager, 97% Cloud, BU Bench) and Cybernaut (Amazon preprint), whose 82.2% Browser-Use figure appears to restate the vendor result.'
 - The Cloud service, which uses the vendor's own models and infrastructure, is not covered and has no independent tests.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0016-browser-use.md

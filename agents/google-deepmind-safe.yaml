@@ -66,6 +66,7 @@ uncertainties:
 - No independent study using expert fact-checkers was found.
 - The authors' 72% and 76% figures are their own claims, not independent evidence.
 - The overall score is exactly 65.5; exact .5 rounds up (Decision 0010).
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-16'
 decision: APPROVED
 decision_packet: decisions/0009-google-deepmind-safe.md

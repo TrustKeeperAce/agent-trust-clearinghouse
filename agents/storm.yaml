@@ -97,6 +97,7 @@ uncertainties:
 - Only one study states the library version; the library has not changed since September 2025.
 - Co-STORM appears in three studies only; there is no independent test of its human-in-the-loop mode with real users.
 - The hosted research preview is not covered and was not independently tested.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 decision: 0026 (approved 2026-10-17)
 last_reviewed: '2026-10-17'
 decision_packet: decisions/0026-storm.md

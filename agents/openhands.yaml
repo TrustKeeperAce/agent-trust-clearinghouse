@@ -4,7 +4,7 @@ category: Coding agent
 type: Open-source coding-agent platform and Agent SDK (MIT licence, enterprise directory excepted), developed by All Hands AI; formerly OpenDevin
 homepage: https://github.com/OpenHands/OpenHands
 scope: The open-source OpenHands agent (CodeAct agent, later the OpenHands Agent SDK) run with a language model chosen by the user, from the OpenDevin releases of 2024 through OpenHands 1.27.1 (12 October 2026). The hosted OpenHands Cloud service and the enterprise directory are not covered.
-summary: OpenHands is an open-source coding agent that edits files, runs shell commands and browses the web inside a sandbox. It is run with a language model chosen by the user. Eleven independent studies that ran it were found (six peer-reviewed). Results depend heavily on the model and task. They range from about 3% on .NET performance bugs and 4.4% medal rate on MLE-bench (GPT-4o, 2024) to 39.1% on long-horizon upgrade tasks, 46.12 on BeyondSWE and 48.15% on GitTaskBench with the strongest models. In a 2026 study of out-of-scope actions on routine tasks, OpenHands had the lowest rate of the frameworks tested (0.2-4.5%). A separate benchmark measured an average boundary-violation rate of 18.19%. In a security benchmark, 8.1-11.8% of its solutions were both functional and secure. Two CVEs have been published, one fixed in 1.5.0. A security researcher has published prompt-injection demonstrations, including token exfiltration and remote code execution. Informational only; not a guarantee,
+summary: OpenHands is an open-source coding agent that edits files, runs shell commands and browses the web inside a sandbox. It is run with a language model chosen by the user. Twelve independent studies that ran it were found (seven peer-reviewed). Results depend heavily on the model and task. They range from about 3% on .NET performance bugs and 4.4% medal rate on MLE-bench (GPT-4o, 2024) to 39.1% on long-horizon upgrade tasks, 46.12 on BeyondSWE and 48.15% on GitTaskBench with the strongest models. In a 2026 study of out-of-scope actions on routine tasks, OpenHands had the lowest rate of the frameworks tested (0.2-4.5%). A separate benchmark measured an average boundary-violation rate of 18.19%. In a security benchmark, 8.1-11.8% of its solutions were both functional and secure. Two CVEs have been published, one fixed in 1.5.0. A security researcher has published prompt-injection demonstrations, including token exfiltration and remote code execution. Informational only; not a guarantee,
   endorsement, or certification.
 scores:
   completion_rate: 50
@@ -14,14 +14,14 @@ scores:
 overall_score: 61
 evidence_grade: A
 independent_source_count:
-  performance: 11
-  peer_reviewed: 6
+  performance: 12
+  peer_reviewed: 7
   other: 6
 factor_notes:
   completion_rate: 'MLE-bench (GPT-4o, 2024): 4.4% ± 1.4 any-medal rate, below AIDE; runs often ended early. ScienceAgentBench (CodeActAgent v1.9): Claude 3.5 Sonnet solved 21.6% with OpenHands vs 32.4% with plain self-debug at 17× the cost. GitTaskBench (OpenHands 0.33.0): best success 48.15% with Claude 3.7. PerfBench (GPT-4.1): about 3% on 81 .NET performance bugs. RoadmapBench: 5.2-39.1% across 13 models. BeyondSWE: best 46.12 average score (DeepSeek-V4-Pro). Dialogue SWE-Bench: 32.9% average resolve rate. PBT-Bench (SDK v1.11.5, July 2026): up to 83.4% bug recall (Sonnet 4.6). SusVibes (ICML 2026): 19.9-53.2% of security-sensitive feature tasks passed functional tests across four models (best Claude 4 Sonnet).'
   disputes: 'CVE-2026-33718 (command injection in the git diff handler, 1.5.0 up to the fix; CVSS 3.1 7.6 per GitHub, 9.9 per NVD; fixed in 1.5.0 per the advisory). CVE-2026-19022 (command injection in resolver/send_pull_request.py, up to 0.62.0; CVSS 3.1 6.3 per VulDB; NVD Deferred; VulDB notes the vendor deleted the original issue report and the file was removed in 1.7.0). Published prompt-injection demonstrations (Embrace The Red, August 2025): GITHUB_TOKEN exfiltration via rendered images and remote code execution. The developer responded publicly with mitigation guidance. No legal or regulatory action found.'
   adherence_to_limits: 'Overeager Coding Agents (Griffith University et al., preprint May 2026; OpenHands 0.59.1): out-of-scope actions on benign tasks 0.2-4.5%, the lowest of four frameworks (Claude Code up to 27.7% with the same model). SWE-MISBEHAVIOR (National University of Singapore et al., preprint Oct 2026): average boundary-violation rate 18.19% for OpenHands, 12.31% with the authors'' mitigation. MLE-bench: agents ignored compute and time limits and overloaded machines. Confirmation mode and a security analyzer are available; the developer says model refusal is a soft, not hard, control. SusVibes (ICML 2026): 8.1-11.8% of OpenHands'' solutions were both functional and secure, and 77.8% of its functionally correct solutions with Claude 4 Sonnet had a vulnerability; across models, 20.1% of its correct solutions were secure, second of three frameworks tested (SWE-agent 23.3%, Claude Code 17.4%).'
-  evidence_quality: Eleven independent sources, six peer-reviewed (ICLR 2025 ×2, AAAI 2026, an ICSE 2026 workshop, NeurIPS 2026, ICML 2026). Recent tests state versions (SDK v1.11.5, July 2026; OpenHands 0.59.1). Most are benchmark papers using OpenHands as a common scaffold; several propose competing agents (disclosed).
+  evidence_quality: Twelve independent sources, seven peer-reviewed (ICLR 2025 ×2, AAAI 2026, an ICSE 2026 workshop, NeurIPS 2026, ICML 2026, ISSTA 2026). Recent tests state versions (SDK v1.11.5, July 2026; OpenHands 0.59.1). Most are benchmark papers using OpenHands as a common scaffold; several propose competing agents (disclosed).
 sources:
 - url: https://arxiv.org/abs/2410.07095
   kind: independent performance
@@ -100,6 +100,13 @@ sources:
   peer_reviewed: true
   version_tested: unstated (default prompt, max 200 steps)
   test_date: 2025-2026
+- kind: independent performance
+  url: https://doi.org/10.1145/3832100
+  version_tested: Agent SDK v1.5.2
+  test_date: 2025-12 to 2026
+  peer_reviewed: true
+  note: 'Sifting the Noise (ISSTA 2026; doi 10.1145/3832100): OpenHands Agent SDK v1.5.2 (released 2025-12-11) triaging static-analysis warnings; OWASP false-positive rate 14.9% (Claude Sonnet 4), 16.3% (GPT-5), 15.8% (DeepSeek Chat). Independent; peer-reviewed.'
+  accessed: '2026-10-17'
 - url: https://nvd.nist.gov/vuln/detail/CVE-2026-33718
   kind: other
   accessed: '2026-10-17'
@@ -148,4 +155,5 @@ decision: APPROVED
 decision_packet:
 - decisions/0037-openhands.md
 - decisions/0049-susvibes-openhands.md
+- decisions/0052-citation-backfill.md
 notes: Informational only; not a guarantee, endorsement, or certification.

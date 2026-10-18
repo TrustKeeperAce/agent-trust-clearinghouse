@@ -104,6 +104,7 @@ uncertainties:
 - ReportBench venue status is unverified; two sources are preprints.
 - Benchmarks rely partly on AI judges.
 - Vendor benchmark figures (e.g. HLE, GAIA) are not used as independent evidence.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0003-openai-deep-research.md

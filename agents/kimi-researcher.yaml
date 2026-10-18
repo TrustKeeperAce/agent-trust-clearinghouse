@@ -57,6 +57,7 @@ uncertainties:
 - Whether Deep Research now uses newer Kimi models (K2.5–K3) is not stated; the help page still names Kimi-Researcher.
 - The résumé leak was reported by media; Moonshot issued no public statement.
 - Data storage and privacy practices of the China-based service were not independently verified.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
 decision_packet: decisions/0024-kimi-researcher.md

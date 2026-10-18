@@ -63,6 +63,7 @@ uncertainties:
 - OpenAI has published no exact retirement date for ChatGPT agent; user reports place it in early August 2026.
 - ChatGPT Work's models changed three times within about three months (GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol).
 - Vendor benchmark figures (system cards, BrowseComp, OSWorld 2.0) are not used as independent evidence.
+- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED 0018
 decision_packet: decisions/0018-chatgpt-work.md
