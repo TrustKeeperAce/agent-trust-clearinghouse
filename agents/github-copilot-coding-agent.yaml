@@ -1,0 +1,141 @@
+name: GitHub Copilot coding agent
+slug: github-copilot-coding-agent
+category: Coding agent
+type: 'Cloud coding agent from GitHub (Microsoft): assigned an issue or task, it works in a GitHub Actions environment and opens a pull request for review; proprietary; runs models chosen by GitHub or the user'
+homepage: https://docs.github.com/en/copilot/concepts/agents/coding-agent
+scope: The cloud Copilot coding agent that opens pull requests (public preview May 2025; pull requests authored as copilot-swe-agent). Copilot code completions, Copilot Chat and agent mode in the IDE, Copilot CLI, Copilot code review, and the 2021 Codex-era Copilot studies are not covered.
+summary: GitHub Copilot coding agent is a cloud agent from GitHub that takes an assigned issue, works in a GitHub Actions environment and opens a pull request for human review. Twelve independent field studies of its public GitHub pull requests were found (five peer-reviewed), all drawn from 2024-2025 activity. Acceptance rates ranged from 35% to 68.0% and were the lowest or near the lowest of the five agents compared in most studies; Copilot pull requests also drew the most reviews. No benchmark test of the cloud agent by independent researchers was found, and no study states a version. No CVE naming the cloud agent was found; CVEs for Copilot in IDEs and Copilot CLI are outside this entry. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 45
+  disputes: 60
+  adherence_to_limits: 50
+  evidence_quality: 75
+overall_score: 57
+evidence_grade: B
+independent_source_count:
+  performance: 12
+  peer_reviewed: 5
+  other: 6
+factor_notes:
+  completion_rate: 'Field studies of public pull requests: Copilot acceptance 35% (AI Teammates), 42.4% for fix-related work, 43.04%, 49.60% for security work, 50% for performance fixes, 55.0%, 59.6% estimated, and 68.0% in the common May-July 2025 window (MSR 2026). It was the lowest or near the lowest of the five agents in most comparisons (Codex usually highest). Its CI/CD changes merged more often than its other changes (+15.63 points). No independent benchmark of the cloud agent was found.'
+  disputes: No CVE naming the cloud coding agent and no legal or regulatory action specific to it was found. About 25 CVEs name Copilot in IDEs, Copilot Chat or Copilot CLI (outside this entry). The 2022 Copilot litigation concerns code completions (outside this entry).
+  adherence_to_limits: 'Works only through pull requests that a human must approve. Trust but Verify?: Copilot pull requests carried a security smell most often (45.5%). Copilot pull requests drew the most reviews and change requests; Copilot made about 95% of the follow-up fixes on its merged pull requests. No direct measure of out-of-scope actions by the cloud agent was found.'
+  evidence_quality: Twelve independent sources, five peer-reviewed (four MSR 2026 papers and one Information and Software Technology article). All are field studies largely drawn from one dataset (AIDev) covering December 2024 to July 2025, so they are not independent samples, none states a version, and none is within 12 months. Grade B.
+uncertainties:
+- All counted sources are field studies, mostly of the same AIDev pull-request data from 2024-2025; the product and its default models have changed since.
+- Acceptance rates depend on repository, task type and reviewer behaviour, not only on the agent.
+- No version is stated in any study, and none tested the agent after July 2025.
+- Copilot in IDEs and Copilot CLI have their own evidence and CVEs; they may need separate entries.
+- Citation check incomplete — recheck later (Semantic Scholar was rate-limited; OpenAlex was used).
+sources:
+- url: https://dl.acm.org/doi/10.1145/3793302.3793576
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: cloud coding agent (2025)
+  test_date: 2025-05 to 2025-07
+  accessed: '2026-10-17'
+  note: 'Comparing AI Coding Agents (Trieste, KCL, UCL; MSR 2026, arXiv 2602.08915): GitHub Copilot pull requests accepted at 68.0% in the common May-July 2025 window (Codex 79.9%, Cursor 74.4%, Claude Code 72.6%, Devin 68.0%); Copilot pull requests received the most reviews (4.94 per pull request). Field study'
+- url: https://arxiv.org/abs/2601.15195
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Where Do AI Coding Agents Fail? (Drexel, Missouri S&T; MSR 2026): Copilot had the lowest merge rate of five agents, 43.04% (Codex highest). Field study'
+- url: https://doi.org/10.1145/3793302.3793611
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Why Are AI Agent-Involved Pull Requests (Fix-Related) Remain Unmerged? (Saskatchewan; MSR 2026, arXiv 2602.00164): fix-related Copilot pull requests merged at 42.4% (Codex 81.6%, Devin 42.9%). Field study'
+- url: https://doi.org/10.1145/3793302.3793581
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'When AI Agents Touch CI/CD Configurations (Trent; MSR 2026, arXiv 2601.17413): agent pull requests changing CI/CD merged less often overall (67.77% vs 71.80%), except Copilot, whose CI/CD changes merged 15.63 points more often. Field study'
+- url: https://doi.org/10.1016/j.infsof.2026.108333
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Security in the Age of AI Teammates (Notre Dame; Information and Software Technology 2026, arXiv 2601.00477): security-related Copilot pull requests merged at 49.60%, the lowest of five agents (Codex 86.59%). Field study'
+- url: https://arxiv.org/abs/2507.15003
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'The Rise of AI Teammates in SE 3.0 (Queen''s University; AIDev dataset; preprint): Copilot pull requests accepted at 35% (Codex 64%, Devin 49%); 42.2% of Copilot pull requests were bug fixes. Field study'
+- url: https://arxiv.org/abs/2602.04226
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Why Agentic-PRs Get Rejected (Kyushu, Waterloo; preprint): Copilot acceptance 55.0% (Codex 85.8%, Devin 55.5%, human 82.6%). Field study'
+- url: https://arxiv.org/abs/2607.21832
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'How Do AI Coding Agents Contribute to Software Development? (Polytechnique Montréal; preprint Jul 2026): estimated merge probability 59.6% for Copilot (Claude Code 84.3%, Codex 73.5%, Devin 43.0%). Field study'
+- url: https://arxiv.org/abs/2609.37985
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Merged, Not Measured (preprint Sep 2026): performance-fix pull requests accepted at 50% for Copilot (Codex, Claude Code, Jules 73%; Devin 30%); Copilot acceptance fell from 61% to 42% as repository size grew. Field study'
+- url: https://arxiv.org/abs/2609.26847
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Who Finishes the Job? (Empirical Software Engineering submission; preprint Sep 2026): Copilot made about 95% of the follow-up fixes on its own merged pull requests; humans most often fixed Codex merges (38.4%). Field study'
+- url: https://arxiv.org/abs/2609.17598
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2024-12 to 2025-07)
+  test_date: 2024-12 to 2025-07
+  accessed: '2026-10-17'
+  note: 'Not All Agents Are Equal (Texas Tech; preprint Sep 2026): post-merge quality across five agents; Copilot pull requests drew the most human reviews and change requests. Field study'
+- url: https://arxiv.org/abs/2607.12428
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud coding agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'Trust but Verify? (UTSA; preprint Jul 2026): Copilot pull requests carried a security smell most often, 45.5% (corpus average 38.9%; Codex 34.9%). Field study'
+- url: https://arxiv.org/abs/2606.18168
+  kind: other
+  note: 'All Smoke, No Alarm (Kennesaw State and others; preprint): 26% of Copilot test-file patches had strong oracles (Claude Code 41%). Descriptive analysis'
+- url: https://arxiv.org/abs/2606.22721
+  kind: other
+  note: 'Habituation at the Gate (preprint Jun 2026): reviewer approval rates for Copilot pull requests rose by 9.1 points with repeated exposure, the largest rise of four agents. Descriptive analysis of review behaviour'
+- url: https://arxiv.org/abs/2512.21426
+  kind: other
+  note: 'What Makes a GitHub Issue Ready for Copilot? (ÉTS Montréal; preprint): issue-quality model predicting merged Copilot pull requests (median AUC 72%). Descriptive'
+- url: https://arxiv.org/abs/2605.22534
+  kind: other
+  note: 'Why Are Agentic Pull Requests Merged or Rejected? (Waseda and others; preprint): Copilot and Devin pull requests were more often reviewer-mediated. Descriptive'
+- url: https://arxiv.org/abs/2608.29204
+  kind: other
+  note: 'AgentLogs (Radboud, NAIST; preprint Aug 2026): dataset of Copilot coding agent session logs. Dataset, no outcome measure'
+- url: https://nvd.nist.gov/vuln/search/results?query=GitHub+Copilot
+  kind: other
+  note: About 25 CVEs (2025-2026) name GitHub Copilot in Visual Studio Code or Visual Studio, Copilot Chat, or Copilot CLI (for example CVE-2025-53773, CVE-2026-29783, CVE-2026-45033). None found names the cloud coding agent; these products are outside this entry's scope
+- url: https://github.com/features/copilot
+  kind: vendor (not counted)
+  note: GitHub and Microsoft documentation, launch posts and reports for Copilot coding agent; vendor, not counted
+- url: https://arxiv.org/abs/2604.00917
+  kind: vendor (not counted)
+  note: 'Investigating Autonomous Agent Contributions in the Wild (TU Delft, UC Davis, GitHub): has a GitHub co-author, so not counted for Copilot'
+- url: https://arxiv.org/abs/2608.00101
+  kind: vendor (not counted)
+  note: 'Agentic Coding in the Wild: Characterizing GitHub Copilot at Production Scale (UIUC, Microsoft Azure Research): Microsoft co-authors; not counted'
