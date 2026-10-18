@@ -16,13 +16,13 @@ overall_note: 0.30*50 + 0.20*45 + 0.25*40 + 0.25*85 = 55.25, rounded to 55
 evidence_grade: A
 independent_source_count:
   performance: 15
-  peer_reviewed: 5
+  peer_reviewed: 6
   other: 7
 factor_notes:
   completion_rate: 'SWE-RPG (163 repository tasks, 6 backends): Claude Code averaged 32.8% resolved, 49.1% best (Kimi-K3). SWE-bench Science: pass@1 47.90% (Opus 5, max) and 42.02% (DeepSeek-V4-Pro). TerminalWorld: 58.0% pass (Opus 4.7), below Terminus-2 at 62.5% with the same model. SkillsBench: 61.2% with Skills (Opus 4.7), vs 53.1% in OpenHands. PBT-Bench: 78.6% bug recall (Opus 4.8), vs 81.2% in OpenHands. ResearchClawBench: 21.5 of 100 (Opus 4.6), the top of 7 research agents. SusVibes: 12.9-41.4% functional, below SWE-agent and OpenHands with Claude 4 Sonnet. Field studies: 83.8% of 567 pull requests accepted (humans 91.0%); 72.6% in a May-July 2025 window. Judgment call.'
   disputes: No lawsuits or regulatory actions found. Anthropic's GitHub repository lists 35 security advisories (June 2025 to October 2026; 28 rated high), mostly approval-prompt or sandbox bypasses and trust-dialog issues; each lists a fixed version, and a few concern Claude Desktop rather than the CLI. Three further CVEs filed by VulnCheck in April 2026 (CVE-2026-35020/35021/35022) were later rejected by that CNA as outside the threat model or intended behaviour. On 31 March 2026, version 2.1.88 was published to npm with a source map exposing the source code; Anthropic called it a packaging error with no customer data exposed, and retracted most of the DMCA notices that had reached about 8,100 GitHub repositories. Judgment call.
   adherence_to_limits: 'Overeager Coding Agents (Claude Code 2.1.117): out-of-scope actions on benign tasks 5.4-27.7% depending on model, vs 1.1% for the same model in OpenHands. SWE-MISBEHAVIOR (Sonnet 4.5): boundary-violation rate 3.80% on code generation and 8.50% on file management (lowest of four frameworks), 18.95% on system interaction. Red-teaming (ISSTA 2026): remote code execution on 2.0.37; 0.0 success on 2.1.138 with Sonnet 4.6 and Opus 4.7. Measuring the Permission Gate (HKUST, ETH; April 2026): auto mode missed 81.0% of risky state-changing actions in 128 deliberately ambiguous tasks (70.3% of those it evaluated; 31.9% false positives), vs 17% reported by Anthropic on production traffic. SusVibes: 5.9-8.6% of Claude Code solutions were both functional and secure (SWE-agent up to 12.9%). Several benchmark studies ran with permission prompts disabled. Judgment call.'
-  evidence_quality: Fifteen independent sources, five peer-reviewed (ISSTA 2026, TOSEM, MSR 2026, NeurIPS 2026 Datasets & Benchmarks, ASE 2026 extended abstract). Recent tests state versions (2.1.117, 2.1.138, 2.1.139; 2026). Terminal-Bench 2.0 is excluded (an Anthropic co-author). Many runs use non-default models or settings. Judgment call.
+  evidence_quality: Fifteen independent sources, six peer-reviewed (ISSTA 2026, TOSEM, MSR 2026, NeurIPS 2026 Datasets & Benchmarks, ASE 2026 extended abstract, ICML 2026). Recent tests state versions (2.1.117, 2.1.138, 2.1.139; 2026). Terminal-Bench 2.0 is excluded (an Anthropic co-author). Many runs use non-default models or settings. Judgment call.
 sources:
 - url: https://dl.acm.org/doi/10.1145/3832267
   kind: independent performance
@@ -124,11 +124,11 @@ sources:
   note: 'Measuring the Permission Gate (HKUST, ETH Zurich; preprint Apr 2026): Claude Code auto mode on 128 deliberately ambiguous DevOps tasks, 253 state-changing actions; end-to-end false negative rate 81.0%, 70.3% on actions the classifier evaluated, false positive rate 31.9%; 36.8% of actions were file edits outside the classifier''s scope'
 - url: https://arxiv.org/abs/2512.03262
   kind: independent performance
-  peer_reviewed: false
+  peer_reviewed: true
   version_tested: unstated
   test_date: 2025-2026
   accessed: '2026-10-17'
-  note: 'SusVibes (CMU and others; preprint v4 Sept 2026): 186 real-repository tasks; Claude Code FuncPass 12.9-41.4% and SecPass (functional and secure) 3.8-8.6% across 4 models; SWE-agent and OpenHands scored higher with Claude 4 Sonnet (57.0/11.8 and 53.2/11.8)'
+  note: 'SusVibes (Carnegie Mellon, Columbia, Johns Hopkins, HydroX AI; ICML 2026): 186 real-repository tasks; Claude Code FuncPass 12.9-41.4% and SecPass (functional and secure) 3.8-8.6% across 4 models; SWE-agent and OpenHands scored higher with Claude 4 Sonnet (57.0/11.8 and 53.2/11.8). Disclosures: Modal compute; Google Gemini API credits; partly supported by HydroX AI.'
 - url: https://arxiv.org/abs/2601.11868
   kind: excluded (developer-affiliated author)
   peer_reviewed: true
@@ -169,11 +169,13 @@ sources:
 uncertainties:
 - Most counted studies do not state the Claude Code version; Claude Code updates several times a week.
 - Many runs use non-default models (Kimi, DeepSeek, GLM) or disabled permission prompts, so results may not reflect a typical setup.
-- Counting the two pull-request field studies is a judgment call; without them, three peer-reviewed sources remain (one an extended abstract).
+- Counting the two pull-request field studies is a judgment call; without them, four peer-reviewed sources remain (one an extended abstract).
 - TerminalWorld appeared at ASE 2026 as an extended abstract; the full paper is a preprint.
 - Security advisory counts come from Anthropic's GitHub repository; a few concern Claude Desktop rather than the CLI.
 - Citation check incomplete — about 13 candidate studies not yet screened; recheck later.
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0040-claude-code.md
+decision_packet:
+- decisions/0040-claude-code.md
+- decisions/0049-susvibes-openhands.md
 notes: Informational only; not a guarantee, endorsement, or certification.
