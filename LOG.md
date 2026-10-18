@@ -163,3 +163,6 @@ Decision 0054 (Elicit: Mazzali, Meliante and Spillias added; 10 counted / 9 peer
 
 ## 2026-10-17 — Deploy note
 Decision 0055 (Browser Use: Atomicity for Agents counted; 8 counted / 3 peer-reviewed; scores and grade unchanged, 51 / B; resolves 0050 D7) was deployed to production as dpl_UUu1uH5JGD71eUKfodad5VDLKjhe (commit 626038e). Live check: both changed public files match their manifest shas. Next: 0056 (Perplexity follow-up), drafting privately.
+
+## 2026-10-17 — Deploy note
+Decision 0056 (Perplexity follow-up: five 2025–2026 studies reviewed, none in scope, none counted; 54 / B unchanged; recheck note updated) was deployed to production as dpl_HdrRYeXfLxoSzJHfW7GHYdRxrzqN (commit a814e6e). Live check: both changed public files match their manifest shas. Next: 0057 (OpenAI Deep Research and Gemini Deep Research follow-ups), drafting privately.
