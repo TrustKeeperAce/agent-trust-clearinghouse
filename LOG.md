@@ -139,3 +139,6 @@ Decision 0046 (design refresh, layout and labels only; no score or rule changes)
 
 ## 2026-10-17 — Data-only update (0047)
 Decision 0047 (metadata and evidence-log fields) was applied to agents/*.yaml only: schema fields added to 19 entries, version and test-date fields added to 9 counted sources, access dates added to 17 rows, and count notes added to 3 entries. check_scores output is identical before and after. No public/ change and no deploy needed.
+
+## 2026-10-17 — Deploy note
+Decision 0048 (SusVibes added to SWE-agent; 9 counted, 7 peer-reviewed; 58/B unchanged) was deployed to production as dpl_G3nmGj45UAPZE3j7XmZhEpohXEPL (commit 83e941c). Live check: swe-agent.html sha matches c1d47c1, and the changelog shows the SusVibes row.
