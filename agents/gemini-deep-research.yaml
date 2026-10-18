@@ -3,22 +3,22 @@ slug: gemini-deep-research
 category: research
 type: commercial
 homepage: https://gemini.google/overview/deep-research/
-summary: Gemini Deep Research is a Google feature, in the Gemini app and as a Gemini API agent, that plans multi-step web research and writes cited reports. In independent evaluations (DeepResearch Bench, ICLR 2026; Mind2Web 2, NeurIPS 2025; five preprints), it ranked at or near the top on report quality and coverage, but completed fewer hard search tasks than the leader, and a larger share of its citation links did not resolve or did not exist. Most tests used 2025 versions (Gemini 2.5 Pro and 3 Pro); one tested the Gemini 3.1 Pro API agent. Several benchmarks used a Gemini model as the AI judge. Overall score 63. Informational only; not a guarantee, endorsement, or certification.
+summary: Gemini Deep Research is a Google feature, in the Gemini app and as a Gemini API agent, that plans multi-step web research and writes cited reports. In independent evaluations (DeepResearch Bench, ICLR 2026; Mind2Web 2, NeurIPS 2025; six preprints), it ranked at or near the top on report quality and coverage, but completed fewer hard search tasks than the leader, and a larger share of its citation links did not resolve or did not exist. Most tests used 2025 versions (Gemini 2.5 Pro and 3 Pro); one tested the Gemini 3.1 Pro API agent. Several benchmarks used a Gemini model as the AI judge. Overall score 63. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 60
   disputes: 65
   adherence_to_limits: 55
   evidence_quality: 72
 factor_notes:
-  completion_rate: Top RACE report-quality score among deep research agents in DeepResearch Bench (48.88) and top quality in DeepResearchEval (8.51/10), but only 18% full success on Mind2Web 2 hard tasks (OpenAI Deep Research 28%), 13.3% hallucinated and 18.5% non-resolving citation URLs (highest of 10 systems, Rao et al.), and 12.9% strict acceptance on expert consulting tasks (Gemini 3.1 Pro). Judgment call.
+  completion_rate: Top RACE report-quality score among deep research agents in DeepResearch Bench (48.88) and top quality in DeepResearchEval (8.51/10), but only 18% full success on Mind2Web 2 hard tasks (OpenAI Deep Research 28%), 13.3% hallucinated and 18.5% non-resolving citation URLs (highest of 10 systems, Rao et al.), and 12.9% strict acceptance on expert consulting tasks (Gemini 3.1 Pro). In a preprint robustness test (MisKnow-Agent, July 2026), its reports adopted planted false conclusions in up to 54% of cases when the misleading sources looked authoritative. Judgment call.
   disputes: No legal or regulatory action specific to Deep Research found. Researchers disclosed indirect prompt-injection issues in the wider Gemini assistant (SafeBreach, Tenable), which Google reports it mitigated; none was shown to affect Deep Research specifically. Judgment call.
   adherence_to_limits: Mind2Web 2 authors had to modify prompts because Gemini Deep Research sometimes ignored the instruction to cite sources for all information; 72.94% of cited statements matched their sources (ReportBench). Usage limits and tool scope are documented by the vendor; no independent permission or limit test was found. Judgment call.
-  evidence_quality: Seven independent performance sources, two peer-reviewed (ICLR 2026, NeurIPS 2025 D&B), one testing the current Gemini 3.1 Pro agent within the last 12 months. Three of the seven used a Gemini model as the main judge. Judgment call.
+  evidence_quality: Eight independent performance sources, two peer-reviewed (ICLR 2026, NeurIPS 2025 D&B), one testing the current Gemini 3.1 Pro agent within the last 12 months. Three of the seven used a Gemini model as the main judge. Judgment call.
 overall_score: 63
 overall_note: 0.30*60 + 0.20*65 + 0.25*55 + 0.25*72 = 62.75, rounded to 63
 evidence_grade: B
 independent_source_count:
-  performance: 7
+  performance: 8
   other: 2
 sources:
 - url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
@@ -70,6 +70,13 @@ sources:
   peer_reviewed: false
   version_tested: Gemini 3.1 Pro deep research (API)
   test_date: 2026 (month unstated)
+- url: https://arxiv.org/abs/2607.20891
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Is Deep Research Reliable? (MisKnow-Agent; Beijing University of Posts and Telecommunications, Shanghai AI Laboratory; preprint, Jul 2026): misleading documents supporting false conclusions were supplied through Gemini Deep Research''s file interface with web search on. Reports adopted the false conclusion in 54% of cases with high-authority sources, 46% medium and 8% low; 27% with one misleading document and 50–56% with three to five. Robustness test, not task completion'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: about Jul 2026 (product page accessed 2026-07-06)
 - url: https://www.safebreach.com/blog/invitation-is-all-you-need-hacking-gemini/
   kind: independent other
   accessed: '2026-10-17'
@@ -94,8 +101,10 @@ uncertainties:
 - The 3.1 Pro test used the API agent, not the Gemini app.
 - 'Excluded from the count: TTD-DR (Google authors) and DRACO (Perplexity, a competitor that ranked itself first).'
 - No independent test of usage-limit or permission adherence was found.
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
+- 'Citation check incomplete — recheck later (0057: four 2025–2026 candidates screened, one counted; an Eye brief communication is paywalled until 2027 and an AMCIS 2026 forecasting paper was read as abstract only; Semantic Scholar still unavailable).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0015-gemini-deep-research.md
+decision_packet:
+- decisions/0015-gemini-deep-research.md
+- decisions/0057-deep-research-followups.md
 notes: Informational only; not a guarantee, endorsement, or certification.

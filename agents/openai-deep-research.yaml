@@ -104,9 +104,11 @@ uncertainties:
 - ReportBench venue status is unverified; two sources are preprints.
 - Benchmarks rely partly on AI judges.
 - Vendor benchmark figures (e.g. HLE, GAIA) are not used as independent evidence.
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
+- 'Citation check incomplete — recheck later (0057: an ANZ J Surg perspective was not a test; an Eye brief communication is paywalled until 2027; Semantic Scholar still unavailable).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0003-openai-deep-research.md
+decision_packet:
+- decisions/0003-openai-deep-research.md
+- decisions/0057-deep-research-followups.md
 recheck_packet: decisions/0019-openai-deep-research-recheck.md
 notes: Informational only; not a guarantee, endorsement, or certification.
