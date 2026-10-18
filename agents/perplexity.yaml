@@ -96,8 +96,11 @@ uncertainties:
 - Lawsuits are pending allegations, not findings.
 - The robots.txt point is CJR's interpretation, stated by CJR as a suggestion.
 - The overall score is exactly 53.5; exact .5 rounds up (Decision 0010).
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
-last_reviewed: '2026-10-16'
+- Three peer-reviewed health-information studies (PLoS ONE 2025, PeerJ 2025, PLoS ONE 2026; the first two share authors) rated Perplexity highly on readability and quality scales, including a June 2026 test of the free Sonar model; not counted because they check that sources are listed, not that sources support the answer.
+- 'Citation check incomplete — recheck later (0056: five 2025–2026 candidates read, none in scope; Semantic Scholar still unavailable).'
+last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0004-perplexity.md
+decision_packet:
+- decisions/0004-perplexity.md
+- decisions/0056-perplexity-followup.md
 notes: Informational only; not a guarantee, endorsement, or certification.
