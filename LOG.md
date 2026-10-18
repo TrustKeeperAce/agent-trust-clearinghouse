@@ -184,3 +184,8 @@ The first Search Console verification file (public/google4abc2024514dc361.html) 
 
 ## 2026-10-18 — Deploy note (0060 verification file replacement)
 Commit 0465a1a deployed to production as dpl_4K7Y7kRHhW5hLcujx9NYP27fsDiZ via Vercel API (1 file uploaded, 45 in deployment; old verification file excluded). Live check: all 45 files match sha1; /google4c18d564fd1acb53.html returns 200 text/html with exact content; /google4abc2024514dc361.html now returns 404. Next: Remington clicks Verify in Search Console (correct account) and submits sitemap.xml.
+
+## 2026-10-18 — Deploy 0061 (agent distribution)
+- Deployed commit 803fc59 via Vercel MCP: dpl_3VbVr4JoKpHv1b9Ep8QFS5xUmDK1 (production), 45 files uploaded, 49 files in deployment.
+- Verified: 49/49 live sha1 match; content-types OK (json, csv, xml, text/plain, html); google4c18d564fd1acb53.html 200.
+- Entry pages: 34 live agents/*.html = 34 export ids = 34 sitemap agent URLs (38 URLs total). Earlier "33" was a miscount; no mismatch.
