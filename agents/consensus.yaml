@@ -90,8 +90,10 @@ uncertainties:
 - Samples are small and mostly in health sciences; several tests used the free tier.
 - The PRS Global Open study is qualitative (one question, no accuracy grading).
 - A retracted CJILS comparison was excluded.
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
+- 0058 follow-up: a Semantic Scholar search (Oct 2026) found no new independent test; a Cureus 2025 review of the app is a literature review, not a test.
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0022-consensus.md
+decision_packet:
+- decisions/0022-consensus.md
+- decisions/0058-consensus-safe-julius.md
 notes: Informational only; not a guarantee, endorsement, or certification.

@@ -98,8 +98,10 @@ uncertainties:
 - Benchmarks published by competing products are not independent.
 - Privacy, retention, training-use, and compliance statements are vendor statements and were not independently verified.
 - The product and its billing model changed in 2026; older evidence may not reflect the current product.
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
+- 'Citation check incomplete — recheck later (0058: a 2025 comparison study had no hands-on test; a 2025 hands-on demonstration was read as abstract only; Semantic Scholar still unavailable).'
 last_reviewed: '2026-10-16'
 decision: APPROVED
-decision_packet: decisions/0007-julius-ai.md
+decision_packet:
+- decisions/0007-julius-ai.md
+- decisions/0058-consensus-safe-julius.md
 notes: Informational only; not a guarantee, endorsement, or certification.

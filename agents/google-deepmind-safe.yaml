@@ -3,22 +3,22 @@ slug: google-deepmind-safe
 category: verification
 type: research code (Apache-2.0 code; CC-BY other materials; bundled FActScore code MIT)
 homepage: https://github.com/google-deepmind/long-form-factuality
-summary: SAFE (Search-Augmented Factuality Evaluator) is open research code from Google DeepMind, described in a NeurIPS 2024 paper, that uses a language model and Google Search results to rate individual facts in long-form text. The authors report 72% agreement with crowdsourced annotators. Independent peer-reviewed studies report agreement with human annotators of about 84% on biography facts and strong correlation on factual labels, alongside weaker results for its claim extraction; these studies were conducted by researchers proposing alternative methods. Commentators have questioned the authors' comparison with crowdworkers rather than expert fact-checkers. Overall score 66. Informational only; not a guarantee, endorsement, or certification.
+summary: SAFE (Search-Augmented Factuality Evaluator) is open research code from Google DeepMind, described in a NeurIPS 2024 paper, that uses a language model and Google Search results to rate individual facts in long-form text. The authors report 72% agreement with crowdsourced annotators. Four independent peer-reviewed studies report agreement with human annotators of about 84% on biography facts and strong correlation on factual labels, alongside weaker results for its claim extraction (including many incomplete extracted facts); these studies were conducted by researchers proposing alternative methods. Commentators have questioned the authors' comparison with crowdworkers rather than expert fact-checkers. Overall score 66. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 65
   disputes: 80
   adherence_to_limits: 60
   evidence_quality: 60
 factor_notes:
-  completion_rate: Independent agreement and correlation are good on factual labels (84.48% on 786 biography facts, Zhao et al.; response-level Pearson 0.95, FactBench), weaker on other labels (0.60) and for claim extraction (VeriScore). Judgment call.
+  completion_rate: Independent agreement and correlation are good on factual labels (84.48% on 786 biography facts, Zhao et al.; response-level Pearson 0.95, FactBench), weaker on other labels (0.60) and for claim extraction (VeriScore). VeriFact (EMNLP 2025) found 56.7% of SAFE-extracted facts incomplete on a deliberately difficult annotated set. Judgment call.
   disputes: No legal or regulatory disputes found. Public critique of the "superhuman" framing (comparison with crowdworkers, not expert fact-checkers). Judgment call.
   adherence_to_limits: Clear licences and stated limitations; maintained research code. Independently measured cost ($0.49 per response) is higher than the authors' $0.19, though setups differ. Judgment call.
-  evidence_quality: Three peer-reviewed independent sources, but small samples, mainly biographies and chat prompts, and each study promotes its own alternative method. Judgment call.
+  evidence_quality: Four peer-reviewed independent sources, but small samples, mainly biographies and chat prompts, and each study promotes its own alternative method. Judgment call.
 overall_score: 66
 overall_note: 0.30*65 + 0.20*80 + 0.25*60 + 0.25*60 = 65.5; exact .5 rounds up (Decision 0010)
 evidence_grade: B-
 independent_source_count:
-  performance: 3
+  performance: 4
   other: 2
 sources:
 - url: https://proceedings.neurips.cc/paper_files/paper/2024/file/937ae0e83eb08d2cb8627fe1def8c751-Paper-Conference.pdf
@@ -50,6 +50,13 @@ sources:
   peer_reviewed: true
   version_tested: unstated
   test_date: unstated
+- url: https://aclanthology.org/2025.emnlp-main.905/
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'VeriFact (EMNLP 2025; University of Michigan): on 1,168 human-annotated facts, 56.7% of SAFE-extracted facts were incomplete (VeriFact 22.5%) and SAFE covered 77.5% of human-identified facts; the annotated set was chosen for responses with many extraction problems; authors propose an alternative method'
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: about early 2025 (arXiv May 2025)
 - url: https://venturebeat.com/ai/google-deepmind-unveils-superhuman-ai-system-that-excels-in-fact-checking-saving-costs-and-improving-accuracy
   kind: independent other
   accessed: '2026-10-16'
@@ -62,12 +69,14 @@ sources:
 uncertainties:
 - Results depend on which language model SAFE runs with and on the Serper search API.
 - Cost figures across studies are not directly comparable.
-- All three independent studies come from researchers proposing competing evaluators.
+- All four independent studies come from researchers proposing competing evaluators.
 - No independent study using expert fact-checkers was found.
 - The authors' 72% and 76% figures are their own claims, not independent evidence.
 - The overall score is exactly 65.5; exact .5 rounds up (Decision 0010).
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
+- 'Citation check incomplete — recheck later (0058: three candidates read in full, one counted; Semantic Scholar still unavailable for SAFE).'
 last_reviewed: '2026-10-16'
 decision: APPROVED
-decision_packet: decisions/0009-google-deepmind-safe.md
+decision_packet:
+- decisions/0009-google-deepmind-safe.md
+- decisions/0058-consensus-safe-julius.md
 notes: Informational only; not a guarantee, endorsement, or certification.
