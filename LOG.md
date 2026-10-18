@@ -166,3 +166,6 @@ Decision 0055 (Browser Use: Atomicity for Agents counted; 8 counted / 3 peer-rev
 
 ## 2026-10-17 — Deploy note
 Decision 0056 (Perplexity follow-up: five 2025–2026 studies reviewed, none in scope, none counted; 54 / B unchanged; recheck note updated) was deployed to production as dpl_HdrRYeXfLxoSzJHfW7GHYdRxrzqN (commit a814e6e). Live check: both changed public files match their manifest shas. Next: 0057 (OpenAI Deep Research and Gemini Deep Research follow-ups), drafting privately.
+
+## 2026-10-17 — Deploy note
+Decision 0057 (Gemini Deep Research: MisKnow-Agent counted, 8 counted / 2 peer-reviewed, 63 / B unchanged; OpenAI Deep Research: nothing counted, 65 / B unchanged; recheck notes updated) was deployed to production as dpl_J9uuv9qgvdwgT2yCcY28DPxbHGa8 (commit 351ef9b). Live check: all three changed public files match their manifest shas. Next: 0058 (Consensus, Google DeepMind SAFE, Julius AI), drafting privately; 0059 (Browser Use candidates) queued.
