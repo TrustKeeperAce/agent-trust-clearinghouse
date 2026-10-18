@@ -145,3 +145,6 @@ Decision 0048 (SusVibes added to SWE-agent; 9 counted, 7 peer-reviewed; 58/B unc
 
 ## 2026-10-17 — Deploy note
 Decision 0049 (SusVibes added to OpenHands, now 11 counted and 6 peer-reviewed at 61/A; SusVibes recorded as peer-reviewed for Claude Code, 6 of 15 at 55/A) was deployed to production as dpl_DFxEcBnzUYtoieYNkocoxK8NRbae (commit 151f475). Live check: the openhands, claude-code and changelog shas all match.
+
+## 2026-10-17 — Deploy note
+Decision 0050 (Agent S safety-test correction; TOCTOU study counted, now 8 counted and 2 peer-reviewed; 49/B unchanged) was deployed to production as dpl_DtkzRieT4F4X6oV4TY9xEcHvtb9a (commit c4d84a2). Live check: the agent-s and changelog shas match. 0050 D7 (Browser Use follow-up) is still pending.
