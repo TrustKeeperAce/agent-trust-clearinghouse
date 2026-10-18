@@ -1,0 +1,255 @@
+name: OpenAI Codex (CLI and cloud agent)
+slug: openai-codex
+category: Coding agent
+type: 'Coding agent from OpenAI: open-source Codex CLI (Apache-2.0; GitHub openai/codex), IDE extension and desktop app, and the cloud Codex agent in ChatGPT; runs OpenAI models by default and other models via configuration'
+homepage: https://github.com/openai/codex
+scope: 'The Codex agent products launched from April 2025: Codex CLI (including headless exec), the IDE extension and desktop app, and the cloud Codex agent that opens pull requests, through Codex CLI rust-v0.163.0 (15 October 2026). The 2021 Codex model behind early GitHub Copilot, and GPT-Codex models run inside other harnesses, are not covered.'
+summary: OpenAI Codex is OpenAI's coding agent, available as an open-source command-line tool, an IDE extension and desktop app, and a cloud agent that opens pull requests. Twenty-six independent studies that ran it were found (five peer-reviewed). Results depend heavily on the model and task. Codex CLI had the highest score in several 2026 benchmarks, for example 63% on Terminal-Bench 2.0 with GPT-5.2 and 42.50% on cross-repository changes (WideSWE), but it trailed Claude Code or OpenCode on others, and hard multimedia and research tasks stayed low (16.2-26.8%). In field studies of public GitHub pull requests, cloud Codex pull requests had the highest acceptance rates of the agents compared (64% and 59.6-88.6%). Out-of-scope actions on benign tasks were measured at 5.4-13.5%. Seven CVEs affecting Codex CLI or the desktop app have been published; fixes are referenced for most. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 60
+  disputes: 55
+  adherence_to_limits: 45
+  evidence_quality: 85
+overall_score: 62
+evidence_grade: A
+independent_source_count:
+  performance: 26
+  peer_reviewed: 5
+  other: 9
+factor_notes:
+  completion_rate: 'Terminal-Bench 2.0: Codex CLI + GPT-5.2 63%, the highest average. TerminalWorld: 48.5% pass with GPT-5.5. WideSWE (v0.147.0): 42.50%, the best of seven. TEBench: highest composite (72.3%). SWE Atlas: GPT-5.4 in Codex 43.49% pass@1, the highest. SWE-Duel: ranked first. Timeline-Bench (0.155.1): 26.8%, the best of 16. BountyBench: patched 90%, detected 12.5%. Lower than Claude Code or OpenCode on SWE-RPG (28.5% vs 32.8-33.0%), RuBench (66.7% vs 78.7%) and ResearchClawBench (18.4 vs 21.5 of 100). MMTB 16.2%. Field studies: cloud Codex pull requests accepted at 64% (AIDev) and 59.6-88.6% by task type (MSR 2026), the highest of the agents compared.'
+  disputes: Seven CVEs affecting Codex CLI or the desktop app (2025-2026), including sandbox and approval bypasses and commands run from project configuration (CVSS 4.1-9.8). One is a GitHub advisory patched in 0.39.0; the 2026 CVEs were published by OpenAI with fix pull requests referenced. No legal or regulatory action specific to Codex was found.
+  adherence_to_limits: 'Overeager Coding Agents (0.90.0): out-of-scope actions on benign tasks 5.4-13.5% for Codex CLI, lower than Claude Code but higher than OpenHands. SNARE (0.57.0): 11.2% of runs. ABTest: anomaly rates up to 59.9% with a small model. MT-Sec: correct-and-secure output fell from 50.1% to 29.0% in a multi-turn setting. HarnessSecurity-Bench: protection from security settings varied. CVEs include approval and sandbox bypasses.'
+  evidence_quality: Twenty-six independent sources, five peer-reviewed (NeurIPS 2025, ICLR 2026, MSR 2026, EMNLP 2026, ASE 2026 extended abstract). Recent tests state versions (0.144.0 in July 2026, v0.147.0 and 0.155.1 in September 2026), so grade A. Most sources are preprints, and several have funding or competitor disclosures.
+sources:
+- url: https://arxiv.org/abs/2505.15216
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (o3-high, o4-mini)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'BountyBench (Stanford; NeurIPS 2025): real-world bug-bounty systems; Codex CLI with o3-high detected 12.5% and patched 90%; with o4-mini patched 90%; Codex CLI and Claude Code stronger at defence than offence'
+- url: https://arxiv.org/abs/2601.11868
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (2025-26)
+  test_date: 2025-2026
+  accessed: '2026-10-17'
+  note: 'Terminal-Bench 2.0 (ICLR 2026): Codex CLI with GPT-5.2 had the highest average resolution rate (63%); with GPT-5-Nano it resolved far fewer tasks. No OpenAI authors (an Anthropic co-author excludes it for Claude Code only)'
+- url: https://dl.acm.org/doi/full/10.1145/3793302.3793576
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: cloud Codex agent (2025)
+  test_date: 2025-05 to 2025-07
+  accessed: '2026-10-17'
+  note: 'Comparing AI Coding Agents (Trieste, KCL, UCL; MSR 2026, arXiv 2602.08915): OpenAI Codex pull requests in AIDev accepted at 59.6-88.6% across nine task types, highest of five agents; 79.9% in the common May-July 2025 window. Field study'
+- url: https://arxiv.org/abs/2510.13859
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: codex-cli 0.39.0
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'MT-Sec (University of Maryland; EMNLP 2026 per author homepage): Codex + GPT-5 (thinking) correct-and-secure 50.1% single-turn, falling to 29.0% in one multi-turn setting (overall 36.2%). Disclosure: the authors acknowledge gifts from OpenAI and Google DeepMind'
+- url: https://arxiv.org/abs/2605.22535
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (GPT-5.5)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'TerminalWorld (UCL, Nanjing, Tencent; ASE 2026 extended abstract): Codex CLI with GPT-5.5 passed 48.5% (56.1% resolved) of 200 verified real-world terminal tasks'
+- url: https://arxiv.org/abs/2507.15003
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: cloud Codex agent (2025)
+  test_date: '2025'
+  accessed: '2026-10-17'
+  note: 'The Rise of AI Teammates in SE 3.0 (Queen''s University; AIDev dataset; preprint): OpenAI Codex pull requests accepted at 64%, vs Devin 49% and GitHub Copilot 35%. Field study'
+- url: https://arxiv.org/abs/2602.12670
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (GPT-5.5)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SkillsBench (BenchFlow and others; preprint): Codex + GPT-5.5 66.5% with Skills (OpenHands with the same model 67.3%). Disclosure: the authors thank OpenAI and other model providers'
+- url: https://arxiv.org/abs/2608.09072
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE-RPG (SMU, Monash and others; preprint Aug 2026): 163 repository tasks across backends; Codex averaged 28.5% resolved (Claude Code 32.8%, OpenCode 33.0%)'
+- url: https://arxiv.org/abs/2606.07591
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'ResearchClawBench (Shanghai AI Lab; preprint): research-reproduction tasks; Codex CLI averaged 18.4 of 100 (Claude Code 21.5)'
+- url: https://arxiv.org/abs/2608.19799
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE-bench Science (Shanghai Innovation Institute, Fudan; preprint): Codex configurations kept 93.28-98.32% of passing tests passing; best overall pass@1 was a Claude Code configuration (47.90%)'
+- url: https://arxiv.org/abs/2605.18583
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI 0.90.0
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Overeager Coding Agents (Griffith, NTU, UNSW, Quantstamp; preprint May 2026): out-of-scope actions on benign tasks 5.4-13.5% for Codex CLI depending on model (Claude Code 11.8-27.7%, OpenHands 0.2-4.5%)'
+- url: https://arxiv.org/abs/2605.28122
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI 0.57.0
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SNARE (Griffith, Quantstamp and others; preprint May 2026): synthesised scenarios elicited overeager behaviour in 11.2% of Codex CLI runs (Claude Code 19.6%, Gemini CLI 11.0%, OpenHands 42.8%). Disclosure: overlaps in authors with Overeager'
+- url: https://arxiv.org/abs/2607.10569
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Tool-surface ablation (RIT; preprint Jul 2026): restricting Codex to code execution cut cost by 19.9% on SWE-bench tasks without a significant pass-rate change'
+- url: https://arxiv.org/abs/2604.03362
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'ABTest (York, Polytechnique Montreal, Concordia; preprint Apr 2026): behaviour-anomaly rate 59.9% for Codex CLI + GPT-5.1-Codex-Mini and 28.4% with GPT-4o-mini (range across agents 23.1-59.9%)'
+- url: https://arxiv.org/abs/2604.10261
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (GPT-5.4)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'The Amazing Agent Race (Minnesota, Yonsei, Grammarly; preprint): Codex CLI about 37% accuracy; Claude Code matched it with about 6x fewer tokens'
+- url: https://arxiv.org/abs/2605.06125
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'TEBench (Nanjing University and others; preprint May 2026): project-level test evolution; Codex CLI had the highest composite score (72.3%) and executability (99.2%) of five configurations'
+- url: https://arxiv.org/abs/2605.08366
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (GPT-5.4)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE Atlas (Scale AI; preprint May 2026): GPT-5.4 in Codex had the highest pass@1 (43.49%), ahead of Opus 4.7 in Claude Code (41.89%). Disclosure: Scale AI runs commercial leaderboards'
+- url: https://arxiv.org/abs/2605.10966
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (GPT-5.2)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'MMTB (POSTECH, Krafton; preprint May 2026): Codex CLI with GPT-5.2 solved 16.2% of multimedia-file terminal tasks'
+- url: https://arxiv.org/abs/2605.23574
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (gpt-5.4)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Push Your Agent (preprint May 2026): Codex CLI solved many 50-artifact counting tasks but only 3 of 9 per condition at 100 artifacts'
+- url: https://arxiv.org/abs/2606.26158
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI v0.122 and v0.130.0
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'Life After Benchmark Saturation: CORE-Bench (Princeton and others; preprint Jun 2026): Codex CLI configurations reached 92.3-97.4% on the corrected CORE-Bench Hard. Disclosure: compute credit from OpenAI'
+- url: https://arxiv.org/abs/2607.06411
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI 0.142.5 and 0.144.0
+  test_date: 2026-07
+  accessed: '2026-10-17'
+  note: 'RuBench (independent researcher; preprint v2 Jul 2026): Russian-specification repository tasks; Codex CLI + GPT-5.5 66.7% pass@1 vs Claude Code + Opus 4.8 78.7%'
+- url: https://arxiv.org/abs/2609.33382
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI v0.147.0
+  test_date: 2026-09
+  accessed: '2026-10-17'
+  note: 'WideSWE (Zhejiang, Tsinghua; preprint Sep 2026): cross-repository changes; Codex CLI + GPT-5.6-sol had the highest full success (42.50%) of seven configurations'
+- url: https://arxiv.org/abs/2609.35143
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI 0.155.1
+  test_date: 2026-09
+  accessed: '2026-10-17'
+  note: 'Timeline-Bench (TensorTest; preprint Sep 2026): video-editing tasks; GPT-6 Astra in Codex with editorial guidance resolved the most tasks, 15 of 56 (26.8%)'
+- url: https://arxiv.org/abs/2610.12569
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Codex CLI 0.62
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'SWE-Duel (SMU; preprint Oct 2026, under review): GPT-5.5 with Codex CLI ranked first, repairing 98.3% of the defects it reviewed'
+- url: https://arxiv.org/abs/2605.17046
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (gpt-5.5)
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: '1GC-7RC (University of the Bundeswehr Munich; preprint May 2026): seven ML research tasks on one GPU; Codex often stopped early, using about 50% of its time budget on average'
+- url: https://arxiv.org/abs/2610.07639
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-17'
+  note: 'HarnessSecurity-Bench (Sun Yat-sen University and others; preprint Oct 2026): tested whether security settings in six harnesses, including Codex CLI (approval policy, sandbox, network), block attacks; protections varied by mechanism and task'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2025-59532
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2025-59532 (Codex CLI 0.2.0-0.38.0): sandbox writable root could be set from a model-generated path; patched in 0.39.0 (GitHub advisory, high)'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2025-55345
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2025-55345: symlinks followed outside the working directory in workspace-write mode (CVSS 8.8, reported by JFrog; fix PR #1705)'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2025-61260
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2025-61260 (v0.23.0 and earlier): project-local configuration could start commands without confirmation (CVSS 9.8; reported by Check Point Research; NVD Awaiting Analysis)'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2025-54558
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2025-54558 (before 0.9.0): certain ripgrep flags auto-approved (CVSS 4.1)'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-19591
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-19591 and CVE-2026-19592 (Codex CLI and desktop app; published by OpenAI, 1 Sept 2026): a PowerShell command misclassified as safe, and Git fsmonitor helpers run during metadata collection; CVSS 8.8 and 7.3; fix pull requests #22643 and #22652'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-14898
+  kind: other
+  accessed: '2026-10-17'
+  note: 'CVE-2026-14898 (Codex desktop app for macOS; published by OpenAI): remote images in responses could exfiltrate session data after prompt injection; CVSS 6.5; no known exploitation'
+- url: https://arxiv.org/abs/2609.38983
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Approval Laundering (working draft, Sept 2026): analysis of approval-execution binding failures in harnesses including Codex v0.154.0; security analysis, not a performance test'
+- url: https://arxiv.org/abs/2606.18168
+  kind: other
+  accessed: '2026-10-17'
+  note: 'All Smoke, No Alarm (Kennesaw State and others; preprint): 15-18% of OpenAI Codex agent-authored test code had strong oracles, the lowest of five agents. Descriptive analysis'
+- url: https://arxiv.org/abs/2604.00917
+  kind: other
+  accessed: '2026-10-17'
+  note: 'Investigating Autonomous Agent Contributions in the Wild (TU Delft, UC Davis; preprint): about 75% of Codex pull requests sampled were in repositories with 0 stars. Descriptive'
+- url: https://openai.com/codex/
+  kind: vendor (not counted)
+  accessed: '2026-10-17'
+  note: OpenAI system cards, launch posts and benchmark figures for Codex and GPT-Codex models; vendor, not counted
+- url: https://arxiv.org/abs/2603.04915
+  kind: vendor (not counted)
+  accessed: '2026-10-17'
+  note: 'EVMbench (OpenAI, Paradigm, OtterSec): vendor co-authored benchmark; not counted. An independent re-evaluation (2603.10795) is pending figure extraction'
+uncertainties:
+- Citation check incomplete — recheck later. Figures not yet extracted for BeyondSWE (v0.118.0), PostTrainBench, Re-Evaluating EVMBench, ProcCtrlBench, DeepSWE and Act As a Real Researcher; the batch citation search was not fully screened.
+- 'Scope: the entry combines the CLI and the cloud agent. Pull-request field studies cover the cloud agent; most benchmarks cover the CLI.'
+- Many runs use non-default or very recent models, and results depend heavily on the model.
+- MT-Sec's EMNLP 2026 venue comes from an author homepage.
