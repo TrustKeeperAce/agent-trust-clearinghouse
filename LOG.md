@@ -172,3 +172,6 @@ Decision 0057 (Gemini Deep Research: MisKnow-Agent counted, 8 counted / 2 peer-r
 
 ## 2026-10-17 — Deploy note
 Decision 0058 (Google DeepMind SAFE: VeriFact counted, 4 counted / 4 peer-reviewed, 66 / B- unchanged; Consensus: nothing new, recheck note closed, 62 / B; Julius AI: nothing counted, Insufficient evidence) was deployed to production as dpl_EozqasPE7Lfw5DxJVYfKdA73HAxW (commit db88ca5). Live check: all 44 live public files match the manifest shas. Next: 0059 (Browser Use remaining candidates), drafting privately.
+
+## 2026-10-17 — Deploy note
+Decision 0059 (Browser Use: AgentTell, Privacy Practices of Browser Agents and BreakingWeb counted; 11 counted / 3 peer-reviewed; grade B → A; overall 51 unchanged; recheck note removed) was deployed to production as dpl_EeLkre34exGXT5oFraKx3cdreqoS (commit f384a28). Live check: all four changed public files match their manifest shas. The main 0052 citation-sweep follow-ups (0053–0059) are now complete. Remaining items: Eye recheck after 2027-01-01, AMCIS (Gemini) and Julius J2 full texts, and the outstanding recheck notes on other entries.
