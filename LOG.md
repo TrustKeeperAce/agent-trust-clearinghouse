@@ -160,3 +160,6 @@ Decision 0053 (SWE-agent: Sifting the Noise added; 10 counted / 8 peer-reviewed;
 
 ## 2026-10-17 — Deploy note
 Decision 0054 (Elicit: Mazzali, Meliante and Spillias added; 10 counted / 9 peer-reviewed; scores unchanged, 68 / A) was deployed to production as dpl_GkmXTtP6Tcv8ovt8igmJJhf85YwD (commit 34a7fbf). Live check: both changed public files match their manifest shas. Next: 0055 (Browser Use, Atomicity for Agents), drafting privately.
+
+## 2026-10-17 — Deploy note
+Decision 0055 (Browser Use: Atomicity for Agents counted; 8 counted / 3 peer-reviewed; scores and grade unchanged, 51 / B; resolves 0050 D7) was deployed to production as dpl_UUu1uH5JGD71eUKfodad5VDLKjhe (commit 626038e). Live check: both changed public files match their manifest shas. Next: 0056 (Perplexity follow-up), drafting privately.
