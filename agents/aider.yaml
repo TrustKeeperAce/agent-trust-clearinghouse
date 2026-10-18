@@ -15,13 +15,13 @@ overall_score: 52
 evidence_grade: A
 independent_source_count:
   performance: 8
-  peer_reviewed: 5
+  peer_reviewed: 6
   other: 4
 factor_notes:
   completion_rate: 'GitTaskBench (v0.84.1.dev): execution completion 5.56-20.37% and task pass rate 1.85-16.67% across GPT-4o, GPT-4.1, Claude 3.5 and DeepSeek V3, the lowest of three frameworks (SWE-agent up to 42.59%, OpenHands up to 48.15%); Aider + DeepSeek V3 had the lowest cost (under $0.003 per task). SEC-bench (v0.82.0, 80 instances): 11.2-20.0% vulnerabilities patched (SWE-agent 26.2-33.8%), proof-of-concept 1.2% (Claude 3.7 Sonnet). OmniCode (Gemini-2.5-Flash): Python bug-fixing 32.4% vs SWE-agent 38.1%, C++ 1.8% vs 8.0%, Java 19.3% vs 14.7%. SecRepoBench: pass@1 56.6-70.1% across models (OpenHands up to 79.6%). Multi-Harness RL (Qwen3-8B-based models on SWE-bench Verified): mean 2.14% solved under Aider, lowest of four harnesses (OpenHands 9.27%).'
   disputes: 'CVE-2026-85674 (an untrusted repository''s .aider.conf.yml can set test or lint commands that run at startup without confirmation; through v0.86.2; CVSS 3.1 7.8 per VulnCheck; GitHub issue #5254 open). CVE-2026-10175 (Architect mode: prompt injection via repository files can lead to injected code being committed; reported in 0.86.3 per VulDB; CVSS 3.1 6.3; NVD Not Scheduled; VulDB states the maintainer did not respond; issue #5058 open). No fix identified for either as of 17 October 2026. No legal or regulatory action found. No release since February 2026.'
   adherence_to_limits: 'SecureVibeBench (v0.86.1): average correct-and-secure rate 6.7%, lowest of three agents (SWE-agent 14.3%, OpenHands 13.9%). MT-Sec (v0.82.1): Aider + GPT-5 had the highest correct-and-secure score (35.8%) of three agents, though it fell by 27.3% in some multi-turn settings. SecRepoBench: secure-pass@1 39.0-50.6%; 21% of Aider + Claude Sonnet 4.5 completions did not compile. Sifting the Noise (v0.86.1): 14.3% false-positive rate when triaging static-analysis alerts (SWE-agent 14.1-14.9%), described as more stable across policies. The two CVEs concern commands or code run without user confirmation. No independent study of out-of-scope or unrequested actions by Aider was found.'
-  evidence_quality: Eight independent sources, five peer-reviewed (NeurIPS 2025, AAAI 2026, EMNLP 2026, ACL Findings 2026, LLM4Code workshop at ICSE 2026). Stated versions are v0.82.0, v0.82.1, v0.84.1.dev and v0.86.1 (twice). Sifting the Noise tested v0.86.1 around December 2025 to January 2026, within 12 months, so grade A. This score is below the methodology's suggested A range (85-100) because the A rests on a single recent versioned test, which is a preprint.
+  evidence_quality: Eight independent sources, six peer-reviewed (NeurIPS 2025, AAAI 2026, EMNLP 2026, ACL Findings 2026, ISSTA 2026, LLM4Code workshop at ICSE 2026). Stated versions are v0.82.0, v0.82.1, v0.84.1.dev and v0.86.1 (twice). Sifting the Noise tested v0.86.1; the test date is not stated, but its access dates (December 2025 to January 2026) place it within 12 months, so grade A. This score is below the methodology's suggested A range (85-100) because the A rests on a single recent versioned test whose date is inferred.
 sources:
 - url: https://arxiv.org/abs/2506.11791
   kind: independent performance
@@ -67,11 +67,11 @@ sources:
   note: 'SecureVibeBench (Singapore Management University et al.; preprint, v5 June 2026): average correct-and-secure rate Aider 6.7%, SWE-agent 14.3%, OpenHands 13.9% across five models; Aider + Claude Sonnet 4.5 high cost relative to results. Disclosure: authors overlap with Sifting the Noise'
 - url: https://arxiv.org/abs/2601.22952
   kind: independent performance
-  peer_reviewed: false
+  peer_reviewed: true
   version_tested: Aider v0.86.1
-  test_date: 2025-12 to 2026-01
+  test_date: unstated; between 2025-08-13 (v0.86.1 tag) and 2026-01-30 (submission); access dates Dec 2025–Jan 2026
   accessed: '2026-10-17'
-  note: 'Sifting the Noise (Monash University et al.; preprint v3 July 2026, venue unconfirmed): agents triaging static-analysis alerts; Aider false-positive rate 14.3% (OpenHands 14.9%, SWE-agent 14.1% with GPT-5); Aider more stable across policy types'
+  note: 'Sifting the Noise (Monash University; ISSTA 2026, Proc. ACM Softw. Eng. 3, ISSTA009): agents triaging static-analysis alerts; Aider false-positive rate 14.3% (OpenHands 14.9%, SWE-agent 14.1% with GPT-5); Aider more stable across policy types'
 - url: https://arxiv.org/abs/2609.04518
   kind: independent performance
   peer_reviewed: false
@@ -101,11 +101,14 @@ sources:
   note: 'Aider leaderboards (Polyglot, code editing, refactoring): run by the Aider maintainer; listed, not counted (0036 cautions 1 and 3)'
 uncertainties:
 - Citation check incomplete — recheck later. Unscreened candidates include AAAI 2026 "Interactive Evaluation of LLMs for Multi-Requirement SE Tasks", two ESEM 2026 papers, a TOSEM paper on process-centric analysis of agentic systems, and a CSIT 2026 benchmarking paper.
-- Grade A rests on one recent versioned test (Sifting the Noise, preprint). The other versioned tests date from 2025, more than 12 months ago.
+- Grade A rests on one recent versioned test (Sifting the Noise, ISSTA 2026). The other versioned tests date from 2025, more than 12 months ago.
+- Grade A depends on the inferred test date of Sifting the Noise; if it predates 17 October 2025, the grade would be B.
 - CVE-2026-10175 names version 0.86.3, which does not appear on PyPI (latest 0.86.2); it may refer to the main branch.
 - MT-Sec's EMNLP 2026 venue comes from an author homepage and was not confirmed in the ACL Anthology.
 - Results depend heavily on the model, and many results reflect older models.
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0041-aider.md
+decision_packet:
+- decisions/0041-aider.md
+- decisions/0051-grade-a-basis-check.md
 notes: Informational only; not a guarantee, endorsement, or certification.

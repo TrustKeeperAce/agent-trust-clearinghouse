@@ -77,7 +77,7 @@ sources:
   note: 'Wei et al. (medRxiv preprint, Oct 2026; CAMH/Toronto): Pro tier, Dec 2025–May 2026; search found 158 of 5,285 studies; abstract screening sensitivity 0.71, full-text 0.78, precision 0.38; extraction 85% helpful, 79% fully accurate'
   peer_reviewed: false
   version_tested: Pro tier
-  test_date: 2025-12/2026-05
+  test_date: 2025-12 to 2026-04/05 (paper gives both)
 - url: https://elicit.com/blog/how-we-evaluated-elicit-systematic-review
   kind: vendor or maintainer
   accessed: '2026-10-17'
@@ -94,7 +94,10 @@ uncertainties:
 - Studies are small and mostly in health sciences; results differ by task (search, screening, extraction).
 - The vendor's own evaluation (93.6% recall, 94–99% extraction accuracy) is not used.
 - The overall score is exactly 67.5; exact .5 rounds up (Decision 0010).
+- Grade A rests on one recent test (Wei et al., preprint) that states the Pro tier and the dates of use; Elicit publishes no version numbers.
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0017-elicit.md
+decision_packet:
+- decisions/0017-elicit.md
+- decisions/0051-grade-a-basis-check.md
 notes: Informational only; not a guarantee, endorsement, or certification.
