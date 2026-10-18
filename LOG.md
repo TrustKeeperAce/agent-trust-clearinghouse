@@ -181,3 +181,6 @@ Decision 0060 (traffic measurement) approved as recommended (D1a–D7). Added "P
 
 ## 2026-10-18 — Decision 0060 verification file replaced
 The first Search Console verification file (public/google4abc2024514dc361.html) was for the wrong Google account; removed and replaced with public/google4c18d564fd1acb53.html (exact Google content, no page HTML changes). decisions/0060 note updated. No score, grade or page content changes.
+
+## 2026-10-18 — Deploy note (0060 verification file replacement)
+Commit 0465a1a deployed to production as dpl_4K7Y7kRHhW5hLcujx9NYP27fsDiZ via Vercel API (1 file uploaded, 45 in deployment; old verification file excluded). Live check: all 45 files match sha1; /google4c18d564fd1acb53.html returns 200 text/html with exact content; /google4abc2024514dc361.html now returns 404. Next: Remington clicks Verify in Search Console (correct account) and submits sitemap.xml.
