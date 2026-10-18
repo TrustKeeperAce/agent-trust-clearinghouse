@@ -3,7 +3,7 @@ slug: browser-use
 category: browser/web agent
 type: open source (MIT); commercial Cloud service not covered
 homepage: https://github.com/browser-use/browser-use
-summary: Browser Use is an open-source Python library (MIT licence) that lets a language model of the user's choice control a web browser to carry out tasks. Results depend heavily on the model used. In independent evaluations (Online-Mind2Web, COLM 2025; Princeton's Holistic Agent Leaderboard; CAP, COLM 2026; a 2026 preprint), success rates ranged from about 2–5% full success on hard cross-site tasks to 18–45% on live-website benchmarks, well below the vendor's own figures. Independent security studies (VPI-Bench, ICLR 2026; two preprints) found it often followed instructions hidden in web pages, and a domain-restriction bypass (CVE-2025-47241) was fixed in version 0.1.45. The vendor's Cloud service is not covered. Overall score 51. Informational only; not a guarantee, endorsement, or certification.
+summary: Browser Use is an open-source Python library (MIT licence) that lets a language model of the user's choice control a web browser to carry out tasks. Results depend heavily on the model used. In independent evaluations (Online-Mind2Web, COLM 2025; Princeton's Holistic Agent Leaderboard; CAP, COLM 2026; a 2026 preprint), success rates ranged from about 2–5% full success on hard cross-site tasks to 18–45% on live-website benchmarks, well below the vendor's own figures. Independent security studies (VPI-Bench, ICLR 2026; three preprints) found it often followed instructions hidden in web pages and could be misdirected when a page changed between check and action, and a domain-restriction bypass (CVE-2025-47241) was fixed in version 0.1.45. The vendor's Cloud service is not covered. Overall score 51. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 40
   disputes: 50
@@ -12,15 +12,15 @@ scores:
 factor_notes:
   completion_rate: 30.0% human-evaluated success on Online-Mind2Web with GPT-4o (Operator 61.3%); 18.3–40.0% across 12 models on Princeton HAL's Online-Mind2Web and 2.0–38.8% on its AssistantBench subset; 2.0–5.0% full success on CAP (late 2025); 45.0% on a WebVoyager/WebShop subset (Skim). Strongly model-dependent. Judgment call.
   disputes: No legal or regulatory action found. One GitHub-reviewed critical advisory (GHSA-x39x-9qw5-ghrf / CVE-2025-47241, CVSS 4.0 Medium at NVD/CNA), fixed in 0.1.45; a researcher-reported credential-exfiltration proof of concept had no CVE. Judgment call.
-  adherence_to_limits: The library's only built-in restriction (allowed_domains) could be bypassed before 0.1.45. Visual prompt-injection attack success was 16.7–100% across five platforms and six models (VPI-Bench; 73.7–100% on Amazon); plan-injection attacks succeeded up to 63%. Judgment call.
-  evidence_quality: Seven independent performance sources (four task-performance, three security), three peer-reviewed (COLM 2025, COLM 2026, ICLR 2026), two run in late 2025/2026. None of the recent tests states the library version, so the A condition of a current-version test within 12 months is not shown; grade B under the 0025 clarification (Decision 0035, consistency with STORM). The factor score is unchanged so the overall score stays 51.
+  adherence_to_limits: The library's only built-in restriction (allowed_domains) could be bypassed before 0.1.45. Visual prompt-injection attack success was 16.7–100% across five platforms and six models (VPI-Bench; 73.7–100% on Amazon); plan-injection attacks succeeded up to 63%. In a study of page changes between an agent's check and its action (Atomicity for Agents, Ohio State, preprint 2026), the vulnerability was triggered in 9 of 14 cases for Browser Use. Judgment call.
+  evidence_quality: Eight independent performance sources (four task-performance, four security), three peer-reviewed (COLM 2025, COLM 2026, ICLR 2026), three run in late 2025/2026. None of the recent tests states the library version, so the A condition of a current-version test within 12 months is not shown; grade B under the 0025 clarification (Decision 0035, consistency with STORM). The factor score is unchanged so the overall score stays 51.
 overall_score: 51
 overall_note: 0.30*40 + 0.20*50 + 0.25*30 + 0.25*85 = 50.75, rounded to 51
 evidence_grade: B
 independent_source_count:
-  performance: 7
+  performance: 8
   other: 3
-  count_note: 'Eight source rows record seven counted studies: the Holistic Agent Leaderboard paper and its leaderboard page are counted once.'
+  count_note: 'Nine source rows record eight counted studies: the Holistic Agent Leaderboard paper and its leaderboard page are counted once.'
 sources:
 - url: https://arxiv.org/abs/2504.01382
   kind: independent performance
@@ -79,6 +79,13 @@ sources:
   peer_reviewed: false
   version_tested: v0.1.44
   test_date: unstated
+- url: https://arxiv.org/abs/2603.00476
+  kind: independent performance
+  accessed: '2026-10-17'
+  note: 'Atomicity for Agents (Ohio State University; preprint, Feb 2026): tested 10 open-source browser- and computer-use agents on 14 cases where a web page changes between the agent''s check and its action (9 synthesized pages, 5 real sites). For Browser Use, the vulnerability was triggered in 9 of 14 cases (all data-update and expiring-state cases) and not in the 5 layout-change cases. Security test, not task completion'
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: about Jan 2026 (repository accessed 2025-12-27)
 - url: https://github.com/advisories/GHSA-x39x-9qw5-ghrf
   kind: independent other
   accessed: '2026-10-17'
@@ -106,8 +113,11 @@ uncertainties:
 - Three of the seven sources are security tests of earlier versions.
 - 'Excluded: vendor figures (89.1% WebVoyager, 97% Cloud, BU Bench) and Cybernaut (Amazon preprint), whose 82.2% Browser-Use figure appears to restate the vendor result.'
 - The Cloud service, which uses the vendor's own models and infrastructure, is not covered and has no independent tests.
+- Atomicity for Agents and Online-Mind2Web are both from Ohio State University; there is no author overlap.
 - 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
 last_reviewed: '2026-10-17'
 decision: APPROVED
-decision_packet: decisions/0016-browser-use.md
+decision_packet:
+- decisions/0016-browser-use.md
+- decisions/0055-browser-use-toctou.md
 notes: Informational only; not a guarantee, endorsement, or certification.
