@@ -151,3 +151,6 @@ Decision 0050 (Agent S safety-test correction; TOCTOU study counted, now 8 count
 
 ## 2026-10-17 — Deploy note
 Decision 0051 (grade-A basis check; no score changes; Aider 6 of 8 peer-reviewed; Elicit and Aider basis notes) was deployed to production as dpl_4LfgMcy4irWhRcQeMTUViHxwNBni (commit 0d3e297). Live check: the aider, elicit and changelog shas match. 0050 D7 (Browser Use TOCTOU) is still pending.
+
+## 2026-10-17 — Deploy note
+Decision 0052 (citation backfill; OpenHands 12 counted / 7 peer-reviewed, Claude Code 17 / 6; recheck notes on 13 entries; no score or grade changes) was deployed to production as dpl_G1VnzK9GLRxba3WxW4hNbh4DzWt1 (commit 33c5ab7). Live check: all 16 changed public files match their manifest shas. Next: 0053 (SWE-agent, Sifting the Noise), drafting privately; 0054 (Elicit) queued. 0050 D7 (Browser Use TOCTOU) is still pending.
