@@ -142,3 +142,6 @@ Decision 0047 (metadata and evidence-log fields) was applied to agents/*.yaml on
 
 ## 2026-10-17 — Deploy note
 Decision 0048 (SusVibes added to SWE-agent; 9 counted, 7 peer-reviewed; 58/B unchanged) was deployed to production as dpl_G3nmGj45UAPZE3j7XmZhEpohXEPL (commit 83e941c). Live check: swe-agent.html sha matches c1d47c1, and the changelog shows the SusVibes row.
+
+## 2026-10-17 — Deploy note
+Decision 0049 (SusVibes added to OpenHands, now 11 counted and 6 peer-reviewed at 61/A; SusVibes recorded as peer-reviewed for Claude Code, 6 of 15 at 55/A) was deployed to production as dpl_DFxEcBnzUYtoieYNkocoxK8NRbae (commit 151f475). Live check: the openhands, claude-code and changelog shas all match.
