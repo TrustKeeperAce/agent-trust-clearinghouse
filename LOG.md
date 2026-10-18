@@ -133,3 +133,6 @@ Decision 0044 (GitHub Copilot coding agent, Coding agent, 57 / B) was deployed a
 
 ## 2026-10-17 — Deploy note
 Decision 0045 (Devin, Cognition, Coding agent, 50 / B) was deployed as dpl_AhBYbX2viDdCAY1EQvion3MPBUas (commit d8dd312). Live check: the devin and index pages return 200. The entry carries "Citation check incomplete — recheck later". Batch 4 is complete. The design and branding pass (0046) is being drafted privately.
+
+## 2026-10-17 — Deploy note
+Decision 0046 (design refresh, layout and labels only; no score or rule changes) was deployed to production as dpl_3nDCvnVEDXkyykZKMF2SU7J8Df8n (commit eb607bf). Live check: all pages return 200 and the style.css sha matches. A one-time consistency pass over the entries published before the faster workflow begins privately (decision 0047 onward).
