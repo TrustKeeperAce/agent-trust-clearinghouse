@@ -4,7 +4,7 @@ category: Browser/web agent
 type: commercial
 homepage: https://help.openai.com/en/articles/6825453-chatgpt-release-note
 scope: OpenAI's current agent for multi-step tasks and its cloud browser (launched July 2026). Successor to Operator (Jan–Jul 2025) and ChatGPT agent (Jul 2025–Aug 2026), both retired. Deep research reports are covered by the separate OpenAI Deep Research entry.
-summary: ChatGPT Work is OpenAI's current agent for multi-step tasks, including a cloud browser that can act on websites. It replaced ChatGPT agent, which itself replaced Operator; both earlier products are retired. Independent tests exist for Operator and ChatGPT agent, but none were found for ChatGPT Work, which uses different models and a different setup, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
+summary: ChatGPT Work is OpenAI's current agent for multi-step tasks, including a cloud browser that can act on websites. It replaced ChatGPT agent, which itself replaced Operator; both earlier products are retired. Independent tests exist for Operator and ChatGPT agent but are not counted. Two independent tests of ChatGPT Work were found (a hands-on review and an integration vendor's benchmark), fewer than the three required, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
 status: Insufficient evidence
 scores:
   completion_rate: null
@@ -12,16 +12,16 @@ scores:
   adherence_to_limits: null
   evidence_quality: null
 factor_notes:
-  completion_rate: 'No independent test of ChatGPT Work was found. Earlier products, for reference only (not counted): Operator 61.3% (Online-Mind2Web), 68.6% (Emergence WebVoyager), 10% full success (Mind2Web 2); ChatGPT agent 65.8% (BearCubs).'
+  completion_rate: 'Two independent tests of ChatGPT Work were found (fewer than the 3 required): AI Agents Library, 10 business tasks, mean 9.15/10, one task (publishing a webpage) not completed (Aug–Sep 2026); Composio Golden Eval, 45 of 47 business-app scenarios passed (July 2026). Earlier products, for reference only (not counted): Operator 61.3% (Online-Mind2Web), 68.6% (Emergence WebVoyager), 10% full success (Mind2Web 2); ChatGPT agent 65.8% (BearCubs).'
   disputes: No lawsuit, regulatory action or CVE specific to Operator, ChatGPT agent or ChatGPT Work was found. Researchers demonstrated prompt-injection data leaks (Operator) and a CAPTCHA-policy bypass (ChatGPT agent); both were reported to OpenAI.
   adherence_to_limits: The vendor documents site-access settings, confirmations before consequential actions and takeover for sign-ins; not independently tested for ChatGPT Work.
-  evidence_quality: Zero independent performance sources for the current product. Five tests of the retired predecessors are listed but not counted.
+  evidence_quality: Two independent performance sources for the current product (one hands-on review, one integration-vendor benchmark), neither peer-reviewed. Five tests of the retired predecessors are listed but not counted.
 overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
-  performance: 0
-  other: 2
-  count_note: 5 performance tests and 2 security tests of retired predecessors (Operator, ChatGPT agent) listed, not counted.
+  performance: 2
+  other: 3
+  count_note: 2 counted for ChatGPT Work (AI Agents Library; Composio Golden Eval, labeled as an integration vendor's own benchmark). 5 performance tests and 2 security tests of retired predecessors (Operator, ChatGPT agent) listed, not counted.
 sources:
 - url: https://arxiv.org/abs/2504.01382
   kind: historical context (earlier product, not counted)
@@ -59,12 +59,31 @@ sources:
   kind: vendor or maintainer
   accessed: '2026-10-17'
   note: 'Vendor help page: "ChatGPT agent is no longer available"; Operator site no longer accessible'
+- url: https://www.aiagentslibrary.com/blog/chatgpt-work-review/
+  kind: independent performance
+  accessed: '2026-10-18'
+  note: 'AI Agents Library hands-on test (Aug 25–Sep 3 2026, ChatGPT Plus, GPT-5.6 Sol where recorded): 10 business tasks scored on 5 criteria, mean 9.15/10; webpage publishing not completed; one accuracy error (inferred follow-ups); self-funded; 2 of 10 tasks used the author''s own Skills'
+  counted: true
+- url: https://composio.dev/content/chatgpt-work-vs-claude-cowork
+  kind: independent performance
+  accessed: '2026-10-18'
+  note: 'Composio Golden Eval (20 July 2026): ChatGPT Work with GPT-5.6 Sol passed 45 of 47 business-app scenarios, one run each, via Composio MCP; published by an integration vendor whose product was used in the test'
+  counted: true
+- url: https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/
+  kind: other (hands-on documentation of capabilities, no performance test)
+  accessed: '2026-10-18'
+  note: 'Simon Willison (30 August 2026): Work Cloud has internet-enabled code execution, a full browser, persistent shared workspace, subagents and scheduled tasks; combines private data, untrusted content and an outbound channel (prompt-injection risk; no attack demonstrated)'
 uncertainties:
 - OpenAI has published no exact retirement date for ChatGPT agent; user reports place it in early August 2026.
 - ChatGPT Work's models changed three times within about three months (GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol).
 - Vendor benchmark figures (system cards, BrowseComp, OSWorld 2.0) are not used as independent evidence.
 - 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
-last_reviewed: '2026-10-17'
+- Both counted tests are single-run, not peer-reviewed, and used GPT-5.6 Sol; the product has since moved to newer models.
+- Composio ran the test through its own integration product; AI Agents Library used the author's own Skills in 2 of 10 tasks.
+- Composio's page labels the OpenAI harness as ChatGPT Work in its setup table but as Codex CLI in its results table and one paragraph, so which OpenAI product ran the test is not fully clear.
+last_reviewed: '2026-10-18'
 decision: APPROVED 0018
-decision_packet: decisions/0018-chatgpt-work.md
+decision_packet:
+- decisions/0018-chatgpt-work.md
+- decisions/0071-evidence-pass-1.md
 notes: Informational only; not a guarantee, endorsement, or certification.

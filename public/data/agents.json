@@ -3209,14 +3209,15 @@
    "evidence_grade": "Insufficient evidence",
    "grade_note": null,
    "independent_source_count": {
-    "performance": 0,
-    "other": 2
+    "performance": 2,
+    "other": 3
    },
-   "counted_performance_sources": 0,
+   "counted_performance_sources": 2,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-18",
    "decision_packets": [
-    "decisions/0018-chatgpt-work.md"
+    "decisions/0018-chatgpt-work.md",
+    "decisions/0071-evidence-pass-1.md"
    ],
    "sources": [
     {
@@ -3279,6 +3280,27 @@
      "url": "https://help.openai.com/en/articles/11752874-chatgpt-agent",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.aiagentslibrary.com/blog/chatgpt-work-review/",
+     "kind": "independent performance",
+     "accessed": "2026-10-18",
+     "counted": true,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://composio.dev/content/chatgpt-work-vs-claude-cowork",
+     "kind": "independent performance",
+     "accessed": "2026-10-18",
+     "counted": true,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+     "kind": "other (hands-on documentation of capabilities, no performance test)",
+     "accessed": "2026-10-18",
      "counted": false,
      "peer_reviewed": null
     }
@@ -3803,13 +3825,14 @@
    "grade_note": null,
    "independent_source_count": {
     "performance": 0,
-    "other": 3
+    "other": 4
    },
    "counted_performance_sources": 0,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-18",
    "decision_packets": [
-    "decisions/0020-manus.md"
+    "decisions/0020-manus.md",
+    "decisions/0071-evidence-pass-1.md"
    ],
    "sources": [
     {
@@ -3895,6 +3918,13 @@
      "accessed": "2026-10-17",
      "counted": false,
      "peer_reviewed": null
+    },
+    {
+     "url": "https://newruntime.com/analysis/manus-s-efficiency-gains-are-a-harness-result-not-an-agent-verdict/",
+     "kind": "other (commentary, no original testing)",
+     "accessed": "2026-10-18",
+     "counted": false,
+     "peer_reviewed": null
     }
    ]
   },
@@ -3918,13 +3948,14 @@
    "grade_note": null,
    "independent_source_count": {
     "performance": 0,
-    "other": 7
+    "other": 8
    },
    "counted_performance_sources": 0,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-16",
+   "last_reviewed": "2026-10-18",
    "decision_packets": [
-    "decisions/0008-open-interpreter.md"
+    "decisions/0008-open-interpreter.md",
+    "decisions/0071-evidence-pass-1.md"
    ],
    "sources": [
     {
@@ -4015,6 +4046,20 @@
      "url": "https://raw.githubusercontent.com/endolith/open-interpreter/main/docs/SAFE_MODE.md",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://adversa.ai/blog/opensource-ai-coding-agents-shell-injection-vulnerability/",
+     "kind": "independent performance",
+     "accessed": "2026-10-18",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.mrtechking.com/open-interpreter-github/",
+     "kind": "other (repository scan, no behaviour test)",
+     "accessed": "2026-10-18",
      "counted": false,
      "peer_reviewed": null
     }

@@ -14,14 +14,14 @@ scores:
 factor_notes:
   completion_rate: No independent evaluation of Open Interpreter's own task success was found; one benchmark used it only as a fixed harness to compare models.
   disputes: No lawsuits or regulatory actions were found. No CVE (NVD) or reviewed GitHub Advisory Database entry was found. Public reports allege security issues in the earlier Python version; the maintainer closed them as concerning the legacy product.
-  adherence_to_limits: Studies report high attack-success rates for the earlier Python version in risky-code and prompt-injection tests. Documentation for that version describes confirmation before running code unless auto-run is enabled, and an experimental safe mode that is off by default. The current product's sandbox and approval modes have not been independently evaluated.
+  adherence_to_limits: Studies report high attack-success rates for the earlier Python version in risky-code and prompt-injection tests; a 2026 survey (GuardFall) found it applied no static command guard by default, relying on approval prompts. Documentation for that version describes confirmation before running code unless auto-run is enabled, and an experimental safe mode that is off by default. The current product's sandbox and approval modes have not been independently evaluated.
   evidence_quality: No independent evaluation of the current product; studies of the earlier Python version are preprints or self-published, none peer-reviewed.
 overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 0
-  other: 7
-  count_note: 0 for the current product; 3 behaviour studies of the earlier Python version are outside the entry scope and not counted.
+  other: 8
+  count_note: 0 for the current product (evidence pass 0071, 2026-10-18); 4 behaviour studies of the earlier Python version are outside the entry scope and not counted.
 sources:
 - url: https://arxiv.org/abs/2602.19547
   kind: independent performance
@@ -78,13 +78,25 @@ sources:
   kind: vendor or maintainer
   accessed: '2026-10-16'
   note: Safe mode documentation (states it is experimental and provides no guarantees) (maintainer documentation; earlier Python version)
+- url: https://adversa.ai/blog/opensource-ai-coding-agents-shell-injection-vulnerability/
+  kind: independent performance
+  accessed: '2026-10-18'
+  note: 'GuardFall (Adversa AI, 30 June 2026): shell-injection guard survey of 11 agents selected as of May 2026; Open Interpreter (earlier Python version, default configuration) had no static command guard; optional safe_mode not tested [outside entry scope; not counted]'
+  counted: false
+- url: https://www.mrtechking.com/open-interpreter-github/
+  kind: other (repository scan, no behaviour test)
+  accessed: '2026-10-18'
+  note: 'MrTechKing repository scan of the current Rust product (commit b171530, 27 September 2026): no malicious code found; installer and updater pipe a remote script to the shell; 101 dependency advisories, none critical'
 uncertainties:
 - Evidence concerns the earlier Python version; the current product is a rewrite and may behave differently.
 - Results in the studies depend heavily on the underlying model.
 - None of the studies found is peer-reviewed.
 - Fix status of the public security reports in the community fork was not checked.
 - No reputable journalism with original testing was found.
-last_reviewed: '2026-10-16'
+- Terminal-Bench figures published by the maintainer for the current product are vendor-run and not used.
+last_reviewed: '2026-10-18'
 decision: APPROVED
-decision_packet: decisions/0008-open-interpreter.md
+decision_packet:
+- decisions/0008-open-interpreter.md
+- decisions/0071-evidence-pass-1.md
 notes: Informational only; not a guarantee, endorsement, or certification.

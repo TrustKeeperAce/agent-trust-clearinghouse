@@ -20,8 +20,8 @@ overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 0
-  other: 3
-  count_note: 6 performance tests of 2025 versions listed as historical context, not counted.
+  other: 4
+  count_note: 6 performance tests of 2025 versions listed as historical context, not counted. Evidence pass 0071 (2026-10-18) found no independent test of Manus 2.0.
 sources:
 - url: https://arxiv.org/abs/2510.14240
   kind: historical context (earlier version, not counted)
@@ -58,7 +58,7 @@ sources:
 - url: https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email
   kind: other (security test)
   accessed: '2026-10-17'
-  note: 'Salt Labs (October 2026): a single email led to remote code execution and exposure of connected-account tokens; fixed via Meta bug bounty'
+  note: 'Salt Labs (published 1 October 2026; research conducted earlier in 2026, before Manus 2.0): a single email led to remote code execution and exposure of connected-account tokens; fixed via Meta bug bounty'
 - url: https://manus.im/blog/introducing-manus-2-0
   kind: vendor or maintainer
   accessed: '2026-10-17'
@@ -71,12 +71,20 @@ sources:
   kind: vendor or maintainer
   accessed: '2026-10-17'
   note: 'Manus resumes independent operations (1 September 2026)'
+- url: https://newruntime.com/analysis/manus-s-efficiency-gains-are-a-harness-result-not-an-agent-verdict/
+  kind: other (commentary, no original testing)
+  accessed: '2026-10-18'
+  note: 'New Runtime analysis (October 2026): Manus 2.0 Cascade efficiency figures are vendor-reported for one configuration; no independent benchmark'
 uncertainties:
 - All independent tests found used 2025 versions; Manus 2.0 is a new architecture per the vendor and is untested.
 - Vendor-reported GAIA scores and Manus 2.0 efficiency figures are not used.
 - The two dental studies test diagnostic question answering rather than agentic tasks.
 - CAP has a competitor tie (one author interned at FellouAI, an evaluated system).
-last_reviewed: '2026-10-17'
+- Manus 2.0 Cascade efficiency figures (23.2% fewer tokens, 28.2% less time, 32% lower cost; one vendor configuration) are not used.
+- Cue agents (own email, phone number, wallet; invite-only early access) have not been independently tested.
+last_reviewed: '2026-10-18'
 decision: APPROVED
-decision_packet: decisions/0020-manus.md
+decision_packet:
+- decisions/0020-manus.md
+- decisions/0071-evidence-pass-1.md
 notes: Informational only; not a guarantee, endorsement, or certification.
