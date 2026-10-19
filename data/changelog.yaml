@@ -1,6 +1,47 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-19-0077
+  date: '2026-10-19'
+  decision_packets:
+  - '0077'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0077-evidence-pass-3.md
+  change_html: 'Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. <a href="/agents/autokaggle.html">AutoKaggle</a>: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. <a href="/agents/loki.html">Loki</a>: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. <a href="/agents/ui-tars-desktop.html">UI-TARS Desktop</a>: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence.'
+  changes:
+  - agent_id: autokaggle
+    type: entry_update
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: null
+  - agent_id: loki
+    type: entry_update
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: null
+  - agent_id: ui-tars-desktop
+    type: entry_update
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: null
+  source_commits: []
 - id: 2026-10-19-0076
   date: '2026-10-19'
   decision_packets:

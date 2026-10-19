@@ -11,9 +11,9 @@ evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 2
   peer_reviewed: 2
-  other: 0
+  other: 2
 factor_notes:
-  completion_rate: 'VDSAgents (Stat, 2026): valid-output rate 0.577 (DeepSeek-V3) and 0.534 (GPT-4o) across nine datasets, below VDSAgents (0.894, 0.950) and Data Interpreter (0.676, 0.672). SPIO (ACL 2026): accuracy close to other baselines (for example Titanic 0.7781 with GPT-4o). Developer results (valid submission rate 0.85, comprehensive score 0.82 on 8 competitions) are not counted.'
+  completion_rate: 'VDSAgents (Stat, 2026): valid-output rate 0.577 (DeepSeek-V3) and 0.534 (GPT-4o) across nine datasets, below VDSAgents (0.894, 0.950) and Data Interpreter (0.676, 0.672). SPIO (ACL 2026): accuracy close to other baselines (for example Titanic 0.7781 with GPT-4o). Developer results (valid submission rate 0.85, comprehensive score 0.82 on 8 competitions) are not counted. A re-implementation of the AutoKaggle workflow inside another harness (DS-Lighting, preprint, not counted) averaged 0.78-0.81 on DABench and was the slowest of the agents timed (22.6 minutes per task).'
   disputes: No CVE, legal or regulatory action found. Not maintained since December 2024.
   adherence_to_limits: No independent study of AutoKaggle's adherence to limits was found.
   evidence_quality: Two counted independent sources, both peer-reviewed and both proposing competing methods; below the three-source minimum. Not scored.
@@ -36,10 +36,20 @@ sources:
   kind: vendor
   accessed: '2026-10-17'
   note: 'AutoKaggle paper (developers; DL4C workshop at ICLR 2025): valid submission rate 0.85 and comprehensive score 0.82 on 8 competitions; not counted'
+- url: https://arxiv.org/abs/2608.28590
+  kind: other (re-implementation)
+  accessed: '2026-10-19'
+  note: 'DS-Lighting (preprint, Aug 2026; HKUST-Guangzhou): re-implements the AutoKaggle workflow inside its own harness; DABench overall average 0.78 and 0.81 with two models; 123.1K tokens per task (24 times ReAct) and 22.6 minutes per task, the slowest of the agents timed. Re-implementation, not the released code, so not counted (Decision 0042)'
+- url: https://arxiv.org/abs/2507.13413
+  kind: other (copied figures)
+  accessed: '2026-10-19'
+  note: 'LightAutoDS-Tab (Sber AI Lab / ITMO; AAMAS 2026 demo): includes AutoKaggle figures copied from an earlier paper; not a new test, so not counted'
 uncertainties:
-- Citation check incomplete — recheck later. Tree-Notebook (Findings ACL 2026) could not be screened.
+- 'Semantic Scholar citation check (19 Oct 2026, Decision 0077) covered 86 citing papers; Tree-Notebook (Findings ACL 2026) and DATAEXPLAINER (SBBD 2026) describe AutoKaggle only. Not read in full: PACE (KDD 2026), AutoDS-Tools (AAMAS 2026), AutoMind (IEEE Access), PiML, CodeViz, AutoCluster, a Nature paper and a bioRxiv benchmark.'
 - Most papers that cite AutoKaggle only describe it; few run it.
-last_reviewed: '2026-10-17'
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0042-aide-autokaggle.md
+decision_packet:
+- decisions/0042-aide-autokaggle.md
+- decisions/0077-evidence-pass-3.md
 notes: Informational only; not a guarantee, endorsement, or certification.

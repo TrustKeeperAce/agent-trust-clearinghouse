@@ -9,6 +9,33 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0077/autokaggle</id>
+<title>AutoKaggle (open-source): entry updated, Insufficient evidence (unchanged)</title>
+<updated>2026-10-19T00:00:00Z</updated>
+<published>2026-10-19T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html"/>
+<category term="entry_update"/>
+<summary type="text">Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. AutoKaggle: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. Loki: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. UI-TARS Desktop: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0077. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0077/loki</id>
+<title>Loki (Libr-AI OpenFactVerification, open-source): entry updated, Insufficient evidence (unchanged)</title>
+<updated>2026-10-19T00:00:00Z</updated>
+<published>2026-10-19T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/loki.html"/>
+<category term="entry_update"/>
+<summary type="text">Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. AutoKaggle: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. Loki: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. UI-TARS Desktop: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0077. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0077/ui-tars-desktop</id>
+<title>UI-TARS Desktop (ByteDance, open-source app): entry updated, Insufficient evidence (unchanged)</title>
+<updated>2026-10-19T00:00:00Z</updated>
+<published>2026-10-19T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html"/>
+<category term="entry_update"/>
+<summary type="text">Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. AutoKaggle: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. Loki: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. UI-TARS Desktop: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0077. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0076/skyvern</id>
 <title>Skyvern (open-source): Insufficient evidence → 44 / B-</title>
 <updated>2026-10-19T00:00:00Z</updated>

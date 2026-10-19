@@ -3426,13 +3426,14 @@
    "grade_note": null,
    "independent_source_count": {
     "performance": 2,
-    "other": 0
+    "other": 2
    },
    "counted_performance_sources": 2,
    "peer_reviewed_counted_sources": 2,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0042-aide-autokaggle.md"
+    "decisions/0042-aide-autokaggle.md",
+    "decisions/0077-evidence-pass-3.md"
    ],
    "sources": [
     {
@@ -3453,6 +3454,20 @@
      "url": "https://arxiv.org/abs/2410.20424",
      "kind": "vendor",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.28590",
+     "kind": "other (re-implementation)",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.13413",
+     "kind": "other (copied figures)",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     }
@@ -3898,13 +3913,14 @@
    "grade_note": null,
    "independent_source_count": {
     "performance": 2,
-    "other": 1
+    "other": 3
    },
    "counted_performance_sources": 2,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0030-loki-openfactcheck.md"
+    "decisions/0030-loki-openfactcheck.md",
+    "decisions/0077-evidence-pass-3.md"
    ],
    "sources": [
     {
@@ -3925,6 +3941,20 @@
      "url": "https://davidamitchell.github.io/Research/research/2026-05-06-loki-fact-checking-journalists-moderation.html",
      "kind": "other",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.30683",
+     "kind": "other (used as a tool)",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.21286",
+     "kind": "other (used as a tool)",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     },
@@ -4395,9 +4425,10 @@
    },
    "counted_performance_sources": 1,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0039-ui-tars-desktop.md"
+    "decisions/0039-ui-tars-desktop.md",
+    "decisions/0077-evidence-pass-3.md"
    ],
    "sources": [
     {
@@ -4467,6 +4498,13 @@
      "url": "https://arxiv.org/abs/2605.25707",
      "kind": "not counted (model only)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2506.02456",
+     "kind": "not counted (model only)",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     }

@@ -10,7 +10,7 @@ overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 2
-  other: 1
+  other: 3
 factor_notes:
   completion_rate: 'Proof-of-Guardrail (FacTool-KBQA, Loki as a guardrail): non-factual claims precision 0.71 / recall 0.81 / F1 0.76; factual claims 0.74 / 0.61 / 0.67. TAIGR (influencer health-claim validation, Loki adapted to PubMed evidence with GPT-4.1-mini): macro-F1 0.43 (Incorrect 0.71, Partially correct 0.29, Correct 0.29), below TAIGR''s 0.52. Developer-reported (not counted): F1 0.84 / 0.63 on Factcheck-Bench and 0.85 / 0.60 on FacTool-QA. Not scored.'
   disputes: 'None found: no CVEs, no GitHub security advisories, no legal or regulatory action. Not scored.'
@@ -35,6 +35,14 @@ sources:
   kind: other
   accessed: '2026-10-17'
   note: Independent written analysis (May 2026) of Loki's design and suitability for journalists and moderators; based on the published paper, not a hands-on test. Not counted as performance
+- url: https://arxiv.org/abs/2608.30683
+  kind: other (used as a tool)
+  accessed: '2026-10-19'
+  note: 'WildSEEK (preprint, Aug 2026; Bocconi University, Stanford, IT University of Copenhagen): used Loki to score the factuality of language-model answers. Loki''s own accuracy was not measured; no measured test of Loki, so not counted'
+- url: https://arxiv.org/abs/2603.21286
+  kind: other (used as a tool)
+  accessed: '2026-10-19'
+  note: 'When the Chain Breaks (Computer Graphics Forum, EuroVis 2026; Nanyang Technological University, Bosch Research): built Loki into a visual tool for checking reasoning steps. Loki''s own accuracy was not measured; no measured test of Loki, so not counted'
 - url: https://aclanthology.org/2025.coling-demos.4/
   kind: vendor or maintainer
   accessed: '2026-10-17'
@@ -44,11 +52,13 @@ sources:
   accessed: '2026-10-17'
   note: 'Repository: MIT, about 1.16k stars, not archived; releases v0.0.1 (6 Apr 2024) and v0.0.2 (21 Apr 2024); v0.0.3 merged 31 May 2024; last commit 3 Oct 2024 (README); no security advisories'
 uncertainties:
-- Semantic Scholar citation check (17 Oct 2026) covered all 27 papers citing the Loki paper; two independent tests were found. Papers without open full text were checked by abstract only.
+- 'Semantic Scholar citation check rerun 19 Oct 2026 (Decision 0077): still 27 citing papers; two independent tests found. Two other papers used Loki as a tool without measuring its accuracy; this says nothing about how well Loki works. Five papers without open full text were checked by abstract only.'
 - TAIGR tested Loki on a task it was not designed for (implicit influencer takeaways); Proof-of-Guardrail's main subject is attestation, not Loki.
 - Results would depend on the model and search API chosen.
 - The hosted demo did not respond on 17 October 2026; whether it is retired is unknown.
-last_reviewed: '2026-10-17'
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0030-loki-openfactcheck.md
+decision_packet:
+- decisions/0030-loki-openfactcheck.md
+- decisions/0077-evidence-pass-3.md
 notes: Informational only; not a guarantee, endorsement, or certification.
