@@ -18,7 +18,7 @@
       overall_score: 44
       evidence_grade: B-
       status: Scored
-    source_commit: null
+    source_commit: 98883b9
   - agent_id: julius-ai
     type: score_change
     before:
@@ -29,7 +29,7 @@
       overall_score: 59
       evidence_grade: B-
       status: Scored
-    source_commit: null
+    source_commit: 98883b9
   - agent_id: kimi-researcher
     type: entry_update
     before:
@@ -40,8 +40,9 @@
       overall_score: null
       evidence_grade: Insufficient evidence
       status: Insufficient evidence
-    source_commit: null
-  source_commits: []
+    source_commit: 98883b9
+  source_commits:
+  - 98883b9
 - id: 2026-10-19-0075
   date: '2026-10-19'
   decision_packets:
