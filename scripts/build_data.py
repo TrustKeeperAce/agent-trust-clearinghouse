@@ -304,7 +304,9 @@ CITE_DESC='Ready-to-copy citations (plain, APA-style, BibTeX, agent template), C
 LICENSE_FILE='https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE'
 REPO='https://github.com/TrustKeeperAce/agent-trust-clearinghouse'
 ATTRIBUTION=f'{SITE_NAME}, <entry URL>, data as of YYYY-MM-DD, CC BY 4.0.'
-CODE_SCOPE='The code (scripts/), the stylesheet and the logo/favicon are not licensed for reuse; CC BY 4.0 covers the data, the decision records and the site text.'
+CODE_SCOPE='The code (scripts/, the stylesheet and vercel.json) is licensed under the Apache License 2.0; CC BY 4.0 covers the data, the decision records and the site text, including generated files. The project name, logo and favicon are not licensed.'
+LICENSE_DATA_FILE='https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE-DATA.md'
+LLMS_LICENSE=f'Data and site text: CC BY 4.0 ({LICENSE}). Code: Apache-2.0 ({LICENSE_FILE}). The project name, logo and favicon are not licensed.'
 CITE_GEN_NOTE='Example values on this page are generated from the data as of {gen}; check the entry page for current values.'
 DONTS=[('Include the agent name, overall score out of 100, evidence grade, as-of date and a link to the entry page.','Drop the as-of date, or quote a score without its evidence grade.'),
  ('Say the score is informational and not a guarantee, endorsement, certification or ranking.','Call an agent “best”, “top”, “#1” or a “winner”, or say it is “certified”, “verified”, “approved” or “endorsed” by the Clearinghouse.'),
@@ -359,7 +361,7 @@ def render_citing(E,shell):
        '<h2 id="attribution">Attribution (CC BY 4.0)</h2>'
        f'<p>The data and the site text are licensed under <a href="{LICENSE}">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may share and adapt them, including commercially, if you:</p>'
        f'<ul><li>credit “{_e(SITE_NAME)}”;</li><li>link to the license;</li><li>link to the entry page or dataset you used;</li><li>say if you changed anything;</li><li>keep the disclaimer with quoted scores.</li></ul>'
-       f'<p>Suggested attribution: <q>{_e(ATTRIBUTION)}</q></p><p>{_e(CODE_SCOPE)} See the <a href="{LICENSE_FILE}">LICENSE</a>. Cited third-party sources, agent names and trademarks remain under their owners’ terms.</p>',
+       f'<p>Suggested attribution: <q>{_e(ATTRIBUTION)}</q></p><p>{_e(CODE_SCOPE)} See <a href="{LICENSE_DATA_FILE}">LICENSE-DATA.md</a> and <a href="{LICENSE_FILE}">LICENSE</a>. Cited third-party sources, agent names and trademarks remain under their owners’ terms.</p>',
        '<h2 id="quoting">How to quote us</h2><table class="stack dont"><thead><tr><th scope="col">Do</th><th scope="col">Don’t</th></tr></thead><tbody>'
        +''.join(f'<tr><td data-label="Do">{_e(d)}</td><td data-label="Don’t">{_e(n)}</td></tr>' for d,n in DONTS)+'</tbody></table>',
        '<h2 id="machine-readable">Machine-readable locations</h2><ul>'
@@ -371,7 +373,7 @@ def render_citing(E,shell):
        f'<h2 id="disclaimer">Disclaimer</h2><p>{FEED_DISCLAIMER}</p>']
     return head+shell[0]+'\n'.join(b)+'\n'+shell[1]
 DATA_LICENSE=lambda: ('<h2 id="license">License and citation</h2>\n'
-  f'<p>The data and the site text are licensed under <a href="{LICENSE}">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may share and adapt them, including commercially, if you give credit. Cited third-party sources remain under their own terms. {_e(CODE_SCOPE)}</p>\n'
+  f'<p>The data and the site text are licensed under <a href="{LICENSE}">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may share and adapt them, including commercially, if you give credit. Cited third-party sources remain under their own terms. {_e(CODE_SCOPE)} See <a href="{LICENSE_DATA_FILE}">LICENSE-DATA.md</a> and <a href="{LICENSE_FILE}">LICENSE</a>.</p>\n'
   f'<p>Suggested citation: <q>{_e(ATTRIBUTION)}</q></p>\n'
   '<p id="citation">Ready-to-copy citations (plain sentence, APA-style, BibTeX, agent template) and how to quote a score: <a href="/citing.html">How to cite and quote this data</a>.</p>\n')
 CITE_LINK_METH='<p class="cite-link">Citing or quoting scores: <a href="/citing.html">How to cite</a>.</p>'
@@ -386,6 +388,7 @@ def build_citing():
     lp=os.path.join(P,'llms.txt'); L=open(lp).read()
     L=re.sub(r'^Citation guidance: .*$',lambda m:'Citation guidance: '+CITATION,L,count=1,flags=re.M)
     L=re.sub(r'^- \[How to cite\].*\n','',L,flags=re.M)
+    L=re.sub(r'Data and site text: CC BY 4\.0 .*$',lambda m:LLMS_LICENSE,L,count=1,flags=re.M)
     ln=f'- [How to cite]({BASE}/citing.html): ready-to-copy citations, agent quote template, how to quote scores, license scope\n'
     k=L.index('- [For agents / data]'); k=L.index('\n',k)+1; L=L[:k]+ln+L[k:]; open(lp,'w').write(L)
     sm=open(os.path.join(P,'sitemap.xml')).read()

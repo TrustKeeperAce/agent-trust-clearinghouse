@@ -256,6 +256,31 @@ vj=json.load(open(os.path.join(B.R,'vercel.json')))
 if vj.get('outputDirectory')!='public' or set(vj)-{'outputDirectory','cleanUrls','headers'}: E('vercel.json: unexpected settings')
 if [h['source'] for h in vj.get('headers',[])]!=['/updates.xml'] or vj['headers'][0]['headers']!=[{'key':'Content-Type','value':'application/atom+xml; charset=utf-8'}]: E('vercel.json: headers rule not exactly /updates.xml Atom')
 print('0069: checked')
+# ---- 0070: license files and citation ----
+import hashlib,shutil,subprocess
+APACHE_SHA1='2b8b815229aa8a61e483fb4ba0588b8b6c491890'  # unmodified https://www.apache.org/licenses/LICENSE-2.0.txt
+if hashlib.sha1(open(os.path.join(B.R,'LICENSE'),'rb').read()).hexdigest()!=APACHE_SHA1: E('LICENSE: not the unmodified Apache-2.0 text')
+nt=open(os.path.join(B.R,'NOTICE')).read()
+if 'Copyright 2026 TrustKeeperAce' not in nt or 'Apache License 2.0' not in nt or 'CC BY 4.0' not in nt: E('NOTICE: copyright or license lines missing')
+ld=open(os.path.join(B.R,'LICENSE-DATA.md')).read()
+for w in ('https://creativecommons.org/licenses/by/4.0/legalcode','`scripts/`','`public/style.css`','`vercel.json`','logo.svg','favicon.svg','Informational only'):
+    if w not in ld: E(f'LICENSE-DATA.md: missing {w}')
+rd=open(os.path.join(B.R,'README.md')).read()
+if '## License' not in rd or 'Apache-2.0' not in rd or 'CC-BY-4.0' not in rd: E('README: license section missing')
+cf=yaml.safe_load(open(os.path.join(B.R,'CITATION.cff')))
+if cf.get('cff-version')!='1.2.0' or cf.get('license')!=['CC-BY-4.0','Apache-2.0'] or cf.get('repository-code')!=B.LICENSE_FILE.rsplit('/blob/',1)[0] or not cf.get('authors') or not cf.get('title') or not cf.get('message'): E('CITATION.cff: required fields wrong')
+if any(k in cf for k in ('doi','identifiers')): E('CITATION.cff: unexpected identifier (none approved)')
+cc=shutil.which('cffconvert') or os.path.expanduser('~/.local/bin/cffconvert')
+if os.path.exists(cc):
+    r=subprocess.run([cc,'--validate','-i',os.path.join(B.R,'CITATION.cff')],capture_output=True,text=True)
+    if r.returncode: E('CITATION.cff: cffconvert validation failed: '+(r.stdout+r.stderr).strip()[:200])
+else: print('WARN cffconvert not installed; CITATION.cff structural check only')
+for f in ('agents-data.html','citing.html'):
+    h=open(os.path.join(P,f)).read()
+    if B._e(B.CODE_SCOPE) not in h or B.LICENSE_DATA_FILE not in h: E(f'{f}: license sentence not current')
+    if 'not licensed for reuse' in h: E(f'{f}: old code-license sentence present')
+if B.LLMS_LICENSE not in open(os.path.join(P,'llms.txt')).read(): E('llms.txt: license line not current')
+print('0070: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

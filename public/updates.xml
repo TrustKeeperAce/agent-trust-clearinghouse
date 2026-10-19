@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-18-0070</id>
+<title>Site change (0070)</title>
+<updated>2026-10-18T00:00:00Z</updated>
+<published>2026-10-18T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<category term="site_change"/>
+<summary type="text">Code license: the code (scripts, stylesheet and vercel.json) is now licensed under the Apache License 2.0; data and site text stay CC BY 4.0; the project name, logo and favicon are not licensed. Added a CITATION.cff file to the repository. License wording updated on For agents / data, How to cite and llms.txt. No score or grade changes. Decision 0070. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-18-0069</id>
 <title>Site change (0069)</title>
 <updated>2026-10-18T00:00:00Z</updated>

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  If you use this directory data or software, please cite it as below.
+  Include the as-of date of the data you used. Informational only; scores are
+  not a guarantee, endorsement, certification or ranking of quality.
+title: "Agent Reputation & Trust Clearinghouse"
+type: dataset
+authors:
+  - name: "Agent Reputation & Trust Clearinghouse"
+    website: "https://agent-trust-clearinghouse.vercel.app/"
+repository-code: "https://github.com/TrustKeeperAce/agent-trust-clearinghouse"
+url: "https://agent-trust-clearinghouse.vercel.app/"
+abstract: >-
+  An informational-only public directory of digital-task AI agents with
+  transparent, rule-based factor scores (completion rate, disputes, adherence
+  to limits, evidence quality), evidence grades and cited public sources.
+  Machine-readable exports: data/agents.json, data/agents.csv, data/schema.json.
+keywords:
+  - AI agents
+  - agent evaluation
+  - evidence
+  - directory
+license:
+  - CC-BY-4.0
+  - Apache-2.0
+version: "Scoring rules v0.1"

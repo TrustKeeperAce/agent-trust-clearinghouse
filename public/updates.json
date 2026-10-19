@@ -21,6 +21,30 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0070",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0070)",
+   "content_text": "Code license: the code (scripts, stylesheet and vercel.json) is now licensed under the Apache License 2.0; data and site text stay CC BY 4.0; the project name, logo and favicon are not licensed. Added a CITATION.cff file to the repository. License wording updated on For agents / data, How to cite and llms.txt. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0070"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0070-code-license-and-citation.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0069",
    "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
    "title": "Site change (0069)",

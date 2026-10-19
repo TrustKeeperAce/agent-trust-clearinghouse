@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0070
+  date: '2026-10-18'
+  decision_packets:
+  - '0070'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0070-code-license-and-citation.md
+  change_html: 'Code license: the code (scripts, stylesheet and vercel.json) is now licensed under the Apache License 2.0; data and site text stay CC BY 4.0; the project name, logo and favicon are not licensed. Added a CITATION.cff file to the repository. License wording updated on <a href="/agents-data.html#license">For agents / data</a>, <a href="/citing.html#attribution">How to cite</a> and llms.txt. No score or grade changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-18-0069
   date: '2026-10-18'
   decision_packets:

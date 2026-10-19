@@ -25,5 +25,13 @@ Full methodology: `public/methodology.html`.
 - `public/` — static site (plain HTML/CSS).
 - `LOG.md` — action log (America/New_York times).
 
+## License
+- **Code** (`scripts/`, `public/style.css`, `vercel.json`): [Apache License 2.0](LICENSE). SPDX: `Apache-2.0`.
+- **Data and text** (`agents/`, `data/`, `public/data/`, feeds, generated pages, `decisions/`, `docs/`): [CC BY 4.0](LICENSE-DATA.md). SPDX: `CC-BY-4.0`.
+- **Not licensed:** the project name, logo and favicon; third-party sources and agent trademarks.
+- How to cite: [CITATION.cff](CITATION.cff) and https://agent-trust-clearinghouse.vercel.app/citing.html
+
+Informational only. Provided as is, without warranties; not a guarantee, endorsement, or certification.
+
 ## Disclaimer
 Informational only. Scores are based on public sources and stated rules; they are not guarantees, endorsements, or certifications. The Clearinghouse is not responsible for any agent's outcomes.
