@@ -21,6 +21,34 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0083/cursor-agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html",
+   "title": "Cursor agent: new entry, 57 / A",
+   "content_text": "Added Cursor agent (Anysphere; agent mode in the Cursor editor, background and cloud agents, and the Cursor CLI; Coding agent): overall 57, evidence grade A, 19 independent performance sources (10 peer-reviewed). Fourteen counted sources are pull-request field studies drawn largely from one dataset (AIDev, 2025), so they are not independent samples. Anysphere material and two comparisons by authors from a competing product's company are not counted. Tab completion, inline edits, chat-only use and Bugbot code review are out of scope. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-19T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "cursor-agent",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html",
+    "before": null,
+    "after": {
+     "overall_score": 57,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0083"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0083-cursor-agent.md",
+    "as_of": "2026-10-19",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0077/autokaggle",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html",
    "title": "AutoKaggle (open-source): entry updated, Insufficient evidence (unchanged)",

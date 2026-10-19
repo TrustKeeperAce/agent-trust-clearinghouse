@@ -459,6 +459,76 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
+### Cursor agent
+
+- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html
+- Category: Coding agent; type: Coding agent from Anysphere inside the Cursor editor (agent mode), as background or cloud agents that open pull requests, and as a command-line agent; proprietary; runs models chosen by the user or by Cursor (including Cursor's own Composer models)
+- Status: Scored
+- Factor scores (0–100): completion rate 55, disputes 45, adherence to limits 40, evidence quality 85
+- Overall score: 57; evidence grade: A
+- Grade note: Grade A: 19 counted sources (10 peer-reviewed), including versioned tests within 12 months (Cursor v3.3.30 in an ISSTA 2026 study; Cursor v2.3 in a KDD 2026 benchmark). Fourteen counted sources are field studies largely drawn from one dataset (AIDev, 2025), so they are not independent samples.
+- Counted independent performance sources: 19; other sources (as in agents.json): 17; all sources listed but not counted: 22
+- Last reviewed: 2026-10-19
+
+Scope: Cursor's agent features from January 2025: agent mode in the editor, background and cloud agents (pull requests on cursor/ branches), and the Cursor CLI agent. Tab completion, inline edits (Cmd-K), chat-only use, Bugbot code review, the 2024 Composer before agent mode, and whole-product adoption studies are not covered.
+
+Summary: Cursor's agent works inside the Cursor editor, as cloud agents that open pull requests, and from the command line. Nineteen independent sources were counted (ten peer-reviewed). Fourteen are field studies of public GitHub pull requests from 2025, mostly drawn from one dataset (AIDev): Cursor acceptance was usually second or third of five agents (about 64-77%), lower for performance fixes (42%), and CI runs on its pull requests failed more often than for Copilot or Codex. In benchmarks, Cursor v2.3 tied the highest result on an iOS benchmark (12%) and Cursor Agent ranked first on one GPU-kernel task set. Security tests found prompt-injection and misuse exposure, reduced in newer versions. 28 CVEs (2025-2026) concern agent features; fixes are listed. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Fourteen counted sources are field studies drawn largely from the same AIDev pull-request data (2025), so they are not independent samples; as for other coding-agent entries, each study counts once.
+- Field studies identify Cursor pull requests by cursor/ branch names, which mainly capture background or cloud agents, not agent mode inside the editor.
+- Results depend heavily on the model chosen inside Cursor; benchmark figures describe agent and model together.
+- Cursor releases change often (about v1.0 to v3.x during 2025-2026); most field studies state no version.
+- Two competitor-authored comparisons and one whole-product adoption study are listed but not counted.
+- Citation check incomplete — recheck later (Semantic Scholar rate-limited and the arXiv API unavailable; OpenAlex used; several MSR 2026 papers not screened).
+
+Counted sources:
+- https://doi.org/10.1145/3793302.3793576 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2601.15195 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3793302.3793611 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3793302.3793581 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2602.02345 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3793302.3793569 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3793302.3793577 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1016/j.infsof.2026.108333 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3832267 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3770855.3818488 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2507.15003 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2602.04226 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2607.21832 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2609.37985 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2609.17598 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2607.12428 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2607.20759 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2510.06607 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2605.16819 (independent performance, accessed 2026-10-19)
+
+Sources listed but not counted:
+- https://arxiv.org/abs/2606.18168 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2606.22721 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2609.26847 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2605.22534 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2605.08017 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2606.22711 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2604.19965 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2606.13468 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2607.04697 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2601.13597 (other, accessed 2026-10-19)
+- https://doi.org/10.1145/3793302.3793349 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2603.21642 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2510.02609 (historical context (earlier version, not counted), accessed 2026-10-19)
+- https://arxiv.org/abs/2601.18341 (other, accessed 2026-10-19)
+- https://nvd.nist.gov/vuln/search/results?query=Cursor+code+editor (other, accessed 2026-10-19)
+- https://github.com/cursor/cursor/security/advisories (other, accessed 2026-10-19)
+- https://www.businessinsider.com/pocketos-cursor-ai-agent-deleted-production-database-startup-railway-2026-4 (anecdotal, accessed 2026-10-19)
+- https://arxiv.org/abs/2607.15143 (competitor, accessed 2026-10-19)
+- https://arxiv.org/abs/2601.13943 (competitor, accessed 2026-10-19)
+- https://arxiv.org/abs/2601.20886 (not counted (model only), accessed 2026-10-19)
+- https://cursor.com/blog (vendor (not counted), accessed 2026-10-19)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
+
 ### Data Interpreter (MetaGPT, open-source)
 
 - Entry page: https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html

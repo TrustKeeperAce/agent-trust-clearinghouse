@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-19-0083
+  date: '2026-10-19'
+  decision_packets:
+  - '0083'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0083-cursor-agent.md
+  change_html: 'Added <a href="/agents/cursor-agent.html">Cursor agent</a> (Anysphere; agent mode in the Cursor editor, background and cloud agents, and the Cursor CLI; Coding agent): overall 57, evidence grade A, 19 independent performance sources (10 peer-reviewed). Fourteen counted sources are pull-request field studies drawn largely from one dataset (AIDev, 2025), so they are not independent samples. Anysphere material and two comparisons by authors from a competing product''s company are not counted. Tab completion, inline edits, chat-only use and Bugbot code review are out of scope. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: cursor-agent
+    type: new_entry
+    before: null
+    after:
+      overall_score: 57
+      evidence_grade: A
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-19-0077
   date: '2026-10-19'
   decision_packets:

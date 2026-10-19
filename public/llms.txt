@@ -41,6 +41,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): overall 59, evidence grade B-
 - [Claude Research](https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html): overall 58, evidence grade B-
 - [SWE-agent (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html): overall 58, evidence grade A
+- [Cursor agent](https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html): overall 57, evidence grade A
 - [GitHub Copilot coding agent](https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html): overall 57, evidence grade B
 - [STORM / Co-STORM (knowledge-storm library)](https://agent-trust-clearinghouse.vercel.app/agents/storm.html): overall 56, evidence grade B
 - [Claude Code (Anthropic)](https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html): overall 55, evidence grade A

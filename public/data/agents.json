@@ -8,7 +8,7 @@
   "canonical": "https://agent-trust-clearinghouse.vercel.app/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 34
+  "entry_count": 35
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -1642,6 +1642,324 @@
      "url": "https://hal.cs.princeton.edu/",
      "kind": "not counted (leaderboard)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "cursor-agent",
+   "name": "Cursor agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html",
+   "homepage": "https://cursor.com/docs",
+   "category": "Coding agent",
+   "type": "Coding agent from Anysphere inside the Cursor editor (agent mode), as background or cloud agents that open pull requests, and as a command-line agent; proprietary; runs models chosen by the user or by Cursor (including Cursor's own Composer models)",
+   "scope": "Cursor's agent features from January 2025: agent mode in the editor, background and cloud agents (pull requests on cursor/ branches), and the Cursor CLI agent. Tab completion, inline edits (Cmd-K), chat-only use, Bugbot code review, the 2024 Composer before agent mode, and whole-product adoption studies are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 55,
+    "disputes": 45,
+    "adherence_to_limits": 40,
+    "evidence_quality": 85
+   },
+   "overall_score": 57,
+   "evidence_grade": "A",
+   "grade_note": "Grade A: 19 counted sources (10 peer-reviewed), including versioned tests within 12 months (Cursor v3.3.30 in an ISSTA 2026 study; Cursor v2.3 in a KDD 2026 benchmark). Fourteen counted sources are field studies largely drawn from one dataset (AIDev, 2025), so they are not independent samples.",
+   "independent_source_count": {
+    "performance": 19,
+    "other": 17
+   },
+   "counted_performance_sources": 19,
+   "peer_reviewed_counted_sources": 10,
+   "last_reviewed": "2026-10-19",
+   "decision_packets": [
+    "decisions/0083-cursor-agent.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1145/3793302.3793576",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.15195",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793611",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793581",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.02345",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793569",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793577",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1016/j.infsof.2026.108333",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832267",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3770855.3818488",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2507.15003",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.04226",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.21832",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.37985",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.17598",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.12428",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.20759",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.06607",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.16819",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.18168",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22721",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.26847",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.22534",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.08017",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22711",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.19965",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.13468",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.04697",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.13597",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793349",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.21642",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.07639",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.02609",
+     "kind": "historical context (earlier version, not counted)",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.18341",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/search/results?query=Cursor+code+editor",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cursor/cursor/security/advisories",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.businessinsider.com/pocketos-cursor-ai-agent-deleted-production-database-startup-railway-2026-4",
+     "kind": "anecdotal",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.15143",
+     "kind": "competitor",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.13943",
+     "kind": "competitor",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.20886",
+     "kind": "not counted (model only)",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://cursor.com/blog",
+     "kind": "vendor (not counted)",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     }
