@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-19-0084
+  date: '2026-10-19'
+  decision_packets:
+  - '0084'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0084-factool.md
+  change_html: 'Added <a href="/agents/factool.html">FacTool (open-source)</a> (GAIR-NLP research code for claim-level factuality checking; Verification): overall 55, evidence grade B, 17 independent performance sources (13 peer-reviewed). Nearly all counted sources are papers proposing alternative methods that run FacTool as a comparison system, and five come from one connected group of authors that shares result rows. No study states the FacTool version tested. One study with a FacTool author is not counted. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: factool
+    type: new_entry
+    before: null
+    after:
+      overall_score: 55
+      evidence_grade: B
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-19-0083
   date: '2026-10-19'
   decision_packets:

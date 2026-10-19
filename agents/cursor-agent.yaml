@@ -252,6 +252,6 @@ sources:
   accessed: '2026-10-19'
   note: Anysphere blog posts, documentation, CursorBench and the Composer 2 Technical Report (arXiv 2603.24477); vendor, not counted. The 4 July 2025 post 'Clarifying our pricing' apologised for the June 2025 pricing change and offered refunds for unexpected charges
 last_reviewed: '2026-10-19'
-decision: DRAFT
+decision: APPROVED
 decision_packet: decisions/0083-cursor-agent.md
 notes: Informational only; not a guarantee, endorsement, or certification.

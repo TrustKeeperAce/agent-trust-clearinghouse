@@ -8,7 +8,7 @@
   "canonical": "https://agent-trust-clearinghouse.vercel.app/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 35
+  "entry_count": 36
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -2468,6 +2468,261 @@
      "url": "https://www.anthropic.com/engineering",
      "kind": "vendor (not counted)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "factool",
+   "name": "FacTool (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/factool.html",
+   "homepage": "https://github.com/GAIR-NLP/factool",
+   "category": "Verification",
+   "type": "research code (Apache-2.0), GAIR-NLP (Shanghai Jiao Tong University and others); runs with a language model and search API chosen by the user",
+   "scope": "The open-source FacTool framework (GitHub GAIR-NLP/factool and PyPI factool 0.1.x, 2023; code unchanged since about October 2023), which splits text into claims, searches for evidence and labels each claim, with modes for knowledge-based QA, code, math and scientific literature review. Tests that run FacTool's pipeline with a different language model count as tests of FacTool. Results for a language model alone (0039), Halu-J, and reuse of FacTool's datasets or prompts are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 55,
+    "adherence_to_limits": 40,
+    "evidence_quality": 75
+   },
+   "overall_score": 55,
+   "evidence_grade": "B",
+   "grade_note": "Grade B: 17 counted sources (13 peer-reviewed), but no test within 12 months states the FacTool version or commit tested. The code has not changed since about October 2023, so recent tests very likely ran the only version; under the current rule a stated version is still required for A (see Decision 0084, D7).",
+   "independent_source_count": {
+    "performance": 17,
+    "other": 10
+   },
+   "counted_performance_sources": 17,
+   "peer_reviewed_counted_sources": 13,
+   "last_reviewed": "2026-10-19",
+   "decision_packets": [
+    "decisions/0084-factool.md"
+   ],
+   "sources": [
+    {
+     "url": "https://aclanthology.org/2024.findings-emnlp.830/",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2025.coling-main.755/",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://aclanthology.org/2025.coling-demos.4/",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2025.findings-naacl.158",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.1240",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1609/aaai.v39i1.31985",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2024.emnlp-main.3",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2024.acl-long.254",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.1295",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3767695.3769500",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2025.fever-1.13",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-acl.58",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1007/978-3-032-37657-2_8",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2402.17097",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2504.09866",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.00508",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.16141",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2402.14690",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.22361",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1109/icassp49660.2025.10889448",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.acl-demo.36",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2024.emnlp-demo.23",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2402.11943",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2412.12164",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1038/s41598-026-41862-z",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.cve.org/CVERecord?id=CVE-2025-4261",
+     "kind": "other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/GAIR-NLP/factool/issues/48",
+     "kind": "anecdotal",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2307.13528",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/GAIR-NLP/factool",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://pypi.org/project/factool/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2024.emnlp-main.395",
+     "kind": "excluded",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2407.12943",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     }

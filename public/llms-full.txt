@@ -666,6 +666,68 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
+### FacTool (open-source)
+
+- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/factool.html
+- Category: Verification; type: research code (Apache-2.0), GAIR-NLP (Shanghai Jiao Tong University and others); runs with a language model and search API chosen by the user
+- Status: Scored
+- Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 40, evidence quality 75
+- Overall score: 55; evidence grade: B
+- Grade note: Grade B: 17 counted sources (13 peer-reviewed), but no test within 12 months states the FacTool version or commit tested. The code has not changed since about October 2023, so recent tests very likely ran the only version; under the current rule a stated version is still required for A (see Decision 0084, D7).
+- Counted independent performance sources: 17; other sources (as in agents.json): 10; all sources listed but not counted: 15
+- Last reviewed: 2026-10-19
+
+Scope: The open-source FacTool framework (GitHub GAIR-NLP/factool and PyPI factool 0.1.x, 2023; code unchanged since about October 2023), which splits text into claims, searches for evidence and labels each claim, with modes for knowledge-based QA, code, math and scientific literature review. Tests that run FacTool's pipeline with a different language model count as tests of FacTool. Results for a language model alone (0039), Halu-J, and reuse of FacTool's datasets or prompts are not covered.
+
+Summary: FacTool is open research code from GAIR-NLP that splits text into claims, searches the web for evidence and labels each claim true or false. Seventeen independent sources ran it (thirteen peer-reviewed), almost all as a comparison system in papers proposing alternative methods. On standard claim sets it labels true claims fairly well (F1 about 0.60-0.88) and false claims less well (about 0.46-0.64), and two studies report it as slower or costlier than newer checkers. One study found it overstated factual precision on long answers. The code has not changed since 2023; an unfixed medium-severity code-injection flaw (CVE-2025-4261) affects its math mode. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Nearly every counted study proposes a competing method and reports FacTool as a baseline.
+- Five counted studies come from one connected group of MBZUAI-affiliated authors (Factcheck-Bench, OpenFactCheck, Loki, FIRE, UrduFactCheck); some reuse each other's FacTool rows, so they are not independent samples.
+- Studies use different language models (GPT-3.5 to GPT-4.1, LLaMA, Qwen) and search settings; figures describe FacTool with that model.
+- Three counted studies test only the verification step (Factcheck-Bench, OpenFactCheck, REVEAL); others apply FacTool outside its original tasks (summaries in FIZZ, agent trajectories in Phantom Merge, Urdu translations in UrduFactCheck, mitigation in Rowen).
+- No study states a FacTool version or commit; the code has not changed since about October 2023, so this is the only version.
+- One study with a FacTool author (Knowledge-Centric Hallucination Detection / RefChecker) is excluded under 0031.
+- Citation check incomplete — recheck later (OpenAlex full text used; Semantic Scholar rate-limited and the arXiv API unreliable; 29 citing works could not be downloaded).
+
+Counted sources:
+- https://aclanthology.org/2024.findings-emnlp.830/ (independent performance, accessed 2026-10-19)
+- https://aclanthology.org/2025.coling-main.755/ (independent performance, accessed 2026-10-19)
+- https://aclanthology.org/2025.coling-demos.4/ (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2025.findings-naacl.158 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2025.findings-emnlp.1240 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1609/aaai.v39i1.31985 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2024.emnlp-main.3 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2024.acl-long.254 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2025.findings-emnlp.1295 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1145/3767695.3769500 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2025.fever-1.13 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2026.findings-acl.58 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.1007/978-3-032-37657-2_8 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2402.17097 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2504.09866 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2609.00508 (independent performance, accessed 2026-10-19)
+- https://arxiv.org/abs/2610.16141 (independent performance, accessed 2026-10-19)
+
+Sources listed but not counted:
+- https://arxiv.org/abs/2402.14690 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2601.22361 (other, accessed 2026-10-19)
+- https://doi.org/10.1109/icassp49660.2025.10889448 (other, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2026.acl-demo.36 (other, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2024.emnlp-demo.23 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2402.11943 (other, accessed 2026-10-19)
+- https://arxiv.org/abs/2412.12164 (other, accessed 2026-10-19)
+- https://doi.org/10.1038/s41598-026-41862-z (other, accessed 2026-10-19)
+- https://www.cve.org/CVERecord?id=CVE-2025-4261 (other, accessed 2026-10-19)
+- https://github.com/GAIR-NLP/factool/issues/48 (anecdotal, accessed 2026-10-19)
+- https://arxiv.org/abs/2307.13528 (vendor or maintainer, accessed 2026-10-19)
+- https://github.com/GAIR-NLP/factool (vendor or maintainer, accessed 2026-10-19)
+- https://pypi.org/project/factool/ (vendor or maintainer, accessed 2026-10-19)
+- https://doi.org/10.18653/v1/2024.emnlp-main.395 (excluded, accessed 2026-10-19)
+- https://arxiv.org/abs/2407.12943 (vendor or maintainer, accessed 2026-10-19)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
+
 ### Fellou (agentic browser)
 
 - Entry page: https://agent-trust-clearinghouse.vercel.app/agents/fellou.html

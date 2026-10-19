@@ -45,6 +45,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [GitHub Copilot coding agent](https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html): overall 57, evidence grade B
 - [STORM / Co-STORM (knowledge-storm library)](https://agent-trust-clearinghouse.vercel.app/agents/storm.html): overall 56, evidence grade B
 - [Claude Code (Anthropic)](https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html): overall 55, evidence grade A
+- [FacTool (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/factool.html): overall 55, evidence grade B
 - [Perplexity](https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html): overall 54, evidence grade B
 - [GPT Researcher](https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html): overall 53, evidence grade B-
 - [Aider (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/aider.html): overall 52, evidence grade A

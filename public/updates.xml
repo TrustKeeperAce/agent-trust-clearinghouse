@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0084/factool</id>
+<title>FacTool (open-source): new entry, 55 / B</title>
+<updated>2026-10-19T00:00:00Z</updated>
+<published>2026-10-19T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/factool.html"/>
+<category term="new_entry"/>
+<summary type="text">Added FacTool (open-source) (GAIR-NLP research code for claim-level factuality checking; Verification): overall 55, evidence grade B, 17 independent performance sources (13 peer-reviewed). Nearly all counted sources are papers proposing alternative methods that run FacTool as a comparison system, and five come from one connected group of authors that shares result rows. No study states the FacTool version tested. One study with a FacTool author is not counted. Citation check incomplete — recheck later. Before: none. After: 55 / B. Decision 0084. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0083/cursor-agent</id>
 <title>Cursor agent: new entry, 57 / A</title>
 <updated>2026-10-19T00:00:00Z</updated>

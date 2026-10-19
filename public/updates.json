@@ -21,6 +21,34 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0084/factool",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/factool.html",
+   "title": "FacTool (open-source): new entry, 55 / B",
+   "content_text": "Added FacTool (open-source) (GAIR-NLP research code for claim-level factuality checking; Verification): overall 55, evidence grade B, 17 independent performance sources (13 peer-reviewed). Nearly all counted sources are papers proposing alternative methods that run FacTool as a comparison system, and five come from one connected group of authors that shares result rows. No study states the FacTool version tested. One study with a FacTool author is not counted. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-19T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "factool",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/factool.html",
+    "before": null,
+    "after": {
+     "overall_score": 55,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0084"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0084-factool.md",
+    "as_of": "2026-10-19",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0083/cursor-agent",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html",
    "title": "Cursor agent: new entry, 57 / A",
