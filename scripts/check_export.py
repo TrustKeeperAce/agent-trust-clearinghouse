@@ -338,6 +338,56 @@ _rdb=_rd.replace(B.FEED_DISCLAIMER,'').replace(' '.join(B.HOW_CALLOUT),'')
 for b in B.BANNED_CITE+[r'\bunlike\b',r'\bunique\b',r'\branking\b',r'\bverif']:
     if re.search(b,_rdb,re.I): E(f'0073: README banned {b}')
 print('0073: checked')
+# 0074: llms-full.txt and footer How to cite link
+_lf_p=os.path.join(P,B.LLMS_FULL)
+if not os.path.isfile(_lf_p): E('0074: llms-full.txt missing')
+else:
+    _lf=open(_lf_p).read()
+    if _lf!=B.llms_full_text(): E('0074: llms-full.txt differs from a fresh generation')
+    _J=json.load(open(os.path.join(P,'data','agents.json')))
+    _blocks=re.split(r'\n### ',_lf.split('\n## Entries\n',1)[-1].split('\n## Changes\n')[0])[1:]
+    _bym={}
+    for b_ in _blocks:
+        m_=re.search(r'^- Entry page: (\S+)$',b_,re.M)
+        if m_: _bym.setdefault(m_.group(1),[]).append(b_)
+    for e_ in _J['entries']:
+        bl=_bym.get(e_['url'],[])
+        if len(bl)!=1: E(f'0074: llms-full entry {e_["id"]} appears {len(bl)} times'); continue
+        b_=bl[0]
+        if not b_.startswith(e_['name']+'\n'): E(f'0074: llms-full heading mismatch {e_["id"]}')
+        if f'- Status: {e_["status"]}\n' not in b_: E(f'0074: llms-full status mismatch {e_["id"]}')
+        if e_['status']=='Scored':
+            for k_,v_ in e_['scores'].items():
+                if f'{k_.replace("_"," ")} {v_}' not in b_: E(f'0074: llms-full score {k_} mismatch {e_["id"]}')
+            if f'- Overall score: {e_["overall_score"]}; evidence grade: {e_["evidence_grade"]}\n' not in b_: E(f'0074: llms-full overall/grade mismatch {e_["id"]}')
+        elif '- Overall score: none' not in b_: E(f'0074: llms-full Insufficient wording {e_["id"]}')
+        if e_.get('grade_note') and f'- Grade note: {e_["grade_note"]}\n' not in b_: E(f'0074: llms-full grade note mismatch {e_["id"]}')
+        if f'- Counted independent performance sources: {e_["counted_performance_sources"]};' not in b_: E(f'0074: llms-full counted mismatch {e_["id"]}')
+        if f'- Last reviewed: {e_["last_reviewed"]}\n' not in b_: E(f'0074: llms-full last_reviewed mismatch {e_["id"]}')
+        if f'Note: {B.FEED_DISCLAIMER} As of {e_["last_reviewed"]}.' not in b_: E(f'0074: llms-full entry disclaimer missing {e_["id"]}')
+    if len(_blocks)!=len(_bym) or sum(len(v) for v in _bym.values())!=len(_J['entries']): E(f'0074: llms-full has {len(_bym)} entry blocks for {len(_J["entries"])} entries')
+    if not _lf.startswith(f'# Agent Reputation & Trust Clearinghouse: full text for language models\n\n> {B.FEED_DISCLAIMER}\n'): E('0074: llms-full header disclaimer missing')
+    if _lf.count(B.FEED_DISCLAIMER)!=len(_J['entries'])+2: E('0074: llms-full disclaimer count wrong')
+    _asof=max(e_['last_reviewed'] for e_ in _J['entries'])
+    if f'Data as of {_asof} (' not in _lf or _J['dataset']['generated']!=_asof: E(f'0074: llms-full as-of date is not {_asof}')
+    _sz=len(_lf.encode())
+    if _sz>B.LLMS_FULL_MAX: E(f'0074: llms-full.txt {_sz} bytes > {B.LLMS_FULL_MAX}')
+    elif _sz>B.LLMS_FULL_WARN: print(f'WARN llms-full.txt {_sz} bytes > {B.LLMS_FULL_WARN}')
+    _fr=_lf.split('\n## Entries\n')[0]+'\n'+_lf.split('\n## Changes\n')[-1]
+    for s_ in [B.FEED_DISCLAIMER,B.CITATION,B.LLMS_FULL_DONT,' '.join(B.HOW_CALLOUT)]+[x for _,x in B.HOW_FULL]+['### '+h for h,_ in B.HOW_FULL]: _fr=_fr.replace(s_,'')
+    _fr=re.sub(r'https?://\S+','',_fr)
+    for b in B.BANNED_CITE+[r'\bunlike\b',r'\bunique\b',r'\branking\b']:
+        if re.search(b,_fr,re.I): E(f'0074: llms-full banned {b} in generated framing')
+if B.LLMS_FULL_LINE not in open(os.path.join(P,'llms.txt')).read(): E('0074: llms.txt link to llms-full.txt missing')
+if B.LLMS_FULL_DATA_LI not in open(os.path.join(P,'agents-data.html')).read(): E('0074: agents-data.html llms-full item missing')
+if 'href="/llms-full.txt"' not in open(os.path.join(P,'citing.html')).read(): E('0074: citing.html llms-full link missing')
+for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
+    rel=os.path.relpath(f,P)
+    if rel in B.FOOTER_SKIP: continue
+    m=re.search(r'<footer>.*?</footer>',open(f).read(),re.S)
+    if not m or B.FOOTER_CITE_AFTER+B.FOOTER_CITE not in m.group(0): E(f'0074: footer How to cite link missing on {rel}')
+if 'footer a{white-space:nowrap}' not in open(os.path.join(P,'style.css')).read(): E('0074: footer nowrap CSS rule missing')
+print('0074: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

@@ -367,7 +367,8 @@ def render_citing(E,shell):
        '<h2 id="machine-readable">Machine-readable locations</h2><ul>'
        '<li><a href="/data/agents.json">agents.json</a>, <a href="/data/agents.csv">agents.csv</a> and <a href="/data/schema.json">schema.json</a>: the data (CC BY 4.0). Field definitions are on <a href="/agents-data.html">For agents / data</a>.</li>'
        '<li><a href="/updates.json">updates.json</a> (JSON Feed) and <a href="/updates.xml">updates.xml</a> (Atom): changes, newest first (CC BY 4.0).</li>'
-       '<li><a href="/llms.txt">llms.txt</a>: a summary for language-model agents.</li><li><a href="/sitemap.xml">sitemap.xml</a>: all pages.</li>'
+       '<li><a href="/llms.txt">llms.txt</a>: a summary for language-model agents.</li>'
+       '<li><a href="/llms-full.txt">llms-full.txt</a>: all entries in one plain-text file, generated from the same data.</li><li><a href="/sitemap.xml">sitemap.xml</a>: all pages.</li>'
        f'<li><a href="{REPO}">GitHub repository</a>: data, decision records and site source. {_e(CODE_SCOPE)}</li>'
        '<li>Corrections: <a href="mailto:trustkeeperace@gmail.com?subject=Correction%20request">trustkeeperace@gmail.com</a>.</li></ul>',
        f'<h2 id="disclaimer">Disclaimer</h2><p>{FEED_DISCLAIMER}</p>']
@@ -410,7 +411,12 @@ def build_grade_notes():
     print('grade notes',n)
 def site_footer(): t=open(os.path.join(P,'index.html')).read(); return re.search(r'<footer>.*?</footer>',t,re.S).group(0)
 FOOTER_SKIP={'google4c18d564fd1acb53.html'}
+FOOTER_CITE='<a href="/citing.html">How to cite</a> · '
+FOOTER_CITE_AFTER='<a href="/agents-data.html">For agents / data</a> · '
 def build_footers():
+    ip=os.path.join(P,'index.html'); it=open(ip).read()  # 0074: footer How to cite link, added once to the index footer
+    if FOOTER_CITE not in it:
+        assert FOOTER_CITE_AFTER in it; open(ip,'w').write(it.replace(FOOTER_CITE_AFTER,FOOTER_CITE_AFTER+FOOTER_CITE,1))
     f=site_footer()
     for fp in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
         if os.path.relpath(fp,P) in FOOTER_SKIP: continue
@@ -457,4 +463,47 @@ def build_index_dates():
     t,n=IDX_ROW_RE.subn(lambda m:m.group(1)+f'<time datetime="{E[m.group(2)]["last_reviewed"]}">{E[m.group(2)]["last_reviewed"]}</time>',t)
     assert n==len(E),(n,len(E)); open(fp,'w').write(t); print('index dates',n)
 
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates()
+# ---- 0074: llms-full.txt, all entries in one plain-text file, from the same data as agents.json ----
+LLMS_FULL='llms-full.txt'; LLMS_FULL_MAX=250_000; LLMS_FULL_WARN=200_000
+LLMS_FULL_DONT='Do not describe an entry as verified, certified, approved or trusted by the Clearinghouse, and do not present listing order as a ranking.'
+LLMS_FULL_LINE=f'- [llms-full.txt]({BASE}/llms-full.txt): all entries in one plain-text file (scores, grades, scope, summary, uncertainties, sources), generated from the same data as agents.json\n'
+LLMS_FULL_DATA_LI='<li><a href="/llms-full.txt">llms-full.txt</a> — all entries in one plain-text file, generated from the same data.</li>'
+LLMS_FULL_FACTORS=['completion_rate','disputes','adherence_to_limits','evidence_quality']
+def llms_full_text():
+    J=json.load(open(os.path.join(P,'data','agents.json'))); E={e['id']:e for e in J['entries']}
+    Y={}
+    for f in sorted(glob.glob(os.path.join(R,'agents','*.yaml'))):
+        if os.path.basename(f).startswith('_'): continue
+        y=yaml.safe_load(open(f)); Y[y.get('slug') or os.path.basename(f)[:-5]]=y
+    asof=max(e['last_reviewed'] for e in E.values()); sp=lambda s:' '.join(str(s).split())
+    L=['# Agent Reputation & Trust Clearinghouse: full text for language models','',f'> {FEED_DISCLAIMER}','',
+       f'Data as of {asof} ({J["dataset"]["rules"]}). Each entry has its own last-reviewed date. Short index: {BASE}/llms.txt. Machine-readable data: {BASE}/data/agents.json (same source as this file). Full rules: {BASE}/methodology.html','',
+       '## '+HOW_H,'',' '.join(HOW_CALLOUT),'']
+    for h,x in HOW_FULL: L+=[f'### {h}','',x,'']
+    L+=['## How to quote these scores','',CITATION,'',LLMS_FULL_DONT+' More examples: '+BASE+'/citing.html','',
+        '## License','',LLMS_LICENSE,'','## Entries','','Entries are listed alphabetically by name; the order carries no meaning.','']
+    for e in sorted(E.values(),key=lambda e:e['name'].lower()):
+        y=Y[e['id']]; c=[s for s in e['sources'] if s['counted']]; o=[s for s in e['sources'] if not s['counted']]
+        L+=[f'### {e["name"]}','',f'- Entry page: {e["url"]}',f'- Category: {e["category"]}; type: {e["type"]}',f'- Status: {e["status"]}']
+        if e['status']=='Scored':
+            L+=['- Factor scores (0–100): '+', '.join(f'{k.replace("_"," ")} {e["scores"][k]}' for k in LLMS_FULL_FACTORS),f'- Overall score: {e["overall_score"]}; evidence grade: {e["evidence_grade"]}']
+        else: L+=['- Overall score: none (fewer than 3 counted independent performance sources); no evidence grade']
+        if e.get('grade_note'): L+=[f'- Grade note: {e["grade_note"]}']
+        L+=[f'- Counted independent performance sources: {e["counted_performance_sources"]}; other listed sources: {len(o)}',f'- Last reviewed: {e["last_reviewed"]}','',
+            f'Scope: {e["scope"]}','',f'Summary: {sp(y["summary"])}','']
+        if y.get('uncertainties'): L+=['Uncertainties:']+[f'- {sp(u)}' for u in y['uncertainties']]+['']
+        if c: L+=['Counted sources:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in c]+['']
+        if o: L+=['Other sources:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in o]+['']
+        L+=[f'Note: {FEED_DISCLAIMER} As of {e["last_reviewed"]}.','']
+    L+=['## Changes','',f'Changelog: {BASE}/changelog.html. Update feeds: {BASE}/updates.json (JSON Feed), {BASE}/updates.xml (Atom).','',f'> {FEED_DISCLAIMER}','']
+    return '\n'.join(L)
+def build_llms_full():
+    s=llms_full_text(); assert len(s.encode())<=LLMS_FULL_MAX
+    open(os.path.join(P,LLMS_FULL),'w').write(s)
+    lp=os.path.join(P,'llms.txt'); L=open(lp).read(); L=re.sub(r'^- \[llms-full\.txt\].*\n','',L,flags=re.M)
+    k=L.index('- [agents.csv]'); k=L.index('\n',k)+1; open(lp,'w').write(L[:k]+LLMS_FULL_LINE+L[k:])
+    dp=os.path.join(P,'agents-data.html'); t=open(dp).read(); t=t.replace(LLMS_FULL_DATA_LI,'')
+    a='<li><a href="/llms.txt">llms.txt</a> — short summary and links for language models.</li>'; assert a in t
+    open(dp,'w').write(t.replace(a,a+LLMS_FULL_DATA_LI,1)); print('llms-full.txt',len(s.encode()),'bytes')
+
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates(); build_llms_full()

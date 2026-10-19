@@ -62,6 +62,7 @@ header.entry{padding:var(--s7) 0 var(--s4)}
 .note{border-left:3px solid var(--focus);background:var(--surface);padding:var(--s2) var(--s4);border-radius:0 10px 10px 0;max-width:none}
 footer{margin-top:var(--s7);padding-block:var(--s5) var(--s6);border-top:1px solid var(--border);font-size:.9rem;color:var(--muted)}
 footer p:first-child{color:var(--text);font-weight:600}
+footer a{white-space:nowrap}
 @media (max-width:860px){.hero{grid-template-columns:1fr;padding-top:var(--s6)}}
 @media (max-width:640px){
  header.site,main,footer{padding-inline:var(--s4)}

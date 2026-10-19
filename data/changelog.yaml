@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0074
+  date: '2026-10-18'
+  decision_packets:
+  - '0074'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0074-llms-full-and-cite-link.md
+  change_html: 'Added <a href="/llms-full.txt">llms-full.txt</a>, all entries in one plain-text file generated from the same data as agents.json, linked from llms.txt, the data page and the <a href="/citing.html">How to cite</a> page. Added a &#8220;How to cite&#8221; link to the site footer. No score or grade changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-18-0072
   date: '2026-10-18'
   decision_packets:
