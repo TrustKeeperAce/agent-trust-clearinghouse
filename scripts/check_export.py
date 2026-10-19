@@ -251,7 +251,6 @@ for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
     rel=os.path.relpath(f,P)
     if rel in B.FOOTER_SKIP: continue
     t=open(f).read(); ti=_hh.unescape((re.search(r'<title>(.*?)</title>',t) or [None,''])[1]); de=_hh.unescape((re.search(r'<meta name="description" content="([^"]*)"',t) or [None,''])[1])
-    if rel in gen_pages and len(ti)>70: print(f'WARN {rel}: title {len(ti)} chars > 70')
     if len(de)>160: print(f'WARN {rel}: meta description {len(de)} chars > 160')
 for e in J.values():
     y69=yaml.safe_load(open(os.path.join(B.R,'agents',e['id']+'.yaml')))
@@ -369,7 +368,8 @@ else:
     if not _lf.startswith(f'# Agent Reputation & Trust Clearinghouse: full text for language models\n\n> {B.FEED_DISCLAIMER}\n'): E('0074: llms-full header disclaimer missing')
     if _lf.count(B.FEED_DISCLAIMER)!=len(_J['entries'])+2: E('0074: llms-full disclaimer count wrong')
     _asof=max(e_['last_reviewed'] for e_ in _J['entries'])
-    if f'Data as of {_asof} (' not in _lf or _J['dataset']['generated']!=_asof: E(f'0074: llms-full as-of date is not {_asof}')
+    # 0075: dataset.generated follows the changelog date and may be later than the latest last_reviewed
+    if f'Data as of {_asof} (' not in _lf or _J['dataset']['generated']<_asof: E(f'0074: llms-full as-of date is not {_asof}')
     _sz=len(_lf.encode())
     if _sz>B.LLMS_FULL_MAX: E(f'0074: llms-full.txt {_sz} bytes > {B.LLMS_FULL_MAX}')
     elif _sz>B.LLMS_FULL_WARN: print(f'WARN llms-full.txt {_sz} bytes > {B.LLMS_FULL_WARN}')
@@ -388,6 +388,25 @@ for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
     if not m or B.FOOTER_CITE_AFTER+B.FOOTER_CITE not in m.group(0): E(f'0074: footer How to cite link missing on {rel}')
 if 'footer a{white-space:nowrap}' not in open(os.path.join(P,'style.css')).read(): E('0074: footer nowrap CSS rule missing')
 print('0074: checked')
+# 0075: titles on all pages
+_sfx=' — '+B.SITE_NAME; _tseen={}
+for f in sorted(glob.glob(os.path.join(P,'**','*.html'),recursive=True)):
+    rel=os.path.relpath(f,P)
+    if rel in B.FOOTER_SKIP: continue
+    h_=open(f).read(); m_=re.findall(r'<title>(.*?)</title>',h_,re.S)
+    if len(m_)!=1: E(f'0075: {rel} has {len(m_)} <title> elements'); continue
+    ti=_hh.unescape(m_[0])
+    if len(ti)>70: E(f'0075: {rel} title {len(ti)} chars > 70')
+    if not ti.endswith(_sfx) or len(ti)<=len(_sfx): E(f'0075: {rel} title lacks suffix {_sfx!r}')
+    _tseen.setdefault(ti,[]).append(rel)
+    for prop,pat in (('og:title',r'<meta property="og:title" content="([^"]*)">'),('twitter:title',r'<meta name="twitter:title" content="([^"]*)">')):
+        v_=re.findall(pat,h_)
+        if len(v_)>1 or (v_ and _hh.unescape(v_[0])!=ti): E(f'0075: {rel} {prop} differs from title')
+    for b in B.BANNED_CITE+[r'\bunlike\b',r'\bunique\b',r'\branking\b',r'\bverif']:
+        if re.search(b,ti,re.I): E(f'0075: {rel} banned {b} in title')
+for ti,rs in _tseen.items():
+    if len(rs)>1: E(f'0075: duplicate title {ti!r} on {rs}')
+print(f'0075: checked, {sum(len(v) for v in _tseen.values())} titles, max {max(len(k) for k in _tseen)}')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

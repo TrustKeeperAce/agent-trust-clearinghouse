@@ -185,18 +185,18 @@ def build_feeds():
 import html as _H
 def _e(s): return _H.escape(str(s),quote=True)
 COMPARE=[
- {'path':'compare/claude-code-and-openai-codex.html','h1':'Claude Code and OpenAI Codex compared: public evidence','title':'Claude Code and Codex compared: public evidence',
+ {'path':'compare/claude-code-and-openai-codex.html','h1':'Claude Code and OpenAI Codex compared: public evidence','title':'Claude Code and Codex',
   'short':'Claude Code and OpenAI Codex compared',
   'desc':'Factor scores, evidence grades and counted independent sources for Claude Code and OpenAI Codex. Informational; not a ranking.',
   'groups':[('Entries',['claude-code','openai-codex'])],
   'caveats':['The two entries cover different products: the OpenAI Codex entry includes the cloud agent that opens pull requests as well as the CLI, IDE extension and desktop app; the Claude Code entry covers the CLI and headless mode only. Read each scope before comparing.',
              'Both entries combine many versions and the models each tool used at the time of each study.']},
- {'path':'compare/coding-agents.html','h1':'Coding agents compared: public evidence','short':'Coding agents compared',
+ {'path':'compare/coding-agents.html','h1':'Coding agents compared: public evidence','title':'Coding agents compared','short':'Coding agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the coding agents in the directory. Informational; not a ranking.',
   'groups':[('Coding agent entries',('category','Coding agent'))],
   'caveats':['Open-source frameworks (OpenHands, SWE-agent, Aider) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin) are tested as shipped.',
              'Some entries are cloud agents that open pull requests and others are command-line tools; read each scope before comparing.']},
- {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','title':'Research agents compared: public evidence','short':'Research agents compared',
+ {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','title':'Research agents compared','short':'Research agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the research and deep-research agents in the directory. Informational; not a ranking.',
   'groups':[('Academic search and review tools',['consensus','elicit']),
             ('General research and deep-research agents',('category','Research',['consensus','elicit']))],
@@ -237,7 +237,7 @@ TH=('<thead><tr><th scope="col">Agent</th><th scope="col">Overall score</th><th 
 def render_compare(c,E,Y,gen,shell):
     J={e['id']:e for e in E}; ids=compare_ids(c,E); url=f'{BASE}/{c["path"]}'
     lr=sorted(J[i]['last_reviewed'] for i in ids)
-    title=f'{_e(c.get("title",c["h1"]))} — Agent Reputation &amp; Trust Clearinghouse'
+    title=f'{_e(c.get("title",c["h1"]))} — {_e(SITE_NAME)}'
     ld1={'@context':'https://schema.org','@type':'ItemList','name':c['h1'],'itemListOrder':'https://schema.org/ItemListUnordered','numberOfItems':len(ids),
          'itemListElement':[{'@type':'ListItem','position':n+1,'name':J[i]['name'],'url':J[i]['url']} for n,i in enumerate(ids)]}
     ld2={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[
@@ -300,6 +300,7 @@ BANNED_CITE=BANNED+[r'\bcertified\b',r'\bverified\b',r'\bendorsed\b']
 NEW_BANNED=BANNED_CITE[len(BANNED):]
 CITE_PATH='citing.html'
 CITE_TITLE='How to cite and quote this data'
+CITE_DOC_TITLE='How to cite this data'  # 0075: <title> only; H1 and JSON-LD keep CITE_TITLE
 CITE_DESC='Ready-to-copy citations (plain, APA-style, BibTeX, agent template), CC BY 4.0 attribution and how to quote scores. Informational only.'
 LICENSE_FILE='https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE'
 REPO='https://github.com/TrustKeeperAce/agent-trust-clearinghouse'
@@ -334,7 +335,7 @@ def _ds(E):
     return {'generated':gen,'rules':RULES,'version':f'{RULES}; data {gen}','canonical':BASE+'/agents-data.html'}
 def render_citing(E,shell):
     ds=_ds(E); f=cite_formats(E,ds); gen=ds['generated']; url=f'{BASE}/{CITE_PATH}'
-    title=f'{CITE_TITLE} — Agent Reputation &amp; Trust Clearinghouse'
+    title=f'{_e(CITE_DOC_TITLE)} — {_e(SITE_NAME)}'
     ld1={'@context':'https://schema.org','@type':'WebPage','name':CITE_TITLE,'url':url,'description':CITE_DESC,'license':LICENSE,'dateModified':gen}
     ld2={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[
          {'@type':'ListItem','position':1,'name':'Directory','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'How to cite','item':url}]}
