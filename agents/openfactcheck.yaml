@@ -38,10 +38,12 @@ sources:
   accessed: '2026-10-17'
   note: 'Repository (moved from yuxiaw/openfactcheck and mbzuai-nlp/openfactcheck): AGPL-3.0, last push 15 Aug 2026; PyPI 49 releases, latest 2.0.0a10 (13 Jul 2026); no security advisories'
 uncertainties:
-- Semantic Scholar citation check (17 Oct 2026) covered all papers citing the three OpenFactCheck papers; none ran OpenFactCheck as a tested system. Papers without open full text were checked by abstract only.
+- Semantic Scholar citation check (17 Oct 2026) covered all papers citing the three OpenFactCheck papers; none ran OpenFactCheck as a tested system. An OpenAlex full-text recheck (Decision 0080, 19 Oct 2026) read 13 newer citing papers in full; none ran it either. Papers without open full text were checked by abstract only.
 - OpenFactCheck is a framework that combines other checkers; "performance" depends on the configuration chosen.
 - The 2.0 alpha series may be a substantial rewrite; continuity is unassessed beyond release history.
-last_reviewed: '2026-10-17'
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0030-loki-openfactcheck.md
+decision_packet:
+- decisions/0030-loki-openfactcheck.md
+- decisions/0080-evidence-pass-4.md
 notes: Informational only; not a guarantee, endorsement, or certification.

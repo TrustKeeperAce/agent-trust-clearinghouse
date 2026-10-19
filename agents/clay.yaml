@@ -80,14 +80,25 @@ sources:
   accessed: '2026-10-16'
   note: 'Trustpilot: user-review aggregate (anecdotal aggregate; small sample, about 9 reviews)'
   access_note: could not be fetched automatically (HTTP 403)
+- url: https://www.linkedin.com/posts/christopher-price-59a24b178_we-benchmarked-our-research-agents-against-activity-7425305026103013376-Q-DL
+  kind: competitor
+  accessed: '2026-10-19'
+  note: 'Sixtyfour (sells a competing research agent), LinkedIn post (Feb 2026): 184 leads run through Sixtyfour, Parallel and Clay; reports Clay 66% accuracy against 93% for its own product; method said to be on its blog (not reviewed) (competitor benchmark; not independent)'
+- url: https://syncgtm.com/blog/clay-review
+  kind: competitor
+  accessed: '2026-10-19'
+  note: 'SyncGTM review (Mar 2026, updated Sep 2026): 30-day test by a vendor that presents itself as a Clay alternative; reports a 78% email match rate on a 2,000-contact list and Claygent answers correct 70-80% of the time on narrow tasks; no data or detailed method published (competitor review; not independent)'
 uncertainties:
 - No independent benchmark of Claygent's accuracy was found.
 - Practitioner tests are small and self-published, use differing methods, and one grades against Clay's own output.
 - Claygent's available models change frequently, so test results may age quickly.
 - Vendor accuracy figures are vendor claims, not findings.
 - User-review aggregates are anecdotal; Trustpilot's sample is small and its page could not be fetched automatically.
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
-last_reviewed: '2026-10-16'
+- 'Citation check still incomplete (Decision 0080, 19 Oct 2026): an OpenAlex full-text search for "Claygent" found one passing mention and no test; Semantic Scholar was unavailable (rate-limited). Recheck later.'
+- Two tests published by competing vendors (Sixtyfour, SyncGTM) report Clay figures; they are listed but not counted.
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0006-clay.md
+decision_packet:
+- decisions/0006-clay.md
+- decisions/0080-evidence-pass-4.md
 notes: Informational only; not a guarantee, endorsement, or certification.

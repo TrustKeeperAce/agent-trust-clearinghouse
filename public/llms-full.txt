@@ -384,8 +384,8 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Data enrichment; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other sources (as in agents.json): 6; all sources listed but not counted: 14
-- Last reviewed: 2026-10-16
+- Counted independent performance sources: 0; other sources (as in agents.json): 6; all sources listed but not counted: 16
+- Last reviewed: 2026-10-19
 
 Scope: Claygent (AI web-research agent) and enrichment features
 
@@ -397,7 +397,8 @@ Uncertainties:
 - Claygent's available models change frequently, so test results may age quickly.
 - Vendor accuracy figures are vendor claims, not findings.
 - User-review aggregates are anecdotal; Trustpilot's sample is small and its page could not be fetched automatically.
-- Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).
+- Citation check still incomplete (Decision 0080, 19 Oct 2026): an OpenAlex full-text search for "Claygent" found one passing mention and no test; Semantic Scholar was unavailable (rate-limited). Recheck later.
+- Two tests published by competing vendors (Sixtyfour, SyncGTM) report Clay figures; they are listed but not counted.
 
 Sources listed but not counted:
 - https://www.clay.com/blog/introducing-gpt-5-in-claygent (vendor or maintainer, accessed 2026-10-16)
@@ -414,8 +415,10 @@ Sources listed but not counted:
 - https://www.linkedin.com/posts/imran-izham-01b4742ab_i-activity-7487468031762374657-RGU5 (anecdotal, accessed 2026-10-16)
 - https://ai.g2.com/evaluations/categories/ai-sdr/clay-claygent (anecdotal, accessed 2026-10-16)
 - https://www.trustpilot.com/review/clay.com (anecdotal, accessed 2026-10-16)
+- https://www.linkedin.com/posts/christopher-price-59a24b178_we-benchmarked-our-research-agents-against-activity-7425305026103013376-Q-DL (competitor, accessed 2026-10-19)
+- https://syncgtm.com/blog/clay-review (competitor, accessed 2026-10-19)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-16.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### Consensus
 
@@ -599,18 +602,18 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Browser/web agent; type: Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other sources (as in agents.json): 5; all sources listed but not counted: 9
-- Last reviewed: 2026-10-17
+- Counted independent performance sources: 0; other sources (as in agents.json): 6; all sources listed but not counted: 10
+- Last reviewed: 2026-10-19
 
 Scope: The Fellou desktop browser and its built-in agent ("Deep Action", "Deep Search"), Fellou 2.0 (3 June 2025) onward. Fellou says versions before 2.0 no longer work. The open-source Eko framework is not covered.
 
 Summary: Fellou is an AI browser from ASI X Inc. whose built-in agent plans and carries out multi-step web tasks across tabs, including scheduled tasks and actions in connected accounts such as Gmail. No counted independent evaluation was found. The one benchmark that ran Fellou (CAP, COLM 2026: 7.0% full success, 24.0% partial completion) lists FellouAI as an author affiliation, so it is not counted for Fellou. Fellou's own figures (80% on Online-Mind2Web; 72% on Web Bench) are not counted. Security researchers at Brave and LayerX showed that instructions placed on web pages could direct the agent to act on the user's behalf; LayerX reported no vendor response. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.
 
 Uncertainties:
-- Semantic Scholar citation (CAP) and keyword checks were completed on 17 Oct 2026 and found no Fellou test; its full-text snippet search could not be run (rate-limited).
+- Semantic Scholar citation (CAP) and keyword checks were completed on 17 Oct 2026 and found no Fellou test; its full-text snippet search could not be run (rate-limited on 17 and 19 Oct). An OpenAlex full-text recheck and web searches on 19 Oct 2026 (Decision 0080) found no new counted test.
 - Whether to exclude CAP for Fellou (vendor-affiliated author) is a judgment call; even if counted, Fellou would have 1 source, so the outcome does not change.
 - Fellou updates continuously without public version numbers after 2.0; the version tested by each source is not known.
-- Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog) describe instability and failures on complex pages but are not systematic and are not counted.
+- Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog, Journal du Net in Oct 2025, and Writingmate in Aug 2026, whose publisher sells an alternative AI-agent product) describe instability and failures on complex pages but are not systematic and are not counted.
 - Fix status of the Brave and LayerX findings is unknown.
 
 Sources listed but not counted:
@@ -620,11 +623,12 @@ Sources listed but not counted:
 - https://layerxsecurity.com/blog/bioshocking-ai-gaming-the-ai-browser-and-escaping-its-guardrails/ (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2511.09309 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2605.05509 (other, accessed 2026-10-17)
+- https://decodo.com/blog/agentic-capability-report (other, accessed 2026-10-19)
 - https://fellou.ai/blog/fellou-v2-launch/ (vendor or maintainer, accessed 2026-10-17)
 - https://fellou.ai/blog/eko20-launch/ (vendor or maintainer, accessed 2026-10-17)
 - https://fellou.ai/policy (vendor or maintainer, accessed 2026-10-17)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### Gemini Deep Research
 
@@ -1101,14 +1105,14 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
 - Counted independent performance sources: 0; other sources (as in agents.json): 2; all sources listed but not counted: 5
-- Last reviewed: 2026-10-17
+- Last reviewed: 2026-10-19
 
 Scope: The open-source OpenFactCheck library (PyPI 0.0.17 July 2024 up to 1.1.2; the 2.0 alpha series, 2.0.0a1 to 2.0.0a10 in 2026, is not assessed): CustChecker/ResponseEval (configurable fact-checker built from FacTool, Factcheck-GPT and other modules), LLMEval and CheckerEval. Run with user-chosen models and retrievers. The hosted web app is not covered.
 
 Summary: OpenFactCheck is an open-source framework from MBZUAI researchers for building configurable fact-checkers, measuring how factual language models are, and benchmarking fact-checkers. Its fact-checking mostly reuses parts of earlier systems (FacTool, Factcheck-GPT). No independent evaluation that ran it was found; the only figures come from its developers' EMNLP 2024 demo and COLING 2025 papers. It is actively maintained (2.0 alpha releases in 2026). No CVEs or security advisories were found. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.
 
 Uncertainties:
-- Semantic Scholar citation check (17 Oct 2026) covered all papers citing the three OpenFactCheck papers; none ran OpenFactCheck as a tested system. Papers without open full text were checked by abstract only.
+- Semantic Scholar citation check (17 Oct 2026) covered all papers citing the three OpenFactCheck papers; none ran OpenFactCheck as a tested system. An OpenAlex full-text recheck (Decision 0080, 19 Oct 2026) read 13 newer citing papers in full; none ran it either. Papers without open full text were checked by abstract only.
 - OpenFactCheck is a framework that combines other checkers; "performance" depends on the configuration chosen.
 - The 2.0 alpha series may be a substantial rewrite; continuity is unassessed beyond release history.
 
@@ -1119,7 +1123,7 @@ Sources listed but not counted:
 - https://aclanthology.org/2024.emnlp-demo.23/ (vendor or maintainer, accessed 2026-10-17)
 - https://github.com/openfactcheck-research/openfactcheck (vendor or maintainer, accessed 2026-10-17)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### OpenHands (open-source)
 
@@ -1177,7 +1181,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
 - Counted independent performance sources: 1; other sources (as in agents.json): 7; all sources listed but not counted: 9
-- Last reviewed: 2026-10-16
+- Last reviewed: 2026-10-19
 
 Scope: Pactum is a commercial procurement-negotiation agent.
 
@@ -1189,6 +1193,7 @@ Uncertainties:
 - The product has changed since the 2021 Walmart pilot.
 - Paywalled and teaching-case full texts were not reviewed.
 - Vendor savings figures are vendor claims, not findings.
+- {'Evidence pass 4 (19 Oct 2026, Decision 0080)': 'no new independent test of Pactum was found; two 2026 negotiation studies tested other AI systems, not Pactum.'}
 
 Counted sources:
 - https://bth.diva-portal.org/smash/get/diva2:2063902/FULLTEXT01.pdf (independent performance, accessed 2026-10-16)
@@ -1204,7 +1209,7 @@ Sources listed but not counted:
 - https://hofstralawreview.org/wp-content/uploads/2025/03/AA.3.Steward.pdf (independent other, accessed 2026-10-16)
 - https://pactum.com/ (vendor or maintainer, accessed 2026-10-16)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-16.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### Perplexity
 

@@ -3613,9 +3613,10 @@
    },
    "counted_performance_sources": 0,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-16",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0006-clay.md"
+    "decisions/0006-clay.md",
+    "decisions/0080-evidence-pass-4.md"
    ],
    "sources": [
     {
@@ -3715,6 +3716,20 @@
      "accessed": "2026-10-16",
      "counted": false,
      "peer_reviewed": null
+    },
+    {
+     "url": "https://www.linkedin.com/posts/christopher-price-59a24b178_we-benchmarked-our-research-agents-against-activity-7425305026103013376-Q-DL",
+     "kind": "competitor",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://syncgtm.com/blog/clay-review",
+     "kind": "competitor",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
     }
    ]
   },
@@ -3738,13 +3753,14 @@
    "grade_note": null,
    "independent_source_count": {
     "performance": 0,
-    "other": 5
+    "other": 6
    },
    "counted_performance_sources": 0,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0031-fellou.md"
+    "decisions/0031-fellou.md",
+    "decisions/0080-evidence-pass-4.md"
    ],
    "sources": [
     {
@@ -3786,6 +3802,13 @@
      "url": "https://arxiv.org/abs/2605.05509",
      "kind": "other",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://decodo.com/blog/agentic-capability-report",
+     "kind": "other",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     },
@@ -4258,9 +4281,10 @@
    },
    "counted_performance_sources": 0,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0030-loki-openfactcheck.md"
+    "decisions/0030-loki-openfactcheck.md",
+    "decisions/0080-evidence-pass-4.md"
    ],
    "sources": [
     {
@@ -4324,9 +4348,10 @@
    },
    "counted_performance_sources": 1,
    "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-16",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0005-pactum.md"
+    "decisions/0005-pactum.md",
+    "decisions/0080-evidence-pass-4.md"
    ],
    "sources": [
     {

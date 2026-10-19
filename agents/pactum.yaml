@@ -73,7 +73,10 @@ uncertainties:
 - The product has changed since the 2021 Walmart pilot.
 - Paywalled and teaching-case full texts were not reviewed.
 - Vendor savings figures are vendor claims, not findings.
-last_reviewed: '2026-10-16'
+- Evidence pass 4 (19 Oct 2026, Decision 0080): no new independent test of Pactum was found; two 2026 negotiation studies tested other AI systems, not Pactum.
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0005-pactum.md
+decision_packet:
+- decisions/0005-pactum.md
+- decisions/0080-evidence-pass-4.md
 notes: Informational only; not a guarantee, endorsement, or certification.

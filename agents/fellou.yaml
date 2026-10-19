@@ -10,7 +10,7 @@ overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 0
-  other: 5
+  other: 6
 factor_notes:
   completion_rate: 'No counted independent results. CAP (COLM 2026; vendor-affiliated author, not counted): 7.0% full success and 24.0% partial completion on 198 cross-site tasks, Nov-Dec 2025, mean 22.1 min per task. Vendor-reported (not counted): Online-Mind2Web 80% (Eko 2.0; marked "unknown evaluation method" on the leaderboard); Web Bench 72% on write-heavy tasks. Not scored.'
   disputes: No lawsuits, regulatory actions or CVEs found. Brave reported a prompt-injection issue to Fellou on 20 Aug 2025 and published it on 21 Oct 2025; whether it was fixed is not stated. LayerX reported its BioShocking finding on 30 Oct 2025 and lists the status as no response. Not scored.
@@ -42,6 +42,10 @@ sources:
   kind: other
   accessed: '2026-10-17'
   note: 'WAAA! Web Adversaries Against Agentic Browsers (NC State, preprint May 2026): lists Fellou in a capability survey of 11 browsers; does not attack or test Fellou'
+- url: https://decodo.com/blog/agentic-capability-report
+  kind: other
+  accessed: '2026-10-19'
+  note: 'Decodo Agentic Capability Report (26 Aug 2026; publisher sells web-data tools for AI agents): scores 45 tools mainly from vendor documentation; in its own hands-on check (each task run twice; no per-task results published) Fellou got stuck on complex layouts, looped and could not get past CAPTCHAs. Not a test with published results; not counted'
 - url: https://fellou.ai/blog/fellou-v2-launch/
   kind: vendor or maintainer
   accessed: '2026-10-17'
@@ -55,12 +59,14 @@ sources:
   accessed: '2026-10-17'
   note: 'Privacy policy: data controller ASI X Inc. (Delaware); may disclose personal data to third parties in the US, Japan and Singapore. Not independently verified'
 uncertainties:
-- Semantic Scholar citation (CAP) and keyword checks were completed on 17 Oct 2026 and found no Fellou test; its full-text snippet search could not be run (rate-limited).
+- Semantic Scholar citation (CAP) and keyword checks were completed on 17 Oct 2026 and found no Fellou test; its full-text snippet search could not be run (rate-limited on 17 and 19 Oct). An OpenAlex full-text recheck and web searches on 19 Oct 2026 (Decision 0080) found no new counted test.
 - Whether to exclude CAP for Fellou (vendor-affiliated author) is a judgment call; even if counted, Fellou would have 1 source, so the outcome does not change.
 - Fellou updates continuously without public version numbers after 2.0; the version tested by each source is not known.
-- Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog) describe instability and failures on complex pages but are not systematic and are not counted.
+- Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog, Journal du Net in Oct 2025, and Writingmate in Aug 2026, whose publisher sells an alternative AI-agent product) describe instability and failures on complex pages but are not systematic and are not counted.
 - Fix status of the Brave and LayerX findings is unknown.
-last_reviewed: '2026-10-17'
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0031-fellou.md
+decision_packet:
+- decisions/0031-fellou.md
+- decisions/0080-evidence-pass-4.md
 notes: Informational only; not a guarantee, endorsement, or certification.
