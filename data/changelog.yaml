@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0072
+  date: '2026-10-18'
+  decision_packets:
+  - '0072'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0072-differentiator-note.md
+  change_html: 'Added a short &#8220;How this directory works&#8221; note on the home page and a matching section on the <a href="/methodology.html#how-it-works">methodology page</a> (counted independent evidence, separate factor scores, open data, no ranking or endorsement), with links from the data page and llms.txt. Home-page last-reviewed dates are now generated from the data (four rows corrected). No score or grade changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-18-0071
   date: '2026-10-18'
   decision_packets:

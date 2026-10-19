@@ -417,6 +417,39 @@ def build_footers():
         t=open(fp).read(); t2=re.sub(r'<footer>.*?</footer>',lambda m:f,t,count=1,flags=re.S)
         if t2!=t: open(fp,'w').write(t2)
 
+# ---- 0072: "How this directory works" callout (home) and section (methodology #how-it-works) ----
+HOW_H='How this directory works'
+HOW_ANCHOR='how-it-works'
+HOW_CALLOUT=['An overall score is given only when at least three independent performance sources (tests by someone other than the vendor that report their method and results) have tested the product covered by the entry; otherwise the entry is labeled Insufficient evidence.', 'Scored entries show the four factor scores separately next to the overall score, and every entry lists its cited sources.', 'The full data is open under CC BY 4.0.', 'Listing order is not a ranking, and nothing here is an endorsement or certification.']
+HOW_CALLOUT_LINK='More about how this directory works'
+HOW_FULL=[('Counted independent evidence', 'An overall score is given only when there are at least 3 independent performance sources: benchmarks, research studies, documented hands-on tests, security or safety evaluations or audits that report their method and results. Independent means not produced, funded or co-authored by the vendor or maintainer, and not published by a competing product to promote itself. A source counts only if it tested the product, version and scope covered by the entry, and each study counts once. Reviews, commentary, press coverage without original testing and product descriptions are listed as other sources; they can inform factor scores but do not count toward the 3.'), ('Separate factor scores', 'Each scored entry shows four factors, each scored 0–100: completion rate (30%), disputes (20%), adherence to limits (25%) and evidence quality (25%), together with the weighted overall score. The evidence grade (A, B or B-) describes the amount and type of independent evidence behind a score, not how well the agent performs.'), ('Open data', 'The same entries are published as agents.json, agents.csv and schema.json under CC BY 4.0, generated from the same source files as the pages. agents.json lists every cited source with its kind, access date and whether it was counted. Changes are recorded in the changelog and the update feeds, and the decision records are in the public repository.'), ('No ranking or endorsement', "Scored entries are listed by overall score, but order is not a recommendation or a ranking of quality. Scores are informational, rule-based summaries of public evidence as of each entry's last-reviewed date; they are not a guarantee, endorsement or certification. Entries are not removed, added or re-scored for payment.")]
+HOW_LINKS=[('agents.json, agents.csv and schema.json','<a href="/data/agents.json">agents.json</a>, <a href="/data/agents.csv">agents.csv</a> and <a href="/data/schema.json">schema.json</a>'),
+           ('the changelog','the <a href="/changelog.html">changelog</a>'),
+           ('the public repository','the <a href="https://github.com/TrustKeeperAce/agent-trust-clearinghouse">public repository</a>')]
+HOW_THRESHOLD=3; HOW_WEIGHTS={'completion_rate':30,'disputes':20,'adherence_to_limits':25,'evidence_quality':25}
+HOW_DATA_LINE='<p class="how-link">How the counting and scores work: see <a href="/methodology.html#how-it-works">How this directory works</a>.</p>'
+HOW_LLMS='- [How this directory works]('+BASE+'/methodology.html#how-it-works): counted independent evidence, separate factor scores, open data, no ranking or endorsement\n'
+def how_callout_html():
+    return ('<aside class="how-dir" aria-labelledby="how-dir-h"><h2 id="how-dir-h" class="h-small">'+_e(HOW_H)+'</h2><p>'
+            +' '.join(_e(s) for s in HOW_CALLOUT)+' <a href="/methodology.html#'+HOW_ANCHOR+'">'+_e(HOW_CALLOUT_LINK)+'</a>.</p></aside>')
+def how_section_html():
+    s='<section class="how-it-works" aria-labelledby="'+HOW_ANCHOR+'"><h2 id="'+HOW_ANCHOR+'">'+_e(HOW_H)+'</h2>'+''.join('<h3>'+_e(h)+'</h3><p>'+_e(x)+'</p>' for h,x in HOW_FULL)+'</section>'
+    for a,b in HOW_LINKS: assert a in s,a; s=s.replace(a,b,1)
+    return s
+def build_how():
+    fp=os.path.join(P,'index.html'); t=open(fp).read()
+    t=re.sub(r'<aside class="how-dir".*?</aside>','',t,flags=re.S); a='<aside class="how"'; assert a in t
+    open(fp,'w').write(t.replace(a,how_callout_html()+a,1))
+    fp=os.path.join(P,'methodology.html'); t=open(fp).read()
+    t=re.sub(r'<section class="how-it-works".*?</section>','',t,flags=re.S)
+    a='<p>Each factor is scored 0–100 and shown separately, together with a weighted overall score.</p>'; assert a in t
+    open(fp,'w').write(t.replace(a,how_section_html()+a,1))
+    fp=os.path.join(P,'agents-data.html'); t=open(fp).read(); t=re.sub(r'<p class="how-link">.*?</p>\n?','',t)
+    a='<h2 id="files">'; assert a in t; open(fp,'w').write(t.replace(a,HOW_DATA_LINE+'\n'+a,1))
+    fp=os.path.join(P,'llms.txt'); L=open(fp).read(); L=re.sub(r'^- \[How this directory works\].*\n','',L,flags=re.M)
+    k=L.index('- [Methodology]'); k=L.index('\n',k)+1; open(fp,'w').write(L[:k]+HOW_LLMS+L[k:])
+    print('how-it-works: callout, section, data link, llms line')
+
 # ---- 0072 D7a: home-page last-reviewed dates generated from the data ----
 IDX_ROW_RE=re.compile(r'(<a href="/agents/([a-z0-9-]+)\.html">[^<]*</a></th>(?:(?!</tr>).)*?<td data-label="Last reviewed">)<time datetime="[^"]*">[^<]*</time>',re.S)
 def build_index_dates():
@@ -424,4 +457,4 @@ def build_index_dates():
     t,n=IDX_ROW_RE.subn(lambda m:m.group(1)+f'<time datetime="{E[m.group(2)]["last_reviewed"]}">{E[m.group(2)]["last_reviewed"]}</time>',t)
     assert n==len(E),(n,len(E)); open(fp,'w').write(t); print('index dates',n)
 
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_index_dates()
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates()

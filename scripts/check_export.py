@@ -289,6 +289,31 @@ for f in ('agents-data.html','citing.html'):
     if 'not licensed for reuse' in h: E(f'{f}: old code-license sentence present')
 if B.LLMS_LICENSE not in open(os.path.join(P,'llms.txt')).read(): E('llms.txt: license line not current')
 print('0070: checked')
+# ---- 0072: How this directory works ----
+_cs=open(os.path.join(B.R,'scripts','check_scores.py')).read()
+_W=eval(re.search(r'^W=(\{.*\})$',_cs,re.M).group(1))
+if _W!=B.HOW_WEIGHTS: E('0072: callout weights differ from check_scores W')
+if 'if n<3:' not in _cs or B.HOW_THRESHOLD!=3: E('0072: threshold differs from check_scores')
+_mt=open(os.path.join(P,'methodology.html')).read()
+if 'An overall score is given only when there are at least 3 <a' not in _mt and 'at least 3 independent performance sources' not in re.sub('<[^>]+>','',_mt): E('0072: methodology threshold sentence missing')
+for lab,w in (('Completion rate',30),('Disputes',20),('Adherence to limits',25),('Evidence quality',25)):
+    if f'<td data-label="Factor">{lab}</td><td data-label="Weight">{w}%</td>' not in _mt: E(f'0072: methodology weight {lab} {w}% missing')
+_ct=' '.join(B.HOW_CALLOUT); _ft=' '.join(h+' '+x for h,x in B.HOW_FULL)
+if 'three independent performance sources' not in _ct or 'at least 3 independent performance sources' not in _ft: E('0072: threshold wording')
+for lab,w in (('completion rate',30),('disputes',20),('adherence to limits',25),('evidence quality',25)):
+    if f'{lab} ({w}%)' not in _ft: E(f'0072: section weight {lab}')
+if B.how_callout_html() not in idx: E('0072: home callout missing or not verbatim')
+if idx.find('<aside class="how-dir"')>idx.find('<aside class="how"'): E('0072: callout not above How scores work')
+if B.how_section_html() not in _mt: E('0072: methodology section missing or not verbatim')
+if _mt.count(f'id="{B.HOW_ANCHOR}"')!=1: E('0072: anchor #how-it-works not unique')
+if _mt.find('<section class="how-it-works"')>_mt.find('<h2',_mt.find('<h1')+1) : E('0072: section is not the first section')
+if B.HOW_DATA_LINE not in open(os.path.join(P,'agents-data.html')).read(): E('0072: data-page link missing')
+if B.HOW_LLMS not in open(os.path.join(P,'llms.txt')).read(): E('0072: llms.txt line missing')
+for l in re.findall(r'href="(/methodology\.html#[^"]+)"',idx):
+    if not re.search(r'id="'+re.escape(l.split('#')[1])+'"',_mt): E(f'0072: home link {l} does not resolve')
+for b in B.BANNED_CITE+[r'\bunlike\b',r'\bonly\b(?! (?:when|if)\b)',r'\bfirst\b',r'\bunique\b']:
+    if re.search(b,_ct+' '+_ft+' '+B.HOW_H+' '+B.HOW_CALLOUT_LINK,re.I): E(f'0072: banned {b} in new text')
+print('0072: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

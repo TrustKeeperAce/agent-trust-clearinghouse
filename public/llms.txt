@@ -13,6 +13,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 ## Pages
 - [Directory](https://agent-trust-clearinghouse.vercel.app/): all entries
 - [Methodology](https://agent-trust-clearinghouse.vercel.app/methodology.html): rules, rounding, evidence grades, corrections
+- [How this directory works](https://agent-trust-clearinghouse.vercel.app/methodology.html#how-it-works): counted independent evidence, separate factor scores, open data, no ranking or endorsement
 - [For agents / data](https://agent-trust-clearinghouse.vercel.app/agents-data.html): field definitions, license, citation, usage note
 - [How to cite](https://agent-trust-clearinghouse.vercel.app/citing.html): ready-to-copy citations, agent quote template, how to quote scores, license scope
 

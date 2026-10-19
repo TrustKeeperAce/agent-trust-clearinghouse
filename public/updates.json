@@ -21,6 +21,30 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0072",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0072)",
+   "content_text": "Added a short “How this directory works” note on the home page and a matching section on the methodology page (counted independent evidence, separate factor scores, open data, no ranking or endorsement), with links from the data page and llms.txt. Home-page last-reviewed dates are now generated from the data (four rows corrected). No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0072"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0072-differentiator-note.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0071",
    "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
    "title": "Site change (0071)",
