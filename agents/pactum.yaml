@@ -20,7 +20,7 @@ overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 1
-  other: 4
+  other: 7
   count_note: The one performance source is only partly independent.
 sources:
 - url: https://bth.diva-portal.org/smash/get/diva2:2063902/FULLTEXT01.pdf

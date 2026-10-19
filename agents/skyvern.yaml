@@ -16,7 +16,7 @@ evidence_grade: B-
 independent_source_count:
   performance: 3
   peer_reviewed: 1
-  other: 3
+  other: 4
 factor_notes:
   completion_rate: '84.4% of 500 WebVoyager tasks with GPT-4o, no defence (Bots Take the Bait, automatic string checking); 80.2-83.2% with added defences. AgentBreaker: 33.3% task success on its 60-task Online-Mind2Web sample without attack (GPT-4.1).'
   disputes: 'No legal or regulatory action found. CVE-2025-49619 (server-side template injection in workflow prompt fields, Skyvern through 0.1.85; CVSS 3.1 8.5 from MITRE; fixed by commit db856cd; public exploit on Exploit-DB) and CVE-2026-82447 (Jinja sandbox escape in TextPromptBlock before 1.0.45; CVSS 3.1 8.8 / 4.0 8.7 from VulnCheck; fixed in 1.0.45). NVD status Deferred for both. No GitHub security advisories published by the project.'

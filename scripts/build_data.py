@@ -29,6 +29,26 @@ def source_counts(e):
     return {'counted':sum(1 for s in e['sources'] if s['counted']),
             'other':e['independent_source_count']['other'],
             'listed_uncounted':sum(1 for s in e['sources'] if not s['counted'])}
+# 0079: which listed sources make up independent_source_count.other.
+# A kind is "<base>" or "<base> (<qualifier>)"; the base must be in this map, otherwise the check fails.
+OTHER_KIND_BASE={
+    'independent performance':'performance',   # counted, or counted: false (duplicate record or out of scope)
+    'independent other':'other', 'other':'other',
+    'anecdotal':'other',                        # reviews, practitioner posts, user-review aggregates
+    'vendor':'not other', 'vendor or maintainer':'not other', 'customer or partner':'not other',
+    'competitor':'not other', 'excluded':'not other', 'not counted':'not other', 'historical context':'not other',
+}
+def kind_base(k):
+    k=str(k).strip(); m=re.match(r'^(.*?) \((.*)\)$',k)
+    return m.group(1) if m else k
+def derived_other(e):
+    """0079: number of listed sources whose kind falls in the 'other' category; raises on an unknown kind."""
+    n=0
+    for s in e['sources']:
+        b=kind_base(s['kind'])
+        if b not in OTHER_KIND_BASE: raise ValueError(f"{e['id']}: unknown source kind {s['kind']!r}")
+        if OTHER_KIND_BASE[b]=='other' and not s['counted']: n+=1
+    return n
 def other_text(v): return 'not stated' if v is None else str(v)
 def entries():
     out=[]

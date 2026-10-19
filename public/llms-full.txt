@@ -384,7 +384,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Data enrichment; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other sources (as in agents.json): 0; all sources listed but not counted: 14
+- Counted independent performance sources: 0; other sources (as in agents.json): 6; all sources listed but not counted: 14
 - Last reviewed: 2026-10-16
 
 Scope: Claygent (AI web-research agent) and enrichment features
@@ -761,7 +761,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 40, adherence to limits 50, evidence quality 65
 - Overall score: 53; evidence grade: B-
-- Counted independent performance sources: 3; other sources (as in agents.json): 2; all sources listed but not counted: 15
+- Counted independent performance sources: 3; other sources (as in agents.json): 7; all sources listed but not counted: 15
 - Last reviewed: 2026-10-16
 
 Scope: GPT Researcher is an open-source research agent that writes cited reports.
@@ -805,7 +805,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 80, adherence to limits 50, evidence quality 55
 - Overall score: 59; evidence grade: B-
-- Counted independent performance sources: 4; other sources (as in agents.json): 5; all sources listed but not counted: 15
+- Counted independent performance sources: 4; other sources (as in agents.json): 7; all sources listed but not counted: 15
 - Last reviewed: 2026-10-19
 
 Scope: AI data-analysis agent
@@ -1176,7 +1176,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Negotiation; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 1; other sources (as in agents.json): 4; all sources listed but not counted: 9
+- Counted independent performance sources: 1; other sources (as in agents.json): 7; all sources listed but not counted: 9
 - Last reviewed: 2026-10-16
 
 Scope: Pactum is a commercial procurement-negotiation agent.
@@ -1294,7 +1294,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 40, adherence to limits 30, evidence quality 55
 - Overall score: 44; evidence grade: B-
-- Counted independent performance sources: 3; other sources (as in agents.json): 3; all sources listed but not counted: 7
+- Counted independent performance sources: 3; other sources (as in agents.json): 4; all sources listed but not counted: 7
 - Last reviewed: 2026-10-19
 
 Scope: The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.

@@ -20,7 +20,7 @@ evidence_grade: B-
 independent_source_count:
   performance: 4
   peer_reviewed: 2
-  other: 5
+  other: 7
   count_note: Three of the four performance sources are limited (code execution disabled; a single prompt; a PDF worksheet in a venue whose review could not be confirmed).
 sources:
 - url: https://www.mdpi.com/2076-3417/16/2/669

@@ -429,6 +429,16 @@ for k,e in y.items():
     if n78!=sc['listed_uncounted']: E(f'0078 {k}: llms-full list length {n78} != {sc["listed_uncounted"]}')
     if re.search(r'^Other sources:$',blk78,re.M): E(f'0078 {k}: old llms-full heading "Other sources:" present')
 print('0078: checked, source counts consistent across agents.json, agents.csv and llms-full.txt')
+# 0079: typed independent_source_count.other must equal the number derived from the source list by kind
+for k,e in y.items():
+    try: d=B.derived_other(e)
+    except ValueError as ex: E(f'0079 {ex}'); continue
+    if e['independent_source_count']['other']!=d: E(f"0079 {k}: typed other {e['independent_source_count']['other']} != derived {d}")
+    t=open(os.path.join(P,'agents',k+'.html')).read()
+    m=re.search(r'Independent sources: \d+ performance(?: \([^)]*\))?, (\d+) other',t)
+    if m and int(m.group(1))!=d: E(f'0079 {k}: entry page shows {m.group(1)} other, derived {d}')
+    if not m and e['overall_score'] is not None: E(f'0079 {k}: scored entry page has no "N other" status text')
+print('0079: checked, typed other equals derived other for all entries (and entry-page status text)')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

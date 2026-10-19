@@ -20,8 +20,8 @@ overall_score: 53
 evidence_grade: B-
 independent_source_count:
   performance: 3
-  other: 2
-  count_note: 'Other: 2 security databases (NVD, GitHub Advisory Database).'
+  other: 7
+  count_note: 'Other: 7 vulnerability records (6 NVD, 1 GitHub Advisory Database).'
 sources:
 - url: https://arxiv.org/abs/2505.19253
   kind: independent performance

@@ -20,7 +20,7 @@ overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 0
-  other: 0
+  other: 6
 sources:
 - url: https://www.clay.com/blog/introducing-gpt-5-in-claygent
   kind: vendor or maintainer
