@@ -407,6 +407,28 @@ for f in sorted(glob.glob(os.path.join(P,'**','*.html'),recursive=True)):
 for ti,rs in _tseen.items():
     if len(rs)>1: E(f'0075: duplicate title {ti!r} on {rs}')
 print(f'0075: checked, {sum(len(v) for v in _tseen.values())} titles, max {max(len(k) for k in _tseen)}')
+# 0078: one definition of source counts (B.source_counts) for agents.json, agents.csv and llms-full.txt
+_LF=open(os.path.join(P,'llms-full.txt')).read()
+if 'other listed sources' in _LF: E('0078: old llms-full label "other listed sources" present')
+_csv78={r['id']:r for r in rows}
+for k,e in y.items():
+    sc=B.source_counts(e)
+    if k not in x or k not in _csv78: E(f'0078 {k}: missing in json or csv'); continue
+    if sc['counted']!=x[k]['counted_performance_sources']: E(f'0078 {k}: json counted')
+    if sc['other']!=x[k]['independent_source_count']['other']: E(f'0078 {k}: json other')
+    if _csv78[k]['counted_performance_sources']!=str(sc['counted']): E(f'0078 {k}: csv counted')
+    if _csv78[k]['independent_other_sources']!=('' if sc['other'] is None else str(sc['other'])): E(f'0078 {k}: csv other')
+    m=re.search(r'^### '+re.escape(e['name'])+r'\n(.*?)(?=^### |^## Changes)',_LF,re.S|re.M)
+    if not m: E(f'0078 {k}: llms-full section missing'); continue
+    blk78=m.group(1)
+    want=(f"- Counted independent performance sources: {sc['counted']}; other sources (as in agents.json): "
+          f"{B.other_text(sc['other'])}; all sources listed but not counted: {sc['listed_uncounted']}\n")
+    if want not in blk78: E(f'0078 {k}: llms-full count line')
+    lst=re.search(r'^Sources listed but not counted:\n((?:- .*\n)+)',blk78,re.M)
+    n78=len(lst.group(1).splitlines()) if lst else 0
+    if n78!=sc['listed_uncounted']: E(f'0078 {k}: llms-full list length {n78} != {sc["listed_uncounted"]}')
+    if re.search(r'^Other sources:$',blk78,re.M): E(f'0078 {k}: old llms-full heading "Other sources:" present')
+print('0078: checked, source counts consistent across agents.json, agents.csv and llms-full.txt')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

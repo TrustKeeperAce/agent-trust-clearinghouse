@@ -22,6 +22,14 @@ CHANGELOG=os.path.join(R,'data','changelog.yaml')
 def changelog(): return yaml.safe_load(open(CHANGELOG))
 def changelog_date(): return max(str(r['date']) for r in changelog())
 def counted(s): return str(s.get('kind','')).startswith('independent performance') and s.get('counted') is not False
+def source_counts(e):
+    """0078: one definition of the source counts shown in every output. counted = sources with counted True
+    (counted() above); other = the declared independent_source_count.other copied into agents.json/csv
+    (None stays None); listed_uncounted = every listed source that is not counted."""
+    return {'counted':sum(1 for s in e['sources'] if s['counted']),
+            'other':e['independent_source_count']['other'],
+            'listed_uncounted':sum(1 for s in e['sources'] if not s['counted'])}
+def other_text(v): return 'not stated' if v is None else str(v)
 def entries():
     out=[]
     for f in sorted(glob.glob(os.path.join(R,'agents','*.yaml'))):
@@ -79,7 +87,7 @@ def build():
     for e in E:
         s=e['scores']; w.writerow([e['id'],e['name'],e['url'],e['category'],e['status']]+[('' if s[k] is None else s[k]) for k in FACTORS]+
             ['' if e['overall_score'] is None else e['overall_score'],e['evidence_grade'],e['independent_source_count']['performance'],
-             e['independent_source_count']['other'],e['counted_performance_sources'],e['last_reviewed'],LICENSE,DISCLAIMER])
+             ('' if source_counts(e)['other'] is None else source_counts(e)['other']),source_counts(e)['counted'],e['last_reviewed'],LICENSE,DISCLAIMER])
     open(os.path.join(P,'data','agents.csv'),'w').write(b.getvalue())
     # sitemap: entry pages use last_reviewed; site pages use latest changelog date
     urls=[(f"/agents/{e['id']}.html",e['last_reviewed']) for e in sorted(E,key=lambda e:e['id'])]
@@ -268,7 +276,7 @@ def render_compare(c,E,Y,gen,shell):
     b.append('<h2 id="evidence">What the evidence does and doesn’t show</h2><ul>'+''.join(f'<li>{_e(x)}</li>' for x in COMPARE_CAVEATS)+'</ul>')
     for i in sorted(ids,key=lambda i:J[i]['name'].lower()):
         e=J[i]; u=[x for x in (Y[i].get('uncertainties') or []) if isinstance(x,str)][:2]
-        b.append(f'<h3>{_e(e["name"])}</h3><p>{e["counted_performance_sources"]} counted independent performance source{"s" if e["counted_performance_sources"]!=1 else ""} '
+        n=source_counts(e)['counted']; b.append(f'<h3>{_e(e["name"])}</h3><p>{n} counted independent performance source{"s" if n!=1 else ""} '
                  f'({e["peer_reviewed_counted_sources"]} peer-reviewed). Noted uncertainties from the <a href="/agents/{i}.html">entry page</a>:</p>'
                  +('' if not u else '<ul class="quoted">'+''.join(f'<li>{_e(x)}</li>' for x in u)+'</ul>'))
     for rid,txt in c.get('related',[]):
@@ -490,11 +498,12 @@ def llms_full_text():
             L+=['- Factor scores (0–100): '+', '.join(f'{k.replace("_"," ")} {e["scores"][k]}' for k in LLMS_FULL_FACTORS),f'- Overall score: {e["overall_score"]}; evidence grade: {e["evidence_grade"]}']
         else: L+=['- Overall score: none (fewer than 3 counted independent performance sources); no evidence grade']
         if e.get('grade_note'): L+=[f'- Grade note: {e["grade_note"]}']
-        L+=[f'- Counted independent performance sources: {e["counted_performance_sources"]}; other listed sources: {len(o)}',f'- Last reviewed: {e["last_reviewed"]}','',
+        sc=source_counts(e); assert sc['counted']==len(c) and sc['listed_uncounted']==len(o)
+        L+=[f'- Counted independent performance sources: {sc["counted"]}; other sources (as in agents.json): {other_text(sc["other"])}; all sources listed but not counted: {sc["listed_uncounted"]}',f'- Last reviewed: {e["last_reviewed"]}','',
             f'Scope: {e["scope"]}','',f'Summary: {sp(y["summary"])}','']
         if y.get('uncertainties'): L+=['Uncertainties:']+[f'- {sp(u)}' for u in y['uncertainties']]+['']
         if c: L+=['Counted sources:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in c]+['']
-        if o: L+=['Other sources:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in o]+['']
+        if o: L+=['Sources listed but not counted:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in o]+['']
         L+=[f'Note: {FEED_DISCLAIMER} As of {e["last_reviewed"]}.','']
     L+=['## Changes','',f'Changelog: {BASE}/changelog.html. Update feeds: {BASE}/updates.json (JSON Feed), {BASE}/updates.xml (Atom).','',f'> {FEED_DISCLAIMER}','']
     return '\n'.join(L)

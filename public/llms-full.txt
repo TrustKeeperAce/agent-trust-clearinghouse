@@ -45,7 +45,7 @@ Entries are listed alphabetically by name; the order carries no meaning.
 - Status: Scored
 - Factor scores (0–100): completion rate 45, disputes 45, adherence to limits 35, evidence quality 70
 - Overall score: 49; evidence grade: B
-- Counted independent performance sources: 8; other listed sources: 9
+- Counted independent performance sources: 8; other sources (as in agents.json): 5; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: Open-source Agent S framework (gui-agents 0.2.x to 0.3.2: Agent S2, S2.5, S3) running with a language model and grounding model chosen by the user. Agent S1 (2024) is historical context only. Results depend heavily on the model used.
@@ -69,7 +69,7 @@ Counted sources:
 - https://arxiv.org/abs/2502.08047 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2603.00476 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://os-world.github.io/ (other (maintainer-verified leaderboard, not counted), accessed 2026-10-17)
 - https://github.com/simular-ai/Agent-S/issues/146 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2026-84885 (other, accessed 2026-10-17)
@@ -89,7 +89,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 70, adherence to limits 45, evidence quality 80
 - Overall score: 60; evidence grade: B
-- Counted independent performance sources: 13; other listed sources: 7
+- Counted independent performance sources: 13; other sources (as in agents.json): 6; all sources listed but not counted: 7
 - Last reviewed: 2026-10-17
 
 Scope: The open-source AIDE agent (aideml), which searches a tree of candidate Python solutions for a machine-learning task, from v0.1.x (April 2024) through v0.2.2 (5 November 2025) and the main branch (last commit 16 October 2026). Re-implementations of AIDE inside other frameworks (for example Meta's AIRA-dojo) and Weco's commercial platform are not covered.
@@ -118,7 +118,7 @@ Counted sources:
 - https://arxiv.org/abs/2606.04971 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2610.14115 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2507.02554 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2505.07782 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2601.05930 (other, accessed 2026-10-17)
@@ -137,7 +137,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Factor scores (0–100): completion rate 40, disputes 45, adherence to limits 45, evidence quality 80
 - Overall score: 52; evidence grade: A
 - Grade note: Grade A: 8 counted sources (6 peer-reviewed), and Sifting the Noise tested v0.86.1 within the last 12 months, which meets the A rule. The evidence-quality score (80) is below the suggested A range (85-100) because the A rests on that single recent versioned test, whose date is inferred from its access dates (December 2025 to January 2026).
-- Counted independent performance sources: 8; other listed sources: 5
+- Counted independent performance sources: 8; other sources (as in agents.json): 4; all sources listed but not counted: 5
 - Last reviewed: 2026-10-17
 
 Scope: The open-source Aider command-line tool (aider-chat), run with a language model chosen by the user, from v0.82.0 (April 2025) through v0.86.2 (12 February 2026) and the main branch (last commit 22 May 2026). The Aider leaderboards (Polyglot, code editing, refactoring) are run by the maintainer and are not counted.
@@ -162,7 +162,7 @@ Counted sources:
 - https://arxiv.org/abs/2601.22952 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2609.04518 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://nvd.nist.gov/vuln/detail/CVE-2026-85674 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2026-10175 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2610.04921 (other, accessed 2026-10-17)
@@ -177,7 +177,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Data science agent; type: Open-source multi-agent framework (Apache-2.0) for Kaggle-style data-science competitions from the Multimodal Art Projection (M-A-P) research community; GitHub multimodal-art-projection/AutoKaggle
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 3
+- Counted independent performance sources: 2; other sources (as in agents.json): 2; all sources listed but not counted: 3
 - Last reviewed: 2026-10-19
 
 Scope: The open-source AutoKaggle framework as released in October-December 2024 (no tagged releases; last commit 4 December 2024).
@@ -192,7 +192,7 @@ Counted sources:
 - https://doi.org/10.1002/sta4.70126 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2503.23314 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2410.20424 (vendor, accessed 2026-10-17)
 - https://arxiv.org/abs/2608.28590 (other (re-implementation), accessed 2026-10-19)
 - https://arxiv.org/abs/2507.13413 (other (copied figures), accessed 2026-10-19)
@@ -206,7 +206,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 40, disputes 50, adherence to limits 30, evidence quality 85
 - Overall score: 51; evidence grade: A
-- Counted independent performance sources: 11; other listed sources: 6
+- Counted independent performance sources: 11; other sources (as in agents.json): 3; all sources listed but not counted: 6
 - Last reviewed: 2026-10-17
 
 Scope: Browser Use is an open-source Python library (MIT licence) that lets a language model of the user's choice control a web browser to carry out tasks.
@@ -237,7 +237,7 @@ Counted sources:
 - https://arxiv.org/abs/2512.07725 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2609.35814 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://hal.cs.princeton.edu/online_mind2web (independent performance, accessed 2026-10-17)
 - https://github.com/advisories/GHSA-x39x-9qw5-ghrf (independent other, accessed 2026-10-17)
 - https://www.cve.org/CVERecord?id=CVE-2025-47241 (independent other, accessed 2026-10-17)
@@ -253,7 +253,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Browser/web agent; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 10
+- Counted independent performance sources: 2; other sources (as in agents.json): 3; all sources listed but not counted: 10
 - Last reviewed: 2026-10-18
 
 Scope: OpenAI's current agent for multi-step tasks and its cloud browser (launched July 2026). Successor to Operator (Jan–Jul 2025) and ChatGPT agent (Jul 2025–Aug 2026), both retired. Deep research reports are covered by the separate OpenAI Deep Research entry.
@@ -273,7 +273,7 @@ Counted sources:
 - https://www.aiagentslibrary.com/blog/chatgpt-work-review/ (independent performance, accessed 2026-10-18)
 - https://composio.dev/content/chatgpt-work-vs-claude-cowork (independent performance, accessed 2026-10-18)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2504.01382 (historical context (earlier product, not counted), accessed 2026-10-17)
 - https://arxiv.org/abs/2506.21506 (historical context (earlier product, not counted), accessed 2026-10-17)
 - https://arxiv.org/abs/2503.07919 (historical context (earlier product, not counted), accessed 2026-10-17)
@@ -294,7 +294,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 45, adherence to limits 40, evidence quality 85
 - Overall score: 55; evidence grade: A
-- Counted independent performance sources: 17; other listed sources: 9
+- Counted independent performance sources: 17; other sources (as in agents.json): 7; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: The Claude Code agent (CLI and headless mode), versions 1.0 to 2.1.x (latest 2.1.302, 16 Oct 2026). Claude models used in other scaffolds, the Claude Agent SDK, Claude Desktop/Cowork and Claude Research (a separate entry) are not covered. Several studies ran Claude Code with non-Anthropic models.
@@ -328,7 +328,7 @@ Counted sources:
 - https://arxiv.org/abs/2609.33382 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2609.35143 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2601.11868 (excluded (developer-affiliated author), accessed 2026-10-17)
 - https://github.com/anthropics/claude-code/security/advisories (other, accessed 2026-10-17)
 - https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/ (other, accessed 2026-10-17)
@@ -348,7 +348,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 75, adherence to limits 50, evidence quality 60
 - Overall score: 58; evidence grade: B-
-- Counted independent performance sources: 4; other listed sources: 5
+- Counted independent performance sources: 4; other sources (as in agents.json): 2; all sources listed but not counted: 5
 - Last reviewed: 2026-10-17
 
 Scope: The Research mode in Claude's web, desktop and mobile apps (launched April 2025). Plain Claude models used via the API are not covered.
@@ -369,7 +369,7 @@ Counted sources:
 - https://arxiv.org/abs/2601.09688 (independent performance, accessed 2026-10-17)
 - https://doi.org/10.1111/jdv.70035 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://www.oasis.security/blog/claude-ai-prompt-injection-data-exfiltration-vulnerability (other (Claude-wide security finding, not specific to Research), accessed 2026-10-17)
 - https://www.mbgsec.com/archive/2025-10-30-claude-pirate-abusing-anthropic-s-file-api-for-data-exfiltration-embrace-the-red/ (other (Claude-wide security finding, not specific to Research), accessed 2026-10-17)
 - https://claude.com/resources/articles/research (vendor or maintainer, accessed 2026-10-17)
@@ -384,7 +384,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Data enrichment; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other listed sources: 14
+- Counted independent performance sources: 0; other sources (as in agents.json): 0; all sources listed but not counted: 14
 - Last reviewed: 2026-10-16
 
 Scope: Claygent (AI web-research agent) and enrichment features
@@ -399,7 +399,7 @@ Uncertainties:
 - User-review aggregates are anecdotal; Trustpilot's sample is small and its page could not be fetched automatically.
 - Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).
 
-Other sources:
+Sources listed but not counted:
 - https://www.clay.com/blog/introducing-gpt-5-in-claygent (vendor or maintainer, accessed 2026-10-16)
 - https://university.clay.com/docs/data-test-methodology-personal-emails (vendor or maintainer, accessed 2026-10-16)
 - https://university.clay.com/docs/plans-and-billing (vendor or maintainer, accessed 2026-10-16)
@@ -424,7 +424,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 80, adherence to limits 50, evidence quality 75
 - Overall score: 62; evidence grade: B
-- Counted independent performance sources: 6; other listed sources: 5
+- Counted independent performance sources: 6; other sources (as in agents.json): 1; all sources listed but not counted: 5
 - Last reviewed: 2026-10-17
 
 Scope: Consensus academic search and answer engine (Quick, Pro and Deep modes). The Deep Search agent (July 2025) and Research Agent (2026) were not separately tested.
@@ -447,7 +447,7 @@ Counted sources:
 - https://doi.org/10.20517/2347-9264.2024.99 (independent performance, accessed 2026-10-17)
 - https://doi.org/10.1097/GOX.0000000000007176 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://doi.org/10.1177/01939459261451723 (independent other, accessed 2026-10-17)
 - https://github.com/elicit/elicit-paper-search-eval (excluded (competitor-run), accessed 2026-10-17)
 - https://consensus.app/home/blog/deep-search/ (vendor or maintainer, accessed 2026-10-17)
@@ -463,7 +463,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 45, disputes 35, adherence to limits 45, evidence quality 70
 - Overall score: 49; evidence grade: B
-- Counted independent performance sources: 9; other listed sources: 9
+- Counted independent performance sources: 9; other sources (as in agents.json): 6; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: The open-source Data Interpreter role in MetaGPT (metagpt/roles/di), run with a language model chosen by the user; MetaGPT releases through 0.8.2 (9 March 2025). MetaGPT's other roles and the commercial MGX / MetaGPT X service are not covered.
@@ -487,7 +487,7 @@ Counted sources:
 - https://arxiv.org/abs/2607.26724 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2606.08661 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://nvd.nist.gov/vuln/detail/CVE-2026-4516 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2026-19058 (other, accessed 2026-10-17)
 - https://www.zerodayinitiative.com/advisories/ZDI-26-026/ (other, accessed 2026-10-17)
@@ -508,7 +508,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Factor scores (0–100): completion rate 40, disputes 45, adherence to limits 40, evidence quality 75
 - Overall score: 50; evidence grade: B
 - Grade note: Grade B rather than A: 12 counted sources (5 peer-reviewed), but none states a version or is within the last 12 months, and eleven are field studies largely from one dataset (AIDev, December 2024 to July 2025), so they are not independent samples.
-- Counted independent performance sources: 12; other listed sources: 8
+- Counted independent performance sources: 12; other sources (as in agents.json): 7; all sources listed but not counted: 8
 - Last reviewed: 2026-10-17
 
 Scope: The Devin cloud agent from its March 2024 announcement through Devin 2.x (Devin 2.0 released April 2025). No counted study states which Devin version it used. Windsurf (acquired by Cognition in July 2025), DeepWiki and other Cognition products are not covered.
@@ -536,7 +536,7 @@ Counted sources:
 - https://arxiv.org/abs/2607.12428 (independent performance, accessed 2026-10-17)
 - https://deccan-ai.webflow.io/research/anthar-study-evaluating-ai-coding-agents-beyond-benchmarks (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://www.answer.ai/posts/2025-01-08-devin.html (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2024-56083 (other, accessed 2026-10-17)
 - https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/ (other, accessed 2026-10-17)
@@ -555,7 +555,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 80, adherence to limits 55, evidence quality 85
 - Overall score: 68; evidence grade: A
-- Counted independent performance sources: 10; other listed sources: 4
+- Counted independent performance sources: 10; other sources (as in agents.json): 2; all sources listed but not counted: 4
 - Last reviewed: 2026-10-17
 
 Scope: Elicit is a commercial AI research assistant that searches academic papers and supports systematic-review steps (screening and data extraction).
@@ -585,7 +585,7 @@ Counted sources:
 - https://doi.org/10.2196/68592 (independent performance, accessed 2026-10-17)
 - https://doi.org/10.1186/s13750-025-00362-9 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://journals.sagepub.com/doi/10.1177/08944393251404052 (independent other, accessed 2026-10-17)
 - https://doi.org/10.1177/01939459261451723 (independent other, accessed 2026-10-17)
 - https://elicit.com/blog/how-we-evaluated-elicit-systematic-review (vendor or maintainer, accessed 2026-10-17)
@@ -599,7 +599,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Browser/web agent; type: Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other listed sources: 9
+- Counted independent performance sources: 0; other sources (as in agents.json): 5; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: The Fellou desktop browser and its built-in agent ("Deep Action", "Deep Search"), Fellou 2.0 (3 June 2025) onward. Fellou says versions before 2.0 no longer work. The open-source Eko framework is not covered.
@@ -613,7 +613,7 @@ Uncertainties:
 - Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog) describe instability and failures on complex pages but are not systematic and are not counted.
 - Fix status of the Brave and LayerX findings is unknown.
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2608.08392 (excluded (vendor-affiliated author), accessed 2026-10-17)
 - https://brave.com/blog/unseeable-prompt-injections/ (other, accessed 2026-10-17)
 - https://www.theregister.com/software/2025/10/28/ai-browsers-wide-open-to-attack-via-prompt-injection/327406 (other, accessed 2026-10-17)
@@ -633,7 +633,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 60, disputes 65, adherence to limits 55, evidence quality 72
 - Overall score: 63; evidence grade: B
-- Counted independent performance sources: 8; other listed sources: 4
+- Counted independent performance sources: 8; other sources (as in agents.json): 2; all sources listed but not counted: 4
 - Last reviewed: 2026-10-17
 
 Scope: Gemini Deep Research is a Google feature, in the Gemini app and as a Gemini API agent, that plans multi-step web research and writes cited reports.
@@ -660,7 +660,7 @@ Counted sources:
 - https://arxiv.org/abs/2605.17554 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2607.20891 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://www.safebreach.com/blog/invitation-is-all-you-need-hacking-gemini/ (independent other, accessed 2026-10-17)
 - https://www.tenable.com/security/research/tra-2025-23 (independent other, accessed 2026-10-17)
 - https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/ (vendor or maintainer, accessed 2026-10-17)
@@ -676,7 +676,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Factor scores (0–100): completion rate 45, disputes 60, adherence to limits 50, evidence quality 75
 - Overall score: 57; evidence grade: B
 - Grade note: Grade B rather than A: 12 counted sources (5 peer-reviewed), but all are field studies largely drawn from one dataset (AIDev, December 2024 to July 2025), none states a version, and none is within the last 12 months.
-- Counted independent performance sources: 12; other listed sources: 9
+- Counted independent performance sources: 12; other sources (as in agents.json): 6; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: The cloud Copilot coding agent that opens pull requests (public preview May 2025; pull requests authored as copilot-swe-agent). Copilot code completions, Copilot Chat and agent mode in the IDE, Copilot CLI, Copilot code review, and the 2021 Codex-era Copilot studies are not covered.
@@ -704,7 +704,7 @@ Counted sources:
 - https://arxiv.org/abs/2609.17598 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2607.12428 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2606.18168 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2606.22721 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2512.21426 (other, accessed 2026-10-17)
@@ -724,7 +724,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 65, disputes 80, adherence to limits 60, evidence quality 60
 - Overall score: 66; evidence grade: B-
-- Counted independent performance sources: 4; other listed sources: 4
+- Counted independent performance sources: 4; other sources (as in agents.json): 2; all sources listed but not counted: 4
 - Last reviewed: 2026-10-16
 
 Scope: SAFE (Search-Augmented Factuality Evaluator) is open research code from Google DeepMind, described in a NeurIPS 2024 paper, that uses a language model and Google Search results to rate individual facts in long-form text.
@@ -746,7 +746,7 @@ Counted sources:
 - https://aclanthology.org/2024.findings-emnlp.552/ (independent performance, accessed 2026-10-16)
 - https://aclanthology.org/2025.emnlp-main.905/ (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://proceedings.neurips.cc/paper_files/paper/2024/file/937ae0e83eb08d2cb8627fe1def8c751-Paper-Conference.pdf (vendor or maintainer, accessed 2026-10-16)
 - https://github.com/google-deepmind/long-form-factuality (vendor or maintainer, accessed 2026-10-16)
 - https://venturebeat.com/ai/google-deepmind-unveils-superhuman-ai-system-that-excels-in-fact-checking-saving-costs-and-improving-accuracy (independent other, accessed 2026-10-16)
@@ -761,7 +761,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 40, adherence to limits 50, evidence quality 65
 - Overall score: 53; evidence grade: B-
-- Counted independent performance sources: 3; other listed sources: 15
+- Counted independent performance sources: 3; other sources (as in agents.json): 2; all sources listed but not counted: 15
 - Last reviewed: 2026-10-16
 
 Scope: GPT Researcher is an open-source research agent that writes cited reports.
@@ -779,7 +779,7 @@ Counted sources:
 - https://arxiv.org/abs/2507.05495 (independent performance, accessed 2026-10-16)
 - https://arxiv.org/abs/2507.16075 (independent performance, accessed 2026-10-16)
 
-Other sources:
+Sources listed but not counted:
 - https://www.cs.cmu.edu/~callan/Papers/ictir26-Jo%C3%A3o_Coelho.pdf (independent performance, accessed 2026-10-16)
 - https://dl.acm.org/doi/10.1145/3805713.3820409 (independent performance, accessed 2026-10-16)
 - https://dl.acm.org/doi/10.1145/3774905.3793116 (independent performance, accessed 2026-10-16)
@@ -805,7 +805,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 80, adherence to limits 50, evidence quality 55
 - Overall score: 59; evidence grade: B-
-- Counted independent performance sources: 4; other listed sources: 15
+- Counted independent performance sources: 4; other sources (as in agents.json): 5; all sources listed but not counted: 15
 - Last reviewed: 2026-10-19
 
 Scope: AI data-analysis agent
@@ -827,7 +827,7 @@ Counted sources:
 - https://doi.org/10.1007/s11135-026-02898-5 (independent performance, accessed 2026-10-19)
 - https://doi.org/10.51244/ijrsi.2026.1309000109 (independent performance, accessed 2026-10-19)
 
-Other sources:
+Sources listed but not counted:
 - https://link.springer.com/article/10.1007/s44217-024-00214-7 (independent other, accessed 2026-10-16)
 - https://openalex.org/W7164553025 (independent other, accessed 2026-10-16)
 - https://doi.org/10.1111/test.70019 (independent other, accessed 2026-10-19)
@@ -852,7 +852,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Research; type: commercial (Kimi membership credits)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 5
+- Counted independent performance sources: 2; other sources (as in agents.json): 2; all sources listed but not counted: 5
 - Last reviewed: 2026-10-19
 
 Scope: Moonshot AI's Deep Research mode in Kimi, powered by the Kimi-Researcher model (launched June 2025).
@@ -871,7 +871,7 @@ Counted sources:
 - https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2606.17458 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://oecd.ai/en/incidents/2026-04-21-8c79 (other (privacy incident, Kimi-wide), accessed 2026-10-17)
 - https://arxiv.org/abs/2602.13830 (other (re-scoring of DeepResearch Bench reports), accessed 2026-10-19)
 - https://arxiv.org/abs/2509.13309 (not counted (vendor numbers reused), accessed 2026-10-17)
@@ -886,7 +886,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Verification; type: Open-source fact-verification tool (MIT licence), Libr-AI; GitHub Libr-AI/OpenFactVerification; not on PyPI
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 5
+- Counted independent performance sources: 2; other sources (as in agents.json): 3; all sources listed but not counted: 5
 - Last reviewed: 2026-10-19
 
 Scope: The open-source Loki library/CLI/web app (v0.0.1 April 2024 to v0.0.3 May 2024, main branch to October 2024), run with a language model (OpenAI, Anthropic or local) and search API (Serper or Google) chosen by the user. The hosted demo (loki.librai.tech) is not covered.
@@ -903,7 +903,7 @@ Counted sources:
 - https://arxiv.org/abs/2603.05786 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2601.20032 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://davidamitchell.github.io/Research/research/2026-05-06-loki-fact-checking-journalists-moderation.html (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2608.30683 (other (used as a tool), accessed 2026-10-19)
 - https://arxiv.org/abs/2603.21286 (other (used as a tool), accessed 2026-10-19)
@@ -918,7 +918,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Research; type: commercial (free tier with credits; paid plans)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other listed sources: 13
+- Counted independent performance sources: 0; other sources (as in agents.json): 4; all sources listed but not counted: 13
 - Last reviewed: 2026-10-18
 
 Scope: Manus, a general-purpose AI agent from Butterfly Effect for research and multi-step digital tasks. The current product is Manus 2.0 (28 September 2026), which the vendor describes as a new architecture.
@@ -933,7 +933,7 @@ Uncertainties:
 - Manus 2.0 Cascade efficiency figures (23.2% fewer tokens, 28.2% less time, 32% lower cost; one vendor configuration) are not used.
 - Cue agents (own email, phone number, wallet; invite-only early access) have not been independently tested.
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2510.14240 (historical context (earlier version, not counted), accessed 2026-10-17)
 - https://arxiv.org/abs/2601.09688 (historical context (earlier version, not counted), accessed 2026-10-17)
 - https://arxiv.org/abs/2608.08392 (historical context (earlier version, not counted), accessed 2026-10-17)
@@ -956,7 +956,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Simple analysis; type: open-source (Apache-2.0)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other listed sources: 15
+- Counted independent performance sources: 0; other sources (as in agents.json): 8; all sources listed but not counted: 15
 - Last reviewed: 2026-10-18
 
 Scope: Local code-executing agent for data analysis and automation
@@ -971,7 +971,7 @@ Uncertainties:
 - No reputable journalism with original testing was found.
 - Terminal-Bench figures published by the maintainer for the current product are vendor-run and not used.
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2602.19547 (independent performance, accessed 2026-10-16)
 - https://mr-sarthakgupta.github.io/redcode-evaluation-framework.html (independent performance, accessed 2026-10-16)
 - https://github.com/alexbecker/open-interpreter-prompt-injection (independent performance, accessed 2026-10-16)
@@ -997,7 +997,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 60, disputes 55, adherence to limits 45, evidence quality 85
 - Overall score: 62; evidence grade: A
-- Counted independent performance sources: 26; other listed sources: 11
+- Counted independent performance sources: 26; other sources (as in agents.json): 9; all sources listed but not counted: 11
 - Last reviewed: 2026-10-17
 
 Scope: The Codex agent products launched from April 2025: Codex CLI (including headless exec), the IDE extension and desktop app, and the cloud Codex agent that opens pull requests, through Codex CLI rust-v0.163.0 (15 October 2026). The 2021 Codex model behind early GitHub Copilot, and GPT-Codex models run inside other harnesses, are not covered.
@@ -1038,7 +1038,7 @@ Counted sources:
 - https://arxiv.org/abs/2605.17046 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2610.07639 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://nvd.nist.gov/vuln/detail/CVE-2025-59532 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2025-55345 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2025-61260 (other, accessed 2026-10-17)
@@ -1060,7 +1060,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 60, disputes 65, adherence to limits 60, evidence quality 75
 - Overall score: 65; evidence grade: B
-- Counted independent performance sources: 5; other listed sources: 8
+- Counted independent performance sources: 5; other sources (as in agents.json): 2; all sources listed but not counted: 8
 - Last reviewed: 2026-10-17
 
 Scope: OpenAI Deep Research is a commercial ChatGPT feature that writes cited research reports.
@@ -1082,7 +1082,7 @@ Counted sources:
 - https://arxiv.org/abs/2604.03173 (independent performance, accessed 2026-10-16)
 - https://arxiv.org/abs/2507.16075 (independent performance, accessed 2026-10-16)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2506.11763 (independent performance, accessed 2026-10-16)
 - https://openreview.net/forum?id=AUaW6DS9si (independent performance, accessed 2026-10-16)
 - https://theconversation.com/openais-new-deep-research-agent-is-still-just-a-fallible-tool-not-a-human-level-expert-249496 (independent other, accessed 2026-10-16)
@@ -1100,7 +1100,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Verification; type: Open-source factuality framework (PyPI openfactcheck; repository licence AGPL-3.0, PyPI metadata says GPL-3.0), MBZUAI researchers; GitHub openfactcheck-research/openfactcheck
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 0; other listed sources: 5
+- Counted independent performance sources: 0; other sources (as in agents.json): 2; all sources listed but not counted: 5
 - Last reviewed: 2026-10-17
 
 Scope: The open-source OpenFactCheck library (PyPI 0.0.17 July 2024 up to 1.1.2; the 2.0 alpha series, 2.0.0a1 to 2.0.0a10 in 2026, is not assessed): CustChecker/ResponseEval (configurable fact-checker built from FacTool, Factcheck-GPT and other modules), LLMEval and CheckerEval. Run with user-chosen models and retrievers. The hosted web app is not covered.
@@ -1112,7 +1112,7 @@ Uncertainties:
 - OpenFactCheck is a framework that combines other checkers; "performance" depends on the configuration chosen.
 - The 2.0 alpha series may be a substantial rewrite; continuity is unassessed beyond release history.
 
-Other sources:
+Sources listed but not counted:
 - https://doi.org/10.1609/aaai.v40i48.42355 (other, accessed 2026-10-17)
 - https://davidamitchell.github.io/Research/research/2026-05-06-openfactcheck-ai-fact-checking-pipeline.html (other, accessed 2026-10-17)
 - https://aclanthology.org/2025.coling-main.755/ (vendor or maintainer, accessed 2026-10-17)
@@ -1128,7 +1128,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 55, evidence quality 85
 - Overall score: 61; evidence grade: A
-- Counted independent performance sources: 12; other listed sources: 9
+- Counted independent performance sources: 12; other sources (as in agents.json): 6; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: The open-source OpenHands agent (CodeAct agent, later the OpenHands Agent SDK) run with a language model chosen by the user, from the OpenDevin releases of 2024 through OpenHands 1.27.1 (12 October 2026). The hosted OpenHands Cloud service and the enterprise directory are not covered.
@@ -1157,7 +1157,7 @@ Counted sources:
 - https://arxiv.org/abs/2512.03262 (independent performance, accessed 2026-10-17)
 - https://doi.org/10.1145/3832100 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://nvd.nist.gov/vuln/detail/CVE-2026-33718 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2026-19022 (other, accessed 2026-10-17)
 - https://embracethered.com/blog/posts/2025/openhands-the-lethal-trifecta-strikes-again/ (other, accessed 2026-10-17)
@@ -1176,7 +1176,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Negotiation; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 1; other listed sources: 9
+- Counted independent performance sources: 1; other sources (as in agents.json): 4; all sources listed but not counted: 9
 - Last reviewed: 2026-10-16
 
 Scope: Pactum is a commercial procurement-negotiation agent.
@@ -1193,7 +1193,7 @@ Uncertainties:
 Counted sources:
 - https://bth.diva-portal.org/smash/get/diva2:2063902/FULLTEXT01.pdf (independent performance, accessed 2026-10-16)
 
-Other sources:
+Sources listed but not counted:
 - https://hbr.org/2022/11/how-walmart-automated-supplier-negotiations (customer or partner, accessed 2026-10-16)
 - https://hbsp.harvard.edu/product/TB0756-PDF-ENG (independent other, accessed 2026-10-16)
 - https://www.bloomberg.com/news/articles/2023-04-26/walmart-uses-pactum-ai-tools-to-handle-vendor-negotiations (independent other, accessed 2026-10-16)
@@ -1213,7 +1213,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 35, adherence to limits 45, evidence quality 75
 - Overall score: 54; evidence grade: B
-- Counted independent performance sources: 6; other listed sources: 5
+- Counted independent performance sources: 6; other sources (as in agents.json): 3; all sources listed but not counted: 5
 - Last reviewed: 2026-10-17
 
 Scope: Citation-backed answering and source attribution only; not a general product review.
@@ -1237,7 +1237,7 @@ Counted sources:
 - https://arxiv.org/html/2507.05495v2 (independent performance, accessed 2026-10-16)
 - https://openreview.net/forum?id=AUaW6DS9si (independent performance, accessed 2026-10-16)
 
-Other sources:
+Sources listed but not counted:
 - https://storage.courtlistener.com/recap/gov.uscourts.nysd.630270/gov.uscourts.nysd.630270.65.0.pdf (independent other, accessed 2026-10-16)
 - https://www.pacermonitor.com/public/case/60086917/Encyclopaedia_Britannica,_Inc_et_al_v_Perplexity_AI,_Inc (independent other, accessed 2026-10-16)
 - https://storage.courtlistener.com/recap/gov.uscourts.nysd.654190/gov.uscourts.nysd.654190.3.0.pdf (independent other, accessed 2026-10-16)
@@ -1253,7 +1253,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 40, disputes 40, adherence to limits 30, evidence quality 55
 - Overall score: 41; evidence grade: B-
-- Counted independent performance sources: 4; other listed sources: 10
+- Counted independent performance sources: 4; other sources (as in agents.json): 6; all sources listed but not counted: 10
 - Last reviewed: 2026-10-17
 
 Scope: The Comet browser and its Comet Assistant agent (desktop; launched 9 July 2025, free to all users from 2 October 2025), with whichever model Comet selects or the user picks. The Perplexity answer engine and its Deep Research mode are covered by the separate Perplexity entry.
@@ -1273,7 +1273,7 @@ Counted sources:
 - https://arxiv.org/abs/2512.07725 (independent performance, accessed 2026-10-17)
 - https://www.hcaptcha.com/blog/report-browser-agent-safety-is-an-afterthought-for-vendors (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://brave.com/blog/comet-prompt-injection/ (other, accessed 2026-10-17)
 - https://www.bleepingcomputer.com/news/security/commetjacking-attack-tricks-comet-browser-into-stealing-emails/ (other, accessed 2026-10-17)
 - https://guard.io/labs/scamlexity-we-put-agentic-ai-browsers-to-the-test-they-clicked-they-paid-they-failed (other, accessed 2026-10-17)
@@ -1294,7 +1294,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 40, adherence to limits 30, evidence quality 55
 - Overall score: 44; evidence grade: B-
-- Counted independent performance sources: 3; other listed sources: 7
+- Counted independent performance sources: 3; other sources (as in agents.json): 3; all sources listed but not counted: 7
 - Last reviewed: 2026-10-19
 
 Scope: The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.
@@ -1314,7 +1314,7 @@ Counted sources:
 - https://arxiv.org/abs/2601.08406 (independent performance, accessed 2026-10-17)
 - https://doi.org/10.1145/3832165 (independent performance, accessed 2026-10-19)
 
-Other sources:
+Sources listed but not counted:
 - https://arxiv.org/abs/2606.20910 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2025-49619 (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2026-82447 (other, accessed 2026-10-17)
@@ -1333,7 +1333,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 45, evidence quality 75
 - Overall score: 56; evidence grade: B
 - Grade note: Grade B rather than A: 7 counted sources (5 peer-reviewed), but none from the last 12 months states that it tested the current library version; only WriteHERE states a version (v1.1.0, 2025).
-- Counted independent performance sources: 7; other listed sources: 5
+- Counted independent performance sources: 7; other sources (as in agents.json): 2; all sources listed but not counted: 5
 - Last reviewed: 2026-10-17
 
 Scope: The open-source knowledge-storm library (v1.0.0 to 1.1.1, Sept 2024 to Sept 2025), covering the STORM (automatic) and Co-STORM (human-in-the-loop) modes, run with a language model and search engine chosen by the user. The 2024 NAACL code branch is historical context. The hosted research preview is not covered.
@@ -1357,7 +1357,7 @@ Counted sources:
 - https://arxiv.org/abs/2606.20122 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2508.20033 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://github.com/stanford-oval/storm/issues/375 (other, accessed 2026-10-17)
 - https://github.com/stanford-oval/storm/blob/fb951af/knowledge_storm/utils.py (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2402.14207 (vendor or maintainer, accessed 2026-10-17)
@@ -1374,7 +1374,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Factor scores (0–100): completion rate 45, disputes 55, adherence to limits 55, evidence quality 80
 - Overall score: 58; evidence grade: A
 - Grade note: Grade A: 10 counted sources (8 peer-reviewed), and Sifting the Noise (ISSTA 2026) states the version tested (main-branch commit 1d3cfb, 5 December 2025) within the last 12 months, which meets the A rule. The evidence-quality score (80) is below the suggested A range (85-100) because the A rests on that single recent versioned study, whose authors also wrote another counted source (Vul4Py).
-- Counted independent performance sources: 10; other listed sources: 9
+- Counted independent performance sources: 10; other sources (as in agents.json): 6; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
 Scope: The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team, and the team's EnIGMA security variant are not covered.
@@ -1402,7 +1402,7 @@ Counted sources:
 - https://arxiv.org/abs/2512.03262 (independent performance, accessed 2026-10-17)
 - https://doi.org/10.1145/3832100 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://nvd.nist.gov/vuln/detail/CVE-2026-75482 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2410.06992 (other, accessed 2026-10-17)
 - https://aclanthology.org/2025.acl-long.189/ (other, accessed 2026-10-17)
@@ -1421,7 +1421,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Computer-use agent; type: Open-source (Apache-2.0) desktop app (Electron) and Agent TARS CLI/Web UI from ByteDance; free; runs with UI-TARS or Seed models chosen by the user
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 1; other listed sources: 10
+- Counted independent performance sources: 1; other sources (as in agents.json): 4; all sources listed but not counted: 10
 - Last reviewed: 2026-10-19
 
 Scope: The UI-TARS Desktop app and Agent TARS from the same repository, v0.2.x to v0.3.1 (8 Oct 2026). The UI-TARS models on their own are not covered; model-only results are context.
@@ -1436,7 +1436,7 @@ Uncertainties:
 Counted sources:
 - https://arxiv.org/abs/2603.00476 (independent performance, accessed 2026-10-17)
 
-Other sources:
+Sources listed but not counted:
 - https://aiagentindex.mit.edu/2025/ui-tars-desktop/ (other, accessed 2026-10-17)
 - https://nvd.nist.gov/vuln/detail/CVE-2026-81735 (other, accessed 2026-10-17)
 - https://arxiv.org/abs/2607.07433 (other, accessed 2026-10-17)
