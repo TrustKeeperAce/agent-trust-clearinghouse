@@ -314,6 +314,30 @@ for l in re.findall(r'href="(/methodology\.html#[^"]+)"',idx):
 for b in B.BANNED_CITE+[r'\bunlike\b',r'\bonly\b(?! (?:when|if)\b)',r'\bfirst\b',r'\bunique\b']:
     if re.search(b,_ct+' '+_ft+' '+B.HOW_H+' '+B.HOW_CALLOUT_LINK,re.I): E(f'0072: banned {b} in new text')
 print('0072: checked')
+# 0073: README checks
+README_LICENSE='## License\n- **Code** (`scripts/`, `public/style.css`, `vercel.json`): [Apache License 2.0](LICENSE). SPDX: `Apache-2.0`.\n- **Data and text** (`agents/`, `data/`, `public/data/`, feeds, generated pages, `decisions/`, `docs/`): [CC BY 4.0](LICENSE-DATA.md). SPDX: `CC-BY-4.0`.\n- **Not licensed:** the project name, logo and favicon; third-party sources and agent trademarks.\n- How to cite: [CITATION.cff](CITATION.cff) and https://agent-trust-clearinghouse.vercel.app/citing.html\n\nInformational only. Provided as is, without warranties; not a guarantee, endorsement, or certification.\n\n'
+_rd=open(os.path.join(B.R,'README.md')).read()
+for s_ in ['Phase 1','No agent entries','(none yet)','Scoring rules (v0)','published yet']:
+    if s_ in _rd: E(f'0073: README stale phrase {s_!r}')
+if README_LICENSE not in _rd: E('0073: README License section not byte-identical to 0070 text')
+for l in re.findall(r'\]\(([^)\s]+)\)',_rd):
+    if l.startswith('https://agent-trust-clearinghouse.vercel.app/'):
+        pth,_,frag=l[len('https://agent-trust-clearinghouse.vercel.app/'):].partition('#')
+        f_=os.path.join(P,pth or 'index.html')
+        if not os.path.isfile(f_): E(f'0073: README live link {l} has no public/ file')
+        elif frag and f'id="{frag}"' not in open(f_).read(): E(f'0073: README anchor {l} missing')
+    elif not l.startswith('http'):
+        if not os.path.exists(os.path.join(B.R,l)): E(f'0073: README repo link {l} missing')
+if ' '.join(B.HOW_CALLOUT) not in _rd: E('0073: README callout not verbatim')
+if B.FEED_DISCLAIMER not in _rd: E('0073: README disclaimer not verbatim')
+_body=_rd.replace(README_LICENSE,'')
+_body=re.sub(r'`[^`]*`|\([^)]*\)|https?://\S+','',_body.replace(' '.join(B.HOW_CALLOUT),'').replace('Python 3',''))
+for n_ in re.findall(r'\d+',_body):
+    if n_ not in ('0','100'): E(f'0073: README stale-count guard: number {n_}')
+_rdb=_rd.replace(B.FEED_DISCLAIMER,'').replace(' '.join(B.HOW_CALLOUT),'')
+for b in B.BANNED_CITE+[r'\bunlike\b',r'\bunique\b',r'\branking\b',r'\bverif']:
+    if re.search(b,_rdb,re.I): E(f'0073: README banned {b}')
+print('0073: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

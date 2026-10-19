@@ -15,7 +15,8 @@ Run `python3 scripts/check_scores.py`. It recomputes each overall score (30/20/2
 - WARN lines mark judgment calls, such as whether the A-grade current-version test can be shown from the data. They must be explained in the entry's decision packet.
 
 To run it automatically as a local git hook (not version-controlled), run:
-`printf '#!/bin/sh\npython3 scripts/check_scores.py || exit 1\n' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit`
+`printf '#!/bin/sh\npython3 scripts/check_scores.py || exit 1\npython3 scripts/check_export.py || exit 1\n' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit`
+(The hook runs both checks; a mismatch in either blocks the commit.)
 
 ## Monthly link check
 Run `python3 scripts/check_links.py`. It reports three groups:
