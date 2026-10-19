@@ -18,6 +18,7 @@ factor_notes:
 overall_score: 56
 overall_note: 0.30*50 + 0.20*55 + 0.25*45 + 0.25*75 = 56.00, so 56
 evidence_grade: B
+grade_note: 'Grade B rather than A: 7 counted sources (5 peer-reviewed), but none from the last 12 months states that it tested the current library version; only WriteHERE states a version (v1.1.0, 2025).'
 independent_source_count:
   performance: 7
   other: 2

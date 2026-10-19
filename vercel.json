@@ -1,1 +1,7 @@
-{ "outputDirectory": "public", "cleanUrls": false }
+{
+  "outputDirectory": "public",
+  "cleanUrls": false,
+  "headers": [
+    { "source": "/updates.xml", "headers": [ { "key": "Content-Type", "value": "application/atom+xml; charset=utf-8" } ] }
+  ]
+}

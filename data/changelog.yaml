@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-18-0069
+  date: '2026-10-18'
+  decision_packets:
+  - 0069
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0069-small-consistency-fixes.md
+  change_html: 'Small consistency fixes: the same footer on every page (methodology now links <a href="/agents-data.html">For agents / data</a>); a one-sentence scope for seven entries, taken from each entry page; a published grade note under the evidence grade for Aider, SWE-agent, Devin, GitHub Copilot coding agent and STORM; the Atom content type for <a href="/updates.xml">updates.xml</a>; shorter titles for two comparison pages; a shorter description for the citing page. No score or grade changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-18-0067
   date: '2026-10-18'
   decision_packets:

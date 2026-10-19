@@ -3,6 +3,7 @@ slug: google-deepmind-safe
 category: Verification
 type: research code (Apache-2.0 code; CC-BY other materials; bundled FActScore code MIT)
 homepage: https://github.com/google-deepmind/long-form-factuality
+scope: SAFE (Search-Augmented Factuality Evaluator) is open research code from Google DeepMind, described in a NeurIPS 2024 paper, that uses a language model and Google Search results to rate individual facts in long-form text.
 summary: SAFE (Search-Augmented Factuality Evaluator) is open research code from Google DeepMind, described in a NeurIPS 2024 paper, that uses a language model and Google Search results to rate individual facts in long-form text. The authors report 72% agreement with crowdsourced annotators. Four independent peer-reviewed studies report agreement with human annotators of about 84% on biography facts and strong correlation on factual labels, alongside weaker results for its claim extraction (including many incomplete extracted facts); these studies were conducted by researchers proposing alternative methods. Commentators have questioned the authors' comparison with crowdworkers rather than expert fact-checkers. Overall score 66. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 65

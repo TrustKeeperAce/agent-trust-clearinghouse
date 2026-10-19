@@ -21,6 +21,30 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0069",
+   "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
+   "title": "Site change (0069)",
+   "content_text": "Small consistency fixes: the same footer on every page (methodology now links For agents / data); a one-sentence scope for seven entries, taken from each entry page; a published grade note under the evidence grade for Aider, SWE-agent, Devin, GitHub Copilot coding agent and STORM; the Atom content type for updates.xml; shorter titles for two comparison pages; a shorter description for the citing page. No score or grade changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-18T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0069"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0069-small-consistency-fixes.md",
+    "as_of": "2026-10-18",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-18-0067",
    "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
    "title": "Site change (0067)",

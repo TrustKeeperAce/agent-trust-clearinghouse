@@ -16,7 +16,7 @@ from decimal import Decimal,ROUND_HALF_UP
 W={'completion_rate':30,'disputes':20,'adherence_to_limits':25,'evidence_quality':25}
 EQ={'A':(85,100),'B':(70,84),'B-':(55,69)}
 root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-err=warn=0
+err=warn=doc=0
 def dates(s):
     return [tuple(map(int,m)) for m in re.findall(r'(20\d\d)-(\d\d)',str(s))] or [(int(y),0) for y in re.findall(r'(20\d\d)',str(s))]
 for f in sorted(glob.glob(os.path.join(root,'agents','*.yaml'))):
@@ -53,10 +53,13 @@ for f in sorted(glob.glob(os.path.join(root,'agents','*.yaml'))):
         lo,hi=EQ.get(g,(0,100))
         if not lo<=s['evidence_quality']<=hi: out.append(f'WARN evidence_quality {s["evidence_quality"]} outside guide {lo}-{hi} for {g}')
         out.insert(0,f'overall {d["overall_score"]} (computed {calc}), grade {g}, counted {n}, peer-reviewed {pr}')
+    if d.get('grade_note'): out=[('DOCUMENTED'+o[4:]) if o.startswith('WARN') else o for o in out]
+    if not d.get('scope'): out.append('WARN empty scope')
     else_ok = not any(o.startswith(('ERROR','WARN')) for o in out)
     for o in out:
         if o.startswith('ERROR'): err+=1
         if o.startswith('WARN'): warn+=1
+        if o.startswith('DOCUMENTED'): doc+=1
     print(f'{"OK  " if else_ok else "FLAG"} {slug}: '+' | '.join(out) if out else f'OK   {slug}: Insufficient evidence, counted {n}')
-print(f'\n{err} error(s), {warn} warning(s)')
+print(f'\n{err} error(s), {warn} warning(s), {doc} documented (grade_note)')
 sys.exit(1 if err or ('--strict' in sys.argv and warn) else 0)

@@ -3,6 +3,7 @@ slug: gpt-researcher
 category: Research
 type: open-source
 homepage: https://github.com/assafelovic/gpt-researcher
+scope: GPT Researcher is an open-source research agent that writes cited reports.
 summary: GPT Researcher is an open-source research agent that writes cited reports. In independent evaluations (DeepResearchGym, ICTIR 2026; Deep Research Comparator, WWW 2026 Companion; TTD-DR preprint), results ranged from comparatively strong on citation quality to lower than a commercial deep-research system in head-to-head comparisons. Results vary with the AI model and search provider used. Informational only; not a guarantee, endorsement, or certification.
 security: Public vulnerability databases (NVD and GitHub Advisory Database) list 7 security advisories (2 Critical, 3 High, 2 Medium). The maintainer has fixed one; several others concern the self-hosted server, which the project's security policy says ships without built-in authentication and is intended for trusted environments only. Status may change; see linked sources.
 scores:

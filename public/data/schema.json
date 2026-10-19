@@ -186,6 +186,12 @@
        "Insufficient evidence"
       ]
      },
+     "grade_note": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
      "independent_source_count": {
       "type": "object",
       "properties": {

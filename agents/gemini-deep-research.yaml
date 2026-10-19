@@ -3,6 +3,7 @@ slug: gemini-deep-research
 category: Research
 type: commercial
 homepage: https://gemini.google/overview/deep-research/
+scope: Gemini Deep Research is a Google feature, in the Gemini app and as a Gemini API agent, that plans multi-step web research and writes cited reports.
 summary: Gemini Deep Research is a Google feature, in the Gemini app and as a Gemini API agent, that plans multi-step web research and writes cited reports. In independent evaluations (DeepResearch Bench, ICLR 2026; Mind2Web 2, NeurIPS 2025; six preprints), it ranked at or near the top on report quality and coverage, but completed fewer hard search tasks than the leader, and a larger share of its citation links did not resolve or did not exist. Most tests used 2025 versions (Gemini 2.5 Pro and 3 Pro); one tested the Gemini 3.1 Pro API agent. Several benchmarks used a Gemini model as the AI judge. Overall score 63. Informational only; not a guarantee, endorsement, or certification.
 scores:
   completion_rate: 60

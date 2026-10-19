@@ -12,6 +12,7 @@ scores:
   evidence_quality: 75
 overall_score: 50
 evidence_grade: B
+grade_note: 'Grade B rather than A: 12 counted sources (5 peer-reviewed), but none states a version or is within the last 12 months, and eleven are field studies largely from one dataset (AIDev, December 2024 to July 2025), so they are not independent samples.'
 independent_source_count:
   performance: 12
   peer_reviewed: 5

@@ -32,7 +32,7 @@ def entries():
             'category':d.get('category'),'type':d.get('type'),'scope':d.get('scope'),
             'status':'Insufficient evidence' if d.get('overall_score') is None else 'Scored',
             'scores':{k:sc.get(k) for k in FACTORS},'overall_score':d.get('overall_score'),
-            'evidence_grade':d.get('evidence_grade'),
+            'evidence_grade':d.get('evidence_grade'),'grade_note':d.get('grade_note'),
             'independent_source_count':{'performance':isc.get('performance'),'other':isc.get('other')},
             'counted_performance_sources':sum(1 for s in srcs if counted(s)),
             'peer_reviewed_counted_sources':sum(1 for s in srcs if counted(s) and s.get('peer_reviewed') is True),
@@ -58,7 +58,7 @@ SCHEMA={"$schema":"https://json-schema.org/draft/2020-12/schema","$id":BASE+"/da
     "status":{"enum":["Scored","Insufficient evidence","withdrawn"]},
     "scores":{"type":"object","required":FACTORS,"properties":{k:{"type":["integer","null"],"minimum":0,"maximum":100} for k in FACTORS}},
     "overall_score":{"type":["integer","null"],"minimum":0,"maximum":100},
-    "evidence_grade":{"enum":["A","B","B-","Insufficient evidence"]},
+    "evidence_grade":{"enum":["A","B","B-","Insufficient evidence"]},"grade_note":{"type":["string","null"]},
     "independent_source_count":{"type":"object","properties":{"performance":{"type":["integer","null"]},"other":{"type":["integer","null"]}}},
     "counted_performance_sources":{"type":"integer","minimum":0},"peer_reviewed_counted_sources":{"type":"integer","minimum":0},
     "last_reviewed":{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},"decision_packets":{"type":"array","items":{"type":"string"}},
@@ -185,7 +185,7 @@ def build_feeds():
 import html as _H
 def _e(s): return _H.escape(str(s),quote=True)
 COMPARE=[
- {'path':'compare/claude-code-and-openai-codex.html','h1':'Claude Code and OpenAI Codex compared: public evidence',
+ {'path':'compare/claude-code-and-openai-codex.html','h1':'Claude Code and OpenAI Codex compared: public evidence','title':'Claude Code and Codex compared: public evidence',
   'short':'Claude Code and OpenAI Codex compared',
   'desc':'Factor scores, evidence grades and counted independent sources for Claude Code and OpenAI Codex. Informational; not a ranking.',
   'groups':[('Entries',['claude-code','openai-codex'])],
@@ -196,7 +196,7 @@ COMPARE=[
   'groups':[('Coding agent entries',('category','Coding agent'))],
   'caveats':['Open-source frameworks (OpenHands, SWE-agent, Aider) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin) are tested as shipped.',
              'Some entries are cloud agents that open pull requests and others are command-line tools; read each scope before comparing.']},
- {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','short':'Research agents compared',
+ {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','title':'Research agents compared: public evidence','short':'Research agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the research and deep-research agents in the directory. Informational; not a ranking.',
   'groups':[('Academic search and review tools',['consensus','elicit']),
             ('General research and deep-research agents',('category','Research',['consensus','elicit']))],
@@ -237,7 +237,7 @@ TH=('<thead><tr><th scope="col">Agent</th><th scope="col">Overall score</th><th 
 def render_compare(c,E,Y,gen,shell):
     J={e['id']:e for e in E}; ids=compare_ids(c,E); url=f'{BASE}/{c["path"]}'
     lr=sorted(J[i]['last_reviewed'] for i in ids)
-    title=f'{c["h1"]} — Agent Reputation &amp; Trust Clearinghouse'
+    title=f'{_e(c.get("title",c["h1"]))} — Agent Reputation &amp; Trust Clearinghouse'
     ld1={'@context':'https://schema.org','@type':'ItemList','name':c['h1'],'itemListOrder':'https://schema.org/ItemListUnordered','numberOfItems':len(ids),
          'itemListElement':[{'@type':'ListItem','position':n+1,'name':J[i]['name'],'url':J[i]['url']} for n,i in enumerate(ids)]}
     ld2={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[
@@ -300,7 +300,7 @@ BANNED_CITE=BANNED+[r'\bcertified\b',r'\bverified\b',r'\bendorsed\b']
 NEW_BANNED=BANNED_CITE[len(BANNED):]
 CITE_PATH='citing.html'
 CITE_TITLE='How to cite and quote this data'
-CITE_DESC='Ready-to-copy citation examples (plain sentence, APA-style, BibTeX, agent template), CC BY 4.0 attribution, how to quote scores, and machine-readable locations. Informational only.'
+CITE_DESC='Ready-to-copy citations (plain, APA-style, BibTeX, agent template), CC BY 4.0 attribution and how to quote scores. Informational only.'
 LICENSE_FILE='https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE'
 REPO='https://github.com/TrustKeeperAce/agent-trust-clearinghouse'
 ATTRIBUTION=f'{SITE_NAME}, <entry URL>, data as of YYYY-MM-DD, CC BY 4.0.'
@@ -392,4 +392,25 @@ def build_citing():
     sm=re.sub(r'  <url><loc>[^<]*/citing\.html</loc>.*?\n','',sm).replace('</urlset>',f'  <url><loc>{BASE}/citing.html</loc><lastmod>{changelog_date()}</lastmod></url>\n</urlset>')
     open(os.path.join(P,'sitemap.xml'),'w').write(sm)
     print('citing page: examples',example_entries(E)[0]['id'],example_entries(E)[1]['id'])
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing()
+
+
+# ---- 0069: grade notes on entry pages; one shared footer ----
+GN_RE=re.compile(r'(<p>Evidence grade describes the amount and type of evidence, not the agent\'s quality\.)[^<]*(?:<a href="/methodology\.html#evidence-grade">see methodology</a>\)\.)?</p>(\n<p class="grade-note">.*?</p>)?')
+def grade_note_html(n): return f'<p class="grade-note"><strong>Grade note:</strong> {_e(n)} (<a href="/methodology.html#evidence-grade">see methodology</a>)</p>'
+def build_grade_notes():
+    n=0
+    for e in entries():
+        if not e.get('grade_note'): continue
+        fp=os.path.join(P,'agents',e['id']+'.html'); t=open(fp).read(); m=GN_RE.search(t)
+        assert m, e['id']
+        t=t[:m.start()]+m.group(1)+'</p>\n'+grade_note_html(e['grade_note'])+t[m.end():]; open(fp,'w').write(t); n+=1
+    print('grade notes',n)
+def site_footer(): t=open(os.path.join(P,'index.html')).read(); return re.search(r'<footer>.*?</footer>',t,re.S).group(0)
+FOOTER_SKIP={'google4c18d564fd1acb53.html'}
+def build_footers():
+    f=site_footer()
+    for fp in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
+        if os.path.relpath(fp,P) in FOOTER_SKIP: continue
+        t=open(fp).read(); t2=re.sub(r'<footer>.*?</footer>',lambda m:f,t,count=1,flags=re.S)
+        if t2!=t: open(fp,'w').write(t2)
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers()

@@ -8,7 +8,7 @@ updates.xml (Atom): unique and stable ids, latest values per agent match agents.
 pages, referenced agents/URLs/packets exist, both feeds hold the same items, disclaimer on every item,
 valid JSON / well-formed XML, feed links and citation guidance present.
 Exit 1 on any error."""
-import os,sys,re,json,csv,glob
+import os,sys,re,json,csv,glob,yaml
 sys.dont_write_bytecode=True
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import build_data as B
@@ -231,6 +231,31 @@ for c in B.COMPARE:
 for f in ['citing.html']+[c['path'] for c in B.COMPARE]:
     if re.search(r'<(ul|ol)[^>]*>\s*<(ul|ol)',open(os.path.join(P,f)).read()): E(f'{f}: list nested directly in a list')
 print('citing: checked')
+# ---- 0069 ----
+foot_={}
+for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
+    rel=os.path.relpath(f,P)
+    if rel in B.FOOTER_SKIP: continue
+    m=re.search(r'<footer>.*?</footer>',open(f).read(),re.S); foot_.setdefault(m.group(0) if m else None,[]).append(rel)
+if len(foot_)!=1: E('footers differ: '+'; '.join(f'{len(v)} pages e.g. {v[0]}' for v in foot_.values()))
+gen_pages=['citing.html']+[c['path'] for c in B.COMPARE]
+for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
+    rel=os.path.relpath(f,P)
+    if rel in B.FOOTER_SKIP: continue
+    t=open(f).read(); ti=_hh.unescape((re.search(r'<title>(.*?)</title>',t) or [None,''])[1]); de=_hh.unescape((re.search(r'<meta name="description" content="([^"]*)"',t) or [None,''])[1])
+    if rel in gen_pages and len(ti)>70: print(f'WARN {rel}: title {len(ti)} chars > 70')
+    if len(de)>160: print(f'WARN {rel}: meta description {len(de)} chars > 160')
+for e in J.values():
+    y69=yaml.safe_load(open(os.path.join(B.R,'agents',e['id']+'.yaml')))
+    if not e.get('scope'): print(f"WARN {e['id']}: empty scope")
+    if e.get('grade_note')!=y69.get('grade_note'): E(f"{e['id']}: grade_note in agents.json differs from YAML")
+    t=open(os.path.join(P,'agents',e['id']+'.html')).read()
+    if y69.get('grade_note') and B.grade_note_html(y69['grade_note']) not in t: E(f"{e['id']}: grade note missing on entry page")
+    if not y69.get('grade_note') and 'class="grade-note"' in t: E(f"{e['id']}: stray grade note on entry page")
+vj=json.load(open(os.path.join(B.R,'vercel.json')))
+if vj.get('outputDirectory')!='public' or set(vj)-{'outputDirectory','cleanUrls','headers'}: E('vercel.json: unexpected settings')
+if [h['source'] for h in vj.get('headers',[])]!=['/updates.xml'] or vj['headers'][0]['headers']!=[{'key':'Content-Type','value':'application/atom+xml; charset=utf-8'}]: E('vercel.json: headers rule not exactly /updates.xml Atom')
+print('0069: checked')
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)

@@ -13,6 +13,7 @@ scores:
   evidence_quality: 80
 overall_score: 52
 evidence_grade: A
+grade_note: 'Grade A: 8 counted sources (6 peer-reviewed), and Sifting the Noise tested v0.86.1 within the last 12 months, which meets the A rule. The evidence-quality score (80) is below the suggested A range (85-100) because the A rests on that single recent versioned test, whose date is inferred from its access dates (December 2025 to January 2026).'
 independent_source_count:
   performance: 8
   peer_reviewed: 6
