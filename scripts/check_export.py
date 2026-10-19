@@ -41,6 +41,14 @@ for m in re.finditer(r'<a href="/agents/([a-z0-9-]+)\.html">[^<]*</a></th>.*?dat
     if not e: E(f'index unknown {k}'); continue
     if (s.strip()=='—')!=(e['overall_score'] is None) or (e['overall_score'] is not None and s.strip()!=str(e['overall_score'])): E(f'{k}: index score {s}')
     if g.strip()!=('—' if e['overall_score'] is None else e['evidence_grade']): E(f'{k}: index grade {g}')
+# 0072 D7a: home-page last-reviewed dates equal agents.json and the entry page
+nd=0
+for m in B.IDX_ROW_RE.finditer(idx):
+    k=m.group(2); d=re.search(r'<time datetime="([^"]*)">([^<]*)</time>',idx[m.end(1):m.end(1)+80]); e=y.get(k)
+    if not e or not d: continue
+    nd+=1; ep=open(os.path.join(P,'agents',k+'.html')).read(); pm=re.search(r'Last reviewed</dt><dd>(\d{4}-\d{2}-\d{2})',ep)
+    if not (d.group(1)==d.group(2)==str(e['last_reviewed'])==(pm.group(1) if pm else None)): E(f'{k}: index last-reviewed {d.group(2)} vs agents.json {e["last_reviewed"]} vs entry page {pm.group(1) if pm else None}')
+if nd!=len(y): E(f'index date rows {nd} != {len(y)}')
 nidx=len(re.findall(r'<a href="/agents/([a-z0-9-]+)\.html">[^<]*</a></th>.*?data-label="Evidence grade">',idx))
 if nidx!=len(y): E(f'index rows matched {nidx} != {len(y)}')
 for k,e in y.items():

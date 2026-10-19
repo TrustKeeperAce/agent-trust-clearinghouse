@@ -416,4 +416,12 @@ def build_footers():
         if os.path.relpath(fp,P) in FOOTER_SKIP: continue
         t=open(fp).read(); t2=re.sub(r'<footer>.*?</footer>',lambda m:f,t,count=1,flags=re.S)
         if t2!=t: open(fp,'w').write(t2)
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers()
+
+# ---- 0072 D7a: home-page last-reviewed dates generated from the data ----
+IDX_ROW_RE=re.compile(r'(<a href="/agents/([a-z0-9-]+)\.html">[^<]*</a></th>(?:(?!</tr>).)*?<td data-label="Last reviewed">)<time datetime="[^"]*">[^<]*</time>',re.S)
+def build_index_dates():
+    E={e['id']:e for e in entries()}; fp=os.path.join(P,'index.html'); t=open(fp).read()
+    t,n=IDX_ROW_RE.subn(lambda m:m.group(1)+f'<time datetime="{E[m.group(2)]["last_reviewed"]}">{E[m.group(2)]["last_reviewed"]}</time>',t)
+    assert n==len(E),(n,len(E)); open(fp,'w').write(t); print('index dates',n)
+
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_index_dates()
