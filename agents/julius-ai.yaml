@@ -4,24 +4,24 @@ category: Simple analysis
 type: commercial
 homepage: https://julius.ai/
 scope: AI data-analysis agent
-summary: Julius AI is a commercial AI data-analysis tool that generates and runs code from natural-language prompts. Public evidence consists mainly of vendor materials, benchmarks published by competing products, and a small number of limited independent studies, including one peer-reviewed comparison that tested Julius with code execution disabled. We found fewer than three independent evaluations of its computed answers, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
-status: Insufficient evidence
+summary: Julius AI is a commercial AI data-analysis tool that generates and runs code from natural-language prompts. Four limited independent evaluations were found. A 2026 peer-reviewed study found high accuracy on text-based statistics questions (86.49% on a statistical-literacy test; 78.6% on statistical data questions) and lower accuracy on causal questions and items needing figures. Two education studies from one research group found errors on a PDF math worksheet and a multiplication prompt, and a peer-reviewed comparison tested Julius with code execution disabled. Informational only; not a guarantee, endorsement, or certification.
 scores:
-  completion_rate: null
-  disputes: null
-  adherence_to_limits: null
-  evidence_quality: null
+  completion_rate: 55
+  disputes: 80
+  adherence_to_limits: 50
+  evidence_quality: 55
 factor_notes:
-  completion_rate: 'Independent evidence on correctness is limited: one peer-reviewed comparison run with code execution disabled, and one single-prompt observation.'
-  disputes: No lawsuits, regulatory actions, or data-protection complaints concerning Julius AI were found.
-  adherence_to_limits: The vendor states credit-based usage limits and file-retention periods; not independently tested.
-  evidence_quality: Fewer than three independent evaluations of computed answers; other evidence is vendor statements, competitor benchmarks, and anecdotal reports.
-overall_score: null
-evidence_grade: Insufficient evidence
+  completion_rate: 'Quality & Quantity (2026; peer-reviewed): 32 of 37 statistical-literacy (BLIS) items correct (86.49%), all five errors on items that needed a plot or figure; QRDATA statistical 88/112 (78.6%), social science 20/35 (57.1%), causal 144/264 (54.5%); MathBench probability and statistics subdomains 43.7-100%. IJRSI (2026; February 2025 test): on a nine-question NAEP grade-12 mathematics PDF, Julius identified 4 of the 9 questions, left 5 unanswered and got 0 of 5 multiple-choice answers correct. Ohio Journal of School Mathematics (2025): one multiplication prompt. Applied Sciences (2026): comparison run with code execution disabled. Judgment call.'
+  disputes: No lawsuits, regulatory actions, or data-protection complaints concerning Julius AI were found. Judgment call.
+  adherence_to_limits: The vendor states credit-based usage limits and file-retention periods; not independently tested. The Quality & Quantity study observed that Julius shifted modelling strategies across prompts and initially proposed overly simple specifications. Judgment call.
+  evidence_quality: 'Four independent performance sources, two peer-reviewed (Quality & Quantity 2026; Applied Sciences 2026). Two are education studies by one research group, one in a venue whose review could not be confirmed; one comparison ran with code execution disabled; none states a dated version of the 2026 product; the vendor gave complimentary access for one study (disclosed). Judgment call.'
+overall_score: 59
+evidence_grade: B-
 independent_source_count:
-  performance: 2
-  other: 4
-  count_note: Both performance sources are limited.
+  performance: 4
+  peer_reviewed: 2
+  other: 5
+  count_note: Three of the four performance sources are limited (code execution disabled; a single prompt; a PDF worksheet in a venue whose review could not be confirmed).
 sources:
 - url: https://www.mdpi.com/2076-3417/16/2/669
   kind: independent performance
@@ -38,6 +38,20 @@ sources:
   version_tested: unstated
   test_date: '2025'
   peer_reviewed: false
+- url: https://doi.org/10.1007/s11135-026-02898-5
+  kind: independent performance
+  accessed: '2026-10-19'
+  note: 'Marmolejo-Ramos, Rojas-Galeano, Ciria and Tejada (2026), Quality & Quantity (Flinders University, Universidad Distrital, UNAM, Universidade Federal de Sergipe; peer-reviewed, open access): Julius on BLIS (32/37, 86.49%; all errors on items with a figure), QRDATA (statistical 78.6%, social science 57.1%, causal 54.5%) and MathBench probability and statistics subdomains (43.7-100%), plus a modelling demonstration. Disclosure: the vendor provided complimentary access to the tool during the initial stages of the work'
+  version_tested: unstated (underlying model not stated)
+  test_date: unstated (published 2026-06-12)
+  peer_reviewed: true
+- url: https://doi.org/10.51244/ijrsi.2026.1309000109
+  kind: independent performance
+  accessed: '2026-10-19'
+  note: 'Wolfe, Sawyer, Aga, Park, Sutherland and Smiley (2026), IJRSI 13(9):1506-1530 (James Madison University, Drake University): eleven generative AI tools on a nine-question NAEP 2013 grade-12 mathematics PDF, one prompt; Julius identified 4 of 9 questions, 5 omissions, 0 of 5 multiple-choice correct. Limited: a PDF worksheet rather than a data file; journal states peer review, but acceptance came 5 days after receipt, so not treated as peer-reviewed. Same research group as the Ohio Journal of School Mathematics study (a different study)'
+  version_tested: Julius AI 1.0.45 (as labelled by the paper)
+  test_date: 2025-02
+  peer_reviewed: false
 - url: https://link.springer.com/article/10.1007/s44217-024-00214-7
   kind: independent other
   accessed: '2026-10-16'
@@ -47,6 +61,11 @@ sources:
   accessed: '2026-10-16'
   note: 'Veredas do Direito (2026): Julius in postgraduate statistical analysis (student-learning study). Bibliographic record (OpenAlex); publisher page for DOI 10.18623/rvd.v23.7013 unavailable as of 2026-10-17 (HTTP 404)'
   access_note: could not be fetched (HTTP 404)
+- url: https://doi.org/10.1111/test.70019
+  kind: independent other
+  accessed: '2026-10-19'
+  note: 'Vilakati (2025), Teaching Statistics (University of the Free State; peer-reviewed): illustration on a hypothetical ten-row dataset; with a plain prompt, Julius (GPT-4o; similar with Claude 3.7 Sonnet) ran a t-test without checking its assumptions, also after outliers were added; with more context and Claude 3.7 Sonnet the result was correct. An illustration on constructed data rather than a measured accuracy test, so not counted (as for the Chang article in Decision 0058)'
+  access_note: journal page could not be fetched automatically; preprint read in full (https://doi.org/10.20944/preprints202506.2075.v1)
 - url: https://casrai.org/guides/julius-ai-for-research-data-analysis
   kind: independent other
   accessed: '2026-10-16'
@@ -64,6 +83,10 @@ sources:
   kind: competitor
   accessed: '2026-10-16'
   note: 'Basedash: BI Bench results (competitor benchmark; not independent)'
+- url: https://fastero.com/blog/chatgpt-vs-julius-ai-data-analysis-compared
+  kind: competitor
+  accessed: '2026-10-19'
+  note: 'Fastero: ChatGPT vs Julius AI comparison (July 2026, updated September 2026; five runs of one churn analysis; the publisher sells an analytics platform and recommends it; competitor comparison; not independent)'
 - url: https://dabench.com/tools/julius/
   kind: independent other
   accessed: '2026-10-16'
@@ -93,15 +116,17 @@ sources:
   accessed: '2026-10-16'
   note: 'Julius docs: usage credits by plan (vendor statement)'
 uncertainties:
-- No independent study found tests Julius as normally used, with code execution enabled.
-- The peer-reviewed comparison contains internal inconsistencies in its stated test dates and software versions.
+- Only one counted study (Quality & Quantity 2026) tests Julius on data-analysis tasks as normally used; it does not state the version, underlying model or test date, and the vendor gave the authors complimentary access.
+- The IJRSI study is in a venue whose review could not be confirmed (accepted 5 days after receipt), tests a PDF mathematics worksheet rather than a data file, and shares three authors with the Ohio Journal of School Mathematics study.
+- The Applied Sciences comparison contains internal inconsistencies in its stated test dates and software versions.
 - Benchmarks published by competing products are not independent.
 - Privacy, retention, training-use, and compliance statements are vendor statements and were not independently verified.
-- The product and its billing model changed in 2026; older evidence may not reflect the current product.
-- 'Citation check incomplete — recheck later (0058: a 2025 comparison study had no hands-on test; a 2025 hands-on demonstration was read as abstract only; Semantic Scholar still unavailable).'
-last_reviewed: '2026-10-16'
+- The product and its billing model changed in 2026; no counted source tests the 2026 product, and older evidence may not reflect it.
+- A 2025 Teaching Statistics illustration (Vilakati) is listed but not counted; the line between a documented hands-on test and an illustration is a judgment call.
+last_reviewed: '2026-10-19'
 decision: APPROVED
 decision_packet:
 - decisions/0007-julius-ai.md
 - decisions/0058-consensus-safe-julius.md
+- decisions/0076-evidence-pass-2.md
 notes: Informational only; not a guarantee, endorsement, or certification.

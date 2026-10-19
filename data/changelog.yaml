@@ -1,6 +1,47 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-19-0076
+  date: '2026-10-19'
+  decision_packets:
+  - '0076'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0076-evidence-pass-2.md
+  change_html: 'Evidence pass on three Insufficient-evidence entries. <a href="/agents/skyvern.html">Skyvern</a>: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. <a href="/agents/julius-ai.html">Julius AI</a>: a 2026 Quality &amp; Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. <a href="/agents/kimi-researcher.html">Kimi Researcher</a>: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence.'
+  changes:
+  - agent_id: skyvern
+    type: score_change
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: 44
+      evidence_grade: B-
+      status: Scored
+    source_commit: null
+  - agent_id: julius-ai
+    type: score_change
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: 59
+      evidence_grade: B-
+      status: Scored
+    source_commit: null
+  - agent_id: kimi-researcher
+    type: entry_update
+    before:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    after:
+      overall_score: null
+      evidence_grade: Insufficient evidence
+      status: Insufficient evidence
+    source_commit: null
+  source_commits: []
 - id: 2026-10-19-0075
   date: '2026-10-19'
   decision_packets:

@@ -12,7 +12,7 @@ scores:
   adherence_to_limits: null
   evidence_quality: null
 factor_notes:
-  completion_rate: DeepResearch Bench RACE 44.64 (OpenAI DR 46.45, Claude Research 45.00); ICBCBench English overall 47.59 (Gemini DR 57.38, o3-deep-research 54.67), Chinese 44.72. No citation-accuracy scores available.
+  completion_rate: DeepResearch Bench RACE 44.64 (OpenAI DR 46.45, Claude Research 45.00); ICBCBench English overall 47.59 (Gemini DR 57.38, o3-deep-research 54.67), Chinese 44.72. DeepResearch Bench gave no citation-accuracy (FACT) score because Kimi's citations could not be parsed from the interface. A later re-scoring of the same reports by Microsoft authors (DualGraph preprint, February 2026, GPT-4.1 judge) reported 20.80% citation accuracy with 2.30 effective citations per task, the lowest of the systems listed; not counted (same reports, no new test), and the figure may reflect the same parsing problem rather than citation quality.
   disputes: 'April 2026: the Kimi app reportedly returned another user''s real résumé during an unrelated request (Kimi-wide, not specific to Deep Research); no official statement. No regulator action against Kimi found.'
   adherence_to_limits: Not independently tested.
   evidence_quality: Two independent performance sources (one peer-reviewed, one preprint with Alibaba co-authors). Vendor benchmark claims (HLE, xbench) excluded.
@@ -20,7 +20,7 @@ overall_score: null
 evidence_grade: Insufficient evidence
 independent_source_count:
   performance: 2
-  other: 1
+  other: 2
 sources:
 - url: https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf
   kind: independent performance
@@ -40,6 +40,10 @@ sources:
   kind: other (privacy incident, Kimi-wide)
   accessed: '2026-10-17'
   note: 'OECD AI incident: Kimi disclosed a user''s résumé to another user (20 April 2026); see also Phoenix Weekly (page unavailable as of 2026-10-17) and Seoul Economic Daily'
+- url: https://arxiv.org/abs/2602.13830
+  kind: other (re-scoring of DeepResearch Bench reports)
+  accessed: '2026-10-19'
+  note: 'DualGraph, "A Tale of Two Graphs" (preprint, Feb 2026; Microsoft, Chinese Academy of Sciences, South China University of Technology): re-evaluated the DeepResearch Bench reports with a GPT-4.1 judge; Kimi (Res.) RACE 46.50, FACT citation accuracy 20.80%, 2.30 effective citations per task. Same reports as DeepResearch Bench, so not a new test; authors propose a competing method'
 - url: https://arxiv.org/abs/2509.13309
   kind: not counted (vendor numbers reused)
   accessed: '2026-10-17'
@@ -57,8 +61,11 @@ uncertainties:
 - Whether Deep Research now uses newer Kimi models (K2.5–K3) is not stated; the help page still names Kimi-Researcher.
 - The résumé leak was reported by media; Moonshot issued no public statement.
 - Data storage and privacy practices of the China-based service were not independently verified.
-- 'Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).'
-last_reviewed: '2026-10-17'
+- 'Rechecked in Decision 0076 (19 Oct 2026): no new independent test of Kimi Deep Research found; DeepResearchEval, DeepResearch Bench II and FINDER do not test it, and the DeepResearch Bench leaderboard still shows no FACT score.'
+- The only citation-accuracy figure (20.80%, DualGraph) re-scores the DeepResearch Bench reports, whose citations the benchmark authors could not parse; it may not reflect citation quality.
+last_reviewed: '2026-10-19'
 decision: APPROVED
-decision_packet: decisions/0024-kimi-researcher.md
+decision_packet:
+- decisions/0024-kimi-researcher.md
+- decisions/0076-evidence-pass-2.md
 notes: Informational only; not a guarantee, endorsement, or certification.

@@ -1222,6 +1222,172 @@
    ]
   },
   {
+   "id": "julius-ai",
+   "name": "Julius AI",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+   "homepage": "https://julius.ai/",
+   "category": "Simple analysis",
+   "type": "commercial",
+   "scope": "AI data-analysis agent",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 55,
+    "disputes": 80,
+    "adherence_to_limits": 50,
+    "evidence_quality": 55
+   },
+   "overall_score": 59,
+   "evidence_grade": "B-",
+   "grade_note": null,
+   "independent_source_count": {
+    "performance": 4,
+    "other": 5
+   },
+   "counted_performance_sources": 4,
+   "peer_reviewed_counted_sources": 2,
+   "last_reviewed": "2026-10-19",
+   "decision_packets": [
+    "decisions/0007-julius-ai.md",
+    "decisions/0058-consensus-safe-julius.md",
+    "decisions/0076-evidence-pass-2.md"
+   ],
+   "sources": [
+    {
+     "url": "https://www.mdpi.com/2076-3417/16/2/669",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18061/ojsm.6575",
+     "kind": "independent performance",
+     "accessed": "2026-10-16",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://doi.org/10.1007/s11135-026-02898-5",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.51244/ijrsi.2026.1309000109",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-024-00214-7",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://openalex.org/W7164553025",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1111/test.70019",
+     "kind": "independent other",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://casrai.org/guides/julius-ai-for-research-data-analysis",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1006&context=making-waves_reu",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://rows.com/blog/post/ai-spreadsheet-benchmark",
+     "kind": "competitor",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.basedash.com/blog/ai-data-analyst-benchmark-bi-bench-results",
+     "kind": "competitor",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://fastero.com/blog/chatgpt-vs-julius-ai-data-analysis-compared",
+     "kind": "competitor",
+     "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://dabench.com/tools/julius/",
+     "kind": "independent other",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://aicustomerresearch.beehiiv.com/p/september2024",
+     "kind": "anecdotal",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/docs/get-started/privacy-and-data-security",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/security",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/privacy-policy",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/docs/get-started/files",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://julius.ai/docs/billing/credits-overview",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
    "id": "claude-research",
    "name": "Claude Research",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html",
@@ -3010,6 +3176,108 @@
    ]
   },
   {
+   "id": "skyvern",
+   "name": "Skyvern (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+   "homepage": "https://github.com/Skyvern-AI/skyvern",
+   "category": "Browser/web agent",
+   "type": "open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered",
+   "scope": "The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 40,
+    "adherence_to_limits": 30,
+    "evidence_quality": 55
+   },
+   "overall_score": 44,
+   "evidence_grade": "B-",
+   "grade_note": null,
+   "independent_source_count": {
+    "performance": 3,
+    "other": 3
+   },
+   "counted_performance_sources": 3,
+   "peer_reviewed_counted_sources": 1,
+   "last_reviewed": "2026-10-19",
+   "decision_packets": [
+    "decisions/0027-skyvern.md",
+    "decisions/0076-evidence-pass-2.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2601.07263",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2601.08406",
+     "kind": "independent performance",
+     "accessed": "2026-10-17",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://doi.org/10.1145/3832165",
+     "kind": "independent performance",
+     "accessed": "2026-10-19",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.20910",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49619",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82447",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.29020",
+     "kind": "other",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.skyvern.com/blog/skyvern-2-0-webvoyager-benchmark-results/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://webbench.ai/",
+     "kind": "excluded (vendor co-built)",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://eval.skyvern.com/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
    "id": "perplexity-comet",
    "name": "Perplexity Comet (agentic browser)",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html",
@@ -3530,143 +3798,6 @@
    ]
   },
   {
-   "id": "julius-ai",
-   "name": "Julius AI",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
-   "homepage": "https://julius.ai/",
-   "category": "Simple analysis",
-   "type": "commercial",
-   "scope": "AI data-analysis agent",
-   "status": "Insufficient evidence",
-   "scores": {
-    "completion_rate": null,
-    "disputes": null,
-    "adherence_to_limits": null,
-    "evidence_quality": null
-   },
-   "overall_score": null,
-   "evidence_grade": "Insufficient evidence",
-   "grade_note": null,
-   "independent_source_count": {
-    "performance": 2,
-    "other": 4
-   },
-   "counted_performance_sources": 2,
-   "peer_reviewed_counted_sources": 1,
-   "last_reviewed": "2026-10-16",
-   "decision_packets": [
-    "decisions/0007-julius-ai.md",
-    "decisions/0058-consensus-safe-julius.md"
-   ],
-   "sources": [
-    {
-     "url": "https://www.mdpi.com/2076-3417/16/2/669",
-     "kind": "independent performance",
-     "accessed": "2026-10-16",
-     "counted": true,
-     "peer_reviewed": true
-    },
-    {
-     "url": "https://doi.org/10.18061/ojsm.6575",
-     "kind": "independent performance",
-     "accessed": "2026-10-16",
-     "counted": true,
-     "peer_reviewed": false
-    },
-    {
-     "url": "https://link.springer.com/article/10.1007/s44217-024-00214-7",
-     "kind": "independent other",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://openalex.org/W7164553025",
-     "kind": "independent other",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://casrai.org/guides/julius-ai-for-research-data-analysis",
-     "kind": "independent other",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1006&context=making-waves_reu",
-     "kind": "independent other",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://rows.com/blog/post/ai-spreadsheet-benchmark",
-     "kind": "competitor",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://www.basedash.com/blog/ai-data-analyst-benchmark-bi-bench-results",
-     "kind": "competitor",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://dabench.com/tools/julius/",
-     "kind": "independent other",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://aicustomerresearch.beehiiv.com/p/september2024",
-     "kind": "anecdotal",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://julius.ai/docs/get-started/privacy-and-data-security",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://julius.ai/security",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://julius.ai/privacy-policy",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://julius.ai/docs/get-started/files",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://julius.ai/docs/billing/credits-overview",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    }
-   ]
-  },
-  {
    "id": "kimi-researcher",
    "name": "Kimi Researcher (Kimi Deep Research)",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
@@ -3686,13 +3817,14 @@
    "grade_note": null,
    "independent_source_count": {
     "performance": 2,
-    "other": 1
+    "other": 2
    },
    "counted_performance_sources": 2,
    "peer_reviewed_counted_sources": 1,
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-19",
    "decision_packets": [
-    "decisions/0024-kimi-researcher.md"
+    "decisions/0024-kimi-researcher.md",
+    "decisions/0076-evidence-pass-2.md"
    ],
    "sources": [
     {
@@ -3713,6 +3845,13 @@
      "url": "https://oecd.ai/en/incidents/2026-04-21-8c79",
      "kind": "other (privacy incident, Kimi-wide)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.13830",
+     "kind": "other (re-scoring of DeepResearch Bench reports)",
+     "accessed": "2026-10-19",
      "counted": false,
      "peer_reviewed": null
     },
@@ -4227,100 +4366,6 @@
      "url": "https://pactum.com/",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-16",
-     "counted": false,
-     "peer_reviewed": null
-    }
-   ]
-  },
-  {
-   "id": "skyvern",
-   "name": "Skyvern (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
-   "homepage": "https://github.com/Skyvern-AI/skyvern",
-   "category": "Browser/web agent",
-   "type": "open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered",
-   "scope": "The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.",
-   "status": "Insufficient evidence",
-   "scores": {
-    "completion_rate": null,
-    "disputes": null,
-    "adherence_to_limits": null,
-    "evidence_quality": null
-   },
-   "overall_score": null,
-   "evidence_grade": "Insufficient evidence",
-   "grade_note": null,
-   "independent_source_count": {
-    "performance": 2,
-    "other": 3
-   },
-   "counted_performance_sources": 2,
-   "peer_reviewed_counted_sources": 0,
-   "last_reviewed": "2026-10-17",
-   "decision_packets": [
-    "decisions/0027-skyvern.md"
-   ],
-   "sources": [
-    {
-     "url": "https://arxiv.org/abs/2601.07263",
-     "kind": "independent performance",
-     "accessed": "2026-10-17",
-     "counted": true,
-     "peer_reviewed": false
-    },
-    {
-     "url": "https://arxiv.org/abs/2601.08406",
-     "kind": "independent performance",
-     "accessed": "2026-10-17",
-     "counted": true,
-     "peer_reviewed": false
-    },
-    {
-     "url": "https://arxiv.org/abs/2606.20910",
-     "kind": "other",
-     "accessed": "2026-10-17",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49619",
-     "kind": "other",
-     "accessed": "2026-10-17",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82447",
-     "kind": "other",
-     "accessed": "2026-10-17",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://arxiv.org/abs/2603.29020",
-     "kind": "other",
-     "accessed": "2026-10-17",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://www.skyvern.com/blog/skyvern-2-0-webvoyager-benchmark-results/",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-17",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://webbench.ai/",
-     "kind": "excluded (vendor co-built)",
-     "accessed": "2026-10-17",
-     "counted": false,
-     "peer_reviewed": null
-    },
-    {
-     "url": "https://eval.skyvern.com/",
-     "kind": "vendor or maintainer",
-     "accessed": "2026-10-17",
      "counted": false,
      "peer_reviewed": null
     }

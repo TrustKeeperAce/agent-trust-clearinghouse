@@ -21,6 +21,102 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0076/skyvern",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+   "title": "Skyvern (open-source): Insufficient evidence → 44 / B-",
+   "content_text": "Evidence pass on three Insufficient-evidence entries. Skyvern: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. Julius AI: a 2026 Quality & Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. Kimi Researcher: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-19T00:00:00Z",
+   "tags": [
+    "score_change"
+   ],
+   "_clearinghouse": {
+    "type": "score_change",
+    "agent_id": "skyvern",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+    "before": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "after": {
+     "overall_score": 44,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0076"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0076-evidence-pass-2.md",
+    "as_of": "2026-10-19",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0076/julius-ai",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+   "title": "Julius AI: Insufficient evidence → 59 / B-",
+   "content_text": "Evidence pass on three Insufficient-evidence entries. Skyvern: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. Julius AI: a 2026 Quality & Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. Kimi Researcher: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-19T00:00:00Z",
+   "tags": [
+    "score_change"
+   ],
+   "_clearinghouse": {
+    "type": "score_change",
+    "agent_id": "julius-ai",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+    "before": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "after": {
+     "overall_score": 59,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0076"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0076-evidence-pass-2.md",
+    "as_of": "2026-10-19",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0076/kimi-researcher",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
+   "title": "Kimi Researcher (Kimi Deep Research): entry updated, Insufficient evidence (unchanged)",
+   "content_text": "Evidence pass on three Insufficient-evidence entries. Skyvern: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. Julius AI: a 2026 Quality & Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. Kimi Researcher: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-19T00:00:00Z",
+   "tags": [
+    "entry_update"
+   ],
+   "_clearinghouse": {
+    "type": "entry_update",
+    "agent_id": "kimi-researcher",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
+    "before": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "after": {
+     "overall_score": null,
+     "evidence_grade": "Insufficient evidence",
+     "status": "Insufficient evidence"
+    },
+    "status": "Insufficient evidence",
+    "decision_packets": [
+     "0076"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0076-evidence-pass-2.md",
+    "as_of": "2026-10-19",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0075",
    "url": "https://agent-trust-clearinghouse.vercel.app/changelog.html",
    "title": "Site change (0075)",

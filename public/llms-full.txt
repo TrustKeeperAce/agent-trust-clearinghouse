@@ -2,7 +2,7 @@
 
 > Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.
 
-Data as of 2026-10-18 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://agent-trust-clearinghouse.vercel.app/llms.txt. Machine-readable data: https://agent-trust-clearinghouse.vercel.app/data/agents.json (same source as this file). Full rules: https://agent-trust-clearinghouse.vercel.app/methodology.html
+Data as of 2026-10-19 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://agent-trust-clearinghouse.vercel.app/llms.txt. Machine-readable data: https://agent-trust-clearinghouse.vercel.app/data/agents.json (same source as this file). Full rules: https://agent-trust-clearinghouse.vercel.app/methodology.html
 
 ## How this directory works
 
@@ -800,34 +800,40 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 - Entry page: https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html
 - Category: Simple analysis; type: commercial
-- Status: Insufficient evidence
-- Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 13
-- Last reviewed: 2026-10-16
+- Status: Scored
+- Factor scores (0–100): completion rate 55, disputes 80, adherence to limits 50, evidence quality 55
+- Overall score: 59; evidence grade: B-
+- Counted independent performance sources: 4; other listed sources: 15
+- Last reviewed: 2026-10-19
 
 Scope: AI data-analysis agent
 
-Summary: Julius AI is a commercial AI data-analysis tool that generates and runs code from natural-language prompts. Public evidence consists mainly of vendor materials, benchmarks published by competing products, and a small number of limited independent studies, including one peer-reviewed comparison that tested Julius with code execution disabled. We found fewer than three independent evaluations of its computed answers, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
+Summary: Julius AI is a commercial AI data-analysis tool that generates and runs code from natural-language prompts. Four limited independent evaluations were found. A 2026 peer-reviewed study found high accuracy on text-based statistics questions (86.49% on a statistical-literacy test; 78.6% on statistical data questions) and lower accuracy on causal questions and items needing figures. Two education studies from one research group found errors on a PDF math worksheet and a multiplication prompt, and a peer-reviewed comparison tested Julius with code execution disabled. Informational only; not a guarantee, endorsement, or certification.
 
 Uncertainties:
-- No independent study found tests Julius as normally used, with code execution enabled.
-- The peer-reviewed comparison contains internal inconsistencies in its stated test dates and software versions.
+- Only one counted study (Quality & Quantity 2026) tests Julius on data-analysis tasks as normally used; it does not state the version, underlying model or test date, and the vendor gave the authors complimentary access.
+- The IJRSI study is in a venue whose review could not be confirmed (accepted 5 days after receipt), tests a PDF mathematics worksheet rather than a data file, and shares three authors with the Ohio Journal of School Mathematics study.
+- The Applied Sciences comparison contains internal inconsistencies in its stated test dates and software versions.
 - Benchmarks published by competing products are not independent.
 - Privacy, retention, training-use, and compliance statements are vendor statements and were not independently verified.
-- The product and its billing model changed in 2026; older evidence may not reflect the current product.
-- Citation check incomplete — recheck later (0058: a 2025 comparison study had no hands-on test; a 2025 hands-on demonstration was read as abstract only; Semantic Scholar still unavailable).
+- The product and its billing model changed in 2026; no counted source tests the 2026 product, and older evidence may not reflect it.
+- A 2025 Teaching Statistics illustration (Vilakati) is listed but not counted; the line between a documented hands-on test and an illustration is a judgment call.
 
 Counted sources:
 - https://www.mdpi.com/2076-3417/16/2/669 (independent performance, accessed 2026-10-16)
 - https://doi.org/10.18061/ojsm.6575 (independent performance, accessed 2026-10-16)
+- https://doi.org/10.1007/s11135-026-02898-5 (independent performance, accessed 2026-10-19)
+- https://doi.org/10.51244/ijrsi.2026.1309000109 (independent performance, accessed 2026-10-19)
 
 Other sources:
 - https://link.springer.com/article/10.1007/s44217-024-00214-7 (independent other, accessed 2026-10-16)
 - https://openalex.org/W7164553025 (independent other, accessed 2026-10-16)
+- https://doi.org/10.1111/test.70019 (independent other, accessed 2026-10-19)
 - https://casrai.org/guides/julius-ai-for-research-data-analysis (independent other, accessed 2026-10-16)
 - https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1006&context=making-waves_reu (independent other, accessed 2026-10-16)
 - https://rows.com/blog/post/ai-spreadsheet-benchmark (competitor, accessed 2026-10-16)
 - https://www.basedash.com/blog/ai-data-analyst-benchmark-bi-bench-results (competitor, accessed 2026-10-16)
+- https://fastero.com/blog/chatgpt-vs-julius-ai-data-analysis-compared (competitor, accessed 2026-10-19)
 - https://dabench.com/tools/julius/ (independent other, accessed 2026-10-16)
 - https://aicustomerresearch.beehiiv.com/p/september2024 (anecdotal, accessed 2026-10-16)
 - https://julius.ai/docs/get-started/privacy-and-data-security (vendor or maintainer, accessed 2026-10-16)
@@ -836,7 +842,7 @@ Other sources:
 - https://julius.ai/docs/get-started/files (vendor or maintainer, accessed 2026-10-16)
 - https://julius.ai/docs/billing/credits-overview (vendor or maintainer, accessed 2026-10-16)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-16.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### Kimi Researcher (Kimi Deep Research)
 
@@ -844,8 +850,8 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Category: Research; type: commercial (Kimi membership credits)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 4
-- Last reviewed: 2026-10-17
+- Counted independent performance sources: 2; other listed sources: 5
+- Last reviewed: 2026-10-19
 
 Scope: Moonshot AI's Deep Research mode in Kimi, powered by the Kimi-Researcher model (launched June 2025).
 
@@ -856,7 +862,8 @@ Uncertainties:
 - Whether Deep Research now uses newer Kimi models (K2.5–K3) is not stated; the help page still names Kimi-Researcher.
 - The résumé leak was reported by media; Moonshot issued no public statement.
 - Data storage and privacy practices of the China-based service were not independently verified.
-- Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).
+- Rechecked in Decision 0076 (19 Oct 2026): no new independent test of Kimi Deep Research found; DeepResearchEval, DeepResearch Bench II and FINDER do not test it, and the DeepResearch Bench leaderboard still shows no FACT score.
+- The only citation-accuracy figure (20.80%, DualGraph) re-scores the DeepResearch Bench reports, whose citations the benchmark authors could not parse; it may not reflect citation quality.
 
 Counted sources:
 - https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-17)
@@ -864,11 +871,12 @@ Counted sources:
 
 Other sources:
 - https://oecd.ai/en/incidents/2026-04-21-8c79 (other (privacy incident, Kimi-wide), accessed 2026-10-17)
+- https://arxiv.org/abs/2602.13830 (other (re-scoring of DeepResearch Bench reports), accessed 2026-10-19)
 - https://arxiv.org/abs/2509.13309 (not counted (vendor numbers reused), accessed 2026-10-17)
 - https://moonshotai.github.io/Kimi-Researcher/ (vendor or maintainer, accessed 2026-10-17)
 - https://www.kimi.ai/help/deep-research/deep-research-overview (vendor or maintainer, accessed 2026-10-17)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### Loki (Libr-AI OpenFactVerification, open-source)
 
@@ -1279,17 +1287,20 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 - Entry page: https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html
 - Category: Browser/web agent; type: open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered
-- Status: Insufficient evidence
-- Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
-- Counted independent performance sources: 2; other listed sources: 7
-- Last reviewed: 2026-10-17
+- Status: Scored
+- Factor scores (0–100): completion rate 50, disputes 40, adherence to limits 30, evidence quality 55
+- Overall score: 44; evidence grade: B-
+- Counted independent performance sources: 3; other listed sources: 7
+- Last reviewed: 2026-10-19
 
 Scope: The open-source Skyvern browser-automation agent (Skyvern 2.0 planner/validator design onward; PyPI 0.1.x to 1.0.56) run with a language model chosen by the user. Skyvern Cloud is not covered.
 
-Summary: Skyvern is an open-source browser-automation agent (AGPL-3.0) from Skyvern AI that uses language and vision models to fill forms and carry out web tasks; a hosted Skyvern Cloud service is also sold. Only two independent evaluations were found, both January 2026 preprints by an overlapping Fudan University group. With GPT-4o, Skyvern completed 84.4% of 500 benign WebVoyager tasks. In the same study, 62.6% of social-engineering attacks succeeded on average. A separate security test scored it 61.67-72.29 (100 = no successful attacks); it was the lowest of four frameworks with GPT-4o. Skyvern's own results (85.85% on a modified WebVoyager set; Web Bench, which Skyvern co-built and ran on its own infrastructure) are not counted. Two template-injection vulnerabilities allowing code execution by authenticated or workflow inputs (CVE-2025-49619, CVE-2026-82447) were fixed in later releases. Insufficient evidence for an overall score. Informational only; not a guarantee, endorsement, or certification.
+Summary: Skyvern is an open-source browser-automation agent (AGPL-3.0) from Skyvern AI that uses language and vision models to fill forms and carry out web tasks; a hosted Skyvern Cloud service is also sold. Three independent evaluations were found, two January 2026 preprints by an overlapping Fudan University group, and a peer-reviewed prompt-injection study (ISSTA 2026) by KAIST, Seoul National University and Oregon State University. With GPT-4o, Skyvern completed 84.4% of 500 benign WebVoyager tasks. In the same study, 62.6% of social-engineering attacks succeeded on average. A separate security test scored it 61.67-72.29 (100 = no successful attacks); it was the lowest of four frameworks with GPT-4o. Skyvern's own results (85.85% on a modified WebVoyager set; Web Bench, which Skyvern co-built and ran on its own infrastructure) are not counted. Two template-injection vulnerabilities allowing code execution by authenticated or workflow inputs (CVE-2025-49619, CVE-2026-82447) were fixed in later releases. Informational only; not a guarantee, endorsement, or certification.
 
 Uncertainties:
-- Only two independent evaluations exist, from overlapping authors; one completion figure is on an easy, widely used benchmark.
+- Three independent evaluations exist; two share authors and none states the Skyvern version. Most use GPT-4o or GPT-4.1.
+- AgentBreaker ran on saved static copies of websites, not live sites, and its attacks were optimised against each agent.
+- The scores rest on the minimum of three counted sources; a correction to any one would return the entry to Insufficient evidence.
 - Results depend on the language model; most independent tests used GPT-4o.
 - Skyvern Cloud (the hosted service) was not covered; its privacy policy and trust centre (skyvern.com/privacy, trust.skyvern.com) were not reviewed and data handling is unverified.
 - Web Bench is the largest test of Skyvern but was co-built and run by Skyvern.
@@ -1297,6 +1308,7 @@ Uncertainties:
 Counted sources:
 - https://arxiv.org/abs/2601.07263 (independent performance, accessed 2026-10-17)
 - https://arxiv.org/abs/2601.08406 (independent performance, accessed 2026-10-17)
+- https://doi.org/10.1145/3832165 (independent performance, accessed 2026-10-19)
 
 Other sources:
 - https://arxiv.org/abs/2606.20910 (other, accessed 2026-10-17)
@@ -1307,7 +1319,7 @@ Other sources:
 - https://webbench.ai/ (excluded (vendor co-built), accessed 2026-10-17)
 - https://eval.skyvern.com/ (vendor or maintainer, accessed 2026-10-17)
 
-Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
 ### STORM / Co-STORM (knowledge-storm library)
 

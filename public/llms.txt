@@ -4,7 +4,7 @@
 
 Scores: four factors shown separately (completion rate 30%, disputes 20%, adherence to limits 25%, evidence quality 25%). Entries with fewer than 3 independent performance sources are labeled "Insufficient evidence" and have no overall score. The evidence grade describes the evidence, not the agent.
 
-Data as of 2026-10-18 (Scoring rules v0.1). Data and site text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code: Apache-2.0 (https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE). The project name, logo and favicon are not licensed.
+Data as of 2026-10-19 (Scoring rules v0.1). Data and site text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code: Apache-2.0 (https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE). The project name, logo and favicon are not licensed.
 
 Usage note: if you use or quote these scores, they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date. They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.
 
@@ -38,6 +38,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [OpenAI Codex (CLI and cloud agent)](https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html): overall 62, evidence grade A
 - [OpenHands (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/openhands.html): overall 61, evidence grade A
 - [AIDE (Weco AI, open-source)](https://agent-trust-clearinghouse.vercel.app/agents/aide.html): overall 60, evidence grade B
+- [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): overall 59, evidence grade B-
 - [Claude Research](https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html): overall 58, evidence grade B-
 - [SWE-agent (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html): overall 58, evidence grade A
 - [GitHub Copilot coding agent](https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html): overall 57, evidence grade B
@@ -50,19 +51,18 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [Devin (Cognition)](https://agent-trust-clearinghouse.vercel.app/agents/devin.html): overall 50, evidence grade B
 - [Agent S (open-source framework)](https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html): overall 49, evidence grade B
 - [Data Interpreter (MetaGPT, open-source)](https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html): overall 49, evidence grade B
+- [Skyvern (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html): overall 44, evidence grade B-
 - [Perplexity Comet (agentic browser)](https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html): overall 41, evidence grade B-
 - [AutoKaggle (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html): Insufficient evidence
 - [ChatGPT Work](https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html): Insufficient evidence
 - [Clay](https://agent-trust-clearinghouse.vercel.app/agents/clay.html): Insufficient evidence
 - [Fellou (agentic browser)](https://agent-trust-clearinghouse.vercel.app/agents/fellou.html): Insufficient evidence
-- [Julius AI](https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html): Insufficient evidence
 - [Kimi Researcher](https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html): Insufficient evidence
 - [Loki (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/loki.html): Insufficient evidence
 - [Manus](https://agent-trust-clearinghouse.vercel.app/agents/manus.html): Insufficient evidence
 - [Open Interpreter](https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html): Insufficient evidence
 - [OpenFactCheck (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html): Insufficient evidence
 - [Pactum](https://agent-trust-clearinghouse.vercel.app/agents/pactum.html): Insufficient evidence
-- [Skyvern (open-source)](https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html): Insufficient evidence
 - [UI-TARS Desktop (ByteDance, open-source app)](https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html): Insufficient evidence
 
 ## Notes
