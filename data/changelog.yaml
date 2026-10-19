@@ -15,8 +15,9 @@
       overall_score: 55
       evidence_grade: B
       status: Scored
-    source_commit: null
-  source_commits: []
+    source_commit: ae9412a
+  source_commits:
+  - ae9412a
 - id: 2026-10-19-0083
   date: '2026-10-19'
   decision_packets:
