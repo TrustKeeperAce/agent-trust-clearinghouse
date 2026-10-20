@@ -8,7 +8,8 @@
   decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0090-polish.md
   change_html: 'Wording and consistency fixes: the <a href="/compare/coding-agents.html">coding agents comparison</a> now names Replit Agent among the managed products and notes that Replit Agent builds and deploys apps in its own hosted platform; the <a href="/agents/aider.html">Aider</a> summary now says six of its eight counted studies are peer-reviewed, matching the data; the as-of dates on the <a href="/agents-data.html">For agents / data</a> page and llms.txt are now generated from the data; the <a href="/agents/kimi-researcher.html">Kimi Researcher</a> page now says why its citation check is still incomplete; the Type line on the <a href="/agents/google-deepmind-safe.html">Google DeepMind SAFE</a> and <a href="/agents/manus.html">Manus</a> pages now matches the data. No score, grade or source count changes.'
   changes: []
-  source_commits: []
+  source_commits:
+  - d3ae9f2
 - id: 2026-10-20-0089
   date: '2026-10-20'
   decision_packets:
