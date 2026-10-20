@@ -8,7 +8,8 @@
   decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0086-domain-move.md
   change_html: 'The directory moved to a new address, <a href="https://www.agentclearinghouse.org/">www.agentclearinghouse.org</a>. Pages, data files and feeds keep the same paths, and links to the old address (agent-trust-clearinghouse.vercel.app) continue to work. Feed item ids are unchanged. No score or grade changes.'
   changes: []
-  source_commits: []
+  source_commits:
+  - 1738c10
 - id: 2026-10-20-0085
   date: '2026-10-20'
   decision_packets:
