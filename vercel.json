@@ -3,5 +3,13 @@
   "cleanUrls": false,
   "headers": [
     { "source": "/updates.xml", "headers": [ { "key": "Content-Type", "value": "application/atom+xml; charset=utf-8" } ] }
+  ],
+  "redirects": [
+    {
+      "source": "/:path((?!google4c18d564fd1acb53\\.html$).*)",
+      "has": [ { "type": "host", "value": "agent-trust-clearinghouse\\.vercel\\.app" } ],
+      "destination": "https://www.agentclearinghouse.org/:path",
+      "permanent": true
+    }
   ]
 }
