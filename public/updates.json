@@ -21,6 +21,30 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0090",
+   "url": "https://www.agentclearinghouse.org/changelog.html",
+   "title": "Site change (0090)",
+   "content_text": "Wording and consistency fixes: the coding agents comparison now names Replit Agent among the managed products and notes that Replit Agent builds and deploys apps in its own hosted platform; the Aider summary now says six of its eight counted studies are peer-reviewed, matching the data; the as-of dates on the For agents / data page and llms.txt are now generated from the data; the Kimi Researcher page now says why its citation check is still incomplete; the Type line on the Google DeepMind SAFE and Manus pages now matches the data. No score, grade or source count changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-20T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0090"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0090-polish.md",
+    "as_of": "2026-10-20",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0089/replit-agent",
    "url": "https://www.agentclearinghouse.org/agents/replit-agent.html",
    "title": "Replit Agent: new entry, 51 / B",

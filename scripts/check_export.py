@@ -381,6 +381,13 @@ else:
     for b in B.BANNED_CITE+[r'\bunlike\b',r'\bunique\b',r'\branking\b']:
         if re.search(b,_fr,re.I): E(f'0074: llms-full banned {b} in generated framing')
 if B.LLMS_FULL_LINE not in open(os.path.join(P,'llms.txt')).read(): E('0074: llms.txt link to llms-full.txt missing')
+# 0090 D3: as-of dates on agents-data.html and llms.txt match the data
+for _f in ('agents-data.html','llms.txt'):
+    if f'Data as of {B.changelog_date()} (' not in open(os.path.join(P,_f)).read(): E(f'0090: {_f} as-of date is not {B.changelog_date()}')
+# 0090 D1: the coding-agents caveat names every Coding agent entry
+_cc=[c for c in B.COMPARE if c['path']=='compare/coding-agents.html'][0]['caveats'][0]
+for _e in B.entries():
+    if _e['category']=='Coding agent' and _e['name'].split(' (')[0] not in _cc: E(f"0090: coding-agents caveat does not name {_e['id']}")
 if B.LLMS_FULL_DATA_LI not in open(os.path.join(P,'agents-data.html')).read(): E('0074: agents-data.html llms-full item missing')
 if 'href="/llms-full.txt"' not in open(os.path.join(P,'citing.html')).read(): E('0074: citing.html llms-full link missing')
 for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True):

@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-20-0090
+  date: '2026-10-20'
+  decision_packets:
+  - '0090'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0090-polish.md
+  change_html: 'Wording and consistency fixes: the <a href="/compare/coding-agents.html">coding agents comparison</a> now names Replit Agent among the managed products and notes that Replit Agent builds and deploys apps in its own hosted platform; the <a href="/agents/aider.html">Aider</a> summary now says six of its eight counted studies are peer-reviewed, matching the data; the as-of dates on the <a href="/agents-data.html">For agents / data</a> page and llms.txt are now generated from the data; the <a href="/agents/kimi-researcher.html">Kimi Researcher</a> page now says why its citation check is still incomplete; the Type line on the <a href="/agents/google-deepmind-safe.html">Google DeepMind SAFE</a> and <a href="/agents/manus.html">Manus</a> pages now matches the data. No score, grade or source count changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-20-0089
   date: '2026-10-20'
   decision_packets:

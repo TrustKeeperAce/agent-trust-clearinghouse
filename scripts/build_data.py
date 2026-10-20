@@ -222,8 +222,8 @@ COMPARE=[
  {'path':'compare/coding-agents.html','h1':'Coding agents compared: public evidence','title':'Coding agents compared','short':'Coding agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the coding agents in the directory. Informational; not a ranking.',
   'groups':[('Coding agent entries',('category','Coding agent'))],
-  'caveats':['Open-source frameworks (OpenHands, SWE-agent, mini-SWE-agent, Aider, Cline) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin, Cursor agent) are tested as shipped.',
-             'Some entries are cloud agents that open pull requests and others are command-line tools; read each scope before comparing.']},
+  'caveats':['Open-source frameworks (OpenHands, SWE-agent, mini-SWE-agent, Aider, Cline) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin, Cursor agent, Replit Agent) are tested as shipped.',
+             'Some entries are cloud agents that open pull requests, some are command-line or editor tools, and Replit Agent builds and deploys whole apps inside Replit\'s hosted platform, so several of its counted tests compare app builders; read each scope before comparing.']},
  {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','title':'Research agents compared','short':'Research agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the research and deep-research agents in the directory. Informational; not a ranking.',
   'groups':[('Academic search and review tools',['consensus','elicit']),
@@ -536,4 +536,12 @@ def build_llms_full():
     a='<li><a href="/llms.txt">llms.txt</a> — short summary and links for language models.</li>'; assert a in t
     open(dp,'w').write(t.replace(a,a+LLMS_FULL_DATA_LI,1)); print('llms-full.txt',len(s.encode()),'bytes')
 
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates(); build_llms_full()
+# ---- 0090 D3: 'Data as of' dates on agents-data.html and llms.txt generated from the data ----
+ASOF_RE=re.compile(r'Data as of \d{4}-\d{2}-\d{2} \(')
+def build_asof_dates():
+    gen=changelog_date()
+    for f in ('agents-data.html','llms.txt'):
+        fp=os.path.join(P,f); t=open(fp).read(); t,n=ASOF_RE.subn(f'Data as of {gen} (',t); assert n==1,(f,n); open(fp,'w').write(t)
+    print('as-of dates',gen)
+
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates(); build_llms_full(); build_asof_dates()

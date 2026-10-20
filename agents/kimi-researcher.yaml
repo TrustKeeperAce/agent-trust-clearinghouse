@@ -61,7 +61,7 @@ uncertainties:
 - Whether Deep Research now uses newer Kimi models (K2.5–K3) is not stated; the help page still names Kimi-Researcher.
 - The résumé leak was reported by media; Moonshot issued no public statement.
 - Data storage and privacy practices of the China-based service were not independently verified.
-- 'Rechecked in Decision 0076 (19 Oct 2026): no new independent test of Kimi Deep Research found; DeepResearchEval, DeepResearch Bench II and FINDER do not test it, and the DeepResearch Bench leaderboard still shows no FACT score.'
+- 'Rechecked in Decision 0076 (19 Oct 2026): no new independent test of Kimi Deep Research found; DeepResearchEval, DeepResearch Bench II and FINDER do not test it, and the DeepResearch Bench leaderboard still shows no FACT score. The Semantic Scholar citation check was not rerun, so the citation check is still incomplete.'
 - The only citation-accuracy figure (20.80%, DualGraph) re-scores the DeepResearch Bench reports, whose citations the benchmark authors could not parse; it may not reflect citation quality.
 last_reviewed: '2026-10-19'
 decision: APPROVED
