@@ -8,7 +8,7 @@
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 39
+  "entry_count": 40
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -3865,6 +3865,240 @@
      "url": "https://browser-use.com/posts/online-mind2web-benchmark",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "replit-agent",
+   "name": "Replit Agent",
+   "url": "https://www.agentclearinghouse.org/agents/replit-agent.html",
+   "homepage": "https://replit.com/products/agent",
+   "category": "Coding agent",
+   "type": "Hosted AI agent in Replit's browser-based development and hosting platform (Replit, Inc.) that builds, tests and deploys applications from natural-language requests",
+   "scope": "Replit Agent, the agent in Replit's hosted platform that plans, writes, runs, tests and deploys applications in a Replit project from natural-language requests: the original Agent (September 2024, out of beta December 2024), Agent v2 (February 2025), Agent 3 (September 2025) and Agent 4 (March 2026, the current version on 20 October 2026), with the models Replit uses by default or the user selects. Studies that name only 'Replit' are counted when they generated whole applications from prompts through Replit's web interface, which uses the Agent. Replit Assistant and the earlier Ghostwriter code assistant, Replit's hosting and database features except where the Agent acts on them, generic vibe-coding comparisons that did not run Replit, and results for the underlying language models alone are not counted.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 40,
+    "disputes": 55,
+    "adherence_to_limits": 40,
+    "evidence_quality": 70
+   },
+   "overall_score": 51,
+   "evidence_grade": "B",
+   "grade_note": "Grade B: 5 counted sources (3 peer-reviewed), below the 7 needed for A. No counted study states the Agent version tested; Replit does not publish version numbers for the hosted agent beyond its named releases. One counted source is a security company's test that used its own scanning product (partial independence), and one was funded by a company that sells another prompt-to-app platform (see Decision 0089, D2 and D3).",
+   "independent_source_count": {
+    "performance": 5,
+    "other": 13
+   },
+   "counted_performance_sources": 5,
+   "peer_reviewed_counted_sources": 3,
+   "last_reviewed": "2026-10-20",
+   "decision_packets": [
+    "decisions/0089-replit-agent.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2508.20410",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://ceur-ws.org/Vol-4266/paper01.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.48009/2_iis_2026_121",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://blog.tenzai.com/bad-vibes-comparing-the-secure-coding-capabilities-of-popular-coding-agents/",
+     "kind": "independent performance (partial independence)",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.16302",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://x.com/jasonlk/status/1946239068691665187",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.theregister.com/software/2025/07/22/replit-makes-vibe-y-promise-to-prevent-vibe-coding-disasters/1145851",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://incidentdatabase.ai/cite/1152/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://axios.com/2026/05/07/loveable-replit-vibe-coding-privacy",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://shippable.dev/leaks/state-of-replit",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.llm-tier.com/leaderboard/app-builders",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3786228.3786236",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1016/j.esmorw.2025.100653",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.24429",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.reddit.com/r/replit/comments/1lwq5ls/class_action_lawsuit_rreplit/",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21671",
+     "kind": "other (vulnerability record, outside scope)",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.04637",
+     "kind": "competitor",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3786335.3813162",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3786335.3813211",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/blog/introducing-a-safer-way-to-vibe-code-with-replit-databases",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/blog/doubling-down-on-our-commitment-to-secure-vibe-coding",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://docs.replit.com/features/data-and-storage/development-and-production",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/blog/effort-based-pricing-recap",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/blog/agent-v2",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/blog/introducing-agent-3-our-most-autonomous-agent-yet",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/blog/introducing-agent-4-built-for-creativity",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://replit.com/terms-of-service",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
      "counted": false,
      "peer_reviewed": null
     }

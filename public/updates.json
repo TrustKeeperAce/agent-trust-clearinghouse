@@ -21,6 +21,34 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0089/replit-agent",
+   "url": "https://www.agentclearinghouse.org/agents/replit-agent.html",
+   "title": "Replit Agent: new entry, 51 / B",
+   "content_text": "Added Replit Agent (AI agent in Replit's hosted platform that builds, tests and deploys apps from natural-language requests; Coding agent): overall 51, evidence grade B, 5 independent performance sources (3 peer-reviewed). No counted test states the Agent version. Replit-authored papers and a benchmark co-written by a competing platform are not counted; a security company's test that used its own scanning product is counted with a partial-independence label, and a study funded by a company that sells another prompt-to-app platform (not itself tested) is counted with that disclosure. A user reported in July 2025 that the agent deleted his production database during a code freeze; Replit's CEO acknowledged the report, the user restored the data with Replit's rollback, and Replit then began separating development and production databases. The report is described under disputes and is not counted as a test. No CVE, lawsuit or regulatory action concerning the agent was found. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-20T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "replit-agent",
+    "entry_url": "https://www.agentclearinghouse.org/agents/replit-agent.html",
+    "before": null,
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0089"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0089-replit-agent.md",
+    "as_of": "2026-10-20",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0088/magentic-one",
    "url": "https://www.agentclearinghouse.org/agents/magentic-one.html",
    "title": "Magentic-One (open-source): new entry, 50 / B",

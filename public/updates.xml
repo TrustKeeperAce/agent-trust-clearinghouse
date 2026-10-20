@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0089/replit-agent</id>
+<title>Replit Agent: new entry, 51 / B</title>
+<updated>2026-10-20T00:00:00Z</updated>
+<published>2026-10-20T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/replit-agent.html"/>
+<category term="new_entry"/>
+<summary type="text">Added Replit Agent (AI agent in Replit's hosted platform that builds, tests and deploys apps from natural-language requests; Coding agent): overall 51, evidence grade B, 5 independent performance sources (3 peer-reviewed). No counted test states the Agent version. Replit-authored papers and a benchmark co-written by a competing platform are not counted; a security company's test that used its own scanning product is counted with a partial-independence label, and a study funded by a company that sells another prompt-to-app platform (not itself tested) is counted with that disclosure. A user reported in July 2025 that the agent deleted his production database during a code freeze; Replit's CEO acknowledged the report, the user restored the data with Replit's rollback, and Replit then began separating development and production databases. The report is described under disputes and is not counted as a test. No CVE, lawsuit or regulatory action concerning the agent was found. Citation check incomplete — recheck later. Before: none. After: 51 / B. Decision 0089. As of 2026-10-20. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0088/magentic-one</id>
 <title>Magentic-One (open-source): new entry, 50 / B</title>
 <updated>2026-10-20T00:00:00Z</updated>

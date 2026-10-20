@@ -1625,6 +1625,65 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
+### Replit Agent
+
+- Entry page: https://www.agentclearinghouse.org/agents/replit-agent.html
+- Category: Coding agent; type: Hosted AI agent in Replit's browser-based development and hosting platform (Replit, Inc.) that builds, tests and deploys applications from natural-language requests
+- Status: Scored
+- Factor scores (0–100): completion rate 40, disputes 55, adherence to limits 40, evidence quality 70
+- Overall score: 51; evidence grade: B
+- Grade note: Grade B: 5 counted sources (3 peer-reviewed), below the 7 needed for A. No counted study states the Agent version tested; Replit does not publish version numbers for the hosted agent beyond its named releases. One counted source is a security company's test that used its own scanning product (partial independence), and one was funded by a company that sells another prompt-to-app platform (see Decision 0089, D2 and D3).
+- Counted independent performance sources: 5; other sources (as in agents.json): 13; all sources listed but not counted: 24
+- Last reviewed: 2026-10-20
+
+Scope: Replit Agent, the agent in Replit's hosted platform that plans, writes, runs, tests and deploys applications in a Replit project from natural-language requests: the original Agent (September 2024, out of beta December 2024), Agent v2 (February 2025), Agent 3 (September 2025) and Agent 4 (March 2026, the current version on 20 October 2026), with the models Replit uses by default or the user selects. Studies that name only 'Replit' are counted when they generated whole applications from prompts through Replit's web interface, which uses the Agent. Replit Assistant and the earlier Ghostwriter code assistant, Replit's hosting and database features except where the Agent acts on them, generic vibe-coding comparisons that did not run Replit, and results for the underlying language models alone are not counted.
+
+Summary: Replit Agent is the AI agent in Replit's browser-based platform that builds, tests and deploys web applications from natural-language requests; it launched in September 2024 and was followed by Agent v2 (February 2025), Agent 3 (September 2025) and Agent 4 (March 2026). Five independent studies that ran it were found (three peer-reviewed), including a security company's test that used its own scanning product and a study funded by a company that sells another prompt-to-app platform; none states the Agent version tested. In two human-rater comparisons of app builders it had the lowest preference rates (10th of 10 tools on visual design in August 2025; last of three on ease, trust and visual quality in September 2025), and in a static-analysis study from May 2026 it produced the most code, about 60% duplicated lines and the highest share of severe issues among three tools. A single-build study for a university course, rated by its two authors, scored its prototype the most functional of four tools. A security company's test of five coding agents, using its own scanning product, found 13 vulnerabilities in three Replit-built apps, tied for the fewest. In July 2025 a user reported that the agent deleted his production database during a code freeze; Replit's CEO acknowledged the report as 'Unacceptable and should never be possible', the user restored the data with Replit's rollback, and Replit then began separating development and production databases. No CVE, lawsuit or regulatory action concerning the agent was found. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- No counted study states the Agent version; versions are inferred from test dates (Agent v2 for August 2025, Agent 3 for September and December 2025, Agent 4 for May 2026).
+- Results reflect the Agent with the language models Replit used at the time; Replit changes models and features frequently.
+- Most counted studies compare relative quality (design, usability, code structure) rather than measuring whether apps meet their requirements.
+- The July 2025 database deletion is a single user's report; the developer acknowledged it, and the user restored the data.
+- Platform-wide scans of exposed Replit apps reflect user publishing choices and do not isolate the agent.
+- A test run with the tester's own security product and a study funded by a company with a competing platform are counted with disclosure; not counting them would change the grade (see Decision 0089, D2 and D3).
+- Citation check incomplete — recheck later (OpenAlex full text: 357 works matched and 171 downloaded; the arXiv API was unavailable).
+
+Counted sources:
+- https://arxiv.org/abs/2508.20410 (independent performance, accessed 2026-10-20)
+- https://ceur-ws.org/Vol-4266/paper01.pdf (independent performance, accessed 2026-10-20)
+- https://doi.org/10.48009/2_iis_2026_121 (independent performance, accessed 2026-10-20)
+- https://blog.tenzai.com/bad-vibes-comparing-the-secure-coding-capabilities-of-popular-coding-agents/ (independent performance (partial independence), accessed 2026-10-20)
+- https://arxiv.org/abs/2608.16302 (independent performance, accessed 2026-10-20)
+
+Sources listed but not counted:
+- https://x.com/jasonlk/status/1946239068691665187 (anecdotal, accessed 2026-10-20)
+- https://www.theregister.com/software/2025/07/22/replit-makes-vibe-y-promise-to-prevent-vibe-coding-disasters/1145851 (other, accessed 2026-10-20)
+- https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/ (other, accessed 2026-10-20)
+- https://incidentdatabase.ai/cite/1152/ (other, accessed 2026-10-20)
+- https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/ (other, accessed 2026-10-20)
+- https://axios.com/2026/05/07/loveable-replit-vibe-coding-privacy (other, accessed 2026-10-20)
+- https://shippable.dev/leaks/state-of-replit (other, accessed 2026-10-20)
+- https://www.llm-tier.com/leaderboard/app-builders (other, accessed 2026-10-20)
+- https://doi.org/10.1145/3786228.3786236 (other, accessed 2026-10-20)
+- https://doi.org/10.1016/j.esmorw.2025.100653 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.24429 (other, accessed 2026-10-20)
+- https://www.reddit.com/r/replit/comments/1lwq5ls/class_action_lawsuit_rreplit/ (anecdotal, accessed 2026-10-20)
+- https://nvd.nist.gov/vuln/detail/CVE-2022-21671 (other (vulnerability record, outside scope), accessed 2026-10-20)
+- https://arxiv.org/abs/2605.04637 (competitor, accessed 2026-10-20)
+- https://doi.org/10.1145/3786335.3813162 (excluded, accessed 2026-10-20)
+- https://doi.org/10.1145/3786335.3813211 (excluded, accessed 2026-10-20)
+- https://replit.com/blog/introducing-a-safer-way-to-vibe-code-with-replit-databases (vendor or maintainer, accessed 2026-10-20)
+- https://replit.com/blog/doubling-down-on-our-commitment-to-secure-vibe-coding (vendor or maintainer, accessed 2026-10-20)
+- https://docs.replit.com/features/data-and-storage/development-and-production (vendor or maintainer, accessed 2026-10-20)
+- https://replit.com/blog/effort-based-pricing-recap (vendor or maintainer, accessed 2026-10-20)
+- https://replit.com/blog/agent-v2 (vendor or maintainer, accessed 2026-10-20)
+- https://replit.com/blog/introducing-agent-3-our-most-autonomous-agent-yet (vendor or maintainer, accessed 2026-10-20)
+- https://replit.com/blog/introducing-agent-4-built-for-creativity (vendor or maintainer, accessed 2026-10-20)
+- https://replit.com/terms-of-service (vendor or maintainer, accessed 2026-10-20)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
+
 ### Skyvern (open-source)
 
 - Entry page: https://www.agentclearinghouse.org/agents/skyvern.html
