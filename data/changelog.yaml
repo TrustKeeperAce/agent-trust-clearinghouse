@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-20-0087
+  date: '2026-10-20'
+  decision_packets:
+  - '0087'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0087-cline.md
+  change_html: 'Added <a href="/agents/cline.html">Cline (open-source)</a> (open-source coding agent for VS Code, JetBrains IDEs and the terminal; Coding agent): overall 55, evidence grade A, 20 independent performance sources (8 peer-reviewed). Thirteen counted studies are security studies; recent tests state the version tested, though none states a v4.x extension version. Material from the Cline team and results for its forks (Roo Code, Kilo Code) are not counted. Two high or critical CVEs in companion servers of the command-line tool have fixes in code. Citation check incomplete — recheck later. The coding-agents comparison now lists Cline among open-source frameworks run with a language model chosen by the user.'
+  changes:
+  - agent_id: cline
+    type: new_entry
+    before: null
+    after:
+      overall_score: 55
+      evidence_grade: A
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-20-0086
   date: '2026-10-20'
   decision_packets:

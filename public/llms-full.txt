@@ -420,6 +420,83 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
+### Cline (open-source)
+
+- Entry page: https://www.agentclearinghouse.org/agents/cline.html
+- Category: Coding agent; type: Open-source autonomous coding agent (Apache-2.0) from Cline Bot Inc.; VS Code and JetBrains extension, command-line tool (npm cline) and SDK; GitHub cline/cline
+- Status: Scored
+- Factor scores (0–100): completion rate 50, disputes 45, adherence to limits 40, evidence quality 85
+- Overall score: 55; evidence grade: A
+- Grade note: Grade A: 20 counted sources (8 peer-reviewed), and recent tests state the version tested: Red-Teaming Coding Agents (FSE 2026, Cline v3.82.0), Can Agents Trust Their Skills? (Cline CLI 3.0.47), What's in Your Agent's Context? (3.77.0) and Beware of Agentic Botnets (3.66.0). No counted test states a v4.x extension version. Results reflect the model and harness together (see Decision 0087, D3).
+- Counted independent performance sources: 20; other sources (as in agents.json): 22; all sources listed but not counted: 25
+- Last reviewed: 2026-10-20
+
+Scope: The open-source Cline agent from the cline/cline repository, run with a language model chosen by the user: the VS Code extension (v3.x through v4.1.25, 16 October 2026), the JetBrains plugin and the Cline command-line tool (through 3.0.73, 17 October 2026), including its use in GitHub Actions workflows. Companion servers started by the command-line tool (Kanban, Hub dashboard) are covered under disputes. Forks such as Roo Code and Kilo Code are separate products; their results are not counted here, even when reported in the same studies.
+
+Summary: Cline is an open-source coding agent that runs in VS Code, JetBrains IDEs or a terminal with a language model chosen by the user, and asks for approval before actions unless auto-approval is turned on. Twenty independent studies that ran it were found (eight peer-reviewed), most from 2026; thirteen are security studies. In task studies it was close to other harnesses with the same models in some settings (similar completion to OpenCode with GPT-5.3-Codex on ANCHOR; the highest success rate among assistants on GitChameleon 2.0 without a problem statement) and lower in others (31.2% against 37.8% for Claude Code on SWE-Nexus; 8.66% against 14.20% on SpreadsheetBench 2). Security studies found prompt injection, tool poisoning and malicious repositories leading to command execution in many configurations, often with auto-approval on; with approval required, one study found none of seven skill-file vulnerabilities still exploitable. Two high or critical CVEs in companion servers of the command-line tool have fixes in code, and independent researchers reported slow responses to several security reports in 2025 and early 2026. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Results reflect the model and the harness together; Cline is run with many different models.
+- Thirteen of the 20 counted studies are security studies, so evidence on everyday task completion is thinner than the source count suggests.
+- Most counted studies do not state the Cline version; the VS Code extension moved to v4.0.0 on 26 June 2026, and no counted study states a v4.x version.
+- The CVE-2026-44211 advisory and NVD list no patched version; the fix date is inferred from cline/kanban pull request #421 and the kanban 0.1.66 package.
+- Several 2025 security reports (Embrace The Red, IDEsaster) have no confirmed fix status for Cline.
+- Two pairs of counted studies share authors (SWE-Nexus and ANCHOR; Red-Teaming Coding Agents and Parasites in the Toolchain).
+- Several figures were read from tables in extracted text or PDF layouts.
+- Results for forks (Roo Code, Kilo Code) are not counted, even when reported in the same studies.
+- Citation check incomplete — recheck later (OpenAlex full text used: 790 works matched and 295 downloaded; Semantic Scholar rate-limited).
+
+Counted sources:
+- https://doi.org/10.1145/3832267 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.1109/dsn69566.2026.00046 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.1109/sp63933.2026.00154 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.3390/jcp6030084 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.1609/aaai.v40i42.40898 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.18653/v1/2026.acl-long.2170 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2604.15625 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.34190/eccws.25.1.4597 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.01222 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2607.07433 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.27027 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.39065 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2608.29381 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.09935 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.09264 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.20038 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.16859 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.29955 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2607.14456 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.22906 (independent performance, accessed 2026-10-20)
+
+Sources listed but not counted:
+- https://doi.org/10.52202/085713-5769 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2604.03515 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.31575 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2607.28617 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2604.13536 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2607.26390 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2604.24038 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2603.14225 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2604.14661 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2608.07925 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.23808 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.08500 (other, accessed 2026-10-20)
+- https://mindgard.ai/blog/cline-coding-agent-vulnerabilities (other, accessed 2026-10-20)
+- https://embracethered.com/blog/posts/2025/cline-vulnerable-to-data-exfiltration/ (other, accessed 2026-10-20)
+- https://maccarita.com/posts/idesaster/ (other, accessed 2026-10-20)
+- https://adnanthekhan.com/posts/clinejection/ (other, accessed 2026-10-20)
+- https://github.com/cline/cline/security/advisories/GHSA-5c57-rqjx-35g2 (other, accessed 2026-10-20)
+- https://github.com/cline/cline/security/advisories/GHSA-3cj3-hqcr-g934 (other, accessed 2026-10-20)
+- https://github.com/cline/cline/security/advisories/GHSA-9ppg-jx86-fqw7 (other, accessed 2026-10-20)
+- https://github.com/cline/cline/issues/5124 (anecdotal, accessed 2026-10-20)
+- https://github.com/cline/cline/issues/8422 (anecdotal, accessed 2026-10-20)
+- https://github.com/cline/cline (vendor or maintainer, accessed 2026-10-20)
+- https://cline.ghost.io/post-mortem-unauthorized-cline-cli-npm/ (vendor or maintainer, accessed 2026-10-20)
+- https://github.com/cline/cline-bench (excluded, accessed 2026-10-20)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
+
 ### Consensus
 
 - Entry page: https://www.agentclearinghouse.org/agents/consensus.html

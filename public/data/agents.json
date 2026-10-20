@@ -8,7 +8,7 @@
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 37
+  "entry_count": 38
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -2723,6 +2723,352 @@
      "url": "https://www.anthropic.com/engineering",
      "kind": "vendor (not counted)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "cline",
+   "name": "Cline (open-source)",
+   "url": "https://www.agentclearinghouse.org/agents/cline.html",
+   "homepage": "https://github.com/cline/cline",
+   "category": "Coding agent",
+   "type": "Open-source autonomous coding agent (Apache-2.0) from Cline Bot Inc.; VS Code and JetBrains extension, command-line tool (npm cline) and SDK; GitHub cline/cline",
+   "scope": "The open-source Cline agent from the cline/cline repository, run with a language model chosen by the user: the VS Code extension (v3.x through v4.1.25, 16 October 2026), the JetBrains plugin and the Cline command-line tool (through 3.0.73, 17 October 2026), including its use in GitHub Actions workflows. Companion servers started by the command-line tool (Kanban, Hub dashboard) are covered under disputes. Forks such as Roo Code and Kilo Code are separate products; their results are not counted here, even when reported in the same studies.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 45,
+    "adherence_to_limits": 40,
+    "evidence_quality": 85
+   },
+   "overall_score": 55,
+   "evidence_grade": "A",
+   "grade_note": "Grade A: 20 counted sources (8 peer-reviewed), and recent tests state the version tested: Red-Teaming Coding Agents (FSE 2026, Cline v3.82.0), Can Agents Trust Their Skills? (Cline CLI 3.0.47), What's in Your Agent's Context? (3.77.0) and Beware of Agentic Botnets (3.66.0). No counted test states a v4.x extension version. Results reflect the model and harness together (see Decision 0087, D3).",
+   "independent_source_count": {
+    "performance": 20,
+    "other": 22
+   },
+   "counted_performance_sources": 20,
+   "peer_reviewed_counted_sources": 8,
+   "last_reviewed": "2026-10-20",
+   "decision_packets": [
+    "decisions/0087-cline.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1145/3832267",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1109/dsn69566.2026.00046",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1109/sp63933.2026.00154",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.3390/jcp6030084",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1609/aaai.v40i42.40898",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.acl-long.2170",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.52202/085713-5769",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.15625",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.34190/eccws.25.1.4597",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.01222",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.07433",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.27027",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.39065",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.29381",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.09935",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.09264",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.20038",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.16859",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.29955",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.14456",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22906",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03515",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.31575",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.28617",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.07639",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.13536",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.26390",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.24038",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.14225",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.14661",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.07925",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.23808",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.08500",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://mindgard.ai/blog/cline-coding-agent-vulnerabilities",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/cline-vulnerable-to-data-exfiltration/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://maccarita.com/posts/idesaster/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://adnanthekhan.com/posts/clinejection/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline/security/advisories/GHSA-5c57-rqjx-35g2",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline/security/advisories/GHSA-3cj3-hqcr-g934",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline/security/advisories/GHSA-9ppg-jx86-fqw7",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline/issues/5124",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline/issues/8422",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://cline.ghost.io/post-mortem-unauthorized-cline-cli-npm/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/cline/cline-bench",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
      "counted": false,
      "peer_reviewed": null
     }

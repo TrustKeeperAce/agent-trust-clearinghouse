@@ -46,6 +46,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [GitHub Copilot coding agent](https://www.agentclearinghouse.org/agents/github-copilot-coding-agent.html): overall 57, evidence grade B
 - [STORM / Co-STORM (knowledge-storm library)](https://www.agentclearinghouse.org/agents/storm.html): overall 56, evidence grade B
 - [Claude Code (Anthropic)](https://www.agentclearinghouse.org/agents/claude-code.html): overall 55, evidence grade A
+- [Cline (open-source)](https://www.agentclearinghouse.org/agents/cline.html): overall 55, evidence grade A
 - [FacTool (open-source)](https://www.agentclearinghouse.org/agents/factool.html): overall 55, evidence grade B
 - [Perplexity](https://www.agentclearinghouse.org/agents/perplexity.html): overall 54, evidence grade B
 - [GPT Researcher](https://www.agentclearinghouse.org/agents/gpt-researcher.html): overall 53, evidence grade B-

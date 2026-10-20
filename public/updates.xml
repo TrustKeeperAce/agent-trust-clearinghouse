@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0087/cline</id>
+<title>Cline (open-source): new entry, 55 / A</title>
+<updated>2026-10-20T00:00:00Z</updated>
+<published>2026-10-20T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/cline.html"/>
+<category term="new_entry"/>
+<summary type="text">Added Cline (open-source) (open-source coding agent for VS Code, JetBrains IDEs and the terminal; Coding agent): overall 55, evidence grade A, 20 independent performance sources (8 peer-reviewed). Thirteen counted studies are security studies; recent tests state the version tested, though none states a v4.x extension version. Material from the Cline team and results for its forks (Roo Code, Kilo Code) are not counted. Two high or critical CVEs in companion servers of the command-line tool have fixes in code. Citation check incomplete — recheck later. The coding-agents comparison now lists Cline among open-source frameworks run with a language model chosen by the user. Before: none. After: 55 / A. Decision 0087. As of 2026-10-20. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0086</id>
 <title>Site change (0086)</title>
 <updated>2026-10-20T00:00:00Z</updated>
