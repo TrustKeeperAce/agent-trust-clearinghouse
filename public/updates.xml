@@ -3,11 +3,20 @@
 <title>Agent Reputation &amp; Trust Clearinghouse: agent updates</title>
 <subtitle>Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</subtitle>
 <id>tag:agent-trust-clearinghouse,2026:updates</id>
-<updated>2026-10-19T00:00:00Z</updated>
+<updated>2026-10-20T00:00:00Z</updated>
 <link rel="self" type="application/atom+xml" href="https://agent-trust-clearinghouse.vercel.app/updates.xml"/>
 <link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
+<entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0085/mini-swe-agent</id>
+<title>mini-SWE-agent (open-source): new entry, 61 / A</title>
+<updated>2026-10-20T00:00:00Z</updated>
+<published>2026-10-20T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html"/>
+<category term="new_entry"/>
+<summary type="text">Added mini-SWE-agent (open-source) (minimal bash-only coding agent from the SWE-bench and SWE-agent team; Coding agent): overall 61, evidence grade A, 16 independent performance sources (9 peer-reviewed). Most counted studies run it alongside other harnesses with the same models; recent tests state the version tested, including the latest release (2.4.6). Studies and leaderboards involving mini-SWE-agent developers are not counted, and no runs are counted for both this entry and SWE-agent. One medium-severity CVE affects its optional Bubblewrap sandbox. Citation check incomplete — recheck later. The SWE-agent scope now notes that mini-SWE-agent has its own entry, and the coding-agents comparison lists it among open-source frameworks (no score or grade change for SWE-agent). Before: none. After: 61 / A. Decision 0085. As of 2026-10-20. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
 <entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-19-0084/factool</id>
 <title>FacTool (open-source): new entry, 55 / B</title>

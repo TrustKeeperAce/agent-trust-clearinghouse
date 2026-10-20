@@ -2,7 +2,7 @@
 
 > Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.
 
-Data as of 2026-10-19 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://agent-trust-clearinghouse.vercel.app/llms.txt. Machine-readable data: https://agent-trust-clearinghouse.vercel.app/data/agents.json (same source as this file). Full rules: https://agent-trust-clearinghouse.vercel.app/methodology.html
+Data as of 2026-10-20 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://agent-trust-clearinghouse.vercel.app/llms.txt. Machine-readable data: https://agent-trust-clearinghouse.vercel.app/data/agents.json (same source as this file). Full rules: https://agent-trust-clearinghouse.vercel.app/methodology.html
 
 ## How this directory works
 
@@ -1086,6 +1086,69 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-18.
 
+### mini-SWE-agent (open-source)
+
+- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html
+- Category: Coding agent; type: Open-source minimal coding agent (MIT licence) from the Princeton University and Stanford University SWE-agent/SWE-bench team; PyPI/GitHub mini-swe-agent
+- Status: Scored
+- Factor scores (0–100): completion rate 55, disputes 55, adherence to limits 50, evidence quality 85
+- Overall score: 61; evidence grade: A
+- Grade note: Grade A: 16 counted sources (9 peer-reviewed), and recent tests state the version tested: What Does a Harness Buy? (preprint, mini-swe-agent 2.4.6, the latest release), SWE-Serve (v2.4.3), DeepSWE (May 2026 commit) and DCAS (ASE 2026, v2.2.8). Results reflect the model and harness together (see Decision 0085, D3).
+- Counted independent performance sources: 16; other sources (as in agents.json): 10; all sources listed but not counted: 16
+- Last reviewed: 2026-10-20
+
+Scope: The open-source mini-SWE-agent (about 100 lines of agent code; the model acts only through bash commands), run with a language model chosen by the user, from v1.0.0 (22 July 2025) through v2.4.6 (23 July 2026) and the main branch (last code change 3 September 2026). v1.x and v2.x are both covered; v2.0.0 (11 February 2026) changed the interface. Studies that run models inside unmodified mini-SWE-agent count as tests of mini-SWE-agent; modified copies, forks and agents built on it are listed as other. SWE-agent, the team's larger agent, is a separate entry, and no study is counted for the same runs in both entries.
+
+Summary: mini-SWE-agent is a minimal open-source coding agent from the team behind SWE-bench and SWE-agent: about 100 lines of code that let a language model chosen by the user work in a repository through bash commands only. Sixteen independent studies that ran it were found (nine peer-reviewed), most from 2026, and most compared it with other harnesses using the same models. With strong recent models it often scored close to heavier harnesses (within five points of Claude Code on SWE-bench Verified with mini-SWE-agent 2.4.6; 75.5% against 69.8-73.6% for vendor harnesses on SWE-Serve), but several studies found it lower with weaker or differently trained models and on some task types (backend development in ABC-Bench, test generation in SWE-Mutation, small open models in SWEnergy). Security studies found weaknesses in 4.3-6.0% of its test-passing patches, an attack success rate between those of SWE-agent and OpenHands, and runs it reported as successful despite destructive patches. One medium-severity CVE affects its optional Bubblewrap sandbox, with no fix found as of 20 October 2026. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Results reflect the model and the harness together; most counted studies run several harnesses with the same models, and two use mini-SWE-agent only as a fixed harness to compare models.
+- Many more papers run mini-SWE-agent than are counted here; the counted set is a representative sample of independent studies found, not an exhaustive list.
+- The SWE-bench and bash-only leaderboards, ProgramBench and CodeClash involve mini-SWE-agent developers and are not counted (0031).
+- v2.0.0 (February 2026) changed the interface; most counted studies do not state which version they ran, and older results may describe v1.
+- When "Correct" Is Not Safe and A Jagged Frontier share two authors.
+- ABC-Bench figures are read from a chart.
+- CVE-2026-108592 was published on 10 October 2026; NVD has not analysed it, and no fix was found as of 20 October 2026.
+- Citation check incomplete — recheck later (OpenAlex full text used: 458 works matched and 419 downloaded; Semantic Scholar intermittently rate-limited and the arXiv API timed out).
+
+Counted sources:
+- https://doi.org/10.18653/v1/2026.acl-long.707 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.18653/v1/2026.findings-acl.1652 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.1145/3832783.3834485 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.1145/3786167.3788406 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.4230/LIPIcs.ESEM.2026.18 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.18653/v1/2026.findings-acl.1142 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.18653/v1/2026.findings-acl.1976 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.18653/v1/2026.findings-acl.2032 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.04433 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.26777 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.32459 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2608.18389 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.32495 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2607.07946 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.18653/v1/2026.findings-acl.1143 (independent performance, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.06193 (independent performance, accessed 2026-10-20)
+
+Sources listed but not counted:
+- https://arxiv.org/abs/2609.34198 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2605.18332 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2609.35199 (other, accessed 2026-10-20)
+- https://doi.org/10.1145/3797126 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2511.13646 (other, accessed 2026-10-20)
+- https://doi.org/10.1007/978-3-032-24839-8_10 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2608.26218 (other, accessed 2026-10-20)
+- https://nvd.nist.gov/vuln/detail/CVE-2026-108592 (other, accessed 2026-10-20)
+- https://github.com/SWE-agent/mini-swe-agent/issues/941 (anecdotal, accessed 2026-10-20)
+- https://github.com/SWE-agent/mini-swe-agent/issues/990 (anecdotal, accessed 2026-10-20)
+- https://github.com/SWE-agent/mini-swe-agent (vendor or maintainer, accessed 2026-10-20)
+- https://github.com/SWE-agent/mini-swe-agent/pull/794 (vendor or maintainer, accessed 2026-10-20)
+- https://www.swebench.com/ (not counted (affiliated leaderboard), accessed 2026-10-20)
+- https://hal.cs.princeton.edu/ (not counted (leaderboard), accessed 2026-10-20)
+- https://arxiv.org/abs/2511.00839 (excluded, accessed 2026-10-20)
+- https://arxiv.org/abs/2605.03546 (excluded, accessed 2026-10-20)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
+
 ### Open Interpreter
 
 - Entry page: https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html
@@ -1514,7 +1577,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 - Counted independent performance sources: 10; other sources (as in agents.json): 6; all sources listed but not counted: 9
 - Last reviewed: 2026-10-17
 
-Scope: The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team, and the team's EnIGMA security variant are not covered.
+Scope: The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team with its own entry, and the team's EnIGMA security variant are not covered.
 
 Summary: SWE-agent is an open-source coding agent that gives a language model a purpose-built command interface for browsing, editing and testing a repository. It is run with a model chosen by the user. Ten independent studies that ran or analysed it were found (eight peer-reviewed). Results depend heavily on the model and task. They range from 10-17.67% on fresh GitHub issues (SWE-bench-Live Lite) and 16.2-43.6% on SWE-Bench Pro's public set, to 42.59% on GitTaskBench, 33.8% on vulnerability patching (SEC-bench) and 22 of 100 correct Python vulnerability fixes when given fix-location hints (Vul4Py). In a static-analysis triage study (Sifting the Noise, ISSTA 2026), it had the best false-positive filtering of 12 agent-model settings but wrongly dismissed 22.25% of real vulnerabilities. In a security benchmark (SusVibes), 5.4-12.9% of its solutions were both functional and secure, the best of three frameworks tested. In an analysis of third-party SWE-agent runs, 3.9-14.9% of test-passing runs had static-analysis security findings in the final code; these are scanner findings, not confirmed vulnerabilities, and the authors could not tell whether the agent introduced them. Re-checks of early leaderboard results found that some reported fixes were incorrect or relied on leaked solutions. One CVE has been published for an optional trajectory viewer; no fix was identified as of 17 October 2026. The project has had no release since May 2025. Informational only; not a guarantee, endorsement, or certification.
 

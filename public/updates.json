@@ -12,7 +12,7 @@
   }
  ],
  "_clearinghouse": {
-  "generated": "2026-10-19",
+  "generated": "2026-10-20",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
   "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/aider.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://agent-trust-clearinghouse.vercel.app/citing.html",
@@ -20,6 +20,34 @@
   "note": "before is null for new entries; values that could not be recovered are null."
  },
  "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0085/mini-swe-agent",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html",
+   "title": "mini-SWE-agent (open-source): new entry, 61 / A",
+   "content_text": "Added mini-SWE-agent (open-source) (minimal bash-only coding agent from the SWE-bench and SWE-agent team; Coding agent): overall 61, evidence grade A, 16 independent performance sources (9 peer-reviewed). Most counted studies run it alongside other harnesses with the same models; recent tests state the version tested, including the latest release (2.4.6). Studies and leaderboards involving mini-SWE-agent developers are not counted, and no runs are counted for both this entry and SWE-agent. One medium-severity CVE affects its optional Bubblewrap sandbox. Citation check incomplete — recheck later. The SWE-agent scope now notes that mini-SWE-agent has its own entry, and the coding-agents comparison lists it among open-source frameworks (no score or grade change for SWE-agent). Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-20T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "mini-swe-agent",
+    "entry_url": "https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html",
+    "before": null,
+    "after": {
+     "overall_score": 61,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0085"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0085-mini-swe-agent.md",
+    "as_of": "2026-10-20",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
   {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-19-0084/factool",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/factool.html",

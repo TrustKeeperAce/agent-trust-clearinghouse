@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-20-0085
+  date: '2026-10-20'
+  decision_packets:
+  - '0085'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0085-mini-swe-agent.md
+  change_html: 'Added <a href="/agents/mini-swe-agent.html">mini-SWE-agent (open-source)</a> (minimal bash-only coding agent from the SWE-bench and SWE-agent team; Coding agent): overall 61, evidence grade A, 16 independent performance sources (9 peer-reviewed). Most counted studies run it alongside other harnesses with the same models; recent tests state the version tested, including the latest release (2.4.6). Studies and leaderboards involving mini-SWE-agent developers are not counted, and no runs are counted for both this entry and SWE-agent. One medium-severity CVE affects its optional Bubblewrap sandbox. Citation check incomplete — recheck later. The <a href="/agents/swe-agent.html">SWE-agent</a> scope now notes that mini-SWE-agent has its own entry, and the coding-agents comparison lists it among open-source frameworks (no score or grade change for SWE-agent).'
+  changes:
+  - agent_id: mini-swe-agent
+    type: new_entry
+    before: null
+    after:
+      overall_score: 61
+      evidence_grade: A
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-19-0084
   date: '2026-10-19'
   decision_packets:

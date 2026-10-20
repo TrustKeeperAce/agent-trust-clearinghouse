@@ -1,14 +1,14 @@
 {
  "dataset": {
   "name": "Agent Reputation & Trust Clearinghouse",
-  "version": "Scoring rules v0.1; data 2026-10-19",
-  "generated": "2026-10-19",
+  "version": "Scoring rules v0.1; data 2026-10-20",
+  "generated": "2026-10-20",
   "rules": "Scoring rules v0.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "canonical": "https://agent-trust-clearinghouse.vercel.app/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 36
+  "entry_count": 37
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -871,6 +871,261 @@
    ]
   },
   {
+   "id": "mini-swe-agent",
+   "name": "mini-SWE-agent (open-source)",
+   "url": "https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html",
+   "homepage": "https://github.com/SWE-agent/mini-swe-agent",
+   "category": "Coding agent",
+   "type": "Open-source minimal coding agent (MIT licence) from the Princeton University and Stanford University SWE-agent/SWE-bench team; PyPI/GitHub mini-swe-agent",
+   "scope": "The open-source mini-SWE-agent (about 100 lines of agent code; the model acts only through bash commands), run with a language model chosen by the user, from v1.0.0 (22 July 2025) through v2.4.6 (23 July 2026) and the main branch (last code change 3 September 2026). v1.x and v2.x are both covered; v2.0.0 (11 February 2026) changed the interface. Studies that run models inside unmodified mini-SWE-agent count as tests of mini-SWE-agent; modified copies, forks and agents built on it are listed as other. SWE-agent, the team's larger agent, is a separate entry, and no study is counted for the same runs in both entries.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 55,
+    "disputes": 55,
+    "adherence_to_limits": 50,
+    "evidence_quality": 85
+   },
+   "overall_score": 61,
+   "evidence_grade": "A",
+   "grade_note": "Grade A: 16 counted sources (9 peer-reviewed), and recent tests state the version tested: What Does a Harness Buy? (preprint, mini-swe-agent 2.4.6, the latest release), SWE-Serve (v2.4.3), DeepSWE (May 2026 commit) and DCAS (ASE 2026, v2.2.8). Results reflect the model and harness together (see Decision 0085, D3).",
+   "independent_source_count": {
+    "performance": 16,
+    "other": 10
+   },
+   "counted_performance_sources": 16,
+   "peer_reviewed_counted_sources": 9,
+   "last_reviewed": "2026-10-20",
+   "decision_packets": [
+    "decisions/0085-mini-swe-agent.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.18653/v1/2026.acl-long.707",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-acl.1652",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832783.3834485",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3786167.3788406",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.4230/LIPIcs.ESEM.2026.18",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-acl.1142",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-acl.1976",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-acl.2032",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.04433",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.26777",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32459",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.18389",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32495",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.07946",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-acl.1143",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.06193",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.34198",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.18332",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.35199",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3797126",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.13646",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1007/978-3-032-24839-8_10",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.26218",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108592",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/SWE-agent/mini-swe-agent/issues/941",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/SWE-agent/mini-swe-agent/issues/990",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/SWE-agent/mini-swe-agent",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/SWE-agent/mini-swe-agent/pull/794",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.swebench.com/",
+     "kind": "not counted (affiliated leaderboard)",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://hal.cs.princeton.edu/",
+     "kind": "not counted (leaderboard)",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.00839",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.03546",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
    "id": "openhands",
    "name": "OpenHands (open-source)",
    "url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
@@ -1488,7 +1743,7 @@
    "homepage": "https://github.com/SWE-agent/SWE-agent",
    "category": "Coding agent",
    "type": "Open-source coding-agent framework (MIT licence) from Princeton University and Stanford University researchers; PyPI/GitHub SWE-agent",
-   "scope": "The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team, and the team's EnIGMA security variant are not covered.",
+   "scope": "The open-source SWE-agent framework (agent-computer interface, default configurations) run with a language model chosen by the user, from the 2024 release through v1.1.0 (22 May 2025) and the main branch (last commit 16 July 2026). mini-SWE-agent, a separate minimal agent from the same team with its own entry, and the team's EnIGMA security variant are not covered.",
    "status": "Scored",
    "scores": {
     "completion_rate": 45,
