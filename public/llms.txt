@@ -53,6 +53,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [Aider (open-source)](https://www.agentclearinghouse.org/agents/aider.html): overall 52, evidence grade A
 - [Browser Use (open-source library)](https://www.agentclearinghouse.org/agents/browser-use.html): overall 51, evidence grade A
 - [Devin (Cognition)](https://www.agentclearinghouse.org/agents/devin.html): overall 50, evidence grade B
+- [Magentic-One (open-source)](https://www.agentclearinghouse.org/agents/magentic-one.html): overall 50, evidence grade B
 - [Agent S (open-source framework)](https://www.agentclearinghouse.org/agents/agent-s.html): overall 49, evidence grade B
 - [Data Interpreter (MetaGPT, open-source)](https://www.agentclearinghouse.org/agents/data-interpreter.html): overall 49, evidence grade B
 - [Skyvern (open-source)](https://www.agentclearinghouse.org/agents/skyvern.html): overall 44, evidence grade B-

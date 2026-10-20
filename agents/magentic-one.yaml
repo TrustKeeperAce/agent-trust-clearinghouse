@@ -1,0 +1,176 @@
+name: Magentic-One (open-source)
+slug: magentic-one
+category: Browser/web agent
+type: 'Open-source generalist multi-agent system from Microsoft Research AI Frontiers, built on AutoGen: an Orchestrator directing WebSurfer, FileSurfer, Coder and ComputerTerminal agents; GitHub microsoft/autogen (autogen-agentchat, autogen-ext, magentic-one-cli)'
+homepage: https://github.com/microsoft/autogen
+scope: 'Magentic-One as released by Microsoft in AutoGen: the Magentic-One group chat with its Orchestrator, WebSurfer, FileSurfer, Coder and ComputerTerminal agents (autogen-agentchat and autogen-ext 0.4 to 0.7.5; 0.7.5 of 30 September 2025 is the latest release), the magentic-one-cli tool and the original November 2024 package, run with a language model chosen by the user. Magentic-UI, the Magentic orchestration in Microsoft Agent Framework and setups that keep only the orchestrator with other agents are separate and not counted here. AutoGen Studio is covered only as context under disputes.'
+summary: Magentic-One is an open-source multi-agent system from Microsoft Research, released in November 2024 on the AutoGen framework, in which an orchestrator plans and directs agents that browse the web, read files, write code and run it in a terminal. Six independent studies that ran it were found (four peer-reviewed). On GAIA it solved about 38% of tasks with GPT-4o in one study and about 43% of Level 1 and 26% of Level 2 tasks with Qwen-Plus in another; on large document-processing workflows it did not complete tasks reliably. Security studies found that malicious files or web pages could redirect it to run attacker code in most trials (97% with GPT-4o and a local file), and that benign errors often led it to unsafe actions such as privilege changes. One study tested the current release (0.7.5). Since October 2026 the developer's AutoGen page says the project is archived and no longer receives bug or security fixes; GitHub does not mark the repository as archived. Informational only; not a guarantee, endorsement, or certification.
+scores:
+  completion_rate: 40
+  disputes: 60
+  adherence_to_limits: 30
+  evidence_quality: 75
+overall_score: 50
+evidence_grade: B
+grade_note: 'Grade B: 6 counted sources (4 peer-reviewed), below the 7 needed for A. One counted test states the version (Agent Meltdowns, 0.7.5, accessed 2 May 2026), which is still the latest release. Studies that kept only the Magentic-One orchestrator with other agents, and studies with Microsoft-affiliated authors, are not counted (see Decision 0088, D2 and D3).'
+independent_source_count:
+  performance: 6
+  peer_reviewed: 4
+  other: 13
+factor_notes:
+  completion_rate: 'GAIA with GPT-4o: 38.0% of tasks solved across the traces in MAST (NeurIPS 2025). GAIA with Qwen-Plus: about 43% on Level 1 and 26% on Level 2 as a baseline (ICML 2026), lower than the authors'' parallel variants. In TraceElephant (ACL 2026), 74 of 119 GAIA runs and 17 of 30 AssistantBench runs failed. On large document-processing workflows it did not complete tasks reliably, with orchestration errors and context growth (APWA). The developer''s own GAIA, AssistantBench and WebArena results are not counted.'
+  disputes: No CVE or GitHub security advisory was found for Magentic-One, autogen-agentchat, autogen-ext or magentic-one-cli (NVD and GitHub, 20 October 2026). Hardening of component loading and of the VideoSurfer agent (URL input and path traversal) was merged on the main branch on 25 March 2026 but is not in any PyPI release (latest 0.7.5, 30 September 2025). On 16 October 2026 the developer's AutoGen README was updated to say the project is archived and no longer receives bug or security fixes; GitHub did not mark the repository as archived (checked 20 October 2026). A security company lists an unconfirmed path-traversal report for magentic-one-cli without a CVE. The AutoJack issue concerned AutoGen Studio, not Magentic-One, and never shipped in a PyPI release. No legal or regulatory action found.
+  adherence_to_limits: 'Multi-Agent Systems Execute Arbitrary Malicious Code (COLM 2025): the Magentic-One orchestrator ran attacker code in 97% of trials with GPT-4o after reading a malicious local file and in 88% with Gemini 1.5 Pro after visiting a malicious web page, although direct and indirect prompt injection baselines rarely succeeded. Agent Meltdowns (0.7.5, GPT-5): after benign errors it attempted 90.9% of the medium- and high-severity actions it planned, 58.6% of attempts succeeded, and it reported 54.3% of such behaviours to the user; with GPT-5 it accounted for the largest share of access-control-related behaviours among the four harnesses tested.'
+  evidence_quality: Six independent sources, four peer-reviewed (COLM 2025, NeurIPS 2025 Datasets and Benchmarks, ACL 2026, ICML 2026), plus two 2026 preprints. One states the version (0.7.5, the latest release). Two counted studies share authors (Cornell), two propose competing methods (disclosed), and one is a failure-attribution benchmark whose task selection was not designed as a benchmark score. Many other papers use Magentic-One traces or an adapted orchestrator and are listed as other. Several studies with Microsoft-affiliated authors are excluded.
+uncertainties:
+- Results reflect the language model and Magentic-One together; studies used GPT-4o, Gemini 1.5, Qwen-Plus, GPT-5 and GPT-5.4 models.
+- Only one counted study states the version tested; the others most likely used 0.4.x releases from 2025.
+- Since 16 October 2026 the AutoGen README says the project is archived and no longer receives bug or security fixes, although GitHub does not mark the repository as archived (20 October 2026); later security issues may not be fixed, and the March 2026 hardening is not in a PyPI release.
+- Magentic-UI and the Microsoft Agent Framework Magentic orchestration are separate products; their results are not counted here.
+- Several studies run the Magentic-One orchestrator with substituted agents; they are listed as other, and counting them would change the grade (see Decision 0088, D2).
+- Studies with Microsoft-affiliated authors who are not on the Magentic-One team are excluded; counting them would change the grade (see Decision 0088, D3).
+- Two counted studies share authors (Multi-Agent Systems Execute Arbitrary Malicious Code and Agent Meltdowns).
+- 'Citation check incomplete — recheck later (OpenAlex full text: 284 works matched and 244 downloaded; Semantic Scholar and the arXiv API were unavailable).'
+sources:
+- url: https://arxiv.org/abs/2503.12188
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated (AutoGen default Magentic-One group chat)
+  test_date: early 2025 (arXiv v1 March 2025)
+  accessed: '2026-10-20'
+  note: 'Multi-Agent Systems Execute Arbitrary Malicious Code (Triedman, Jha, Shmatikov; Cornell Tech; COLM 2025): control-flow hijacking through malicious local files and web pages in AutoGen (default Magentic-One group chat with orchestrator, file surfer, web surfer, coder and code executor), CrewAI and MetaGPT; ''the Magentic-One orchestrator, running on GPT-4o, executes arbitrary malicious code 97% of the time if it interacts with a malicious local file'', and 88% of the time with Gemini 1.5 Pro and a malicious web page. Shares authors with Agent Meltdowns (counted)'
+- url: https://arxiv.org/abs/2503.13657
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: '2025'
+  accessed: '2026-10-20'
+  note: 'Why Do Multi-Agent LLM Systems Fail? (MAST; UC Berkeley, Intesa Sanpaolo; NeurIPS 2025 Datasets and Benchmarks): 1,642 annotated traces from seven multi-agent systems, including 195 Magentic-One traces on GAIA with GPT-4o; Magentic-One succeeded on 38.0% and failed on 62.0% of the GAIA tasks run (Figure 5), with failures classified by the MAST taxonomy'
+- url: https://doi.org/10.18653/v1/2026.acl-long.912
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: 2025-2026
+  accessed: '2026-10-20'
+  note: 'Seeing the Whole Elephant (TraceElephant; Institute of Software, Chinese Academy of Sciences; ACL 2026): the authors ran Magentic-One on GAIA (119 traces, 74 failed) and AssistantBench (30 traces, 17 failed) at temperature 0.3 to build a failure-attribution benchmark; agents that interact with external environments, such as web browsing, accounted for about half of failures. Task selection served the benchmark, so the failure share is not a benchmark score'
+- url: https://proceedings.mlr.press/v306/xu26bb.html
+  kind: independent performance
+  peer_reviewed: true
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-20'
+  note: 'A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems (Beijing University of Posts and Telecommunications; ICML 2026, PMLR 306; preprint arXiv 2608.05791 counted once): Magentic-One with Qwen-Plus as the baseline on GAIA; the authors'' parallel configurations raised accuracy ''from approximately 43% to 52–57% on Level 1 tasks, and from around 26% to up to 39% on Level 2 tasks'', with Magentic-One taking about 320 s per Level 2 task against about 170–280 s. Authors propose a competing method built on the Magentic-One architecture (disclosed)'
+- url: https://arxiv.org/abs/2605.19149
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: autogen 0.7.5 (PyPI)
+  test_date: 2026 (accessed 2 May 2026)
+  accessed: '2026-10-20'
+  note: 'Agent Meltdowns (Jha, Triedman, Bhattacharya, Shmatikov; Cornell University; preprint, May 2026): unsafe actions after benign errors (404, 429, missing files) in Magentic-One, OpenAI Codex, Claw Code and the HAL Generalist Agent; Magentic-One ''Version 0.7.5, accessed via AutoGen on PyPI on 2026-05-02'', mainly with GPT-5. For medium- and high-severity behaviours with GPT-5, Magentic-One''s planned-to-attempted rate was 90.9%, attempted-to-successful 58.6% and reporting rate 54.3%; it accounted for 45.5% of agent privilege escalations (30/66) and 76.9% of access-control mutations (10/13) across the four harnesses. Shares authors with Multi-Agent Systems Execute Arbitrary Malicious Code (counted)'
+- url: https://arxiv.org/abs/2605.15132
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated
+  test_date: '2026'
+  accessed: '2026-10-20'
+  note: 'APWA (Northeastern University; preprint, May 2026): Magentic-One as a baseline for large document-processing workflows with GPT-5.4-family models; ''Magentic-One is unable to complete any of the tasks reliably, only managing to produce an output in a single trial for PII-300k with all 4096 documents''; the authors describe orchestration failures and a FileSurfer run that consumed over 6.5M input tokens before a 30-minute timeout. Authors propose a competing architecture (disclosed)'
+- url: https://arxiv.org/abs/2608.25920
+  kind: other
+  accessed: '2026-10-20'
+  note: 'Repair or Resample? (East China Normal University, Nanyang Technological University and others; preprint, August 2026): 200 WebArena hard and AssistantBench tasks per framework; the Magentic-One adapter ''uses AutoGen AgentChat 0.7.5'' and imports ''AssistantAgent and MagenticOneGroupChat'', so the Magentic-One orchestrator ran with general assistant agents rather than its own web, file, coding and terminal agents; 181 Magentic-One runs were kept as evaluator-confirmed failures; the paper excludes 64 of its 600 runs before annotation for reasons other than success, so no success rate is derived here. Orchestrator with substituted agents, listed as other (see D2)'
+- url: https://arxiv.org/abs/2509.07595
+  kind: other
+  accessed: '2026-10-20'
+  note: 'AgentX (Indian Institute of Science, IBM India Research Lab; preprint, September 2025): compares the authors'' pattern with ReAct and a Magentic-One pattern in AutoGen whose default agents were replaced by one agent per MCP server (''we adapt this architecture by replacing the default agents''); Magentic-One scored lower on a stock-correlation task and had a mean framework latency of 30.1 s. Adapted configuration (0042), listed as other (see D2)'
+- url: https://arxiv.org/abs/2610.13870
+  kind: other
+  accessed: '2026-10-20'
+  note: 'Ask Your Advisor (ETH Zurich; preprint, October 2026): uses Magentic-One as the execution framework for a learned policy that decides when a smaller model consults a stronger one, on SWE-bench, Terminal-Bench 2.1 and τ2-bench. The agent setup is adapted to each benchmark and the results describe the authors'' controller (see D2)'
+- url: https://arxiv.org/abs/2505.24201
+  kind: other
+  accessed: '2026-10-20'
+  note: 'SentinelAgent (preprint, May 2025): a graph-based anomaly detector demonstrated on a Magentic-One case study in which the orchestrator followed instructions planted in a file to upload local files to a remote server. A qualitative case study, with no measured rate'
+- url: https://arxiv.org/abs/2608.20370
+  kind: other
+  accessed: '2026-10-20'
+  note: 'XPerf (University of Illinois; preprint, June 2026): uses Magentic-One traces as one of several workloads for benchmarking LLM serving systems; it reports LLM-call counts and latency for the serving stack, not task results'
+- url: https://huggingface.co/datasets/gaia-benchmark/results_public
+  kind: other
+  accessed: '2026-10-20'
+  note: 'GAIA leaderboard results (Hugging Face): entries ''Magentic-1'' (GPT-4o; 0.3697) and ''Magentic-1 (o1)'' (0.4606), organisation ''MSR AI Frontiers'', October 2024. Submitted by the developer and scored by the benchmark maintainers, so listed as other (0036 caution 3)'
+- url: https://arxiv.org/abs/2502.01635
+  kind: other
+  accessed: '2026-10-20'
+  note: 'The AI Agent Index (MIT and others; 2025): a sample agent card for Magentic-One documenting its stated uses, developer and safety information, not a test. The authors state they have no conflicts of interest related to Microsoft or Magentic-One'
+- url: https://doi.org/10.18653/v1/2026.findings-eacl.318
+  kind: other
+  accessed: '2026-10-20'
+  note: 'Coding Agents with Multimodal Browsing are Generalist Problem Solvers (Carnegie Mellon University and others; Findings of EACL 2026): lists Magentic-One''s GAIA result of 37.87% (GPT-4o, o1) as a comparison point; the figure is Microsoft''s reported result, not a new run'
+- url: https://arxiv.org/abs/2610.18780
+  kind: other
+  accessed: '2026-10-20'
+  note: 'BLADE (University of Connecticut; preprint, October 2026): failure-attribution method evaluated on Magentic-One traces from Who&When and Who&When Pro. Re-analysis of traces produced by others (0076)'
+- url: https://arxiv.org/abs/2610.11334
+  kind: other
+  accessed: '2026-10-20'
+  note: 'ReCast (preprint, October 2026): failure-attribution method evaluated on Magentic-One traces from existing datasets. Re-analysis of traces produced by others (0076)'
+- url: https://arxiv.org/abs/2610.13105
+  kind: other
+  accessed: '2026-10-20'
+  note: 'Can Failed Trajectories Reveal Where Agents Go Wrong? (preprint, October 2026): uses the Magentic-One subset of TraceElephant (91 trajectories) to test failure attribution without step labels. Re-analysis of traces produced by others (0076)'
+- url: https://www.correctover.com/audit
+  kind: other
+  accessed: '2026-10-20'
+  note: 'Correctover (security company audit page, 2026): lists a path-traversal finding in magentic-one-cli through the --config option (rated CVSS 9.8 by the company) as ''MSRC Submitted''. No CVE, GitHub advisory or maintainer response was found; unconfirmed'
+- url: https://www.bleepingcomputer.com/news/security/microsoft-fixes-autogen-studio-flaw-that-enabled-code-execution/
+  kind: other
+  accessed: '2026-10-20'
+  note: 'BleepingComputer (22 June 2026): reports the AutoJack chain in AutoGen Studio''s MCP WebSocket, where a web page visited by a browsing agent could start processes on the host; Microsoft says the affected code ''never shipped in a published package''. AutoGen Studio is not part of Magentic-One; context only'
+- url: https://arxiv.org/abs/2411.04468
+  kind: excluded
+  accessed: '2026-10-20'
+  note: Magentic-One technical report (Fourney et al., Microsoft Research AI Frontiers, November 2024), including its GAIA, AssistantBench and WebArena results. Developer-authored, excluded under 0031
+- url: https://arxiv.org/abs/2505.00212
+  kind: excluded
+  accessed: '2026-10-20'
+  note: 'Which Agent Causes Task Failures and When? (Who&When; ICML 2025): failure logs including Magentic-One runs; co-authors include AutoGen co-creators Chi Wang and Qingyun Wu. AutoGen-team paper, excluded under 0031 (see D4)'
+- url: https://arxiv.org/abs/2607.09996
+  kind: excluded
+  accessed: '2026-10-20'
+  note: 'Who&When Pro (preprint, July 2026): co-authors include Chi Wang and Qingyun Wu. AutoGen-team paper, excluded under 0031 (see D4)'
+- url: https://arxiv.org/abs/2510.17276
+  kind: excluded
+  accessed: '2026-10-20'
+  note: 'Breaking and Fixing Defenses Against Control-Flow Hijacking in Multi-Agent Systems (Cornell University and Microsoft; ICLR 2026): runs the Magentic-One configuration on AutoGen; attacks reached up to 56% success against two published defences, and undefended Magentic-One had 65% benign task success. One author is at Microsoft, the developer, so excluded under 0031 (see D3)'
+- url: https://doi.org/10.18653/v1/2026.acl-long.1442
+  kind: excluded
+  accessed: '2026-10-20'
+  note: 'TAMAS (IIIT Hyderabad and Microsoft Research India; ACL 2026): adversarial attacks on multi-agent configurations including Magentic-One (''DPI 81% in Magentic-One''). One author is at Microsoft Research, so excluded under 0031 (see D3)'
+- url: https://arxiv.org/abs/2604.08970
+  kind: excluded
+  accessed: '2026-10-20'
+  note: 'Litmus (Re)Agent (Microsoft Corporation India, MBZUAI, IIT Hyderabad; preprint, April 2026): Magentic-One as a baseline for predicting multilingual model performance. First author at Microsoft, so excluded under 0031 (see D3)'
+- url: https://github.com/microsoft/autogen
+  kind: vendor or maintainer
+  accessed: '2026-10-20'
+  note: 'microsoft/autogen repository and README (CC-BY-4.0 and MIT; Magentic-One in python/packages/magentic-one-cli and autogen-agentchat): on 16 October 2026 the README states the project ''has been archived and is no longer actively maintained by Microsoft'' and that Microsoft is not providing bug fixes or security fixes; GitHub''s archived flag was off on 20 October 2026. Not counted'
+- url: https://pypi.org/project/autogen-agentchat/
+  kind: vendor or maintainer
+  accessed: '2026-10-20'
+  note: PyPI autogen-agentchat and autogen-ext 0.7.5 (30 September 2025), the latest releases on 20 October 2026; magentic-one-cli 0.2.4 (3 April 2025). Release metadata. Not counted
+- url: https://github.com/microsoft/autogen/pull/7463
+  kind: vendor or maintainer
+  accessed: '2026-10-20'
+  note: 'Pull request #7463 (merged 25 March 2026 ET): restricts component loading to AutoGen namespaces and hardens VideoSurfer audio extraction against URL input (SSRF) and path traversal. Merged on the main branch after 0.7.5; not in any PyPI release on 20 October 2026. Not counted'
+- url: https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/
+  kind: vendor or maintainer
+  accessed: '2026-10-20'
+  note: 'Microsoft Security Blog (18 June 2026): AutoJack in AutoGen Studio; ''The affected MCP WebSocket surface was never included in a Python Package Index (PyPI) release''. Developer-company material about a component outside Magentic-One. Not counted'
+- url: https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/magentic
+  kind: vendor or maintainer
+  accessed: '2026-10-20'
+  note: 'Microsoft Agent Framework documentation, Magentic orchestration: ''designed based on the Magentic-One system''; ''it is untested how well the Magentic orchestration will perform outside of the original Magentic-One design''. A separate re-implementation, out of scope (0042). Not counted'
+last_reviewed: '2026-10-20'
+decision: APPROVED
+decision_packet: decisions/0088-magentic-one.md
+notes: Informational only; not a guarantee, endorsement, or certification.

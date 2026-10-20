@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0088/magentic-one</id>
+<title>Magentic-One (open-source): new entry, 50 / B</title>
+<updated>2026-10-20T00:00:00Z</updated>
+<published>2026-10-20T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/magentic-one.html"/>
+<category term="new_entry"/>
+<summary type="text">Added Magentic-One (open-source) (Microsoft Research multi-agent system built on AutoGen, with an orchestrator directing web, file, coding and terminal agents; Browser/web agent): overall 50, evidence grade B, 6 independent performance sources (4 peer-reviewed). One counted test states the current release (0.7.5). Material from the Magentic-One and AutoGen teams and from Microsoft-affiliated authors, orchestrator-only setups, Magentic-UI and the Agent Framework re-implementation are not counted. No CVE was found; since October 2026 the developer's AutoGen page says the project is archived and no longer receives bug or security fixes. Citation check incomplete — recheck later. Before: none. After: 50 / B. Decision 0088. As of 2026-10-20. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0087/cline</id>
 <title>Cline (open-source): new entry, 55 / A</title>
 <updated>2026-10-20T00:00:00Z</updated>

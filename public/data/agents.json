@@ -8,7 +8,7 @@
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 38
+  "entry_count": 39
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -4036,6 +4036,247 @@
      "url": "https://www.cognition.ai/blog/introducing-devin",
      "kind": "vendor (not counted)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "magentic-one",
+   "name": "Magentic-One (open-source)",
+   "url": "https://www.agentclearinghouse.org/agents/magentic-one.html",
+   "homepage": "https://github.com/microsoft/autogen",
+   "category": "Browser/web agent",
+   "type": "Open-source generalist multi-agent system from Microsoft Research AI Frontiers, built on AutoGen: an Orchestrator directing WebSurfer, FileSurfer, Coder and ComputerTerminal agents; GitHub microsoft/autogen (autogen-agentchat, autogen-ext, magentic-one-cli)",
+   "scope": "Magentic-One as released by Microsoft in AutoGen: the Magentic-One group chat with its Orchestrator, WebSurfer, FileSurfer, Coder and ComputerTerminal agents (autogen-agentchat and autogen-ext 0.4 to 0.7.5; 0.7.5 of 30 September 2025 is the latest release), the magentic-one-cli tool and the original November 2024 package, run with a language model chosen by the user. Magentic-UI, the Magentic orchestration in Microsoft Agent Framework and setups that keep only the orchestrator with other agents are separate and not counted here. AutoGen Studio is covered only as context under disputes.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 40,
+    "disputes": 60,
+    "adherence_to_limits": 30,
+    "evidence_quality": 75
+   },
+   "overall_score": 50,
+   "evidence_grade": "B",
+   "grade_note": "Grade B: 6 counted sources (4 peer-reviewed), below the 7 needed for A. One counted test states the version (Agent Meltdowns, 0.7.5, accessed 2 May 2026), which is still the latest release. Studies that kept only the Magentic-One orchestrator with other agents, and studies with Microsoft-affiliated authors, are not counted (see Decision 0088, D2 and D3).",
+   "independent_source_count": {
+    "performance": 6,
+    "other": 13
+   },
+   "counted_performance_sources": 6,
+   "peer_reviewed_counted_sources": 4,
+   "last_reviewed": "2026-10-20",
+   "decision_packets": [
+    "decisions/0088-magentic-one.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2503.12188",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2503.13657",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.acl-long.912",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://proceedings.mlr.press/v306/xu26bb.html",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.19149",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.15132",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.25920",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2509.07595",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.13870",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.24201",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.20370",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://huggingface.co/datasets/gaia-benchmark/results_public",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2502.01635",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.findings-eacl.318",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.18780",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.11334",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.13105",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.correctover.com/audit",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/microsoft-fixes-autogen-studio-flaw-that-enabled-code-execution/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2411.04468",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2505.00212",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.09996",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.17276",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.18653/v1/2026.acl-long.1442",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.08970",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/microsoft/autogen",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://pypi.org/project/autogen-agentchat/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/microsoft/autogen/pull/7463",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/magentic",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
      "counted": false,
      "peer_reviewed": null
     }
