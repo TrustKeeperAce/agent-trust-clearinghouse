@@ -314,14 +314,14 @@ for b in B.BANNED_CITE+[r'\bunlike\b',r'\bonly\b(?! (?:when|if)\b)',r'\bfirst\b'
     if re.search(b,_ct+' '+_ft+' '+B.HOW_H+' '+B.HOW_CALLOUT_LINK,re.I): E(f'0072: banned {b} in new text')
 print('0072: checked')
 # 0073: README checks
-README_LICENSE='## License\n- **Code** (`scripts/`, `public/style.css`, `vercel.json`): [Apache License 2.0](LICENSE). SPDX: `Apache-2.0`.\n- **Data and text** (`agents/`, `data/`, `public/data/`, feeds, generated pages, `decisions/`, `docs/`): [CC BY 4.0](LICENSE-DATA.md). SPDX: `CC-BY-4.0`.\n- **Not licensed:** the project name, logo and favicon; third-party sources and agent trademarks.\n- How to cite: [CITATION.cff](CITATION.cff) and https://agent-trust-clearinghouse.vercel.app/citing.html\n\nInformational only. Provided as is, without warranties; not a guarantee, endorsement, or certification.\n\n'
+README_LICENSE='## License\n- **Code** (`scripts/`, `public/style.css`, `vercel.json`): [Apache License 2.0](LICENSE). SPDX: `Apache-2.0`.\n- **Data and text** (`agents/`, `data/`, `public/data/`, feeds, generated pages, `decisions/`, `docs/`): [CC BY 4.0](LICENSE-DATA.md). SPDX: `CC-BY-4.0`.\n- **Not licensed:** the project name, logo and favicon; third-party sources and agent trademarks.\n- How to cite: [CITATION.cff](CITATION.cff) and https://www.agentclearinghouse.org/citing.html\n\nInformational only. Provided as is, without warranties; not a guarantee, endorsement, or certification.\n\n'
 _rd=open(os.path.join(B.R,'README.md')).read()
 for s_ in ['Phase 1','No agent entries','(none yet)','Scoring rules (v0)','published yet']:
     if s_ in _rd: E(f'0073: README stale phrase {s_!r}')
 if README_LICENSE not in _rd: E('0073: README License section not byte-identical to 0070 text')
 for l in re.findall(r'\]\(([^)\s]+)\)',_rd):
-    if l.startswith('https://agent-trust-clearinghouse.vercel.app/'):
-        pth,_,frag=l[len('https://agent-trust-clearinghouse.vercel.app/'):].partition('#')
+    if l.startswith('https://www.agentclearinghouse.org/'):
+        pth,_,frag=l[len('https://www.agentclearinghouse.org/'):].partition('#')
         f_=os.path.join(P,pth or 'index.html')
         if not os.path.isfile(f_): E(f'0073: README live link {l} has no public/ file')
         elif frag and f'id="{frag}"' not in open(f_).read(): E(f'0073: README anchor {l} missing')

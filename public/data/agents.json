@@ -5,7 +5,7 @@
   "generated": "2026-10-20",
   "rules": "Scoring rules v0.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "canonical": "https://agent-trust-clearinghouse.vercel.app/agents-data.html",
+  "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
   "entry_count": 37
@@ -16,7 +16,7 @@
   {
    "id": "elicit",
    "name": "Elicit",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/elicit.html",
+   "url": "https://www.agentclearinghouse.org/agents/elicit.html",
    "homepage": "https://elicit.com/",
    "category": "Research",
    "type": "commercial (free Basic tier; paid Plus, Pro and enterprise tiers)",
@@ -147,7 +147,7 @@
   {
    "id": "google-deepmind-safe",
    "name": "Google DeepMind SAFE (Search-Augmented Factuality Evaluator)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html",
+   "url": "https://www.agentclearinghouse.org/agents/google-deepmind-safe.html",
    "homepage": "https://github.com/google-deepmind/long-form-factuality",
    "category": "Verification",
    "type": "research code (Apache-2.0 code; CC-BY other materials; bundled FActScore code MIT)",
@@ -235,7 +235,7 @@
   {
    "id": "openai-deep-research",
    "name": "OpenAI Deep Research",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html",
+   "url": "https://www.agentclearinghouse.org/agents/openai-deep-research.html",
    "homepage": "https://openai.com/index/introducing-deep-research/",
    "category": "Research",
    "type": "commercial",
@@ -358,7 +358,7 @@
   {
    "id": "gemini-deep-research",
    "name": "Gemini Deep Research",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html",
+   "url": "https://www.agentclearinghouse.org/agents/gemini-deep-research.html",
    "homepage": "https://gemini.google/overview/deep-research/",
    "category": "Research",
    "type": "commercial",
@@ -474,7 +474,7 @@
   {
    "id": "consensus",
    "name": "Consensus",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/consensus.html",
+   "url": "https://www.agentclearinghouse.org/agents/consensus.html",
    "homepage": "https://consensus.app/",
    "category": "Research",
    "type": "commercial (free tier; paid Pro, Deep, Teams and Enterprise plans)",
@@ -583,7 +583,7 @@
   {
    "id": "openai-codex",
    "name": "OpenAI Codex (CLI and cloud agent)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html",
+   "url": "https://www.agentclearinghouse.org/agents/openai-codex.html",
    "homepage": "https://github.com/openai/codex",
    "category": "Coding agent",
    "type": "Coding agent from OpenAI: open-source Codex CLI (Apache-2.0; GitHub openai/codex), IDE extension and desktop app, and the cloud Codex agent in ChatGPT; runs OpenAI models by default and other models via configuration",
@@ -873,7 +873,7 @@
   {
    "id": "mini-swe-agent",
    "name": "mini-SWE-agent (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html",
+   "url": "https://www.agentclearinghouse.org/agents/mini-swe-agent.html",
    "homepage": "https://github.com/SWE-agent/mini-swe-agent",
    "category": "Coding agent",
    "type": "Open-source minimal coding agent (MIT licence) from the Princeton University and Stanford University SWE-agent/SWE-bench team; PyPI/GitHub mini-swe-agent",
@@ -1128,7 +1128,7 @@
   {
    "id": "openhands",
    "name": "OpenHands (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openhands.html",
+   "url": "https://www.agentclearinghouse.org/agents/openhands.html",
    "homepage": "https://github.com/OpenHands/OpenHands",
    "category": "Coding agent",
    "type": "Open-source coding-agent platform and Agent SDK (MIT licence, enterprise directory excepted), developed by All Hands AI; formerly OpenDevin",
@@ -1308,7 +1308,7 @@
   {
    "id": "aide",
    "name": "AIDE (Weco AI, open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aide.html",
+   "url": "https://www.agentclearinghouse.org/agents/aide.html",
    "homepage": "https://github.com/WecoAI/aideml",
    "category": "Data science agent",
    "type": "Open-source machine-learning engineering agent (MIT licence) from Weco AI; PyPI aideml, GitHub WecoAI/aideml; runs with a language model chosen by the user",
@@ -1479,7 +1479,7 @@
   {
    "id": "julius-ai",
    "name": "Julius AI",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html",
+   "url": "https://www.agentclearinghouse.org/agents/julius-ai.html",
    "homepage": "https://julius.ai/",
    "category": "Simple analysis",
    "type": "commercial",
@@ -1645,7 +1645,7 @@
   {
    "id": "claude-research",
    "name": "Claude Research",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html",
+   "url": "https://www.agentclearinghouse.org/agents/claude-research.html",
    "homepage": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
    "category": "Research",
    "type": "commercial (paid Claude plans: Pro, Max, Team, Enterprise)",
@@ -1739,7 +1739,7 @@
   {
    "id": "swe-agent",
    "name": "SWE-agent (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html",
+   "url": "https://www.agentclearinghouse.org/agents/swe-agent.html",
    "homepage": "https://github.com/SWE-agent/SWE-agent",
    "category": "Coding agent",
    "type": "Open-source coding-agent framework (MIT licence) from Princeton University and Stanford University researchers; PyPI/GitHub SWE-agent",
@@ -1905,7 +1905,7 @@
   {
    "id": "cursor-agent",
    "name": "Cursor agent",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html",
+   "url": "https://www.agentclearinghouse.org/agents/cursor-agent.html",
    "homepage": "https://cursor.com/docs",
    "category": "Coding agent",
    "type": "Coding agent from Anysphere inside the Cursor editor (agent mode), as background or cloud agents that open pull requests, and as a command-line agent; proprietary; runs models chosen by the user or by Cursor (including Cursor's own Composer models)",
@@ -2223,7 +2223,7 @@
   {
    "id": "github-copilot-coding-agent",
    "name": "GitHub Copilot coding agent",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html",
+   "url": "https://www.agentclearinghouse.org/agents/github-copilot-coding-agent.html",
    "homepage": "https://docs.github.com/en/copilot/concepts/agents/coding-agent",
    "category": "Coding agent",
    "type": "Cloud coding agent from GitHub (Microsoft): assigned an issue or task, it works in a GitHub Actions environment and opens a pull request for review; proprietary; runs models chosen by GitHub or the user",
@@ -2401,7 +2401,7 @@
   {
    "id": "storm",
    "name": "STORM / Co-STORM (knowledge-storm library)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/storm.html",
+   "url": "https://www.agentclearinghouse.org/agents/storm.html",
    "homepage": "https://github.com/stanford-oval/storm",
    "category": "Research",
    "type": "open source (MIT), PyPI knowledge-storm; Stanford hosted research preview (storm.genie.stanford.edu) not covered",
@@ -2516,7 +2516,7 @@
   {
    "id": "claude-code",
    "name": "Claude Code (Anthropic)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html",
+   "url": "https://www.agentclearinghouse.org/agents/claude-code.html",
    "homepage": "https://code.claude.com/docs/en/overview",
    "category": "Coding agent",
    "type": "Commercial agentic coding tool from Anthropic (terminal CLI, npm @anthropic-ai/claude-code, with IDE extensions); used with a paid Claude plan or API key; source not open",
@@ -2731,7 +2731,7 @@
   {
    "id": "factool",
    "name": "FacTool (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/factool.html",
+   "url": "https://www.agentclearinghouse.org/agents/factool.html",
    "homepage": "https://github.com/GAIR-NLP/factool",
    "category": "Verification",
    "type": "research code (Apache-2.0), GAIR-NLP (Shanghai Jiao Tong University and others); runs with a language model and search API chosen by the user",
@@ -2986,7 +2986,7 @@
   {
    "id": "perplexity",
    "name": "Perplexity",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html",
+   "url": "https://www.agentclearinghouse.org/agents/perplexity.html",
    "homepage": "https://www.perplexity.ai/",
    "category": "Verification",
    "type": "commercial",
@@ -3095,7 +3095,7 @@
   {
    "id": "gpt-researcher",
    "name": "GPT Researcher",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html",
+   "url": "https://www.agentclearinghouse.org/agents/gpt-researcher.html",
    "homepage": "https://github.com/assafelovic/gpt-researcher",
    "category": "Research",
    "type": "open-source",
@@ -3252,7 +3252,7 @@
   {
    "id": "aider",
    "name": "Aider (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/aider.html",
+   "url": "https://www.agentclearinghouse.org/agents/aider.html",
    "homepage": "https://github.com/Aider-AI/aider",
    "category": "Coding agent",
    "type": "Open-source terminal AI pair-programming tool (Apache-2.0) maintained by Paul Gauthier and contributors; PyPI aider-chat, GitHub Aider-AI/aider",
@@ -3375,7 +3375,7 @@
   {
    "id": "browser-use",
    "name": "Browser Use (open-source library)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html",
+   "url": "https://www.agentclearinghouse.org/agents/browser-use.html",
    "homepage": "https://github.com/browser-use/browser-use",
    "category": "Browser/web agent",
    "type": "open source (MIT); commercial Cloud service not covered",
@@ -3527,7 +3527,7 @@
   {
    "id": "devin",
    "name": "Devin (Cognition)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/devin.html",
+   "url": "https://www.agentclearinghouse.org/agents/devin.html",
    "homepage": "https://devin.ai",
    "category": "Coding agent",
    "type": "Proprietary cloud coding agent from Cognition AI: works in its own cloud virtual machine with shell, editor and browser, takes tasks from the web app, Slack, Jira or GitHub, and opens pull requests",
@@ -3698,7 +3698,7 @@
   {
    "id": "agent-s",
    "name": "Agent S (open-source framework, S2 to S3)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html",
+   "url": "https://www.agentclearinghouse.org/agents/agent-s.html",
    "homepage": "https://github.com/simular-ai/Agent-S",
    "category": "Computer-use agent",
    "type": "open source (Apache-2.0), PyPI gui-agents; Simular commercial products (Simular app, Sai, Simular Cloud, Simular API) not covered",
@@ -3849,7 +3849,7 @@
   {
    "id": "data-interpreter",
    "name": "Data Interpreter (MetaGPT, open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html",
+   "url": "https://www.agentclearinghouse.org/agents/data-interpreter.html",
    "homepage": "https://github.com/FoundationAgents/MetaGPT",
    "category": "Data science agent",
    "type": "Open-source agent in the MetaGPT framework (MIT licence), FoundationAgents (formerly DeepWisdom); PyPI metagpt",
@@ -4006,7 +4006,7 @@
   {
    "id": "skyvern",
    "name": "Skyvern (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html",
+   "url": "https://www.agentclearinghouse.org/agents/skyvern.html",
    "homepage": "https://github.com/Skyvern-AI/skyvern",
    "category": "Browser/web agent",
    "type": "open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered",
@@ -4108,7 +4108,7 @@
   {
    "id": "perplexity-comet",
    "name": "Perplexity Comet (agentic browser)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html",
+   "url": "https://www.agentclearinghouse.org/agents/perplexity-comet.html",
    "homepage": "https://www.perplexity.ai/comet",
    "category": "Browser/web agent",
    "type": "Commercial AI browser (Chromium-based) with built-in Comet Assistant agent, Perplexity AI",
@@ -4237,7 +4237,7 @@
   {
    "id": "autokaggle",
    "name": "AutoKaggle (open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html",
+   "url": "https://www.agentclearinghouse.org/agents/autokaggle.html",
    "homepage": "https://github.com/multimodal-art-projection/AutoKaggle",
    "category": "Data science agent",
    "type": "Open-source multi-agent framework (Apache-2.0) for Kaggle-style data-science competitions from the Multimodal Art Projection (M-A-P) research community; GitHub multimodal-art-projection/AutoKaggle",
@@ -4304,7 +4304,7 @@
   {
    "id": "chatgpt-work",
    "name": "ChatGPT Work (agent and cloud-browser tasks)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html",
+   "url": "https://www.agentclearinghouse.org/agents/chatgpt-work.html",
    "homepage": "https://help.openai.com/en/articles/6825453-chatgpt-release-note",
    "category": "Browser/web agent",
    "type": "commercial",
@@ -4420,7 +4420,7 @@
   {
    "id": "clay",
    "name": "Clay",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/clay.html",
+   "url": "https://www.agentclearinghouse.org/agents/clay.html",
    "homepage": "https://www.clay.com/",
    "category": "Data enrichment",
    "type": "commercial",
@@ -4564,7 +4564,7 @@
   {
    "id": "fellou",
    "name": "Fellou (agentic browser)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/fellou.html",
+   "url": "https://www.agentclearinghouse.org/agents/fellou.html",
    "homepage": "https://fellou.ai/",
    "category": "Browser/web agent",
    "type": "Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope",
@@ -4666,7 +4666,7 @@
   {
    "id": "kimi-researcher",
    "name": "Kimi Researcher (Kimi Deep Research)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html",
+   "url": "https://www.agentclearinghouse.org/agents/kimi-researcher.html",
    "homepage": "https://www.kimi.ai/help/deep-research/deep-research-overview",
    "category": "Research",
    "type": "commercial (Kimi membership credits)",
@@ -4747,7 +4747,7 @@
   {
    "id": "loki",
    "name": "Loki (Libr-AI OpenFactVerification, open-source)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/loki.html",
+   "url": "https://www.agentclearinghouse.org/agents/loki.html",
    "homepage": "https://github.com/Libr-AI/OpenFactVerification",
    "category": "Verification",
    "type": "Open-source fact-verification tool (MIT licence), Libr-AI; GitHub Libr-AI/OpenFactVerification; not on PyPI",
@@ -4828,7 +4828,7 @@
   {
    "id": "manus",
    "name": "Manus",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/manus.html",
+   "url": "https://www.agentclearinghouse.org/agents/manus.html",
    "homepage": "https://manus.im/",
    "category": "Research",
    "type": "commercial (free tier with credits; paid plans)",
@@ -4951,7 +4951,7 @@
   {
    "id": "open-interpreter",
    "name": "Open Interpreter",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html",
+   "url": "https://www.agentclearinghouse.org/agents/open-interpreter.html",
    "homepage": "https://github.com/openinterpreter/openinterpreter",
    "category": "Simple analysis",
    "type": "open-source (Apache-2.0)",
@@ -5088,7 +5088,7 @@
   {
    "id": "openfactcheck",
    "name": "OpenFactCheck (open-source framework)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html",
+   "url": "https://www.agentclearinghouse.org/agents/openfactcheck.html",
    "homepage": "https://github.com/openfactcheck-research/openfactcheck",
    "category": "Verification",
    "type": "Open-source factuality framework (PyPI openfactcheck; repository licence AGPL-3.0, PyPI metadata says GPL-3.0), MBZUAI researchers; GitHub openfactcheck-research/openfactcheck",
@@ -5155,7 +5155,7 @@
   {
    "id": "pactum",
    "name": "Pactum",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/pactum.html",
+   "url": "https://www.agentclearinghouse.org/agents/pactum.html",
    "homepage": "https://pactum.com/",
    "category": "Negotiation",
    "type": "commercial",
@@ -5257,7 +5257,7 @@
   {
    "id": "ui-tars-desktop",
    "name": "UI-TARS Desktop (ByteDance, open-source app)",
-   "url": "https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html",
+   "url": "https://www.agentclearinghouse.org/agents/ui-tars-desktop.html",
    "homepage": "https://github.com/bytedance/UI-TARS-desktop",
    "category": "Computer-use agent",
    "type": "Open-source (Apache-2.0) desktop app (Electron) and Agent TARS CLI/Web UI from ByteDance; free; runs with UI-TARS or Seed models chosen by the user",

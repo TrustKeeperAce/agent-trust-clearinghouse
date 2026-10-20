@@ -7,9 +7,9 @@ title: "Agent Reputation & Trust Clearinghouse"
 type: dataset
 authors:
   - name: "Agent Reputation & Trust Clearinghouse"
-    website: "https://agent-trust-clearinghouse.vercel.app/"
+    website: "https://www.agentclearinghouse.org/"
 repository-code: "https://github.com/TrustKeeperAce/agent-trust-clearinghouse"
-url: "https://agent-trust-clearinghouse.vercel.app/"
+url: "https://www.agentclearinghouse.org/"
 abstract: >-
   An informational-only public directory of digital-task AI agents with
   transparent, rule-based factor scores (completion rate, disputes, adherence

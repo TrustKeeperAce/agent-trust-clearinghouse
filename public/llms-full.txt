@@ -2,7 +2,7 @@
 
 > Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.
 
-Data as of 2026-10-20 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://agent-trust-clearinghouse.vercel.app/llms.txt. Machine-readable data: https://agent-trust-clearinghouse.vercel.app/data/agents.json (same source as this file). Full rules: https://agent-trust-clearinghouse.vercel.app/methodology.html
+Data as of 2026-10-20 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://www.agentclearinghouse.org/llms.txt. Machine-readable data: https://www.agentclearinghouse.org/data/agents.json (same source as this file). Full rules: https://www.agentclearinghouse.org/methodology.html
 
 ## How this directory works
 
@@ -26,9 +26,9 @@ Scored entries are listed by overall score, but order is not a recommendation or
 
 ## How to quote these scores
 
-When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. "Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://agent-trust-clearinghouse.vercel.app/agents/aider.html)". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://agent-trust-clearinghouse.vercel.app/citing.html
+When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. "Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://www.agentclearinghouse.org/agents/aider.html)". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://www.agentclearinghouse.org/citing.html
 
-Do not describe an entry as verified, certified, approved or trusted by the Clearinghouse, and do not present listing order as a ranking. More examples: https://agent-trust-clearinghouse.vercel.app/citing.html
+Do not describe an entry as verified, certified, approved or trusted by the Clearinghouse, and do not present listing order as a ranking. More examples: https://www.agentclearinghouse.org/citing.html
 
 ## License
 
@@ -40,7 +40,7 @@ Entries are listed alphabetically by name; the order carries no meaning.
 
 ### Agent S (open-source framework, S2 to S3)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html
+- Entry page: https://www.agentclearinghouse.org/agents/agent-s.html
 - Category: Computer-use agent; type: open source (Apache-2.0), PyPI gui-agents; Simular commercial products (Simular app, Sai, Simular Cloud, Simular API) not covered
 - Status: Scored
 - Factor scores (0–100): completion rate 45, disputes 45, adherence to limits 35, evidence quality 70
@@ -84,7 +84,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### AIDE (Weco AI, open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/aide.html
+- Entry page: https://www.agentclearinghouse.org/agents/aide.html
 - Category: Data science agent; type: Open-source machine-learning engineering agent (MIT licence) from Weco AI; PyPI aideml, GitHub WecoAI/aideml; runs with a language model chosen by the user
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 70, adherence to limits 45, evidence quality 80
@@ -131,7 +131,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Aider (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/aider.html
+- Entry page: https://www.agentclearinghouse.org/agents/aider.html
 - Category: Coding agent; type: Open-source terminal AI pair-programming tool (Apache-2.0) maintained by Paul Gauthier and contributors; PyPI aider-chat, GitHub Aider-AI/aider
 - Status: Scored
 - Factor scores (0–100): completion rate 40, disputes 45, adherence to limits 45, evidence quality 80
@@ -173,7 +173,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### AutoKaggle (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html
+- Entry page: https://www.agentclearinghouse.org/agents/autokaggle.html
 - Category: Data science agent; type: Open-source multi-agent framework (Apache-2.0) for Kaggle-style data-science competitions from the Multimodal Art Projection (M-A-P) research community; GitHub multimodal-art-projection/AutoKaggle
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -201,7 +201,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Browser Use (open-source library)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html
+- Entry page: https://www.agentclearinghouse.org/agents/browser-use.html
 - Category: Browser/web agent; type: open source (MIT); commercial Cloud service not covered
 - Status: Scored
 - Factor scores (0–100): completion rate 40, disputes 50, adherence to limits 30, evidence quality 85
@@ -249,7 +249,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### ChatGPT Work (agent and cloud-browser tasks)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html
+- Entry page: https://www.agentclearinghouse.org/agents/chatgpt-work.html
 - Category: Browser/web agent; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -289,7 +289,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Claude Code (Anthropic)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html
+- Entry page: https://www.agentclearinghouse.org/agents/claude-code.html
 - Category: Coding agent; type: Commercial agentic coding tool from Anthropic (terminal CLI, npm @anthropic-ai/claude-code, with IDE extensions); used with a paid Claude plan or API key; source not open
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 45, adherence to limits 40, evidence quality 85
@@ -343,7 +343,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Claude Research
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html
+- Entry page: https://www.agentclearinghouse.org/agents/claude-research.html
 - Category: Research; type: commercial (paid Claude plans: Pro, Max, Team, Enterprise)
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 75, adherence to limits 50, evidence quality 60
@@ -380,7 +380,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Clay
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/clay.html
+- Entry page: https://www.agentclearinghouse.org/agents/clay.html
 - Category: Data enrichment; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -422,7 +422,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Consensus
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/consensus.html
+- Entry page: https://www.agentclearinghouse.org/agents/consensus.html
 - Category: Research; type: commercial (free tier; paid Pro, Deep, Teams and Enterprise plans)
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 80, adherence to limits 50, evidence quality 75
@@ -461,7 +461,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Cursor agent
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html
+- Entry page: https://www.agentclearinghouse.org/agents/cursor-agent.html
 - Category: Coding agent; type: Coding agent from Anysphere inside the Cursor editor (agent mode), as background or cloud agents that open pull requests, and as a command-line agent; proprietary; runs models chosen by the user or by Cursor (including Cursor's own Composer models)
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 45, adherence to limits 40, evidence quality 85
@@ -531,7 +531,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Data Interpreter (MetaGPT, open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html
+- Entry page: https://www.agentclearinghouse.org/agents/data-interpreter.html
 - Category: Data science agent; type: Open-source agent in the MetaGPT framework (MIT licence), FoundationAgents (formerly DeepWisdom); PyPI metagpt
 - Status: Scored
 - Factor scores (0–100): completion rate 45, disputes 35, adherence to limits 45, evidence quality 70
@@ -575,7 +575,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Devin (Cognition)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/devin.html
+- Entry page: https://www.agentclearinghouse.org/agents/devin.html
 - Category: Coding agent; type: Proprietary cloud coding agent from Cognition AI: works in its own cloud virtual machine with shell, editor and browser, takes tasks from the web app, Slack, Jira or GitHub, and opens pull requests
 - Status: Scored
 - Factor scores (0–100): completion rate 40, disputes 45, adherence to limits 40, evidence quality 75
@@ -623,7 +623,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Elicit
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/elicit.html
+- Entry page: https://www.agentclearinghouse.org/agents/elicit.html
 - Category: Research; type: commercial (free Basic tier; paid Plus, Pro and enterprise tiers)
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 80, adherence to limits 55, evidence quality 85
@@ -668,7 +668,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### FacTool (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/factool.html
+- Entry page: https://www.agentclearinghouse.org/agents/factool.html
 - Category: Verification; type: research code (Apache-2.0), GAIR-NLP (Shanghai Jiao Tong University and others); runs with a language model and search API chosen by the user
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 40, evidence quality 75
@@ -730,7 +730,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Fellou (agentic browser)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/fellou.html
+- Entry page: https://www.agentclearinghouse.org/agents/fellou.html
 - Category: Browser/web agent; type: Commercial desktop AI browser (Chromium-based) from ASI X Inc. (Delaware; staff in the US and Hong Kong); free tier with paid plans; agent framework Eko is open source (MIT) but out of scope
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -764,7 +764,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Gemini Deep Research
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html
+- Entry page: https://www.agentclearinghouse.org/agents/gemini-deep-research.html
 - Category: Research; type: commercial
 - Status: Scored
 - Factor scores (0–100): completion rate 60, disputes 65, adherence to limits 55, evidence quality 72
@@ -806,7 +806,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### GitHub Copilot coding agent
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html
+- Entry page: https://www.agentclearinghouse.org/agents/github-copilot-coding-agent.html
 - Category: Coding agent; type: Cloud coding agent from GitHub (Microsoft): assigned an issue or task, it works in a GitHub Actions environment and opens a pull request for review; proprietary; runs models chosen by GitHub or the user
 - Status: Scored
 - Factor scores (0–100): completion rate 45, disputes 60, adherence to limits 50, evidence quality 75
@@ -855,7 +855,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Google DeepMind SAFE (Search-Augmented Factuality Evaluator)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html
+- Entry page: https://www.agentclearinghouse.org/agents/google-deepmind-safe.html
 - Category: Verification; type: research code (Apache-2.0 code; CC-BY other materials; bundled FActScore code MIT)
 - Status: Scored
 - Factor scores (0–100): completion rate 65, disputes 80, adherence to limits 60, evidence quality 60
@@ -892,7 +892,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### GPT Researcher
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html
+- Entry page: https://www.agentclearinghouse.org/agents/gpt-researcher.html
 - Category: Research; type: open-source
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 40, adherence to limits 50, evidence quality 65
@@ -936,7 +936,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Julius AI
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html
+- Entry page: https://www.agentclearinghouse.org/agents/julius-ai.html
 - Category: Simple analysis; type: commercial
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 80, adherence to limits 50, evidence quality 55
@@ -984,7 +984,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Kimi Researcher (Kimi Deep Research)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html
+- Entry page: https://www.agentclearinghouse.org/agents/kimi-researcher.html
 - Category: Research; type: commercial (Kimi membership credits)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1018,7 +1018,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Loki (Libr-AI OpenFactVerification, open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/loki.html
+- Entry page: https://www.agentclearinghouse.org/agents/loki.html
 - Category: Verification; type: Open-source fact-verification tool (MIT licence), Libr-AI; GitHub Libr-AI/OpenFactVerification; not on PyPI
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1050,7 +1050,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Manus
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/manus.html
+- Entry page: https://www.agentclearinghouse.org/agents/manus.html
 - Category: Research; type: commercial (free tier with credits; paid plans)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1088,7 +1088,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### mini-SWE-agent (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html
+- Entry page: https://www.agentclearinghouse.org/agents/mini-swe-agent.html
 - Category: Coding agent; type: Open-source minimal coding agent (MIT licence) from the Princeton University and Stanford University SWE-agent/SWE-bench team; PyPI/GitHub mini-swe-agent
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 55, adherence to limits 50, evidence quality 85
@@ -1151,7 +1151,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Open Interpreter
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html
+- Entry page: https://www.agentclearinghouse.org/agents/open-interpreter.html
 - Category: Simple analysis; type: open-source (Apache-2.0)
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1191,7 +1191,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### OpenAI Codex (CLI and cloud agent)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html
+- Entry page: https://www.agentclearinghouse.org/agents/openai-codex.html
 - Category: Coding agent; type: Coding agent from OpenAI: open-source Codex CLI (Apache-2.0; GitHub openai/codex), IDE extension and desktop app, and the cloud Codex agent in ChatGPT; runs OpenAI models by default and other models via configuration
 - Status: Scored
 - Factor scores (0–100): completion rate 60, disputes 55, adherence to limits 45, evidence quality 85
@@ -1254,7 +1254,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### OpenAI Deep Research
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html
+- Entry page: https://www.agentclearinghouse.org/agents/openai-deep-research.html
 - Category: Research; type: commercial
 - Status: Scored
 - Factor scores (0–100): completion rate 60, disputes 65, adherence to limits 60, evidence quality 75
@@ -1295,7 +1295,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### OpenFactCheck (open-source framework)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html
+- Entry page: https://www.agentclearinghouse.org/agents/openfactcheck.html
 - Category: Verification; type: Open-source factuality framework (PyPI openfactcheck; repository licence AGPL-3.0, PyPI metadata says GPL-3.0), MBZUAI researchers; GitHub openfactcheck-research/openfactcheck
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1322,7 +1322,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### OpenHands (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/openhands.html
+- Entry page: https://www.agentclearinghouse.org/agents/openhands.html
 - Category: Coding agent; type: Open-source coding-agent platform and Agent SDK (MIT licence, enterprise directory excepted), developed by All Hands AI; formerly OpenDevin
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 55, evidence quality 85
@@ -1371,7 +1371,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Pactum
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/pactum.html
+- Entry page: https://www.agentclearinghouse.org/agents/pactum.html
 - Category: Negotiation; type: commercial
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1408,7 +1408,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Perplexity
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html
+- Entry page: https://www.agentclearinghouse.org/agents/perplexity.html
 - Category: Verification; type: commercial
 - Status: Scored
 - Factor scores (0–100): completion rate 55, disputes 35, adherence to limits 45, evidence quality 75
@@ -1448,7 +1448,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Perplexity Comet (agentic browser)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html
+- Entry page: https://www.agentclearinghouse.org/agents/perplexity-comet.html
 - Category: Browser/web agent; type: Commercial AI browser (Chromium-based) with built-in Comet Assistant agent, Perplexity AI
 - Status: Scored
 - Factor scores (0–100): completion rate 40, disputes 40, adherence to limits 30, evidence quality 55
@@ -1489,7 +1489,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### Skyvern (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html
+- Entry page: https://www.agentclearinghouse.org/agents/skyvern.html
 - Category: Browser/web agent; type: open source (AGPL-3.0), PyPI skyvern; Skyvern Cloud (hosted service) not covered
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 40, adherence to limits 30, evidence quality 55
@@ -1527,7 +1527,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### STORM / Co-STORM (knowledge-storm library)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/storm.html
+- Entry page: https://www.agentclearinghouse.org/agents/storm.html
 - Category: Research; type: open source (MIT), PyPI knowledge-storm; Stanford hosted research preview (storm.genie.stanford.edu) not covered
 - Status: Scored
 - Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 45, evidence quality 75
@@ -1568,7 +1568,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### SWE-agent (open-source)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html
+- Entry page: https://www.agentclearinghouse.org/agents/swe-agent.html
 - Category: Coding agent; type: Open-source coding-agent framework (MIT licence) from Princeton University and Stanford University researchers; PyPI/GitHub SWE-agent
 - Status: Scored
 - Factor scores (0–100): completion rate 45, disputes 55, adherence to limits 55, evidence quality 80
@@ -1617,7 +1617,7 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ### UI-TARS Desktop (ByteDance, open-source app)
 
-- Entry page: https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html
+- Entry page: https://www.agentclearinghouse.org/agents/ui-tars-desktop.html
 - Category: Computer-use agent; type: Open-source (Apache-2.0) desktop app (Electron) and Agent TARS CLI/Web UI from ByteDance; free; runs with UI-TARS or Seed models chosen by the user
 - Status: Insufficient evidence
 - Overall score: none (fewer than 3 counted independent performance sources); no evidence grade
@@ -1652,6 +1652,6 @@ Note: Informational only. Scores summarize cited public evidence under published
 
 ## Changes
 
-Changelog: https://agent-trust-clearinghouse.vercel.app/changelog.html. Update feeds: https://agent-trust-clearinghouse.vercel.app/updates.json (JSON Feed), https://agent-trust-clearinghouse.vercel.app/updates.xml (Atom).
+Changelog: https://www.agentclearinghouse.org/changelog.html. Update feeds: https://www.agentclearinghouse.org/updates.json (JSON Feed), https://www.agentclearinghouse.org/updates.xml (Atom).
 
 > Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.

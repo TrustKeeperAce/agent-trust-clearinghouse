@@ -4,16 +4,25 @@
 <subtitle>Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</subtitle>
 <id>tag:agent-trust-clearinghouse,2026:updates</id>
 <updated>2026-10-20T00:00:00Z</updated>
-<link rel="self" type="application/atom+xml" href="https://agent-trust-clearinghouse.vercel.app/updates.xml"/>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="self" type="application/atom+xml" href="https://www.agentclearinghouse.org/updates.xml"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
+<entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0086</id>
+<title>Site change (0086)</title>
+<updated>2026-10-20T00:00:00Z</updated>
+<published>2026-10-20T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
+<category term="site_change"/>
+<summary type="text">The directory moved to a new address, www.agentclearinghouse.org. Pages, data files and feeds keep the same paths, and links to the old address (agent-trust-clearinghouse.vercel.app) continue to work. Feed item ids are unchanged. No score or grade changes. Decision 0086. As of 2026-10-20. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
 <entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-20-0085/mini-swe-agent</id>
 <title>mini-SWE-agent (open-source): new entry, 61 / A</title>
 <updated>2026-10-20T00:00:00Z</updated>
 <published>2026-10-20T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/mini-swe-agent.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/mini-swe-agent.html"/>
 <category term="new_entry"/>
 <summary type="text">Added mini-SWE-agent (open-source) (minimal bash-only coding agent from the SWE-bench and SWE-agent team; Coding agent): overall 61, evidence grade A, 16 independent performance sources (9 peer-reviewed). Most counted studies run it alongside other harnesses with the same models; recent tests state the version tested, including the latest release (2.4.6). Studies and leaderboards involving mini-SWE-agent developers are not counted, and no runs are counted for both this entry and SWE-agent. One medium-severity CVE affects its optional Bubblewrap sandbox. Citation check incomplete — recheck later. The SWE-agent scope now notes that mini-SWE-agent has its own entry, and the coding-agents comparison lists it among open-source frameworks (no score or grade change for SWE-agent). Before: none. After: 61 / A. Decision 0085. As of 2026-10-20. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -22,7 +31,7 @@
 <title>FacTool (open-source): new entry, 55 / B</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/factool.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/factool.html"/>
 <category term="new_entry"/>
 <summary type="text">Added FacTool (open-source) (GAIR-NLP research code for claim-level factuality checking; Verification): overall 55, evidence grade B, 17 independent performance sources (13 peer-reviewed). Nearly all counted sources are papers proposing alternative methods that run FacTool as a comparison system, and five come from one connected group of authors that shares result rows. No study states the FacTool version tested. One study with a FacTool author is not counted. Citation check incomplete — recheck later. Before: none. After: 55 / B. Decision 0084. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -31,7 +40,7 @@
 <title>Cursor agent: new entry, 57 / A</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/cursor-agent.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/cursor-agent.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Cursor agent (Anysphere; agent mode in the Cursor editor, background and cloud agents, and the Cursor CLI; Coding agent): overall 57, evidence grade A, 19 independent performance sources (10 peer-reviewed). Fourteen counted sources are pull-request field studies drawn largely from one dataset (AIDev, 2025), so they are not independent samples. Anysphere material and two comparisons by authors from a competing product's company are not counted. Tab completion, inline edits, chat-only use and Bugbot code review are out of scope. Citation check incomplete — recheck later. Before: none. After: 57 / A. Decision 0083. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -40,7 +49,7 @@
 <title>AutoKaggle (open-source): entry updated, Insufficient evidence (unchanged)</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/autokaggle.html"/>
 <category term="entry_update"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. AutoKaggle: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. Loki: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. UI-TARS Desktop: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0077. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -49,7 +58,7 @@
 <title>Loki (Libr-AI OpenFactVerification, open-source): entry updated, Insufficient evidence (unchanged)</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/loki.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/loki.html"/>
 <category term="entry_update"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. AutoKaggle: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. Loki: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. UI-TARS Desktop: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0077. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -58,7 +67,7 @@
 <title>UI-TARS Desktop (ByteDance, open-source app): entry updated, Insufficient evidence (unchanged)</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/ui-tars-desktop.html"/>
 <category term="entry_update"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries; no new counted source found, so no scores or grades change. AutoKaggle: a re-implementation of its workflow (DS-Lighting) and a paper that copied its figures (LightAutoDS-Tab) added as uncounted sources; citation recheck completed. Loki: two papers that used Loki as a tool without measuring its accuracy added as uncounted sources. UI-TARS Desktop: a model-only prompt-injection test (VPI-Bench) added as context, not counted. All three stay Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0077. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -67,7 +76,7 @@
 <title>Skyvern (open-source): Insufficient evidence → 44 / B-</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/skyvern.html"/>
 <category term="score_change"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries. Skyvern: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. Julius AI: a 2026 Quality &amp; Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. Kimi Researcher: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence. Before: Insufficient evidence. After: 44 / B-. Decision 0076. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -76,7 +85,7 @@
 <title>Julius AI: Insufficient evidence → 59 / B-</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/julius-ai.html"/>
 <category term="score_change"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries. Skyvern: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. Julius AI: a 2026 Quality &amp; Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. Kimi Researcher: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence. Before: Insufficient evidence. After: 59 / B-. Decision 0076. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -85,7 +94,7 @@
 <title>Kimi Researcher (Kimi Deep Research): entry updated, Insufficient evidence (unchanged)</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/kimi-researcher.html"/>
 <category term="entry_update"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries. Skyvern: AgentBreaker (ISSTA 2026, peer-reviewed prompt-injection study) added as a counted source; 3 counted (1 peer-reviewed), so the entry is scored for the first time: 44, grade B-. Julius AI: a 2026 Quality &amp; Quantity study (peer-reviewed; the vendor provided complimentary access) and a 2026 IJRSI education study (limited) added as counted sources; 4 counted (2 peer-reviewed), so the entry is scored for the first time: 59, grade B-; recheck note removed. Kimi Researcher: no new independent test found; a re-scoring of its DeepResearch Bench reports added as an uncounted source; still Insufficient evidence. Before: Insufficient evidence. After: Insufficient evidence. Decision 0076. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -94,7 +103,7 @@
 <title>Site change (0075)</title>
 <updated>2026-10-19T00:00:00Z</updated>
 <published>2026-10-19T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Shortened eleven page titles (browser tab and search result titles) to 70 characters or fewer, keeping the site name at the end. Headings, descriptions, data, scores and grades are unchanged. Decision 0075. As of 2026-10-19. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -103,7 +112,7 @@
 <title>Site change (0074)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Added llms-full.txt, all entries in one plain-text file generated from the same data as agents.json, linked from llms.txt, the data page and the How to cite page. Added a “How to cite” link to the site footer. No score or grade changes. Decision 0074. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -112,7 +121,7 @@
 <title>Site change (0072)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Added a short “How this directory works” note on the home page and a matching section on the methodology page (counted independent evidence, separate factor scores, open data, no ranking or endorsement), with links from the data page and llms.txt. Home-page last-reviewed dates are now generated from the data (four rows corrected). No score or grade changes. Decision 0072. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -121,7 +130,7 @@
 <title>Site change (0071)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Evidence pass on three Insufficient-evidence entries: Manus, ChatGPT Work and Open Interpreter. New sources and notes added; ChatGPT Work now has two counted independent tests, fewer than the three required. All three remain Insufficient evidence; no scores or grades. Decision 0071. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -130,7 +139,7 @@
 <title>Site change (0070)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Code license: the code (scripts, stylesheet and vercel.json) is now licensed under the Apache License 2.0; data and site text stay CC BY 4.0; the project name, logo and favicon are not licensed. Added a CITATION.cff file to the repository. License wording updated on For agents / data, How to cite and llms.txt. No score or grade changes. Decision 0070. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -139,7 +148,7 @@
 <title>Site change (0069)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Small consistency fixes: the same footer on every page (methodology now links For agents / data); a one-sentence scope for seven entries, taken from each entry page; a published grade note under the evidence grade for Aider, SWE-agent, Devin, GitHub Copilot coding agent and STORM; the Atom content type for updates.xml; shorter titles for two comparison pages; a shorter description for the citing page. No score or grade changes. Decision 0069. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -148,7 +157,7 @@
 <title>Site change (0067)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">New How to cite and quote this data page: ready-to-copy citations (plain sentence, APA-style, BibTeX, agent quote template), CC BY 4.0 attribution, how to quote scores and machine-readable locations, with example values generated from the data. The typed-in citation example on the data page, llms.txt and comparison pages is now generated. No score or grade changes. Decision 0067. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -157,7 +166,7 @@
 <title>Site change (0066)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Three comparison pages generated from the directory data: Claude Code and OpenAI Codex compared, Coding agents compared and Research agents compared (public evidence; alphabetical; scope notes; informational, not a ranking). Category labels capitalized consistently in the data export (display only). No score or grade changes. Decision 0066. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -166,7 +175,7 @@
 <title>Site change (0065)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">New agent update feed: updates.json (JSON Feed 1.1) and updates.xml (Atom) list new entries, score and grade changes and other changelog items, each with before and after values where recorded and the informational disclaimer. This changelog and both feeds are now generated from one source file. Citation guidance added to llms.txt and the data page. No score or grade changes. Decision 0065. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -175,7 +184,7 @@
 <title>Site change (0061)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">New “For agents / data” page with JSON, CSV and JSON Schema exports generated from the entries; data and site text licensed under CC BY 4.0; llms.txt, robots.txt and sitemap updated; directory list marked as sorted by overall score, not a ranking of quality. Footer link added. No score or grade changes. Decision 0061. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -184,7 +193,7 @@
 <title>Site change (0060)</title>
 <updated>2026-10-18T00:00:00Z</updated>
 <published>2026-10-18T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Methodology: new “Privacy and measurement” section (Google Search Console and hosting request statistics; aggregate monthly totals only; never used in scores). Footer link “Privacy” added to all pages. No score or grade changes. Decision 0060. As of 2026-10-18. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -193,7 +202,7 @@
 <title>Browser Use (open-source library): 51 / B → 51 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/browser-use.html"/>
 <category term="score_change"/>
 <summary type="text">Browser Use: AgentTell (privacy, Browser Use 0.13.1, Aug 2026), Privacy Practices of Browser Agents (Brave co-authors disclosed) and BreakingWeb (Amazon co-authors disclosed) added as counted sources; 11 counted (3 peer-reviewed). Grade B → A because a recent test now states the library version. Overall score unchanged at 51; recheck note removed. ceLLMate reviewed, not counted. Before: 51 / B. After: 51 / A. Decision 0059. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -202,7 +211,7 @@
 <title>Consensus: entry updated, 62 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/consensus.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/consensus.html"/>
 <category term="entry_update"/>
 <summary type="text">Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged. Before: 62 / B. After: 62 / B. Decision 0058. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -211,7 +220,7 @@
 <title>Google DeepMind SAFE (Search-Augmented Factuality Evaluator): entry updated, 66 / B- (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/google-deepmind-safe.html"/>
 <category term="entry_update"/>
 <summary type="text">Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged. Before: 66 / B-. After: 66 / B-. Decision 0058. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -220,7 +229,7 @@
 <title>Julius AI: entry updated, Insufficient evidence (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/julius-ai.html"/>
 <category term="entry_update"/>
 <summary type="text">Google DeepMind SAFE: VeriFact (EMNLP 2025) added as a counted source; 4 counted (4 peer-reviewed); 56.7% of SAFE-extracted facts were incomplete on a difficult test set. Score 66 and grade B- unchanged. Consensus: no new tests found (the only lead was the already-excluded retracted paper); recheck note removed; 62, B unchanged. Julius AI: two 2025 items reviewed, none counted; Insufficient evidence unchanged. Before: Insufficient evidence. After: Insufficient evidence. Decision 0058. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -229,7 +238,7 @@
 <title>Gemini Deep Research: entry updated, 63 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/gemini-deep-research.html"/>
 <category term="entry_update"/>
 <summary type="text">Gemini Deep Research: MisKnow-Agent (robustness preprint, July 2026) added as a counted source; 8 counted (2 peer-reviewed); reports adopted planted false conclusions in up to 54% of cases. Scores and grade unchanged (63, B). OpenAI Deep Research: two items reviewed, none counted (one perspective, one paywalled); 65, B unchanged. Recheck notes updated. Before: 63 / B. After: 63 / B. Decision 0057. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -238,7 +247,7 @@
 <title>OpenAI Deep Research: entry updated, 65 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openai-deep-research.html"/>
 <category term="entry_update"/>
 <summary type="text">Gemini Deep Research: MisKnow-Agent (robustness preprint, July 2026) added as a counted source; 8 counted (2 peer-reviewed); reports adopted planted false conclusions in up to 54% of cases. Scores and grade unchanged (63, B). OpenAI Deep Research: two items reviewed, none counted (one perspective, one paywalled); 65, B unchanged. Recheck notes updated. Before: 65 / B. After: 65 / B. Decision 0057. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -247,7 +256,7 @@
 <title>Perplexity: entry updated, 54 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/perplexity.html"/>
 <category term="entry_update"/>
 <summary type="text">Perplexity: Follow-up review of five 2025–2026 studies; none in scope (health-information quality, or no citation check), so none counted. Score 54 and grade B unchanged. Recheck note updated (0056). Before: 54 / B. After: 54 / B. Decision 0056. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -256,7 +265,7 @@
 <title>Browser Use (open-source library): entry updated, 51 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/browser-use.html"/>
 <category term="entry_update"/>
 <summary type="text">Browser Use: Atomicity for Agents (TOCTOU security study, Ohio State, preprint 2026) added as a counted source; 8 counted (3 peer-reviewed). Vulnerability triggered in 9 of 14 test cases. Scores and grade unchanged (51, B). Before: 51 / B. After: 51 / B. Decision 0055. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -265,7 +274,7 @@
 <title>Elicit: entry updated, 68 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/elicit.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/elicit.html"/>
 <category term="entry_update"/>
 <summary type="text">Elicit: three peer-reviewed tests added (Mazzali et al. 2026, Meliante et al. 2025, Spillias et al. 2025); 10 counted sources (9 peer-reviewed). Search remains weak; screening was strong in a 2025 Pro-tier test; extraction ranged from 51% to 92% accurate. Scores unchanged; overall 68, grade A. Before: 68 / A. After: 68 / A. Decision 0054. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -274,7 +283,7 @@
 <title>SWE-agent (open-source): 58 / B → 58 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/swe-agent.html"/>
 <category term="score_change"/>
 <summary type="text">SWE-agent: Sifting the Noise (ISSTA 2026) added, testing a December 2025 main-branch commit; 10 counted sources (8 peer-reviewed). Grade B → A because a recent test now states the version. Overall score unchanged at 58; evidence quality stays 80. Before: 58 / B. After: 58 / A. Decision 0053. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -283,7 +292,7 @@
 <title>Claude Code (Anthropic): entry updated, 55 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/claude-code.html"/>
 <category term="entry_update"/>
 <summary type="text">Citation backfill: OpenHands and Claude Code sources added (Sifting the Noise; WideSWE and Timeline-Bench); OpenHands 12 counted (7 peer-reviewed), Claude Code 17 counted (6 peer-reviewed); recheck notes added to 13 entries. No score or grade changes. Before: 55 / A. After: 55 / A. Decision 0052. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -292,7 +301,7 @@
 <title>OpenHands (open-source): entry updated, 61 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openhands.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openhands.html"/>
 <category term="entry_update"/>
 <summary type="text">Citation backfill: OpenHands and Claude Code sources added (Sifting the Noise; WideSWE and Timeline-Bench); OpenHands 12 counted (7 peer-reviewed), Claude Code 17 counted (6 peer-reviewed); recheck notes added to 13 entries. No score or grade changes. Before: 61 / A. After: 61 / A. Decision 0052. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -301,7 +310,7 @@
 <title>Aider (open-source): entry updated, 52 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/aider.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/aider.html"/>
 <category term="entry_update"/>
 <summary type="text">Grade-A basis check: OpenAI Codex, OpenHands and Claude Code confirmed A. Elicit kept A; its basis (a dated Pro-tier test, Dec 2025 to April/May 2026) is now stated on the page. Aider kept A; Sifting the Noise recorded as peer-reviewed (ISSTA 2026), 6 peer-reviewed of 8, and its inferred test date is noted. No score changes. Before: 52 / A. After: 52 / A. Decision 0051. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -310,7 +319,7 @@
 <title>Elicit: entry updated, 68 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/elicit.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/elicit.html"/>
 <category term="entry_update"/>
 <summary type="text">Grade-A basis check: OpenAI Codex, OpenHands and Claude Code confirmed A. Elicit kept A; its basis (a dated Pro-tier test, Dec 2025 to April/May 2026) is now stated on the page. Aider kept A; Sifting the Noise recorded as peer-reviewed (ISSTA 2026), 6 peer-reviewed of 8, and its inferred test date is noted. No score changes. Before: 68 / A. After: 68 / A. Decision 0051. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -319,7 +328,7 @@
 <title>Agent S (open-source framework, S2 to S3): entry updated, 49 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/agent-s.html"/>
 <category term="entry_update"/>
 <summary type="text">Agent S: correction. The entry said no independent safety test had been found; an independent TOCTOU study (Ohio State, preprint) that tested Agent S is now counted. Now 8 independent performance sources (2 peer-reviewed). Overall score 49 and evidence grade B unchanged. Before: 49 / B. After: 49 / B. Decision 0050. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -328,7 +337,7 @@
 <title>Claude Code (Anthropic): entry updated, 55 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/claude-code.html"/>
 <category term="entry_update"/>
 <summary type="text">OpenHands: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures including a shared-institution (Carnegie Mellon) note; now 11 independent performance sources (6 peer-reviewed); overall 61 and grade A unchanged. Claude Code: SusVibes now recorded as peer-reviewed (ICML 2026); 6 peer-reviewed of 15; overall 55 and grade A unchanged. Before: 55 / A. After: 55 / A. Decision 0049. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -337,7 +346,7 @@
 <title>OpenHands (open-source): entry updated, 61 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openhands.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openhands.html"/>
 <category term="entry_update"/>
 <summary type="text">OpenHands: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures including a shared-institution (Carnegie Mellon) note; now 11 independent performance sources (6 peer-reviewed); overall 61 and grade A unchanged. Claude Code: SusVibes now recorded as peer-reviewed (ICML 2026); 6 peer-reviewed of 15; overall 55 and grade A unchanged. Before: 61 / A. After: 61 / A. Decision 0049. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -346,7 +355,7 @@
 <title>SWE-agent (open-source): entry updated, 58 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/swe-agent.html"/>
 <category term="entry_update"/>
 <summary type="text">SWE-agent: added SusVibes (ICML 2026), an independent security benchmark, as a counted source, with disclosures. Now 9 independent performance sources (7 peer-reviewed). Overall score 58 and evidence grade B unchanged. Before: 58 / B. After: 58 / B. Decision 0048. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -355,7 +364,7 @@
 <title>Site change (0046)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Design refresh (layout and labels only; no score or rule changes) Decision 0046. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -364,7 +373,7 @@
 <title>Devin (Cognition): new entry, 50 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/devin.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/devin.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Devin (Cognition; cloud coding agent, Devin 1.x-2.x; Coding agent): overall 50, evidence grade B, 12 independent performance sources (5 peer-reviewed), including an industry report with disclosure. Cognition's self-reported SWE-bench result is not counted; an informal hands-on review is listed for context only. Windsurf and other Cognition products are out of scope. Citation check incomplete — recheck later. This completes Batch 4. Before: none. After: 50 / B. Decision 0045. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -373,7 +382,7 @@
 <title>GitHub Copilot coding agent: new entry, 57 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/github-copilot-coding-agent.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/github-copilot-coding-agent.html"/>
 <category term="new_entry"/>
 <summary type="text">Added GitHub Copilot coding agent (cloud agent that opens pull requests; Coding agent): overall 57, evidence grade B, 12 independent pull-request field studies (5 peer-reviewed). Copilot completions, IDE agent mode, Copilot CLI and code review are out of scope; GitHub- and Microsoft-authored studies are not counted. Citation check incomplete — recheck later. Before: none. After: 57 / B. Decision 0044. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -382,7 +391,7 @@
 <title>OpenAI Codex (CLI and cloud agent): new entry, 62 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openai-codex.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openai-codex.html"/>
 <category term="new_entry"/>
 <summary type="text">Added OpenAI Codex (CLI and cloud agent; Coding agent): overall 62, evidence grade A, 26 independent performance sources (5 peer-reviewed; funding disclosures). The 2021 Codex model and GPT-Codex models run in other harnesses are out of scope; OpenAI-authored material is not counted. Citation check incomplete — recheck later. Before: none. After: 62 / A. Decision 0043. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -391,7 +400,7 @@
 <title>AIDE (Weco AI, open-source): new entry, 60 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/aide.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/aide.html"/>
 <category term="new_entry"/>
 <summary type="text">Added AIDE (Weco AI, open-source; Data science agent): overall 60, evidence grade B, 13 independent performance sources (6 peer-reviewed; competing-method disclosures). Grade B because no test from the last 12 months states the version. Added AutoKaggle (open-source; Data science agent) as a separate entry: Insufficient evidence (2 counted). Both carry "Citation check incomplete — recheck later". Before: none. After: 60 / B. Decision 0042. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -400,7 +409,7 @@
 <title>AutoKaggle (open-source): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/autokaggle.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/autokaggle.html"/>
 <category term="new_entry"/>
 <summary type="text">Added AIDE (Weco AI, open-source; Data science agent): overall 60, evidence grade B, 13 independent performance sources (6 peer-reviewed; competing-method disclosures). Grade B because no test from the last 12 months states the version. Added AutoKaggle (open-source; Data science agent) as a separate entry: Insufficient evidence (2 counted). Both carry "Citation check incomplete — recheck later". Before: none. After: Insufficient evidence. Decision 0042. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -409,7 +418,7 @@
 <title>Aider (open-source): new entry, 52 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/aider.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/aider.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Aider (open-source; Coding agent): overall 52, evidence grade A, 8 independent performance sources (5 peer-reviewed). Evidence quality 80, below the suggested A range, because the A rests on a single recent versioned preprint test. Citation check incomplete — recheck later. Maintainer-run Aider leaderboards not counted. Before: none. After: 52 / A. Decision 0041. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -418,7 +427,7 @@
 <title>Claude Code (Anthropic): new entry, 55 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/claude-code.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/claude-code.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Claude Code (Anthropic; Coding agent): overall 55, evidence grade A, 15 independent performance sources (5 peer-reviewed). Terminal-Bench 2.0 excluded (Anthropic-affiliated author); Anthropic results not counted; SkillsBench API-support disclosure. Citation check incomplete (about 13 candidate studies not yet screened). Claude Research now links to the Claude Code entry. Before: none. After: 55 / A. Decision 0040. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -427,7 +436,7 @@
 <title>UI-TARS Desktop (ByteDance, open-source app): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/ui-tars-desktop.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/ui-tars-desktop.html"/>
 <category term="new_entry"/>
 <summary type="text">Added UI-TARS Desktop (ByteDance, open-source app; Computer-use agent): Insufficient evidence, 1 counted independent source (TOCTOU security study, preprint). Scope: app and Agent TARS; UI-TARS models not covered. Vendor results and model-only tests not counted. CVE-2026-81735 noted. Before: none. After: Insufficient evidence. Decision 0039. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -436,7 +445,7 @@
 <title>SWE-agent (open-source): new entry, 58 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/swe-agent.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/swe-agent.html"/>
 <category term="new_entry"/>
 <summary type="text">Added SWE-agent (open-source; Coding agent): overall 58, evidence grade B, 8 independent performance sources (6 peer-reviewed; competitor disclosures). Grade B because no test from the last 12 months states the version. mini-SWE-agent out of scope; developer results, developer-affiliated studies and leaderboard entries not counted. Before: none. After: 58 / B. Decision 0038. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -445,7 +454,7 @@
 <title>OpenHands (open-source): new entry, 61 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openhands.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openhands.html"/>
 <category term="new_entry"/>
 <summary type="text">Added OpenHands (open-source; Coding agent): overall 61, evidence grade A, 10 independent performance sources (5 peer-reviewed; competing-author and competitor disclosures). Developer results, developer-affiliated studies and leaderboard entries not counted. Before: none. After: 61 / A. Decision 0037. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -454,7 +463,7 @@
 <title>Site change (0036)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Methodology: added the Coding agent category, with a definition and boundaries against Computer-use, Data science and Simple analysis. No existing entry changes category; scoring rules are unchanged. Decision 0036. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -463,7 +472,7 @@
 <title>Browser Use (open-source library): 51 / A → 51 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/browser-use.html"/>
 <category term="score_change"/>
 <summary type="text">Browser Use (open-source library): evidence grade changed from A to B for consistency with the 0025 clarification as applied to STORM. None of its recent independent tests states the library version, so a current-version test within 12 months is not shown. Overall score (51), sources and directory order are unchanged. Before: 51 / A. After: 51 / B. Decision 0035. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -472,7 +481,7 @@
 <title>Fellou (agentic browser): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/fellou.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/fellou.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Fellou (agentic browser; Browser/web agent): Insufficient evidence, 0 counted independent performance sources. CAP excluded for Fellou (vendor-affiliated author); vendor figures listed, not counted; security reports from Brave and LayerX noted with their commercial interests. Before: none. After: Insufficient evidence. Decision 0031. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -481,7 +490,7 @@
 <title>Loki (Libr-AI OpenFactVerification, open-source): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/loki.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/loki.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Loki (open-source) and OpenFactCheck (open-source), both Verification, both Insufficient evidence. Loki: 2 independent performance sources (TAIGR; Proof-of-Guardrail), found in a Semantic Scholar citation check. OpenFactCheck: 0. Developer papers listed, not counted; shared authors noted on both pages. Before: none. After: Insufficient evidence. Decision 0030. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -490,7 +499,7 @@
 <title>OpenFactCheck (open-source framework): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openfactcheck.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openfactcheck.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Loki (open-source) and OpenFactCheck (open-source), both Verification, both Insufficient evidence. Loki: 2 independent performance sources (TAIGR; Proof-of-Guardrail), found in a Semantic Scholar citation check. OpenFactCheck: 0. Developer papers listed, not counted; shared authors noted on both pages. Before: none. After: Insufficient evidence. Decision 0030. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -499,7 +508,7 @@
 <title>Data Interpreter (MetaGPT, open-source): new entry, 49 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/data-interpreter.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/data-interpreter.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Data Interpreter (MetaGPT, open-source; new category Data science agent): overall 49, evidence grade B, 9 independent performance sources (2 peer-reviewed; competing-author disclosures). Developer results not counted. Methodology: added the Data science agent category. Before: none. After: 49 / B. Decision 0029. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -508,7 +517,7 @@
 <title>Perplexity Comet (agentic browser): new entry, 41 / B-</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/perplexity-comet.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/perplexity-comet.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Perplexity Comet (agentic browser; Browser/web agent): overall 41, evidence grade B-, 4 independent performance sources (1 peer-reviewed; disclosures noted). Trail of Bits audit (vendor-paid) and Perplexity research not counted. Scope note added to the Perplexity entry; its score is unchanged. Before: none. After: 41 / B-. Decision 0028. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -517,7 +526,7 @@
 <title>Perplexity: entry updated, 54 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/perplexity.html"/>
 <category term="entry_update"/>
 <summary type="text">Added Perplexity Comet (agentic browser; Browser/web agent): overall 41, evidence grade B-, 4 independent performance sources (1 peer-reviewed; disclosures noted). Trail of Bits audit (vendor-paid) and Perplexity research not counted. Scope note added to the Perplexity entry; its score is unchanged. Before: 54 / B. After: 54 / B. Decision 0028. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -526,7 +535,7 @@
 <title>Skyvern (open-source): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/skyvern.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/skyvern.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Skyvern (open-source; Browser/web agent): Insufficient evidence, 2 independent performance sources (When Bots Take the Bait; WebTrap Park; shared authors disclosed). Web Bench excluded as vendor co-built; Skyvern WebVoyager result not counted. Two CVEs listed with fixes. Before: none. After: Insufficient evidence. Decision 0027. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -535,7 +544,7 @@
 <title>STORM / Co-STORM (knowledge-storm library): new entry, 56 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/storm.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/storm.html"/>
 <category term="new_entry"/>
 <summary type="text">Added STORM / Co-STORM (knowledge-storm library; Research): overall 56, evidence grade B, 7 independent performance sources (5 peer-reviewed). Hosted research preview not covered. Before: none. After: 56 / B. Decision 0026. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -544,7 +553,7 @@
 <title>Agent S (open-source framework, S2 to S3): new entry, 49 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/agent-s.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/agent-s.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Agent S (open-source framework; new category Computer-use agent): overall 49, evidence grade B, 7 independent performance sources (2 peer-reviewed). Commercial Simular products not covered. Methodology: clarified that 7+ sources without the A conditions receive grade B; added a category list. Before: none. After: 49 / B. Decision 0025. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -553,7 +562,7 @@
 <title>Kimi Researcher (Kimi Deep Research): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/kimi-researcher.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/kimi-researcher.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Kimi Researcher (Research): Insufficient evidence, 2 independent performance sources (DeepResearch Bench; ICBCBench, with disclosures). Vendor benchmark claims not counted. April 2026 Kimi-wide résumé leak listed under disputes. Before: none. After: Insufficient evidence. Decision 0024. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -562,7 +571,7 @@
 <title>Consensus: new entry, 62 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/consensus.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/consensus.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Consensus (Research; all modes): overall score 62, evidence grade B, 6 independent peer-reviewed performance sources (2024–2026). Deep Search and Research Agent not separately tested. One abstract-only study, a competitor benchmark and a retracted study listed but not counted. Before: none. After: 62 / B. Decision 0022. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -571,7 +580,7 @@
 <title>Claude Research: new entry, 58 / B-</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/claude-research.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/claude-research.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Claude Research (Research): overall score 58, evidence grade B-, 4 independent performance sources (3 peer-reviewed), all testing 2025 versions; current Claude Opus 5.5 configuration not independently tested. Mind2Web 2 counted with an Amazon/Anthropic investment disclosure. API-model studies listed but not counted. Before: none. After: 58 / B-. Decision 0021. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -580,7 +589,7 @@
 <title>Browser Use (open-source library): entry updated, 51 / A (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/browser-use.html"/>
 <category term="entry_update"/>
 <summary type="text">Added Manus (Research): Insufficient evidence, 0 independent performance sources for Manus 2.0 (28 Sep 2026, new architecture). Six independent tests of 2025 versions are listed as historical context, not counted. Browser Use: added a competitor disclosure to the CAP source (one author interned at FellouAI, a system evaluated in CAP); score unchanged. Before: 51 / A. After: 51 / A. Decision 0020. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -589,7 +598,7 @@
 <title>Manus: new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/manus.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/manus.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Manus (Research): Insufficient evidence, 0 independent performance sources for Manus 2.0 (28 Sep 2026, new architecture). Six independent tests of 2025 versions are listed as historical context, not counted. Browser Use: added a competitor disclosure to the CAP source (one author interned at FellouAI, a system evaluated in CAP); score unchanged. Before: none. After: Insufficient evidence. Decision 0020. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -598,7 +607,7 @@
 <title>OpenAI Deep Research: entry updated, 65 / B (unchanged)</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openai-deep-research.html"/>
 <category term="entry_update"/>
 <summary type="text">Rechecked OpenAI Deep Research: score 65 and evidence grade B unchanged. Added a dated version note (February 2026 update; legacy mode removed 26 March 2026; counted tests used 2025 versions; current version not independently tested) and the ShadowLeak security finding (fixed August 2025). Before: 65 / B. After: 65 / B. Decision 0019. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -607,7 +616,7 @@
 <title>ChatGPT Work (agent and cloud-browser tasks): new entry, Insufficient evidence</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/chatgpt-work.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/chatgpt-work.html"/>
 <category term="new_entry"/>
 <summary type="text">Added ChatGPT Work (Browser/web agent): Insufficient evidence, 0 independent performance sources for the current product. Its retired predecessors, Operator and ChatGPT agent, are not scored; their independent tests are listed as historical context. Methodology clarification: products that the vendor has retired are not given new scored entries. Before: none. After: Insufficient evidence. Decision 0018. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -616,7 +625,7 @@
 <title>Elicit: new entry, 68 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/elicit.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/elicit.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Elicit (Research; all tiers, tested mainly on paid tiers): overall score 68, evidence grade A, 7 independent performance sources (6 peer-reviewed; one partly independent). Two abstract-only studies listed but not counted. Search results weak; extraction stronger. Before: none. After: 68 / A. Decision 0017. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -625,7 +634,7 @@
 <title>Browser Use (open-source library): new entry, 51 / A</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/browser-use.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/browser-use.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Browser Use, open-source library only (new category: Browser/web agent): overall score 51, evidence grade A, 7 independent performance sources (3 peer-reviewed; 3 are security tests). Results shown as ranges across language models; Browser Use Cloud not scored; tests of 2025 versions counted. Before: none. After: 51 / A. Decision 0016. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -634,7 +643,7 @@
 <title>Gemini Deep Research: new entry, 63 / B</title>
 <updated>2026-10-17T00:00:00Z</updated>
 <published>2026-10-17T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/gemini-deep-research.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/gemini-deep-research.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Gemini Deep Research (Research): overall score 63, evidence grade B, 7 independent performance sources. Tests of earlier versions (Gemini 2.5 Pro and 3 Pro) counted, with the current version (3.1 Pro) disclosed; use of a Gemini AI judge in some benchmarks disclosed. Before: none. After: 63 / B. Decision 0015. As of 2026-10-17. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -643,7 +652,7 @@
 <title>Site change (0014)</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Design v2: directory sorted by overall score (ties alphabetical) with Insufficient evidence entries listed separately; stacked cards on narrow screens; semantic page structure; Changelog in navigation; entry list in structured data (names and links only); llms.txt. No score, grade, status or entry wording changed. Decision 0014. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -652,7 +661,7 @@
 <title>Site change (0013)</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Visual design refresh: dark theme by default with automatic light theme, accessible contrast, visible focus styles. Stylesheet only; no score, grade, status or wording changed. Decision 0013. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -661,7 +670,7 @@
 <title>Site change (0012)</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">SEO basics: sitemap, robots.txt, canonical links, page metadata for link previews, a not-found page and an icon. No score, grade, status or wording changed. Decision 0012. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -670,7 +679,7 @@
 <title>Pactum: entry updated, Insufficient evidence (unchanged)</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/pactum.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/pactum.html"/>
 <category term="entry_update"/>
 <summary type="text">Site polish: “Last reviewed” defined; standard footer links; this changelog; email-only correction requests; Pactum Bloomberg source labeled not reviewed (paywalled); page descriptions, section anchors and consistent site name. No score, grade or status changed. Before: Insufficient evidence. After: Insufficient evidence. Decision 0011. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -679,7 +688,7 @@
 <title>Site change (0010)</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Scoring rules v0.1: exact .5 rounds up (permanent); independent performance source rule; evidence grade table; wording cleanups. No score, grade or status changed. Decision 0010. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -688,7 +697,7 @@
 <title>Google DeepMind SAFE (Search-Augmented Factuality Evaluator): new entry, 66 / B-</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/google-deepmind-safe.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/google-deepmind-safe.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Google DeepMind SAFE: overall 66, grade B-. Before: none. After: 66 / B-. Decision 0009. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -697,7 +706,7 @@
 <title>Open Interpreter: new entry, Insufficient evidence</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/open-interpreter.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/open-interpreter.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Open Interpreter: Insufficient evidence. Before: none. After: Insufficient evidence. Decision 0008. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -706,7 +715,7 @@
 <title>Julius AI: new entry, Insufficient evidence</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/julius-ai.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/julius-ai.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Julius AI: Insufficient evidence. Before: none. After: Insufficient evidence. Decision 0007. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -715,7 +724,7 @@
 <title>Clay: new entry, Insufficient evidence</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/clay.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/clay.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Clay: Insufficient evidence. Before: none. After: Insufficient evidence. Decision 0006. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -724,7 +733,7 @@
 <title>Pactum: new entry, Insufficient evidence</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/pactum.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/pactum.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Pactum: Insufficient evidence. Before: none. After: Insufficient evidence. Decision 0005. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -733,7 +742,7 @@
 <title>Perplexity: new entry, 54 / B</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/perplexity.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/perplexity.html"/>
 <category term="new_entry"/>
 <summary type="text">Added Perplexity: overall 54, grade B. Interim rounding note (exact .5 rounds up). Before: none. After: 54 / B. Decision 0004. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -742,7 +751,7 @@
 <title>OpenAI Deep Research: new entry, 65 / B</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/openai-deep-research.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/openai-deep-research.html"/>
 <category term="new_entry"/>
 <summary type="text">Added OpenAI Deep Research: overall 65, grade B. Before: none. After: 65 / B. Decision 0003. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -751,7 +760,7 @@
 <title>GPT Researcher: new entry, 53 / B-</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/agents/gpt-researcher.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/gpt-researcher.html"/>
 <category term="new_entry"/>
 <summary type="text">Added GPT Researcher: overall 53, grade B-. Before: none. After: 53 / B-. Decision 0002. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>
@@ -760,7 +769,7 @@
 <title>Site change (0001)</title>
 <updated>2026-10-16T00:00:00Z</updated>
 <published>2026-10-16T00:00:00Z</published>
-<link rel="alternate" type="text/html" href="https://agent-trust-clearinghouse.vercel.app/changelog.html"/>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
 <category term="site_change"/>
 <summary type="text">Seed list approved; Loki replaced by Google DeepMind SAFE. Scoring rules v0 published. Decision 0001. As of 2026-10-16. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
 </entry>

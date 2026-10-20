@@ -7,7 +7,7 @@ from data/changelog.yaml, the single source of truth for approved changes. Deter
 values are copied from the approved YAML. Rerun in every packet that changes an entry."""
 import os,glob,re,json,csv,io,yaml
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__))); P=os.path.join(R,'public')
-BASE='https://agent-trust-clearinghouse.vercel.app'
+BASE='https://www.agentclearinghouse.org'
 RULES='Scoring rules v0.1'
 LICENSE='https://creativecommons.org/licenses/by/4.0/'
 CONTACT='trustkeeperace@gmail.com'

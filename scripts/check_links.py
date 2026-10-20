@@ -9,7 +9,7 @@ Usage: python3 scripts/check_links.py [--workers 8]
 import os,re,sys,time,html,urllib.request,urllib.error
 from concurrent.futures import ThreadPoolExecutor
 root=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'public')
-SITE='https://agent-trust-clearinghouse.vercel.app'
+SITE='https://www.agentclearinghouse.org'
 UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36'
 links={};internal={}
 for d,_,fs in os.walk(root):

@@ -1,6 +1,6 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
- "$id": "https://agent-trust-clearinghouse.vercel.app/data/schema.json",
+ "$id": "https://www.agentclearinghouse.org/data/schema.json",
  "title": "Agent Reputation & Trust Clearinghouse export",
  "description": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "type": "object",

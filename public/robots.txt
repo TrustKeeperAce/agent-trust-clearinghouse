@@ -1,6 +1,6 @@
 # Open to all crawlers, including AI search, AI training and user-triggered agents (Decision 0061).
-# Summary for language models: https://agent-trust-clearinghouse.vercel.app/llms.txt
+# Summary for language models: https://www.agentclearinghouse.org/llms.txt
 User-agent: *
 Allow: /
 
-Sitemap: https://agent-trust-clearinghouse.vercel.app/sitemap.xml
+Sitemap: https://www.agentclearinghouse.org/sitemap.xml
