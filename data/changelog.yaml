@@ -8,7 +8,8 @@
   decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0095-llms-full-size.md
   change_html: 'Made <a href="/llms-full.txt">llms-full.txt</a> shorter: entries no longer repeat every source address and instead point to the entry page and to <a href="/data/agents.json">agents.json</a>, which lists every source with its kind and access date. Source counts, scores, grades, scope, summaries and uncertainties in the file are unchanged. No score or grade changes.'
   changes: []
-  source_commits: []
+  source_commits:
+  - 56c4415
 - id: 2026-10-21-0094
   date: '2026-10-21'
   decision_packets:

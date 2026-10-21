@@ -9,7 +9,7 @@
 - **D6:** noted only.
 - **D7 (a):** wording as drafted.
 
-Commit, push and deploy each need separate approval.
+Commit and push approved 2026-10-21 (4:20 PM ET, t250u) with W1–W3 as recommended (pointer wording kept; no typed size in the changelog row; data page unchanged); committed as 56c4415. Deploy needs separate approval.
 
 ## What happened
 - **The warning.** With decision 0094, public/llms-full.txt reached 202,798 bytes. That passed the 0074 warning threshold (200,000 bytes; the error is at 250,000). About 6 more entries of the recent size (about 7,600 bytes each) would have reached the error. The build also asserts the 250,000-byte limit.
