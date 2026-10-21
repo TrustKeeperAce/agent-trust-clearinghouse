@@ -50,6 +50,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [FacTool (open-source)](https://www.agentclearinghouse.org/agents/factool.html): overall 55, evidence grade B
 - [OpenCode (open-source)](https://www.agentclearinghouse.org/agents/opencode.html): overall 54, evidence grade A
 - [Perplexity](https://www.agentclearinghouse.org/agents/perplexity.html): overall 54, evidence grade B
+- [Gemini CLI (open-source)](https://www.agentclearinghouse.org/agents/gemini-cli.html): overall 53, evidence grade A
 - [GPT Researcher](https://www.agentclearinghouse.org/agents/gpt-researcher.html): overall 53, evidence grade B-
 - [Aider (open-source)](https://www.agentclearinghouse.org/agents/aider.html): overall 52, evidence grade A
 - [Browser Use (open-source library)](https://www.agentclearinghouse.org/agents/browser-use.html): overall 51, evidence grade A

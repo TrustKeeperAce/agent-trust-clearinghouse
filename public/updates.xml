@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-21-0094/gemini-cli</id>
+<title>Gemini CLI (open-source): new entry, 53 / A</title>
+<updated>2026-10-21T00:00:00Z</updated>
+<published>2026-10-21T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/agents/gemini-cli.html"/>
+<category term="new_entry"/>
+<summary type="text">Added Gemini CLI (open-source) (Google's open-source terminal coding agent, normally run with Gemini models; Coding agent): overall 53, evidence grade A, 28 independent performance sources (8 peer-reviewed). Grade A rests on a single lower-assurance peer-reviewed study that states a recent version (IJLTER, v0.27.3); without it the grade would be B, overall 51. Results depend on the model used. Google's Tracebit-reported prompt-injection fix (v0.1.14) and two 2026 advisories fixed in 0.39.1 (CVE-2026-12537 and CVE-2026-13745) are described under disputes. Google Jules, Gemini Code Assist and results for Gemini models alone are not covered; studies by Google authors and studies whose authors' own coding product is compared are not counted. The coding agents comparison now names Gemini CLI. Citation check incomplete — recheck later. Before: none. After: 53 / A. Decision 0094. As of 2026-10-21. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-21-0093/opencode</id>
 <title>OpenCode (open-source): new entry, 54 / A</title>
 <updated>2026-10-21T00:00:00Z</updated>

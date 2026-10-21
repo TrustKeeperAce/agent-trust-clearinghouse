@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-21-0094
+  date: '2026-10-21'
+  decision_packets:
+  - '0094'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0094-gemini-cli.md
+  change_html: 'Added <a href="/agents/gemini-cli.html">Gemini CLI (open-source)</a> (Google''s open-source terminal coding agent, normally run with Gemini models; Coding agent): overall 53, evidence grade A, 28 independent performance sources (8 peer-reviewed). Grade A rests on a single lower-assurance peer-reviewed study that states a recent version (IJLTER, v0.27.3); without it the grade would be B, overall 51. Results depend on the model used. Google''s Tracebit-reported prompt-injection fix (v0.1.14) and two 2026 advisories fixed in 0.39.1 (CVE-2026-12537 and CVE-2026-13745) are described under disputes. Google Jules, Gemini Code Assist and results for Gemini models alone are not covered; studies by Google authors and studies whose authors'' own coding product is compared are not counted. The <a href="/compare/coding-agents.html">coding agents comparison</a> now names Gemini CLI. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: gemini-cli
+    type: new_entry
+    before: null
+    after:
+      overall_score: 53
+      evidence_grade: A
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-21-0093
   date: '2026-10-21'
   decision_packets:

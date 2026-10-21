@@ -839,6 +839,85 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
+### Gemini CLI (open-source)
+
+- Entry page: https://www.agentclearinghouse.org/agents/gemini-cli.html
+- Category: Coding agent; type: Open-source (Apache-2.0) terminal coding agent from Google, run with Google's Gemini models (other models only through third-party adapters); GitHub google-gemini/gemini-cli, npm @google/gemini-cli
+- Status: Scored
+- Factor scores (0–100): completion rate 45, disputes 45, adherence to limits 35, evidence quality 85
+- Overall score: 53; evidence grade: A
+- Grade note: Grade A: 28 counted sources (8 peer-reviewed) and versioned tests within the last 12 months. The A grade rests on a single lower-assurance study: the only peer-reviewed test that states a recent version is the IJLTER study (v0.27.3, run February 2026), published in an education journal with lower assurance for software claims. Of the other peer-reviewed tests, one states an older version (0.9.0, October 2025, test date not given) and the rest state none. Without the IJLTER study the entry would be graded B, with an overall score of 51. Preprints tested versions up to v0.61.0 (October 2026). Results reflect the model and the harness together (see Decision 0087, D3); most studies ran Gemini CLI with Gemini models (see Decision 0094, D3).
+- Counted independent performance sources: 28; other sources (as in agents.json): 13; all sources listed but not counted: 22
+- Last reviewed: 2026-10-21
+
+Scope: Gemini CLI from the google-gemini/gemini-cli repository, from its initial release (v0.1.0, June 2025) through 0.65.0 (20 October 2026), in interactive and headless (non-interactive) use, run with any model. Advisories for the run-gemini-cli GitHub Action are described where they also affect Gemini CLI. Google Jules (a separate product with its own entry), Gemini Code Assist agent mode in IDEs, other Google agents, systems that use Gemini CLI as one part of a larger agent, and results for Gemini models alone are not covered.
+
+Summary: Gemini CLI is Google's open-source coding agent for the terminal, normally run with Gemini models. 28 independent studies that ran it were counted, 8 of them peer-reviewed (including ICLR, ISSTA, AAAI and ASE 2026), and 18 state the version tested, from 0.6.1 (2025) to 0.61.0 (October 2026). Task results were mixed: with the same model, Gemini CLI was level with or above some other harnesses and well below others. Many counted studies attacked Gemini CLI, and planted instructions often succeeded; several found it more exposed than other harnesses tested. Google fixed a prompt-injection flaw found by Tracebit in v0.1.14 (July 2025) and two 2026 flaws in 0.39.1 (CVE-2026-12537, critical by Google's score, and CVE-2026-13745); for the second, Google issued a CVE only after the reporter disputed its refusal. The A grade rests on a single peer-reviewed study that states a recent version (v0.27.3), published in a lower-assurance education journal; without it the entry would be graded B with an overall score of 51. Studies by Google authors are not counted. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Results reflect the model and the harness together; most studies ran Gemini CLI with Gemini models, so differences may come from either.
+- Gemini CLI releases weekly (0.65.0 on 20 October 2026); no counted test names a version after 0.61.0, and security behaviour such as folder trust changed across versions.
+- 12 of the 28 counted studies are attack studies, often run with confirmations off or in headless mode; they describe Gemini CLI under attack, not in everyday use.
+- The Tracebit flaw (fixed in v0.1.14) has no CVE, and the two 2026 CVEs have different severity scores from Google and from NVD.
+- Google Jules and Gemini Code Assist agent mode are separate products; results for them are not counted here.
+- Citation check incomplete — recheck later (OpenAlex full text: 457 works screened and 341 arXiv texts read; Semantic Scholar and the arXiv API were not used; one MSR 2026 paper could not be retrieved, and more studies that ran Gemini CLI were found than were reviewed).
+
+Counted sources:
+- https://arxiv.org/abs/2601.11868 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2602.10975 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.1145/3832112 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.1609/aaai.v40i34.40155 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.3390/jcp6030084 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.3390/electronics15102214 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.26803/ijlter.25.8.5 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.22535 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2510.06607 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2511.11012 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.18583 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.28122 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2606.24446 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.07433 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2602.12670 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.20121 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.01222 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.12015 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2606.07682 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.08828 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.27705 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.02684 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.27299 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.06984 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.33910 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.13227 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.07639 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2604.03362 (independent performance, accessed 2026-10-21)
+
+Sources listed but not counted:
+- https://tracebit.com/blog/code-exec-deception-gemini-ai-cli-hijack (other, accessed 2026-10-21)
+- https://security.snyk.io/vuln/SNYK-JS-GOOGLEGEMINICLI-11342370 (other, accessed 2026-10-21)
+- https://github.com/google-github-actions/run-gemini-cli/security/advisories/GHSA-wpqr-6v78-jr5g (other, accessed 2026-10-21)
+- https://nvd.nist.gov/vuln/detail/CVE-2026-12537 (other, accessed 2026-10-21)
+- https://www.pillar.security/blog/my-agentic-trust-issues-from-prompt-injection-to-supply-chain-compromise-on-gemini-cli (other, accessed 2026-10-21)
+- https://nvd.nist.gov/vuln/detail/CVE-2026-13745 (other, accessed 2026-10-21)
+- https://www.pwned.info/articles/homing-in-on-arbitrary-code-execution-within-gemini-cli/ (other, accessed 2026-10-21)
+- https://www.cyera.com/research/cyera-research-labs-discloses-command-prompt-injection-vulnerabilities-in-gemini-cli (other, accessed 2026-10-21)
+- https://arstechnica.com/security/2025/07/flaw-in-gemini-cli-coding-tool-allowed-hackers-to-run-nasty-commands-on-user-devices/ (other, accessed 2026-10-21)
+- https://github.com/google-gemini/gemini-cli/issues/4586 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.03691 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2604.03515 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.00006 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2603.13428 (competitor, accessed 2026-10-21)
+- https://doi.org/10.1145/3830418.3843858 (competitor, accessed 2026-10-21)
+- https://arxiv.org/abs/2510.08640 (competitor, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.02469 (vendor or maintainer, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.00972 (vendor or maintainer, accessed 2026-10-21)
+- https://arxiv.org/abs/2606.01057 (vendor or maintainer, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.29963 (vendor or maintainer, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.06717 (vendor or maintainer, accessed 2026-10-21)
+- https://github.com/google-gemini/gemini-cli (vendor or maintainer, accessed 2026-10-21)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-21.
+
 ### Gemini Deep Research
 
 - Entry page: https://www.agentclearinghouse.org/agents/gemini-deep-research.html

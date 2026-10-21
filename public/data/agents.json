@@ -8,7 +8,7 @@
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 42
+  "entry_count": 43
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -3828,6 +3828,387 @@
      "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-16",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "gemini-cli",
+   "name": "Gemini CLI (open-source)",
+   "url": "https://www.agentclearinghouse.org/agents/gemini-cli.html",
+   "homepage": "https://github.com/google-gemini/gemini-cli",
+   "category": "Coding agent",
+   "type": "Open-source (Apache-2.0) terminal coding agent from Google, run with Google's Gemini models (other models only through third-party adapters); GitHub google-gemini/gemini-cli, npm @google/gemini-cli",
+   "scope": "Gemini CLI from the google-gemini/gemini-cli repository, from its initial release (v0.1.0, June 2025) through 0.65.0 (20 October 2026), in interactive and headless (non-interactive) use, run with any model. Advisories for the run-gemini-cli GitHub Action are described where they also affect Gemini CLI. Google Jules (a separate product with its own entry), Gemini Code Assist agent mode in IDEs, other Google agents, systems that use Gemini CLI as one part of a larger agent, and results for Gemini models alone are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 45,
+    "disputes": 45,
+    "adherence_to_limits": 35,
+    "evidence_quality": 85
+   },
+   "overall_score": 53,
+   "evidence_grade": "A",
+   "grade_note": "Grade A: 28 counted sources (8 peer-reviewed) and versioned tests within the last 12 months. The A grade rests on a single lower-assurance study: the only peer-reviewed test that states a recent version is the IJLTER study (v0.27.3, run February 2026), published in an education journal with lower assurance for software claims. Of the other peer-reviewed tests, one states an older version (0.9.0, October 2025, test date not given) and the rest state none. Without the IJLTER study the entry would be graded B, with an overall score of 51. Preprints tested versions up to v0.61.0 (October 2026). Results reflect the model and the harness together (see Decision 0087, D3); most studies ran Gemini CLI with Gemini models (see Decision 0094, D3).",
+   "independent_source_count": {
+    "performance": 28,
+    "other": 13
+   },
+   "counted_performance_sources": 28,
+   "peer_reviewed_counted_sources": 8,
+   "last_reviewed": "2026-10-21",
+   "decision_packets": [
+    "decisions/0094-gemini-cli.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2601.11868",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.10975",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832112",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1609/aaai.v40i34.40155",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.3390/jcp6030084",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.3390/electronics15102214",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.26803/ijlter.25.8.5",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.22535",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.06607",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2511.11012",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.18583",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.28122",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.24446",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.07433",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.12670",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.20121",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.01222",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.12015",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.07682",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.08828",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.27705",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.02684",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.27299",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.06984",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.33910",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.13227",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.07639",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03362",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://tracebit.com/blog/code-exec-deception-gemini-ai-cli-hijack",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://security.snyk.io/vuln/SNYK-JS-GOOGLEGEMINICLI-11342370",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/google-github-actions/run-gemini-cli/security/advisories/GHSA-wpqr-6v78-jr5g",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12537",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.pillar.security/blog/my-agentic-trust-issues-from-prompt-injection-to-supply-chain-compromise-on-gemini-cli",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13745",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.pwned.info/articles/homing-in-on-arbitrary-code-execution-within-gemini-cli/",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.cyera.com/research/cyera-research-labs-discloses-command-prompt-injection-vulnerabilities-in-gemini-cli",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arstechnica.com/security/2025/07/flaw-in-gemini-cli-coding-tool-allowed-hackers-to-run-nasty-commands-on-user-devices/",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/google-gemini/gemini-cli/issues/4586",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.03691",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03515",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.00006",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.13428",
+     "kind": "competitor",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3830418.3843858",
+     "kind": "competitor",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2510.08640",
+     "kind": "competitor",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.02469",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.00972",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.01057",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.29963",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.06717",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/google-gemini/gemini-cli",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
      "counted": false,
      "peer_reviewed": null
     }
