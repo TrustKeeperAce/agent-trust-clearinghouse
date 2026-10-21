@@ -1,14 +1,14 @@
 {
  "dataset": {
   "name": "Agent Reputation & Trust Clearinghouse",
-  "version": "Scoring rules v0.1; data 2026-10-20",
-  "generated": "2026-10-20",
+  "version": "Scoring rules v0.1; data 2026-10-21",
+  "generated": "2026-10-21",
   "rules": "Scoring rules v0.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 41
+  "entry_count": 42
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -3324,6 +3324,401 @@
      "url": "https://arxiv.org/abs/2407.12943",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-19",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "opencode",
+   "name": "OpenCode (open-source)",
+   "url": "https://www.agentclearinghouse.org/agents/opencode.html",
+   "homepage": "https://github.com/anomalyco/opencode",
+   "category": "Coding agent",
+   "type": "Open-source (MIT) terminal coding agent from Anomaly (formerly SST), with a terminal interface, desktop and web clients and a local server, run with a language model and provider chosen by the user; GitHub anomalyco/opencode, npm opencode-ai",
+   "scope": "OpenCode from the anomalyco/opencode repository (formerly sst/opencode), from its 2025 releases through v1.19.3 (16 October 2026), in its terminal interface, desktop and web clients and `opencode serve` server, run with any language model and provider the user chooses. The older Go project of the same name (opencode-ai/opencode, archived and continued as Crush by Charm) is a different product, and studies that tested it are not counted. Systems that use OpenCode as one part of a larger agent, and third-party plugins such as oh-my-opencode, are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 40,
+    "adherence_to_limits": 40,
+    "evidence_quality": 85
+   },
+   "overall_score": 54,
+   "evidence_grade": "A",
+   "grade_note": "Grade A: 28 counted sources (8 peer-reviewed), and peer-reviewed tests within the last 12 months state the version: To Run or Not to Run (ISSTA 2026, v1.4.0), SWE-Bench Mobile (KDD 2026, v1.1.44), CausalGame (ICML 2026, v1.15.12) and Workspace Topology (CAMLIS 2026, 1.14.46); recent preprints tested up to 1.18.31. No counted test states a v1.19 version. Results reflect the model and harness together (see Decision 0087, D3). One peer-reviewed study (DCAS) states 'v0.0.55', a version number used by both projects named OpenCode (see Decision 0093).",
+   "independent_source_count": {
+    "performance": 28,
+    "other": 19
+   },
+   "counted_performance_sources": 28,
+   "peer_reviewed_counted_sources": 8,
+   "last_reviewed": "2026-10-21",
+   "decision_packets": [
+    "decisions/0093-opencode.md"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1145/3832113",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3770855.3818488",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832783.3834485",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.04293",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.1145/3832783.3834388",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.4230/LIPIcs.ESEM.2026.59",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://doi.org/10.4230/LIPIcs.ESEM.2026.47",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.14876",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.09072",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.04433",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32459",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.18389",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32495",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.20038",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.16859",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.33812",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.19613",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.07744",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2602.22518",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.23980",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.15766",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.35143",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.39065",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.09264",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.27299",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.32635",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.06984",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.01222",
+     "kind": "independent performance",
+     "accessed": "2026-10-21",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://github.com/anomalyco/opencode/security/advisories/GHSA-vxw4-wv6m-9hhh",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://web.archive.org/web/20260203132057/https://cy.md/opencode-rce/",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/anomalyco/opencode/security/advisories/GHSA-c83v-7274-4vgp",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22812",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22813",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/anomalyco/opencode/issues/6930",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/opencode-ai/opencode",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://charm.land/blog/crush-comes-home/",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/anomalyco/opencode/issues/333",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.03691",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.15549",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.01658",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1038/s41746-026-03097-0",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.07433",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.03515",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.00006",
+     "kind": "other",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.20251",
+     "kind": "competitor",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.22906",
+     "kind": "competitor",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.14992",
+     "kind": "competitor",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://opencode.ai/docs/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/anomalyco/opencode",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-21",
      "counted": false,
      "peer_reviewed": null
     }

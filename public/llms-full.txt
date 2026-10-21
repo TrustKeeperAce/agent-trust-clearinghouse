@@ -2,7 +2,7 @@
 
 > Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.
 
-Data as of 2026-10-20 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://www.agentclearinghouse.org/llms.txt. Machine-readable data: https://www.agentclearinghouse.org/data/agents.json (same source as this file). Full rules: https://www.agentclearinghouse.org/methodology.html
+Data as of 2026-10-21 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://www.agentclearinghouse.org/llms.txt. Machine-readable data: https://www.agentclearinghouse.org/data/agents.json (same source as this file). Full rules: https://www.agentclearinghouse.org/methodology.html
 
 ## How this directory works
 
@@ -1483,6 +1483,87 @@ Sources listed but not counted:
 - https://help.openai.com/en/articles/10500283-deep-research (vendor or maintainer, accessed 2026-10-16)
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
+
+### OpenCode (open-source)
+
+- Entry page: https://www.agentclearinghouse.org/agents/opencode.html
+- Category: Coding agent; type: Open-source (MIT) terminal coding agent from Anomaly (formerly SST), with a terminal interface, desktop and web clients and a local server, run with a language model and provider chosen by the user; GitHub anomalyco/opencode, npm opencode-ai
+- Status: Scored
+- Factor scores (0–100): completion rate 50, disputes 40, adherence to limits 40, evidence quality 85
+- Overall score: 54; evidence grade: A
+- Grade note: Grade A: 28 counted sources (8 peer-reviewed), and peer-reviewed tests within the last 12 months state the version: To Run or Not to Run (ISSTA 2026, v1.4.0), SWE-Bench Mobile (KDD 2026, v1.1.44), CausalGame (ICML 2026, v1.15.12) and Workspace Topology (CAMLIS 2026, 1.14.46); recent preprints tested up to 1.18.31. No counted test states a v1.19 version. Results reflect the model and harness together (see Decision 0087, D3). One peer-reviewed study (DCAS) states 'v0.0.55', a version number used by both projects named OpenCode (see Decision 0093).
+- Counted independent performance sources: 28; other sources (as in agents.json): 19; all sources listed but not counted: 24
+- Last reviewed: 2026-10-21
+
+Scope: OpenCode from the anomalyco/opencode repository (formerly sst/opencode), from its 2025 releases through v1.19.3 (16 October 2026), in its terminal interface, desktop and web clients and `opencode serve` server, run with any language model and provider the user chooses. The older Go project of the same name (opencode-ai/opencode, archived and continued as Crush by Charm) is a different product, and studies that tested it are not counted. Systems that use OpenCode as one part of a larger agent, and third-party plugins such as oh-my-opencode, are not covered.
+
+Summary: OpenCode is an open-source coding agent for the terminal from Anomaly (formerly SST), run with a language model the user chooses. 28 independent studies that ran it were counted, 8 of them peer-reviewed (ISSTA, KDD, ICML, ASE, ESEM and CAMLIS 2026), and several state the version tested, from v1.1.44 (January 2026) to 1.18.31 (September 2026). Results depend heavily on the model: with the same model OpenCode scored above some harnesses and below others, and with weaker or incompatible models its results fell sharply. Seven counted studies attacked OpenCode itself, and planted instructions often succeeded, mostly with confirmations turned off. Three security advisories were published for OpenCode's local server and web interface in 2026 (CVE-2026-22812, CVE-2026-22813 and GHSA-632h-h47v-g4x4); each was fixed, and for CVE-2026-22812 the initial report went unanswered for several weeks. An older, archived Go project also used the name OpenCode; it is a different product. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Results reflect the model and the harness together; OpenCode is run with many different models, and with the same model its results ranged from well below to level with other harnesses.
+- Two different products have used the name OpenCode. Some papers cite the archived Go project's address while testing the current one, and one peer-reviewed study (DCAS) states 'v0.0.55', a version number both projects used.
+- OpenCode releases very often (716 releases in 278 days by one count), so tested versions age quickly; no counted test names a v1.19 release.
+- Seven of the 28 counted studies are attack studies, mostly run with confirmations off; their results describe OpenCode under attack, not in everyday use.
+- The fix for GHSA-632h-h47v-g4x4 has no CVE; scanners that rely on CVE identifiers may not flag affected versions (1.14.30 to 1.18.21).
+- Citation check incomplete — recheck later (OpenAlex full text: 553 works screened and 474 arXiv texts read; Semantic Scholar and the arXiv API were not used; several non-arXiv papers were not retrieved, and more studies that ran OpenCode were found than were reviewed).
+
+Counted sources:
+- https://doi.org/10.1145/3832113 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.1145/3770855.3818488 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.1145/3832783.3834485 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.04293 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.1145/3832783.3834388 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.4230/LIPIcs.ESEM.2026.59 (independent performance, accessed 2026-10-21)
+- https://doi.org/10.4230/LIPIcs.ESEM.2026.47 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.14876 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.09072 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.04433 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.32459 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.18389 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.32495 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.20038 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.16859 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.33812 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2606.19613 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.07744 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2602.22518 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.23980 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.15766 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.35143 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.39065 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2610.09264 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.27299 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.32635 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2608.06984 (independent performance, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.01222 (independent performance, accessed 2026-10-21)
+
+Sources listed but not counted:
+- https://github.com/anomalyco/opencode/security/advisories/GHSA-vxw4-wv6m-9hhh (other, accessed 2026-10-21)
+- https://web.archive.org/web/20260203132057/https://cy.md/opencode-rce/ (other, accessed 2026-10-21)
+- https://github.com/anomalyco/opencode/security/advisories/GHSA-c83v-7274-4vgp (other, accessed 2026-10-21)
+- https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4 (other, accessed 2026-10-21)
+- https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/ (other, accessed 2026-10-21)
+- https://nvd.nist.gov/vuln/detail/CVE-2026-22812 (other, accessed 2026-10-21)
+- https://nvd.nist.gov/vuln/detail/CVE-2026-22813 (other, accessed 2026-10-21)
+- https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses (other, accessed 2026-10-21)
+- https://github.com/anomalyco/opencode/issues/6930 (other, accessed 2026-10-21)
+- https://github.com/opencode-ai/opencode (other, accessed 2026-10-21)
+- https://charm.land/blog/crush-comes-home/ (other, accessed 2026-10-21)
+- https://github.com/anomalyco/opencode/issues/333 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.03691 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2606.15549 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2604.01658 (other, accessed 2026-10-21)
+- https://doi.org/10.1038/s41746-026-03097-0 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2607.07433 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2604.03515 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.00006 (other, accessed 2026-10-21)
+- https://arxiv.org/abs/2605.20251 (competitor, accessed 2026-10-21)
+- https://arxiv.org/abs/2606.22906 (competitor, accessed 2026-10-21)
+- https://arxiv.org/abs/2609.14992 (competitor, accessed 2026-10-21)
+- https://opencode.ai/docs/ (vendor or maintainer, accessed 2026-10-21)
+- https://github.com/anomalyco/opencode (vendor or maintainer, accessed 2026-10-21)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-21.
 
 ### OpenFactCheck (open-source framework)
 

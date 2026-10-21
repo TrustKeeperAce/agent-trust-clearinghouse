@@ -12,7 +12,7 @@
   }
  ],
  "_clearinghouse": {
-  "generated": "2026-10-20",
+  "generated": "2026-10-21",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
   "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://www.agentclearinghouse.org/agents/aider.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://www.agentclearinghouse.org/citing.html",
@@ -20,6 +20,34 @@
   "note": "before is null for new entries; values that could not be recovered are null."
  },
  "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-21-0093/opencode",
+   "url": "https://www.agentclearinghouse.org/agents/opencode.html",
+   "title": "OpenCode (open-source): new entry, 54 / A",
+   "content_text": "Added OpenCode (open-source) (open-source terminal coding agent from Anomaly, run with a model chosen by the user; Coding agent): overall 54, evidence grade A, 28 independent performance sources (8 peer-reviewed). Results depend heavily on the model used. The older, archived Go project also named OpenCode (now Crush) is a different product and is not counted. Three security advisories for OpenCode's local server and web interface (CVE-2026-22812, CVE-2026-22813 and GHSA-632h-h47v-g4x4, which has no CVE) are described under disputes; all were fixed. Anomaly's own material, systems built on OpenCode and studies whose authors' own coding agent or model is compared are not counted. The coding agents comparison now names OpenCode among the open-source frameworks. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-21T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "opencode",
+    "entry_url": "https://www.agentclearinghouse.org/agents/opencode.html",
+    "before": null,
+    "after": {
+     "overall_score": 54,
+     "evidence_grade": "A",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0093"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0093-opencode.md",
+    "as_of": "2026-10-21",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
   {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0092/google-jules",
    "url": "https://www.agentclearinghouse.org/agents/google-jules.html",

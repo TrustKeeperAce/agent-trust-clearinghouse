@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-21-0093
+  date: '2026-10-21'
+  decision_packets:
+  - '0093'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0093-opencode.md
+  change_html: 'Added <a href="/agents/opencode.html">OpenCode (open-source)</a> (open-source terminal coding agent from Anomaly, run with a model chosen by the user; Coding agent): overall 54, evidence grade A, 28 independent performance sources (8 peer-reviewed). Results depend heavily on the model used. The older, archived Go project also named OpenCode (now Crush) is a different product and is not counted. Three security advisories for OpenCode''s local server and web interface (CVE-2026-22812, CVE-2026-22813 and GHSA-632h-h47v-g4x4, which has no CVE) are described under disputes; all were fixed. Anomaly''s own material, systems built on OpenCode and studies whose authors'' own coding agent or model is compared are not counted. The <a href="/compare/coding-agents.html">coding agents comparison</a> now names OpenCode among the open-source frameworks. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: opencode
+    type: new_entry
+    before: null
+    after:
+      overall_score: 54
+      evidence_grade: A
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-20-0092
   date: '2026-10-20'
   decision_packets:

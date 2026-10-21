@@ -4,7 +4,7 @@
 
 Scores: four factors shown separately (completion rate 30%, disputes 20%, adherence to limits 25%, evidence quality 25%). Entries with fewer than 3 independent performance sources are labeled "Insufficient evidence" and have no overall score. The evidence grade describes the evidence, not the agent.
 
-Data as of 2026-10-20 (Scoring rules v0.1). Data and site text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code: Apache-2.0 (https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE). The project name, logo and favicon are not licensed.
+Data as of 2026-10-21 (Scoring rules v0.1). Data and site text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code: Apache-2.0 (https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/LICENSE). The project name, logo and favicon are not licensed.
 
 Usage note: if you use or quote these scores, they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date. They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.
 
@@ -48,6 +48,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [Claude Code (Anthropic)](https://www.agentclearinghouse.org/agents/claude-code.html): overall 55, evidence grade A
 - [Cline (open-source)](https://www.agentclearinghouse.org/agents/cline.html): overall 55, evidence grade A
 - [FacTool (open-source)](https://www.agentclearinghouse.org/agents/factool.html): overall 55, evidence grade B
+- [OpenCode (open-source)](https://www.agentclearinghouse.org/agents/opencode.html): overall 54, evidence grade A
 - [Perplexity](https://www.agentclearinghouse.org/agents/perplexity.html): overall 54, evidence grade B
 - [GPT Researcher](https://www.agentclearinghouse.org/agents/gpt-researcher.html): overall 53, evidence grade B-
 - [Aider (open-source)](https://www.agentclearinghouse.org/agents/aider.html): overall 52, evidence grade A
