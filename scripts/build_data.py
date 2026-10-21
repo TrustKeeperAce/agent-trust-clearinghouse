@@ -446,6 +446,9 @@ def build_footers():
     ip=os.path.join(P,'index.html'); it=open(ip).read()  # 0074: footer How to cite link, added once to the index footer
     if FOOTER_CITE not in it:
         assert FOOTER_CITE_AFTER in it; open(ip,'w').write(it.replace(FOOTER_CITE_AFTER,FOOTER_CITE_AFTER+FOOTER_CITE,1))
+    it=open(ip).read()  # 0091: footer Funding link before Privacy
+    if FOOTER_FUNDING not in it:
+        assert FOOTER_FUNDING_BEFORE in it; open(ip,'w').write(it.replace(FOOTER_FUNDING_BEFORE,FOOTER_FUNDING+FOOTER_FUNDING_BEFORE,1))
     f=site_footer()
     for fp in glob.glob(os.path.join(P,'**','*.html'),recursive=True):
         if os.path.relpath(fp,P) in FOOTER_SKIP: continue
@@ -544,4 +547,34 @@ def build_asof_dates():
         fp=os.path.join(P,f); t=open(fp).read(); t,n=ASOF_RE.subn(f'Data as of {gen} (',t); assert n==1,(f,n); open(fp,'w').write(t)
     print('as-of dates',gen)
 
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates(); build_llms_full(); build_asof_dates()
+# ---- 0091: Funding and conflicts of interest (methodology #funding), footer link ----
+SPONSORS_LIVE=False  # turn on only after the GitHub Sponsors profile is approved and live (0091 D6)
+SPONSORS_URL='https://github.com/sponsors/TrustKeeperAce'
+FUNDING_H='Funding and conflicts of interest'
+FUNDING_ANCHOR='funding'
+FUNDING_INTRO='The Clearinghouse is run by one person and is free to use. Money never affects scores, factor scores, evidence grades, which entries are included or reviewed, when they are reviewed, listing order, or entry wording.'
+FUNDING_ITEMS=[
+ ('Donations only.','The only money we accept is voluntary donations. A donation is not payment for anything: donors get no early access, no preview of reviews, no say in what is reviewed or when, and no listing, badge, logo or link on this site.'),
+ ('Not from listed companies.',"We do not accept donations from a company whose product is listed here, from a company that makes an AI agent in one of the directory’s categories, from their parent or subsidiary companies, or from anyone giving on their behalf. If such a donation arrives, we cancel it, return it where we can, and note it in the changelog. People who work at these companies may give personally; their donations are treated like any other and come with nothing in return."),
+ ('No paid placements.','We do not sell listings, profile pages, featured spots, badges, advertising or sponsored placements, and we do not use affiliate links for listed agents. Corrections are free and follow the same published rules for everyone, including the makers of listed products.'),
+ ('Disclosure.','If any donations are received in a quarter, we publish the number of donations and the total in the changelog. Any organization that donates is named. An individual who gives more than $500 in a calendar year is named; if they prefer not to be named, we return the amount above $500.'),
+ ('Conflicts of interest.','If the maintainer has a financial or personal tie to a listed product or its maker (for example employment, paid work, shares, or a close family member who works there), it is disclosed on that entry and in its decision record. Paying for a product as an ordinary customer is not treated as a tie. As of 20 October 2026, the maintainer reports no such ties.'),
+ ('Concerns.','If you believe money or a conflict has affected an entry, email trustkeeperace@gmail.com. Concerns are reviewed under the same rules as correction requests, and any change is listed in the changelog.'),
+ ('Changes.','This policy changes only through an approved decision, listed in the changelog.'),
+]
+FUNDING_LIVE_P="To donate: <a href=\"SPONSORS_URL\">Support the Clearinghouse on GitHub Sponsors</a>. GitHub and its payment processor, Stripe, handle payments, and GitHub’s own privacy statement and terms apply there. The Clearinghouse is not a registered charity, so donations are generally not tax-deductible."
+FUNDING_NOT_LIVE_P='Donations are not open yet. When they open, a link will appear here and the change will be listed in the changelog.'
+FUNDING_CLOSE='Informational only. Funding does not change the scores, which are rule-based summaries of public evidence, not a guarantee, endorsement, or certification.'
+FOOTER_FUNDING='<a href="/methodology.html#funding">Funding</a> · '
+FOOTER_FUNDING_BEFORE='<a href="/methodology.html#privacy">Privacy</a>'
+def funding_section_html():
+    mail='<a href="mailto:trustkeeperace@gmail.com">trustkeeperace@gmail.com</a>'
+    li=''.join('<li><strong>'+_e(a)+'</strong> '+_e(b).replace('trustkeeperace@gmail.com',mail)+'</li>' for a,b in FUNDING_ITEMS)
+    don=FUNDING_LIVE_P.replace('SPONSORS_URL',SPONSORS_URL) if SPONSORS_LIVE else _e(FUNDING_NOT_LIVE_P)
+    return ('<section class="funding" aria-labelledby="'+FUNDING_ANCHOR+'"><h2 id="'+FUNDING_ANCHOR+'">'+_e(FUNDING_H)+'</h2><p>'+_e(FUNDING_INTRO)+'</p><ul>'+li+'</ul><p>'+don+'</p><p>'+_e(FUNDING_CLOSE)+'</p></section>\n')
+def build_funding():
+    fp=os.path.join(P,'methodology.html'); t=open(fp).read()
+    t=re.sub(r'<section class="funding".*?</section>\n?','',t,flags=re.S); a='<h2 id="privacy">'; assert t.count(a)==1
+    open(fp,'w').write(t.replace(a,funding_section_html()+a,1)); print('funding section', 'live' if SPONSORS_LIVE else 'not live')
+
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates(); build_llms_full(); build_asof_dates(); build_funding()

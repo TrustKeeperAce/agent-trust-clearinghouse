@@ -21,6 +21,30 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0091",
+   "url": "https://www.agentclearinghouse.org/changelog.html",
+   "title": "Site change (0091)",
+   "content_text": "Added a Funding and conflicts of interest section to the methodology: money never affects scores, grades, inclusion, review timing, order or wording; no donations from companies whose products are listed or that make AI agents in the directory's categories; no paid listings, advertising or affiliate links for listed agents; quarterly donation totals. Donations are not open yet. The privacy section now also says the site has no sponsored placements, and every page footer links to the new section. No score, grade or source count changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-20T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0091"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0091-funding-policy.md",
+    "as_of": "2026-10-20",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0090",
    "url": "https://www.agentclearinghouse.org/changelog.html",
    "title": "Site change (0090)",

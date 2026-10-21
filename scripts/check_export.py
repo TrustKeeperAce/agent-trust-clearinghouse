@@ -448,6 +448,20 @@ for k,e in y.items():
     if m and int(m.group(1))!=d: E(f'0079 {k}: entry page shows {m.group(1)} other, derived {d}')
     if not m and e['overall_score'] is not None: E(f'0079 {k}: scored entry page has no "N other" status text')
 print('0079: checked, typed other equals derived other for all entries (and entry-page status text)')
+
+# 0091: funding section verbatim, footer Funding link, privacy wording, Sponsors link only when live, banned words
+_mt=open(os.path.join(P,'methodology.html')).read()
+if B.funding_section_html() not in _mt: E('0091: methodology funding section missing or not verbatim')
+if 'cookies, advertising, sponsored placements, or cross-site tracking' not in _mt: E('0091: privacy sentence missing')
+if 'href="#funding">Funding and conflicts of interest</a>' not in _mt: E('0091: corrections link to #funding missing')
+if B.FOOTER_FUNDING+B.FOOTER_FUNDING_BEFORE not in open(os.path.join(P,'index.html')).read(): E('0091: footer Funding link missing')
+_sp=[os.path.relpath(f,P) for f in glob.glob(os.path.join(P,'**','*.html'),recursive=True) if 'github.com/sponsors/' in open(f).read()]
+if B.SPONSORS_LIVE and _sp!=['methodology.html']: E(f'0091: Sponsors link should appear only on methodology.html, found {_sp}')
+if not B.SPONSORS_LIVE and _sp: E(f'0091: Sponsors link present before profile is live: {_sp}')
+_ft=re.sub('<[^>]+>','',B.funding_section_html())
+for b in B.BANNED_CITE+[r'\btrusted\b',r'\brecommend',r'\brated\b',r'\brating']:
+    if re.search(b,_ft,re.I): E(f'0091: banned wording {b!r} in funding section')
+
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')
 sys.exit(1 if err else 0)
