@@ -8,7 +8,7 @@
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 40
+  "entry_count": 41
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -4270,6 +4270,205 @@
      "url": "https://www.cognition.ai/blog/introducing-devin",
      "kind": "vendor (not counted)",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "google-jules",
+   "name": "Google Jules",
+   "url": "https://www.agentclearinghouse.org/agents/google-jules.html",
+   "homepage": "https://jules.google",
+   "category": "Coding agent",
+   "type": "Google's asynchronous coding agent (Google Labs) that works on a connected GitHub repository in a cloud virtual machine and returns its changes as a branch or pull request, through the Jules web app, its command-line interface (Jules Tools) or the Jules API",
+   "scope": "Google Jules, the hosted coding agent at jules.google that plans a task, edits code and runs commands in a cloud virtual machine and publishes the result to GitHub as a branch or pull request (by default from the google-labs-jules[bot] account): the public beta from 19 May 2025, general availability from 6 August 2025 (Gemini 2.5 Pro), and later updates including Gemini 3 Pro (November 2025), Gemini 3 Flash as the base model (January 2026) and Gemini 3.1 Pro for Pro-plan users (March 2026), whether a task is started in the web app, from a GitHub issue label, with the Jules Tools command-line interface or through the Jules API. The December 2024 research configuration that Google benchmarked on a SWE-bench subset, other Google coding products (Gemini CLI, Gemini Code Assist including its pull-request reviewer, Google Antigravity, Firebase Studio, AlphaEvolve) and results for Gemini models alone are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 50,
+    "disputes": 55,
+    "adherence_to_limits": 40,
+    "evidence_quality": 55
+   },
+   "overall_score": 50,
+   "evidence_grade": "B-",
+   "grade_note": "Grade B-: this score rests on three counted sources, the minimum needed for a score, and none of them is peer-reviewed. If any one of the three were not counted, the entry would not have enough evidence to be scored. No counted test names the version of Jules it used. Their data come from May to October 2025, so Jules as it has worked since the move to Gemini 3 models in November 2025 has not been independently tested. Two of the three use the same public dataset of pull requests (AIDev), one is in a journal whose review process could not be confirmed, and one is a single build per tool scored with help from an AI code reviewer. A peer-reviewed study with a GitHub co-author that compares Jules with GitHub Copilot is listed but not counted, because GitHub makes Copilot (see Decision 0092).",
+   "independent_source_count": {
+    "performance": 3,
+    "other": 15
+   },
+   "counted_performance_sources": 3,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-20",
+   "decision_packets": [
+    "decisions/0092-google-jules.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2609.37985",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://doi.org/10.22214/ijraset.2026.84804",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://labs.thefocus.ai/reports/june-2025-coding-agents.pdf",
+     "kind": "independent performance",
+     "accessed": "2026-10-20",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://embracethered.com/blog/posts/2025/google-jules-invisible-prompt-injection/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://huggingface.co/datasets/hao-li/AIDev-7.6M",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://insights.logicstar.ai/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://prarena.ai/",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3793302.3793354",
+     "kind": "competitor",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.15567",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.12849",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.21311",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.24429",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.07639",
+     "kind": "other",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.jonatkinson.co.uk/blog/codex-jules-claude-comparison/",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://yoav.blog/2025/06/10/comparing-ai-coding-agents-with-a-real-task/",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://hyperdev.matsuoka.com/p/google-jules-first-look-not-ready",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://web.archive.org/web/20250528191935/https://stepchange.work/blog/can-ai-beat-a-human-dev-jules-vs-codex-on-live-django-issues-with-apx",
+     "kind": "anecdotal",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2605.06717",
+     "kind": "excluded",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/jules-now-available/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://jules.google/docs/changelog/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://jules.google/docs/faq/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-20",
      "counted": false,
      "peer_reviewed": null
     }

@@ -967,6 +967,59 @@ Sources listed but not counted:
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-16.
 
+### Google Jules
+
+- Entry page: https://www.agentclearinghouse.org/agents/google-jules.html
+- Category: Coding agent; type: Google's asynchronous coding agent (Google Labs) that works on a connected GitHub repository in a cloud virtual machine and returns its changes as a branch or pull request, through the Jules web app, its command-line interface (Jules Tools) or the Jules API
+- Status: Scored
+- Factor scores (0–100): completion rate 50, disputes 55, adherence to limits 40, evidence quality 55
+- Overall score: 50; evidence grade: B-
+- Grade note: Grade B-: this score rests on three counted sources, the minimum needed for a score, and none of them is peer-reviewed. If any one of the three were not counted, the entry would not have enough evidence to be scored. No counted test names the version of Jules it used. Their data come from May to October 2025, so Jules as it has worked since the move to Gemini 3 models in November 2025 has not been independently tested. Two of the three use the same public dataset of pull requests (AIDev), one is in a journal whose review process could not be confirmed, and one is a single build per tool scored with help from an AI code reviewer. A peer-reviewed study with a GitHub co-author that compares Jules with GitHub Copilot is listed but not counted, because GitHub makes Copilot (see Decision 0092).
+- Counted independent performance sources: 3; other sources (as in agents.json): 15; all sources listed but not counted: 21
+- Last reviewed: 2026-10-20
+
+Scope: Google Jules, the hosted coding agent at jules.google that plans a task, edits code and runs commands in a cloud virtual machine and publishes the result to GitHub as a branch or pull request (by default from the google-labs-jules[bot] account): the public beta from 19 May 2025, general availability from 6 August 2025 (Gemini 2.5 Pro), and later updates including Gemini 3 Pro (November 2025), Gemini 3 Flash as the base model (January 2026) and Gemini 3.1 Pro for Pro-plan users (March 2026), whether a task is started in the web app, from a GitHub issue label, with the Jules Tools command-line interface or through the Jules API. The December 2024 research configuration that Google benchmarked on a SWE-bench subset, other Google coding products (Gemini CLI, Gemini Code Assist including its pull-request reviewer, Google Antigravity, Firebase Studio, AlphaEvolve) and results for Gemini models alone are not covered.
+
+Summary: Google Jules is Google's asynchronous coding agent: it works on a GitHub repository in a cloud virtual machine and returns its changes as a pull request. It entered public beta in May 2025 and left beta in August 2025. Three independent sources that measured it were found, none peer-reviewed: two studies of pull requests in a public dataset of agent activity on GitHub (one in a journal whose review process could not be confirmed) and a newsletter report that gave 15 coding tools the same build task. None names the Jules version, and all predate the Gemini 3 updates, so the current version has not been independently tested. The score rests on the minimum of three counted sources. In May 2025 an independent security researcher showed that instructions hidden in a web page or GitHub issue could make Jules leak data and run downloaded malware; he reported this to Google, which, according to him, closed the report as an issue it was already tracking. No CVE, lawsuit or regulatory action concerning Jules was found. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- No counted test names the version or model of Jules it used; their data come from the beta and the Gemini 2.5 Pro period (May to October 2025). The Gemini 3 models and the features added since November 2025 are untested.
+- Merge rates measure whether maintainers accepted a pull request, not whether the task was done correctly; they also depend on how much human review happens and on repository popularity, and most Jules pull requests went to unstarred repositories.
+- According to the AIDev maintainers, pull requests from the Jules bot account fell about fifteen-fold after late January 2026. Since February 2026 Jules can also commit under the user's own name, which may make later activity harder to identify.
+- The prompt-injection findings are one researcher's demonstrations from May 2025; whether Google has since changed this behaviour was not established.
+- The score rests on the minimum of three counted sources: if any one of them were not counted, the entry would not have enough evidence to be scored. Two of the three use the same dataset (AIDev v4).
+- Citation check incomplete — recheck later (OpenAlex full text: 368 works matched and 210 downloaded; arXiv abstract search only; Semantic Scholar was not available).
+
+Counted sources:
+- https://arxiv.org/abs/2609.37985 (independent performance, accessed 2026-10-20)
+- https://doi.org/10.22214/ijraset.2026.84804 (independent performance, accessed 2026-10-20)
+- https://labs.thefocus.ai/reports/june-2025-coding-agents.pdf (independent performance, accessed 2026-10-20)
+
+Sources listed but not counted:
+- https://embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/ (other, accessed 2026-10-20)
+- https://embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/ (other, accessed 2026-10-20)
+- https://embracethered.com/blog/posts/2025/google-jules-invisible-prompt-injection/ (other, accessed 2026-10-20)
+- https://huggingface.co/datasets/hao-li/AIDev-7.6M (other, accessed 2026-10-20)
+- https://insights.logicstar.ai/ (other, accessed 2026-10-20)
+- https://prarena.ai/ (other, accessed 2026-10-20)
+- https://doi.org/10.1145/3793302.3793354 (competitor, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.15567 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.12849 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2608.21311 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2606.24429 (other, accessed 2026-10-20)
+- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-20)
+- https://www.jonatkinson.co.uk/blog/codex-jules-claude-comparison/ (anecdotal, accessed 2026-10-20)
+- https://yoav.blog/2025/06/10/comparing-ai-coding-agents-with-a-real-task/ (anecdotal, accessed 2026-10-20)
+- https://hyperdev.matsuoka.com/p/google-jules-first-look-not-ready (anecdotal, accessed 2026-10-20)
+- https://web.archive.org/web/20250528191935/https://stepchange.work/blog/can-ai-beat-a-human-dev-jules-vs-codex-on-live-django-issues-with-apx (anecdotal, accessed 2026-10-20)
+- https://arxiv.org/abs/2605.06717 (excluded, accessed 2026-10-20)
+- https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/ (vendor or maintainer, accessed 2026-10-20)
+- https://blog.google/innovation-and-ai/models-and-research/google-labs/jules-now-available/ (vendor or maintainer, accessed 2026-10-20)
+- https://jules.google/docs/changelog/ (vendor or maintainer, accessed 2026-10-20)
+- https://jules.google/docs/faq/ (vendor or maintainer, accessed 2026-10-20)
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
+
 ### GPT Researcher
 
 - Entry page: https://www.agentclearinghouse.org/agents/gpt-researcher.html

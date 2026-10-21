@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-20-0092
+  date: '2026-10-20'
+  decision_packets:
+  - '0092'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0092-google-jules.md
+  change_html: 'Added <a href="/agents/google-jules.html">Google Jules</a> (Google''s asynchronous coding agent that works on a GitHub repository in a cloud virtual machine and returns pull requests; Coding agent): overall 50, evidence grade B-, 3 independent performance sources (none peer-reviewed). No counted source states the Jules version, and all predate the Gemini 3 updates. Google''s own posts and benchmark results and a paper by Google authors are not counted; a peer-reviewed study with a GitHub co-author that compares Jules with GitHub Copilot is listed but not counted. One counted study is in a journal whose review process could not be confirmed. An independent researcher''s 2025 prompt-injection demonstrations are described under disputes and adherence and are not counted as tests. No CVE, lawsuit or regulatory action concerning Jules was found. The <a href="/compare/coding-agents.html">coding agents comparison</a> now names Google Jules among the managed products. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: google-jules
+    type: new_entry
+    before: null
+    after:
+      overall_score: 50
+      evidence_grade: B-
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-20-0091
   date: '2026-10-20'
   decision_packets:

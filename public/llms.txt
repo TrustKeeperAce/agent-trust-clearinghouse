@@ -54,6 +54,7 @@ Citation guidance: When quoting a score, include the agent name, overall score a
 - [Browser Use (open-source library)](https://www.agentclearinghouse.org/agents/browser-use.html): overall 51, evidence grade A
 - [Replit Agent](https://www.agentclearinghouse.org/agents/replit-agent.html): overall 51, evidence grade B
 - [Devin (Cognition)](https://www.agentclearinghouse.org/agents/devin.html): overall 50, evidence grade B
+- [Google Jules](https://www.agentclearinghouse.org/agents/google-jules.html): overall 50, evidence grade B-
 - [Magentic-One (open-source)](https://www.agentclearinghouse.org/agents/magentic-one.html): overall 50, evidence grade B
 - [Agent S (open-source framework)](https://www.agentclearinghouse.org/agents/agent-s.html): overall 49, evidence grade B
 - [Data Interpreter (MetaGPT, open-source)](https://www.agentclearinghouse.org/agents/data-interpreter.html): overall 49, evidence grade B

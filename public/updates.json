@@ -21,6 +21,34 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0092/google-jules",
+   "url": "https://www.agentclearinghouse.org/agents/google-jules.html",
+   "title": "Google Jules: new entry, 50 / B-",
+   "content_text": "Added Google Jules (Google's asynchronous coding agent that works on a GitHub repository in a cloud virtual machine and returns pull requests; Coding agent): overall 50, evidence grade B-, 3 independent performance sources (none peer-reviewed). No counted source states the Jules version, and all predate the Gemini 3 updates. Google's own posts and benchmark results and a paper by Google authors are not counted; a peer-reviewed study with a GitHub co-author that compares Jules with GitHub Copilot is listed but not counted. One counted study is in a journal whose review process could not be confirmed. An independent researcher's 2025 prompt-injection demonstrations are described under disputes and adherence and are not counted as tests. No CVE, lawsuit or regulatory action concerning Jules was found. The coding agents comparison now names Google Jules among the managed products. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-20T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "google-jules",
+    "entry_url": "https://www.agentclearinghouse.org/agents/google-jules.html",
+    "before": null,
+    "after": {
+     "overall_score": 50,
+     "evidence_grade": "B-",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0092"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0092-google-jules.md",
+    "as_of": "2026-10-20",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-20-0091",
    "url": "https://www.agentclearinghouse.org/changelog.html",
    "title": "Site change (0091)",
