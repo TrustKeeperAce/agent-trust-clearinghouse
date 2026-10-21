@@ -8,7 +8,7 @@
 - **D5 (a):** llms-full.txt / llms.txt wording unchanged.
 - **D6 (a):** page-only links and the chatgpt-work homepage slug are noted below for a later packet.
 
-Commit, push and deploy each need separate approval.
+Commit and push approved 2026-10-21 (7:11 PM ET, t255u commit approved, W1–W3 as recommended; deploy not approved); W1 'SWE-bench leaderboards' wording kept, W2 SWE-WebDevBench wording kept, W3 D6 list kept; committed as fc26878. Deploy needs separate approval.
 
 ## What happened
 - **The gap.** Decision 0095 found that 3 of the 826 sources in data/agents.json were not linked on their entry pages. All three are listed but not counted:

@@ -8,7 +8,8 @@
   decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0096-unlinked-sources.md
   change_html: 'Linked three listed, not counted sources that were in the data but missing from their entry pages: the SWE-bench leaderboards and the Holistic Agent Leaderboard on <a href="/agents/mini-swe-agent.html">mini-SWE-agent (open-source)</a>, and SWE-WebDevBench on <a href="/agents/replit-agent.html">Replit Agent</a>. No score, grade or source count changes.'
   changes: []
-  source_commits: []
+  source_commits:
+  - fc26878
 - id: 2026-10-21-0095
   date: '2026-10-21'
   decision_packets:
