@@ -9,6 +9,15 @@
 <author><name>Agent Reputation &amp; Trust Clearinghouse</name></author>
 <rights>CC BY 4.0 https://creativecommons.org/licenses/by/4.0/</rights>
 <entry>
+<id>tag:agent-trust-clearinghouse,2026:update/2026-10-21-0095</id>
+<title>Site change (0095)</title>
+<updated>2026-10-21T00:00:00Z</updated>
+<published>2026-10-21T00:00:00Z</published>
+<link rel="alternate" type="text/html" href="https://www.agentclearinghouse.org/changelog.html"/>
+<category term="site_change"/>
+<summary type="text">Made llms-full.txt shorter: entries no longer repeat every source address and instead point to the entry page and to agents.json, which lists every source with its kind and access date. Source counts, scores, grades, scope, summaries and uncertainties in the file are unchanged. No score or grade changes. Decision 0095. As of 2026-10-21. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.</summary>
+</entry>
+<entry>
 <id>tag:agent-trust-clearinghouse,2026:update/2026-10-21-0094/gemini-cli</id>
 <title>Gemini CLI (open-source): new entry, 53 / A</title>
 <updated>2026-10-21T00:00:00Z</updated>

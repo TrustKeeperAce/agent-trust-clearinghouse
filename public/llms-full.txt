@@ -36,7 +36,7 @@ Data and site text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Co
 
 ## Entries
 
-Entries are listed alphabetically by name; the order carries no meaning.
+Entries are listed alphabetically by name; the order carries no meaning. Source lists are not repeated in this file. Each entry page lists its sources with titles, findings and access dates, separating counted from not counted sources; data/agents.json lists every source URL with its kind and access date.
 
 ### Agent S (open-source framework, S2 to S3)
 
@@ -59,26 +59,7 @@ Uncertainties:
 - The only independent safety test (TOCTOU, preprint) does not state the Agent S version or model, and its result is shared by all screenshot-based agents tested; no independent prompt-injection evaluation was found.
 - Simular's commercial products (Simular app, Sai, Cloud, API) are not covered.
 
-Counted sources:
-- https://aclanthology.org/2026.acl-long.1021/ (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.16042 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.22557 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.02995 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.20650 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2509.26506 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2502.08047 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2603.00476 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://os-world.github.io/ (other (maintainer-verified leaderboard, not counted), accessed 2026-10-17)
-- https://github.com/simular-ai/Agent-S/issues/146 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-84885 (other, accessed 2026-10-17)
-- https://greenlitbooks.com/field-notes/is-agent-s-safe (other, accessed 2026-10-17)
-- https://github.com/simular-ai/Agent-S/blob/15776a8/gui_agents/s3/cli_app.py (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.02250 (vendor or maintainer, accessed 2026-10-17)
-- https://arxiv.org/abs/2504.00906 (vendor or maintainer, accessed 2026-10-17)
-- https://arxiv.org/abs/2410.08164 (historical context, accessed 2026-10-17)
-- https://www.simular.ai/articles/sai-tops-osworld-2-0 (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -103,29 +84,7 @@ Uncertainties:
 - No independent test from the last 12 months states the AIDE version.
 - Results depend heavily on the model and compute budget.
 
-Counted sources:
-- https://arxiv.org/abs/2410.07095 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2511.09904 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2504.04310 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.01822 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.30047 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2503.23314 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2505.13291 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2502.00964 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.02660 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2511.03985 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.16805 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.04971 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.14115 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2507.02554 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2505.07782 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.05930 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.17373 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.08511 (other, accessed 2026-10-17)
-- https://github.com/WecoAI/aideml/issues/100 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2502.13138 (vendor, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -152,22 +111,7 @@ Uncertainties:
 - MT-Sec's EMNLP 2026 venue comes from an author homepage and was not confirmed in the ACL Anthology.
 - Results depend heavily on the model, and many results reflect older models.
 
-Counted sources:
-- https://arxiv.org/abs/2506.11791 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2508.18993 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.13859 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2504.21205 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.02262 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2509.22097 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.22952 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.04518 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://nvd.nist.gov/vuln/detail/CVE-2026-85674 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-10175 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.04921 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.29889 (other, accessed 2026-10-17)
-- https://aider.chat/docs/leaderboards/ (not counted (leaderboard), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -188,14 +132,7 @@ Uncertainties:
 - Semantic Scholar citation check (19 Oct 2026, Decision 0077) covered 86 citing papers; Tree-Notebook (Findings ACL 2026) and DATAEXPLAINER (SBBD 2026) describe AutoKaggle only. Not read in full: PACE (KDD 2026), AutoDS-Tools (AAMAS 2026), AutoMind (IEEE Access), PiML, CodeViz, AutoCluster, a Nature paper and a bioRxiv benchmark.
 - Most papers that cite AutoKaggle only describe it; few run it.
 
-Counted sources:
-- https://doi.org/10.1002/sta4.70126 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2503.23314 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2410.20424 (vendor, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.28590 (other (re-implementation), accessed 2026-10-19)
-- https://arxiv.org/abs/2507.13413 (other (copied figures), accessed 2026-10-19)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -224,26 +161,7 @@ Uncertainties:
 - Privacy Practices of Browser Agents: three of the four authors work at Brave Software, which makes a web browser; Brave's own assistant was not evaluated.
 - BreakingWeb: five of the eleven authors are at Amazon, which offers a competing browser agent (Nova Act) that was not evaluated.
 
-Counted sources:
-- https://arxiv.org/abs/2504.01382 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.11977 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.08392 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.16565 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.02456 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.17318 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2505.13076 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2603.00476 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.32915 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.07725 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.35814 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://hal.cs.princeton.edu/online_mind2web (independent performance, accessed 2026-10-17)
-- https://github.com/advisories/GHSA-x39x-9qw5-ghrf (independent other, accessed 2026-10-17)
-- https://www.cve.org/CVERecord?id=CVE-2025-47241 (independent other, accessed 2026-10-17)
-- https://github.com/browser-use/browser-use/pull/5241 (independent other, accessed 2026-10-17)
-- https://browser-use.com/posts/sota-technical-report (vendor or maintainer, accessed 2026-10-17)
-- https://browser-use.com/posts/online-mind2web-benchmark (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -269,21 +187,7 @@ Uncertainties:
 - Composio ran the test through its own integration product; AI Agents Library used the author's own Skills in 2 of 10 tasks.
 - Composio's page labels the OpenAI harness as ChatGPT Work in its setup table but as Codex CLI in its results table and one paragraph, so which OpenAI product ran the test is not fully clear.
 
-Counted sources:
-- https://www.aiagentslibrary.com/blog/chatgpt-work-review/ (independent performance, accessed 2026-10-18)
-- https://composio.dev/content/chatgpt-work-vs-claude-cowork (independent performance, accessed 2026-10-18)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2504.01382 (historical context (earlier product, not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2506.21506 (historical context (earlier product, not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2503.07919 (historical context (earlier product, not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2603.29020 (historical context (earlier product, not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2509.10723 (historical context (earlier product, not counted), accessed 2026-10-17)
-- https://embracethered.com/blog/posts/2025/chatgpt-operator-prompt-injection-exploits/ (other (security test of earlier product), accessed 2026-10-17)
-- https://splx.ai/blog/chatgpt-agent-solves-captcha (other (security test of earlier product), accessed 2026-10-17)
-- https://openai.com/index/introducing-chatgpt-agent/ (vendor or maintainer, accessed 2026-10-17)
-- https://help.openai.com/en/articles/11752874-chatgpt-agent (vendor or maintainer, accessed 2026-10-17)
-- https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/ (other (hands-on documentation of capabilities, no performance test), accessed 2026-10-18)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-18.
 
@@ -309,35 +213,7 @@ Uncertainties:
 - Security advisory counts come from Anthropic's GitHub repository; a few concern Claude Desktop rather than the CLI.
 - Citation check incomplete — about 13 candidate studies not yet screened; recheck later.
 
-Counted sources:
-- https://dl.acm.org/doi/10.1145/3832267 (independent performance, accessed 2026-10-17)
-- https://dl.acm.org/doi/full/10.1145/3798166 (independent performance, accessed 2026-10-17)
-- https://dl.acm.org/doi/full/10.1145/3793302.3793576 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.15229 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.22535 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.09072 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.19799 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.12670 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.07591 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.18583 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.18206 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.26724 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.10569 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2604.04978 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.03262 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.33382 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.35143 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2601.11868 (excluded (developer-affiliated author), accessed 2026-10-17)
-- https://github.com/anthropics/claude-code/security/advisories (other, accessed 2026-10-17)
-- https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/ (other, accessed 2026-10-17)
-- https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/ (other, accessed 2026-10-17)
-- https://conf.researchr.org/details/fse-2026/fse-2026-industry-papers/12/Engineering-Pitfalls-in-AI-Coding-Tools-An-Empirical-Study-of-Bugs-in-Claude-Code-C (other, accessed 2026-10-17)
-- https://conf.researchr.org/details/icse-2026/agent-2026-papers/22/Decoding-the-Configuration-of-AI-Coding-Agents-Insights-from-Claude-Code-Projects (other, accessed 2026-10-17)
-- https://dl.acm.org/doi/10.1145/3793302.3793605 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2603.21642 (other, accessed 2026-10-17)
-- https://www.anthropic.com/engineering (vendor (not counted), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -363,18 +239,7 @@ Uncertainties:
 - The overall score is exactly 57.5; exact .5 rounds up (Decision 0010).
 - Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).
 
-Counted sources:
-- https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.21506 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.09688 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1111/jdv.70035 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://www.oasis.security/blog/claude-ai-prompt-injection-data-exfiltration-vulnerability (other (Claude-wide security finding, not specific to Research), accessed 2026-10-17)
-- https://www.mbgsec.com/archive/2025-10-30-claude-pirate-abusing-anthropic-s-file-api-for-data-exfiltration-embrace-the-red/ (other (Claude-wide security finding, not specific to Research), accessed 2026-10-17)
-- https://claude.com/resources/articles/research (vendor or maintainer, accessed 2026-10-17)
-- https://support.claude.com/en/articles/11088861-use-research-on-claude (vendor or maintainer, accessed 2026-10-17)
-- https://www.anthropic.com/claude-opus-5-5 (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -400,23 +265,7 @@ Uncertainties:
 - Citation check still incomplete (Decision 0080, 19 Oct 2026): an OpenAlex full-text search for "Claygent" found one passing mention and no test; Semantic Scholar was unavailable (rate-limited). Recheck later.
 - Two tests published by competing vendors (Sixtyfour, SyncGTM) report Clay figures; they are listed but not counted.
 
-Sources listed but not counted:
-- https://www.clay.com/blog/introducing-gpt-5-in-claygent (vendor or maintainer, accessed 2026-10-16)
-- https://university.clay.com/docs/data-test-methodology-personal-emails (vendor or maintainer, accessed 2026-10-16)
-- https://university.clay.com/docs/plans-and-billing (vendor or maintainer, accessed 2026-10-16)
-- https://university.clay.com/docs/ai-tokens (vendor or maintainer, accessed 2026-10-16)
-- https://developers.clay.com/public-api/rate-limits (vendor or maintainer, accessed 2026-10-16)
-- https://www.clay.com/dpa (vendor or maintainer, accessed 2026-10-16)
-- https://www.clay.com/privacy (vendor or maintainer, accessed 2026-10-16)
-- https://openai.com/index/clay/ (customer or partner, accessed 2026-10-16)
-- https://www.zenml.io/llmops-database/production-evaluation-and-data-foundations-for-go-to-market-agents (independent other, accessed 2026-10-16)
-- https://www.linkedin.com/posts/samholding_i-tested-clays-3-ai-research-agents-for-activity-7265271012445900800-njpL (anecdotal, accessed 2026-10-16)
-- https://www.linkedin.com/posts/dan-m-rosenthal_clay-just-released-their-new-web-scraper-activity-7219339139194781699-qldw (anecdotal, accessed 2026-10-16)
-- https://www.linkedin.com/posts/imran-izham-01b4742ab_i-activity-7487468031762374657-RGU5 (anecdotal, accessed 2026-10-16)
-- https://ai.g2.com/evaluations/categories/ai-sdr/clay-claygent (anecdotal, accessed 2026-10-16)
-- https://www.trustpilot.com/review/clay.com (anecdotal, accessed 2026-10-16)
-- https://www.linkedin.com/posts/christopher-price-59a24b178_we-benchmarked-our-research-agents-against-activity-7425305026103013376-Q-DL (competitor, accessed 2026-10-19)
-- https://syncgtm.com/blog/clay-review (competitor, accessed 2026-10-19)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -446,54 +295,7 @@ Uncertainties:
 - Results for forks (Roo Code, Kilo Code) are not counted, even when reported in the same studies.
 - Citation check incomplete — recheck later (OpenAlex full text used: 790 works matched and 295 downloaded; Semantic Scholar rate-limited).
 
-Counted sources:
-- https://doi.org/10.1145/3832267 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.1109/dsn69566.2026.00046 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.1109/sp63933.2026.00154 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.3390/jcp6030084 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.1609/aaai.v40i42.40898 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.acl-long.2170 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2604.15625 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.34190/eccws.25.1.4597 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.01222 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2607.07433 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.27027 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.39065 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2608.29381 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.09935 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.09264 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.20038 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.16859 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.29955 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2607.14456 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.22906 (independent performance, accessed 2026-10-20)
-
-Sources listed but not counted:
-- https://doi.org/10.52202/085713-5769 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2604.03515 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.31575 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2607.28617 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2604.13536 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2607.26390 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2604.24038 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2603.14225 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2604.14661 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2608.07925 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.23808 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.08500 (other, accessed 2026-10-20)
-- https://mindgard.ai/blog/cline-coding-agent-vulnerabilities (other, accessed 2026-10-20)
-- https://embracethered.com/blog/posts/2025/cline-vulnerable-to-data-exfiltration/ (other, accessed 2026-10-20)
-- https://maccarita.com/posts/idesaster/ (other, accessed 2026-10-20)
-- https://adnanthekhan.com/posts/clinejection/ (other, accessed 2026-10-20)
-- https://github.com/cline/cline/security/advisories/GHSA-5c57-rqjx-35g2 (other, accessed 2026-10-20)
-- https://github.com/cline/cline/security/advisories/GHSA-3cj3-hqcr-g934 (other, accessed 2026-10-20)
-- https://github.com/cline/cline/security/advisories/GHSA-9ppg-jx86-fqw7 (other, accessed 2026-10-20)
-- https://github.com/cline/cline/issues/5124 (anecdotal, accessed 2026-10-20)
-- https://github.com/cline/cline/issues/8422 (anecdotal, accessed 2026-10-20)
-- https://github.com/cline/cline (vendor or maintainer, accessed 2026-10-20)
-- https://cline.ghost.io/post-mortem-unauthorized-cline-cli-npm/ (vendor or maintainer, accessed 2026-10-20)
-- https://github.com/cline/cline-bench (excluded, accessed 2026-10-20)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
 
@@ -519,20 +321,7 @@ Uncertainties:
 - A retracted CJILS comparison was excluded.
 - {'0058 follow-up': 'a Semantic Scholar search (Oct 2026) found no new independent test; a Cureus 2025 review of the app is a literature review, not a test.'}
 
-Counted sources:
-- https://doi.org/10.1093/ehjdh/ztag125 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.2196/88766 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1007/s11695-026-08511-w (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1186/s12903-026-09298-z (independent performance, accessed 2026-10-17)
-- https://doi.org/10.20517/2347-9264.2024.99 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1097/GOX.0000000000007176 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://doi.org/10.1177/01939459261451723 (independent other, accessed 2026-10-17)
-- https://github.com/elicit/elicit-paper-search-eval (excluded (competitor-run), accessed 2026-10-17)
-- https://consensus.app/home/blog/deep-search/ (vendor or maintainer, accessed 2026-10-17)
-- https://consensus.app/home/blog/what-has-changed-in-consensus-summer-26/ (vendor or maintainer, accessed 2026-10-17)
-- https://help.consensus.app/en/articles/10093291-security (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -559,50 +348,7 @@ Uncertainties:
 - Two competitor-authored comparisons and one whole-product adoption study are listed but not counted.
 - Citation check incomplete — recheck later (Semantic Scholar rate-limited and the arXiv API unavailable; OpenAlex used; several MSR 2026 papers not screened).
 
-Counted sources:
-- https://doi.org/10.1145/3793302.3793576 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2601.15195 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3793302.3793611 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3793302.3793581 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2602.02345 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3793302.3793569 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3793302.3793577 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1016/j.infsof.2026.108333 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3832267 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3770855.3818488 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2507.15003 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2602.04226 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2607.21832 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2609.37985 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2609.17598 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2607.12428 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2607.20759 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2510.06607 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2605.16819 (independent performance, accessed 2026-10-19)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2606.18168 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2606.22721 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2609.26847 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2605.22534 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2605.08017 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2606.22711 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2604.19965 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2606.13468 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2607.04697 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2601.13597 (other, accessed 2026-10-19)
-- https://doi.org/10.1145/3793302.3793349 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2603.21642 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2510.02609 (historical context (earlier version, not counted), accessed 2026-10-19)
-- https://arxiv.org/abs/2601.18341 (other, accessed 2026-10-19)
-- https://nvd.nist.gov/vuln/search/results?query=Cursor+code+editor (other, accessed 2026-10-19)
-- https://github.com/cursor/cursor/security/advisories (other, accessed 2026-10-19)
-- https://www.businessinsider.com/pocketos-cursor-ai-agent-deleted-production-database-startup-railway-2026-4 (anecdotal, accessed 2026-10-19)
-- https://arxiv.org/abs/2607.15143 (competitor, accessed 2026-10-19)
-- https://arxiv.org/abs/2601.13943 (competitor, accessed 2026-10-19)
-- https://arxiv.org/abs/2601.20886 (not counted (model only), accessed 2026-10-19)
-- https://cursor.com/blog (vendor (not counted), accessed 2026-10-19)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -626,27 +372,7 @@ Uncertainties:
 - Whether 2026 studies used 0.8.2 or later main-branch code is mostly unstated.
 - No fixes have been identified for the Data Interpreter CVEs; the project appears dormant.
 
-Counted sources:
-- https://aclanthology.org/2025.emnlp-main.58/ (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2509.25084 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.03841 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.32528 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.01285 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2503.23314 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.24339 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.26724 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.08661 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://nvd.nist.gov/vuln/detail/CVE-2026-4516 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-19058 (other, accessed 2026-10-17)
-- https://www.zerodayinitiative.com/advisories/ZDI-26-026/ (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2024-23750 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-19060 (other, accessed 2026-10-17)
-- https://github.com/FoundationAgents/MetaGPT (other, accessed 2026-10-17)
-- https://aclanthology.org/2025.findings-acl.1016/ (vendor or maintainer, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.00856 (not counted (developer co-author), accessed 2026-10-17)
-- https://arxiv.org/abs/2509.09245 (not counted (figures copied), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -672,29 +398,7 @@ Uncertainties:
 - The 2025 security findings were not confirmed as fixed in the sources found.
 - Citation check incomplete — recheck later (Semantic Scholar was rate-limited; OpenAlex was used).
 
-Counted sources:
-- https://dl.acm.org/doi/10.1145/3793302.3793576 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.15195 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3793302.3793611 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3793302.3793581 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1016/j.infsof.2026.108333 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2507.15003 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.04226 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.21832 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.37985 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.17598 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.12428 (independent performance, accessed 2026-10-17)
-- https://deccan-ai.webflow.io/research/anthar-study-evaluating-ai-coding-agents-beyond-benchmarks (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://www.answer.ai/posts/2025-01-08-devin.html (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2024-56083 (other, accessed 2026-10-17)
-- https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/ (other, accessed 2026-10-17)
-- https://newsletter.pragmaticengineer.com/p/the-pulse-90 (other, accessed 2026-10-17)
-- https://www.youtube.com/watch?v=UTS2Hz96HYQ (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.18168 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.22721 (other, accessed 2026-10-17)
-- https://www.cognition.ai/blog/introducing-devin (vendor (not counted), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -723,23 +427,7 @@ Uncertainties:
 - Grade A rests on one recent test (Wei et al., preprint) that states the Pro tier and the dates of use; Elicit publishes no version numbers.
 - Extraction results vary widely between studies (51–92%); the lowest result comes from a March 2024 test, before the high-accuracy default.
 
-Counted sources:
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC12483133/ (independent performance, accessed 2026-10-17)
-- https://link.springer.com/article/10.1186/s12874-025-02528-y (independent performance, accessed 2026-10-17)
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC12257877/ (independent performance, accessed 2026-10-17)
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC12462964/ (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1017/rsm.2026.10080 (independent performance, accessed 2026-10-17)
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC13010132/ (independent performance, accessed 2026-10-17)
-- https://www.medrxiv.org/content/10.64898/2026.10.02.26364621v1 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1186/s12874-026-02892-3 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.2196/68592 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1186/s13750-025-00362-9 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://journals.sagepub.com/doi/10.1177/08944393251404052 (independent other, accessed 2026-10-17)
-- https://doi.org/10.1177/01939459261451723 (independent other, accessed 2026-10-17)
-- https://elicit.com/blog/how-we-evaluated-elicit-systematic-review (vendor or maintainer, accessed 2026-10-17)
-- https://support.elicit.com/en/articles/14758043-privacy-for-uploaded-papers (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -767,41 +455,7 @@ Uncertainties:
 - One study with a FacTool author (Knowledge-Centric Hallucination Detection / RefChecker) is excluded under 0031.
 - Citation check incomplete — recheck later (OpenAlex full text used; Semantic Scholar rate-limited and the arXiv API unreliable; 29 citing works could not be downloaded).
 
-Counted sources:
-- https://aclanthology.org/2024.findings-emnlp.830/ (independent performance, accessed 2026-10-19)
-- https://aclanthology.org/2025.coling-main.755/ (independent performance, accessed 2026-10-19)
-- https://aclanthology.org/2025.coling-demos.4/ (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2025.findings-naacl.158 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2025.findings-emnlp.1240 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1609/aaai.v39i1.31985 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2024.emnlp-main.3 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2024.acl-long.254 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2025.findings-emnlp.1295 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1145/3767695.3769500 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2025.fever-1.13 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2026.findings-acl.58 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.1007/978-3-032-37657-2_8 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2402.17097 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2504.09866 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2609.00508 (independent performance, accessed 2026-10-19)
-- https://arxiv.org/abs/2610.16141 (independent performance, accessed 2026-10-19)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2402.14690 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2601.22361 (other, accessed 2026-10-19)
-- https://doi.org/10.1109/icassp49660.2025.10889448 (other, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2026.acl-demo.36 (other, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2024.emnlp-demo.23 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2402.11943 (other, accessed 2026-10-19)
-- https://arxiv.org/abs/2412.12164 (other, accessed 2026-10-19)
-- https://doi.org/10.1038/s41598-026-41862-z (other, accessed 2026-10-19)
-- https://www.cve.org/CVERecord?id=CVE-2025-4261 (other, accessed 2026-10-19)
-- https://github.com/GAIR-NLP/factool/issues/48 (anecdotal, accessed 2026-10-19)
-- https://arxiv.org/abs/2307.13528 (vendor or maintainer, accessed 2026-10-19)
-- https://github.com/GAIR-NLP/factool (vendor or maintainer, accessed 2026-10-19)
-- https://pypi.org/project/factool/ (vendor or maintainer, accessed 2026-10-19)
-- https://doi.org/10.18653/v1/2024.emnlp-main.395 (excluded, accessed 2026-10-19)
-- https://arxiv.org/abs/2407.12943 (vendor or maintainer, accessed 2026-10-19)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -825,17 +479,7 @@ Uncertainties:
 - Informal hands-on reviews (Zapier, TheToolNerd, meshedsociety, a personal blog, Journal du Net in Oct 2025, and Writingmate in Aug 2026, whose publisher sells an alternative AI-agent product) describe instability and failures on complex pages but are not systematic and are not counted.
 - Fix status of the Brave and LayerX findings is unknown.
 
-Sources listed but not counted:
-- https://arxiv.org/abs/2608.08392 (excluded (vendor-affiliated author), accessed 2026-10-17)
-- https://brave.com/blog/unseeable-prompt-injections/ (other, accessed 2026-10-17)
-- https://www.theregister.com/software/2025/10/28/ai-browsers-wide-open-to-attack-via-prompt-injection/327406 (other, accessed 2026-10-17)
-- https://layerxsecurity.com/blog/bioshocking-ai-gaming-the-ai-browser-and-escaping-its-guardrails/ (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2511.09309 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.05509 (other, accessed 2026-10-17)
-- https://decodo.com/blog/agentic-capability-report (other, accessed 2026-10-19)
-- https://fellou.ai/blog/fellou-v2-launch/ (vendor or maintainer, accessed 2026-10-17)
-- https://fellou.ai/blog/eko20-launch/ (vendor or maintainer, accessed 2026-10-17)
-- https://fellou.ai/policy (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -862,59 +506,7 @@ Uncertainties:
 - Google Jules and Gemini Code Assist agent mode are separate products; results for them are not counted here.
 - Citation check incomplete — recheck later (OpenAlex full text: 457 works screened and 341 arXiv texts read; Semantic Scholar and the arXiv API were not used; one MSR 2026 paper could not be retrieved, and more studies that ran Gemini CLI were found than were reviewed).
 
-Counted sources:
-- https://arxiv.org/abs/2601.11868 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2602.10975 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.1145/3832112 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.1609/aaai.v40i34.40155 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.3390/jcp6030084 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.3390/electronics15102214 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.26803/ijlter.25.8.5 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.22535 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2510.06607 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2511.11012 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.18583 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.28122 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2606.24446 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.07433 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2602.12670 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.20121 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.01222 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.12015 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2606.07682 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.08828 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.27705 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.02684 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.27299 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.06984 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.33910 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.13227 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.07639 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2604.03362 (independent performance, accessed 2026-10-21)
-
-Sources listed but not counted:
-- https://tracebit.com/blog/code-exec-deception-gemini-ai-cli-hijack (other, accessed 2026-10-21)
-- https://security.snyk.io/vuln/SNYK-JS-GOOGLEGEMINICLI-11342370 (other, accessed 2026-10-21)
-- https://github.com/google-github-actions/run-gemini-cli/security/advisories/GHSA-wpqr-6v78-jr5g (other, accessed 2026-10-21)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-12537 (other, accessed 2026-10-21)
-- https://www.pillar.security/blog/my-agentic-trust-issues-from-prompt-injection-to-supply-chain-compromise-on-gemini-cli (other, accessed 2026-10-21)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-13745 (other, accessed 2026-10-21)
-- https://www.pwned.info/articles/homing-in-on-arbitrary-code-execution-within-gemini-cli/ (other, accessed 2026-10-21)
-- https://www.cyera.com/research/cyera-research-labs-discloses-command-prompt-injection-vulnerabilities-in-gemini-cli (other, accessed 2026-10-21)
-- https://arstechnica.com/security/2025/07/flaw-in-gemini-cli-coding-tool-allowed-hackers-to-run-nasty-commands-on-user-devices/ (other, accessed 2026-10-21)
-- https://github.com/google-gemini/gemini-cli/issues/4586 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.03691 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2604.03515 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.00006 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2603.13428 (competitor, accessed 2026-10-21)
-- https://doi.org/10.1145/3830418.3843858 (competitor, accessed 2026-10-21)
-- https://arxiv.org/abs/2510.08640 (competitor, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.02469 (vendor or maintainer, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.00972 (vendor or maintainer, accessed 2026-10-21)
-- https://arxiv.org/abs/2606.01057 (vendor or maintainer, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.29963 (vendor or maintainer, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.06717 (vendor or maintainer, accessed 2026-10-21)
-- https://github.com/google-gemini/gemini-cli (vendor or maintainer, accessed 2026-10-21)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-21.
 
@@ -942,21 +534,7 @@ Uncertainties:
 - No independent test of usage-limit or permission adherence was found.
 - Citation check incomplete — recheck later (0057: four 2025–2026 candidates screened, one counted; an Eye brief communication is paywalled until 2027 and an AMCIS 2026 forecasting paper was read as abstract only; Semantic Scholar still unavailable).
 
-Counted sources:
-- https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.21506 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2508.15804 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2604.03173 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.08536 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.09688 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.17554 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.20891 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://www.safebreach.com/blog/invitation-is-all-you-need-hacking-gemini/ (independent other, accessed 2026-10-17)
-- https://www.tenable.com/security/research/tra-2025-23 (independent other, accessed 2026-10-17)
-- https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/ (vendor or maintainer, accessed 2026-10-17)
-- https://ai.google.dev/gemini-api/docs/deep-research (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -982,30 +560,7 @@ Uncertainties:
 - Copilot in IDEs and Copilot CLI have their own evidence and CVEs; they may need separate entries.
 - Citation check incomplete — recheck later (Semantic Scholar was rate-limited; OpenAlex was used).
 
-Counted sources:
-- https://dl.acm.org/doi/10.1145/3793302.3793576 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.15195 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3793302.3793611 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3793302.3793581 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1016/j.infsof.2026.108333 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2507.15003 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.04226 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.21832 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.37985 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.26847 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.17598 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.12428 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2606.18168 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.22721 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.21426 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.22534 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.29204 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/search/results?query=GitHub+Copilot (other, accessed 2026-10-17)
-- https://github.com/features/copilot (vendor (not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2604.00917 (vendor (not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2608.00101 (vendor (not counted), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -1032,17 +587,7 @@ Uncertainties:
 - The overall score is exactly 65.5; exact .5 rounds up (Decision 0010).
 - Citation check incomplete — recheck later (0058: three candidates read in full, one counted; Semantic Scholar still unavailable for SAFE).
 
-Counted sources:
-- https://aclanthology.org/2025.findings-acl.161/ (independent performance, accessed 2026-10-16)
-- https://aclanthology.org/2025.acl-long.1587/ (independent performance, accessed 2026-10-16)
-- https://aclanthology.org/2024.findings-emnlp.552/ (independent performance, accessed 2026-10-16)
-- https://aclanthology.org/2025.emnlp-main.905/ (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://proceedings.neurips.cc/paper_files/paper/2024/file/937ae0e83eb08d2cb8627fe1def8c751-Paper-Conference.pdf (vendor or maintainer, accessed 2026-10-16)
-- https://github.com/google-deepmind/long-form-factuality (vendor or maintainer, accessed 2026-10-16)
-- https://venturebeat.com/ai/google-deepmind-unveils-superhuman-ai-system-that-excels-in-fact-checking-saving-costs-and-improving-accuracy (independent other, accessed 2026-10-16)
-- https://forklog.com/en/deepmind-unveils-ai-model-for-fact-checking/ (independent other, accessed 2026-10-16)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-16.
 
@@ -1069,33 +614,7 @@ Uncertainties:
 - The score rests on the minimum of three counted sources: if any one of them were not counted, the entry would not have enough evidence to be scored. Two of the three use the same dataset (AIDev v4).
 - Citation check incomplete — recheck later (OpenAlex full text: 368 works matched and 210 downloaded; arXiv abstract search only; Semantic Scholar was not available).
 
-Counted sources:
-- https://arxiv.org/abs/2609.37985 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.22214/ijraset.2026.84804 (independent performance, accessed 2026-10-20)
-- https://labs.thefocus.ai/reports/june-2025-coding-agents.pdf (independent performance, accessed 2026-10-20)
-
-Sources listed but not counted:
-- https://embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/ (other, accessed 2026-10-20)
-- https://embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/ (other, accessed 2026-10-20)
-- https://embracethered.com/blog/posts/2025/google-jules-invisible-prompt-injection/ (other, accessed 2026-10-20)
-- https://huggingface.co/datasets/hao-li/AIDev-7.6M (other, accessed 2026-10-20)
-- https://insights.logicstar.ai/ (other, accessed 2026-10-20)
-- https://prarena.ai/ (other, accessed 2026-10-20)
-- https://doi.org/10.1145/3793302.3793354 (competitor, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.15567 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.12849 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2608.21311 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.24429 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-20)
-- https://www.jonatkinson.co.uk/blog/codex-jules-claude-comparison/ (anecdotal, accessed 2026-10-20)
-- https://yoav.blog/2025/06/10/comparing-ai-coding-agents-with-a-real-task/ (anecdotal, accessed 2026-10-20)
-- https://hyperdev.matsuoka.com/p/google-jules-first-look-not-ready (anecdotal, accessed 2026-10-20)
-- https://web.archive.org/web/20250528191935/https://stepchange.work/blog/can-ai-beat-a-human-dev-jules-vs-codex-on-live-django-issues-with-apx (anecdotal, accessed 2026-10-20)
-- https://arxiv.org/abs/2605.06717 (excluded, accessed 2026-10-20)
-- https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/ (vendor or maintainer, accessed 2026-10-20)
-- https://blog.google/innovation-and-ai/models-and-research/google-labs/jules-now-available/ (vendor or maintainer, accessed 2026-10-20)
-- https://jules.google/docs/changelog/ (vendor or maintainer, accessed 2026-10-20)
-- https://jules.google/docs/faq/ (vendor or maintainer, accessed 2026-10-20)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
 
@@ -1119,27 +638,7 @@ Uncertainties:
 - One independent evaluation (TTD-DR) is a preprint by authors comparing against their own system.
 - No independent completion-rate or cost data was found.
 
-Counted sources:
-- https://arxiv.org/abs/2505.19253 (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2507.05495 (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2507.16075 (independent performance, accessed 2026-10-16)
-
-Sources listed but not counted:
-- https://www.cs.cmu.edu/~callan/Papers/ictir26-Jo%C3%A3o_Coelho.pdf (independent performance, accessed 2026-10-16)
-- https://dl.acm.org/doi/10.1145/3805713.3820409 (independent performance, accessed 2026-10-16)
-- https://dl.acm.org/doi/10.1145/3774905.3793116 (independent performance, accessed 2026-10-16)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-5625 (independent other, accessed 2026-10-16)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-5630 (independent other, accessed 2026-10-16)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-5631 (independent other, accessed 2026-10-16)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-5632 (independent other, accessed 2026-10-16)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-5633 (independent other, accessed 2026-10-16)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-37006 (independent other, accessed 2026-10-16)
-- https://github.com/advisories/GHSA-8j86-h8gg-797p (independent other, accessed 2026-10-16)
-- https://github.com/assafelovic/gpt-researcher/pull/1820 (vendor or maintainer, accessed 2026-10-16)
-- https://github.com/assafelovic/gpt-researcher/blob/main/SECURITY.md (vendor or maintainer, accessed 2026-10-16)
-- https://github.com/assafelovic/gpt-researcher/blob/main/deep_agents/BENCHMARK.md (vendor or maintainer, accessed 2026-10-16)
-- https://docs.gptr.dev/docs/gpt-researcher/gptr/config (vendor or maintainer, accessed 2026-10-16)
-- https://github.com/assafelovic/gpt-researcher (vendor or maintainer, accessed 2026-10-16)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-16.
 
@@ -1166,28 +665,7 @@ Uncertainties:
 - The product and its billing model changed in 2026; no counted source tests the 2026 product, and older evidence may not reflect it.
 - A 2025 Teaching Statistics illustration (Vilakati) is listed but not counted; the line between a documented hands-on test and an illustration is a judgment call.
 
-Counted sources:
-- https://www.mdpi.com/2076-3417/16/2/669 (independent performance, accessed 2026-10-16)
-- https://doi.org/10.18061/ojsm.6575 (independent performance, accessed 2026-10-16)
-- https://doi.org/10.1007/s11135-026-02898-5 (independent performance, accessed 2026-10-19)
-- https://doi.org/10.51244/ijrsi.2026.1309000109 (independent performance, accessed 2026-10-19)
-
-Sources listed but not counted:
-- https://link.springer.com/article/10.1007/s44217-024-00214-7 (independent other, accessed 2026-10-16)
-- https://openalex.org/W7164553025 (independent other, accessed 2026-10-16)
-- https://doi.org/10.1111/test.70019 (independent other, accessed 2026-10-19)
-- https://casrai.org/guides/julius-ai-for-research-data-analysis (independent other, accessed 2026-10-16)
-- https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1006&context=making-waves_reu (independent other, accessed 2026-10-16)
-- https://rows.com/blog/post/ai-spreadsheet-benchmark (competitor, accessed 2026-10-16)
-- https://www.basedash.com/blog/ai-data-analyst-benchmark-bi-bench-results (competitor, accessed 2026-10-16)
-- https://fastero.com/blog/chatgpt-vs-julius-ai-data-analysis-compared (competitor, accessed 2026-10-19)
-- https://dabench.com/tools/julius/ (independent other, accessed 2026-10-16)
-- https://aicustomerresearch.beehiiv.com/p/september2024 (anecdotal, accessed 2026-10-16)
-- https://julius.ai/docs/get-started/privacy-and-data-security (vendor or maintainer, accessed 2026-10-16)
-- https://julius.ai/security (vendor or maintainer, accessed 2026-10-16)
-- https://julius.ai/privacy-policy (vendor or maintainer, accessed 2026-10-16)
-- https://julius.ai/docs/get-started/files (vendor or maintainer, accessed 2026-10-16)
-- https://julius.ai/docs/billing/credits-overview (vendor or maintainer, accessed 2026-10-16)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -1212,16 +690,7 @@ Uncertainties:
 - Rechecked in Decision 0076 (19 Oct 2026): no new independent test of Kimi Deep Research found; DeepResearchEval, DeepResearch Bench II and FINDER do not test it, and the DeepResearch Bench leaderboard still shows no FACT score. The Semantic Scholar citation check was not rerun, so the citation check is still incomplete.
 - The only citation-accuracy figure (20.80%, DualGraph) re-scores the DeepResearch Bench reports, whose citations the benchmark authors could not parse; it may not reflect citation quality.
 
-Counted sources:
-- https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.17458 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://oecd.ai/en/incidents/2026-04-21-8c79 (other (privacy incident, Kimi-wide), accessed 2026-10-17)
-- https://arxiv.org/abs/2602.13830 (other (re-scoring of DeepResearch Bench reports), accessed 2026-10-19)
-- https://arxiv.org/abs/2509.13309 (not counted (vendor numbers reused), accessed 2026-10-17)
-- https://moonshotai.github.io/Kimi-Researcher/ (vendor or maintainer, accessed 2026-10-17)
-- https://www.kimi.ai/help/deep-research/deep-research-overview (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -1244,16 +713,7 @@ Uncertainties:
 - Results would depend on the model and search API chosen.
 - The hosted demo did not respond on 17 October 2026; whether it is retired is unknown.
 
-Counted sources:
-- https://arxiv.org/abs/2603.05786 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.20032 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://davidamitchell.github.io/Research/research/2026-05-06-loki-fact-checking-journalists-moderation.html (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.30683 (other (used as a tool), accessed 2026-10-19)
-- https://arxiv.org/abs/2603.21286 (other (used as a tool), accessed 2026-10-19)
-- https://aclanthology.org/2025.coling-demos.4/ (vendor or maintainer, accessed 2026-10-17)
-- https://github.com/Libr-AI/OpenFactVerification (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -1282,39 +742,7 @@ Uncertainties:
 - Two counted studies share authors (Multi-Agent Systems Execute Arbitrary Malicious Code and Agent Meltdowns).
 - Citation check incomplete — recheck later (OpenAlex full text: 284 works matched and 244 downloaded; Semantic Scholar and the arXiv API were unavailable).
 
-Counted sources:
-- https://arxiv.org/abs/2503.12188 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2503.13657 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.acl-long.912 (independent performance, accessed 2026-10-20)
-- https://proceedings.mlr.press/v306/xu26bb.html (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2605.19149 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2605.15132 (independent performance, accessed 2026-10-20)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2608.25920 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2509.07595 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.13870 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2505.24201 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2608.20370 (other, accessed 2026-10-20)
-- https://huggingface.co/datasets/gaia-benchmark/results_public (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2502.01635 (other, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.findings-eacl.318 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.18780 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.11334 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.13105 (other, accessed 2026-10-20)
-- https://www.correctover.com/audit (other, accessed 2026-10-20)
-- https://www.bleepingcomputer.com/news/security/microsoft-fixes-autogen-studio-flaw-that-enabled-code-execution/ (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2411.04468 (excluded, accessed 2026-10-20)
-- https://arxiv.org/abs/2505.00212 (excluded, accessed 2026-10-20)
-- https://arxiv.org/abs/2607.09996 (excluded, accessed 2026-10-20)
-- https://arxiv.org/abs/2510.17276 (excluded, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.acl-long.1442 (excluded, accessed 2026-10-20)
-- https://arxiv.org/abs/2604.08970 (excluded, accessed 2026-10-20)
-- https://github.com/microsoft/autogen (vendor or maintainer, accessed 2026-10-20)
-- https://pypi.org/project/autogen-agentchat/ (vendor or maintainer, accessed 2026-10-20)
-- https://github.com/microsoft/autogen/pull/7463 (vendor or maintainer, accessed 2026-10-20)
-- https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/ (vendor or maintainer, accessed 2026-10-20)
-- https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/magentic (vendor or maintainer, accessed 2026-10-20)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
 
@@ -1339,20 +767,7 @@ Uncertainties:
 - Manus 2.0 Cascade efficiency figures (23.2% fewer tokens, 28.2% less time, 32% lower cost; one vendor configuration) are not used.
 - Cue agents (own email, phone number, wallet; invite-only early access) have not been independently tested.
 
-Sources listed but not counted:
-- https://arxiv.org/abs/2510.14240 (historical context (earlier version, not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2601.09688 (historical context (earlier version, not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2608.08392 (historical context (earlier version, not counted), accessed 2026-10-17)
-- https://doi.org/10.1038/s41433-025-04138-w (historical context (earlier version, not counted), accessed 2026-10-17)
-- https://doi.org/10.3389/froh.2025.1686090 (historical context (earlier version, not counted), accessed 2026-10-17)
-- https://doi.org/10.1080/07853890.2026.2664903 (historical context (earlier version, not counted), accessed 2026-10-17)
-- https://www.technologyreview.com/2025/03/11/1113133/manus-ai-review/ (other (hands-on journalism, earlier version), accessed 2026-10-17)
-- https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/ (other (security test of earlier version), accessed 2026-10-17)
-- https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email (other (security test), accessed 2026-10-17)
-- https://manus.im/blog/introducing-manus-2-0 (vendor or maintainer, accessed 2026-10-17)
-- https://help.manus.im/en/articles/16147831-service-change-overview-what-s-happening-and-am-i-affected (vendor or maintainer, accessed 2026-10-17)
-- https://manus.im/blog/manus-resumes-independent-operations (vendor or maintainer, accessed 2026-10-17)
-- https://newruntime.com/analysis/manus-s-efficiency-gains-are-a-harness-result-not-an-agent-verdict/ (other (commentary, no original testing), accessed 2026-10-18)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-18.
 
@@ -1381,41 +796,7 @@ Uncertainties:
 - CVE-2026-108592 was published on 10 October 2026; NVD has not analysed it, and no fix was found as of 20 October 2026.
 - Citation check incomplete — recheck later (OpenAlex full text used: 458 works matched and 419 downloaded; Semantic Scholar intermittently rate-limited and the arXiv API timed out).
 
-Counted sources:
-- https://doi.org/10.18653/v1/2026.acl-long.707 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.findings-acl.1652 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.1145/3832783.3834485 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.1145/3786167.3788406 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.4230/LIPIcs.ESEM.2026.18 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.findings-acl.1142 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.findings-acl.1976 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.findings-acl.2032 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.04433 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.26777 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.32459 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2608.18389 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.32495 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2607.07946 (independent performance, accessed 2026-10-20)
-- https://doi.org/10.18653/v1/2026.findings-acl.1143 (independent performance, accessed 2026-10-20)
-- https://arxiv.org/abs/2610.06193 (independent performance, accessed 2026-10-20)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2609.34198 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2605.18332 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2609.35199 (other, accessed 2026-10-20)
-- https://doi.org/10.1145/3797126 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2511.13646 (other, accessed 2026-10-20)
-- https://doi.org/10.1007/978-3-032-24839-8_10 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2608.26218 (other, accessed 2026-10-20)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-108592 (other, accessed 2026-10-20)
-- https://github.com/SWE-agent/mini-swe-agent/issues/941 (anecdotal, accessed 2026-10-20)
-- https://github.com/SWE-agent/mini-swe-agent/issues/990 (anecdotal, accessed 2026-10-20)
-- https://github.com/SWE-agent/mini-swe-agent (vendor or maintainer, accessed 2026-10-20)
-- https://github.com/SWE-agent/mini-swe-agent/pull/794 (vendor or maintainer, accessed 2026-10-20)
-- https://www.swebench.com/ (not counted (affiliated leaderboard), accessed 2026-10-20)
-- https://hal.cs.princeton.edu/ (not counted (leaderboard), accessed 2026-10-20)
-- https://arxiv.org/abs/2511.00839 (excluded, accessed 2026-10-20)
-- https://arxiv.org/abs/2605.03546 (excluded, accessed 2026-10-20)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
 
@@ -1440,22 +821,7 @@ Uncertainties:
 - No reputable journalism with original testing was found.
 - Terminal-Bench figures published by the maintainer for the current product are vendor-run and not used.
 
-Sources listed but not counted:
-- https://arxiv.org/abs/2602.19547 (independent performance, accessed 2026-10-16)
-- https://mr-sarthakgupta.github.io/redcode-evaluation-framework.html (independent performance, accessed 2026-10-16)
-- https://github.com/alexbecker/open-interpreter-prompt-injection (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2505.18223 (independent other, accessed 2026-10-16)
-- https://arxiv.org/abs/2411.07781 (independent other, accessed 2026-10-16)
-- https://github.com/openinterpreter/openinterpreter/issues/1767 (independent other, accessed 2026-10-16)
-- https://github.com/openinterpreter/open-interpreter/pull/1691 (independent other, accessed 2026-10-16)
-- https://github.com/openinterpreter/openinterpreter/pull/1741 (independent other, accessed 2026-10-16)
-- https://github.com/openinterpreter/openinterpreter/security/advisories (independent other, accessed 2026-10-16)
-- https://github.com/openinterpreter/openinterpreter (vendor or maintainer, accessed 2026-10-16)
-- https://docs.openinterpreter.com/safety/introduction (vendor or maintainer, accessed 2026-10-16)
-- https://github.com/endolith/open-interpreter (independent other, accessed 2026-10-16)
-- https://raw.githubusercontent.com/endolith/open-interpreter/main/docs/SAFE_MODE.md (vendor or maintainer, accessed 2026-10-16)
-- https://adversa.ai/blog/opensource-ai-coding-agents-shell-injection-vulnerability/ (independent performance, accessed 2026-10-18)
-- https://www.mrtechking.com/open-interpreter-github/ (other (repository scan, no behaviour test), accessed 2026-10-18)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-18.
 
@@ -1479,46 +845,7 @@ Uncertainties:
 - Many runs use non-default or very recent models, and results depend heavily on the model.
 - MT-Sec's EMNLP 2026 venue comes from an author homepage.
 
-Counted sources:
-- https://arxiv.org/abs/2505.15216 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.11868 (independent performance, accessed 2026-10-17)
-- https://dl.acm.org/doi/full/10.1145/3793302.3793576 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2510.13859 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.22535 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2507.15003 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2602.12670 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.09072 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.07591 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.19799 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.18583 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.28122 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.10569 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2604.03362 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2604.10261 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.06125 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.08366 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.10966 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.23574 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.26158 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.06411 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.33382 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.35143 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.12569 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.17046 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.07639 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://nvd.nist.gov/vuln/detail/CVE-2025-59532 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2025-55345 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2025-61260 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2025-54558 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-19591 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-14898 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.38983 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.18168 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2604.00917 (other, accessed 2026-10-17)
-- https://openai.com/codex/ (vendor (not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2603.04915 (vendor (not counted), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -1544,22 +871,7 @@ Uncertainties:
 - Vendor benchmark figures (e.g. HLE, GAIA) are not used as independent evidence.
 - Citation check incomplete — recheck later (0057: an ANZ J Surg perspective was not a test; an Eye brief communication is paywalled until 2027; Semantic Scholar still unavailable).
 
-Counted sources:
-- https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2506.21506 (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2508.15804 (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2604.03173 (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2507.16075 (independent performance, accessed 2026-10-16)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2506.11763 (independent performance, accessed 2026-10-16)
-- https://openreview.net/forum?id=AUaW6DS9si (independent performance, accessed 2026-10-16)
-- https://theconversation.com/openais-new-deep-research-agent-is-still-just-a-fallible-tool-not-a-human-level-expert-249496 (independent other, accessed 2026-10-16)
-- https://www.radware.com/blog/threat-intelligence/shadowleak/ (independent other, accessed 2026-10-17)
-- https://web.archive.org/web/20260321044001/https://help.openai.com/en/articles/6825453-chatgpt-release-notes (vendor or maintainer, accessed 2026-10-17)
-- https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt (vendor or maintainer, accessed 2026-10-17)
-- https://openai.com/index/introducing-deep-research/ (vendor or maintainer, accessed 2026-10-16)
-- https://help.openai.com/en/articles/10500283-deep-research (vendor or maintainer, accessed 2026-10-16)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -1586,61 +898,7 @@ Uncertainties:
 - The fix for GHSA-632h-h47v-g4x4 has no CVE; scanners that rely on CVE identifiers may not flag affected versions (1.14.30 to 1.18.21).
 - Citation check incomplete — recheck later (OpenAlex full text: 553 works screened and 474 arXiv texts read; Semantic Scholar and the arXiv API were not used; several non-arXiv papers were not retrieved, and more studies that ran OpenCode were found than were reviewed).
 
-Counted sources:
-- https://doi.org/10.1145/3832113 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.1145/3770855.3818488 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.1145/3832783.3834485 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.04293 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.1145/3832783.3834388 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.4230/LIPIcs.ESEM.2026.59 (independent performance, accessed 2026-10-21)
-- https://doi.org/10.4230/LIPIcs.ESEM.2026.47 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.14876 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.09072 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.04433 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.32459 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.18389 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.32495 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.20038 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.16859 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.33812 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2606.19613 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.07744 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2602.22518 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.23980 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.15766 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.35143 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.39065 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2610.09264 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.27299 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.32635 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2608.06984 (independent performance, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.01222 (independent performance, accessed 2026-10-21)
-
-Sources listed but not counted:
-- https://github.com/anomalyco/opencode/security/advisories/GHSA-vxw4-wv6m-9hhh (other, accessed 2026-10-21)
-- https://web.archive.org/web/20260203132057/https://cy.md/opencode-rce/ (other, accessed 2026-10-21)
-- https://github.com/anomalyco/opencode/security/advisories/GHSA-c83v-7274-4vgp (other, accessed 2026-10-21)
-- https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4 (other, accessed 2026-10-21)
-- https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/ (other, accessed 2026-10-21)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-22812 (other, accessed 2026-10-21)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-22813 (other, accessed 2026-10-21)
-- https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses (other, accessed 2026-10-21)
-- https://github.com/anomalyco/opencode/issues/6930 (other, accessed 2026-10-21)
-- https://github.com/opencode-ai/opencode (other, accessed 2026-10-21)
-- https://charm.land/blog/crush-comes-home/ (other, accessed 2026-10-21)
-- https://github.com/anomalyco/opencode/issues/333 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.03691 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2606.15549 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2604.01658 (other, accessed 2026-10-21)
-- https://doi.org/10.1038/s41746-026-03097-0 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2607.07433 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2604.03515 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.00006 (other, accessed 2026-10-21)
-- https://arxiv.org/abs/2605.20251 (competitor, accessed 2026-10-21)
-- https://arxiv.org/abs/2606.22906 (competitor, accessed 2026-10-21)
-- https://arxiv.org/abs/2609.14992 (competitor, accessed 2026-10-21)
-- https://opencode.ai/docs/ (vendor or maintainer, accessed 2026-10-21)
-- https://github.com/anomalyco/opencode (vendor or maintainer, accessed 2026-10-21)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-21.
 
@@ -1662,12 +920,7 @@ Uncertainties:
 - OpenFactCheck is a framework that combines other checkers; "performance" depends on the configuration chosen.
 - The 2.0 alpha series may be a substantial rewrite; continuity is unassessed beyond release history.
 
-Sources listed but not counted:
-- https://doi.org/10.1609/aaai.v40i48.42355 (other, accessed 2026-10-17)
-- https://davidamitchell.github.io/Research/research/2026-05-06-openfactcheck-ai-fact-checking-pipeline.html (other, accessed 2026-10-17)
-- https://aclanthology.org/2025.coling-main.755/ (vendor or maintainer, accessed 2026-10-17)
-- https://aclanthology.org/2024.emnlp-demo.23/ (vendor or maintainer, accessed 2026-10-17)
-- https://github.com/openfactcheck-research/openfactcheck (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -1693,30 +946,7 @@ Uncertainties:
 - CVE-2026-33718: NVD and the GitHub advisory differ on the affected version range and the CVSS score; both are shown.
 - MLE-bench reports 4.4% ± 1.4 any-medal rate in its main table and 5.1% ± 1.3 in a per-complexity appendix table.
 
-Counted sources:
-- https://arxiv.org/abs/2410.07095 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2410.05080 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2508.18993 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3786167.3788410 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.15229 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.15846 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2603.03194 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.13995 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.18583 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.18206 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.03262 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3832100 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://nvd.nist.gov/vuln/detail/CVE-2026-33718 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-19022 (other, accessed 2026-10-17)
-- https://embracethered.com/blog/posts/2025/openhands-the-lethal-trifecta-strikes-again/ (other, accessed 2026-10-17)
-- https://embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/ (other, accessed 2026-10-17)
-- https://www.openhands.dev/blog/mitigating-prompt-injection-attacks-in-software-agents (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2504.02605 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2407.16741 (vendor, accessed 2026-10-17)
-- https://arxiv.org/abs/2507.06134 (not counted (affiliated), accessed 2026-10-17)
-- https://www.swebench.com/ (not counted (leaderboard), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -1741,19 +971,7 @@ Uncertainties:
 - Vendor savings figures are vendor claims, not findings.
 - {'Evidence pass 4 (19 Oct 2026, Decision 0080)': 'no new independent test of Pactum was found; two 2026 negotiation studies tested other AI systems, not Pactum.'}
 
-Counted sources:
-- https://bth.diva-portal.org/smash/get/diva2:2063902/FULLTEXT01.pdf (independent performance, accessed 2026-10-16)
-
-Sources listed but not counted:
-- https://hbr.org/2022/11/how-walmart-automated-supplier-negotiations (customer or partner, accessed 2026-10-16)
-- https://hbsp.harvard.edu/product/TB0756-PDF-ENG (independent other, accessed 2026-10-16)
-- https://www.bloomberg.com/news/articles/2023-04-26/walmart-uses-pactum-ai-tools-to-handle-vendor-negotiations (independent other, accessed 2026-10-16)
-- https://www.pon.harvard.edu/daily/negotiation-skills-daily/chatbot-negotiations-what-can-ai-do-for-you/ (independent other, accessed 2026-10-16)
-- https://www.arkansasonline.com/news/2023/may/04/walmart-now-using-ai-for-some-vendor-deals/ (independent other, accessed 2026-10-16)
-- https://spectrum.ieee.org/ai-contracts (independent other, accessed 2026-10-16)
-- https://www.bbc.com/news/business-55738540 (independent other, accessed 2026-10-16)
-- https://hofstralawreview.org/wp-content/uploads/2025/03/AA.3.Steward.pdf (independent other, accessed 2026-10-16)
-- https://pactum.com/ (vendor or maintainer, accessed 2026-10-16)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -1780,20 +998,7 @@ Uncertainties:
 - Three peer-reviewed health-information studies (PLoS ONE 2025, PeerJ 2025, PLoS ONE 2026; the first two share authors) rated Perplexity highly on readability and quality scales, including a June 2026 test of the free Sonar model; not counted because they check that sources are listed, not that sources support the answer.
 - Citation check incomplete — recheck later (0056: five 2025–2026 candidates read, none in scope; Semantic Scholar still unavailable).
 
-Counted sources:
-- https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php (independent performance, accessed 2026-10-16)
-- https://aclanthology.org/2023.findings-emnlp.467/ (independent performance, accessed 2026-10-16)
-- https://proceedings.iclr.cc/paper_files/paper/2026/file/465f22be10e07b301c6ed58f0472f704-Paper-Conference.pdf (independent performance, accessed 2026-10-16)
-- https://arxiv.org/abs/2505.19253 (independent performance, accessed 2026-10-16)
-- https://arxiv.org/html/2507.05495v2 (independent performance, accessed 2026-10-16)
-- https://openreview.net/forum?id=AUaW6DS9si (independent performance, accessed 2026-10-16)
-
-Sources listed but not counted:
-- https://storage.courtlistener.com/recap/gov.uscourts.nysd.630270/gov.uscourts.nysd.630270.65.0.pdf (independent other, accessed 2026-10-16)
-- https://www.pacermonitor.com/public/case/60086917/Encyclopaedia_Britannica,_Inc_et_al_v_Perplexity_AI,_Inc (independent other, accessed 2026-10-16)
-- https://storage.courtlistener.com/recap/gov.uscourts.nysd.654190/gov.uscourts.nysd.654190.3.0.pdf (independent other, accessed 2026-10-16)
-- https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search (vendor or maintainer, accessed 2026-10-16)
-- https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you (vendor or maintainer, accessed 2026-10-16)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -1818,23 +1023,7 @@ Uncertainties:
 - Comet sends page content and screenshots to Perplexity servers for the assistant; Perplexity's privacy policy was not reviewed in detail for this entry.
 - Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).
 
-Counted sources:
-- https://arxiv.org/abs/2608.08392 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.30604 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.07725 (independent performance, accessed 2026-10-17)
-- https://www.hcaptcha.com/blog/report-browser-agent-safety-is-an-afterthought-for-vendors (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://brave.com/blog/comet-prompt-injection/ (other, accessed 2026-10-17)
-- https://www.bleepingcomputer.com/news/security/commetjacking-attack-tricks-comet-browser-into-stealing-emails/ (other, accessed 2026-10-17)
-- https://guard.io/labs/scamlexity-we-put-agentic-ai-browsers-to-the-test-they-clicked-they-paid-they-failed (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.07153 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2605.05509 (other, accessed 2026-10-17)
-- https://cdn.ca9.uscourts.gov/datastore/opinions/2026/08/04/26-1444.pdf (other, accessed 2026-10-17)
-- https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/ (not counted (paid by vendor), accessed 2026-10-17)
-- https://arxiv.org/abs/2511.20597 (vendor or maintainer, accessed 2026-10-17)
-- https://www.perplexity.ai/hub/blog/mitigating-prompt-injection-in-comet (vendor or maintainer, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.07828 (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -1862,38 +1051,7 @@ Uncertainties:
 - A test run with the tester's own security product and a study funded by a company with a competing platform are counted with disclosure; not counting them would change the grade (see Decision 0089, D2 and D3).
 - Citation check incomplete — recheck later (OpenAlex full text: 357 works matched and 171 downloaded; the arXiv API was unavailable).
 
-Counted sources:
-- https://arxiv.org/abs/2508.20410 (independent performance, accessed 2026-10-20)
-- https://ceur-ws.org/Vol-4266/paper01.pdf (independent performance, accessed 2026-10-20)
-- https://doi.org/10.48009/2_iis_2026_121 (independent performance, accessed 2026-10-20)
-- https://blog.tenzai.com/bad-vibes-comparing-the-secure-coding-capabilities-of-popular-coding-agents/ (independent performance (partial independence), accessed 2026-10-20)
-- https://arxiv.org/abs/2608.16302 (independent performance, accessed 2026-10-20)
-
-Sources listed but not counted:
-- https://x.com/jasonlk/status/1946239068691665187 (anecdotal, accessed 2026-10-20)
-- https://www.theregister.com/software/2025/07/22/replit-makes-vibe-y-promise-to-prevent-vibe-coding-disasters/1145851 (other, accessed 2026-10-20)
-- https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/ (other, accessed 2026-10-20)
-- https://incidentdatabase.ai/cite/1152/ (other, accessed 2026-10-20)
-- https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/ (other, accessed 2026-10-20)
-- https://axios.com/2026/05/07/loveable-replit-vibe-coding-privacy (other, accessed 2026-10-20)
-- https://shippable.dev/leaks/state-of-replit (other, accessed 2026-10-20)
-- https://www.llm-tier.com/leaderboard/app-builders (other, accessed 2026-10-20)
-- https://doi.org/10.1145/3786228.3786236 (other, accessed 2026-10-20)
-- https://doi.org/10.1016/j.esmorw.2025.100653 (other, accessed 2026-10-20)
-- https://arxiv.org/abs/2606.24429 (other, accessed 2026-10-20)
-- https://www.reddit.com/r/replit/comments/1lwq5ls/class_action_lawsuit_rreplit/ (anecdotal, accessed 2026-10-20)
-- https://nvd.nist.gov/vuln/detail/CVE-2022-21671 (other (vulnerability record, outside scope), accessed 2026-10-20)
-- https://arxiv.org/abs/2605.04637 (competitor, accessed 2026-10-20)
-- https://doi.org/10.1145/3786335.3813162 (excluded, accessed 2026-10-20)
-- https://doi.org/10.1145/3786335.3813211 (excluded, accessed 2026-10-20)
-- https://replit.com/blog/introducing-a-safer-way-to-vibe-code-with-replit-databases (vendor or maintainer, accessed 2026-10-20)
-- https://replit.com/blog/doubling-down-on-our-commitment-to-secure-vibe-coding (vendor or maintainer, accessed 2026-10-20)
-- https://docs.replit.com/features/data-and-storage/development-and-production (vendor or maintainer, accessed 2026-10-20)
-- https://replit.com/blog/effort-based-pricing-recap (vendor or maintainer, accessed 2026-10-20)
-- https://replit.com/blog/agent-v2 (vendor or maintainer, accessed 2026-10-20)
-- https://replit.com/blog/introducing-agent-3-our-most-autonomous-agent-yet (vendor or maintainer, accessed 2026-10-20)
-- https://replit.com/blog/introducing-agent-4-built-for-creativity (vendor or maintainer, accessed 2026-10-20)
-- https://replit.com/terms-of-service (vendor or maintainer, accessed 2026-10-20)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-20.
 
@@ -1919,19 +1077,7 @@ Uncertainties:
 - Skyvern Cloud (the hosted service) was not covered; its privacy policy and trust centre (skyvern.com/privacy, trust.skyvern.com) were not reviewed and data handling is unverified.
 - Web Bench is the largest test of Skyvern but was co-built and run by Skyvern.
 
-Counted sources:
-- https://arxiv.org/abs/2601.07263 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2601.08406 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3832165 (independent performance, accessed 2026-10-19)
-
-Sources listed but not counted:
-- https://arxiv.org/abs/2606.20910 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2025-49619 (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-82447 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2603.29020 (other, accessed 2026-10-17)
-- https://www.skyvern.com/blog/skyvern-2-0-webvoyager-benchmark-results/ (vendor or maintainer, accessed 2026-10-17)
-- https://webbench.ai/ (excluded (vendor co-built), accessed 2026-10-17)
-- https://eval.skyvern.com/ (vendor or maintainer, accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 
@@ -1958,21 +1104,7 @@ Uncertainties:
 - The hosted research preview is not covered and was not independently tested.
 - Citation check incomplete — recheck later (0052: Semantic Scholar unavailable; OpenAlex title screen only).
 
-Counted sources:
-- https://aclanthology.org/2025.emnlp-main.1254/ (independent performance, accessed 2026-10-17)
-- https://aclanthology.org/2025.emnlp-main.50/ (independent performance, accessed 2026-10-17)
-- https://aclanthology.org/2025.acl-long.1423/ (independent performance, accessed 2026-10-17)
-- https://aclanthology.org/2026.findings-acl.296/ (independent performance, accessed 2026-10-17)
-- https://aclanthology.org/2026.acl-long.723/ (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2606.20122 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2508.20033 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://github.com/stanford-oval/storm/issues/375 (other, accessed 2026-10-17)
-- https://github.com/stanford-oval/storm/blob/fb951af/knowledge_storm/utils.py (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2402.14207 (vendor or maintainer, accessed 2026-10-17)
-- https://arxiv.org/abs/2408.15232 (vendor or maintainer, accessed 2026-10-17)
-- https://arxiv.org/abs/2503.07170 (not counted (reused developer figures), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -2000,28 +1132,7 @@ Uncertainties:
 - Results depend heavily on the model and task, and many results reflect older models.
 - Grade A rests on a single recent versioned study whose authors also wrote another counted source (Vul4Py).
 
-Counted sources:
-- https://arxiv.org/abs/2406.12952 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2505.23419 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2509.16941 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2508.18993 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2506.11791 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.18470 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2609.35199 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2608.00692 (independent performance, accessed 2026-10-17)
-- https://arxiv.org/abs/2512.03262 (independent performance, accessed 2026-10-17)
-- https://doi.org/10.1145/3832100 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://nvd.nist.gov/vuln/detail/CVE-2026-75482 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2410.06992 (other, accessed 2026-10-17)
-- https://aclanthology.org/2025.acl-long.189/ (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2504.08703 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2610.07639 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2511.00872 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2405.15793 (vendor, accessed 2026-10-17)
-- https://www.swebench.com/ (not counted (affiliated leaderboard), accessed 2026-10-17)
-- https://hal.cs.princeton.edu/ (not counted (leaderboard), accessed 2026-10-17)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
 
@@ -2043,20 +1154,7 @@ Uncertainties:
 - The one counted study does not state the app version or model.
 - The CVE concerns MCP servers shipped with Agent TARS, not the Electron GUI itself.
 
-Counted sources:
-- https://arxiv.org/abs/2603.00476 (independent performance, accessed 2026-10-17)
-
-Sources listed but not counted:
-- https://aiagentindex.mit.edu/2025/ui-tars-desktop/ (other, accessed 2026-10-17)
-- https://nvd.nist.gov/vuln/detail/CVE-2026-81735 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2607.07433 (other, accessed 2026-10-17)
-- https://github.com/bytedance/UI-TARS-desktop/discussions/1889 (other, accessed 2026-10-17)
-- https://arxiv.org/abs/2509.02544 (vendor (not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2501.12326 (vendor (not counted), accessed 2026-10-17)
-- https://arxiv.org/abs/2508.00935 (not counted (model only), accessed 2026-10-17)
-- https://arxiv.org/abs/2510.20333 (not counted (model only), accessed 2026-10-17)
-- https://arxiv.org/abs/2605.25707 (not counted (model only), accessed 2026-10-17)
-- https://arxiv.org/abs/2506.02456 (not counted (model only), accessed 2026-10-19)
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-19.
 

@@ -498,7 +498,10 @@ def build_index_dates():
 # ---- 0074: llms-full.txt, all entries in one plain-text file, from the same data as agents.json ----
 LLMS_FULL='llms-full.txt'; LLMS_FULL_MAX=250_000; LLMS_FULL_WARN=200_000
 LLMS_FULL_DONT='Do not describe an entry as verified, certified, approved or trusted by the Clearinghouse, and do not present listing order as a ranking.'
-LLMS_FULL_LINE=f'- [llms-full.txt]({BASE}/llms-full.txt): all entries in one plain-text file (scores, grades, scope, summary, uncertainties, sources), generated from the same data as agents.json\n'
+LLMS_FULL_LINE=f'- [llms-full.txt]({BASE}/llms-full.txt): all entries in one plain-text file (scores, grades, scope, summary, uncertainties, source counts; each entry links to its page for the full source list), generated from the same data as agents.json\n'
+# 0095: source lists are not repeated in llms-full.txt; one pointer line per entry instead
+LLMS_FULL_SOURCES_NOTE='Source lists are not repeated in this file. Each entry page lists its sources with titles, findings and access dates, separating counted from not counted sources; data/agents.json lists every source URL with its kind and access date.'
+LLMS_FULL_SOURCES_LINE='Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.'
 LLMS_FULL_DATA_LI='<li><a href="/llms-full.txt">llms-full.txt</a> — all entries in one plain-text file, generated from the same data.</li>'
 LLMS_FULL_FACTORS=['completion_rate','disputes','adherence_to_limits','evidence_quality']
 def llms_full_text():
@@ -513,7 +516,7 @@ def llms_full_text():
        '## '+HOW_H,'',' '.join(HOW_CALLOUT),'']
     for h,x in HOW_FULL: L+=[f'### {h}','',x,'']
     L+=['## How to quote these scores','',CITATION,'',LLMS_FULL_DONT+' More examples: '+BASE+'/citing.html','',
-        '## License','',LLMS_LICENSE,'','## Entries','','Entries are listed alphabetically by name; the order carries no meaning.','']
+        '## License','',LLMS_LICENSE,'','## Entries','','Entries are listed alphabetically by name; the order carries no meaning. '+LLMS_FULL_SOURCES_NOTE,'']
     for e in sorted(E.values(),key=lambda e:e['name'].lower()):
         y=Y[e['id']]; c=[s for s in e['sources'] if s['counted']]; o=[s for s in e['sources'] if not s['counted']]
         L+=[f'### {e["name"]}','',f'- Entry page: {e["url"]}',f'- Category: {e["category"]}; type: {e["type"]}',f'- Status: {e["status"]}']
@@ -525,8 +528,7 @@ def llms_full_text():
         L+=[f'- Counted independent performance sources: {sc["counted"]}; other sources (as in agents.json): {other_text(sc["other"])}; all sources listed but not counted: {sc["listed_uncounted"]}',f'- Last reviewed: {e["last_reviewed"]}','',
             f'Scope: {e["scope"]}','',f'Summary: {sp(y["summary"])}','']
         if y.get('uncertainties'): L+=['Uncertainties:']+[f'- {sp(u)}' for u in y['uncertainties']]+['']
-        if c: L+=['Counted sources:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in c]+['']
-        if o: L+=['Sources listed but not counted:']+[f'- {s["url"]} ({s["kind"]}, accessed {s["accessed"]})' for s in o]+['']
+        if c or o: L+=[LLMS_FULL_SOURCES_LINE,'']
         L+=[f'Note: {FEED_DISCLAIMER} As of {e["last_reviewed"]}.','']
     L+=['## Changes','',f'Changelog: {BASE}/changelog.html. Update feeds: {BASE}/updates.json (JSON Feed), {BASE}/updates.xml (Atom).','',f'> {FEED_DISCLAIMER}','']
     return '\n'.join(L)

@@ -433,11 +433,13 @@ for k,e in y.items():
     want=(f"- Counted independent performance sources: {sc['counted']}; other sources (as in agents.json): "
           f"{B.other_text(sc['other'])}; all sources listed but not counted: {sc['listed_uncounted']}\n")
     if want not in blk78: E(f'0078 {k}: llms-full count line')
-    lst=re.search(r'^Sources listed but not counted:\n((?:- .*\n)+)',blk78,re.M)
-    n78=len(lst.group(1).splitlines()) if lst else 0
-    if n78!=sc['listed_uncounted']: E(f'0078 {k}: llms-full list length {n78} != {sc["listed_uncounted"]}')
+    # 0095: no per-entry source lists in llms-full.txt; one pointer line per entry that has sources
+    if re.search(r'^(Counted sources|Sources listed but not counted):',blk78,re.M) or re.search(r'^- https?://',blk78,re.M): E(f'0095 {k}: llms-full source list present')
+    if blk78.count(B.LLMS_FULL_SOURCES_LINE)!=(1 if e.get('sources') else 0): E(f'0095 {k}: llms-full sources pointer line missing or repeated')
     if re.search(r'^Other sources:$',blk78,re.M): E(f'0078 {k}: old llms-full heading "Other sources:" present')
 print('0078: checked, source counts consistent across agents.json, agents.csv and llms-full.txt')
+if _LF.count(B.LLMS_FULL_SOURCES_NOTE)!=1: E('0095: llms-full sources note missing or repeated')
+print('0095: checked, llms-full.txt has a sources pointer per entry and no source lists')
 # 0079: typed independent_source_count.other must equal the number derived from the source list by kind
 for k,e in y.items():
     try: d=B.derived_other(e)
