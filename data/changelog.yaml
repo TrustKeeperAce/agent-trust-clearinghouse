@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-21-0096
+  date: '2026-10-21'
+  decision_packets:
+  - '0096'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0096-unlinked-sources.md
+  change_html: 'Linked three listed, not counted sources that were in the data but missing from their entry pages: the SWE-bench leaderboards and the Holistic Agent Leaderboard on <a href="/agents/mini-swe-agent.html">mini-SWE-agent (open-source)</a>, and SWE-WebDevBench on <a href="/agents/replit-agent.html">Replit Agent</a>. No score, grade or source count changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-21-0095
   date: '2026-10-21'
   decision_packets:

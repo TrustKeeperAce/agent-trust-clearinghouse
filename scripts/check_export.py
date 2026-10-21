@@ -440,6 +440,15 @@ for k,e in y.items():
 print('0078: checked, source counts consistent across agents.json, agents.csv and llms-full.txt')
 if _LF.count(B.LLMS_FULL_SOURCES_NOTE)!=1: E('0095: llms-full sources note missing or repeated')
 print('0095: checked, llms-full.txt has a sources pointer per entry and no source lists')
+# 0096: every source in agents.json is linked on its entry page (process rule; no scoring effect)
+_n96=0
+for _e96 in json.load(open(os.path.join(P,'data','agents.json')))['entries']:
+    _h96=_hh.unescape(open(os.path.join(P,'agents',_e96['id']+'.html')).read())
+    _l96={u.rstrip('/') for u in re.findall(r'href="(https?://[^"]+)"',_h96)}
+    for _s96 in _e96['sources']:
+        _n96+=1
+        if _s96['url'].rstrip('/') not in _l96: E(f"0096 {_e96['id']}: source {_s96['url']} ({_s96['kind']}) not linked on its entry page")
+print(f'0096: checked, all {_n96} sources in agents.json are linked on their entry pages')
 # 0079: typed independent_source_count.other must equal the number derived from the source list by kind
 for k,e in y.items():
     try: d=B.derived_other(e)
