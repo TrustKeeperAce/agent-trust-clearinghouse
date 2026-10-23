@@ -482,6 +482,50 @@ for _e97 in j['entries']:
 for _k,_r97 in _al97.items():
     if _k not in _used97: E(f"0097 page_only_links: {_k[0]} {_r97.get('url')} is not linked on its entry page (fix or remove the row)")
 print(f'0097: checked, all {_n97} distinct outbound links on entry pages are sources, homepages, decision records or one of {len(_al97)} listed page-only links')
+# 0098: "Other entries in this category" section on entry pages (navigation only; no scoring effect). The rule is re-derived
+# here from agents.json: same category, self excluded, alphabetical by name; comparison links from the COMPARE config.
+_cat98={}
+for _e98 in j['entries']: _cat98.setdefault(_e98['category'],[]).append(_e98)
+_ids98={_e98['id'] for _e98 in j['entries']}
+_cmp98={}
+for _c98 in B.COMPARE:
+    for _i98 in B.compare_ids(_c98,B.entries()): _cmp98.setdefault(_i98,[]).append('/'+_c98['path'])
+_n98=0; _l98=0; _none98=[]
+for _e98 in j['entries']:
+    _id=_e98['id']; _t98=open(os.path.join(P,'agents',_id+'.html')).read()
+    _secs=re.findall(r'<section class="related"[^>]*>.*?</section>',_t98,re.S)
+    _oth=sorted([o for o in _cat98[_e98['category']] if o['id']!=_id],key=lambda o:o['name'].lower())
+    if not _oth:
+        _none98.append(_id)
+        if _secs: E(f"0098 {_id}: related section present, but no other entry shares the category {_e98['category']!r}")
+        continue
+    if len(_secs)!=1: E(f"0098 {_id}: expected one related section, found {len(_secs)}"); continue
+    _s98=_secs[0]
+    if not _t98[_t98.index(_s98)+len(_s98):].startswith('</main>'): E(f"0098 {_id}: related section is not the last element of <main>")
+    _hr=re.findall(r'href="([^"]+)"',_s98)
+    _ag=[h for h in _hr if h.startswith('/agents/')]; _cp=[h for h in _hr if h.startswith('/compare/')]
+    _exp=[f"/agents/{o['id']}.html" for o in _oth]
+    if f"/agents/{_id}.html" in _hr: E(f"0098 {_id}: related section links to its own page")
+    for h in _ag:
+        if h[8:-5] not in _ids98 or not os.path.exists(os.path.join(P,h.lstrip('/'))): E(f"0098 {_id}: related link {h} has no entry or page")
+    if _ag!=_exp:
+        if sorted(_ag)==sorted(_exp): E(f"0098 {_id}: related links are not in alphabetical order by name")
+        else: E(f"0098 {_id}: related links differ from the same-category rule: extra {sorted(set(_ag)-set(_exp))}, missing {sorted(set(_exp)-set(_ag))}")
+    if _cp!=_cmp98.get(_id,[]): E(f"0098 {_id}: comparison links {_cp} != {_cmp98.get(_id,[])}")
+    for h in _cp:
+        if not os.path.exists(os.path.join(P,h.lstrip('/'))): E(f"0098 {_id}: comparison page {h} missing")
+    _bad=[h for h in _hr if not (h.startswith('/agents/') or h.startswith('/compare/'))]
+    if _bad: E(f"0098 {_id}: unexpected links in related section {_bad}")
+    _tx=_hh.unescape(re.sub(r'<[^>]+>',' ',_s98))
+    for o in _oth: _tx=_tx.replace(o['name'],' ')
+    for _c98 in B.COMPARE: _tx=_tx.replace(_c98['short'],' ')
+    if re.search(r'\d|/100|\bscores?\b|\bscored\b|\bgrades?\b|\binsufficient\b',_tx,re.I): E(f"0098 {_id}: related section shows numbers, scores, grades or status")
+    for b in B.BANNED_CITE+[r'\bbetter\b',r'\bsimilar\b',r'\brecommended\b',r'\btrusted\b',r'\bleading\b']:
+        if re.search(b,_tx,re.I): E(f"0098 {_id}: banned wording {b!r} in related section")
+    if _s98!=B.related_section(next(x for x in B.entries() if x['id']==_id),B.entries()): E(f"0098 {_id}: related section differs from the generator output (rebuild)")
+    _n98+=1; _l98+=len(_ag)
+if B.RELATED_H in open(os.path.join(P,'llms-full.txt')).read(): E('0098: llms-full.txt should not contain related sections')
+print(f'0098: checked, {_n98} entry pages have an "Other entries in this category" section ({_l98} links, same category, alphabetical, no self-links, no scores); none on {len(_none98)} single-entry categories {_none98}')
 # 0079: typed independent_source_count.other must equal the number derived from the source list by kind
 for k,e in y.items():
     try: d=B.derived_other(e)

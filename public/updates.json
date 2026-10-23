@@ -21,6 +21,30 @@
  },
  "items": [
   {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-23-0098",
+   "url": "https://www.agentclearinghouse.org/changelog.html",
+   "title": "Site change (0098)",
+   "content_text": "Added an “Other entries in this category” section at the end of entry pages. It links to the other entries that share the page’s category in the data, listed alphabetically by name, and to the side-by-side comparison page where one covers the entry. The list is generated from the data, shows no scores or grades, and is not a ranking or recommendation. Entries that are alone in their category (Clay, Pactum) have no such section. Also added a check for these sections. No score, grade, source count or last-reviewed date changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-23T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0098"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0098-cross-links.md",
+    "as_of": "2026-10-23",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
+  {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-23-0097",
    "url": "https://www.agentclearinghouse.org/changelog.html",
    "title": "Site change (0097)",

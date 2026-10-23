@@ -579,4 +579,31 @@ def build_funding():
     t=re.sub(r'<section class="funding".*?</section>\n?','',t,flags=re.S); a='<h2 id="privacy">'; assert t.count(a)==1
     open(fp,'w').write(t.replace(a,funding_section_html()+a,1)); print('funding section', 'live' if SPONSORS_LIVE else 'not live')
 
-if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_footers(); build_how(); build_index_dates(); build_llms_full(); build_asof_dates(); build_funding()
+
+# ---- 0098: "Other entries in this category" on entry pages (navigation only; generated from the category field; never by score) ----
+RELATED_H='Other entries in this category'
+RELATED_ID='other-entries'
+RELATED_NOTE=('Other entries in the {cat} category, listed alphabetically by name. The list is generated from the category field in the data; '
+              'it is not a ranking or recommendation, and each entry is reviewed separately with its own sources and dates.')
+RELATED_RE=re.compile(r'\n?<section class="related"[^>]*>.*?</section>',re.S)
+def related_section(e,E):
+    """Other entries with the same category (self excluded), alphabetical by name (case-insensitive); no scores or grades.
+    Adds the comparison page(s) whose entry set includes this entry. Empty string when the category has no other entry."""
+    others=_by_name([o for o in E if o['category']==e['category'] and o['id']!=e['id']])
+    if not others: return ''
+    cmp=[c for c in COMPARE if e['id'] in compare_ids(c,E)]
+    li=''.join(f'<li><a href="/agents/{o["id"]}.html">{_e(o["name"])}</a></li>' for o in others)
+    cp=('<p>Side-by-side '+('page' if len(cmp)==1 else 'pages')+': '+' · '.join(f'<a href="/{c["path"]}">{_e(c["short"])}</a>' for c in cmp)+'.</p>') if cmp else ''
+    return (f'<section class="related" aria-labelledby="{RELATED_ID}"><h2 id="{RELATED_ID}">{_e(RELATED_H)}</h2>'
+            f'<p>{_e(RELATED_NOTE.format(cat=e["category"]))}</p><ul>{li}</ul>{cp}</section>')
+def build_related():
+    E=entries(); n=0
+    for e in E:
+        fp=os.path.join(P,'agents',e['id']+'.html'); t=open(fp).read()
+        t=RELATED_RE.sub('',t); assert t.count('</main>')==1, e['id']
+        s=related_section(e,E)
+        if s: t=t.replace('</main>','\n'+s+'</main>',1); n+=1
+        open(fp,'w').write(t)
+    print('related sections',n)
+
+if __name__=='__main__': build(); build_feeds(); build_compare(); build_citing(); build_grade_notes(); build_related(); build_footers(); build_how(); build_index_dates(); build_llms_full(); build_asof_dates(); build_funding()
