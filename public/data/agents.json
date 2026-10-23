@@ -1,8 +1,8 @@
 {
  "dataset": {
   "name": "Agent Reputation & Trust Clearinghouse",
-  "version": "Scoring rules v0.1; data 2026-10-21",
-  "generated": "2026-10-21",
+  "version": "Scoring rules v0.1; data 2026-10-23",
+  "generated": "2026-10-23",
   "rules": "Scoring rules v0.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
@@ -6101,7 +6101,7 @@
    "id": "chatgpt-work",
    "name": "ChatGPT Work (agent and cloud-browser tasks)",
    "url": "https://www.agentclearinghouse.org/agents/chatgpt-work.html",
-   "homepage": "https://help.openai.com/en/articles/6825453-chatgpt-release-note",
+   "homepage": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
    "category": "Browser/web agent",
    "type": "commercial",
    "scope": "OpenAI's current agent for multi-step tasks and its cloud browser (launched July 2026). Successor to Operator (Jan–Jul 2025) and ChatGPT agent (Jul 2025–Aug 2026), both retired. Deep research reports are covered by the separate OpenAI Deep Research entry.",

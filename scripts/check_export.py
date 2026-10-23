@@ -449,6 +449,39 @@ for _e96 in json.load(open(os.path.join(P,'data','agents.json')))['entries']:
         _n96+=1
         if _s96['url'].rstrip('/') not in _l96: E(f"0096 {_e96['id']}: source {_s96['url']} ({_s96['kind']}) not linked on its entry page")
 print(f'0096: checked, all {_n96} sources in agents.json are linked on their entry pages')
+# 0097: every outbound link on an entry page is a source of that entry in agents.json, its homepage, a decision
+# record in this repository, or a row in data/page_only_links.yaml; every row there is linked on its page and is
+# not also a source of that entry (process rule; no scoring effect)
+_pol97=yaml.safe_load(open(os.path.join(P,'..','data','page_only_links.yaml'))) or []
+_al97={}
+for _r97 in _pol97:
+    _k97=(_r97.get('entry'),str(_r97.get('url','')).rstrip('/'))
+    if _k97 in _al97: E(f"0097 page_only_links: duplicate row {_k97[0]} {_r97.get('url')}")
+    _al97[_k97]=_r97
+    if _k97[0] not in x: E(f"0097 page_only_links: unknown entry {_k97[0]}")
+    if _r97.get('place') not in ('excluded-list','text'): E(f"0097 page_only_links: {_k97[0]} {_r97.get('url')}: place must be excluded-list or text")
+    if not str(_r97.get('note') or '').strip(): E(f"0097 page_only_links: {_k97[0]} {_r97.get('url')}: note missing")
+_dec97=re.compile(r'https://github\.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/(\d{4}-[a-z0-9-]+\.md)$')
+_n97=0; _used97=set()
+for _e97 in j['entries']:
+    _h97=_hh.unescape(open(os.path.join(P,'agents',_e97['id']+'.html')).read())
+    _s97={s['url'].rstrip('/') for s in _e97['sources']}; _hp97=(_e97.get('homepage') or '').rstrip('/')
+    for _u97 in dict.fromkeys(re.findall(r'href="(https?://[^"]+)"',_h97)):
+        if re.match(r'https?://(www\.)?agentclearinghouse\.org(/|$)',_u97): continue
+        _n97+=1; _k=_u97.rstrip('/')
+        if (_e97['id'],_k) in _al97:
+            _used97.add((_e97['id'],_k))
+            if _k in _s97: E(f"0097 {_e97['id']}: {_u97} is a source in agents.json and also in data/page_only_links.yaml (remove the row)")
+            continue
+        if _k in _s97 or (_hp97 and _k==_hp97): continue
+        _m97=_dec97.match(_u97)
+        if _m97:
+            if not os.path.exists(os.path.join(P,'..','decisions',_m97.group(1))): E(f"0097 {_e97['id']}: decision link {_u97} has no file in decisions/")
+            continue
+        E(f"0097 {_e97['id']}: outbound link {_u97} is not a source in agents.json, the homepage, a decision record or a row in data/page_only_links.yaml")
+for _k,_r97 in _al97.items():
+    if _k not in _used97: E(f"0097 page_only_links: {_k[0]} {_r97.get('url')} is not linked on its entry page (fix or remove the row)")
+print(f'0097: checked, all {_n97} distinct outbound links on entry pages are sources, homepages, decision records or one of {len(_al97)} listed page-only links')
 # 0079: typed independent_source_count.other must equal the number derived from the source list by kind
 for k,e in y.items():
     try: d=B.derived_other(e)

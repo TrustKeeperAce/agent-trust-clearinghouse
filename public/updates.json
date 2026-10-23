@@ -12,7 +12,7 @@
   }
  ],
  "_clearinghouse": {
-  "generated": "2026-10-21",
+  "generated": "2026-10-23",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
   "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://www.agentclearinghouse.org/agents/aider.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://www.agentclearinghouse.org/citing.html",
@@ -20,6 +20,30 @@
   "note": "before is null for new entries; values that could not be recovered are null."
  },
  "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-23-0097",
+   "url": "https://www.agentclearinghouse.org/changelog.html",
+   "title": "Site change (0097)",
+   "content_text": "Tidied two links on entry pages: the vendor release-notes link on ChatGPT Work now uses the article’s full address, and the Seoul Economic Daily link on Kimi Researcher now points to the address that site redirects to. Also recorded the 22 page-only links (links kept on entry pages for context that are not listed sources) and added a check that every outbound link on an entry page is a listed source, the homepage, a decision record or one of those recorded links. No score, grade or source count changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-23T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0097"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0097-source-leftovers.md",
+    "as_of": "2026-10-23",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
   {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-21-0096",
    "url": "https://www.agentclearinghouse.org/changelog.html",

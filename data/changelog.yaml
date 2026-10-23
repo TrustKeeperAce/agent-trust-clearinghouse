@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-23-0097
+  date: '2026-10-23'
+  decision_packets:
+  - '0097'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0097-source-leftovers.md
+  change_html: 'Tidied two links on entry pages: the vendor release-notes link on <a href="/agents/chatgpt-work.html">ChatGPT Work</a> now uses the article’s full address, and the Seoul Economic Daily link on <a href="/agents/kimi-researcher.html">Kimi Researcher</a> now points to the address that site redirects to. Also recorded the 22 page-only links (links kept on entry pages for context that are not listed sources) and added a check that every outbound link on an entry page is a listed source, the homepage, a decision record or one of those recorded links. No score, grade or source count changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-21-0096
   date: '2026-10-21'
   decision_packets:

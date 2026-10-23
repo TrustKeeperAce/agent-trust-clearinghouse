@@ -1,0 +1,30 @@
+# data/page_only_links.yaml (decision 0097). Links on entry pages that are deliberately NOT sources in
+# data/agents.json. They are not counted, do not affect any score, grade or source count, and are kept
+# on the page for context. check_export.py (0097) requires every outbound link on an entry page to be a
+# source in agents.json, the entry's homepage, a decision record in this repository, or listed here;
+# and every row here to be linked on its page and not also be a source of that entry.
+# place: excluded-list = a link in an older "Excluded sources" / "Not counted" list on the page (or, for
+#        consensus, an item marked "retracted; excluded" in its Sources list);
+#        text = a citation inside the page text (timeline, security or disputes paragraphs).
+- {entry: gemini-deep-research, url: 'https://arxiv.org/abs/2507.16075', place: excluded-list, note: 'TTD-DR preprint; vendor-authored (Google)'}
+- {entry: gemini-deep-research, url: 'https://arxiv.org/abs/2602.11685', place: excluded-list, note: 'DRACO preprint; published by a competing product (Perplexity)'}
+- {entry: consensus, url: 'https://doi.org/10.5206/cjils-rcsib.v49i1.23075', place: excluded-list, note: 'CJILS article on Elicit, SciSpace and Consensus; retracted (publisher page title marks it [Retracted]); shown in the Sources section marked "retracted; excluded"'}
+- {entry: claude-research, url: 'https://arxiv.org/abs/2508.15804', place: excluded-list, note: 'ReportBench; tested Claude models via the API, not the Research product (also a counted source on the Gemini Deep Research entry)'}
+- {entry: claude-research, url: 'https://arxiv.org/abs/2510.14240', place: excluded-list, note: 'LiveResearchBench; tested Claude models via the API, not the Research product'}
+- {entry: claude-research, url: 'https://arxiv.org/abs/2601.08536', place: excluded-list, note: 'DeepResearch Bench II; no Claude Research row (also a counted source on the Gemini Deep Research entry)'}
+- {entry: claude-research, url: 'https://arxiv.org/abs/2604.03173', place: excluded-list, note: 'Rao, Wong, Callison-Burch citation-URL study; Claude models with search or via API, not the Research product (also a counted source on the Gemini Deep Research entry)'}
+- {entry: browser-use, url: 'https://arxiv.org/abs/2508.16688', place: excluded-list, note: 'Cybernaut preprint; figure appears to restate the vendor result; authors build a competing framework'}
+- {entry: browser-use, url: 'https://github.com/browser-use/benchmark', place: excluded-list, note: 'BU Bench; vendor-run benchmark, not independent'}
+- {entry: browser-use, url: 'https://www.digitalapplied.com/blog/open-source-browser-computer-use-agents-2026', place: excluded-list, note: 'Digital Applied blog; commentary without original testing'}
+- {entry: chatgpt-work, url: 'https://arxiv.org/abs/2510.11035', place: excluded-list, note: 'SusBench; tested an API sample app, not the Operator product'}
+- {entry: agent-s, url: 'https://nvd.nist.gov/vuln/detail/CVE-2026-84886', place: text, note: 'NVD record cited in the security paragraph; the same CVE group is a listed source via CVE-2026-84885'}
+- {entry: agent-s, url: 'https://nvd.nist.gov/vuln/detail/CVE-2026-84887', place: text, note: 'NVD record cited in the security paragraph; the same CVE group is a listed source via CVE-2026-84885'}
+- {entry: data-interpreter, url: 'https://nvd.nist.gov/vuln/detail/CVE-2026-0760', place: text, note: 'NVD record cited in the security section; the ZDI advisory is the listed source'}
+- {entry: data-interpreter, url: 'https://nvd.nist.gov/vuln/detail/CVE-2026-0761', place: text, note: 'NVD record cited in the security section; the ZDI advisory is the listed source'}
+- {entry: data-interpreter, url: 'https://nvd.nist.gov/vuln/detail/CVE-2026-19059', place: text, note: 'NVD record cited in the security section; its pair CVE-2026-19060 is the listed source'}
+- {entry: skyvern, url: 'https://github.com/Skyvern-AI/skyvern/commit/db856cd', place: text, note: 'fix commit for CVE-2025-49619, cited in the security section; the CVE record is the listed source'}
+- {entry: chatgpt-work, url: 'https://community.openai.com/t/agent-mode-menu-disappeared-after-recent-performance-issues-plus-plan/1386007/66', place: text, note: 'OpenAI support reply on the community forum, cited in the product timeline'}
+- {entry: chatgpt-work, url: 'https://openai.com/index/introducing-operator/', place: text, note: 'vendor announcement of Operator, cited in the product timeline'}
+- {entry: kimi-researcher, url: 'https://en.sedaily.com/international/2026/05/01/chinas-kimi-ai-leaks-strangers-resume-in-translation-request', place: text, note: 'news report cited in the disputes paragraph; the OECD incident record is the listed source'}
+- {entry: kimi-researcher, url: 'https://finance.sina.cn/stock/jdts/2026-04-26/detail-inhvvuxz3018355.d.html?vt=4', place: text, note: 'news report (Sina / Cover News) cited in the disputes paragraph; the OECD incident record is the listed source'}
+- {entry: manus, url: 'https://manus.im/blog/manus-max-release', place: text, note: 'vendor release post for Manus 1.6, cited in the product timeline'}

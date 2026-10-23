@@ -2,7 +2,7 @@ name: ChatGPT Work (agent and cloud-browser tasks)
 slug: chatgpt-work
 category: Browser/web agent
 type: commercial
-homepage: https://help.openai.com/en/articles/6825453-chatgpt-release-note
+homepage: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
 scope: OpenAI's current agent for multi-step tasks and its cloud browser (launched July 2026). Successor to Operator (Jan–Jul 2025) and ChatGPT agent (Jul 2025–Aug 2026), both retired. Deep research reports are covered by the separate OpenAI Deep Research entry.
 summary: ChatGPT Work is OpenAI's current agent for multi-step tasks, including a cloud browser that can act on websites. It replaced ChatGPT agent, which itself replaced Operator; both earlier products are retired. Independent tests exist for Operator and ChatGPT agent but are not counted. Two independent tests of ChatGPT Work were found (a hands-on review and an integration vendor's benchmark), fewer than the three required, so no overall score is given. Insufficient evidence. Informational only; not a guarantee, endorsement, or certification.
 status: Insufficient evidence
