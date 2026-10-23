@@ -11,7 +11,7 @@
 
 Wording choices W1–W4 kept as drafted.
 
-Commit, push and deploy each need separate approval.
+Commit and push approved 2026-10-23 (5:06 PM ET, t262u commit approved, W1–W4 as recommended; deploy not approved); committed as fe3e7a8. Deploy needs separate approval.
 
 ## What happened
 Decision 0096 linked the three agents.json sources that were missing from their pages and noted three leftovers for a later packet. Checked again on 23 October 2026:
