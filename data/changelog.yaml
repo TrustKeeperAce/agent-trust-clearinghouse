@@ -8,7 +8,8 @@
   decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0098-cross-links.md
   change_html: 'Added an “Other entries in this category” section at the end of entry pages. It links to the other entries that share the page’s category in the data, listed alphabetically by name, and to the side-by-side comparison page where one covers the entry. The list is generated from the data, shows no scores or grades, and is not a ranking or recommendation. Entries that are alone in their category (<a href="/agents/clay.html">Clay</a>, <a href="/agents/pactum.html">Pactum</a>) have no such section. Also added a check for these sections. No score, grade, source count or last-reviewed date changes.'
   changes: []
-  source_commits: []
+  source_commits:
+  - 85a76e3
 - id: 2026-10-23-0097
   date: '2026-10-23'
   decision_packets:

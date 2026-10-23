@@ -17,7 +17,7 @@
 
 Wording choices W1–W4 kept as drafted. The changelog row is dated on the day it is committed (2026-10-23); if that date is later than the newest changelog date, the "Data as of" date and the site-page sitemap lastmods follow it (0090 D3), entry-page lastmods do not.
 
-Commit, push and deploy each need separate approval.
+Commit and push approved 2026-10-23 (7:13 PM ET, t266u commit approved, W1–W4 as recommended; deploy not approved); committed as 85a76e3. Deploy needs separate approval.
 
 ## What happened
 - **Request (23 October 2026):** add cross-links between related entries, for example from the Gemini CLI page to the other coding agents, and pick up the cross-reference items deferred by earlier packets.
