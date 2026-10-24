@@ -1,6 +1,22 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-24-0099
+  date: '2026-10-24'
+  decision_packets:
+  - '0099'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0099-github-copilot-cli.md
+  change_html: 'Added <a href="/agents/github-copilot-cli.html">GitHub Copilot CLI</a> (GitHub''s terminal coding agent, run with models from several companies; Coding agent): overall 51, evidence grade B, 5 independent performance sources (0 peer-reviewed). Grade B rests on counting a documented hands-on test from a developer blog; without it the grade would be B-, overall 46. Results depend on the model used. Two 2026 advisories fixed on the day they were published (CVE-2026-29783 in 0.0.423 and CVE-2026-45033 in 1.0.43) and two reports that GitHub did not treat as vulnerabilities (an approval bypass and a model-dependent leak of secrets in autopilot mode) are described under disputes. The retired gh copilot extension, GitHub Copilot coding agent, Copilot in IDEs and results for models alone are not covered; studies by Microsoft or GitHub authors are not counted. The <a href="/compare/coding-agents.html">coding agents comparison</a> now names GitHub Copilot CLI. Citation check incomplete — recheck later.'
+  changes:
+  - agent_id: github-copilot-cli
+    type: new_entry
+    before: null
+    after:
+      overall_score: 51
+      evidence_grade: B
+      status: Scored
+    source_commit: null
+  source_commits: []
 - id: 2026-10-23-0098
   date: '2026-10-23'
   decision_packets:

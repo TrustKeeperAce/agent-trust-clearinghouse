@@ -1,14 +1,14 @@
 {
  "dataset": {
   "name": "Agent Reputation & Trust Clearinghouse",
-  "version": "Scoring rules v0.1; data 2026-10-23",
-  "generated": "2026-10-23",
+  "version": "Scoring rules v0.1; data 2026-10-24",
+  "generated": "2026-10-24",
   "rules": "Scoring rules v0.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",
   "source_repository": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse",
   "corrections_contact": "trustkeeperace@gmail.com",
-  "entry_count": 43
+  "entry_count": 44
  },
  "disclaimer": "Informational only; not a guarantee, endorsement, or certification. Scores reflect public sources and the stated rules as of each entry's last_reviewed date.",
  "usage_note": "If you use or quote these scores: they are informational, rule-based assessments of public evidence as of each entry's last_reviewed date (Scoring rules v0.1). They are not guarantees, endorsements, certifications, or rankings of overall quality. Quote the factor scores and evidence grade together, include the as-of date, and link the entry page. Do not describe an entry as 'verified', 'certified', 'approved' or 'trusted' by the Clearinghouse.",
@@ -4641,6 +4641,212 @@
      "url": "https://browser-use.com/posts/online-mind2web-benchmark",
      "kind": "vendor or maintainer",
      "accessed": "2026-10-17",
+     "counted": false,
+     "peer_reviewed": null
+    }
+   ]
+  },
+  {
+   "id": "github-copilot-cli",
+   "name": "GitHub Copilot CLI",
+   "url": "https://www.agentclearinghouse.org/agents/github-copilot-cli.html",
+   "homepage": "https://github.com/github/copilot-cli",
+   "category": "Coding agent",
+   "type": "Terminal coding agent from GitHub (Microsoft); proprietary, with a public repository for issues and releases (npm @github/copilot); runs models chosen by the user, or by GitHub's Auto setting, from Anthropic, OpenAI, Google and Microsoft",
+   "scope": "GitHub Copilot CLI (the copilot command; npm @github/copilot) from its public preview (25 September 2025) through 1.0.103 (22 October 2026), in interactive, plan, autopilot and non-interactive (-p) use, with any model it offers. The retired GitHub Copilot in the CLI extension (gh copilot, 2023 to 25 October 2025) and the 2023 GitHub Next 'Copilot for CLI' preview are not covered. Copilot coding agent (the cloud agent, which has its own entry, including tasks that Copilot CLI hands to it), Copilot in Visual Studio Code and other IDEs, Copilot code review, products built on the Copilot CLI or its SDK, the unrelated AWS Copilot CLI, and results for models alone are not covered.",
+   "status": "Scored",
+   "scores": {
+    "completion_rate": 45,
+    "disputes": 50,
+    "adherence_to_limits": 40,
+    "evidence_quality": 70
+   },
+   "overall_score": 51,
+   "evidence_grade": "B",
+   "grade_note": "Grade B: 5 counted independent sources, none peer-reviewed. The B grade rests on counting a documented hands-on test published on a developer blog (Decision 0071; Decision 0099, D4); without it the entry would have 4 counted sources, grade B-, and an overall score of 46. Two counted sources state the version tested (0.0.400, February 2026, and 1.0.65, June 2026). Many further studies ran Copilot CLI but have Microsoft or GitHub authors, so they are not counted (Decision 0031). Results reflect the model and the harness together (see Decision 0087, D3).",
+   "independent_source_count": {
+    "performance": 5,
+    "other": 9
+   },
+   "counted_performance_sources": 5,
+   "peer_reviewed_counted_sources": 0,
+   "last_reviewed": "2026-10-23",
+   "decision_packets": [
+    "decisions/0099-github-copilot-cli.md"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2602.01655",
+     "kind": "independent performance",
+     "accessed": "2026-10-23",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://zenn.dev/sato_shogidemo/articles/codex-vs-copilot-cli-benchmark",
+     "kind": "independent performance",
+     "accessed": "2026-10-23",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.02857",
+     "kind": "independent performance",
+     "accessed": "2026-10-23",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.00677",
+     "kind": "independent performance",
+     "accessed": "2026-10-23",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.28586",
+     "kind": "independent performance",
+     "accessed": "2026-10-23",
+     "counted": true,
+     "peer_reviewed": false
+    },
+    {
+     "url": "https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/github/copilot-cli/security/advisories/GHSA-g8r9-g2v8-jv6f",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-29783",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/github/copilot-cli/security/advisories/GHSA-9ccr-r5hg-74gf",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45033",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://adversa.ai/blog/cryptographic-context-injection-github-copilot/",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://www.theregister.com/ai-and-ml/2026/10/06/zombie-instructions-on-carefully-constructed-web-pages-could-trick-github-copilot-cli-into-sharing-secrets/5301206",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/github/copilot-cli/issues/1675",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.14488",
+     "kind": "other",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://doi.org/10.1145/3830418.3843858",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.15143",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.31179",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.22732",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.13668",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2609.29095",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2606.28430",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2608.20851",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://arxiv.org/abs/2607.01418",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
+     "counted": false,
+     "peer_reviewed": null
+    },
+    {
+     "url": "https://github.com/github/copilot-cli",
+     "kind": "vendor or maintainer",
+     "accessed": "2026-10-23",
      "counted": false,
      "peer_reviewed": null
     }

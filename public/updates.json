@@ -12,7 +12,7 @@
   }
  ],
  "_clearinghouse": {
-  "generated": "2026-10-23",
+  "generated": "2026-10-24",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
   "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://www.agentclearinghouse.org/agents/aider.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://www.agentclearinghouse.org/citing.html",
@@ -20,6 +20,34 @@
   "note": "before is null for new entries; values that could not be recovered are null."
  },
  "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-24-0099/github-copilot-cli",
+   "url": "https://www.agentclearinghouse.org/agents/github-copilot-cli.html",
+   "title": "GitHub Copilot CLI: new entry, 51 / B",
+   "content_text": "Added GitHub Copilot CLI (GitHub's terminal coding agent, run with models from several companies; Coding agent): overall 51, evidence grade B, 5 independent performance sources (0 peer-reviewed). Grade B rests on counting a documented hands-on test from a developer blog; without it the grade would be B-, overall 46. Results depend on the model used. Two 2026 advisories fixed on the day they were published (CVE-2026-29783 in 0.0.423 and CVE-2026-45033 in 1.0.43) and two reports that GitHub did not treat as vulnerabilities (an approval bypass and a model-dependent leak of secrets in autopilot mode) are described under disputes. The retired gh copilot extension, GitHub Copilot coding agent, Copilot in IDEs and results for models alone are not covered; studies by Microsoft or GitHub authors are not counted. The coding agents comparison now names GitHub Copilot CLI. Citation check incomplete — recheck later. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-24T00:00:00Z",
+   "tags": [
+    "new_entry"
+   ],
+   "_clearinghouse": {
+    "type": "new_entry",
+    "agent_id": "github-copilot-cli",
+    "entry_url": "https://www.agentclearinghouse.org/agents/github-copilot-cli.html",
+    "before": null,
+    "after": {
+     "overall_score": 51,
+     "evidence_grade": "B",
+     "status": "Scored"
+    },
+    "status": "Scored",
+    "decision_packets": [
+     "0099"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0099-github-copilot-cli.md",
+    "as_of": "2026-10-24",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
   {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-23-0098",
    "url": "https://www.agentclearinghouse.org/changelog.html",

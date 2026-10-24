@@ -222,7 +222,7 @@ COMPARE=[
  {'path':'compare/coding-agents.html','h1':'Coding agents compared: public evidence','title':'Coding agents compared','short':'Coding agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the coding agents in the directory. Informational; not a ranking.',
   'groups':[('Coding agent entries',('category','Coding agent'))],
-  'caveats':['Open-source frameworks (OpenHands, SWE-agent, mini-SWE-agent, Aider, Cline, OpenCode) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin, Cursor agent, Replit Agent, Google Jules, Gemini CLI) are tested as shipped.',
+  'caveats':['Open-source frameworks (OpenHands, SWE-agent, mini-SWE-agent, Aider, Cline, OpenCode) are run with a language model chosen by the user, so their evidence mixes many models; managed products (Claude Code, OpenAI Codex, GitHub Copilot coding agent, Devin, Cursor agent, Replit Agent, Google Jules, Gemini CLI, GitHub Copilot CLI) are tested as shipped.',
              'Some entries are cloud agents that open pull requests, some are command-line or editor tools, and Replit Agent builds and deploys whole apps inside Replit\'s hosted platform, so several of its counted tests compare app builders; read each scope before comparing.']},
  {'path':'compare/research-agents.html','h1':'Research and deep-research agents compared: public evidence','title':'Research agents compared','short':'Research agents compared',
   'desc':'Factor scores, evidence grades and counted independent sources for the research and deep-research agents in the directory. Informational; not a ranking.',

@@ -2,7 +2,7 @@
 
 > Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.
 
-Data as of 2026-10-21 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://www.agentclearinghouse.org/llms.txt. Machine-readable data: https://www.agentclearinghouse.org/data/agents.json (same source as this file). Full rules: https://www.agentclearinghouse.org/methodology.html
+Data as of 2026-10-23 (Scoring rules v0.1). Each entry has its own last-reviewed date. Short index: https://www.agentclearinghouse.org/llms.txt. Machine-readable data: https://www.agentclearinghouse.org/data/agents.json (same source as this file). Full rules: https://www.agentclearinghouse.org/methodology.html
 
 ## How this directory works
 
@@ -537,6 +537,33 @@ Uncertainties:
 Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
 
 Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-17.
+
+### GitHub Copilot CLI
+
+- Entry page: https://www.agentclearinghouse.org/agents/github-copilot-cli.html
+- Category: Coding agent; type: Terminal coding agent from GitHub (Microsoft); proprietary, with a public repository for issues and releases (npm @github/copilot); runs models chosen by the user, or by GitHub's Auto setting, from Anthropic, OpenAI, Google and Microsoft
+- Status: Scored
+- Factor scores (0–100): completion rate 45, disputes 50, adherence to limits 40, evidence quality 70
+- Overall score: 51; evidence grade: B
+- Grade note: Grade B: 5 counted independent sources, none peer-reviewed. The B grade rests on counting a documented hands-on test published on a developer blog (Decision 0071; Decision 0099, D4); without it the entry would have 4 counted sources, grade B-, and an overall score of 46. Two counted sources state the version tested (0.0.400, February 2026, and 1.0.65, June 2026). Many further studies ran Copilot CLI but have Microsoft or GitHub authors, so they are not counted (Decision 0031). Results reflect the model and the harness together (see Decision 0087, D3).
+- Counted independent performance sources: 5; other sources (as in agents.json): 9; all sources listed but not counted: 20
+- Last reviewed: 2026-10-23
+
+Scope: GitHub Copilot CLI (the copilot command; npm @github/copilot) from its public preview (25 September 2025) through 1.0.103 (22 October 2026), in interactive, plan, autopilot and non-interactive (-p) use, with any model it offers. The retired GitHub Copilot in the CLI extension (gh copilot, 2023 to 25 October 2025) and the 2023 GitHub Next 'Copilot for CLI' preview are not covered. Copilot coding agent (the cloud agent, which has its own entry, including tasks that Copilot CLI hands to it), Copilot in Visual Studio Code and other IDEs, Copilot code review, products built on the Copilot CLI or its SDK, the unrelated AWS Copilot CLI, and results for models alone are not covered.
+
+Summary: GitHub Copilot CLI is GitHub's coding agent for the terminal, generally available since February 2026, which runs models from several companies. Five independent tests were counted, none peer-reviewed: a project-building benchmark, a documented hands-on review test and three security studies; two state the version tested (0.0.400 and 1.0.65). In the project benchmark it placed fourth of five agents with GPT-5 and with Claude Sonnet 4.5, and last of three with Gemini 3 Pro Preview; in the hands-on test it was level with Codex CLI on review tasks. Attacks in two security studies succeeded about as often as against other agents (89–96%). GitHub fixed two 2026 advisories on the day each was published (CVE-2026-29783 in 0.0.423 and CVE-2026-45033 in 1.0.43), but did not treat two other reports as vulnerabilities (an approval bypass, later changed in 1.0.3, and a model-dependent leak of secrets in autopilot mode). Many studies of Copilot CLI have Microsoft or GitHub authors and are not counted. Informational only; not a guarantee, endorsement, or certification.
+
+Uncertainties:
+- Results reflect the model and the harness together; Copilot CLI offers models from several companies and an Auto setting that picks one, so results for one model may not carry over.
+- Copilot CLI releases several times a week (1.0.103 on 22 October 2026); only two counted tests state a version (0.0.400 and 1.0.65), and approval behaviour changed in 0.0.423, 1.0.3 and 1.0.43.
+- The name has been used for three GitHub products: the 2023 GitHub Next 'Copilot for CLI' preview, the gh copilot extension retired on 25 October 2025, and the current agent; some studies say only 'GitHub Copilot', and studies of the VS Code extension are not counted here.
+- The B grade depends on counting one documented hands-on test from a developer blog; without it the entry would be B- with an overall score of 46.
+- Many studies that ran Copilot CLI have Microsoft or GitHub authors and are not counted; they include results both more and less favourable than the counted ones.
+- Citation check incomplete — recheck later (OpenAlex full text: 125 works screened, 78 full texts read; 355 sources cited by other entries rechecked; the arXiv API added nothing new; Semantic Scholar was rate-limited; a community edit benchmark and a university thesis were found but not reviewed).
+
+Sources: see the entry page above; the complete list, with kinds and access dates, is in data/agents.json.
+
+Note: Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality. As of 2026-10-23.
 
 ### GitHub Copilot coding agent
 

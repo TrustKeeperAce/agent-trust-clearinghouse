@@ -1,0 +1,151 @@
+name: GitHub Copilot CLI
+slug: github-copilot-cli
+category: Coding agent
+type: Terminal coding agent from GitHub (Microsoft); proprietary, with a public repository for issues and releases (npm @github/copilot); runs models chosen by the user, or by GitHub's Auto setting, from Anthropic, OpenAI, Google and Microsoft
+homepage: https://github.com/github/copilot-cli
+scope: GitHub Copilot CLI (the copilot command; npm @github/copilot) from its public preview (25 September 2025) through 1.0.103 (22 October 2026), in interactive, plan, autopilot and non-interactive (-p) use, with any model it offers. The retired GitHub Copilot in the CLI extension (gh copilot, 2023 to 25 October 2025) and the 2023 GitHub Next 'Copilot for CLI' preview are not covered. Copilot coding agent (the cloud agent, which has its own entry, including tasks that Copilot CLI hands to it), Copilot in Visual Studio Code and other IDEs, Copilot code review, products built on the Copilot CLI or its SDK, the unrelated AWS Copilot CLI, and results for models alone are not covered.
+summary: 'GitHub Copilot CLI is GitHub''s coding agent for the terminal, generally available since February 2026, which runs models from several companies. Five independent tests were counted, none peer-reviewed: a project-building benchmark, a documented hands-on review test and three security studies; two state the version tested (0.0.400 and 1.0.65). In the project benchmark it placed fourth of five agents with GPT-5 and with Claude Sonnet 4.5, and last of three with Gemini 3 Pro Preview; in the hands-on test it was level with Codex CLI on review tasks. Attacks in two security studies succeeded about as often as against other agents (89–96%). GitHub fixed two 2026 advisories on the day each was published (CVE-2026-29783 in 0.0.423 and CVE-2026-45033 in 1.0.43), but did not treat two other reports as vulnerabilities (an approval bypass, later changed in 1.0.3, and a model-dependent leak of secrets in autopilot mode). Many studies of Copilot CLI have Microsoft or GitHub authors and are not counted. Informational only; not a guarantee, endorsement, or certification.'
+scores:
+  completion_rate: 45
+  disputes: 50
+  adherence_to_limits: 40
+  evidence_quality: 70
+overall_score: 51
+evidence_grade: B
+grade_note: 'Grade B: 5 counted independent sources, none peer-reviewed. The B grade rests on counting a documented hands-on test published on a developer blog (Decision 0071; Decision 0099, D4); without it the entry would have 4 counted sources, grade B-, and an overall score of 46. Two counted sources state the version tested (0.0.400, February 2026, and 1.0.65, June 2026). Many further studies ran Copilot CLI but have Microsoft or GitHub authors, so they are not counted (Decision 0031). Results reflect the model and the harness together (see Decision 0087, D3).'
+independent_source_count:
+  performance: 5
+  peer_reviewed: 0
+  other: 9
+factor_notes:
+  completion_rate: Thin and mixed. In ProjDevBench (preprint), which ran six agents through their command-line interfaces with the same models, Copilot CLI's final score placed fourth of five with GPT-5 (61.73; others 57.34 to 77.85) and with Claude Sonnet 4.5 (67.18; others 60.41 to 70.88), and last of three with Gemini 3 Pro Preview (55.32; others 68.61 and 75.32), with a sharp drop on hard tasks. In a documented hands-on test of review tasks with the same model, its response times and judged quality were level with Codex CLI. GitHub's own comparisons, which report results on par with Claude Code and Codex CLI, are not counted.
+  disputes: 'Mixed. GitHub published two advisories with fixes on the same day: CVE-2026-29783 (shell expansions that bypassed the read-only check; fixed in 0.0.423) and CVE-2026-45033 (a hidden bare git repository could run commands; fixed in 1.0.43). Against this, GitHub validated two reports but did not treat them as vulnerabilities: PromptArmor''s env-command bypass of the approval prompt (February 2026), although the 1.0.3 changelog (March 2026) then stopped allowing env without approval, and Adversa AI''s encrypted-instruction exfiltration in autopilot mode (October 2026), which Adversa says still reproduces. A checkpoint-restore bug that deleted users'' untracked files stayed open from February to September 2026 before rewind was changed in 1.0.78. No lawsuit or regulatory action concerning Copilot CLI was found.'
+  adherence_to_limits: 'Weak under attack, at about the level of other agents. Two security studies found attacks succeeded about as often as against other agents: 96.24% for command-composition attacks (others 95.84–97.43%) and 89.1% on average in long-horizon red-teaming (the other agents tested 59.1–90.3%, most 79.1–90.3%). An approval study found that an approved MCP call also used network access the approval did not show, as in other agents. Outside the counted tests, researchers showed approval checks being bypassed through the env command and shell expansions, and secrets being sent out from a web page in autopilot mode with one of the available models; the env and shell-expansion bypasses were fixed. Copilot CLI asks before running commands that change files unless the user allows them or turns on autopilot.'
+  evidence_quality: '5 counted independent sources, none peer-reviewed: one benchmark preprint, one documented hands-on test on a developer blog and three security preprints. Two state the version (0.0.400 and 1.0.65). Strengths: same-model comparisons with other agents in four of five. Limits: no peer-reviewed independent test; one completion benchmark; the hands-on test covers review tasks only; versions mostly unstated while the product releases several times a week; many studies of Copilot CLI are by Microsoft or GitHub authors and are not counted, including a peer-reviewed SOSP 2026 study.'
+uncertainties:
+- Results reflect the model and the harness together; Copilot CLI offers models from several companies and an Auto setting that picks one, so results for one model may not carry over.
+- Copilot CLI releases several times a week (1.0.103 on 22 October 2026); only two counted tests state a version (0.0.400 and 1.0.65), and approval behaviour changed in 0.0.423, 1.0.3 and 1.0.43.
+- 'The name has been used for three GitHub products: the 2023 GitHub Next ''Copilot for CLI'' preview, the gh copilot extension retired on 25 October 2025, and the current agent; some studies say only ''GitHub Copilot'', and studies of the VS Code extension are not counted here.'
+- The B grade depends on counting one documented hands-on test from a developer blog; without it the entry would be B- with an overall score of 46.
+- Many studies that ran Copilot CLI have Microsoft or GitHub authors and are not counted; they include results both more and less favourable than the counted ones.
+- 'Citation check incomplete — recheck later (OpenAlex full text: 125 works screened, 78 full texts read; 355 sources cited by other entries rechecked; the arXiv API added nothing new; Semantic Scholar was rate-limited; a community edit benchmark and a university thesis were found but not reviewed).'
+sources:
+- url: https://arxiv.org/abs/2602.01655
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (GPT-5, Claude Sonnet 4.5, Gemini 3 Pro Preview)
+  test_date: 2025-11/2026-01
+  accessed: '2026-10-23'
+  note: 'ProjDevBench: Benchmarking AI Coding Agents on End-to-End Project Development (Lu, Zhang, Hou and others; UC Merced, Shanghai Jiao Tong University, Shanghai Innovation Institute, Beijing Institute of Technology; preprint, February 2026): 20 end-to-end project tasks judged by an online judge and code review, six agents run through their command-line interfaces (the setup installs the @github/copilot package). Final weighted scores for GitHub Copilot CLI were 61.73 with GPT-5 (fourth of five; others 57.34 to 77.85), 67.18 with Claude Sonnet 4.5 (fourth of five; others 60.41 to 70.88) and 55.32 with Gemini 3 Pro Preview (last of three; Gemini CLI 68.61, Cursor 75.32); with Sonnet 4.5 its execution score fell from 71.10 on easy tasks to 36.63 on hard ones. One run per configuration. Version not stated'
+- url: https://zenn.dev/sato_shogidemo/articles/codex-vs-copilot-cli-benchmark
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Copilot CLI 0.0.400; GPT-5.2
+  test_date: '2026-02-01'
+  accessed: '2026-10-23'
+  note: 'Documented hands-on test (individual developer, Zenn, 2 February 2026; updated 19 August 2026): 180 timed runs (90 per tool) of five code-review tasks (explanation, review, plan review, improvement proposals, bug finding) with Copilot CLI 0.0.400 and Codex CLI 0.93.0, both with GPT-5.2 at the highest reasoning setting, measured on 1 February 2026. Mean response time was 48.05 seconds for Copilot CLI and 48.19 for Codex CLI (no significant difference); blind quality scores by an AI judge were 26.67 and 28.18 out of 30, which the author treats as within the margin of error; Codex CLI produced more output per second (16.5 against 25.7 seconds per KB). Review tasks only; the author was not sure the reasoning setting was applied identically. Counted as a documented test (Decision 0071; Decision 0099, D4)'
+- url: https://arxiv.org/abs/2607.02857
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (default configuration; June 2026)
+  test_date: 2026-06
+  accessed: '2026-10-23'
+  note: 'MOSAIC: Knowledge-Guided CLI Command Composition Attack in LLM Coding Agents (Wu, Wang, Nan, Zhang, Wang; Sun Yat-sen University, Shandong University, Peking University, HKUST; preprint, July 2026): attacks that split a harmful action into ordinary command-line commands. Each agent ran in its default configuration with five models. Attacks succeeded against GitHub Copilot CLI in 486 of 505 cases (96.24%), against 95.84% to 97.43% for Claude Code, Codex CLI, Gemini CLI and Trae Agent. Version not stated (documentation accessed 8 June 2026). Security study'
+- url: https://arxiv.org/abs/2608.00677
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: unstated (five models)
+  test_date: 2026-07
+  accessed: '2026-10-23'
+  note: 'OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution (Chen, Wang and others; Fudan University, Shanghai AI Laboratory, XSafeAI; preprint, August 2026, revised September 2026): long-horizon red-teaming scenarios built from real tools, MCP servers and skills, run on 15 deployed agents with five models. Copilot CLI''s strict attack success averaged 89.1% (65.4% with Claude Opus 4.8 to 100% with Qwen-3.7-Max), against 59.1% for Aider and 79.1% to 90.3% for the other 13 agents, including Claude Code (89.7%) and OpenCode (90.3%). Version not stated. Security study'
+- url: https://arxiv.org/abs/2609.28586
+  kind: independent performance
+  peer_reviewed: false
+  version_tested: Copilot CLI 1.0.65
+  test_date: 2026-07/2026-09
+  accessed: '2026-10-23'
+  note: 'Agent Approval Laundering: Transitive Effects Beyond the Approved Invocation (Zhang, Xia and others; Institute of Information Engineering, Chinese Academy of Sciences, Beihang University, BUPT; preprint, September 2026): whether what a user approves matches what then happens. With GitHub Copilot CLI 1.0.65 (one of six product configurations), an approved, named MCP documentation-tool call also used network access that the approval record did not show; Qwen Code showed the same gap and Claude Code a related one with a package install. The authors disclosed the findings to GitHub. Security study'
+- url: https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware
+  kind: other
+  accessed: '2026-10-23'
+  note: 'PromptArmor, ''GitHub Copilot CLI Downloads and Executes Malware'' (February 2026): a prompt injection in a cloned repository''s README made Copilot CLI run a download-and-execute command without asking, because the env command was on the built-in read-only list and hid curl and sh from the approval and URL checks (macOS). Reported 25 February 2026; on 26 February GitHub called it a known issue that did not present a significant security risk and not eligible for a bounty. The Copilot CLI changelog for 1.0.3 (9 March 2026) lists a change so that env commands need approval'
+- url: https://github.com/github/copilot-cli/security/advisories/GHSA-g8r9-g2v8-jv6f
+  kind: other
+  accessed: '2026-10-23'
+  note: 'GHSA-g8r9-g2v8-jv6f / CVE-2026-29783 (high; GitHub CVSS 4.0 score 7.1 on the advisory, 7.5 on the CVE record; published 6 March 2026): crafted bash parameter expansions could make a command look read-only and run hidden commands, including through prompt injection in repository files or MCP responses, even in modes that ask before writes. Affects Copilot CLI 0.0.422 and earlier; fixed in 0.0.423 (6 March 2026)'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-29783
+  kind: other
+  accessed: '2026-10-23'
+  note: NVD record for CVE-2026-29783 (analyzed; CWE-78; source GitHub, Inc.)
+- url: https://github.com/github/copilot-cli/security/advisories/GHSA-9ccr-r5hg-74gf
+  kind: other
+  accessed: '2026-10-23'
+  note: 'GHSA-9ccr-r5hg-74gf / CVE-2026-45033 (published 6 May 2026; medium on the advisory, high 8.5 on the CVE record): a bare git repository hidden inside a project could set core.fsmonitor or similar options and run commands when Copilot CLI ran ordinary git operations. Advisory range 1.0.42 and earlier, fixed in 1.0.43 (6 May 2026; the advisory text says ''prior to 1.0.42''). Credited to syvb'
+- url: https://nvd.nist.gov/vuln/detail/CVE-2026-45033
+  kind: other
+  accessed: '2026-10-23'
+  note: NVD record for CVE-2026-45033 (analyzed; CWE-696; CVSS 4.0 8.5 from GitHub, Inc.)
+- url: https://adversa.ai/blog/cryptographic-context-injection-github-copilot/
+  kind: other
+  accessed: '2026-10-23'
+  note: 'Adversa AI (Rony Utevsky), ''Cryptographic Context Injection'' (6 October 2026): a web page carrying encrypted instructions, fetched at the user''s request in autopilot mode, led Copilot CLI to read a local .env.prod file and send its contents to an attacker within about 28 seconds. It depended on the model: one model ran the chain, two others refused, and Auto model selection could assign either. The same instructions in plain text were refused. Reported 17 September 2026; GitHub validated it but did not treat it as a vulnerability; Adversa says it still reproduced on 1 October 2026'
+- url: https://www.theregister.com/ai-and-ml/2026/10/06/zombie-instructions-on-carefully-constructed-web-pages-could-trick-github-copilot-cli-into-sharing-secrets/5301206
+  kind: other
+  accessed: '2026-10-23'
+  note: 'The Register (6 October 2026): news report on the Adversa AI finding, quoting a GitHub spokesperson that it requires a user to direct Copilot CLI to fetch untrusted content and confirm the action, ''and thus is not a product vulnerability''; the report names mai-code-1.1-flash as the model that ran the chain in 50% of attempts'
+- url: https://github.com/github/copilot-cli/issues/1675
+  kind: other
+  accessed: '2026-10-23'
+  note: 'Copilot CLI issue 1675 (opened 25 February 2026): restoring a checkpoint ran git clean -fd, permanently deleting untracked files the agent had not created (about 1 GB of a user''s output data); a second user reported the same in 1.0.5. The 1.0.78 release (3 August 2026) changed rewind to restore only files Copilot changed; the issue was closed by a bot on 19 September 2026, citing 1.0.86'
+- url: https://arxiv.org/abs/2610.14488
+  kind: other
+  accessed: '2026-10-23'
+  note: 'Names Are Not Objects: Object-Bound Confinement for Compromised AI Coding Agents (preprint, October 2026): replays publicly disclosed escapes, including the nested bare-repository advisory for Copilot CLI, against the author''s confinement design. Not a new test of Copilot CLI'
+- url: https://doi.org/10.1145/3830418.3843858
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'Don''t Let AI Agents YOLO Your Files (SOSP 2026; a Microsoft Research co-author): compares Copilot CLI 0.0.411 with Codex and Gemini CLI on destructive file-system actions. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2607.15143
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'Setup Complete, Now You Are Compromised (corresponding author at Microsoft; preprint, July 2026): poisoned setup instructions against Claude Code, Codex CLI, Cursor and Copilot CLI 1.0.60; with the same model, detection of an untrusted package registry fell from 10 of 10 in Claude Code to 9 of 30 in Copilot CLI, while Copilot CLI''s prompt caught another variant that Claude Code missed. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2606.31179
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'HealthAgentBench (Microsoft Research; preprint, June 2026): compares Codex, Claude Code and Copilot CLI on healthcare tasks. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2610.22732
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'TokenEconomizer (UC Berkeley, Microsoft Research, Microsoft Security; preprint, October 2026): cost control for Claude Code, Codex and Copilot CLI. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2610.13668
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: '(When) Should a Software Factory be Lights-off? (Carnegie Mellon University, Microsoft, Microsoft Research; preprint, October 2026): code-review agents run in copilot-cli 1.0.74. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2609.29095
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'Where Does Exactly-Once Live? (Microsoft; preprint, September 2026): duplicate side effects in Copilot CLI 1.0.86, Hermes and Codex CLI. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2606.28430
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'Building to the Test (Microsoft; preprint, June 2026): two Copilot CLI 1.0.56 agents rebuild a component against a hidden test oracle. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2608.20851
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'BC-Bench (Microsoft; preprint, August 2026): a benchmark in Microsoft''s Business Central language, run with Copilot CLI 0.0.382 to 0.0.409. Not counted (Decision 0031)'
+- url: https://arxiv.org/abs/2607.01418
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'Adoption and Impact of Command-Line AI Coding Agents (Microsoft; preprint, July 2026): Microsoft''s internal rollout of Claude Code and Copilot CLI. Not counted (Decision 0031)'
+- url: https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: 'GitHub blog, ''Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks'' (2026): GitHub''s own comparison with Claude Code and Codex CLI. Not counted (Decision 0031)'
+- url: https://github.com/github/copilot-cli
+  kind: vendor or maintainer
+  accessed: '2026-10-23'
+  note: github/copilot-cli repository (issues, releases and changelog; proprietary licence; npm @github/copilot; public preview 25 September 2025, generally available 25 February 2026 with 0.0.418, 1.0 from 6 March 2026, latest stable 1.0.103 on 22 October 2026) and GitHub's documentation and changelog posts. Not counted
+last_reviewed: '2026-10-23'
+decision: APPROVED
+decision_packet: decisions/0099-github-copilot-cli.md
+notes: Informational only; not a guarantee, endorsement, or certification.
