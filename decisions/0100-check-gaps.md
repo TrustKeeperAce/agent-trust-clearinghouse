@@ -9,7 +9,7 @@
 - **D6 (a):** no changelog row or feed item, because no public file changes. No deploy is needed. The as-of date, sitemap lastmods and feeds are unaffected (no 0090 D3 row-date ripple).
 - **D7 (a):** short maintainer note on both checks in docs/PROCESS.md.
 
-Commit and push approved 2026-10-24 (7:46 AM ET, t276u commit approved, W1–W2 as recommended: W1 applied, W2 kept); no deploy needed (no public changes).
+Commit and push approved 2026-10-24 (7:46 AM ET, t276u commit approved, W1–W2 as recommended: W1 applied, W2 kept); no deploy needed (no public changes); committed as 657baab.
 
 ## What happened
 - **Background.** The 0099 tamper tests (17 cases) caught 15 changes and missed 2:
