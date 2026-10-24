@@ -1,0 +1,70 @@
+# data/banned_word_allowlist.yaml (decision 0100). Exceptions to the site-wide banned-wording check.
+# check_export.py (0100b) scans the visible text of every public .html, .txt, .xml, .json and .csv file
+# for the full banned list in build_data.py (BANNED_CITE: best, top, winner(s), which is better, star(s), ★, #1,
+# certified, verified, endorsed). A hit is allowed only if it lies inside an exact, case-sensitive 'phrase'
+# below, in a file matching one of the row's 'files' patterns. Every row must cover at least one hit
+# (unused rows are an error), so rows are removed when the text changes. The banned list in build_data.py is never shortened.
+# kind: rule-text = text that explains which words not to use;
+#       name = a proper name, quoted source wording or a term that is not ranking language;
+#       not-a-claim = says something was not verified, or reports a study's own verification step;
+#       pending-reword = existing study-result wording on an entry (e.g. "the best of seven"), allowed
+#                        only in the listed files until a wording review (0100 D5). New text is not covered.
+- {kind: rule-text, files: [agents-data.html], phrase: 'Do not describe an entry as ‘verified’, ‘certified’, ‘approved’ or ‘trusted’', note: citation guidance quoting the words not to use}
+- {kind: rule-text, files: [data/agents.json, llms.txt], phrase: 'Do not describe an entry as ''verified'', ''certified'', ''approved'' or ''trusted''', note: citation guidance (usage note) quoting the words not to use}
+- {kind: rule-text, files: [llms-full.txt], phrase: 'Do not describe an entry as verified, certified, approved or trusted', note: citation guidance quoting the words not to use}
+- {kind: rule-text, files: [citing.html], phrase: 'Call an agent “best”, “top”, “#1” or a “winner”, or say it is “certified”, “verified”, “approved” or “endorsed”', note: the don'ts table on the citing page (decision 0067)}
+- {kind: name, files: [agents/*.html, llms-full.txt, compare/*.html, data/agents.json], phrase: SWE-bench Verified, note: benchmark name}
+- {kind: name, files: [agents/*.html, llms-full.txt, compare/*.html, data/agents.json], phrase: OSWorld-Verified, note: benchmark name}
+- {kind: name, files: [agents/agent-s.html], phrase: Best-of-, note: 'sampling setting name (Best-of-N, Best-of-3, Best-of-10)'}
+- {kind: name, files: [agents/agent-s.html], phrase: 'GPT-5-mini, best of 3', note: sampling setting (best of 3 attempts)}
+- {kind: name, files: [agents/agent-s.html], phrase: runs several attempts and picks the best, note: 'describes the Best-of-N mode, not a judgment'}
+- {kind: name, files: [agents/data-interpreter.html], phrase: '"best-effort replication"', note: quoted wording from the source}
+- {kind: name, files: [agents/clay.html], phrase: top-ups, note: billing term}
+- {kind: name, files: [agents/claude-code.html, agents/openhands.html], phrase: A*STAR, note: organization name (Singapore research agency)}
+- {kind: name, files: [agents/skyvern.html], phrase: “five-star” changed to “at least 4.5-star”, note: quoted benchmark task text}
+- {kind: name, files: [agents/skyvern.html], phrase: '"five-star" changed to "at least 4.5-star"', note: quoted benchmark task text}
+- {kind: name, files: [agents/data-interpreter.html, agents/loki.html], phrase: 'stars, not archived', note: GitHub repository star count (repository status line)}
+- {kind: name, files: [agents/openai-codex.html], phrase: repositories with 0 stars, note: GitHub repository star count in a study result}
+- {kind: name, files: [agents/openhands.html, data/agents.json], phrase: maintainer-verified leaderboard, note: description of a source that is listed and not counted}
+- {kind: name, files: [agents/ui-tars-desktop.html], phrase: top five invented names, note: 'about invented package names, not about agents'}
+- {kind: not-a-claim, files: [agents/*.html, llms-full.txt, compare/*.html, data/agents.json], phrase: not independently verified, note: states that something was not verified}
+- {kind: not-a-claim, files: [agents/*.html, llms-full.txt, compare/*.html, data/agents.json], phrase: not been independently verified, note: states that something was not verified}
+- {kind: not-a-claim, files: [agents/*.html, llms-full.txt, compare/*.html, data/agents.json], phrase: Not independently verified, note: states that something was not verified}
+- {kind: not-a-claim, files: [agents/*.html, llms-full.txt, compare/*.html, data/agents.json], phrase: not verified, note: states that something was not verified}
+- {kind: not-a-claim, files: [agents/cline.html], phrase: vulnerabilities verified, note: 'study result: researchers confirmed vulnerabilities'}
+- {kind: not-a-claim, files: [agents/cline.html], phrase: vulnerabilities were verified, note: 'study result: researchers confirmed vulnerabilities'}
+- {kind: not-a-claim, files: [agents/cline.html], phrase: 'Cline included, verified that a tool', note: study finding about tool checks}
+- {kind: not-a-claim, files: [agents/claude-code.html, agents/openai-codex.html], phrase: 200 verified, note: benchmark task subset (verified terminal tasks)}
+- {kind: pending-reword, files: [agents/aider.html, llms-full.txt], phrase: had the best correct-and-secure score, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/aider.html], phrase: best DeepSeek V3, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/aider.html], phrase: best GPT-5, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/claude-code.html], phrase: 49.1% best (Kimi-K3), note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/claude-code.html], phrase: best 49.1% with Kimi-K3, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/claude-code.html], phrase: the best of 8 configurations, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/claude-code.html], phrase: 'best overall: Codex CLI', note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/claude-code.html], phrase: the top of 7 research agents, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/claude-code.html], phrase: the top of 7 agents, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/elicit.html], phrase: extraction quality above the acceptable threshold and best of three AI setups, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/gemini-deep-research.html, llms-full.txt], phrase: it ranked at or near the top on report quality and coverage, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/gemini-deep-research.html], phrase: Top RACE report-quality score, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/gemini-deep-research.html], phrase: top quality in DeepResearchEval, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/manus.html], phrase: best agent tested, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openai-codex.html], phrase: the best of seven, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openai-codex.html], phrase: the best of 16, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openai-codex.html], phrase: best overall pass@1 was a Claude Code config, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: best success 48.15% with Claude 3.7, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: best 46.12 average score, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html, agents/swe-agent.html], phrase: best Claude 4 Sonnet, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: best result OpenHands + Claude 3.7, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: best bug recall 83.4%, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: Claude Opus 4.7 best, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: best OpenHands result 46.12, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/openhands.html], phrase: top models scored similarly on Terminus 2, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/perplexity-comet.html, llms-full.txt], phrase: it was the best system tested, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/perplexity-comet.html], phrase: best of all systems, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/swe-agent.html, llms-full.txt], phrase: the best false-positive filtering of 12 agent-model settings, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/swe-agent.html, llms-full.txt], phrase: the best of three frameworks tested, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/swe-agent.html], phrase: best Claude 3.7, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/swe-agent.html], phrase: best OWASP false-positive filtering, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/swe-agent.html], phrase: best GLM-4.7, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}
+- {kind: pending-reword, files: [agents/swe-agent.html], phrase: the best of 12 agent-model settings, note: study-result wording about an entry; grandfathered pending a wording review (0100 D5); no score effect}

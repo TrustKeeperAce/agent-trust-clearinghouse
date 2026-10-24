@@ -7,6 +7,9 @@ Decision 0065 adds: data/changelog.yaml vs changelog.html (no drift), updates.js
 updates.xml (Atom): unique and stable ids, latest values per agent match agents.json and the entry
 pages, referenced agents/URLs/packets exist, both feeds hold the same items, disclaimer on every item,
 valid JSON / well-formed XML, feed links and citation guidance present.
+Decision 0100 adds: entry order in index.html, its ItemList, llms.txt, agents.json and agents.csv recomputed from
+the directory-order rule (0100a), and a site-wide banned-wording scan of every public text file with a narrow
+allowlist in data/banned_word_allowlist.yaml (0100b).
 Exit 1 on any error."""
 import os,sys,re,json,csv,glob,yaml
 sys.dont_write_bytecode=True
@@ -549,6 +552,87 @@ if not B.SPONSORS_LIVE and _sp: E(f'0091: Sponsors link present before profile i
 _ft=re.sub('<[^>]+>','',B.funding_section_html())
 for b in B.BANNED_CITE+[r'\btrusted\b',r'\brecommend',r'\brated\b',r'\brating']:
     if re.search(b,_ft,re.I): E(f'0091: banned wording {b!r} in funding section')
+
+# ---- 0100a: listing order matches the documented rule (methodology #directory-order) ----
+# Entries with an overall score: highest overall score first; equal scores alphabetically by entry name
+# (case-insensitive). Insufficient evidence entries: listed separately, alphabetically. Recomputed here from
+# agents.json and compared with every hand-maintained or generated ordered entry list (not only row counts).
+ORDER_RULE_100=('Entries with an overall score are listed from highest to lowest overall score. Equal scores are listed '
+    'alphabetically by entry name (case-insensitive). Entries labeled Insufficient evidence are listed separately, alphabetically.')
+if ORDER_RULE_100 not in open(os.path.join(P,'methodology.html')).read(): E('0100a: methodology #directory-order rule text changed; update the 0100a check with it')
+_sc100=[e['id'] for e in sorted([e for e in x.values() if e['overall_score'] is not None],key=lambda e:(-e['overall_score'],e['name'].lower()))]
+_in100=[e['id'] for e in sorted([e for e in x.values() if e['overall_score'] is None],key=lambda e:e['name'].lower())]
+_want100=_sc100+_in100
+def _ord100(where,got,want):
+    if got==want: return
+    if sorted(got)!=sorted(want): E(f'0100a {where}: entries differ from agents.json: extra {sorted(set(got)-set(want))}, missing {sorted(set(want)-set(got))}'); return
+    i=next(k for k in range(len(want)) if got[k]!=want[k]); s=lambda k:x[k]['overall_score']
+    tie=' (equal scores: tie-break is entry name, case-insensitive)' if s(got[i])==s(want[i]) else ''
+    E(f'0100a {where}: order differs at position {i+1}: found {got[i]} ({s(got[i])}), expected {want[i]} ({s(want[i])}){tie}')
+_ri100=r'<th scope="row" data-label="Agent"><a href="/agents/([a-z0-9-]+)\.html">'
+_a100,_b100=idx.find('<section aria-labelledby="scored">'),idx.find('<section aria-labelledby="insufficient">')
+if _a100<0 or _b100<_a100: E('0100a index.html: scored / insufficient sections not found')
+else:
+    _ord100('index.html scored table',re.findall(_ri100,idx[_a100:_b100]),_sc100)
+    _ord100('index.html insufficient table',re.findall(_ri100,idx[_b100:]),_in100)
+_il100=[g for blk in re.findall(r'<script type="application/ld\+json">(.*?)</script>',idx,re.S) for g in (json.loads(blk).get('@graph') or [json.loads(blk)]) if g.get('@type')=='ItemList']
+if len(_il100)!=1: E(f'0100a index.html: expected one ItemList, found {len(_il100)}')
+else:
+    _el100=_il100[0].get('itemListElement',[])
+    if [it.get('position') for it in _el100]!=list(range(1,len(_el100)+1)): E('0100a index.html ItemList: positions are not 1..n')
+    if _il100[0].get('numberOfItems')!=len(_el100): E('0100a index.html ItemList: numberOfItems != item count')
+    _ord100('index.html ItemList',[re.sub(r'^.*/agents/([a-z0-9-]+)\.html$',r'\1',it.get('url','')) for it in _el100],_want100)
+_L100=open(os.path.join(P,'llms.txt')).read()
+_e100=_L100[_L100.find('\n## Entries\n'):]; _e100=_e100[:_e100.find('\n## ',1)]
+_ord100('llms.txt Entries list',re.findall(r'^- \[[^\]]*\]\('+re.escape(B.BASE)+r'/agents/([a-z0-9-]+)\.html\)',_e100,re.M),_want100)
+_ord100('data/agents.json entries',[e['id'] for e in j['entries']],_want100)
+_ord100('data/agents.csv rows',[r['id'] for r in rows],_want100)
+print(f'0100a: checked, entry order in index.html (2 tables + ItemList), llms.txt, agents.json and agents.csv matches the directory-order rule ({len(_sc100)} scored, {len(_in100)} insufficient)')
+# ---- 0100b: banned wording anywhere in the public site, not only in the data ----
+# Scans the visible text (HTML: text, meta content, JSON-LD; JSON: every string value; other files: text with
+# markup removed) of every public .html/.txt/.xml/.json/.csv file for the full list B.BANNED_CITE. Exceptions
+# are listed in data/banned_word_allowlist.yaml: exact, case-sensitive phrases scoped to file patterns; every
+# row must still cover a hit. The banned list itself is not shortened.
+import fnmatch as _fm100
+def _txt100(fp):
+    t=open(fp,encoding='utf-8').read()
+    if fp.endswith('.html'): v=_vis(t)
+    elif fp.endswith('.json'):
+        def _st(o):
+            if isinstance(o,str): yield o
+            elif isinstance(o,dict):
+                for w in o.values(): yield from _st(w)
+            elif isinstance(o,list):
+                for w in o: yield from _st(w)
+        v=' | '.join(re.sub(r'<[^>]+>',' ',_hh.unescape(s)) for s in _st(json.loads(t)))
+    else: v=re.sub(r'<[^>]+>',' ',_hh.unescape(t))
+    return re.sub(r'\s+',' ',v)
+_al100=yaml.safe_load(open(os.path.join(P,'..','data','banned_word_allowlist.yaml'))) or []
+_kinds100=('rule-text','name','not-a-claim','pending-reword'); _seen100=set()
+for _i,_r in enumerate(_al100):
+    if _r.get('kind') not in _kinds100: E(f'0100b allowlist row {_i+1}: kind must be one of {_kinds100}')
+    if not _r.get('files') or not str(_r.get('phrase') or '').strip() or not str(_r.get('note') or '').strip(): E(f'0100b allowlist row {_i+1}: files, phrase and note are required')
+    if not any(re.search(b,str(_r.get('phrase','')),re.I) for b in B.BANNED_CITE): E(f'0100b allowlist row {_i+1}: phrase contains no banned word')
+    if any(re.fullmatch(b,str(_r.get('phrase','')).strip(),re.I) for b in B.BANNED_CITE): E(f'0100b allowlist row {_i+1}: phrase is only a banned word; give the exact surrounding wording')
+    if _r.get('kind')=='pending-reword' and len(str(_r.get('phrase','')).split())<2: E(f'0100b allowlist row {_i+1}: pending-reword phrase must be at least two words of the existing text')
+    if _r.get('kind')=='pending-reword' and any(any(c in g for c in '*?[') for g in _r.get('files') or []): E(f'0100b allowlist row {_i+1}: pending-reword rows must name exact files')
+    if (_r.get('phrase'),tuple(_r.get('files') or [])) in _seen100: E(f'0100b allowlist row {_i+1}: duplicate')
+    _seen100.add((_r.get('phrase'),tuple(_r.get('files') or [])))
+_used100=set(); _nf100=_nh100=_na100=0
+for _f in sorted(glob.glob(os.path.join(P,'**','*'),recursive=True)):
+    if not os.path.isfile(_f) or not _f.endswith(('.html','.txt','.xml','.json','.csv')): continue
+    _rel=os.path.relpath(_f,P); _v=_txt100(_f); _nf100+=1; _sp=[]
+    for _i,_r in enumerate(_al100):
+        if any(_fm100.fnmatchcase(_rel,g) for g in _r.get('files') or []) and _r.get('phrase'):
+            _sp+=[(m.start(),m.end(),_i) for m in re.finditer(re.escape(_r['phrase']),_v)]
+    for b in B.BANNED_CITE:
+        for m in re.finditer(b,_v,re.I):
+            _nh100+=1; _cov=[_i for a,z,_i in _sp if a<=m.start() and m.end()<=z]
+            if _cov: _na100+=1; _used100.update(_cov)
+            else: E(f"0100b {_rel}: banned wording {b!r} in “…{_v[max(0,m.start()-50):m.end()+30]}…” (not in data/banned_word_allowlist.yaml)")
+for _i,_r in enumerate(_al100):
+    if _i not in _used100: E(f"0100b allowlist row {_i+1} ({_r.get('phrase')!r}) covers no hit in {_r.get('files')}; remove or fix the row")
+print(f'0100b: checked {_nf100} public files for {len(B.BANNED_CITE)} banned patterns: {_nh100} hit(s), {_na100} allowlisted by {len(_al100)} rows ({sum(1 for r in _al100 if r.get("kind")=="pending-reword")} pending-reword), {_nh100-_na100} not allowed')
 
 for m in err: print('ERROR',m)
 print(f'entries {len(y)}, csv rows {len(rows)}, {len(err)} error(s)')

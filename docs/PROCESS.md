@@ -18,6 +18,10 @@ To run it automatically as a local git hook (not version-controlled), run:
 `printf '#!/bin/sh\npython3 scripts/check_scores.py || exit 1\npython3 scripts/check_export.py || exit 1\n' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit`
 (The hook runs both checks; a mismatch in either blocks the commit.)
 
+Two checks in `scripts/check_export.py` (decision 0100) cover hand-edited public files:
+- **0100a (order):** the entry order on the home page (both tables and the ItemList), in llms.txt, agents.json and agents.csv must follow the directory-order rule on the methodology page: highest overall score first, equal scores alphabetically by entry name (case-insensitive), Insufficient evidence entries separately and alphabetically. When you add or re-score an entry by hand, place its rows by this rule.
+- **0100b (banned wording):** every public page, llms file, feed and data file is scanned for the full banned list. Fix the wording. Add a row to `data/banned_word_allowlist.yaml` only for rule text, a proper name or quoted wording that is not ranking language, or a statement that something was not verified, with an exact phrase and file and a note, recorded in the decision packet. Never shorten the banned list.
+
 ## Monthly link check
 Run `python3 scripts/check_links.py`. It reports three groups:
 - **OK.**
