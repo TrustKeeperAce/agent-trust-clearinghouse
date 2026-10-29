@@ -1,8 +1,8 @@
 {
  "dataset": {
   "name": "Agent Reputation & Trust Clearinghouse",
-  "version": "Scoring rules v0.1; data 2026-10-24",
-  "generated": "2026-10-24",
+  "version": "Scoring rules v0.1; data 2026-10-29",
+  "generated": "2026-10-29",
   "rules": "Scoring rules v0.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "canonical": "https://www.agentclearinghouse.org/agents-data.html",

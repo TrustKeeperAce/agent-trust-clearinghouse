@@ -12,7 +12,7 @@
   }
  ],
  "_clearinghouse": {
-  "generated": "2026-10-24",
+  "generated": "2026-10-29",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
   "citation": "When quoting a score, include the agent name, overall score and evidence grade, the as-of date (last_reviewed, or as_of for a feed item), and a link to the entry page, e.g. \"Aider (open-source): 52/100, evidence grade A, as of 2026-10-17 (Agent Reputation & Trust Clearinghouse, CC BY 4.0, https://www.agentclearinghouse.org/agents/aider.html)\". Say that the score is informational and not a guarantee, endorsement, certification or ranking. Do not present directory or feed order as a ranking. More examples: https://www.agentclearinghouse.org/citing.html",
@@ -20,6 +20,30 @@
   "note": "before is null for new entries; values that could not be recovered are null."
  },
  "items": [
+  {
+   "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-29-0102",
+   "url": "https://www.agentclearinghouse.org/changelog.html",
+   "title": "Site change (0102)",
+   "content_text": "The directory is frozen and is no longer actively maintained. Information may be out of date. A notice saying so is now shown on every page. No score, grade, source count or last-reviewed date changes. Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality.",
+   "date_published": "2026-10-29T00:00:00Z",
+   "tags": [
+    "site_change"
+   ],
+   "_clearinghouse": {
+    "type": "site_change",
+    "agent_id": null,
+    "entry_url": null,
+    "before": null,
+    "after": null,
+    "status": null,
+    "decision_packets": [
+     "0102"
+    ],
+    "decision_url": "https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0102-freeze.md",
+    "as_of": "2026-10-29",
+    "disclaimer": "Informational only. Scores summarize cited public evidence under published rules; they are not a guarantee, endorsement, certification or ranking of quality."
+   }
+  },
   {
    "id": "tag:agent-trust-clearinghouse,2026:update/2026-10-24-0099/github-copilot-cli",
    "url": "https://www.agentclearinghouse.org/agents/github-copilot-cli.html",

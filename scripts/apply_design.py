@@ -4,7 +4,11 @@ import re,glob,os,sys
 P=sys.argv[1] if len(sys.argv)>1 else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'public')
 MARK='<svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><rect class="mk-b" x="1" y="1" width="42" height="42" rx="11" stroke-width="2"/><rect class="mk-t" x="10" y="10" width="24" height="4" rx="2"/><rect class="mk-a" x="10" y="17.5" width="16" height="4" rx="2"/><rect class="mk-t" x="10" y="25" width="20" height="4" rx="2"/><rect class="mk-a" x="10" y="32.5" width="20" height="4" rx="2"/></svg>'
 BRAND=f'<a class="brand" href="/">{MARK}<span class="wm"><b>Agent Reputation &amp; Trust</b><small>Clearinghouse</small></span></a>'
+FROZEN='This directory is no longer actively maintained. Information may be out of date. Scores were informational only and are not guarantees or endorsements.'
+FROZEN_HTML=f'<p class="frozen-notice" role="note">{FROZEN}</p>\n'  # decision 0102 (freeze): shown at the top of every page
 def page(f,t):
+    if 'class="frozen-notice"' not in t: t=t.replace('<a class="skip-link" href="#main">Skip to main content</a>\n','<a class="skip-link" href="#main">Skip to main content</a>\n'+FROZEN_HTML,1)
+    assert t.count('class="frozen-notice"')==1,f
     t=re.sub(r'<link rel="icon" href="[^"]*">','<link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0a0d12" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">',t)
     t=t.replace('<a class="brand" href="/">Agent Reputation &amp; Trust Clearinghouse</a>',BRAND)
     cur={'index.html':'/','methodology.html':'/methodology.html','changelog.html':'/changelog.html'}.get(os.path.basename(f))

@@ -84,3 +84,4 @@ footer a{white-space:nowrap}
  .hero{display:block;padding:0}
 }
 @media (min-width:900px){.facts{grid-template-columns:1fr 2fr 1fr 1fr}}
+.frozen-notice{margin:0;padding:.6rem 1rem;text-align:center;font-size:.95rem;border-bottom:1px solid currentColor}

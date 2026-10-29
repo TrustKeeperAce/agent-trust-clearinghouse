@@ -1,6 +1,14 @@
 # data/changelog.yaml (decision 0065): single source of truth for changelog.html, updates.json and updates.xml.
 # Newest first. ids are stable and never reused. before/after are copied from agents/*.yaml in git history
 # (source_commit); before is null for new entries. Values that could not be recovered are null, never guessed.
+- id: 2026-10-29-0102
+  date: '2026-10-29'
+  decision_packets:
+  - '0102'
+  decision_url: https://github.com/TrustKeeperAce/agent-trust-clearinghouse/blob/master/decisions/0102-freeze.md
+  change_html: 'The directory is frozen and is no longer actively maintained. Information may be out of date. A notice saying so is now shown on every page. No score, grade, source count or last-reviewed date changes.'
+  changes: []
+  source_commits: []
 - id: 2026-10-24-0099
   date: '2026-10-24'
   decision_packets:

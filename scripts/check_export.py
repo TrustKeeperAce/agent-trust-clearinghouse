@@ -264,8 +264,8 @@ for e in J.values():
     if not y69.get('grade_note') and 'class="grade-note"' in t: E(f"{e['id']}: stray grade note on entry page")
 vj=json.load(open(os.path.join(B.R,'vercel.json')))
 if vj.get('outputDirectory')!='public' or set(vj)-{'outputDirectory','cleanUrls','headers','redirects'}: E('vercel.json: unexpected settings')
-REDIRECT_0086=[{'source':'/:path((?!google4c18d564fd1acb53\\.html$).*)','has':[{'type':'host','value':'agent-trust-clearinghouse\\.vercel\\.app'}],'destination':B.BASE+'/:path','permanent':True}]  # 0086 D3a: old-host redirect, verification file excluded
-if vj.get('redirects')!=REDIRECT_0086: E('vercel.json: redirects not exactly the 0086 old-host redirect')
+# 0102 (freeze): the 0086 old-host redirect to www.agentclearinghouse.org was removed (the domain was deleted); no redirects allowed
+if 'redirects' in vj: E('vercel.json: redirects present (0102: the vercel.app host must serve the site directly)')
 if [h['source'] for h in vj.get('headers',[])]!=['/updates.xml'] or vj['headers'][0]['headers']!=[{'key':'Content-Type','value':'application/atom+xml; charset=utf-8'}]: E('vercel.json: headers rule not exactly /updates.xml Atom')
 print('0069: checked')
 # ---- 0070: license files and citation ----
